@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: med-chonk
+spec:
+  completions: 8
+  parallelism: 8
+  completionMode: Indexed
+  template:
+    metadata:
+      labels:
+        app: chonk
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: chonk
+        image:  vanessa/container-chonks:1-25
+        resources:
+          limits:
+            cpu: "3"
+          requests:
+            cpu: "3"

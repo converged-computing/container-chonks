@@ -1,0 +1,5 @@
+FROM alpine
+# docker build -t vanessa/container-chonks:1-25 .
+#                                          <layers>-<size>
+RUN truncate -s 25G layer1 && shred -n 1 layer1
+ENTRYPOINT echo chonky
