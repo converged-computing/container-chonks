@@ -2,7 +2,7 @@
 
 We want to study the impact of pulling times (at different scales) for different sizes containers, meaning varying individual layer and total container sizes. This entire study is going to be powered by dd, which will allow us to generate files of arbitrary sizes.
 
- - [test](test): early testing of the design below. What I learned is that we need to likely evaluate the container landscape (average sizes) before deciding on our experiment design. 
+ - [test](experiments/test): early testing of the design below. What I learned is that we need to likely evaluate the container landscape (average sizes) before deciding on our experiment design. 
 
 
 Next steps are to sample a Dockerfile set to get container URIs and sizes that people are using.
