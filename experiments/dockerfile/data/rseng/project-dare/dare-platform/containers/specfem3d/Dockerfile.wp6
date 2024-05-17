@@ -1,0 +1,10 @@
+FROM registry.gitlab.com/project-dare/dare-bdi/specfem3d:latest
+
+RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
+    apk --no-cache --update-cache --virtual .dep add git &&\
+    git clone --depth 1 https://gitlab.com/project-dare/WP6_EPOS.git /WP6_EPOS &&\
+    apk del .dep
+
+WORKDIR /WP6_EPOS/specfem3d/specfem3d_input
+COPY ./run_test.sh .
+CMD [ "sh", "./run_test.sh" ]

@@ -1,0 +1,22 @@
+FROM openjdk:8-jre
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        ca-certificates \
+        graphviz \
+        wget \
+        && apt-get clean \
+        && rm -rf /var/lib/apt/lists/*
+
+
+ENV SCHEMASPY_VERSION 6.0.0-rc2
+ENV DRIVER_VERSION 42.1.4
+
+WORKDIR /schemaspy
+
+RUN wget --progress=dot:giga -O schemaspy.jar         https://github.com/schemaspy/schemaspy/releases/download/v$SCHEMASPY_VERSION/schemaspy-$SCHEMASPY_VERSION.jar && \
+        wget --progress=dot:giga -O postgresql_driver.jar https://jdbc.postgresql.org/download/postgresql-$DRIVER_VERSION.jar
+
+ENTRYPOINT ["java", "-jar", "schemaspy.jar", \
+    "-t", "pgsql", \
+    "-dp", "postgresql_driver.jar", \
+    "-hq"]

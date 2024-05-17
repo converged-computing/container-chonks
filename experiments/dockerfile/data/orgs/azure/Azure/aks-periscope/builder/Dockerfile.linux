@@ -1,0 +1,39 @@
+# Base image depends on target platform.
+# See: https://mcr.microsoft.com/en-us/product/cbl-mariner/distroless/base/about
+ARG BASE_IMAGE=mcr.microsoft.com/cbl-mariner/distroless/base:2.0
+
+# Builder
+# golang builder image is multi-platform
+FROM golang:1.19.5 AS builder
+
+ENV GO111MODULE=on CGO_ENABLED=0
+
+WORKDIR /build
+
+COPY go.mod .
+COPY go.sum .
+RUN go mod download
+
+COPY . .
+
+RUN go build ./cmd/aks-periscope
+
+# Add dependencies for building nsenter
+RUN apt-get update && \
+    apt-get install -y autoconf autopoint bison gettext libtool
+
+# Create a statically-compiled nsenter binary (see: https://github.com/alexei-led/nsenter/blob/master/Dockerfile)
+# nsenter versions: https://www.kernel.org/pub/linux/utils/util-linux/
+ADD https://github.com/util-linux/util-linux/archive/v2.38.tar.gz .
+RUN tar -xf v2.38.tar.gz && mv util-linux-2.38 util-linux
+WORKDIR /build/util-linux
+RUN ./autogen.sh && ./configure
+RUN make LDFLAGS="--static" nsenter
+
+# Runner
+FROM $BASE_IMAGE
+
+COPY --from=builder /build/aks-periscope /
+COPY --from=builder /build/util-linux/nsenter /usr/bin/
+
+ENTRYPOINT ["/aks-periscope"]

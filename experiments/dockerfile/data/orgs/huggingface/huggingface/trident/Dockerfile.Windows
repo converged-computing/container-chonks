@@ -1,0 +1,17 @@
+ARG WINDOWS_VERSION
+ARG	ARCH
+
+FROM --platform=windows/${ARCH} mcr.microsoft.com/windows/servercore:${WINDOWS_VERSION} as add_on
+FROM --platform=windows/${ARCH} mcr.microsoft.com/windows/nanoserver:${WINDOWS_VERSION}
+
+ARG BIN=trident_orchestrator.exe
+ARG CLI_BIN=tridentctl.exe
+
+COPY ${BIN} /trident_orchestrator.exe
+COPY ${CLI_BIN} /tridentctl.exe
+# This is required for unixsockets to work
+COPY --from=add_on /Windows/System32/netapi32.dll /Windows/System32/netapi32.dll
+
+USER ContainerAdministrator
+ENTRYPOINT ["trident_orchestrator.exe"]
+CMD ["-port", "${PORT}", "-crd_persistence"]

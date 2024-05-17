@@ -1,0 +1,434 @@
+# Distributed under the MIT License.
+# See LICENSE.txt for details.
+
+# If you change this file please push the new images to DockerHub. If you do not
+# have permission to push to DockerHub please coordinate with someone who does.
+# Since changes to this image affect our testing infrastructure it is important
+# all changes be carefully reviewed before they are pushed. This is how you use
+# GitHub Actions to build and push the new images:
+#
+# 1. Push your changes to the `develop` branch on your fork of the spectre
+#    repository on GitHub (https://github.com/YOURNAME/spectre).
+# 2. Go to https://github.com/YOURNAME/spectre/actions/workflows/BuildDockerContainer.yaml.
+# 3. Select "Run workflow". Here you can select the location on DockerHub where
+#    you want the new images pushed. Select `sxscollaboration/spectre` (which is
+#    used by CI) or a location on your own DockerHub account. Either way, you
+#    need to set the `DOCKERHUB_USERNAME` and `DOCKERHUB_TOKEN` secrets in the
+#    repository to credentials that have write access.
+# 4. The images will be built and pushed to DockerHub and CI will run over them.
+#    See `.github/workflows/BuildDockerContainer.yaml` for details.
+#
+# Alternatively, you can build the container locally and push it, but remember
+# to build and push both x86 and ARM versions. Docker must be run as root on
+# your machine. There are 3 different images in this Dockerfile. Here is how to
+# build them for x86_64 (for Apple Silicon, replace linux/amd64 with
+# linux/arm64):
+#
+# 1. `dev`
+#
+#   cd $SPECTRE_HOME
+#   docker build --target dev -t sxscollaboration/spectre:dev \
+#                 --platform linux/amd64 \
+#                 -f ./containers/Dockerfile.buildenv .
+#
+# 2. `ci` (this should use the `dev` image you just built for most of it)
+#
+#   cd $SPECTRE_HOME
+#   docker build --target ci -t sxscollaboration/spectre:ci \
+#                 --platform linux/amd64 \
+#                 -f ./containers/Dockerfile.buildenv .
+#
+# 3. `demo` To build this, it is recommended to first push the `dev` and `ci`
+#    images to DockerHub as the `demo` image uses the remote `dev` image.
+#
+#   docker push sxscollaboration/spectre:dev
+#   docker push sxscollaboration/spectre:ci
+#
+#    To build `demo`, you must be in $SPECTRE_ROOT and there cannot be a
+#    directory named `build` in $SPECTRE_ROOT because the image will create
+#    this directory (in the container).
+#
+#   cd $SPECTRE_HOME
+#   rm -rf build/
+#   docker build --target demo -t sxscollaboration/spectre:demo \
+#                 --platform linux/amd64 \
+#                 -f ./containers/Dockerfile.buildenv .
+#
+#    and then to push the `demo` image to DockerHub:
+#
+#   docker push sxscollaboration/spectre:demo
+
+FROM ubuntu:22.04 AS base
+
+# See
+# https://docs.docker.com/engine/reference/builder/#automatic-platform-args-in-the-global-scope
+# for how TARGETARCH is defined.
+ARG TARGETARCH
+
+# Install add-apt-repository and basic tools
+RUN apt-get update -y \
+    && apt-get install -y software-properties-common wget git
+
+# Add LLVM apt repository for newer versions of clang
+RUN wget -qO- https://apt.llvm.org/llvm-snapshot.gpg.key | \
+    tee /etc/apt/trusted.gpg.d/apt.llvm.org.asc \
+    && add-apt-repository -y \
+    'deb http://apt.llvm.org/jammy/ llvm-toolchain-jammy-16 main'
+
+# Install compilers and build tools
+RUN apt-get update -y \
+    && apt-get install -y \
+        gcc g++ gfortran \
+        clang clang-format clang-tidy lld \
+        bison flex libncurses-dev \
+        gdb cmake autoconf automake ninja-build lcov
+
+# Install SpECTRE dependencies that are available through apt
+#
+# We intentionally don't install libboost-all-dev because that installs
+# Boost.MPI, which installs OpenMPI into the container. When MPI is
+# installed inside the container it makes it very difficult to use
+# Singularity on HPC systems to interface with the system MPI library.
+# The system MPI libraries are usually configured to take advantage of
+# InfiniBand or various other networking layers.
+RUN apt-get update -y \
+    && apt-get install -y \
+        libopenblas-dev liblapack-dev \
+        libgsl-dev \
+        libjemalloc2 libjemalloc-dev \
+        libboost-dev libboost-program-options-dev \
+        libboost-thread-dev libboost-tools-dev libssl-dev \
+        libhdf5-dev hdf5-tools \
+        libarpack2-dev \
+        libyaml-cpp-dev \
+        libbenchmark-dev
+
+# Install Python packages
+# We only install packages that are needed by the build system (e.g. to compile
+# Python bindings or build documentation) or used by Python code that is
+# unit-tested. Any other packages can be installed on-demand.
+# - We use python-is-python3 because on Ubuntu 20.04 /usr/bin/python was removed
+#   to aid in tracking down anything that depends on python 2. However, many
+#   scripts use `/usr/bin/env python` to find python so restore it.
+COPY support/Python/requirements.txt requirements.txt
+COPY support/Python/dev_requirements.txt dev_requirements.txt
+RUN apt-get update -y \
+    && apt-get install -y python3-pip python-is-python3 \
+    && pip3 --no-cache-dir install pybind11~=2.6.1 \
+    && pip3 --no-cache-dir install -r requirements.txt -r dev_requirements.txt \
+    && rm requirements.txt dev_requirements.txt
+
+# Enable bash-completion by installing it and then adding it to the .bashrc file
+RUN apt-get update -y \
+    && apt-get install -y bash-completion \
+    && printf "if [ -f /etc/bash_completion ] && ! shopt -oq posix; then\n\
+    . /etc/bash_completion\nfi\n\n" >> /root/.bashrc
+
+
+# Cross-compile dependencies on the host system that take a long time to build
+# when emulating the target architecture. The `xbuild` stage is an image with
+# the same architecture as the host. It compiles the packages for the target
+# architecture. Then we can copy the compiled packages into the `base` image.
+FROM --platform=$BUILDPLATFORM tonistiigi/xx AS xx
+FROM --platform=$BUILDPLATFORM ubuntu:22.04 AS xbuild
+WORKDIR /root
+COPY --from=xx / /
+ARG TARGETPLATFORM
+ARG PARALLEL_MAKE_ARG=-j2
+# Install build dependencies for the host system
+RUN apt-get update -y \
+    && apt-get install -y cmake clang lld wget
+# Install build dependencies for the target architecture
+RUN xx-apt-get update -y \
+    && xx-apt-get install -y --no-install-recommends \
+        libc6-dev libstdc++-10-dev bison flex
+# - Ccache
+RUN wget https://github.com/ccache/ccache/releases/download/v4.8.2/ccache-4.8.2.tar.gz -O ccache.tar.gz \
+    && tar -xzf ccache.tar.gz \
+    && mv ccache-* ccache \
+    && cd ccache \
+    && mkdir build && cd build \
+    && cmake $(xx-clang --print-cmake-defines) \
+        -D HAVE_ASM_SSE2=OFF -D HAVE_ASM_SSE41=OFF \
+        -D HAVE_ASM_AVX2=OFF -D HAVE_ASM_AVX512=OFF \
+        -D CMAKE_BUILD_TYPE=Release .. \
+    && make $PARALLEL_MAKE_ARG
+# - Doxygen
+RUN wget https://github.com/doxygen/doxygen/archive/Release_1_9_3.tar.gz -O doxygen.tar.gz \
+    && tar -xzf doxygen.tar.gz \
+    && mv doxygen-* doxygen \
+    && cd doxygen \
+    && mkdir build && cd build \
+    && cmake $(xx-clang --print-cmake-defines) \
+        -D CMAKE_BUILD_TYPE=Release .. \
+    && make $PARALLEL_MAKE_ARG
+
+FROM base AS xbuild-test
+COPY --from=xbuild /root/ccache/build/ccache /usr/local/bin
+RUN ccache --version
+COPY --from=xbuild /root/doxygen/build/bin/doxygen /usr/local/bin
+RUN doxygen --version
+
+
+# Install software that we can't install through apt. We have to distinguish
+# between different architectures for many of those.
+FROM base AS base-amd64
+ENV CHARM_ARCH=x86_64
+ENV TEX_ARCH=x86_64
+
+FROM base AS base-arm64
+ENV CHARM_ARCH=arm8
+ENV TEX_ARCH=aarch64
+
+FROM base-${TARGETARCH} AS dev
+ARG TARGETARCH
+
+ARG PARALLEL_MAKE_ARG=-j2
+ARG DEBIAN_FRONTEND=noninteractive
+
+# We install dependencies not available through apt manually rather than using
+# Spack since Spack ends up building a lot of dependencies from scratch
+# that we don't need. Thus, not building the deps with Spack reduces total
+# build time of the Docker image.
+# - Blaze
+RUN wget https://bitbucket.org/blaze-lib/blaze/downloads/blaze-3.8.tar.gz -O blaze.tar.gz \
+    && tar -xzf blaze.tar.gz \
+    && mv blaze-* blaze \
+    && mv blaze/blaze /usr/local/include \
+    && rm -rf blaze*
+# - Brigand
+RUN git clone https://github.com/edouarda/brigand.git \
+    && mv brigand/include/brigand /usr/local/include \
+    && rm -rf brigand
+# - Catch2
+RUN wget https://github.com/catchorg/Catch2/archive/refs/tags/v3.4.0.tar.gz -O catch.tar.gz \
+    && tar -xzf catch.tar.gz && rm catch.tar.gz \
+    && mv Catch2-* Catch2 \
+    && cd Catch2 \
+    && cmake -B build -D BUILD_TESTING=OFF \
+        -D CMAKE_POSITION_INDEPENDENT_CODE=ON \
+    && cd build \
+    && make $PARALLEL_MAKE_ARG install \
+    && cd ../.. && rm -rf Catch2
+# - Ccache
+COPY --from=xbuild /root/ccache/build/ccache /usr/local/bin
+# - Doxygen
+COPY --from=xbuild /root/doxygen/build/bin/doxygen /usr/local/bin
+# - Libbacktrace
+RUN git clone https://github.com/ianlancetaylor/libbacktrace \
+    && cd libbacktrace \
+    && ./configure --prefix=/usr/local \
+    && make $PARALLEL_MAKE_ARG install \
+    && cd .. && rm -rf libbacktrace
+# - Libsharp
+RUN wget https://github.com/Libsharp/libsharp/archive/v1.0.0.tar.gz -O libsharp.tar.gz \
+    && tar -xzf libsharp.tar.gz \
+    && mv libsharp-* libsharp_build \
+    && cd libsharp_build \
+    && { if [ "$TARGETARCH" != "arm64" ]; \
+        then sed -i 's/march=native/march=x86-64/' configure.ac; fi } \
+    && autoconf \
+    && ./configure --prefix=/usr/local --enable-pic --disable-openmp \
+    && make $PARALLEL_MAKE_ARG \
+    && mv auto/bin/* /usr/local/bin \
+    && mv auto/include/* /usr/local/include \
+    && mv auto/lib/* /usr/local/lib \
+    && cd ../ \
+    && rm -r libsharp*
+# - LibXSMM
+RUN if [ "$TARGETARCH" = "arm64" ] ; then \
+        git clone --single-branch --branch main --depth 1 \
+            https://github.com/libxsmm/libxsmm.git libxsmm \
+        && cd libxsmm \
+        && make $PARALLEL_MAKE_ARG PREFIX=/usr/local/ PLATFORM=1 install \
+        && cd .. \
+        && rm -rf libxsmm; \
+    else \
+        wget https://github.com/hfp/libxsmm/archive/1.16.1.tar.gz \
+            -O libxsmm.tar.gz \
+        && tar -xzf libxsmm.tar.gz \
+        && mv libxsmm-* libxsmm \
+        && cd libxsmm \
+        && make $PARALLEL_MAKE_ARG PREFIX=/usr/local/ install \
+        && cd .. \
+        && rm -rf libxsmm libxsmm.tar.gz; \
+    fi
+# - xsimd https://github.com/xtensor-stack/xsimd
+RUN wget http://github.com/xtensor-stack/xsimd/archive/refs/tags/11.1.0.tar.gz -O xsimd.tar.gz \
+    && tar -xzf xsimd.tar.gz && rm xsimd.tar.gz \
+    && cd ./xsimd-*  \
+    && mkdir build \
+    && cd ./build \
+    && cmake -D CMAKE_BUILD_TYPE=Release \
+        -D CMAKE_INSTALL_PREFIX=/usr/local ../ \
+    && make install \
+    && cd ../.. && rm -rf xsimd-*
+
+# Update ld cache to find shared libs in /usr/local/lib/
+RUN ldconfig
+
+WORKDIR /work
+# Download and build the Charm++ version used by SpECTRE
+# We check out only a specific branch in order to reduce the repo size.
+#
+# We remove the `doc` and `example` directories since these aren't useful to us
+# in the container and we want to reduce the size of the container. We do NOT
+# remove the `tmp` directories inside the Charm++ build directories because
+# Charm++ stores non-temporary files (such as headers) that are needed when
+# building with Charm++ in the `tmp` directories.
+#
+# We build  with debug symbols to make debugging Charm++-interoperability
+# easier for people, and build with O2 to reduce build size.
+RUN wget https://raw.githubusercontent.com/sxs-collaboration/spectre/develop/support/Charm/v7.0.0.patch
+
+RUN git clone --single-branch --branch v7.0.0 --depth 1 \
+        https://github.com/UIUC-PPL/charm charm_7_0_0 \
+    && cd /work/charm_7_0_0 \
+    && git checkout v7.0.0 \
+    && git apply /work/v7.0.0.patch \
+    && ./build LIBS multicore-linux-${CHARM_ARCH} gcc \
+        ${PARALLEL_MAKE_ARG} -g -O2 --build-shared --with-production \
+    && rm -r /work/charm_7_0_0/doc /work/charm_7_0_0/examples
+ENV CHARM_ROOT="/work/charm_7_0_0/multicore-linux-${CHARM_ARCH}-gcc"
+
+# Set the environment variable SPECTRE_CONTAINER so we can check if we are
+# inside a container (0 is true in bash)
+ENV SPECTRE_CONTAINER 0
+
+# The singularity containers work better if the locale is set properly
+RUN apt-get update -y \
+    && apt-get install -y locales language-pack-fi language-pack-en \
+    && export LANGUAGE=en_US.UTF-8 \
+    && export LANG=en_US.UTF-8 \
+    && export LC_ALL=en_US.UTF-8 \
+    && locale-gen en_US.UTF-8 \
+    && dpkg-reconfigure locales
+
+# Install bibtex for Doxygen bibliography management
+# We first install the TeXLive infrastructure according to the configuration in
+# support/TeXLive/texlive.profile and then use it to install the bibtex package.
+RUN mkdir /work/texlive && cd /work/texlive \
+    && wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
+    && tar -xzf install-tl-unx.tar.gz \
+    && rm install-tl-unx.tar.gz \
+    && wget https://raw.githubusercontent.com/sxs-collaboration/spectre/develop/support/TeXLive/texlive.profile \
+    && install-tl-*/install-tl -profile=texlive.profile \
+    && rm -r install-tl-* texlive.profile install-tl.log \
+    && /work/texlive/bin/${TEX_ARCH}-linux/tlmgr install bibtex
+ENV PATH="${PATH}:/work/texlive/bin/${TEX_ARCH}-linux"
+
+# Remove the apt-get cache in order to reduce image size
+RUN apt-get -y clean
+
+WORKDIR /work
+
+
+# Everything we need to run tests on CI on GitHub. We install most things
+# on-demand on CI for a number of reasons:
+# - Smaller container size and hence less disk usage on CI, where space is very
+#   limited.
+# - Flexibility to change compilers, Python versions, etc. without rebuilding
+#   the container.
+# - There's no advantage to "pre-downloading" things available through apt here
+#   in the Dockerfile, since the amount of data to download on CI will be the
+#   same.
+FROM dev as ci
+ARG TARGETARCH
+
+# When building this image individually, the PARALLEL_MAKE_ARG from above is not
+# remembered (and it doesn't hurt to redefine the env variable).
+ARG PARALLEL_MAKE_ARG=-j2
+
+# Install OpenMPI
+RUN apt-get install -y libopenmpi-dev
+
+# We build an mpi version of charm (with clang) because many of our production
+# environments have charm built with mpi and we should test that.
+RUN cd /work/charm_7_0_0 \
+    && ./build LIBS mpi-linux-${CHARM_ARCH}-smp clang \
+        ${PARALLEL_MAKE_ARG} -g -O2 --build-shared --with-production
+
+# Remove the apt-get cache in order to reduce image size
+RUN apt-get -y clean
+
+WORKDIR /work
+
+
+# Deploy compiled executables to an image that can be run on HPC systems.
+# - We could also compile in the dev container and then copy the executables to
+#   a minimal deploy container to reduce its size. That requires keeping track
+#   of the shared libraries that are needed to run the executables, so to make
+#   things easier we just base the deploy container on the dev container.
+# - We inherit from the remote image rather than the local dev because it is
+#   faster on release CI to just pull the remote dev image rather than having to
+#   build the dev container again. We could pre-fetch the dev image and then
+#   build from the local cache, but that didn't work right away.
+FROM sxscollaboration/spectre:dev AS deploy
+ARG BUILDARCH
+ARG TARGETARCH
+ARG PARALLEL_MAKE_ARG=-j2
+
+COPY . spectre/
+
+RUN mkdir spectre/build && cd spectre/build \
+    && cmake \
+    -D CMAKE_C_COMPILER=clang \
+    -D CMAKE_CXX_COMPILER=clang++ \
+    -D CMAKE_Fortran_COMPILER=gfortran \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D DEBUG_SYMBOLS=OFF \
+    -D BUILD_PYTHON_BINDINGS=ON \
+    -D MEMORY_ALLOCATOR=SYSTEM \
+    ..
+
+# Skip compiling the executables if we are emulating the target architecture
+# because that takes a long time. They can be compiled on-demand.
+RUN if [ "$TARGETARCH" = "$BUILDARCH" ] ; then \
+        cd spectre/build \
+        && make ${PARALLEL_MAKE_ARG} cli \
+        && make ${PARALLEL_MAKE_ARG} CharacteristicExtract \
+        && make ${PARALLEL_MAKE_ARG} SolveXcts \
+    ; fi
+
+ENV SPECTRE_HOME /work/spectre
+ENV PATH $SPECTRE_HOME/build/bin:$PATH
+ENV PYTHONPATH $SPECTRE_HOME/build/bin/python:$PYTHONPATH
+
+# Set the CLI as entrypoint
+ENTRYPOINT ["spectre"]
+CMD ["--help"]
+
+# Build a demo image with extra software used in the tutorials.
+FROM deploy AS demo
+ARG BUILDARCH
+ARG TARGETARCH
+ARG PARALLEL_MAKE_ARG=-j2
+
+# vim and emacs for editing files
+# Also ffmpeg for making movies with paraview output pngs
+# paraview needs curl
+RUN apt-get update -y \
+    && apt-get install -y vim emacs-nox ffmpeg curl
+
+# Install headless paraview so we can run pvserver in the container
+# Note: there is no arm64 linux binary of paraview available, so don't
+# install paraview when building for Apple Silicon. Apple Silicon users
+# should install a binary of ParaView for Mac and move data to be
+# visualized outside of the container.
+RUN if [ "$TARGETARCH" != "arm64" ] ; then \
+        wget -O paraview.tar.gz --no-check-certificate "https://www.paraview.org/paraview-downloads/download.php?submit=Download&version=v5.10&type=binary&os=Linux&downloadFile=ParaView-5.10.1-osmesa-MPI-Linux-Python3.9-x86_64.tar.gz" \
+        && tar -xzf paraview.tar.gz \
+        && rm paraview.tar.gz \
+        && mv ParaView-* /opt/paraview; \
+    fi
+
+ENV PATH "/opt/paraview/bin:$PATH"
+
+# Build the executables used in the tutorial
+RUN if [ "$TARGETARCH" = "$BUILDARCH" ] ; then \
+        cd spectre/build \
+        && make ${PARALLEL_MAKE_ARG} ExportCoordinates3D \
+        && make ${PARALLEL_MAKE_ARG} EvolveScalarAdvection2D \
+    ; fi
+
+RUN pip3 --no-cache-dir install jupyterlab

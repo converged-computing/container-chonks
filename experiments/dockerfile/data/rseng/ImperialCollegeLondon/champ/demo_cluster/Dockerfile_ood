@@ -1,0 +1,17 @@
+FROM ubccr/hpcts:ondemand-2022.07
+
+RUN yum install -y python39 python39-pip && yum clean all
+ADD requirements.txt /
+RUN python3.9 -mvenv /var/portal_venv && \
+	/var/portal_venv/bin/pip --no-cache-dir install -r /requirements.txt
+RUN echo -e "pun_custom_env:\n  PORTAL_VENV: /var/portal_venv/bin/python" >> /etc/ood/config/nginx_stage.yml
+
+ADD . /var/www/ood/apps/sys/champ/
+WORKDIR /var/www/ood/apps/sys/champ/
+ADD demo_cluster/demo_portal_config.yaml portal_config.yaml
+ADD demo_cluster/demo_dotenv .env
+ADD demo_cluster/demo_settings.py portal/settings/demo_settings.py
+ADD demo_cluster/test_job.sbatch test_job.sbatch
+RUN ln -s /usr/bin/python3.9 /usr/bin/python
+
+RUN /var/portal_venv/bin/python manage.py collectstatic && rm /tmp/portal.log

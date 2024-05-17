@@ -19,7 +19,6 @@ Given the above, we can then create an experiment that properly measures just ou
 
 For the third point, it would be really useful to see some kind of overlap _between_ layers of containers. For example, if I'm running a bunch of ML containers on a cluster, it obviously would be better for storage to have many containers share the same layers. But what does it mean, design wise, to do that? For the fourth point, I'd like to investigate and test some of the caching or optimization strategies so, for example, we don't spend a ton of money on pulling containers alone.
 
-
 ## Parsing
 
 Instead of trying to sample across all Dockerfile, let's sample those we find in GitHub organizations that we know do a lot of machine learning, etc. We will take two approaches:
@@ -35,13 +34,23 @@ Instead of trying to sample across all Dockerfile, let's sample those we find in
 
 ```bash
 export GITHUB_TOKEN=xxxxxxxxx
-python parse_repos.py
+python scripts/parse_repos.py
 ```
 
 **Software Databases**
 
 We can do the same procedure, but just searching repositories in the [Research Software encyclopedia](https://rseng.github.io/software) to get a sampling of projects in the more rse (or closer to hpc maybe?) ecosystem. If bioconda containers also has a sampling of a different community, I have almost 10k known container URIs in shpc-registry.
 
+```bash
+git clone https://github.com/rseng/software /tmp/software
+python scripts/parse_rse_repos.py --settings-file /tmp/software/rse.ini
+python scripts/summarize_dockerfile.py
+```
+
+Stats:
+
+- Total Dockerfile across project: 77449
+- 694/4621 RSEng repos have at least one Dockerfile
 
 ## Attempt 1
 

@@ -1,0 +1,218 @@
+# Dockerfile for building homelette container
+# use with 
+# docker build --no-cache -t philippjunk/homelette_template:latest - < Dockerfile_homelette_template
+#
+# OpenStructure and Promod3 installation are taken from their official repos:
+# https://git.scicore.unibas.ch/schwede/openstructure/-/blob/develop/docker/Dockerfile
+# https://git.scicore.unibas.ch/schwede/ProMod3/-/blob/master/container/Dockerfile
+
+FROM ubuntu:20.04
+
+# ARGUMENTS
+###########
+ARG OPENSTRUCTURE_VERSION="2.3.1"
+ARG OPENMM_VERSION="7.1.1"
+ARG PROMOD_VERSION="3.2.1"
+ARG QMEAN_VERSION="4.3.0"
+ARG MODELLER_VERSION="10.4"
+ARG ALTMOD_VERSION="1.0"
+ARG CLUSTALOMEGA_VERSION="1.2.4"
+ARG HOMELETTE_VERSION="1.4"
+
+ARG SRC_FOLDER="/usr/local/src"
+ARG OPENMM_INCLUDE_PATH="/usr/local/openmm/include/"
+ARG OPENMM_LIB_PATH="/usr/local/openmm/lib/"
+
+ARG CPUS_FOR_MAKE=2
+ARG DEBIAN_FRONTEND=noninteractive
+
+# INSTALL SYSTEM DEPS
+#####################
+RUN apt-get update -y && apt-get install -y cmake \
+                                            g++ \
+                                            gfortran \
+                                            wget \
+                                            tar \
+                                            libsqlite3-dev \
+                                            sip-dev \
+                                            libtiff-dev \
+                                            libfftw3-dev \
+                                            libeigen3-dev \
+                                            libboost-all-dev \
+                                            libpng-dev \
+                                            python3-all \
+                                            python3-numpy \
+                                            python3-scipy \
+                                            python3-pandas \
+					    python3-pip \
+                                            doxygen \
+                                            swig \
+                                            clustalw \
+                                            locales && \
+                                            # CLEANUP
+                                            rm -rf /var/lib/apt/lists/*
+
+# INSTALL OPENMM
+################
+RUN cd ${SRC_FOLDER} && \
+    wget -O openmm-${OPENMM_VERSION}.tar.gz -nc https://github.com/pandegroup/openmm/archive/${OPENMM_VERSION}.tar.gz && \
+    mkdir ${SRC_FOLDER}/openmm-${OPENMM_VERSION} && \
+    tar xf openmm-${OPENMM_VERSION}.tar.gz -C ${SRC_FOLDER}/openmm-${OPENMM_VERSION} --strip-components=1 && \
+    mkdir -p ${SRC_FOLDER}/openmm-${OPENMM_VERSION}/build && \
+    cd ${SRC_FOLDER}/openmm-${OPENMM_VERSION}/build && \
+    cmake .. && make -j $CPUS_FOR_MAKE && make install && \
+    cd ${SRC_FOLDER}/openmm-${OPENMM_VERSION}/build/python && \
+    python3 setup.py build && python3 setup.py install && \
+    rm ${SRC_FOLDER}/openmm-${OPENMM_VERSION}.tar.gz && \
+    rm -rf ${SRC_FOLDER}/openmm-${OPENMM_VERSION}
+
+# INSTALL OST
+#############
+RUN cd ${SRC_FOLDER} && \
+    # copy ost release
+    wget -O openstructure-${OPENSTRUCTURE_VERSION}.tar.gz -nc https://git.scicore.unibas.ch/schwede/openstructure/-/archive/${OPENSTRUCTURE_VERSION}/openstructure-${OPENSTRUCTURE_VERSION}.tar.gz && \
+    mkdir openstructure-${OPENSTRUCTURE_VERSION} && \
+    tar xf openstructure-${OPENSTRUCTURE_VERSION}.tar.gz -C ${SRC_FOLDER}/openstructure-${OPENSTRUCTURE_VERSION} --strip-components=1 && \
+    mkdir -p ${SRC_FOLDER}/openstructure-${OPENSTRUCTURE_VERSION}/build && \
+    cd ${SRC_FOLDER}/openstructure-${OPENSTRUCTURE_VERSION}/build && \
+    cmake .. -DOPTIMIZE=ON \
+             -DENABLE_MM=ON \
+             -DCOMPILE_TMTOOLS=1 \
+             -DUSE_NUMPY=1 \
+             -DOPEN_MM_LIBRARY=$OPENMM_LIB_PATH/libOpenMM.so \
+             -DOPEN_MM_INCLUDE_DIR=$OPENMM_INCLUDE_PATH \
+             -DOPEN_MM_PLUGIN_DIR=$OPENMM_LIB_PATH/plugins \
+             -DENABLE_GFX=ON \
+             -DENABLE_GUI=OFF \
+             -DENABLE_INFO=OFF \
+             -DCMAKE_C_FLAGS="-isystem /usr/include/boost/ -isystem ${OPENMM_INCLUDE_PATH}/include" \
+             -DCMAKE_CXX_FLAGS="-isystem /usr/include/boost/ -isystem ${OPENMM_INCLUDE_PATH}/include" && \
+    make -j ${CPUS_FOR_MAKE} && \ 
+    wget ftp://ftp.wwpdb.org/pub/pdb/data/monomers/components.cif.gz && \
+    stage/bin/chemdict_tool create components.cif.gz compounds.chemlib pdb && stage/bin/chemdict_tool update ../modules/conop/data/charmm.cif compounds.chemlib charmm && \
+    cmake .. -DCOMPOUND_LIB=${SRC_FOLDER}/openstructure-${OPENSTRUCTURE_VERSION}/build/compounds.chemlib && \ 
+    make -j ${CPUS_FOR_MAKE} && make check && make install && \
+    rm ${SRC_FOLDER}/openstructure-${OPENSTRUCTURE_VERSION}.tar.gz && \
+    rm -rf ${SRC_FOLDER}/openstructure-${OPENSTRUCTURE_VERSION}
+
+ENV OST_ROOT="/usr/local"
+ENV PYTHONPATH="/usr/local/lib64/python3.8/site-packages"
+ENV LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib64:/usr/local/openmm/lib/"
+ENV OPENSTRUCTURE_VERSION="${OPENSTRUCTURE_VERSION}"
+
+# INSTALL PROMOD3
+#################
+RUN cd ${SRC_FOLDER} && \
+    # copy promod release
+    wget -O promod-${PROMOD_VERSION}.tar.gz -nc https://git.scicore.unibas.ch/schwede/ProMod3/-/archive/${PROMOD_VERSION}/promod-${PROMOD_VERSION}.tar.gz && \
+    mkdir promod-${PROMOD_VERSION} && \
+    tar xf promod-${PROMOD_VERSION}.tar.gz -C ${SRC_FOLDER}/promod-${PROMOD_VERSION} --strip-components=1 && \
+    mkdir -p ${SRC_FOLDER}/promod-${PROMOD_VERSION}/build && \
+    cd ${SRC_FOLDER}/promod-${PROMOD_VERSION}/build && \
+    # Build and install ProMod3
+    cmake .. -DOST_ROOT=/usr/local \
+             -DOPTIMIZE=1 \
+             -DENABLE_SSE=1 \
+             -DDISABLE_DOCUMENTATION=1 && \
+    make && make check && make install && \
+    # cleanup
+    cd ${SRC_FOLDER} && rm ${SRC_FOLDER}/promod-${PROMOD_VERSION}.tar.gz && \
+    rm -rf ${SRC_FOLDER}/promod-${PROMOD_VERSION}
+
+ENV PROMOD_VERSION="${PROMOD_VERSION}"
+ENV PROMOD_ROOT="/usr/local"
+
+# INSTALL QMEAN
+###############
+RUN cd ${SRC_FOLDER} && \
+	wget -O qmean-${QMEAN_VERSION}.tar.gz -nc https://git.scicore.unibas.ch/schwede/QMEAN/-/archive/${QMEAN_VERSION}/QMEAN-${QMEAN_VERSION}.tar.gz && \
+	mkdir -p ${SRC_FOLDER}/qmean-${QMEAN_VERSION}/build && \
+	tar -xf qmean-${QMEAN_VERSION}.tar.gz -C ${SRC_FOLDER}/qmean-${QMEAN_VERSION} --strip-components=1 && \
+	cd ${SRC_FOLDER}/qmean-${QMEAN_VERSION}/build && \
+	cmake .. -DOST_ROOT=/usr/local && \ 
+	make && \ 
+	make check && \ 
+	make install 
+
+# INSTALL MODELLER AND SOAP
+###########################
+RUN cd ${SRC_FOLDER} && \
+	wget -O modeller-${MODELLER_VERSION}.deb -nc https://salilab.org/modeller/${MODELLER_VERSION}/modeller_${MODELLER_VERSION}-1_amd64.deb && \
+	dpkg -i modeller-${MODELLER_VERSION}.deb && \
+	rm modeller-${MODELLER_VERSION}.deb && \
+	wget -O soap_protein_od.hdf5 -nc https://salilab.org/SOAP/soap_protein_od.hdf5 && \
+	mv soap_protein_od.hdf5 /usr/lib/modeller${MODELLER_VERSION}/modlib/
+
+# INSTALL ALTMOD
+################
+RUN wget -O ${SRC_FOLDER}/altmod-${ALTMOD_VERSION}.tar.gz -nc https://github.com/pymodproject/altmod/archive/refs/tags/${ALTMOD_VERSION}.tar.gz && \
+	cd ${SRC_FOLDER} && \
+	mkdir -p altmod-${ALTMOD_VERSION} && \
+	tar -xf altmod-${ALTMOD_VERSION}.tar.gz -C ${SRC_FOLDER}/altmod-${ALTMOD_VERSION} --strip-components=1 && \
+	rm altmod-${ALTMOD_VERSION}.tar.gz
+ENV PYTHONPATH="${SRC_FOLDER}/altmod-${ALTMOD_VERSION}/:${PYTHONPATH}"
+
+# INSTALL MOL PROBITY
+#####################
+RUN apt-get update && apt-get install -y git subversion python libgl1-mesa-glx && \
+	rm -rf /var/lib/apt/lists/* && \
+	mkdir -p ${SRC_FOLDER}/MolProbity && \
+	cd ${SRC_FOLDER}/MolProbity && \
+	mkdir -p modules/chem_data && \
+	cd modules/chem_data && \
+	svn --quiet --non-interactive --trust-server-cert co https://github.com/phenix-project/geostd/trunk geostd && \
+	svn --quiet --non-interactive --trust-server-cert co https://github.com/rlabduke/mon_lib.git/trunk mon_lib && \
+	svn --quiet --non-interactive --trust-server-cert export https://github.com/rlabduke/reference_data.git/trunk/Top8000/Top8000_rotamer_pct_contour_grids rotarama_data && \
+	svn --quiet --non-interactive --trust-server-cert --force export https://github.com/rlabduke/reference_data.git/trunk/Top8000/Top8000_ramachandran_pct_contour_grids rotarama_data && \
+	svn --quiet --non-interactive --trust-server-cert co https://github.com/rlabduke/reference_data.git/trunk/Top8000/Top8000_cablam_pct_contour_grids cablam_data && \
+	svn --quiet --non-interactive --trust-server-cert co https://github.com/rlabduke/reference_data.git/trunk/Top8000/rama_z rama_z && \
+	cd ../.. && \
+	svn --quiet --non-interactive --trust-server-cert export https://github.com/cctbx/cctbx_project.git/trunk/libtbx/auto_build/bootstrap.py && \
+	python3 bootstrap.py --builder=molprobity --with-python python3 && \
+	. ./build/setpaths.sh && \
+	python modules/chem_data/cablam_data/rebuild_cablam_cache.py && \
+	ln -s ${SRC_FOLDER}/MolProbity/build/bin/phenix.molprobity /usr/local/bin/phenix.molprobity
+
+# INSTALL CLUSTAL OMEGA AND HHSUITE
+###################################
+RUN wget -O ${SRC_FOLDER}/clustalo-${CLUSTALOMEGA_VERSION} -nc http://www.clustal.org/omega/clustalo-1.2.4-Ubuntu-x86_64 && \
+	chmod +x ${SRC_FOLDER}/clustalo-${CLUSTALOMEGA_VERSION} && \
+	mv ${SRC_FOLDER}/clustalo-${CLUSTALOMEGA_VERSION} /usr/local/bin/clustalo && \
+	wget -O ${SRC_FOLDER}/hhsuite.tar.gz https://mmseqs.com/hhsuite/hhsuite-linux-avx2.tar.gz && \
+	cd ${SRC_FOLDER} && \
+	mkdir -p hhsuite && \
+	tar -xf hhsuite.tar.gz -C ${SRC_FOLDER}/hhsuite --strip-components=1 && \
+	rm hhsuite.tar.gz && \
+	ln -s ${SRC_FOLDER}/hhsuite/bin/hhblits /usr/local/bin/hhblits
+
+# INSTALL HOMELETTE
+###################
+RUN wget -O ${SRC_FOLDER}/homelette-${HOMELETTE_VERSION}.tar.gz -nc https://github.com/philippjunk/homelette/archive/refs/tags/${HOMELETTE_VERSION}.tar.gz && \
+ 	cd ${SRC_FOLDER} && \
+ 	mkdir -p homelette-${HOMELETTE_VERSION} && \
+ 	tar -xf homelette-${HOMELETTE_VERSION}.tar.gz -C ${SRC_FOLDER}/homelette-${HOMELETTE_VERSION} --strip-components=1 && \
+ 	rm homelette-${HOMELETTE_VERSION}.tar.gz
+
+ENV PYTHONPATH="${SRC_FOLDER}/homelette-${HOMELETTE_VERSION}/:${PYTHONPATH}"
+ENV TUTORIALS="${SRC_FOLDER}/homelette-${HOMELETTE_VERSION}/examples/"
+
+# INSTALL JUPYTER LAB 
+#####################
+RUN python3 -m pip install session_info && \
+	python3 -m pip install jupyterlab && \
+	python3 -m pip install seaborn && \
+	python3 -m pip install pandas --upgrade && \
+	python3 -m pip install numexpr --upgrade && \
+	python3 -m pip install scipy --upgrade
+
+# USER, WORKDIR AND PERMISSIONS
+###############################
+RUN useradd -ms /bin/bash homelette && \
+	chown -R homelette:homelette ${TUTORIALS}
+USER homelette
+WORKDIR /home/homelette
+
+# CMD AND ENTRYPOINT
+####################
+ENTRYPOINT []
+CMD ["/bin/bash"]

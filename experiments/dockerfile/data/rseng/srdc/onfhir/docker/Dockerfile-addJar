@@ -1,0 +1,15 @@
+FROM openjdk:11-jre-slim
+
+# We need curl for healthcheck
+RUN apt -y update; apt -y install curl
+
+ENV ONFHIR_HOME /usr/local/onfhir
+RUN mkdir -p "$ONFHIR_HOME"
+WORKDIR $ONFHIR_HOME
+# Define the FHIR_VERSION variable to specify the version of the FHIR server
+ARG FHIR_VERSION
+COPY ./onfhir-server-$FHIR_VERSION/target/onfhir-server-standalone.jar .
+COPY ./docker/docker-entrypoint.sh .
+RUN chmod +x docker-entrypoint.sh
+
+ENTRYPOINT ["./docker-entrypoint.sh"]

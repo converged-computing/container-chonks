@@ -1,0 +1,82 @@
+FROM ubuntu:22.04
+
+USER root
+
+MAINTAINER Thomas Purcell <purcell@fhi-berlin.mpg.de>
+
+ENV DEBIAN_FRONTEND="noninteractive"
+ENV TZ="Europe/Berlin"
+
+RUN apt-get update &&\
+    apt-get install -y build-essential g++ git cmake vim xterm &&\
+    apt-get install -y liblapack-dev libblas-dev &&\
+    apt-get install -y openssh-client openssh-server rsync &&\
+    apt-get install -y openmpi-bin openmpi-common libopenmpi-dev &&\
+    apt-get install -y doxygen &&\
+    apt-get install -y gcovr &&\
+    apt-get install -y lcov &&\
+    apt-get install -y pkgconf &&\
+    apt-get clean
+
+RUN apt-get install -y \
+    libboost-dev libboost-all-dev \
+    libgtest-dev libgmock-dev \
+    libfmt-dev \
+    libnlopt-dev libnlopt-cxx-dev\
+    coinor-libclp-dev
+
+RUN git clone --depth=1 --branch=develop https://github.com/kokkos/kokkos.git
+RUN cmake -S kokkos -B kokkos-build -DCMAKE_BUILD_TYPE=Release -DCXX_STANDARD=17 -DKokkos_ARCH_AMPERE80=OFF -DKokkos_ENABLE_SERIAL=ON -DKokkos_ENABLE_OPENMP=ON -DKokkos_ENABLE_CUDA=OFF -DKokkos_ENABLE_CUDA_CONSTEXPR=OFF -DKokkos_ENABLE_CUDA_LAMBDA=OFF -DKokkos_ENABLE_CUDA_UVM=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DKokkos_ENABLE_DEBUG=ON -DKokkos_ENABLE_DEBUG_BOUNDS_CHECK=ON
+RUN cmake --build kokkos-build  --parallel 2
+RUN cmake --install kokkos-build
+
+
+# Setup the user
+RUN useradd -d /home/runner -ms /bin/bash runner
+
+USER runner
+WORKDIR /home/runner
+
+ARG dst=/home/runner/anaconda/3/2022.10
+
+RUN wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
+RUN mv Anaconda3-2022.10-Linux-x86_64.sh /tmp/anaconda.sh
+RUN bash /tmp/anaconda.sh -b -f -p ${dst} &&\
+    rm -f /tmp/anaconda.sh
+
+ARG BRANCH=master
+RUN mkdir /home/runner/.local/ /home/runner/.local/lib/ /home/runner/.local/lib/python3.9/ /home/runner/.local/lib/python3.9/site-packages/
+
+RUN ${dst}/bin/conda create -n sissopp_env -c conda-forge -y python=3.9 libstdcxx-ng=12.1
+RUN ${dst}/bin/conda install -n sissopp_env -y numpy scipy pandas pytest seaborn tornado jupyter scikit-learn bzip2
+RUN ls ${dst}/envs/
+RUN ${dst}/envs/sissopp_env/bin/pip install sphinx sphinx-rtd-theme breathe sphinx-sitemap myst_parser nbmake
+
+ENV CONDA_DEFAULT_ENV='sissopp_env'
+ENV CONDA_EXE='${dst}/envs/sissopp_env/bin/conda'
+ENV CONDA_PREFIX='${dst}/envs/sissopp_env'
+ENV CONDA_PROMPT_MODIFIER='(sissopp_env) '
+ENV CONDA_PYTHON_EXE='${dst}/envs/sissopp_env/bin/python'
+ENV CONDA_SHLVL='1'
+ENV _CE_CONDA=''
+ENV _CE_M=''
+
+RUN ${dst}/envs/sissopp_env/bin/pip install pytest
+ENV PATH="/home/runner/sissopp/bin/:${dst}/envs/sissopp_env/bin/:$PATH"
+
+RUN /home/runner/anaconda/3/2022.10/bin/conda init bash &&\
+    . "/home/runner/anaconda/3/2022.10/etc/profile.d/conda.sh" &&\
+    git clone --recursive --depth 1 --branch ${BRANCH} --single-branch https://gitlab.com/sissopp_developers/sissopp.git &&\
+    cd sissopp &&\
+    mkdir build &&\
+    cd build &&\
+    cmake -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_FLAGS="-O3" -DBUILD_TESTS=ON -DBUILD_PARAMS=ON -DBUILD_PYTHON=ON -DEXTERNAL_BOOST=ON -DPYTHON_INSTDIR=/home/runner/.local/lib/python3.9/site-packages/ ../ &&\
+    make &&\
+    make install &&\
+    make test &&\
+    cd ../../
+
+
+
+ENTRYPOINT ["sisso++"]
+CMD [""]

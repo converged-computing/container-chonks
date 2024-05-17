@@ -1,0 +1,22 @@
+# Comment
+# sudo docker build --progress=plain  --build-arg AIMS_GIT_TOKEN=glpat-iNTvsRcfg2dNp5sgVmkp -t registry.gitlab.com/pvst/asi/debian-aims -f Dockerfile.debian.aims .
+# docker login registry.gitlab.com/pvst/asi
+# docker push registry.gitlab.com/pvst/asi/debian-aims
+FROM debian:stable
+RUN apt-get update -qy # 2
+RUN apt-get install --no-install-recommends -qy apt-utils && apt-get clean
+RUN apt-get update -qy # 2
+RUN apt-get install --no-install-recommends -qy g++-11 gfortran-11 libopenblas-dev && apt-get clean
+RUN apt-get install --no-install-recommends -qy git cmake make wget patch diffutils libopenmpi-dev openmpi-bin libscalapack-openmpi-dev ca-certificates libboost-all-dev && apt-get clean
+RUN apt-get install --no-install-recommends -qy ase python3-mpi4py && apt-get clean
+ARG AIMS_GIT_TOKEN=glpat-adsadfasdfa
+RUN git clone https://token:${AIMS_GIT_TOKEN}@aims-git.rz-berlin.mpg.de/aims/FHIaims ${HOME}/aims # 2
+ADD libaims.gnu.openmpi.openblas.cmake /libaims.gnu.openmpi.openblas.cmake
+ENV OMPI_FC=gfortran-11
+ENV OMPI_CXX=g++-11
+ENV OMPI_CC=gcc-11
+ENV AIMS_HOME=/opt/aims
+RUN echo $AIMS_HOME
+RUN cd ${HOME}/aims && ( rm -r build-so || true )  && mkdir build-so && ( ./ci_scripts/build_aims.sh /libaims.gnu.openmpi.openblas.cmake build-so 8 2>&1 | tee ${HOME}/aims/build.log ) && cd ${HOME}/aims/build-so && make install && cd ${HOME} && install -d $AIMS_HOME/share && cp -r ${HOME}/aims/species_defaults/ $AIMS_HOME/share/ && rm -r ${HOME}/aims
+
+

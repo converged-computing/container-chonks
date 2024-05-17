@@ -1,0 +1,17 @@
+ARG PYTHON_VERSION=slim 
+
+FROM python:${PYTHON_VERSION}
+
+WORKDIR /workspace
+
+RUN apt-get update && apt-get install --no-install-recommends -y autoconf automake gcc libcurl4-openssl-dev \
+    make git libc6-dev zlib1g-dev libssl-dev liblzma-dev libbz2-dev libdeflate-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+RUN pip install -r requirements.txt && pip install pytest pytest-cov
+
+# build cyvcf2
+RUN CYVCF2_HTSLIB_CONFIGURE_OPTIONS="--enable-libcurl --enable-s3 --enable-lzma --enable-bz2 --with-libdeflate" \
+    CYTHONIZE=1 python setup.py build_ext -i

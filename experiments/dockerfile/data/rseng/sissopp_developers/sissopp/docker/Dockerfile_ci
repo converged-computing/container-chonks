@@ -1,0 +1,66 @@
+FROM ubuntu:22.04
+
+USER root
+
+MAINTAINER Thomas Purcell <purcell@fhi-berlin.mpg.de>
+
+ENV DEBIAN_FRONTEND="noninteractive"
+ENV TZ="Europe/Berlin"
+
+RUN apt-get update &&\
+    apt-get install -y build-essential g++ git cmake vim xterm &&\
+    apt-get install -y liblapack-dev libblas-dev &&\
+    apt-get install -y openssh-client openssh-server rsync &&\
+    apt-get install -y openmpi-bin openmpi-common libopenmpi-dev &&\
+    apt-get install -y doxygen &&\
+    apt-get install -y gcovr &&\
+    apt-get install -y pkgconf &&\
+    apt-get install zlib1g-dev &&\
+    apt-get clean
+
+RUN apt-get install -y \
+    libboost-dev libboost-all-dev \
+    libgtest-dev libgmock-dev \
+    libfmt-dev \
+    libnlopt-dev libnlopt-cxx-dev\
+    coinor-libclp-dev
+
+# COPY kitware-archive.sh kitware-archive.sh
+# RUN ./kitware-archive.sh
+# RUN apt-get upgrade -y
+
+RUN git clone --depth=1 --branch=develop https://github.com/kokkos/kokkos.git
+RUN cmake -S kokkos -B kokkos-build -DCMAKE_BUILD_TYPE=Release -DCXX_STANDARD=17 -DKokkos_ARCH_AMPERE80=OFF -DKokkos_ENABLE_SERIAL=ON -DKokkos_ENABLE_OPENMP=ON -DKokkos_ENABLE_CUDA=OFF -DKokkos_ENABLE_CUDA_CONSTEXPR=OFF -DKokkos_ENABLE_CUDA_LAMBDA=OFF -DKokkos_ENABLE_CUDA_UVM=OFF -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DKokkos_ENABLE_DEBUG=ON -DKokkos_ENABLE_DEBUG_BOUNDS_CHECK=ON
+RUN cmake --build kokkos-build  --parallel 2
+RUN cmake --install kokkos-build
+
+ARG dst=/opt/anaconda/3/2021.05
+
+RUN wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+RUN mv Anaconda3-2021.05-Linux-x86_64.sh /tmp/anaconda.sh
+RUN bash /tmp/anaconda.sh -b -f -p ${dst} &&\
+    rm -f /tmp/anaconda.sh
+
+
+# Setup the user
+RUN useradd -d /home/runner -ms /bin/bash runner
+
+USER runner
+WORKDIR /home/runner
+
+ENV CONDA_DEFAULT_ENV='base'
+ENV CONDA_EXE='/opt/anaconda/3/2021.05/bin/conda'
+ENV CONDA_PREFIX='/opt/anaconda/3/2021.05'
+ENV CONDA_PROMPT_MODIFIER='(base) '
+ENV CONDA_PYTHON_EXE='/opt/anaconda/3/2021.05/bin/python'
+ENV CONDA_SHLVL='1'
+ENV PATH="/opt/anaconda/3/2021.05/bin:/opt/anaconda/3/2021.05/condabin:$PATH"
+ENV _CE_CONDA=''
+ENV _CE_M=''
+
+RUN ${dst}/bin/conda init bash
+RUN exec bash
+
+RUN ${dst}/bin/conda create -n sissopp_env -c conda-forge -y python=3.9 libstdcxx-ng=12.1
+RUN ${dst}/bin/conda install -n sissopp_env -y numpy scipy pandas pytest seaborn tornado jupyter scikit-learn
+RUN /home/runner/.conda/envs/sissopp_env/bin/pip install sphinx sphinx-rtd-theme breathe sphinx-sitemap myst_parser nbmake

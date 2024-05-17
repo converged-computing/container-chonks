@@ -1,0 +1,33 @@
+ARG VARIANT=18-bullseye
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:${VARIANT}
+
+ARG PORT=3000
+
+# Set Working Directory
+WORKDIR /app
+
+# Add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
+ENV CHOKIDAR_USEPOLLING=true
+ENV FAST_REFRESH=false
+ENV WATCHPACK_POLLING=true
+ENV PORT=$PORT
+
+# Install Application Dependencies
+COPY package.json ./
+COPY package-lock.json ./
+
+# Upgrade NPM
+RUN npm install npm@latest -g
+
+RUN npm install
+RUN chmod 777 node_modules
+
+# Copy Application Files
+COPY . ./
+
+# Expose Port
+EXPOSE $PORT
+
+# start app
+CMD npx vite --host "0.0.0.0" --port $PORT

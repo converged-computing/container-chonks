@@ -1,0 +1,87 @@
+ARG BASE=nvidia/cuda:11.0.3-devel-ubuntu20.04
+FROM $BASE
+
+ARG NPROCS=4
+
+RUN DISTRO=ubuntu2004 && \
+    apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/$DISTRO/x86_64/3bf863cc.pub
+
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -yq \
+        bc \
+        wget \
+        ccache \
+        ninja-build \
+        python3 \
+        git \
+        vim \
+        jq \
+        libgtest-dev \
+        libopenmpi-dev \
+        && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN KEYDUMP_URL=https://cloud.cees.ornl.gov/download && \
+    KEYDUMP_FILE=keydump && \
+    wget --quiet ${KEYDUMP_URL}/${KEYDUMP_FILE} && \
+    wget --quiet ${KEYDUMP_URL}/${KEYDUMP_FILE}.sig && \
+    gpg --import ${KEYDUMP_FILE} && \
+    gpg --verify ${KEYDUMP_FILE}.sig ${KEYDUMP_FILE} && \
+    rm ${KEYDUMP_FILE}*
+
+ARG CMAKE_VERSION=3.26.3
+ENV CMAKE_DIR=/opt/cmake
+RUN CMAKE_KEY=2D2CEF1034921684 && \
+    CMAKE_URL=https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION} && \
+    CMAKE_SCRIPT=cmake-${CMAKE_VERSION}-Linux-x86_64.sh && \
+    CMAKE_SHA256=cmake-${CMAKE_VERSION}-SHA-256.txt && \
+    wget --quiet ${CMAKE_URL}/${CMAKE_SHA256} && \
+    wget --quiet ${CMAKE_URL}/${CMAKE_SHA256}.asc && \
+    wget --quiet ${CMAKE_URL}/${CMAKE_SCRIPT} && \
+    gpg --verify ${CMAKE_SHA256}.asc ${CMAKE_SHA256} && \
+    grep -i ${CMAKE_SCRIPT} ${CMAKE_SHA256} | sed -e s/linux/Linux/ | sha256sum --check && \
+    mkdir -p ${CMAKE_DIR} && \
+    sh ${CMAKE_SCRIPT} --skip-license --prefix=${CMAKE_DIR} && \
+    rm cmake*
+ENV PATH=${CMAKE_DIR}/bin:$PATH
+
+# Install the dpcpp compiler, see
+# https://www.intel.com/content/www/us/en/docs/vtune-profiler/installation-guide/2023-1/package-managers.html
+ARG DPCPP_VERSION=2023.0.0
+RUN wget https://apt.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB && \
+    apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS-2023.PUB && \
+    echo "deb https://apt.repos.intel.com/oneapi all main" | tee /etc/apt/sources.list.d/oneAPI.list && \
+    apt-get update -o Dir::Etc::sourcelist="sources.list.d/oneAPI.list" -o APT::Get::List-Cleanup="0" && \
+    apt-get install -y intel-oneapi-compiler-dpcpp-cpp-${DPCPP_VERSION} && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+ENV DPCPP=/opt/intel/oneapi/compiler/${DPCPP_VERSION}/linux/bin-llvm/clang++
+
+# Install Codeplay's oneAPI for NVIDIA GPUs, see
+# https://developer.codeplay.com/products/oneapi/nvidia/2023.0.0/guides/get-started-guide-nvidia
+RUN wget https://cloud.cees.ornl.gov/download/oneapi-for-nvidia-gpus-${DPCPP_VERSION}-linux.sh && \
+    chmod +x oneapi-for-nvidia-gpus-${DPCPP_VERSION}-linux.sh && \
+    ./oneapi-for-nvidia-gpus-${DPCPP_VERSION}-linux.sh -y && \
+    rm oneapi-for-nvidia-gpus-${DPCPP_VERSION}-linux.sh
+
+# Install Kokkos
+ARG KOKKOS_VERSION=4.1.00
+ARG KOKKOS_OPTIONS="-DKokkos_ENABLE_SYCL=ON -DCMAKE_CXX_FLAGS=-Wno-unknown-cuda-version -DKokkos_ENABLE_UNSUPPORTED_ARCHS=ON -DKokkos_ARCH_VOLTA70=ON -DCMAKE_CXX_STANDARD=17"
+ENV KOKKOS_DIR=/opt/kokkos
+RUN . /opt/intel/oneapi/setvars.sh --include-intel-llvm && \
+    KOKKOS_URL=https://github.com/kokkos/kokkos/archive/${KOKKOS_VERSION}.tar.gz && \
+    KOKKOS_ARCHIVE=kokkos-${KOKKOS_HASH}.tar.gz && \
+    SCRATCH_DIR=/scratch && mkdir -p ${SCRATCH_DIR} && cd ${SCRATCH_DIR} && \
+    wget --quiet ${KOKKOS_URL} --output-document=${KOKKOS_ARCHIVE} && \
+    mkdir -p kokkos && \
+    tar -xf ${KOKKOS_ARCHIVE} -C kokkos --strip-components=1 && \
+    cd kokkos && \
+    mkdir -p build && cd build && \
+    cmake \
+        -D CMAKE_BUILD_TYPE=Release \
+        -D CMAKE_INSTALL_PREFIX=${KOKKOS_DIR} \
+        -D CMAKE_CXX_COMPILER=${DPCPP} \
+        ${KOKKOS_OPTIONS} \
+        .. && \
+    make -j${NPROCS} install && \
+    rm -rf ${SCRATCH_DIR}
