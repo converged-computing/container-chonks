@@ -1,0 +1,196 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4889,
+                "digest": "sha256:9992d7ff7a0bb8e395726ab2430ead9b3de06f5e850caeb221938426eb29c31e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28037166,
+                    "digest": "sha256:a809a3b753932b0561db172e7a73f6408ffe16d23e3e7798fcdedb745b9376b2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28179112,
+                    "digest": "sha256:ab7198ffb1ee3e21ac20a2942c6b5648b9bed8a61980f1b786892866d035e4ab"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 816,
+                    "digest": "sha256:5ceb0dff567773c16a3210dfd1427b6d30771afcf17af6d552a7bc785b48c0a8"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "3128/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "TZ=UTC"
+                ],
+                "Cmd": [
+                    "-f",
+                    "/etc/squid/squid.conf",
+                    "-NYC"
+                ],
+                "Image": "sha256:ec28560fecf0901b84c424887bf7f673c35e98d2d4b81fe4e7345caa95c8d883",
+                "Volumes": {
+                    "/var/log/squid": {},
+                    "/var/spool/squid": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ubuntu Server team <ubuntu-server@lists.ubuntu.com>",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "23.10"
+                }
+            },
+            "container": "d25b6ae7f3ce5fd19b5fcc829aff58fda15c91f7fb5718b825d8696502ea9d63",
+            "container_config": {
+                "Hostname": "d25b6ae7f3ce",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "3128/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "TZ=UTC"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"-f\" \"/etc/squid/squid.conf\" \"-NYC\"]"
+                ],
+                "Image": "sha256:ec28560fecf0901b84c424887bf7f673c35e98d2d4b81fe4e7345caa95c8d883",
+                "Volumes": {
+                    "/var/log/squid": {},
+                    "/var/spool/squid": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ubuntu Server team <ubuntu-server@lists.ubuntu.com>",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "23.10"
+                }
+            },
+            "created": "2024-04-19T12:29:48.509690673Z",
+            "docker_version": "24.0.5",
+            "history": [
+                {
+                    "created": "2024-04-12T15:51:08.78191596Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-12T15:51:08.801301994Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-12T15:51:08.821118569Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-12T15:51:08.845181793Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=23.10",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-12T15:51:10.596549358Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:e20f41d92fb02981d800b49f0872a5a0bc05c8b9f7dc569390c26af4b8d41caa in / "
+                },
+                {
+                    "created": "2024-04-12T15:51:10.80000107Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-19T12:28:46.438432979Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV TZ=UTC",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-19T12:28:46.470856902Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Ubuntu Server team <ubuntu-server@lists.ubuntu.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-19T12:29:48.125921968Z",
+                    "created_by": "|0 /bin/sh -c set -eux; \tapt-get update; \tDEBIAN_FRONTEND=noninteractive apt-get full-upgrade -y; \tDEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \t\tsquid ca-certificates tzdata; \tDEBIAN_FRONTEND=noninteractive apt-get remove --purge --auto-remove -y; \trm -rf /var/lib/apt/lists/*; \tsed -i 's/^#http_access allow localnet$/http_access allow localnet/' /etc/squid/conf.d/debian.conf; \techo \"# Set max_filedescriptors to avoid using system's RLIMIT_NOFILE. See LP: #1978272\" > /etc/squid/conf.d/rock.conf; \techo 'max_filedescriptors 1024' >> /etc/squid/conf.d/rock.conf; \trm -f /etc/ssl/certs/ssl-cert-snakeoil.pem /etc/ssl/private/ssl-cert-snakeoil.key; \t/usr/sbin/squid --version; \tmkdir -p /usr/share/rocks; \t(echo \"# os-release\" && cat /etc/os-release && echo \"# dpkg-query\" && dpkg-query -f '${db:Status-Abbrev},${binary:Package},${Version},${source:Package},${Source:Version}\\n' -W) > /usr/share/rocks/dpkg.query"
+                },
+                {
+                    "created": "2024-04-19T12:29:48.403328339Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 3128",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-19T12:29:48.431785119Z",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/var/log/squid /var/spool/squid]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-19T12:29:48.452190049Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:92a37a48347cc9af6f7e07752e4a63d99e143811e53197c6e1b1c56ab4297227 in /usr/local/bin/entrypoint.sh "
+                },
+                {
+                    "created": "2024-04-19T12:29:48.481311755Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-19T12:29:48.509690673Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"-f\" \"/etc/squid/squid.conf\" \"-NYC\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:7b0892487696289f769a9e76fb8cd76f8612e50e66e2290096863b7050084b07",
+                    "sha256:b0b60215d92346bce6628994ae412a232a75abae57c01f3385409f8956575f95",
+                    "sha256:ccddb38cfb9c8f3d189f5658a162e9de60ae1f2d9e1d4185a2b5fe6891e73ef0"
+                ]
+            }
+        }
+    }
+}

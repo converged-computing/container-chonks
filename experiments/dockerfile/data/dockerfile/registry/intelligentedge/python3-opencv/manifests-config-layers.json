@@ -1,0 +1,273 @@
+{
+    "manifests": {
+        "py3.8.6-cv4.4.0.44-arm64v8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9759,
+                "digest": "sha256:e7b311993ff17c196136746deb7d2d3900b5c2e25cb18db67ce8e011c205b710"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 25862532,
+                    "digest": "sha256:29ade854e0dcedde295dd89890d45271e9df839e42124558eb5283508ca70f5c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2622786,
+                    "digest": "sha256:0eb4b1b53d2398c6ce67baee2ca8d9b07e650d136995a79630f5743ce7569461"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10643826,
+                    "digest": "sha256:f14a8cd700191b692f0519de86561bcf559dab72b419e9267741cac68c181219"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 233,
+                    "digest": "sha256:3c206520e6fcdff6ea3fa2c013f5d3c754c63fc4c87e58d87bf4a653c1705044"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2424768,
+                    "digest": "sha256:2195a06a6cb5921c5ca89b0d0f7c47236dc79e6be9e2ad62d6ef5155c25ed411"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 180026940,
+                    "digest": "sha256:5e0daae998d5bee12fc17122db96042c85b7f3acc52363d23e666b0382f03bc7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29086892,
+                    "digest": "sha256:686fef5de23210ce778e524dae5ec17e22a1947caade67a9a40b6ffe945a930d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 142794597,
+                    "digest": "sha256:201180d9ef3ad98bffbdd5e94554be428ca3713f8af267a7078243c44cce183d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27878324,
+                    "digest": "sha256:13eaf50df2ecc361c5686f4b2a4900db2950b25a00e99084fbe2fa1899ae1458"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 745631,
+                    "digest": "sha256:b50a3ecdaa87f932badc0e580856a6c49ced703829729bb10bb671a60f80a535"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 20268602,
+                    "digest": "sha256:0a9d863980a17abfb38507523f539753e121da65df9cb809f113071037ad126e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 199383622,
+                    "digest": "sha256:a9e8db1e88891a6d9b7b3375b58bf155f846b10b7121c3aede00735773e43d5e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3073404,
+                    "digest": "sha256:c7919830c3a905ecd1e5d707e684e837624a8e4692516120fb8b0802364021ad"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 17651229,
+                    "digest": "sha256:17f19d1bfcd8b4c472b932bfa855323635b803f230c2b43daf9a76653b47c090"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5165552,
+                    "digest": "sha256:cf770fed45b815ed1155f7b443e367c69a78a9bb66755b69464fc50da21271fd"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "py3.8.6-cv4.4.0.44-arm64v8"
+    ],
+    "configs": {
+        "py3.8.6-cv4.4.0.44-arm64v8": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568",
+                    "PYTHON_VERSION=3.8.6",
+                    "PYTHON_PIP_VERSION=20.3.1",
+                    "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/91630a4867b1f93ba0a12aa81d0ec4ecc1e7eeb9/get-pip.py",
+                    "PYTHON_GET_PIP_SHA256=d48ae68f297cac54db17e4107b800faae0e5210131f9f386c30c0166bf8d81b7"
+                ],
+                "Cmd": [
+                    "python3"
+                ],
+                "Labels": {
+                    "mantainer": "Chao Yang Wu <peteeelol@gmail.com>"
+                },
+                "OnBuild": null
+            },
+            "created": "2020-12-16T09:29:12.975394158Z",
+            "history": [
+                {
+                    "created": "2020-11-17T20:23:31.705441034Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a70d8c01f8f04f36038968567af779883f3b5ba3147b662b7d170d80418bc23c in / "
+                },
+                {
+                    "created": "2020-11-17T20:23:32.830654289Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-18T06:36:53.912728641Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-18T06:36:54.584304656Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-25T04:26:31.901391383Z",
+                    "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tnetbase \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2020-11-25T04:26:34.706152433Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-25T04:26:36.152545586Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.8.6",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-25T04:36:40.51377242Z",
+                    "created_by": "/bin/sh -c set -ex \t\t&& savedAptMark=\"$(apt-mark showmanual)\" \t&& apt-get update && apt-get install -y --no-install-recommends \t\tdpkg-dev \t\tgcc \t\tlibbluetooth-dev \t\tlibbz2-dev \t\tlibc6-dev \t\tlibexpat1-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tliblzma-dev \t\tlibncursesw5-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tmake \t\ttk-dev \t\tuuid-dev \t\twget \t\txz-utils \t\tzlib1g-dev \t\t$(command -v gpg > /dev/null || echo 'gnupg dirmngr') \t\t&& wget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\" \t&& wget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\" \t&& export GNUPGHOME=\"$(mktemp -d)\" \t&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys \"$GPG_KEY\" \t&& gpg --batch --verify python.tar.xz.asc python.tar.xz \t&& { command -v gpgconf > /dev/null && gpgconf --kill all || :; } \t&& rm -rf \"$GNUPGHOME\" python.tar.xz.asc \t&& mkdir -p /usr/src/python \t&& tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \t&& rm python.tar.xz \t\t&& cd /usr/src/python \t&& gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\" \t&& ./configure \t\t--build=\"$gnuArch\" \t\t--enable-loadable-sqlite-extensions \t\t--enable-optimizations \t\t--enable-option-checking=fatal \t\t--enable-shared \t\t--with-system-expat \t\t--with-system-ffi \t\t--without-ensurepip \t&& make -j \"$(nproc)\" \t\tLDFLAGS=\"-Wl,--strip-all\" \t&& make install \t&& rm -rf /usr/src/python \t\t&& find /usr/local -depth \t\t\\( \t\t\t\\( -type d -a \\( -name test -o -name tests -o -name idle_test \\) \\) \t\t\t-o \\( -type f -a \\( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \\) \\) \t\t\t-o \\( -type f -a -name 'wininst-*.exe' \\) \t\t\\) -exec rm -rf '{}' + \t\t&& ldconfig \t\t&& apt-mark auto '.*' > /dev/null \t&& apt-mark manual $savedAptMark \t&& find /usr/local -type f -executable -not \\( -name '*tkinter*' \\) -exec ldd '{}' ';' \t\t| awk '/=>/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \t&& rm -rf /var/lib/apt/lists/* \t\t&& python3 --version"
+                },
+                {
+                    "created": "2020-11-25T04:36:46.092336761Z",
+                    "created_by": "/bin/sh -c cd /usr/local/bin \t&& ln -s idle3 idle \t&& ln -s pydoc3 pydoc \t&& ln -s python3 python \t&& ln -s python3-config python-config"
+                },
+                {
+                    "created": "2020-12-03T23:03:16.711906816Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=20.3.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-12-03T23:03:17.783897498Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/91630a4867b1f93ba0a12aa81d0ec4ecc1e7eeb9/get-pip.py",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-12-03T23:03:18.73919697Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PYTHON_GET_PIP_SHA256=d48ae68f297cac54db17e4107b800faae0e5210131f9f386c30c0166bf8d81b7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-12-03T23:03:44.965882845Z",
+                    "created_by": "/bin/sh -c set -ex; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends wget; \t\twget -O get-pip.py \"$PYTHON_GET_PIP_URL\"; \techo \"$PYTHON_GET_PIP_SHA256 *get-pip.py\" | sha256sum --check --strict -; \t\tapt-mark auto '.*' > /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \trm -rf /var/lib/apt/lists/*; \t\tpython get-pip.py \t\t--disable-pip-version-check \t\t--no-cache-dir \t\t\"pip==$PYTHON_PIP_VERSION\" \t; \tpip --version; \t\tfind /usr/local -depth \t\t\\( \t\t\t\\( -type d -a \\( -name test -o -name tests -o -name idle_test \\) \\) \t\t\t-o \t\t\t\\( -type f -a \\( -name '*.pyc' -o -name '*.pyo' \\) \\) \t\t\\) -exec rm -rf '{}' +; \trm -f get-pip.py"
+                },
+                {
+                    "created": "2020-12-03T23:03:46.352815158Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"python3\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-12-08T14:50:39.971770742Z",
+                    "created_by": "LABEL mantainer=Chao Yang Wu <peteeelol@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-12-08T14:50:39.971770742Z",
+                    "created_by": "RUN /bin/sh -c apt-get update     && apt-get install -y         build-essential         cmake         git         wget         unzip         yasm         pkg-config         libswscale-dev         libtbb2         libtbb-dev         libjpeg-dev         libpng-dev         libtiff-dev         libavformat-dev         libpq-dev     && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2020-12-08T14:50:44.709569334Z",
+                    "created_by": "RUN /bin/sh -c pip install numpy # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2020-12-08T14:50:44.709569334Z",
+                    "created_by": "ARG OPENCV_VERSION=4.4.0.44",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-12-08T14:50:44.709569334Z",
+                    "created_by": "ARG SYSTEM_CORES=8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-12-08T15:35:16.964374764Z",
+                    "created_by": "RUN |2 OPENCV_VERSION=4.4.0.44 SYSTEM_CORES=8 /bin/sh -c cp /usr/bin/make /usr/bin/make.bak &&     echo \"make.bak --jobs=${SYSTEM_CORES} \\$@\" > /usr/bin/make &&     pip install -v opencv-python==${OPENCV_VERSION} &&     mv /usr/bin/make.bak /usr/bin/make # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2020-12-15T11:44:10.71793474Z",
+                    "created_by": "RUN /bin/sh -c pip install grpcio # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2020-12-15T11:53:45.954791468Z",
+                    "created_by": "RUN /bin/sh -c pip install psycopg2-binary # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2020-12-15T12:24:48.332267342Z",
+                    "created_by": "RUN /bin/sh -c pip install numpy==1.18.4 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2020-12-15T13:12:03.935622397Z",
+                    "created_by": "RUN /bin/sh -c pip install scikit-image # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2020-12-15T13:48:29.489539129Z",
+                    "created_by": "RUN /bin/sh -c pip install pyzmq # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2020-12-16T09:28:06.428773605Z",
+                    "created_by": "RUN /bin/sh -c apt update && apt install libssl-dev -y # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2020-12-16T09:29:12.975394158Z",
+                    "created_by": "RUN /bin/sh -c pip install uamqp # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:61a114ac0af584e165fb35c0b1ac76bff706506bd00bcb8481ee7cc1339cf7ec",
+                    "sha256:4a6030a08e30121725b8bcffeadb3e3116c9e825b8b7a499ca6f0a65296f95eb",
+                    "sha256:08b208f2cc14ac18285702bbee36339c7b12c297d678f38ffdc09dbe018b839b",
+                    "sha256:99f5a550998e4789ef96d4640b975e87fe979f0187b8cb28a031c7cd90d9fd65",
+                    "sha256:bade2f33f299b67d630575e3dba931552446e31c251e4d3fa603c795fa5c5143",
+                    "sha256:9332e39734d27145390a6894a30a10df9e9dd19e7796186f2071cd2e0ccddca6",
+                    "sha256:f82173c324ebb17223faa9f7fd8d09ce787ecd6d439390f409a6dc37c1fdb22f",
+                    "sha256:85d35ea3a663f06d1dd7ac54711e6426abf9832ac902bc8e4a726e2c6a40afb9",
+                    "sha256:a13e3e053b397e27818be7ddef0b900acca3d96c45a6248c868629d06c51b4c5",
+                    "sha256:2fdd1676cfae60f77181c91045da1e3042733e3f2d8bed2a149ca9f02e0b77e7",
+                    "sha256:3f4d63fe201165b441e3514afdb11b5c25dd05fc1b97797a2cac7e8e24148bd9",
+                    "sha256:fff401a6a9fc2918b45dab5e1a7cd1bb111b4640418350ba7a7e6c924104d28e",
+                    "sha256:10a69014dc41d1aab74c74e6a8e78dc36baf256b88f2e66867d30a40d4f40ca2",
+                    "sha256:4aa6914b9bf1d8aae4234a60c439cc490179f5fa4165120373706da5c8da8f9f",
+                    "sha256:35f7728ba0adf2edc86abc9032a10eb11a965c63cc6c9e880a2b143ae34886f3"
+                ]
+            }
+        }
+    }
+}

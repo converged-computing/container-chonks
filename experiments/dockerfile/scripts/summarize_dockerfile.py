@@ -68,7 +68,7 @@ def main():
         # machine learning image
         for x in lines:
             # Skip ones with variables
-            if "$" in x:
+            if "$" in x or "#" in x:
                 continue
             if "/orgs/" in dockerfile:
                 if x not in froms["machine-learning"]:
@@ -116,36 +116,44 @@ def main():
     uris = list(froms["machine-learning"].keys()) + list(froms["rseng"].keys())
     for uri in uris:
         print(f"Getting manifests, configs, and tags for {uri}")
+
         try:
-            seen = parse_image(uri, data_outdir, seen)
+            # If we have a tag, remove for now
+            if "@" in uri:
+                uri = uri.split("@")[0]
+            if ":" in uri:
+                uri = uri.split(":")[0]
+        except:
+            continue
+
+        if uri in seen:
+            continue
+        seen.add(uri)
+
+        image_outdir = os.path.join(data_outdir, uri)
+        output_file = os.path.join(image_outdir, "manifests-config-layers.json")
+        if os.path.exists(output_file):
+            print(f"Skipping {output_file}, already exists.")
+            continue
+        if not os.path.exists(image_outdir):
+            os.makedirs(image_outdir)
+
+        try:
+            parse_image(uri, image_outdir)
         except Exception as exc:
             print(f"Issue parsing image {uri}: {exc}")
             misses.add(uri)
-            
-    print(misses)
-    import IPython
-    IPython.embed()
+            if os.path.exists(image_outdir) and not os.path.exists(output_file):
+                shutil.rmtree(image_outdir)
 
-def parse_image(uri, data_outdir, seen):
+    print(misses)
+
+
+def parse_image(uri, image_outdir):
     """
     Parse an image, getting manifests and configs and
     layers for each tag.
     """
-    # If we have a tag, remove for now
-    if "@" in uri:
-        uri = uri.split("@")[0]
-    if ":" in uri:
-        uri = uri.split(":")[0]
-
-    if uri in seen:
-        return seen
-    seen.add(uri)
-
-    image_outdir = os.path.join(data_outdir, uri)
-    if os.path.exists(image_outdir):
-        return seen
-    os.makedirs(image_outdir)
-
     image = DockerImage(uri)
 
     # Cache tags
@@ -154,17 +162,27 @@ def parse_image(uri, data_outdir, seen):
     manifests = {}
     configs = {}
 
+    # Only get 500 tags
+    if len(tags) > 500:
+        tags = tags[:500]
+
+    print(f"  Found {len(tags)} for {uri}")
     for tag in tags:
-        # This has layers and sizes
-        manifests[tag] = image.manifest(tag)
-        # Get the image config - this has creation dates
-        # And also what is in every layer!
-        configs[tag] = image.config(tag)
+        if tag.endswith("sig") or tag.endswith("att"):
+            continue
+        print(f"  Retrieving tag {tag}")
+        try:
+            # This has layers and sizes
+            manifests[tag] = image.manifest(tag)
+            # Get the image config - this has creation dates
+            # And also what is in every layer!
+            configs[tag] = image.config(tag)
+        except Exception as ex:
+            print(f"  Issue retrieving tag {tag}: {ex}")
 
     # Save data -
     result = {"manifests": manifests, "tags": tags, "configs": configs}
     utils.write_json(result, os.path.join(image_outdir, "manifests-config-layers.json"))
-    return seen
 
 
 class DockerImage:

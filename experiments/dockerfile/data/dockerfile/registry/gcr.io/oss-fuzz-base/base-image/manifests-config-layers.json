@@ -1,0 +1,358 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3693,
+                "digest": "sha256:24cb323ff47e8d5111afc2d69481651cd5300e1be113b77b5e79148c7dbb7665"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27503418,
+                    "digest": "sha256:b549f31133a955f68f9fa0d93f18436c4a180e12184b999a8ecf14f7eaa83309"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 78292934,
+                    "digest": "sha256:fe067a5a8de14adfd8467b403d0c6d9eb38deafd30c84c25941b6ba8f0ad449f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 175,
+                    "digest": "sha256:b97c4cb17f6f68b092784658a4043fb9a05c3f7f758e0c441f25b3cb13f89746"
+                }
+            ]
+        },
+        "v1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3693,
+                "digest": "sha256:24cb323ff47e8d5111afc2d69481651cd5300e1be113b77b5e79148c7dbb7665"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27503418,
+                    "digest": "sha256:b549f31133a955f68f9fa0d93f18436c4a180e12184b999a8ecf14f7eaa83309"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 78292934,
+                    "digest": "sha256:fe067a5a8de14adfd8467b403d0c6d9eb38deafd30c84c25941b6ba8f0ad449f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 175,
+                    "digest": "sha256:b97c4cb17f6f68b092784658a4043fb9a05c3f7f758e0c441f25b3cb13f89746"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest",
+        "v1"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/out",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "OUT=/out",
+                    "SRC=/src",
+                    "WORK=/work",
+                    "HWASAN_OPTIONS=random_tags=0"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:1528f20e185266be244525aa2c5faa20a1d4493d41529ec1a9b1d9609d6e32c7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "20.04"
+                }
+            },
+            "container": "67b3771042c173bf03e243f07aa64fdeb1a9e9a13f6e6670d14ecb99b5b95b9c",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/out",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "OUT=/out",
+                    "SRC=/src",
+                    "WORK=/work",
+                    "HWASAN_OPTIONS=random_tags=0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "mkdir -p $OUT $SRC $WORK && chmod a+rwx $OUT $SRC $WORK"
+                ],
+                "Image": "sha256:1528f20e185266be244525aa2c5faa20a1d4493d41529ec1a9b1d9609d6e32c7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "20.04"
+                }
+            },
+            "created": "2024-05-24T03:01:48.909975467Z",
+            "docker_version": "20.10.24",
+            "history": [
+                {
+                    "created": "2023-02-01T11:42:37.482727828Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-01T11:42:37.542979925Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-01T11:42:37.607000397Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-01T11:42:37.664006463Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=20.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-01T11:42:39.593020695Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:8b180a9b4497de0c6e131d6b48cf5c69a885379e63033ab9639d1655991e626c in / "
+                },
+                {
+                    "created": "2023-02-01T11:42:39.850025895Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:03.767712114Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:47.250668882Z",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get upgrade -y &&     apt-get install -y libc6-dev binutils libgcc-9-dev tzdata &&     apt-get autoremove -y"
+                },
+                {
+                    "created": "2024-05-24T03:01:48.001233977Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV OUT=/out",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.09217575Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV SRC=/src",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.18021141Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV WORK=/work",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.273317937Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/out",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.36425404Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HWASAN_OPTIONS=random_tags=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.909975467Z",
+                    "created_by": "/bin/sh -c mkdir -p $OUT $SRC $WORK && chmod a+rwx $OUT $SRC $WORK"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:d543b8cad89e3428ac8852a13cb2dbfaf55b1e10fd95a9753e51faf393d60e81",
+                    "sha256:f58babc1bedc9a3a9220243a6ebcd996bd638a6e142b938b50aab7edb29f4e62",
+                    "sha256:d29de7b1b076751a509e80410b20eeb149bb1fbe3334489759bbc935bbce6261"
+                ]
+            }
+        },
+        "v1": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/out",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "OUT=/out",
+                    "SRC=/src",
+                    "WORK=/work",
+                    "HWASAN_OPTIONS=random_tags=0"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:1528f20e185266be244525aa2c5faa20a1d4493d41529ec1a9b1d9609d6e32c7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "20.04"
+                }
+            },
+            "container": "67b3771042c173bf03e243f07aa64fdeb1a9e9a13f6e6670d14ecb99b5b95b9c",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/out",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "OUT=/out",
+                    "SRC=/src",
+                    "WORK=/work",
+                    "HWASAN_OPTIONS=random_tags=0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "mkdir -p $OUT $SRC $WORK && chmod a+rwx $OUT $SRC $WORK"
+                ],
+                "Image": "sha256:1528f20e185266be244525aa2c5faa20a1d4493d41529ec1a9b1d9609d6e32c7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "20.04"
+                }
+            },
+            "created": "2024-05-24T03:01:48.909975467Z",
+            "docker_version": "20.10.24",
+            "history": [
+                {
+                    "created": "2023-02-01T11:42:37.482727828Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-01T11:42:37.542979925Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-01T11:42:37.607000397Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-01T11:42:37.664006463Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=20.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-01T11:42:39.593020695Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:8b180a9b4497de0c6e131d6b48cf5c69a885379e63033ab9639d1655991e626c in / "
+                },
+                {
+                    "created": "2023-02-01T11:42:39.850025895Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:03.767712114Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:47.250668882Z",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get upgrade -y &&     apt-get install -y libc6-dev binutils libgcc-9-dev tzdata &&     apt-get autoremove -y"
+                },
+                {
+                    "created": "2024-05-24T03:01:48.001233977Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV OUT=/out",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.09217575Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV SRC=/src",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.18021141Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV WORK=/work",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.273317937Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/out",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.36425404Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HWASAN_OPTIONS=random_tags=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T03:01:48.909975467Z",
+                    "created_by": "/bin/sh -c mkdir -p $OUT $SRC $WORK && chmod a+rwx $OUT $SRC $WORK"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:d543b8cad89e3428ac8852a13cb2dbfaf55b1e10fd95a9753e51faf393d60e81",
+                    "sha256:f58babc1bedc9a3a9220243a6ebcd996bd638a6e142b938b50aab7edb29f4e62",
+                    "sha256:d29de7b1b076751a509e80410b20eeb149bb1fbe3334489759bbc935bbce6261"
+                ]
+            }
+        }
+    }
+}

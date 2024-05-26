@@ -1,0 +1,319 @@
+{
+    "manifests": {
+        "0.2": {
+            "schemaVersion": 1,
+            "name": "kodbasen/ubuntu-slim-armhf",
+            "tag": "0.2",
+            "architecture": "arm",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:67b76adbded64e2677b7216fe241e486cd008d054eaad883550bec29f7bd47b0"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"arm\",\"config\":{\"Hostname\":\"b7b2a8d4bbad\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\"],\"Image\":\"sha256:5f68cbba49c6eb2fdd6a23f3f9f6fabd94e664fd2342183cad81377391287ae8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"container\":\"60b8f3f17258ab4f1cbe9c09e0cf77277004c49e439e84038f6b7693f7080119\",\"container_config\":{\"Hostname\":\"b7b2a8d4bbad\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/sh\\\"]\"],\"Image\":\"sha256:5f68cbba49c6eb2fdd6a23f3f9f6fabd94e664fd2342183cad81377391287ae8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"created\":\"2016-05-15T15:31:36.583262421Z\",\"docker_version\":\"1.10.2\",\"id\":\"a83dd31a00088634d8e11652c1311a0c8e0bb61a87726751e770e80c33d65a51\",\"os\":\"linux\",\"parent\":\"a352345eaa3432c0446c233de9701e90752a06ee9659c3c142cb617722d93e09\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a352345eaa3432c0446c233de9701e90752a06ee9659c3c142cb617722d93e09\",\"created\":\"2016-05-15T15:31:30.407199531Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:640a1111121b03696b5117970031bf60f4a58fa551da024265a1da0e651d6dad in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "74EN:W2K3:E64S:BZIN:ALN7:F47U:ITRQ:3DZ4:INKA:NU34:C5NH:PGSO",
+                            "kty": "EC",
+                            "x": "7JI43IUmSNLnNjNpRQa6o5HMvIKTDVBVAi6pZk2crac",
+                            "y": "dRHFP71lJP5V1UsAbRo8UobxyfMWQ-V4MN-M6GWGhts"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "vy7r2FbPvrk4cpPGD-L1k0Ao2QsxzKgk7ikpM0kJb-XZnymwrKZAjw3gV7Fmf4esG21Jv1YUSAAIpIBjzgbLIg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjIxMDQsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0yNVQwODo0MTozOFoifQ"
+                }
+            ]
+        },
+        "0.3": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1513,
+                "digest": "sha256:24c2bfedb746a067b4f491132787943599a792f777e3cb6c5b587e7614cd815b"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 20726253,
+                    "digest": "sha256:7b4804c7dfa60336f864365e17079b0d645f0427c5300ee23f985f45746bf4c9"
+                }
+            ]
+        },
+        "0.5": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1478,
+                "digest": "sha256:557742066b7958fc4c9f43bc619e3d41dc7556c0b4d1ec755873097a4cd01824"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 20613958,
+                    "digest": "sha256:dc0941fec71342786862c8051813d7eb3dfa1343b0877df7528438bee33e6e1a"
+                }
+            ]
+        },
+        "16.04": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1478,
+                "digest": "sha256:f6640b480f4e71382731a56b2d894e35ebbcc0d226d8763d98e8fe9a9fcd842a"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 20613970,
+                    "digest": "sha256:4ecee555c2d89fca8db46bbf10b3586b21c41b1fa2b896263404390fe3b31d8f"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "0.2",
+        "0.3",
+        "0.5",
+        "16.04"
+    ],
+    "configs": {
+        "0.3": {
+            "architecture": "arm64",
+            "config": {
+                "Hostname": "3080a797425a",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:89d4e2501e9fdad467129377c7e8a1b24f324a7af546b7df707e83d50cbee8f0",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "container": "466cdec51d10071e03f2984d7582534751552757a1badb079471d45f7b23b52f",
+            "container_config": {
+                "Hostname": "3080a797425a",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/sh\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:89d4e2501e9fdad467129377c7e8a1b24f324a7af546b7df707e83d50cbee8f0",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2016-07-13T18:52:55.119143Z",
+            "docker_version": "1.12.0-dev",
+            "history": [
+                {
+                    "created": "2016-07-13T18:52:53.462667Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:746f35ba8f5b2cbca98ade28effcc1eaa77a39bf5d0ad0ec325e5a653837c5cf in / "
+                },
+                {
+                    "created": "2016-07-13T18:52:55.119143Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:6b523498ef53ac5090e6d9511034d348b702b6fbdff469c4b029a299f1dc40b0"
+                ]
+            }
+        },
+        "0.5": {
+            "architecture": "arm",
+            "config": {
+                "Hostname": "f01e7ac72b58",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "Image": "sha256:4f10afef5be4bd1fc162d7186a91e2b3f421ee9078a2539a11b36915187f8ea6",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "container": "7d8721d8c8413311b57274d6bcc18955c3a539fae86b1c351181b067dc6d457e",
+            "container_config": {
+                "Hostname": "f01e7ac72b58",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/sh\"]"
+                ],
+                "Image": "sha256:4f10afef5be4bd1fc162d7186a91e2b3f421ee9078a2539a11b36915187f8ea6",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2016-12-14T19:37:01.165119439Z",
+            "docker_version": "1.12.1",
+            "history": [
+                {
+                    "created": "2016-12-14T19:36:59.461194093Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b0e63ac19c9ca91ea1ed54c63f53e0dccb6df8f0b252c9ec4c5cfbb3e7f69128 in / "
+                },
+                {
+                    "created": "2016-12-14T19:37:01.165119439Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:a548d218d4bf97ed53f1da7ff59c156311ca8b5867a4e21f5d246531717e16a4"
+                ]
+            }
+        },
+        "16.04": {
+            "architecture": "arm",
+            "config": {
+                "Hostname": "7d66ed694844",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "Image": "sha256:fbe688e84d43dfbb935d63bc8bc49329be7229c25fabf546dd88adefda78427b",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "container": "f04ee0c46a4bea64a198d7872d17471a4c8757710849af1efbaacc9f2b097d11",
+            "container_config": {
+                "Hostname": "7d66ed694844",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/sh\"]"
+                ],
+                "Image": "sha256:fbe688e84d43dfbb935d63bc8bc49329be7229c25fabf546dd88adefda78427b",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2016-12-14T20:25:19.054654742Z",
+            "docker_version": "1.12.1",
+            "history": [
+                {
+                    "created": "2016-12-14T20:25:17.682671057Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:68f47d4c46a50df971d84b79b5ef4113d43445588717bef120a4c4287ed831a6 in / "
+                },
+                {
+                    "created": "2016-12-14T20:25:19.054654742Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:47f2e1c797c5957417e8bc0bbe86e9ac5ce674f30c230753fe424de6780ab704"
+                ]
+            }
+        }
+    }
+}

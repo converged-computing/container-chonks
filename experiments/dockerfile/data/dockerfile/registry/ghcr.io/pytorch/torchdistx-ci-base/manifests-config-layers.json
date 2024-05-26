@@ -1,0 +1,292 @@
+{
+    "manifests": {
+        "1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2179,
+                "digest": "sha256:b33f6eb563d95cc998e50a0028685d13ab05d9a225292ce2037c97cd4c13da6f"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 26708634,
+                    "digest": "sha256:11323ed2c65349758e68a03a8e43825ec263dc9790daea93cf83b18ad0703109"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 529,
+                    "digest": "sha256:4e1251ac9e9388b1ab07c80387c2b62ffdcbb422d9af4a57fbb8fd7488d32f31"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 35829977,
+                    "digest": "sha256:7147456da0f85be5f4f24b7cbb4745e9e0c70193123af748c4e726c27e1fe989"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69525611,
+                    "digest": "sha256:7a0984719708121c41a7309828207c8d8c9345c7de778d062341e90b3766ee7b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28629178,
+                    "digest": "sha256:a4eecf7f7856f3ffe56d933ff3b4e4cb6b7bc72eb6a279c2802d96d69683d8e4"
+                }
+            ]
+        },
+        "2": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2880,
+                "digest": "sha256:1c36eca196b2330c1331e08942369e6d3a66298617834e9d1d7825bb37475b65"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 26710746,
+                    "digest": "sha256:cd150c608fee7837e3a5b28be5c7b540eaf4efa27b3b755d55326470691ce2df"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 535,
+                    "digest": "sha256:daefb6f51eda07f1c7b5be1167fb73be70a3ce82436a7e9e6e52fee34f0e4abd"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 35821211,
+                    "digest": "sha256:08df6a5111941b1a5b5e8e5e02f091fd406544dbcdc0dea153795296586b699c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 211184670,
+                    "digest": "sha256:414b44ad1e31e795170caf277b8d35626ef8fc1ff81587db67da59905aa39bd9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 31788884,
+                    "digest": "sha256:eda269a00548b0e5b08951afb1cf0fca32c7430022bd6541420823de0989af0e"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1",
+        "2"
+    ],
+    "configs": {
+        "1": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Image": "sha256:bd58841d6d1d45b968222a6708c65b6c63822c3a37263aa529bf487edeed7a1b",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "661434ddc11bcdf9b85bce24456e4013c7d76adb3652fd4b393be4e7b0c3179f",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "/root/install-git"
+                ],
+                "Image": "sha256:bd58841d6d1d45b968222a6708c65b6c63822c3a37263aa529bf487edeed7a1b",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2022-04-14T00:27:24.758444429Z",
+            "docker_version": "20.10.13",
+            "history": [
+                {
+                    "created": "2022-03-18T05:30:26.87345292Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f554512cb0acad99508554656767804e4821ece488fac0e46fd2c643a39f7021 in / "
+                },
+                {
+                    "created": "2022-03-18T05:30:27.263481466Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-14T00:25:42.000551716Z",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:990098ccbbf27dddd4e26c3ff54b00ce1df0929650e919d4730df00c6abdd359 in /root/ "
+                },
+                {
+                    "created": "2022-04-14T00:26:09.868595886Z",
+                    "created_by": "/bin/sh -c /root/install-common"
+                },
+                {
+                    "created": "2022-04-14T00:26:58.228262223Z",
+                    "created_by": "/bin/sh -c /root/install-python"
+                },
+                {
+                    "created": "2022-04-14T00:27:24.758444429Z",
+                    "created_by": "/bin/sh -c /root/install-git"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9d6787a516e72b7ed9422c8df1a4b298d82982bdf80ee1e198eedf1e1a010d76",
+                    "sha256:ca2692fd1a4ded019fb335a2ef1afbbd420ba453f13e4af0b13e290b80cfc860",
+                    "sha256:8d1b244ba8570913717db247413d3d505d6f83b9788b49b47d948dfc804c858a",
+                    "sha256:085d669a57f8cfb7560c1f9bb48240274c18e5bfc28d0c199ec437fc9d423ecd",
+                    "sha256:ee9b82030550b4b18c53f9a4d5821856b7b20f5772b4ce853624501449c697dc"
+                ]
+            }
+        },
+        "2": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:f748639be9e78ccaba707a82f0e8fe8c3d8def1a5d2f608b7f29bd898130cbcc",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "18.04"
+                }
+            },
+            "container": "8cc7a6826789e5ca68dc3648450e40d3ea134b5acea76f0f5be7c43be74b2ac6",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "/root/install-git"
+                ],
+                "Image": "sha256:f748639be9e78ccaba707a82f0e8fe8c3d8def1a5d2f608b7f29bd898130cbcc",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "18.04"
+                }
+            },
+            "created": "2023-03-23T15:30:32.943164839Z",
+            "docker_version": "20.10.17",
+            "history": [
+                {
+                    "created": "2023-03-08T03:22:42.455864719Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-08T03:22:42.517845487Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-08T03:22:42.579821915Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-08T03:22:42.646372194Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=18.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-08T03:22:44.482610627Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4560926e076acae6b8396a9f1e760eee0f53e22e90ce8554dda57f1103547795 in / "
+                },
+                {
+                    "created": "2023-03-08T03:22:44.73196058Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-23T15:09:34.503152693Z",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:eebc37ce68e978d558280d503521aef83374aa381f318c9f8876517cbe2868c5 in /root/ "
+                },
+                {
+                    "created": "2023-03-23T15:10:06.695387299Z",
+                    "created_by": "/bin/sh -c /root/install-common"
+                },
+                {
+                    "created": "2023-03-23T15:29:12.247945179Z",
+                    "created_by": "/bin/sh -c /root/install-python"
+                },
+                {
+                    "created": "2023-03-23T15:30:32.943164839Z",
+                    "created_by": "/bin/sh -c /root/install-git"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b7e0fa7bfe7f9796f1268cca2e65a8bfb1e010277652cee9a9c9d077a83db3c4",
+                    "sha256:bff3ea21029d826127bdb6485cbdf826969dc8b2d49bbb7b263bbec43c0114f1",
+                    "sha256:64f77a5f787ed0e1ea6b89df8cfca0ad67a99b67acb8033729c5c93e9acb056b",
+                    "sha256:606a8699e7ff9f4b3647d65ca5155c157aedfdb7ca7b32f34c9c28260ecb6c0c",
+                    "sha256:6270eb99ce59c81b564aa361fde6fdc6adf4fd07ebc8fd5f3bb046aed1865646"
+                ]
+            }
+        }
+    }
+}

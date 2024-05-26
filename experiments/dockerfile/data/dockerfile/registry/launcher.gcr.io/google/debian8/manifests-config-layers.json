@@ -1,0 +1,56 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 492,
+                "digest": "sha256:542d63b60bbe821c5c2ebb2925b7c4baa9c0a3915a483474dd252a490ae7df2d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 54537864,
+                    "digest": "sha256:d952c2e159876856ae998fcde7e3f313c4f56e016b7bc4c4bf8470b7e43096b2"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Bazel",
+            "config": {
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "/bin/bash"
+                ],
+                "Env": [
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "PORT=8080"
+                ]
+            },
+            "created": "1970-01-01T00:00:00Z",
+            "history": [
+                {
+                    "author": "Bazel",
+                    "created": "1970-01-01T00:00:00Z",
+                    "created_by": "bazel build ..."
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "diff_ids": [
+                    "sha256:62ae6d9f855c9261d5f6fc37d2e46350c4d8e3aa07beb3837e2adfffc63e29f8"
+                ],
+                "type": "layers"
+            }
+        }
+    }
+}

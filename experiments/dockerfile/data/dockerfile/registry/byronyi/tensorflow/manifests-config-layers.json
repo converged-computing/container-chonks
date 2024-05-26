@@ -1,0 +1,237 @@
+{
+    "manifests": {
+        "ubuntu16.04-manylinux2014": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 8094,
+                "digest": "sha256:6e5dcd853749e3bc424bc4fc36bbc6b213f67571da38152c06523b1d3e873d1a"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 44191726,
+                    "digest": "sha256:fe703b657a32e0046dce0ad2cb17172cbec8ba302edf370f5f28962bdb6216a9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 526,
+                    "digest": "sha256:f9df1fafd224fae3ba34a68dfc401f75bf6bc0c016fe36c61661ca5c7ad729ee"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 850,
+                    "digest": "sha256:a645a4b887f9613f80fae43432e46423f196a9952d11bb620bef2add7c4ed4ee"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 169,
+                    "digest": "sha256:57db7fe0b522b7a6069e769606e5ed0913a64e1e0d0030382a922ccf9449211e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 170272562,
+                    "digest": "sha256:53afc2b07392ec75486ec25a0fe8ed96f2d18d5156518f81349b44b43a2106c4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 192665488,
+                    "digest": "sha256:a5f4bc6254be5990889709e08de5f29c6b4ea4cb50b521a258591f2ac072db0d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 126544944,
+                    "digest": "sha256:c441f6e52dc62b531413a11cc7b548660b29dcfa70f77617dceb0d36c94fc150"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 16423353,
+                    "digest": "sha256:b352432de2e05b45fba54e2b664f230bc514f896c1d119856d4eb22373ce11cc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 248,
+                    "digest": "sha256:d400a06ab022063fd59be5fa4ab7c0d54c7f75d5a98b53203c872b890ef1ed7f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 246,
+                    "digest": "sha256:1f363e0f52d6c68ad3c2c94a742ea6a5f631d2417f7b99b01e0094da7c63804d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 120723707,
+                    "digest": "sha256:9208f548a6f0794faa4e3a8e289c7cb671170f20543fc8095c96df196a509c02"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2358796386,
+                    "digest": "sha256:87bd1a5ff1c8e4e1e74a31a4c71f1a09a75256efd8d3a15343914965f383e012"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 595967,
+                    "digest": "sha256:acbe2c97df7335fb9d8bb64de16407d46fc93a3898c795b1fe6749148965d287"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "ubuntu16.04-manylinux2014"
+    ],
+    "configs": {
+        "ubuntu16.04-manylinux2014": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9b77b7130dde6733ece35ea9de1255b7193495df764ede9d888a7834a0609029",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "96b7fde3f4b41e119c006ef9ccacb504e72d0b9bbc0035c81044842760a10fe9",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|3",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "TF_PACKAGE=tf-nightly",
+                    "TF_PACKAGE_VERSION=",
+                    "/bin/sh",
+                    "-c",
+                    "pip3 install --no-cache-dir -U auditwheel"
+                ],
+                "Image": "sha256:9b77b7130dde6733ece35ea9de1255b7193495df764ede9d888a7834a0609029",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2020-03-29T16:42:11.244606479Z",
+            "docker_version": "19.03.6",
+            "history": [
+                {
+                    "created": "2020-02-21T22:22:27.031833311Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:1f70668251e2e58cee0ff0c22ee805f8a269ac6f8934c07f7e89dca6cc1de3aa in / "
+                },
+                {
+                    "created": "2020-02-21T22:22:27.897701561Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2020-02-21T22:22:28.699171961Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2020-02-21T22:22:29.691913341Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2020-02-21T22:22:30.050974423Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-03-29T15:57:13.827749739Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:279ba9d2c43e26981bb1a2b0f6dfb1a6be255694d3e9b7ae14a96ac0417aaaf0 in /dt7 "
+                },
+                {
+                    "created": "2020-03-29T15:57:35.915012007Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:7990239f5efe642252e0adbb84891d62442bd315722c5b9164addb942b544fa6 in /dt8 "
+                },
+                {
+                    "created": "2020-03-29T15:57:56.997042646Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DEBIAN_FRONTEND=noninteractive",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-03-29T16:19:56.968427625Z",
+                    "created_by": "|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c apt-get update &&     apt-get install --no-install-recommends -yq software-properties-common &&     add-apt-repository ppa:deadsnakes/ppa &&     apt-get update &&     apt-get install --no-install-recommends -yq         curl         python3.5-dev         python3.6-dev         python3.7-dev         python3.8-dev         python3.8-distutils         &&     rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2020-03-29T16:20:51.966813784Z",
+                    "created_by": "|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c curl -O https://bootstrap.pypa.io/get-pip.py &&    python3.5 get-pip.py &&     python3.6 get-pip.py &&     python3.7 get-pip.py &&     python3.8 get-pip.py &&     rm get-pip.py"
+                },
+                {
+                    "created": "2020-03-29T16:21:03.52755701Z",
+                    "created_by": "|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c mkdir -p \"/dt7/usr/include/x86_64-linux-gnu\" &&     ln -s \"/usr/include/x86_64-linux-gnu/python3.5m\" \"/dt7/usr/include/x86_64-linux-gnu/python3.5m\" &&     ln -s \"/usr/include/x86_64-linux-gnu/python3.6m\" \"/dt7/usr/include/x86_64-linux-gnu/python3.6m\" &&     ln -s \"/usr/include/x86_64-linux-gnu/python3.7m\" \"/dt7/usr/include/x86_64-linux-gnu/python3.7m\" &&     ln -s \"/usr/include/x86_64-linux-gnu/python3.8\" \"/dt7/usr/include/x86_64-linux-gnu/python3.8\""
+                },
+                {
+                    "created": "2020-03-29T16:21:11.726870773Z",
+                    "created_by": "|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c mkdir -p \"/dt8/usr/include/x86_64-linux-gnu\" &&     ln -s \"/usr/include/x86_64-linux-gnu/python3.5m\" \"/dt8/usr/include/x86_64-linux-gnu/python3.5m\" &&     ln -s \"/usr/include/x86_64-linux-gnu/python3.6m\" \"/dt8/usr/include/x86_64-linux-gnu/python3.6m\" &&     ln -s \"/usr/include/x86_64-linux-gnu/python3.7m\" \"/dt8/usr/include/x86_64-linux-gnu/python3.7m\" &&     ln -s \"/usr/include/x86_64-linux-gnu/python3.8\" \"/dt8/usr/include/x86_64-linux-gnu/python3.8\""
+                },
+                {
+                    "created": "2020-03-29T16:23:42.729908973Z",
+                    "created_by": "|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c apt-get update &&     apt-get install -y --no-install-recommends         build-essential         default-jdk-headless         patchelf         pkg-config         unzip         zip         zlib1g-dev         &&     rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2020-03-29T16:23:54.326486157Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG TF_PACKAGE=tensorflow",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-03-29T16:23:57.131128011Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG TF_PACKAGE_VERSION=",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-03-29T16:41:01.290421374Z",
+                    "created_by": "|3 DEBIAN_FRONTEND=noninteractive TF_PACKAGE=tf-nightly TF_PACKAGE_VERSION= /bin/sh -c python3.5 -m pip install --no-cache-dir ${TF_PACKAGE}${TF_PACKAGE_VERSION:+==${TF_PACKAGE_VERSION}} &&     python3.6 -m pip install --no-cache-dir ${TF_PACKAGE}${TF_PACKAGE_VERSION:+==${TF_PACKAGE_VERSION}} &&     python3.7 -m pip install --no-cache-dir ${TF_PACKAGE}${TF_PACKAGE_VERSION:+==${TF_PACKAGE_VERSION}} &&     python3.8 -m pip install --no-cache-dir ${TF_PACKAGE}${TF_PACKAGE_VERSION:+==${TF_PACKAGE_VERSION}}"
+                },
+                {
+                    "created": "2020-03-29T16:42:11.244606479Z",
+                    "created_by": "|3 DEBIAN_FRONTEND=noninteractive TF_PACKAGE=tf-nightly TF_PACKAGE_VERSION= /bin/sh -c pip3 install --no-cache-dir -U auditwheel"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9e6f810a2aabaa90d8e79f52847c74617a94e78fe223f4f067d84a6bd63b9393",
+                    "sha256:0040d8f00d7e5afc3a96cbc5f10b21d355e5f0efc03f5eb0e523c5c05fb69356",
+                    "sha256:aa6685385151f01c1a936ff0b2219539b0f92ebdce8030ff262c88c9ebd294c6",
+                    "sha256:4ae3adcb66cbcfca0b15c25b144694f6899737dca6867387dfb789e5ba4f1249",
+                    "sha256:20701ad77bc5e0005091baee80648a28a467a8446c95b82934a01354c821f61f",
+                    "sha256:22fcba0ddabd08c2f3ea5d28aa1f7ce09183f900bec3c6514009a7b199c81fe4",
+                    "sha256:3ec88b0917fbb2d75d4827804433fc35466835e12c5828c82117859450e90f29",
+                    "sha256:0696702edec4924bee8f2817fd683a2ef26394eab91e2ed8813dc933ab932b5c",
+                    "sha256:ce5b530f3d119879c5e284850872489c2d3564ea42800930994595950d50df93",
+                    "sha256:f2c083f548092cacda25e0f3fbfb648fe70d34664532079df48f38615a7c1ff6",
+                    "sha256:1d5c439044cd451e566fc01147bc3211e5c06c8ffc20be5de9f17c8f5c27158f",
+                    "sha256:0260a40515c167bbca56b1be76d9d17362d57b791c1812ed781d2ba761cbd363",
+                    "sha256:9e412db70197c2704376be780bd400c585ef5dc779b0cd6b43b7c21a932ce837"
+                ]
+            }
+        }
+    }
+}

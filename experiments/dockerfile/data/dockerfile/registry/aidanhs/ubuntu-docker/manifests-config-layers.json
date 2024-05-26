@@ -1,0 +1,212 @@
+{
+    "manifests": {
+        "14.04.3-1.8.0": {
+            "schemaVersion": 1,
+            "name": "aidanhs/ubuntu-docker",
+            "tag": "14.04.3-1.8.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:62b3ed0fd9d50f00ad5205bff4bb7d6bf81c4ad7ab16ddbe8ba243037e189c8e"
+                },
+                {
+                    "blobSum": "sha256:a7b2047feb143e2ae1b0af931e3fde4af755cb5c6d586db763f03d626240f8b1"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:3e15fbbd0f4995c7bb3d54d978f1a11a70439ae7540443642c30603bd5b26849"
+                },
+                {
+                    "blobSum": "sha256:44101d32762f17e0ccff3f8158d71ee03c43d5d79dd1eb25bb11388e30ffaba9"
+                },
+                {
+                    "blobSum": "sha256:6312a4848c91283f00f268353fb8e15602ab2b1290b7f6aa7b9b1c2e84446dcb"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"62be3163209cabddced43c7dcb2a50b4278d57d5a9fb750c55709393e9d5e691\",\"parent\":\"30a2a45815187bab6b927f3496ee85303e83b6eda613fddca7aeb6d6f53a6701\",\"created\":\"2015-10-09T17:40:51.80265578Z\",\"container\":\"09b4ecc3628bb442049e8d53e71b26a3bfdc72a5553962d26ba6cbe5043bcd69\",\"container_config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"chmod +x /usr/bin/docker\"],\"Image\":\"30a2a45815187bab6b927f3496ee85303e83b6eda613fddca7aeb6d6f53a6701\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3-rc4\",\"config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"30a2a45815187bab6b927f3496ee85303e83b6eda613fddca7aeb6d6f53a6701\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":21595291}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"30a2a45815187bab6b927f3496ee85303e83b6eda613fddca7aeb6d6f53a6701\",\"parent\":\"cdd474520b8c2c0418260fc9dcd999c84fe35bd3a36304aeb47517a290e5a5c4\",\"created\":\"2015-10-09T17:40:49.753968166Z\",\"container\":\"c9b5c0f019a1ae392228f1593113726c7046192b6095dcd48b0ed77d507164a5\",\"container_config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD tarsum.v1+sha256:4cf39588e7f9b4eeea5a700c0178bf8fbedb46b555d4b4fc8f73f3b675940ddd in /usr/bin/docker\"],\"Image\":\"f0c1e7e7a3b70367493fcd8436baf96ad134a4adf733d4fb3318d40454efa40d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3-rc4\",\"config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"f0c1e7e7a3b70367493fcd8436baf96ad134a4adf733d4fb3318d40454efa40d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":21595291}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cdd474520b8c2c0418260fc9dcd999c84fe35bd3a36304aeb47517a290e5a5c4\",\"parent\":\"f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97\",\"created\":\"2015-10-08T21:42:28.962268646Z\",\"container\":\"7d5bd746ad4f4312ae382ec4c79f36960eb4faabb3cdb0edf6623b624db614bc\",\"container_config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.2\",\"config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f03f3645bde1a45143056ad6bc9d352199f13cdb01c6d59a1c972432c9fc7e97\",\"parent\":\"9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13\",\"created\":\"2015-10-08T21:42:28.599278406Z\",\"container\":\"c1581857616ee845084d4b4a77ab057cf8ed66b0cb81dff6b3ece31e59480c47\",\"container_config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"],\"Image\":\"9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.2\",\"config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":1895}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9302827ed0a51fe7f0cacb08e970b13c09da240ae8c4a8b559fb38e430f6be13\",\"parent\":\"48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d\",\"created\":\"2015-10-08T21:42:27.11934637Z\",\"container\":\"0569217f283a2c01ee70e47de7d6071d6dd84603aa9ecc0ba74dd3da9b9e0d7f\",\"container_config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"],\"Image\":\"48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.2\",\"config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":194533}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"48731f0a6276cfb5d94a8f18690d56f88a586e701f1dd7f56889f26be990277d\",\"created\":\"2015-10-08T21:42:22.35369527Z\",\"container\":\"c67f1117b8b2d565a8a1a7919a6d0bd261d766e80b107ffa2d072a533f3c2aee\",\"container_config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:ed2337b3477da68f9b1bebfe13512bfeccdc0d9d4dbe9b04a59665f5e630ee22 in /\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.2\",\"config\":{\"Hostname\":\"c67f1117b8b2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":187761822}\n"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "WUQ3:AXNA:QFZM:HFBO:MCWC:L35D:3W7F:RZKU:WVKS:FW7L:VK73:WHDF",
+                            "kty": "EC",
+                            "x": "Ci_CxhYINRBQVWYQUrYA_sNMEHIKt_I300KWG6G8rOc",
+                            "y": "m0TKTkhbEEmgZZc0MD3YdhV32Jj_sn04bcIbHpr-0bw"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "wsTLrWhzJZ4VOgjLOZZYrtlZunWurcpYY04vYFv2Q0ZLArHG68jQKG8ia3BbUXBtk8pFBjEwkqWa0_29sHh2gw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjEwODg1LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMjVUMjE6NDM6MzhaIn0"
+                }
+            ]
+        },
+        "18.04-17.03.2-ce": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3932,
+                "digest": "sha256:607b0bad13d4a58f0617c7aca6b36316f0d5a718c7e1f6e6608d23586446f564"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 31262546,
+                    "digest": "sha256:6b98dfc1607190243b0938e62c5ba2b7daedf2c56d7825dfb835208344705641"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 843,
+                    "digest": "sha256:4001a1209541c37465e524db0b9bb20744ceb319e8303ebec3259fc8317e2dec"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 469,
+                    "digest": "sha256:6319fc68c576d6bd3e469b0ae31e9a010bc9b71ed286cf4e632424d82dca70d8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 853,
+                    "digest": "sha256:b24603670dc3e91d00439b5d56701884e4fc313877ef3940183a7e8e25fa5f1b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 162,
+                    "digest": "sha256:97f170c87c6f10548068b35cbe9bd00da1278b92f700a5e66c6a16ec04ba456b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4794992,
+                    "digest": "sha256:336543cccd6c7b4911da1a7711b669150602b39b7a235cf3f3e139a173707d35"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "14.04.3-1.8.0",
+        "18.04-17.03.2-ce"
+    ],
+    "configs": {
+        "18.04-17.03.2-ce": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:113a43faa1382a7404681f1b9af2f0d70b182c569aab71db497e33fa59ed87e6",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "196037bb0c3d9c37d7b424967a746802fdd05b55e12eea3f5036bf1772796463",
+            "container_config": {
+                "Hostname": "196037bb0c3d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY file:4509630ba4e82287d0a1ef82708a96f63573e6be48a3066daf9cf84394a11f67 in /usr/bin/docker "
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:113a43faa1382a7404681f1b9af2f0d70b182c569aab71db497e33fa59ed87e6",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2018-06-17T17:14:11.634640239Z",
+            "docker_version": "17.06.2-ee-6",
+            "history": [
+                {
+                    "created": "2018-06-05T21:20:51.286433694Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:28c0771e44ff530dba3f237024acc38e8ec9293d60f0e44c8c78536c12f13a0b in / "
+                },
+                {
+                    "created": "2018-06-05T21:20:52.045074543Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-06-05T21:20:52.712120056Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-06-05T21:20:53.405342638Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2018-06-05T21:20:54.091704323Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-06-05T21:20:54.310450149Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-17T17:14:11.634640239Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:4509630ba4e82287d0a1ef82708a96f63573e6be48a3066daf9cf84394a11f67 in /usr/bin/docker "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:db9476e6d963ed2b6042abef1c354223148cdcdbd6c7416c71a019ebcaea0edb",
+                    "sha256:3a89e0d8654e098e949764b1cb23018e27f299b0931c5fd41c207d610ff356c4",
+                    "sha256:904d60939c360b5f528b886c1b534855a008f9a7fd411d4977e09aa7de74c834",
+                    "sha256:a20a262b87bd8a00717f3b30c001bcdaf0fd85d049e6d10500597caa29c013c5",
+                    "sha256:b6f13d447e00fba3b9bd10c1e5c6697e913462f44aa24af349bfaea2054e32f4",
+                    "sha256:e1550416a0a3178dbd60a40229caf9b4f3fab0432b6f87740e174a241af06094"
+                ]
+            }
+        }
+    }
+}

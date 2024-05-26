@@ -1,0 +1,2934 @@
+{
+    "manifests": {
+        "11-cbld": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 8692,
+                "digest": "sha256:72659c4fac9152b63a4f85b7bd7a94db8e56b64c79aeb2d6f3b13598e244e9e1"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 52503648,
+                    "digest": "sha256:478508120fa89add3211d2a9623d42e39f70495764492cfe94702e30a06fd512"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 427569061,
+                    "digest": "sha256:21c24b8a630e929a1075376a5fff86275f19e9202b120b3073339345ca62b588"
+                }
+            ]
+        },
+        "11-distroless": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:9719607172e76f90e348c6d75df0ad96b1065b6923026a851ec401ea7a1085af",
+                    "size": 1288,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:7793ecdb4e6c83b2ea752806133f8e49b73fd0df9eff88f96c0b19d0e2c26011",
+                    "size": 1288,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "11-mariner": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:9eeda41724ca04f3f413a8b0ed06cd8423df985bbe399e05e88a292336a7017e",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:b173ef617875330074af54bb597013721c12adc88731e3c86c40b220cf49c08c",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "11-mariner-cm1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:469fab43b8fa03445274abb6b04b896b31d39f3d20dba66853a54afaf4d24dc1",
+                    "size": 865,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:61499226d805058a28f5967b99cd79f3e8d0c5bdc918a6aebcb96358ef67f8c0",
+                    "size": 865,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:9b8de341482c80acb8add75a92bf4f2630529d93edd500f00821d65bd739cc90",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:469fab43b8fa03445274abb6b04b896b31d39f3d20dba66853a54afaf4d24dc1",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:2ecd37febe9dccab08ddea16d556a726fcf251367537667a6eaee80db9d1adc1",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:61499226d805058a28f5967b99cd79f3e8d0c5bdc918a6aebcb96358ef67f8c0",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        },
+        "11-ubuntu": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:8b3aa14382b7955f5d4ba4f96be41d376b0148e8f19169871db13110f8a6a430",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:c2ca5098690c72a02b6c9f79462686611abb5c013063b5ccd88e1b4c3f6beee1",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "16-cbld": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 8689,
+                "digest": "sha256:89560e0d1abe897cba5732e5eeb71db0476a4f274499d149a61eb2a8e00ba8a3"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 52503648,
+                    "digest": "sha256:478508120fa89add3211d2a9623d42e39f70495764492cfe94702e30a06fd512"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 445801839,
+                    "digest": "sha256:85ad1720410c9d74196314d2926781b54e888a1f06423c9c117b59d879d1df7c"
+                }
+            ]
+        },
+        "16-mariner": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 8180,
+                "digest": "sha256:b8a81eaafb2c69f4d62b9dda7a1f96b26d4eeff754f7775b84f2c0af1560f4e9"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70821089,
+                    "digest": "sha256:bed9d41a3e6469f8f8a2c55dcd409b33629c4c8f011a89b63f0a86baa1d5d08b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 283198760,
+                    "digest": "sha256:93a0baa150c3cb61584ca091a58c3cf0b27983a1b29a3d87750575a545178814"
+                }
+            ]
+        },
+        "16-ubuntu": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 8711,
+                "digest": "sha256:24b3d127e8bb6aa2a05d752b86a9c7fbc7e165f1250ae29c19c0808244345c18"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28572632,
+                    "digest": "sha256:d7bfe07ed8476565a440c2113cc64d7c0409dba8ef761fb3ec019d7e6b5952df"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 229700561,
+                    "digest": "sha256:0514b831dec1d57be4c70d76ba30e2fab9063d5dbacbaf0772ab8ca3d086b24f"
+                }
+            ]
+        },
+        "17-cbld": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 8688,
+                "digest": "sha256:a8f50110b6260ba3497cd370ab2e9032b259b1f8c6581c648a536bb6e6b75f66"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 52503648,
+                    "digest": "sha256:478508120fa89add3211d2a9623d42e39f70495764492cfe94702e30a06fd512"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 418545569,
+                    "digest": "sha256:157dde85b6812785400da8e6ac9fe27cdd1f1f18167fb5f65b140c1a7c2d02a7"
+                }
+            ]
+        },
+        "17-distroless": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:b17b23d6c41a2e0bedc0d8baf4f735cd5cac2474125ec7e2ebb308abcb3135c7",
+                    "size": 1288,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:a58713330d72571b650957dc3041f0baa2ae58f13adcdcae830b1c4553b23351",
+                    "size": 1288,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "17-mariner": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:263e4aa4d8a6360c5a618f7006a23d5f2aca4fc5db2bc12f0150d0dd1da66424",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:3508c3bb8d88a67a017e0b91fb66664842c3b5ce1a7f8864ffd5916626437fc6",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "17-mariner-cm1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:3034117d2edc7b57243cc1f6a5e215370deecb8cea790d857dfbb335f0893f7d",
+                    "size": 865,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:cf1ee4db0955fd5d341f1f439af8f0aa700dfde67408960c5408de08c9fb10e8",
+                    "size": 865,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:d936348d5f95152b9fc1a021579100fc64aba0718b44ad1ceca6c45cc4a20f20",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:3034117d2edc7b57243cc1f6a5e215370deecb8cea790d857dfbb335f0893f7d",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:b155d97231d609638ff41960830e3fbe1d10d026154e02ab10d2f9c4d67f935c",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:cf1ee4db0955fd5d341f1f439af8f0aa700dfde67408960c5408de08c9fb10e8",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        },
+        "17-ubuntu": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:2123ba67260485c8cb5de94d3f86f6609f966db0d013e8f39f5a98d82b4b49a7",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:c4ac1cafc25fe4d6689d43a580ff81811a87f27808b5295736a6c1f317f1cdac",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "21-distroless": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:6a5fc71acdce689e9de6b0a2313d26e797fa221d5583723c938267448f3106c3",
+                    "size": 1288,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:12d246e530631027e68a1a6318148d8042e2c07f1e295f02c9cda2fed1cee0d0",
+                    "size": 1288,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "21-mariner": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:397817ea2fa61ff561b92895ab2217db01ee6854c0b1348638b353f8835a4531",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:c59ebb0ab3352e2eaceec991e911078fdb6a910f622858b6cedd26100eee2335",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "21-mariner-cm1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:d9b8f584d1f47999fb86d7fffacf48685cb015593da79c945ca8d1c1e64e1575",
+                    "size": 865,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:00e5df20c26a65f2458591b3c220ad01b619954dd4754f03afcedd9062f26b2c",
+                    "size": 865,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:8c90ec5be1e4c54477efef90f81927a36e81e9bb9e3a9660c943cefb757604dc",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:d9b8f584d1f47999fb86d7fffacf48685cb015593da79c945ca8d1c1e64e1575",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:a42e7a51780ffa7983e271dd9526fd770d2bf4907cb92ae45624a4e058d6abba",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:00e5df20c26a65f2458591b3c220ad01b619954dd4754f03afcedd9062f26b2c",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        },
+        "21-ubuntu": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:f0a7f3ac87146643d5f402e2036a8c82d6834b0ae0ba5845adfbcfb9649f65c2",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:3761db512b5886b25b283c6e76d3bf6df58c4b4a0ccac41c2b97c998bc6805af",
+                    "size": 899,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "8-distroless": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:786646d55eb6aabcab94ca665bea5a962c609505230690d6b09b194b0e68b970",
+                    "size": 1288,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:7d2cea9482853cf6dc33a841cf0835ad335fe4b8c2b3fbf23f57bdee4ab3eb91",
+                    "size": 1288,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "8-mariner": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:f308fefcfcb9040427b05b89eb14b7355161a2bd2f75b289802991fa9a1d8ee9",
+                    "size": 898,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:be8ebc082a163fca77b4811cb24f93dfe04ef1fec77c7c4942ceba1c68b530eb",
+                    "size": 898,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "11-cbld",
+        "11-distroless",
+        "11-mariner",
+        "11-mariner-cm1",
+        "11-ubuntu",
+        "16-cbld",
+        "16-mariner",
+        "16-ubuntu",
+        "17-cbld",
+        "17-distroless",
+        "17-mariner",
+        "17-mariner-cm1",
+        "17-ubuntu",
+        "21-distroless",
+        "21-mariner",
+        "21-mariner-cm1",
+        "21-ubuntu",
+        "8-distroless",
+        "8-mariner"
+    ],
+    "configs": {
+        "11-cbld": {
+            "architecture": "amd64",
+            "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-11-amd64"
+                ],
+                "Cmd": null,
+                "Image": "sha256:3207bdacd2532977892728778d770c2903fae60a2c2fd2749a2ec14bd63d6b7f",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36196",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36196",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:828935e04bcc7a12e777c6c7a0e9078e5ae58f49211a3e2777df04595f2903d7",
+                    "image.base.ref.name": "sbidprod.azurecr.io/quinault"
+                }
+            },
+            "container": "87d1415f12a4c05b86bd0ef1209c7c998596d72cefb5f46caf687a582340397e",
+            "container_config": {
+                "Hostname": "87d1415f12a4",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-11-amd64"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "LABEL image.base.ref.name=sbidprod.azurecr.io/quinault"
+                ],
+                "Image": "sha256:3207bdacd2532977892728778d770c2903fae60a2c2fd2749a2ec14bd63d6b7f",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36196",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36196",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:828935e04bcc7a12e777c6c7a0e9078e5ae58f49211a3e2777df04595f2903d7",
+                    "image.base.ref.name": "sbidprod.azurecr.io/quinault"
+                }
+            },
+            "created": "2022-06-22T20:27:00.427706049Z",
+            "docker_version": "20.10.17+azure-1",
+            "history": [
+                {
+                    "created": "2022-06-21T16:03:59.087527943Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2022-06-22T20:26:18.305386005Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:19.351299425Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Author=Microsoft",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:20.348014745Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:21.336370028Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ARG package=msopenjdk-11",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:48.211716909Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "|1 package=msopenjdk-11 /bin/sh -c DEBIAN_FRONTEND=noninteractive &&     apt-get -qq update &&     apt-get -qq upgrade &&     apt-get -qq install --no-install-recommends tzdata ca-certificates fontconfig locales apt-transport-https wget &&     echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen &&     locale-gen en_US.UTF-8 &&     wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb &&     dpkg -i packages-microsoft-prod.deb &&     echo \"deb https://packages.microsoft.com/repos/cbl-d quinault-universe main\" >> /etc/apt/sources.list &&     apt-get -qq update &&     apt-get -qq install $package &&     apt-get -qq purge apt-transport-https &&     apt-get -qq autoremove --purge &&     rm -rf /var/lib/apt/lists/* &&     echo java -Xshare:dump &&     java -Xshare:dump"
+                },
+                {
+                    "created": "2022-06-22T20:26:48.773121587Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:49.458220129Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-11-amd64",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:50.445555411Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.buildnumber=2022.6.36196",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:51.446721924Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/36196",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:52.431742785Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.definitionname=microsoft.openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:53.443197963Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.name=microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:54.431702833Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.uri=https://github.com/microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:55.448567251Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourcebranchname=main",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:56.449223336Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourceversion=5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:57.444192591Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/ms-juniper/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:58.429538296Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamproject=Juniper",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:59.450696987Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.digest=sha256:828935e04bcc7a12e777c6c7a0e9078e5ae58f49211a3e2777df04595f2903d7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:00.427706049Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.ref.name=sbidprod.azurecr.io/quinault",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:bf03b5ca0ac035a4c88869bda021e900fe05926ab8fece4d85cf80abde378134",
+                    "sha256:c5c12ec7955fdc385ebd9ea3089f0bf19be86c4ac76e274d963f7d76f2b66bf2"
+                ]
+            }
+        },
+        "11-distroless": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/jdk/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/jdk"
+                ],
+                "Entrypoint": [
+                    "/usr/jdk/bin/java"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                }
+            },
+            "created": "2024-05-24T09:22:06.437462241Z",
+            "history": [
+                {
+                    "created": "2024-05-23T01:16:47.634045077Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2024-05-23T01:16:49.051536969Z",
+                    "created_by": "ARG EULA=@EULA_FILE@",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-23T01:16:49.051536969Z",
+                    "created_by": "COPY EULA-Container.txt . # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:01.363301819Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:01.363301819Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:01.363301819Z",
+                    "created_by": "COPY /staging/ / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:05.940946517Z",
+                    "created_by": "COPY /usr/jdk/ /usr/jdk/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:06.437462241Z",
+                    "created_by": "COPY --chown=101:101 /staging/home/app /home/app # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:06.437462241Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:06.437462241Z",
+                    "created_by": "ENV JAVA_HOME=/usr/jdk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:06.437462241Z",
+                    "created_by": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/jdk/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:06.437462241Z",
+                    "created_by": "ENTRYPOINT [\"/usr/jdk/bin/java\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9b721539e406d1d183adbb8be06bf50c30fafb06f4e456b7167aa4c508d6fc46",
+                    "sha256:e9d9a5c596a3a1e1a301f6ce96da56869fed5e9c3c85c2577607f608b23d3e15",
+                    "sha256:842cf92e693fc97ed2c13e5485e88c3f12a59c4b06137aa95193629d15c4ad53",
+                    "sha256:b8213bb7c29fa2e2dadfa57aad34840db9425c906f1bb1dc41ad774a5b4820aa",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+                ]
+            }
+        },
+        "11-mariner": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-11"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-24T09:21:44.878760313Z",
+            "history": [
+                {
+                    "created": "2024-05-23T01:16:28.547718489Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "ARG EULA=@EULA_FILE@",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "COPY EULA-Container.txt . # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.878760313Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.878760313Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.878760313Z",
+                    "created_by": "ARG package=msopenjdk-11",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.878760313Z",
+                    "created_by": "ARG PKGS=tzdata ca-certificates freetype shadow-utils",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.878760313Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.878760313Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-11",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.878760313Z",
+                    "created_by": "RUN |2 package=msopenjdk-11 PKGS=tzdata ca-certificates freetype shadow-utils /bin/sh -c tdnf update -y &&     tdnf install -y ${package} ${PKGS} &&     tdnf clean all &&     groupadd --system --gid=101 app &&     adduser --uid 101 --gid 101 --system app &&     install -d -m 0755 -o 101 -g 101 \"/home/app\" &&     rm -rf /var/cache/tdnf &&     rm -rf /usr/lib/jvm/${package}/lib/src.zip &&     echo java -Xshare:dump &&     java -Xshare:dump # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f37afca768ab68735bc1975d73336a365f1c034e003f680a94fceacd2669b690",
+                    "sha256:d7a782b306bc527a5479164adb16a1c45476f1601192a572be8954438b989a03",
+                    "sha256:8c7a9440c66b7c3c88b48af4173ddcc183113ad99f04b985fd5b874b087cb359"
+                ]
+            }
+        },
+        "11-mariner-cm1": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-11"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-11-06T09:18:22.736653134Z",
+            "history": [
+                {
+                    "created": "2023-07-29T00:53:15.441115902Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2023-07-29T00:53:17.554842878Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG EULA=@EULA_FILE@",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-29T00:53:17.672264627Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:2c9b9395238ee55ff215d908ee6cf02975b45c4e6c97b276333bcd60ee705729 in . "
+                },
+                {
+                    "created": "2023-07-29T00:53:17.799036537Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:18:22.736653134Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:18:22.736653134Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:18:22.736653134Z",
+                    "created_by": "ARG package=msopenjdk-11",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:18:22.736653134Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:18:22.736653134Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-11",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:18:22.736653134Z",
+                    "created_by": "RUN |1 package=msopenjdk-11 /bin/sh -c tdnf -y update &&     tdnf -y upgrade &&     tdnf install -y tzdata ca-certificates freetype fontconfig &&     rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm &&     tdnf install -y mariner-repos-ui &&     tdnf install -y ${package} shadow-utils --nogpgcheck &&     tdnf clean all &&     rm -rf /var/cache/tdnf &&     rm -rf /usr/lib/jvm/${package}/lib/src.zip &&     groupadd --system --gid=101 app &&     adduser --uid 101 --gid 101 --system app &&     install -d -m 0755 -o 101 -g 101 \"/home/app\" &&     echo java -Xshare:dump &&     java -Xshare:dump # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:d388172310c1ab11d3d454c2c74282faf01e45c203fcee3eaa0e6e6926714ee6",
+                    "sha256:bbce43ff71d1bfbfa891eb45d9dc0117e358b9f681f01336b5b56e584ce4408c",
+                    "sha256:644115b0cc7db5ae25c1a35b3feb7d2f8d7ea54a322597a010414a56503f3329"
+                ]
+            }
+        },
+        "11-ubuntu": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-11"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                }
+            },
+            "created": "2024-05-24T09:22:20.716416631Z",
+            "history": [
+                {
+                    "created": "2024-04-27T13:18:35.154492474Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:35.173716357Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:35.206893769Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:35.24025223Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:37.180712343Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a5d32dc2ab15ff0d7dbd72af26e361eb1f3e87a0d29ec3a1ceab24ad7b3e6ba9 in / "
+                },
+                {
+                    "created": "2024-04-27T13:18:37.512234142Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:18.362379844Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:18.362379844Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:18.362379844Z",
+                    "created_by": "ARG package=msopenjdk-11",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:18.362379844Z",
+                    "created_by": "RUN |1 package=msopenjdk-11 /bin/sh -c DEBIAN_FRONTEND=noninteractive &&     apt-get -qq update &&     apt-get -qq upgrade &&     apt-get -qq install --no-install-recommends tzdata ca-certificates fontconfig locales apt-transport-https wget &&     echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen &&     locale-gen en_US.UTF-8 &&     wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb &&     dpkg -i packages-microsoft-prod.deb &&     apt-get -qq update &&     apt-get -qq install $package &&     apt-get -qq purge apt-transport-https wget &&     apt-get -qq autoremove --purge &&     rm -rf /var/lib/apt/lists/* &&     echo java -Xshare:dump &&     java -Xshare:dump &&     if [ $(uname -m) = \"x86_64\" ]; then ARCH=\"amd64\"; else ARCH=\"arm64\"; fi &&     rm -rf ./usr/lib/jvm/msopenjdk-11-${ARCH}/lib/src.zip &&     ln -s /usr/lib/jvm/msopenjdk-11-${ARCH} /usr/lib/jvm/msopenjdk-11 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:20.716416631Z",
+                    "created_by": "RUN |1 package=msopenjdk-11 /bin/sh -c groupadd --system --gid=101 app     && adduser --uid 101 --gid 101 --system app     && install -d -m 0755 -o 101 -g 101 \"/home/app\" # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:20.716416631Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:20.716416631Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-11",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:629ca62fb7c791374ce57626d6b8b62c76378be091a0daf1a60d32700b49add7",
+                    "sha256:d4195be126f9ece0bfb27790f6f06f7a7154d88e7f6cc9cc1ca3ee2c014dcc04",
+                    "sha256:fa73ae4e23284bac1b8325baa529bd8659f189ad222b92222dfd693dc6368644"
+                ]
+            }
+        },
+        "16-cbld": {
+            "architecture": "amd64",
+            "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-16-amd64"
+                ],
+                "Cmd": null,
+                "Image": "sha256:dd58f6b85c3123cb496be644f09e7819f47cee773a2710c7cba518dcf21381c5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36200",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36200",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:828935e04bcc7a12e777c6c7a0e9078e5ae58f49211a3e2777df04595f2903d7",
+                    "image.base.ref.name": "sbidprod.azurecr.io/quinault"
+                }
+            },
+            "container": "8828604b55b6139e1042d9ed83018fcbfba07a09942a9791c50850641aa2728c",
+            "container_config": {
+                "Hostname": "8828604b55b6",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-16-amd64"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "LABEL image.base.ref.name=sbidprod.azurecr.io/quinault"
+                ],
+                "Image": "sha256:dd58f6b85c3123cb496be644f09e7819f47cee773a2710c7cba518dcf21381c5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36200",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36200",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:828935e04bcc7a12e777c6c7a0e9078e5ae58f49211a3e2777df04595f2903d7",
+                    "image.base.ref.name": "sbidprod.azurecr.io/quinault"
+                }
+            },
+            "created": "2022-06-22T20:27:18.400483031Z",
+            "docker_version": "20.10.17+azure-1",
+            "history": [
+                {
+                    "created": "2022-06-21T16:03:59.087527943Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2022-06-22T20:26:35.550791646Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:36.308268431Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Author=Microsoft",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:37.326626815Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:38.32085166Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ARG package=msopenjdk-16",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:06.465552681Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "|1 package=msopenjdk-16 /bin/sh -c DEBIAN_FRONTEND=noninteractive &&     apt-get -qq update &&     apt-get -qq upgrade &&     apt-get -qq install --no-install-recommends tzdata ca-certificates fontconfig locales apt-transport-https wget &&     echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen &&     locale-gen en_US.UTF-8 &&     wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb &&     dpkg -i packages-microsoft-prod.deb &&     echo \"deb https://packages.microsoft.com/repos/cbl-d quinault-universe main\" >> /etc/apt/sources.list &&     apt-get -qq update &&     apt-get -qq install $package &&     apt-get -qq purge apt-transport-https &&     apt-get -qq autoremove --purge &&     rm -rf /var/lib/apt/lists/* &&     echo java -Xshare:dump &&     java -Xshare:dump"
+                },
+                {
+                    "created": "2022-06-22T20:27:07.011036462Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:07.411949714Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-16-amd64",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:08.420209486Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.buildnumber=2022.6.36200",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:09.413470552Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/36200",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:10.40002157Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.definitionname=microsoft.openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:11.394747758Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.name=microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:12.399553567Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.uri=https://github.com/microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:13.40863179Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourcebranchname=main",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:14.399552854Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourceversion=5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:15.396004336Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/ms-juniper/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:16.394448924Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamproject=Juniper",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:17.404453651Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.digest=sha256:828935e04bcc7a12e777c6c7a0e9078e5ae58f49211a3e2777df04595f2903d7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:18.400483031Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.ref.name=sbidprod.azurecr.io/quinault",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:bf03b5ca0ac035a4c88869bda021e900fe05926ab8fece4d85cf80abde378134",
+                    "sha256:27ac22790bf03c660e643a4b4f5fff1b593e274208b56a2efba18d429c829d8f"
+                ]
+            }
+        },
+        "16-mariner": {
+            "architecture": "amd64",
+            "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-16"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Image": "sha256:acdc1c617272111533e49571b149dec501a9a0c9efcddee064af4b02dbd1dfc8",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36199",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36199",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:c415cad59f857aa3295270ec77efd856cb1b24b4e4f46d1fb74a6226a1787411",
+                    "image.base.ref.name": "cblmariner.azurecr.io/base/core:1.0"
+                }
+            },
+            "container": "5828cf38b5a6b3d61a0edac2ae85bda5c72ba734abf0be213c559fd9c088a332",
+            "container_config": {
+                "Hostname": "5828cf38b5a6",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-16"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "LABEL image.base.ref.name=cblmariner.azurecr.io/base/core:1.0"
+                ],
+                "Image": "sha256:acdc1c617272111533e49571b149dec501a9a0c9efcddee064af4b02dbd1dfc8",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36199",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36199",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:c415cad59f857aa3295270ec77efd856cb1b24b4e4f46d1fb74a6226a1787411",
+                    "image.base.ref.name": "cblmariner.azurecr.io/base/core:1.0"
+                }
+            },
+            "created": "2022-06-22T20:28:45.409067587Z",
+            "docker_version": "20.10.17+azure-1",
+            "history": [
+                {
+                    "created": "2022-06-16T06:05:14.121767937Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2022-06-22T20:27:18.977361579Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:19.28534614Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Author=Microsoft",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:20.282331785Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:21.285609978Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:22.278460142Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ARG package=msopenjdk-16",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:34.034418869Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "|1 package=msopenjdk-16 /bin/sh -c tdnf -y update &&     tdnf -y upgrade &&     tdnf install -y tzdata ca-certificates freetype fontconfig &&     rm -rf /var/cache/tdnf &&     rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm &&     tdnf install -y mariner-repos-ui &&     tdnf install -y $package --nogpgcheck &&     echo java -Xshare:dump &&     java -Xshare:dump"
+                },
+                {
+                    "created": "2022-06-22T20:28:34.578536739Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-16",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:35.404553376Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.buildnumber=2022.6.36199",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:36.408643096Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/36199",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:37.403754377Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.definitionname=microsoft.openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:38.407204894Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.name=microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:39.406304392Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.uri=https://github.com/microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:40.410197311Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourcebranchname=main",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:41.410280714Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourceversion=5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:42.40460118Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/ms-juniper/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:43.415424921Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamproject=Juniper",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:44.409537535Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.digest=sha256:c415cad59f857aa3295270ec77efd856cb1b24b4e4f46d1fb74a6226a1787411",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:28:45.409067587Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.ref.name=cblmariner.azurecr.io/base/core:1.0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c367d330db3f2d7486b57e2ac0b754efba63fe53d866743ad547112e8bf93ce0",
+                    "sha256:975febc30a8238ab822f9cf022c3a0b48f888cc322cdb04623403e2c6ba052fc"
+                ]
+            }
+        },
+        "16-ubuntu": {
+            "architecture": "amd64",
+            "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-16-amd64"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Image": "sha256:ec100fc09c5d349047be532af07e68042954e0b4f0830546e6af9488bf15de6c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36195",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36195",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:fd92c36d3cb9b1d027c4d2a72c6bf0125da82425fc2ca37c414d4f010180dc19",
+                    "image.base.ref.name": "ubuntu:focal"
+                }
+            },
+            "container": "e355e0443373de8f7ac48d26c5292300b22c2eb47eae6050fc34b0cb58e28e2e",
+            "container_config": {
+                "Hostname": "e355e0443373",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-16-amd64"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "LABEL image.base.ref.name=ubuntu:focal"
+                ],
+                "Image": "sha256:ec100fc09c5d349047be532af07e68042954e0b4f0830546e6af9488bf15de6c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36195",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36195",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:fd92c36d3cb9b1d027c4d2a72c6bf0125da82425fc2ca37c414d4f010180dc19",
+                    "image.base.ref.name": "ubuntu:focal"
+                }
+            },
+            "created": "2022-06-22T20:26:53.318191649Z",
+            "docker_version": "20.10.17+azure-1",
+            "history": [
+                {
+                    "created": "2022-06-06T22:21:11.683921179Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:00dae10e79b05c4e1a3db053a1f85a4f38a39fe85cbbd88d74201a01a7dd59b5 in / "
+                },
+                {
+                    "created": "2022-06-06T22:21:12.070779776Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:25:55.380439858Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:25:56.17392715Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Author=Microsoft",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:25:57.177264897Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:25:58.181410158Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ARG package=msopenjdk-16",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:41.581169119Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "|1 package=msopenjdk-16 /bin/sh -c DEBIAN_FRONTEND=noninteractive &&     apt-get -qq update &&     apt-get -qq upgrade &&     apt-get -qq install --no-install-recommends tzdata ca-certificates fontconfig locales apt-transport-https wget binutils &&     echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen &&     locale-gen en_US.UTF-8 &&     wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb &&     dpkg -i packages-microsoft-prod.deb &&     apt-get -qq update &&     apt-get -qq install $package &&     apt-get -qq purge apt-transport-https wget &&     apt-get -qq autoremove --purge &&     rm -rf /var/lib/apt/lists/* &&     echo java -Xshare:dump &&     java -Xshare:dump"
+                },
+                {
+                    "created": "2022-06-22T20:26:42.034359138Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:42.347009319Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-16-amd64",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:43.317525779Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.buildnumber=2022.6.36195",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:44.312093123Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/36195",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:45.322228614Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.definitionname=microsoft.openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:46.312654191Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.name=microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:47.30942867Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.uri=https://github.com/microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:48.313463164Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourcebranchname=main",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:49.328268729Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourceversion=5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:50.313378122Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/ms-juniper/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:51.313507347Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamproject=Juniper",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:52.322188499Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.digest=sha256:fd92c36d3cb9b1d027c4d2a72c6bf0125da82425fc2ca37c414d4f010180dc19",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:53.318191649Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.ref.name=ubuntu:focal",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:af7ed92504ae4c20128a0f01048d41d467fef5c795c38d0defdb998a187ed1d4",
+                    "sha256:9ef75183cf1a89b81364240230a1aed2e85de91fee4a3dd79b65714409cfb1fb"
+                ]
+            }
+        },
+        "17-cbld": {
+            "architecture": "amd64",
+            "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-17-amd64"
+                ],
+                "Cmd": null,
+                "Image": "sha256:8dac3d2025a40c32e0e8cd0573bfda7c1994e7ba7eca1b398f78269a06325b84",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36201",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36201",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:828935e04bcc7a12e777c6c7a0e9078e5ae58f49211a3e2777df04595f2903d7",
+                    "image.base.ref.name": "sbidprod.azurecr.io/quinault"
+                }
+            },
+            "container": "017585fbab8cc943d740e988b62b2ea41dc54c201ed6c2e73d8ba456a8cafc75",
+            "container_config": {
+                "Hostname": "017585fbab8c",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-17-amd64"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "LABEL image.base.ref.name=sbidprod.azurecr.io/quinault"
+                ],
+                "Image": "sha256:8dac3d2025a40c32e0e8cd0573bfda7c1994e7ba7eca1b398f78269a06325b84",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "com.azure.dev.image.build.buildnumber": "2022.6.36201",
+                    "com.azure.dev.image.build.builduri": "vstfs:///Build/Build/36201",
+                    "com.azure.dev.image.build.definitionname": "microsoft.openjdk-docker",
+                    "com.azure.dev.image.build.repository.name": "microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.repository.uri": "https://github.com/microsoft/openjdk-docker",
+                    "com.azure.dev.image.build.sourcebranchname": "main",
+                    "com.azure.dev.image.build.sourceversion": "5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "com.azure.dev.image.system.teamfoundationcollectionuri": "https://dev.azure.com/ms-juniper/",
+                    "com.azure.dev.image.system.teamproject": "Juniper",
+                    "image.base.digest": "sha256:828935e04bcc7a12e777c6c7a0e9078e5ae58f49211a3e2777df04595f2903d7",
+                    "image.base.ref.name": "sbidprod.azurecr.io/quinault"
+                }
+            },
+            "created": "2022-06-22T20:27:23.413367626Z",
+            "docker_version": "20.10.17+azure-1",
+            "history": [
+                {
+                    "created": "2022-06-21T16:03:59.087527943Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2022-06-22T20:26:41.882543795Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:42.31458274Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Author=Microsoft",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:43.33532799Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:26:44.325660898Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ARG package=msopenjdk-17",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:11.490853106Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "|1 package=msopenjdk-17 /bin/sh -c DEBIAN_FRONTEND=noninteractive &&     apt-get -qq update &&     apt-get -qq upgrade &&     apt-get -qq install --no-install-recommends tzdata ca-certificates fontconfig locales apt-transport-https wget &&     echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen &&     locale-gen en_US.UTF-8 &&     wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb &&     dpkg -i packages-microsoft-prod.deb &&     echo \"deb https://packages.microsoft.com/repos/cbl-d quinault-universe main\" >> /etc/apt/sources.list &&     apt-get -qq update &&     apt-get -qq install $package &&     apt-get -qq purge apt-transport-https &&     apt-get -qq autoremove --purge &&     rm -rf /var/lib/apt/lists/* &&     echo java -Xshare:dump &&     java -Xshare:dump"
+                },
+                {
+                    "created": "2022-06-22T20:27:12.069898146Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:12.489866212Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-17-amd64",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:13.43268441Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.buildnumber=2022.6.36201",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:14.420728077Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.builduri=vstfs:///Build/Build/36201",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:15.421445694Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.definitionname=microsoft.openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:16.421591343Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.name=microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:17.41996208Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.repository.uri=https://github.com/microsoft/openjdk-docker",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:18.400717585Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourcebranchname=main",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:19.422236293Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.build.sourceversion=5df8cd96e7544129d2dfd8de3aa1947a8da3aab3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:20.412104766Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/ms-juniper/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:21.440339853Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.azure.dev.image.system.teamproject=Juniper",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:22.421864061Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.digest=sha256:828935e04bcc7a12e777c6c7a0e9078e5ae58f49211a3e2777df04595f2903d7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-22T20:27:23.413367626Z",
+                    "author": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL image.base.ref.name=sbidprod.azurecr.io/quinault",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:bf03b5ca0ac035a4c88869bda021e900fe05926ab8fece4d85cf80abde378134",
+                    "sha256:8d776112f48f89a8a2be13f2c4156dcf95b5ad1c7d9470e045d8490cb7e29f35"
+                ]
+            }
+        },
+        "17-distroless": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/jdk/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/jdk"
+                ],
+                "Entrypoint": [
+                    "/usr/jdk/bin/java"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                }
+            },
+            "created": "2024-05-24T09:21:44.397308802Z",
+            "history": [
+                {
+                    "created": "2024-05-23T01:16:47.634045077Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2024-05-23T01:16:49.051536969Z",
+                    "created_by": "ARG EULA=@EULA_FILE@",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-23T01:16:49.051536969Z",
+                    "created_by": "COPY EULA-Container.txt . # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:21:39.448750951Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:39.448750951Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:39.448750951Z",
+                    "created_by": "COPY /staging/ / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:21:43.587576783Z",
+                    "created_by": "COPY /usr/jdk/ /usr/jdk/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:21:44.397308802Z",
+                    "created_by": "COPY --chown=101:101 /staging/home/app /home/app # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:21:44.397308802Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.397308802Z",
+                    "created_by": "ENV JAVA_HOME=/usr/jdk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.397308802Z",
+                    "created_by": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/jdk/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:44.397308802Z",
+                    "created_by": "ENTRYPOINT [\"/usr/jdk/bin/java\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9b721539e406d1d183adbb8be06bf50c30fafb06f4e456b7167aa4c508d6fc46",
+                    "sha256:e9d9a5c596a3a1e1a301f6ce96da56869fed5e9c3c85c2577607f608b23d3e15",
+                    "sha256:43e9f017d728527f22ef08a5543a769055e04c6c1364c387a1f79d020a26450e",
+                    "sha256:7901d4cf0c9ff8f3d8a98247e5afa174b90eb8e56fcab2baf7954e74c78b197a",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+                ]
+            }
+        },
+        "17-mariner": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-17"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-24T09:21:56.25747226Z",
+            "history": [
+                {
+                    "created": "2024-05-23T01:16:28.547718489Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "ARG EULA=@EULA_FILE@",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "COPY EULA-Container.txt . # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:56.25747226Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:56.25747226Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:56.25747226Z",
+                    "created_by": "ARG package=msopenjdk-17",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:56.25747226Z",
+                    "created_by": "ARG PKGS=tzdata ca-certificates freetype shadow-utils",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:56.25747226Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:56.25747226Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-17",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:56.25747226Z",
+                    "created_by": "RUN |2 package=msopenjdk-17 PKGS=tzdata ca-certificates freetype shadow-utils /bin/sh -c tdnf update -y &&     tdnf install -y ${package} ${PKGS} &&     tdnf clean all &&     groupadd --system --gid=101 app &&     adduser --uid 101 --gid 101 --system app &&     install -d -m 0755 -o 101 -g 101 \"/home/app\" &&     rm -rf /var/cache/tdnf &&     rm -rf /usr/lib/jvm/${package}/lib/src.zip &&     echo java -Xshare:dump &&     java -Xshare:dump # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f37afca768ab68735bc1975d73336a365f1c034e003f680a94fceacd2669b690",
+                    "sha256:d7a782b306bc527a5479164adb16a1c45476f1601192a572be8954438b989a03",
+                    "sha256:273d7c4afadc536dd956a3f29806eab195421986d55a163b7364cd207d55f032"
+                ]
+            }
+        },
+        "17-mariner-cm1": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-17"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-11-06T09:16:50.077724143Z",
+            "history": [
+                {
+                    "created": "2023-07-29T00:53:15.441115902Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2023-07-29T00:53:17.554842878Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG EULA=@EULA_FILE@",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-29T00:53:17.672264627Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:2c9b9395238ee55ff215d908ee6cf02975b45c4e6c97b276333bcd60ee705729 in . "
+                },
+                {
+                    "created": "2023-07-29T00:53:17.799036537Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:16:50.077724143Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:16:50.077724143Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:16:50.077724143Z",
+                    "created_by": "ARG package=msopenjdk-17",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:16:50.077724143Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:16:50.077724143Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-17",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T09:16:50.077724143Z",
+                    "created_by": "RUN |1 package=msopenjdk-17 /bin/sh -c tdnf -y update &&     tdnf -y upgrade &&     tdnf install -y tzdata ca-certificates freetype fontconfig &&     rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm &&     tdnf install -y mariner-repos-ui &&     tdnf install -y ${package} shadow-utils --nogpgcheck &&     tdnf clean all &&     rm -rf /var/cache/tdnf &&     rm -rf /usr/lib/jvm/${package}/lib/src.zip &&     groupadd --system --gid=101 app &&     adduser --uid 101 --gid 101 --system app &&     install -d -m 0755 -o 101 -g 101 \"/home/app\" &&     echo java -Xshare:dump &&     java -Xshare:dump # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:d388172310c1ab11d3d454c2c74282faf01e45c203fcee3eaa0e6e6926714ee6",
+                    "sha256:bbce43ff71d1bfbfa891eb45d9dc0117e358b9f681f01336b5b56e584ce4408c",
+                    "sha256:381daf2a3bc9f72dd23bbd2bff121ef861f42049e63a9e7e402198d504a61322"
+                ]
+            }
+        },
+        "17-ubuntu": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-17"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                }
+            },
+            "created": "2024-05-24T09:23:26.758681189Z",
+            "history": [
+                {
+                    "created": "2024-04-27T13:18:35.154492474Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:35.173716357Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:35.206893769Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:35.24025223Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:37.180712343Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a5d32dc2ab15ff0d7dbd72af26e361eb1f3e87a0d29ec3a1ceab24ad7b3e6ba9 in / "
+                },
+                {
+                    "created": "2024-04-27T13:18:37.512234142Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:23:24.82450766Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:23:24.82450766Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:23:24.82450766Z",
+                    "created_by": "ARG package=msopenjdk-17",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:23:24.82450766Z",
+                    "created_by": "RUN |1 package=msopenjdk-17 /bin/sh -c DEBIAN_FRONTEND=noninteractive &&     apt-get -qq update &&     apt-get -qq upgrade &&     apt-get -qq install --no-install-recommends tzdata ca-certificates fontconfig locales apt-transport-https wget binutils &&     echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen &&     locale-gen en_US.UTF-8 &&     wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb &&     dpkg -i packages-microsoft-prod.deb &&     apt-get -qq update &&     apt-get -qq install $package &&     apt-get -qq purge apt-transport-https wget &&     apt-get -qq autoremove --purge &&     rm -rf /var/lib/apt/lists/* &&     echo java -Xshare:dump &&     java -Xshare:dump &&     if [ $(uname -m) = \"x86_64\" ]; then ARCH=\"amd64\"; else ARCH=\"arm64\"; fi &&     rm -rf ./usr/lib/jvm/msopenjdk-17-${ARCH}/lib/src.zip &&     ln -s /usr/lib/jvm/msopenjdk-17-${ARCH} /usr/lib/jvm/msopenjdk-17 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:23:26.758681189Z",
+                    "created_by": "RUN |1 package=msopenjdk-17 /bin/sh -c groupadd --system --gid=101 app     && adduser --uid 101 --gid 101 --system app     && install -d -m 0755 -o 101 -g 101 \"/home/app\" # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:23:26.758681189Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:23:26.758681189Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-17",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:629ca62fb7c791374ce57626d6b8b62c76378be091a0daf1a60d32700b49add7",
+                    "sha256:4459bd4143b73786448ac7a3d7be526e526f255efbeb80fe37f4d0c83e326603",
+                    "sha256:dc60cf44cea6c18641c8c60a62d3233cbc8b44d98f21ec7b37f94ed9014679fc"
+                ]
+            }
+        },
+        "21-distroless": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/jdk/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/jdk"
+                ],
+                "Entrypoint": [
+                    "/usr/jdk/bin/java"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                }
+            },
+            "created": "2024-05-24T09:26:54.610734647Z",
+            "history": [
+                {
+                    "created": "2024-05-23T01:16:47.634045077Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2024-05-23T01:16:49.051536969Z",
+                    "created_by": "ARG EULA=@EULA_FILE@",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-23T01:16:49.051536969Z",
+                    "created_by": "COPY EULA-Container.txt . # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:26:48.769304899Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:26:48.769304899Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:26:48.769304899Z",
+                    "created_by": "COPY /staging/ / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:26:53.798799211Z",
+                    "created_by": "COPY /usr/jdk/ /usr/jdk/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:26:54.610734647Z",
+                    "created_by": "COPY --chown=101:101 /staging/home/app /home/app # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:26:54.610734647Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:26:54.610734647Z",
+                    "created_by": "ENV JAVA_HOME=/usr/jdk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:26:54.610734647Z",
+                    "created_by": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/jdk/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:26:54.610734647Z",
+                    "created_by": "ENTRYPOINT [\"/usr/jdk/bin/java\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9b721539e406d1d183adbb8be06bf50c30fafb06f4e456b7167aa4c508d6fc46",
+                    "sha256:e9d9a5c596a3a1e1a301f6ce96da56869fed5e9c3c85c2577607f608b23d3e15",
+                    "sha256:c52c9edb3e458ee2fcbb86ae1795eba7d50197c2cb76b9ff33f9aea2f9886139",
+                    "sha256:d6dfb9a7eaf9d8632b143b51d42dae1f4684c8984dc8b7635cf82839b67d6f61",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+                ]
+            }
+        },
+        "21-mariner": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-21"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-24T09:21:35.175031066Z",
+            "history": [
+                {
+                    "created": "2024-05-23T01:16:28.547718489Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "ARG EULA=@EULA_FILE@",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "COPY EULA-Container.txt . # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:35.175031066Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:35.175031066Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:35.175031066Z",
+                    "created_by": "ARG package=msopenjdk-21",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:35.175031066Z",
+                    "created_by": "ARG PKGS=tzdata ca-certificates freetype shadow-utils",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:35.175031066Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:35.175031066Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-21",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:35.175031066Z",
+                    "created_by": "RUN |2 package=msopenjdk-21 PKGS=tzdata ca-certificates freetype shadow-utils /bin/sh -c tdnf update -y &&     tdnf install -y ${package} ${PKGS} &&     tdnf clean all &&     groupadd --system --gid=101 app &&     adduser --uid 101 --gid 101 --system app &&     install -d -m 0755 -o 101 -g 101 \"/home/app\" &&     rm -rf /var/cache/tdnf &&     rm -rf /usr/lib/jvm/${package}/lib/src.zip &&     echo java -Xshare:dump &&     java -Xshare:dump # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f37afca768ab68735bc1975d73336a365f1c034e003f680a94fceacd2669b690",
+                    "sha256:d7a782b306bc527a5479164adb16a1c45476f1601192a572be8954438b989a03",
+                    "sha256:c48cc918583a11170d52beff0082ce4bced5297b945842b6978b39e1824bd506"
+                ]
+            }
+        },
+        "21-mariner-cm1": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-21"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-09-27T00:42:56.770273241Z",
+            "history": [
+                {
+                    "created": "2023-07-29T00:53:15.441115902Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2023-07-29T00:53:17.554842878Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG EULA=@EULA_FILE@",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-29T00:53:17.672264627Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:2c9b9395238ee55ff215d908ee6cf02975b45c4e6c97b276333bcd60ee705729 in . "
+                },
+                {
+                    "created": "2023-07-29T00:53:17.799036537Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-09-27T00:42:56.770273241Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-09-27T00:42:56.770273241Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-09-27T00:42:56.770273241Z",
+                    "created_by": "ARG package=msopenjdk-21",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-09-27T00:42:56.770273241Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-09-27T00:42:56.770273241Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-21",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-09-27T00:42:56.770273241Z",
+                    "created_by": "RUN |1 package=msopenjdk-21 /bin/sh -c tdnf -y update &&     tdnf -y upgrade &&     tdnf install -y tzdata ca-certificates freetype fontconfig &&     rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm &&     tdnf install -y mariner-repos-ui &&     tdnf install -y ${package} shadow-utils --nogpgcheck &&     tdnf clean all &&     rm -rf /var/cache/tdnf &&     rm -rf /usr/lib/jvm/${package}/lib/src.zip &&     groupadd --system --gid=101 app &&     adduser --uid 101 --gid 101 --system app &&     install -d -m 0755 -o 101 -g 101 \"/home/app\" &&     echo java -Xshare:dump &&     java -Xshare:dump # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:d388172310c1ab11d3d454c2c74282faf01e45c203fcee3eaa0e6e6926714ee6",
+                    "sha256:bbce43ff71d1bfbfa891eb45d9dc0117e358b9f681f01336b5b56e584ce4408c",
+                    "sha256:c822a294714257a8f63fa4069e0ecd36b6dfcbbc15af4faa47f2526e2d40e9e0"
+                ]
+            }
+        },
+        "21-ubuntu": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/msopenjdk-21"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                }
+            },
+            "created": "2024-05-24T09:23:01.426662442Z",
+            "history": [
+                {
+                    "created": "2024-04-27T13:18:35.154492474Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:35.173716357Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:35.206893769Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:35.24025223Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-27T13:18:37.180712343Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a5d32dc2ab15ff0d7dbd72af26e361eb1f3e87a0d29ec3a1ceab24ad7b3e6ba9 in / "
+                },
+                {
+                    "created": "2024-04-27T13:18:37.512234142Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:58.759643625Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:58.759643625Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:58.759643625Z",
+                    "created_by": "ARG package=msopenjdk-21",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:58.759643625Z",
+                    "created_by": "RUN |1 package=msopenjdk-21 /bin/sh -c DEBIAN_FRONTEND=noninteractive &&     apt-get -qq update &&     apt-get -qq upgrade &&     apt-get -qq install --no-install-recommends tzdata ca-certificates fontconfig locales apt-transport-https wget binutils &&     echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen &&     locale-gen en_US.UTF-8 &&     wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb &&     dpkg -i packages-microsoft-prod.deb &&     apt-get -qq update &&     apt-get -qq install $package &&     apt-get -qq purge apt-transport-https wget &&     apt-get -qq autoremove --purge &&     rm -rf /var/lib/apt/lists/* &&     echo java -Xshare:dump &&     java -Xshare:dump &&     if [ $(uname -m) = \"x86_64\" ]; then ARCH=\"amd64\"; else ARCH=\"arm64\"; fi &&     rm -rf ./usr/lib/jvm/msopenjdk-21-${ARCH}/lib/src.zip &&     ln -s /usr/lib/jvm/msopenjdk-21-${ARCH} /usr/lib/jvm/msopenjdk-21 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:23:01.426662442Z",
+                    "created_by": "RUN |1 package=msopenjdk-21 /bin/sh -c groupadd --system --gid=101 app     && adduser --uid 101 --gid 101 --system app     && install -d -m 0755 -o 101 -g 101 \"/home/app\" # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:23:01.426662442Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:23:01.426662442Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/msopenjdk-21",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:629ca62fb7c791374ce57626d6b8b62c76378be091a0daf1a60d32700b49add7",
+                    "sha256:3eb2ab85adc9356c481477293790997fac8d7efbb483971d28cb71c5468ecec6",
+                    "sha256:e5b336f36e8e53df27932b7b570da6e70156a073b693f38ea179156187eff1a8"
+                ]
+            }
+        },
+        "8-distroless": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/jdk/bin",
+                    "JAVA_HOME=/usr/jdk"
+                ],
+                "Entrypoint": [
+                    "/usr/jdk/bin/java"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                }
+            },
+            "created": "2024-05-24T09:22:43.620263783Z",
+            "history": [
+                {
+                    "created": "2024-05-23T01:16:47.634045077Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2024-05-23T01:16:49.051536969Z",
+                    "created_by": "ARG EULA=@EULA_FILE@",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-23T01:16:49.051536969Z",
+                    "created_by": "COPY EULA-Container.txt . # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:39.7329433Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:39.7329433Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:39.7329433Z",
+                    "created_by": "COPY /staging/ / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:43.131768656Z",
+                    "created_by": "COPY /usr/jdk/ /usr/jdk/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:43.620263783Z",
+                    "created_by": "COPY --chown=101:101 /staging/home/app /home/app # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-24T09:22:43.620263783Z",
+                    "created_by": "ENV JAVA_HOME=/usr/jdk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:43.620263783Z",
+                    "created_by": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/jdk/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:22:43.620263783Z",
+                    "created_by": "ENTRYPOINT [\"/usr/jdk/bin/java\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9b721539e406d1d183adbb8be06bf50c30fafb06f4e456b7167aa4c508d6fc46",
+                    "sha256:e9d9a5c596a3a1e1a301f6ce96da56869fed5e9c3c85c2577607f608b23d3e15",
+                    "sha256:b5232ed51d28127a386f6e8e50984e0605dd4a5ae9003e58adde271c25409f22",
+                    "sha256:d3a5393456f6848961ffb3d7789ca5deedff0a9ed81629d98d5653fc09eaed04",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+                ]
+            }
+        },
+        "8-mariner": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/temurin-8-jdk"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "Author": "Microsoft",
+                    "Support": "Microsoft OpenJDK Support <openjdk-support@microsoft.com>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-24T09:21:15.581540224Z",
+            "history": [
+                {
+                    "created": "2024-05-23T01:16:28.547718489Z",
+                    "comment": "Imported from -"
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "ARG EULA=@EULA_FILE@",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "COPY EULA-Container.txt . # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-23T01:16:37.562994362Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:15.581540224Z",
+                    "created_by": "LABEL Author=Microsoft",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:15.581540224Z",
+                    "created_by": "LABEL Support=Microsoft OpenJDK Support <openjdk-support@microsoft.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:15.581540224Z",
+                    "created_by": "ARG JDK_PKG=temurin-8-jdk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:15.581540224Z",
+                    "created_by": "ARG PKGS=tzdata ca-certificates freetype shadow-utils",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:15.581540224Z",
+                    "created_by": "ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:15.581540224Z",
+                    "created_by": "ENV JAVA_HOME=/usr/lib/jvm/temurin-8-jdk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-24T09:21:15.581540224Z",
+                    "created_by": "RUN |2 JDK_PKG=temurin-8-jdk PKGS=tzdata ca-certificates freetype shadow-utils /bin/sh -c tdnf update -y &&     tdnf install -y ${JDK_PKG} ${PKGS} &&     tdnf clean all &&     groupadd --system --gid=101 app &&     adduser --uid 101 --gid 101 --system app &&     install -d -m 0755 -o 101 -g 101 \"/home/app\" &&     rm -rf /var/cache/tdnf &&     rm -rf ./usr/lib/jvm/${JDK_PKG}/src.zip # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f37afca768ab68735bc1975d73336a365f1c034e003f680a94fceacd2669b690",
+                    "sha256:d7a782b306bc527a5479164adb16a1c45476f1601192a572be8954438b989a03",
+                    "sha256:903a52e98646f9f4f2ff6b7b617084867b9cc9372d1c11f640906c787961c7db"
+                ]
+            }
+        }
+    }
+}

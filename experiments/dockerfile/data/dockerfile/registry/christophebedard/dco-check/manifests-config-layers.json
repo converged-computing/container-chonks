@@ -1,0 +1,77 @@
+{
+    "manifests": {
+        "latest": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:b110386251b0ed1364f86225d4d1e308d054d915c65d9a7492694f52d2e8fd38",
+                    "size": 951,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:79d0ab622abc26a5b3df3b150c4691017ca40d48cf1b51b02a34f2b9f7477d57",
+                    "size": 951,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "OnBuild": null
+            },
+            "created": "2023-01-03T21:53:13.157626369Z",
+            "history": [
+                {
+                    "created": "2022-12-09T01:20:21.30286184Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:9d282119af0c42bc823c95b4192a3350cf2cad670622017356dd2e637762e425 in / "
+                },
+                {
+                    "created": "2022-12-09T01:20:21.654215477Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-03T21:53:11.746772469Z",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get install -q -y     git     python3     python3-pip     && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-01-03T21:53:13.157626369Z",
+                    "created_by": "RUN /bin/sh -c pip3 install --no-cache-dir -U dco-check # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2xpYnJhcnkvdWJ1bnR1OjIwLjA0IiwicGluIjoic2hhMjU2OjBlMDQwMmNkMTNmNjgxMzdlZGIwMjY2ZTFkMmM2ODJmMjE3ODE0NDIwZjJkNDNkMzAwZWQ4ZjY1NDc5YjE0ZmIifV19",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:0002c93bdb3704dd9e36ce5153ef637f84de253015f3ee330468dccdeacad60b",
+                    "sha256:077da3d5ef0bdc8f51afbffbe346a2d058a2b36e3b24d070fcd860113192c972",
+                    "sha256:b0ad1340f6837426fc189ed05024523ba741a6c397d69e9a043dc568c28173a3"
+                ]
+            }
+        }
+    }
+}

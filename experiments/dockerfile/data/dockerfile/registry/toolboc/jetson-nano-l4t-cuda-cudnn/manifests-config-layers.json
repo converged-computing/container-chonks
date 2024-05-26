@@ -1,0 +1,365 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 16893,
+                "digest": "sha256:ead8a0233253af5b1e06fa3bda55ad38c6ec19c31199d7fda8c8424fe4947674"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 25874805,
+                    "digest": "sha256:745b76626a20cd9fe8e08356e6bd884a841fb81bd9d3615d5d99d49dba18d15e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 845,
+                    "digest": "sha256:6ce7a8922cb83732658813ef1b15c23f1971b2a24e575af1778e34bec6305d6b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 188,
+                    "digest": "sha256:565a1332f5cd2542f5d8f0aeda009d3b94c2b1a9651603872992756741dc210b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2042825,
+                    "digest": "sha256:c542d29520f938c90f9f0cb4f72be4ca026a2db03f64a2c8e835cf1b6096645b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 11990065,
+                    "digest": "sha256:f702a4f6007c2f4be5ea600ec4aa61b11116b0cc83033103541f7e97d67fea07"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 473576,
+                    "digest": "sha256:5144649b602993550722bff4f5801bfb767c48d36c543ade188134a4810f5d3a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 893,
+                    "digest": "sha256:d138a2d0e65f5452089db1c13efae5d31367c5fb53843ebd4a2168cef5f80073"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 11327016,
+                    "digest": "sha256:12b808e4031e5058b5f307777063ab967a829a6bf1be5061db002d5436c5eae0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 121485968,
+                    "digest": "sha256:b116ef0d91d1af1f5221119b9530609c7d94fc7e50b9b716ad821d326c75b3ef"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 311,
+                    "digest": "sha256:4d8ef10e82a3cf94608d500ecc015db1ac42ca8b632d204497c762593e3ffd47"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1440277606,
+                    "digest": "sha256:d4ef61a483d09142a289e15071a31d4431d9e86f5fbddc84f9a40e8f80ce0ac9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 225047554,
+                    "digest": "sha256:f1cc33f7a62919b7c1d66fe679e15edeb3f398fee77520a29052ca98623cff94"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 208113368,
+                    "digest": "sha256:cc62a17f7eefd24df6d309a07d8559a5d24112983c0987d0a36aa0f9e31954ae"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 7733361,
+                    "digest": "sha256:f9387b74ecfec9db559f18884db8952dcf5f22172886b0a8808250d941e3383b"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "55cd7401c3cd",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/cuda/bin",
+                    "LC_ALL=C.UTF-8",
+                    "UDEV=off",
+                    "LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl::/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64",
+                    "CUDA_HOME=/usr/local/cuda",
+                    "CUDNN_VERSION=7.3.1.28",
+                    "CUDNN_PKG_VERSION=-1"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:e7c308c6442f206b779d3b7bbd1ff4e3001d7ce717988f18f09a0469a8a0d756",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/usr/bin/entry.sh"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "com.nvidia.cudnn.version": "7.3.1.28",
+                    "io.balena.architecture": "aarch64",
+                    "io.balena.device-type": "jetson-tx2",
+                    "io.balena.qemu.version": "4.0.0+balena-aarch64"
+                }
+            },
+            "container": "eb1400b1af7dd8c2f4e1b653b9b4f8eeaaf03cfc65b812b000c30d782389d634",
+            "container_config": {
+                "Hostname": "55cd7401c3cd",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/cuda/bin",
+                    "LC_ALL=C.UTF-8",
+                    "UDEV=off",
+                    "LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl::/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64",
+                    "CUDA_HOME=/usr/local/cuda",
+                    "CUDNN_VERSION=7.3.1.28",
+                    "CUDNN_PKG_VERSION=-1"
+                ],
+                "Cmd": [
+                    "|3",
+                    "libcudnn7_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376196&authkey=ADTDdL0bhMWq4vM",
+                    "libcudnn7_dev_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376197&authkey=APizXm-di7JPR0Y",
+                    "libcudnn7_doc_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376195&authkey=ADqH53K9oRnkO-8",
+                    "/bin/sh",
+                    "-c",
+                    "curl -sL $libcudnn7_doc_URL -o libcudnn7-doc_$CUDNN_VERSION-1+cuda10.0_arm64.deb &&     echo \"9478c16ceeaaca937d4d26b982e48bd1 libcudnn7-doc_$CUDNN_VERSION-1+cuda10.0_arm64.deb\" | md5sum -c - &&     dpkg -i libcudnn7-doc_$CUDNN_VERSION-1+cuda10.0_arm64.deb &&     rm libcudnn7-doc_$CUDNN_VERSION-1+cuda10.0_arm64.deb"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:e7c308c6442f206b779d3b7bbd1ff4e3001d7ce717988f18f09a0469a8a0d756",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "com.nvidia.cudnn.version": "7.3.1.28",
+                    "io.balena.architecture": "aarch64",
+                    "io.balena.device-type": "jetson-tx2",
+                    "io.balena.qemu.version": "4.0.0+balena-aarch64"
+                }
+            },
+            "created": "2019-07-02T04:52:27.17989575Z",
+            "docker_version": "18.06.1-ce",
+            "history": [
+                {
+                    "created": "2019-05-15T22:00:29.727756431Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:be43c564f2555ee67b2e74ab41831e30f31a867bc87afca48235e973f48e77ba in / "
+                },
+                {
+                    "created": "2019-05-15T22:00:33.09332131Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2019-05-15T22:00:34.860670478Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-05-15T22:00:36.856136701Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2019-05-15T22:00:37.265034428Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-06-03T05:50:43.412777136Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL io.balena.architecture=aarch64",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-06-03T05:50:44.501240902Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL io.balena.qemu.version=4.0.0+balena-aarch64",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-06-03T05:50:46.217266087Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:e6d8332bcd05e0b56e335defd9907275d21d2dbcb10b2870f8b8809db156f286 in /usr/bin "
+                },
+                {
+                    "created": "2019-06-03T05:52:28.740516846Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends   sudo   ca-certificates   findutils   gnupg   dirmngr   inetutils-ping   netbase   curl   udev   $(       if apt-cache show 'iproute' 2>/dev/null | grep -q '^Version:'; then         echo 'iproute';       else         echo 'iproute2';       fi   )   && rm -rf /var/lib/apt/lists/*   && echo '#!/bin/sh\\nset -e\\nset -u\\nexport DEBIAN_FRONTEND=noninteractive\\nn=0\\nmax=2\\nuntil [ $n -gt $max ]; do\\n  set +e\\n  (\\n    apt-get update -qq &&\\n    apt-get install -y --no-install-recommends \"$@\"\\n  )\\n  CODE=$?\\n  set -e\\n  if [ $CODE -eq 0 ]; then\\n    break\\n  fi\\n  if [ $n -eq $max ]; then\\n    exit $CODE\\n  fi\\n  echo \"apt failed, retrying\"\\n  n=$(($n + 1))\\ndone\\nrm -r /var/lib/apt/lists/*' > /usr/sbin/install_packages   && chmod 0755 \"/usr/sbin/install_packages\""
+                },
+                {
+                    "created": "2019-06-03T05:52:32.393212997Z",
+                    "created_by": "/bin/sh -c curl -SLO \"http://resin-packages.s3.amazonaws.com/resin-xbuild/v1.0.0/resin-xbuild1.0.0.tar.gz\"   && echo \"1eb099bc3176ed078aa93bd5852dbab9219738d16434c87fc9af499368423437  resin-xbuild1.0.0.tar.gz\" | sha256sum -c -   && tar -xzf \"resin-xbuild1.0.0.tar.gz\"   && rm \"resin-xbuild1.0.0.tar.gz\"   && chmod +x resin-xbuild   && mv resin-xbuild /usr/bin   && ln -s resin-xbuild /usr/bin/cross-build-start   && ln -s resin-xbuild /usr/bin/cross-build-end"
+                },
+                {
+                    "created": "2019-06-03T05:52:33.261725375Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LC_ALL=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-06-03T05:52:34.048929658Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV UDEV=off",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-06-03T05:52:35.909719197Z",
+                    "created_by": "/bin/sh -c mkdir -p /usr/share/man/man1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-06-03T05:52:37.557140352Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:fea3d7674061044c6a805cfa75a17407a2a6b43aa67790d11451ea2c0d4a9e6f in /usr/bin/entry.sh "
+                },
+                {
+                    "created": "2019-06-03T05:52:38.481416421Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/usr/bin/entry.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-06-17T07:57:58.94699233Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL io.balena.device-type=jetson-tx2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-06-17T07:58:57.97263837Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tless \t\tkmod \t\tnano \t\tnet-tools \t\tifupdown \t\tiputils-ping \t\ti2c-tools \t\tusbutils \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-07-01T15:50:23.969312836Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376194&authkey=ADUfVNPnEHviFoU",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-01T15:50:24.263679417Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DRIVER_PACK=Jetson-210_Linux_R32.1.0_aarch64.tbz2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-01T15:54:33.278538818Z",
+                    "created_by": "|2 DRIVER_PACK=Jetson-210_Linux_R32.1.0_aarch64.tbz2 URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376194&authkey=ADUfVNPnEHviFoU /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     bzip2     ca-certificates     curl     lbzip2     sudo     &&     curl -sSL $URL -o ${DRIVER_PACK} &&     echo \"9138c7dd844eb290a20b31446b757e1781080f63 *./${DRIVER_PACK}\" | sha1sum -c --strict - &&     tar -xpj --overwrite -f ./${DRIVER_PACK} &&     sed -i '/.*tar -I lbzip2 -xpmf ${LDK_NV_TEGRA_DIR}\\/config\\.tbz2.*/c\\tar -I lbzip2 -xpm --overwrite -f ${LDK_NV_TEGRA_DIR}\\/config.tbz2' ./Linux_for_Tegra/apply_binaries.sh &&     ./Linux_for_Tegra/apply_binaries.sh -r / &&     rm -rf ./Linux_for_Tegra &&     rm ./${DRIVER_PACK}     &&     apt-get purge --autoremove -y bzip2 curl lbzip2 &&     apt-get clean &&     rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-07-01T15:54:38.063917507Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-01T15:54:40.662701482Z",
+                    "created_by": "|2 DRIVER_PACK=Jetson-210_Linux_R32.1.0_aarch64.tbz2 URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376194&authkey=ADUfVNPnEHviFoU /bin/sh -c ln -s /usr/lib/aarch64-linux-gnu/tegra/libnvidia-ptxjitcompiler.so.32.1.0 /usr/lib/aarch64-linux-gnu/tegra/libnvidia-ptxjitcompiler.so &&     ln -s /usr/lib/aarch64-linux-gnu/tegra/libnvidia-ptxjitcompiler.so.32.1.0 /usr/lib/aarch64-linux-gnu/tegra/libnvidia-ptxjitcompiler.so.1 &&     ln -sf /usr/lib/aarch64-linux-gnu/tegra/libGL.so /usr/lib/aarch64-linux-gnu/libGL.so &&     ln -s /usr/lib/aarch64-linux-gnu/libcuda.so /usr/lib/aarch64-linux-gnu/libcuda.so.1 &&     ln -sf /usr/lib/aarch64-linux-gnu/tegra-egl/libEGL.so /usr/lib/aarch64-linux-gnu/libEGL.so"
+                },
+                {
+                    "created": "2019-07-01T15:58:21.688435104Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376191&authkey=APwtvHgdqlgnJzo",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-01T15:58:22.138313531Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG CUDA_TOOLKIT_PKG=cuda-repo-l4t-10-0-local-10.0.166_1.0-1_arm64.deb",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-01T16:19:04.720052646Z",
+                    "created_by": "|2 CUDA_TOOLKIT_PKG=cuda-repo-l4t-10-0-local-10.0.166_1.0-1_arm64.deb URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376191&authkey=APwtvHgdqlgnJzo /bin/sh -c apt-get update &&     apt-get install -y --no-install-recommends curl &&     curl -sL ${URL} -o ${CUDA_TOOLKIT_PKG} &&     echo \"5e3eedc3707305f9022d41754d6becde ${CUDA_TOOLKIT_PKG}\" | md5sum -c - &&     dpkg --force-all -i ${CUDA_TOOLKIT_PKG} &&     rm ${CUDA_TOOLKIT_PKG} &&     apt-key add var/cuda-repo-*-local*/*.pub &&     apt-get update &&     apt-get install -y --allow-downgrades cuda-toolkit-10-0 libgomp1 libfreeimage-dev libopenmpi-dev openmpi-bin &&     dpkg --purge cuda-repo-l4t-10-0-local-10.0.166  &&     apt-get clean &&     rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-07-01T16:19:07.493115475Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV CUDA_HOME=/usr/local/cuda",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-01T16:19:07.911700024Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu/tegra:/usr/lib/aarch64-linux-gnu/tegra-egl::/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-01T16:19:08.357175838Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/cuda/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-02T04:40:23.92506166Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV CUDNN_VERSION=7.3.1.28",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-02T04:40:24.227693913Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV CUDNN_PKG_VERSION=-1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-02T04:40:24.540069456Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL com.nvidia.cudnn.version=7.3.1.28",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-02T04:40:24.873934737Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG libcudnn7_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376196&authkey=ADTDdL0bhMWq4vM",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-02T04:47:32.450632242Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG libcudnn7_dev_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376197&authkey=APizXm-di7JPR0Y",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-02T04:47:32.904051993Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG libcudnn7_doc_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376195&authkey=ADqH53K9oRnkO-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-07-02T04:50:02.155798875Z",
+                    "created_by": "|3 libcudnn7_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376196&authkey=ADTDdL0bhMWq4vM libcudnn7_dev_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376197&authkey=APizXm-di7JPR0Y libcudnn7_doc_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376195&authkey=ADqH53K9oRnkO-8 /bin/sh -c curl -sL $libcudnn7_URL -o libcudnn7_$CUDNN_VERSION-1+cuda10.0_arm64.deb &&     echo \"92867c0a495f84ec11d108f84b776620 libcudnn7_$CUDNN_VERSION-1+cuda10.0_arm64.deb\" | md5sum -c - &&     dpkg -i libcudnn7_$CUDNN_VERSION-1+cuda10.0_arm64.deb &&     rm libcudnn7_$CUDNN_VERSION-1+cuda10.0_arm64.deb"
+                },
+                {
+                    "created": "2019-07-02T04:52:15.046214488Z",
+                    "created_by": "|3 libcudnn7_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376196&authkey=ADTDdL0bhMWq4vM libcudnn7_dev_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376197&authkey=APizXm-di7JPR0Y libcudnn7_doc_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376195&authkey=ADqH53K9oRnkO-8 /bin/sh -c curl -sL $libcudnn7_dev_URL -o libcudnn7-dev_$CUDNN_VERSION-1+cuda10.0_arm64.deb &&     echo \"dd0fbfa225b2374b946febc98e2cdec4 libcudnn7-dev_$CUDNN_VERSION-1+cuda10.0_arm64.deb\" | md5sum -c - &&     dpkg -i libcudnn7-dev_$CUDNN_VERSION-1+cuda10.0_arm64.deb &&     rm libcudnn7-dev_$CUDNN_VERSION-1+cuda10.0_arm64.deb"
+                },
+                {
+                    "created": "2019-07-02T04:52:27.17989575Z",
+                    "created_by": "|3 libcudnn7_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376196&authkey=ADTDdL0bhMWq4vM libcudnn7_dev_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376197&authkey=APizXm-di7JPR0Y libcudnn7_doc_URL=https://onedrive.live.com/download?cid=54AD8562A32D8752&resid=54AD8562A32D8752%21376195&authkey=ADqH53K9oRnkO-8 /bin/sh -c curl -sL $libcudnn7_doc_URL -o libcudnn7-doc_$CUDNN_VERSION-1+cuda10.0_arm64.deb &&     echo \"9478c16ceeaaca937d4d26b982e48bd1 libcudnn7-doc_$CUDNN_VERSION-1+cuda10.0_arm64.deb\" | md5sum -c - &&     dpkg -i libcudnn7-doc_$CUDNN_VERSION-1+cuda10.0_arm64.deb &&     rm libcudnn7-doc_$CUDNN_VERSION-1+cuda10.0_arm64.deb"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:bac79ca8b52128a28d967e8c7b8a35a5af6f1f488afe5f2889852bd5ad5728d2",
+                    "sha256:d6eecafc551e375958694fa446fffb0a9ce7a08458d24dedef2d469ab0dd7c1c",
+                    "sha256:b3119aada288bcab5ecae6001486c417c21d27ac0058593f31483eed1f043496",
+                    "sha256:1295e5ba0c99d2c5d1cd37646920ab1f7f1378871f1fc40cae8bcf792c154015",
+                    "sha256:6330a0bcc2cbbfa9588bae4859cb7b16c0af1752e7d6e94f731d54dcf001ce9d",
+                    "sha256:d37439d71d8237d95c3dfa13e3333dea6614a81cb48878c97de17a48be08dd41",
+                    "sha256:a1539dc9bdd1689fe70737f49b87a8446296b4c965f9fe51239c6632d3f8d98e",
+                    "sha256:44b511d2b6cbd5b97876f8f836ba88bf2c7ff306da23a03fc7142f8316bd7c2a",
+                    "sha256:969523fcfefe85d3e7bb6fb6765a3c57621a76174c20e3b0516f7c9924d96a7f",
+                    "sha256:69da26c97b30a7d82e85159ce964b71d1d90ed01052e1a61cf2a9b6654b61050",
+                    "sha256:674b0b81ec8170684ba996f5c614e5f1c08c72008556ba439fb14e13ac766e88",
+                    "sha256:2fb6a9f2042eb0b039dddaa3b5f7aa17d93ee3b0acdd695edfca4c276457c6c2",
+                    "sha256:aa87c0ca210ed3ddf4b400abaa73748ecdb0c639cc1988d5996c3b3934525bcd",
+                    "sha256:f43c43c36efb35436fb112220a70a0799baf47c599e9576239d9fbf2e755b46e"
+                ]
+            }
+        }
+    }
+}

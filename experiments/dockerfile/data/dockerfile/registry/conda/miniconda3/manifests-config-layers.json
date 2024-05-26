@@ -1,0 +1,124 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2947,
+                "digest": "sha256:2c4c668a3586e1c45e1d48e26cc6630ea8e0f148453c0ec71df30446706ba42c"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45342599,
+                    "digest": "sha256:e79bb959ec00faf01da52437df4fad4537ec669f60455a38ad583ec2b8f00498"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 103942504,
+                    "digest": "sha256:7dc808d5d247ad314ce07fed75508f96419445581bb520c5f4f15a37c55ee860"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Conda Development Team <conda@continuum.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4dcbff46a890842f719e2ba4ac5e94a686013b481ecd2a90d3e0e4988ede82a2",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "dc9b1a55258e76913c3ac1f18250d26b7d1b0b0afe691e5dc94bbb6a507234ae",
+            "container_config": {
+                "Hostname": "dc9b1a55258e",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4dcbff46a890842f719e2ba4ac5e94a686013b481ecd2a90d3e0e4988ede82a2",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2019-04-12T14:24:56.941918965Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2019-03-26T22:41:12.259614565Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:843b8a2a9df1a07305ff3d02484d4be7f769057c6d2e311d52d59e00deb917c6 in / "
+                },
+                {
+                    "created": "2019-03-26T22:41:12.5277452Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-12T14:20:23.071819844Z",
+                    "author": "Conda Development Team <conda@continuum.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Conda Development Team <conda@continuum.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-12T14:24:55.438746608Z",
+                    "author": "Conda Development Team <conda@continuum.io>",
+                    "created_by": "/bin/sh -c apt-get -qq update && apt-get -qq -y install curl bzip2     && curl -sSL https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -o /tmp/miniconda.sh     && bash /tmp/miniconda.sh -bfp /usr/local     && rm -rf /tmp/miniconda.sh     && conda install -y python=3     && conda update conda     && apt-get -qq -y remove curl bzip2     && apt-get -qq -y autoremove     && apt-get autoclean     && rm -rf /var/lib/apt/lists/* /var/log/dpkg.log     && conda clean --all --yes"
+                },
+                {
+                    "created": "2019-04-12T14:24:56.941918965Z",
+                    "author": "Conda Development Team <conda@continuum.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:fbb641a8b94349e89886f65d79928e4673530e2a2b4d33c2c95e0426713f78e4",
+                    "sha256:ed8673d4b40cafa3762a78bae36c14a96eaa454a95616cfabed67d9c3f2c51db"
+                ]
+            }
+        }
+    }
+}

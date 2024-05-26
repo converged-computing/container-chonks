@@ -1,0 +1,56 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 463,
+                "digest": "sha256:8b415418d1537b77392799b9ba0cafd4a59e77b5da1fd7ddff0e6582e9d227e5"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 48295020,
+                    "digest": "sha256:4e645dc40a1ef7fd4f139172c2ea4a7cfff5357aefd5ceb22d11f788fc4d0ed9"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Bazel",
+            "created": "1970-01-01T00:00:00Z",
+            "history": [
+                {
+                    "author": "Bazel",
+                    "created": "1970-01-01T00:00:00Z",
+                    "created_by": "bazel build ..."
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:bae09f1975693f4ebd662ccb8d145f0fcff3e83ea5b2fdc42231ab174604b7c9"
+                ]
+            },
+            "config": {
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "/bin/bash"
+                ],
+                "Env": [
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "PORT=8080"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,293 @@
+{
+    "manifests": {
+        "latest": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:4b95d195a32cc1a6118da3e9a8f9a2a95da749d5c266d2be2d8c62e5ca7c9fbd",
+                    "size": 951,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:c5e71fdf8904d32708b0ceca38c690aa42ae3837cf32e7c48e8c9b50df1b44ba",
+                    "size": 951,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:a2d54c55cec9127f21a33a951de78dcddd97adfa9490cb9bff92c27a06fdd28e",
+                    "size": 951,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        },
+        "3.11": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:82f6dc42aabd969736c4a9cd0c4bc330c31060ad625927bf847465fb6975cd9e",
+                    "size": 952,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:ce441d626c75475212d9927053d29c8b6eec43f8c91652a0137eaa2cb4e1af92",
+                    "size": 952,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:a29aecb23b97852eb9948ced7399590f177133192a4c18913b32583da3fee505",
+                    "size": 952,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        },
+        "3.16": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2054,
+                "digest": "sha256:90bafab658018e74d7e677c971aececa71bc83a2af142bf8821243a56cf09f0e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2798889,
+                    "digest": "sha256:2408cc74d12b6cd092bb8b516ba7d5e290f485d3eb9672efc00f0583730179e8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 9680498,
+                    "digest": "sha256:9c8d8db5ea1d47b77b82e77d45a328a45350225ea1cd7d0a6454be97f3831d25"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 79797588,
+                    "digest": "sha256:4753161351a667068c56d8f2e6d15798eed90912f81a1aae47337dc8b5a7c6e0"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest",
+        "3.11",
+        "3.16"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2021-07-27T22:14:04.005596309Z",
+            "history": [
+                {
+                    "created": "2021-06-15T22:19:37.639998211Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f278386b0cef68136129f5f58c52445590a417b624d62bca158d4dc926c340df in / "
+                },
+                {
+                    "created": "2021-06-15T22:19:37.842991933Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-27T22:13:57.418418184Z",
+                    "created_by": "RUN /bin/sh -c apk update && apk add     acl     bash     curl     findmnt     nano     strace     tree     libcap     bind-tools     nftables # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-07-27T22:14:04.005596309Z",
+                    "created_by": "RUN /bin/sh -c apk update && apk add docker # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-07-27T22:14:04.005596309Z",
+                    "created_by": "CMD [\"/bin/sh\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:72e830a4dff5f0d5225cdc0a320e85ab1ce06ea5673acfe8d83a7645cbd0e9cf",
+                    "sha256:2c0e80831dddf5ad7963b7a6c8c556db70ba0929fdf6a4374528cd77c371f3e6",
+                    "sha256:70a39ab8a707cb74cbd3bf02a317a6deca9b92041152e3c8890f757a4cc581ac"
+                ]
+            }
+        },
+        "3.11": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2021-07-29T19:17:57.59708298Z",
+            "history": [
+                {
+                    "created": "2021-04-14T19:19:56.19548415Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:282b9d56236cae29600bf8b698cb0a865ab17db7beea0be6870f9de63e7d4f80 in / "
+                },
+                {
+                    "created": "2021-04-14T19:19:56.41508347Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-29T19:17:45.380535571Z",
+                    "created_by": "RUN /bin/sh -c apk update && apk add     acl     bash     curl     findmnt     nano     strace     tree     libcap     bind-tools     nftables # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-07-29T19:17:57.59708298Z",
+                    "created_by": "RUN /bin/sh -c apk update && apk add docker # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-07-29T19:17:57.59708298Z",
+                    "created_by": "CMD [\"/bin/sh\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9a5d14f9f5503e55088666beef7e85a8d9625d4fa7418e2fe269e9c54bcb853c",
+                    "sha256:2deeabcc20b58ce5c1089d772236ebcf327d40d822be8d7ad2dced5128969768",
+                    "sha256:f25d443a35e2e8dd0ff3754089ce63e0111479bd570d7ec42e4b1e0fa7699052"
+                ]
+            }
+        },
+        "3.16": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "Image": "sha256:e7d3f49160775ecb163e528f353f0dd72e39a5e82b455f0d166ee2074c94a28c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "45cb03c8d0a5908b20e4f2560d2f7ea131269f60a2a55863737f58c48b15a213",
+            "container_config": {
+                "Hostname": "45cb03c8d0a5",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/sh\"]"
+                ],
+                "Image": "sha256:e7d3f49160775ecb163e528f353f0dd72e39a5e82b455f0d166ee2074c94a28c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2022-07-19T18:33:26.581821911Z",
+            "docker_version": "20.10.17",
+            "history": [
+                {
+                    "created": "2022-05-23T19:19:30.413290187Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:8e81116368669ed3dd361bc898d61bff249f524139a239fdaf3ec46869a39921 in / "
+                },
+                {
+                    "created": "2022-05-23T19:19:31.970967174Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-07-19T18:33:21.916034216Z",
+                    "created_by": "/bin/sh -c apk update && apk add     acl     bash     curl     findmnt     nano     strace     tree     libcap     bind-tools     nftables"
+                },
+                {
+                    "created": "2022-07-19T18:33:26.37192225Z",
+                    "created_by": "/bin/sh -c apk update && apk add docker"
+                },
+                {
+                    "created": "2022-07-19T18:33:26.581821911Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:24302eb7d9085da80f016e7e4ae55417e412fb7e0a8021e95e3b60c67cde557d",
+                    "sha256:4c467ccdcc53019610749fe286b76b522349ed0bd457b486957ecf4845614682",
+                    "sha256:0a886989398a97cb6ee6781378cbf5eb24a455b5519c879ae66e76aabcb51bc3"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,370 @@
+{
+    "manifests": {
+        "1.0-arm32v7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5290,
+                "digest": "sha256:8f6502287f986556157f4f1347cf1a853738ad6646f52ef4e3329d0c44334dff"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22699053,
+                    "digest": "sha256:3cf3d03fb414460b7542c20e72fe29a83f08d22fd2c7a8cab1834eec2976e4b2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6023081,
+                    "digest": "sha256:45e8d39ec61254fce63abc90fab9827614737cdf4fbe922ef7d2a789de23ab78"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 380,
+                    "digest": "sha256:df63baca40151a2bd2d4ecd88b8873ff425c3306cba9d18a450f04e6f6becb95"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 119,
+                    "digest": "sha256:cdf6fa1a089c864e8413c1cc1d5c2eddc3130f327f2e87773071bdbdac19b9d1"
+                }
+            ]
+        },
+        "1.0-linux-arm32v7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5290,
+                "digest": "sha256:8f6502287f986556157f4f1347cf1a853738ad6646f52ef4e3329d0c44334dff"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22699053,
+                    "digest": "sha256:3cf3d03fb414460b7542c20e72fe29a83f08d22fd2c7a8cab1834eec2976e4b2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6023081,
+                    "digest": "sha256:45e8d39ec61254fce63abc90fab9827614737cdf4fbe922ef7d2a789de23ab78"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 380,
+                    "digest": "sha256:df63baca40151a2bd2d4ecd88b8873ff425c3306cba9d18a450f04e6f6becb95"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 119,
+                    "digest": "sha256:cdf6fa1a089c864e8413c1cc1d5c2eddc3130f327f2e87773071bdbdac19b9d1"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.0-arm32v7",
+        "1.0-linux-arm32v7"
+    ],
+    "configs": {
+        "1.0-arm32v7": {
+            "architecture": "arm",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "5671/tcp": {},
+                    "8883/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "HAPROXY_VERSION=1.8.23",
+                    "HAPROXY_URL=https://www.haproxy.org/download/1.8/src/haproxy-1.8.23.tar.gz",
+                    "HAPROXY_SHA256=de919164876ee0501e1ef01ca5ccc0d3bda2b96003f9d240f7b856010ccbf7eb"
+                ],
+                "Cmd": [
+                    "haproxy",
+                    "-f",
+                    "/usr/local/etc/haproxy/haproxy.cfg"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9f73ab364cc233f5643509b67c68034b7de90529cc81a25fd9830e6adc2f4dc5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/docker-entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": null,
+                "StopSignal": "SIGUSR1"
+            },
+            "container": "53218ced715798fc9a78d9c5dcb088c7ef5b1ff51d62ea02bfa7e60b552b661c",
+            "container_config": {
+                "Hostname": "53218ced7157",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "5671/tcp": {},
+                    "8883/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "HAPROXY_VERSION=1.8.23",
+                    "HAPROXY_URL=https://www.haproxy.org/download/1.8/src/haproxy-1.8.23.tar.gz",
+                    "HAPROXY_SHA256=de919164876ee0501e1ef01ca5ccc0d3bda2b96003f9d240f7b856010ccbf7eb"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 443 5671 8883"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9f73ab364cc233f5643509b67c68034b7de90529cc81a25fd9830e6adc2f4dc5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/docker-entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {},
+                "StopSignal": "SIGUSR1"
+            },
+            "created": "2019-12-20T18:01:41.53746571Z",
+            "docker_version": "19.03.5",
+            "history": [
+                {
+                    "created": "2019-11-22T13:22:45.502260528Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:85cf6081b7d1948b250d1b3749a65e2561cddafb7cd748db6b7b7420a376a48f in / "
+                },
+                {
+                    "created": "2019-11-22T13:22:46.254124847Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:18:17.59789685Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_VERSION=1.8.23",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:18:18.727022052Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_URL=https://www.haproxy.org/download/1.8/src/haproxy-1.8.23.tar.gz",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:18:19.951123843Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_SHA256=de919164876ee0501e1ef01ca5ccc0d3bda2b96003f9d240f7b856010ccbf7eb",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:19:15.611561329Z",
+                    "created_by": "/bin/sh -c set -x \t\t&& savedAptMark=\"$(apt-mark showmanual)\" \t&& apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tgcc \t\tlibc6-dev \t\tliblua5.3-dev \t\tlibpcre2-dev \t\tlibssl-dev \t\tmake \t\twget \t\tzlib1g-dev \t&& rm -rf /var/lib/apt/lists/* \t\t&& wget -O haproxy.tar.gz \"$HAPROXY_URL\" \t&& echo \"$HAPROXY_SHA256 *haproxy.tar.gz\" | sha256sum -c \t&& mkdir -p /usr/src/haproxy \t&& tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1 \t&& rm haproxy.tar.gz \t\t&& makeOpts=' \t\tTARGET=linux2628 \t\tUSE_GETADDRINFO=1 \t\tUSE_LUA=1 LUA_INC=/usr/include/lua5.3 \t\tUSE_OPENSSL=1 \t\tUSE_PCRE2=1 USE_PCRE2_JIT=1 \t\tUSE_ZLIB=1 \t\t\t\tEXTRA_OBJS=\" \t\t\" \t' \t&& nproc=\"$(nproc)\" \t&& eval \"make -C /usr/src/haproxy -j '$nproc' all $makeOpts\" \t&& eval \"make -C /usr/src/haproxy install-bin $makeOpts\" \t\t&& mkdir -p /usr/local/etc/haproxy \t&& cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors \t&& rm -rf /usr/src/haproxy \t\t&& apt-mark auto '.*' > /dev/null \t&& { [ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark; } \t&& find /usr/local -type f -executable -exec ldd '{}' ';' \t\t| awk '/=>/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false"
+                },
+                {
+                    "created": "2019-11-27T02:19:16.51182492Z",
+                    "created_by": "/bin/sh -c #(nop)  STOPSIGNAL SIGUSR1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:19:17.063784108Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:a7db5ef8dbcd831ff68d6ff2fb45bc340539ad6d7a58d54323fd7399d1520910 in / "
+                },
+                {
+                    "created": "2019-11-27T02:19:17.750858905Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:19:18.369278962Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"haproxy\" \"-f\" \"/usr/local/etc/haproxy/haproxy.cfg\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-12-19T19:54:21.755251Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/haproxy"
+                },
+                {
+                    "created": "2019-12-20T18:01:41.53746571Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 443 5671 8883",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:73ff1dead1b5d9c1aef91835470f8e9870c3e2dbec82e368f08ac87172fcfe1a",
+                    "sha256:786079d84e0ac3fd196c483551ed51427c92ccf9c333e44c83d9081fe0bd1c70",
+                    "sha256:fe9cc628dc294db14669e49cc0562cde40f7cc664de47159b4e5f9a068e99da4",
+                    "sha256:7df25bc0c5e88a9199aec9483f3ab3c97e6ea59bc1a2f1f67aacc005baf62e99"
+                ]
+            }
+        },
+        "1.0-linux-arm32v7": {
+            "architecture": "arm",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "5671/tcp": {},
+                    "8883/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "HAPROXY_VERSION=1.8.23",
+                    "HAPROXY_URL=https://www.haproxy.org/download/1.8/src/haproxy-1.8.23.tar.gz",
+                    "HAPROXY_SHA256=de919164876ee0501e1ef01ca5ccc0d3bda2b96003f9d240f7b856010ccbf7eb"
+                ],
+                "Cmd": [
+                    "haproxy",
+                    "-f",
+                    "/usr/local/etc/haproxy/haproxy.cfg"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9f73ab364cc233f5643509b67c68034b7de90529cc81a25fd9830e6adc2f4dc5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/docker-entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": null,
+                "StopSignal": "SIGUSR1"
+            },
+            "container": "53218ced715798fc9a78d9c5dcb088c7ef5b1ff51d62ea02bfa7e60b552b661c",
+            "container_config": {
+                "Hostname": "53218ced7157",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "5671/tcp": {},
+                    "8883/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "HAPROXY_VERSION=1.8.23",
+                    "HAPROXY_URL=https://www.haproxy.org/download/1.8/src/haproxy-1.8.23.tar.gz",
+                    "HAPROXY_SHA256=de919164876ee0501e1ef01ca5ccc0d3bda2b96003f9d240f7b856010ccbf7eb"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 443 5671 8883"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9f73ab364cc233f5643509b67c68034b7de90529cc81a25fd9830e6adc2f4dc5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/docker-entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {},
+                "StopSignal": "SIGUSR1"
+            },
+            "created": "2019-12-20T18:01:41.53746571Z",
+            "docker_version": "19.03.5",
+            "history": [
+                {
+                    "created": "2019-11-22T13:22:45.502260528Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:85cf6081b7d1948b250d1b3749a65e2561cddafb7cd748db6b7b7420a376a48f in / "
+                },
+                {
+                    "created": "2019-11-22T13:22:46.254124847Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:18:17.59789685Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_VERSION=1.8.23",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:18:18.727022052Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_URL=https://www.haproxy.org/download/1.8/src/haproxy-1.8.23.tar.gz",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:18:19.951123843Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_SHA256=de919164876ee0501e1ef01ca5ccc0d3bda2b96003f9d240f7b856010ccbf7eb",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:19:15.611561329Z",
+                    "created_by": "/bin/sh -c set -x \t\t&& savedAptMark=\"$(apt-mark showmanual)\" \t&& apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tgcc \t\tlibc6-dev \t\tliblua5.3-dev \t\tlibpcre2-dev \t\tlibssl-dev \t\tmake \t\twget \t\tzlib1g-dev \t&& rm -rf /var/lib/apt/lists/* \t\t&& wget -O haproxy.tar.gz \"$HAPROXY_URL\" \t&& echo \"$HAPROXY_SHA256 *haproxy.tar.gz\" | sha256sum -c \t&& mkdir -p /usr/src/haproxy \t&& tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1 \t&& rm haproxy.tar.gz \t\t&& makeOpts=' \t\tTARGET=linux2628 \t\tUSE_GETADDRINFO=1 \t\tUSE_LUA=1 LUA_INC=/usr/include/lua5.3 \t\tUSE_OPENSSL=1 \t\tUSE_PCRE2=1 USE_PCRE2_JIT=1 \t\tUSE_ZLIB=1 \t\t\t\tEXTRA_OBJS=\" \t\t\" \t' \t&& nproc=\"$(nproc)\" \t&& eval \"make -C /usr/src/haproxy -j '$nproc' all $makeOpts\" \t&& eval \"make -C /usr/src/haproxy install-bin $makeOpts\" \t\t&& mkdir -p /usr/local/etc/haproxy \t&& cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors \t&& rm -rf /usr/src/haproxy \t\t&& apt-mark auto '.*' > /dev/null \t&& { [ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark; } \t&& find /usr/local -type f -executable -exec ldd '{}' ';' \t\t| awk '/=>/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t&& apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false"
+                },
+                {
+                    "created": "2019-11-27T02:19:16.51182492Z",
+                    "created_by": "/bin/sh -c #(nop)  STOPSIGNAL SIGUSR1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:19:17.063784108Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:a7db5ef8dbcd831ff68d6ff2fb45bc340539ad6d7a58d54323fd7399d1520910 in / "
+                },
+                {
+                    "created": "2019-11-27T02:19:17.750858905Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-27T02:19:18.369278962Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"haproxy\" \"-f\" \"/usr/local/etc/haproxy/haproxy.cfg\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-12-19T19:54:21.755251Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/haproxy"
+                },
+                {
+                    "created": "2019-12-20T18:01:41.53746571Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 443 5671 8883",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:73ff1dead1b5d9c1aef91835470f8e9870c3e2dbec82e368f08ac87172fcfe1a",
+                    "sha256:786079d84e0ac3fd196c483551ed51427c92ccf9c333e44c83d9081fe0bd1c70",
+                    "sha256:fe9cc628dc294db14669e49cc0562cde40f7cc664de47159b4e5f9a068e99da4",
+                    "sha256:7df25bc0c5e88a9199aec9483f3ab3c97e6ea59bc1a2f1f67aacc005baf62e99"
+                ]
+            }
+        }
+    }
+}

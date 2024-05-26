@@ -1,0 +1,354 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 11142,
+                "digest": "sha256:05740cf276644f70f628900236d58be77188a8b9881ce5f2630edd70c6e42150"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 26683298,
+                    "digest": "sha256:5667fdb72017d1fb364744ca1abf7b6f3bbe9c98c3786f294a461c2866db69ab"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 35355,
+                    "digest": "sha256:d83811f270d56d34a208f721f3dbf1b9242d1900ad8981fc7071339681998a31"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 850,
+                    "digest": "sha256:ee671aafb583e2321880e275c94d49a49185006730e871435cd851f42d2a775d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 163,
+                    "digest": "sha256:7fc152dfb3a6b5c9a436b49ff6cd72ed7eb5f1fd349128b50ee04c3c5c2355fb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 117052265,
+                    "digest": "sha256:3e2848e6cd90a987a62e1289159069430f215c5be08a25debf74c4bc4394e035"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 344364877,
+                    "digest": "sha256:eb9176c5027c63addd6b8dae7e943fcaa9638620d4652ac4d885e362e4d6bd9a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 23658966,
+                    "digest": "sha256:c7a8d51f9497ba495e0fb9aad4123af27049a6da19151061f6c57c0620afe6d6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 103,
+                    "digest": "sha256:21219b668b7c4aa3c6cbede917daa4e3947444bb5b03d9a21a98e252ee977da4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1719,
+                    "digest": "sha256:f54034516c97349d9fd8075fd98a471c775fc92f29561dfce8f6fdcf36a5e2a7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2417,
+                    "digest": "sha256:11de2da9eccda5cc974be92af7e408666732be842d6fa1474b25af0cd0b5834c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 12608,
+                    "digest": "sha256:7081fe23c6cf31a701c947f130e5922a7d5fd14b2b47a8409ffb5a9f27b54b03"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 844,
+                    "digest": "sha256:537b85ad7ecd0fe85998d39ad8077e9045e67f8ea5fe5c291abce35f09b11a5c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1094,
+                    "digest": "sha256:279aa07c309afab71a202acd581e3270e5c080594d59b25225720ae29df45c69"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4070,
+                    "digest": "sha256:1d2a6af6f8052f08ef06987015a91f90141ab250fd03a54d3e65e9b358995ad8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 159,
+                    "digest": "sha256:586901b25371b6ad22398d873949de960ee3f8133e46b3398acc7cd9cd64ae11"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 68373063,
+                    "digest": "sha256:e585f403eeea21781291a674d5dec33b4bf5cc16d2444a296188b3a6bd4b0659"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "IBM Swift Engineering at IBM Cloud",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "8080/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561",
+                    "SWIFT_PLATFORM=ubuntu18.04",
+                    "SWIFT_BRANCH=swift-5.1-release",
+                    "SWIFT_VERSION=swift-5.1-RELEASE",
+                    "SWIFT_WEBROOT=https://swift.org/builds/"
+                ],
+                "Cmd": [
+                    "sh",
+                    "-c",
+                    "cd /Kitura-Starter && .build/x86_64-unknown-linux/debug/Kitura-Starter"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:344c54eef52ad5d09bef8980e1ad40a7fba45b578b842944e72a020e6778efcc",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "Description": "Docker image for building and running the Kitura-Starter sample application.",
+                    "maintainer": "Swift Infrastructure <swift-infrastructure@swift.org>"
+                }
+            },
+            "container": "3c91a3d472e19e814bfccf839e9fd8b02881eec6ac8d8bd546fdcd8ce2e01579",
+            "container_config": {
+                "Hostname": "3c91a3d472e1",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "8080/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561",
+                    "SWIFT_PLATFORM=ubuntu18.04",
+                    "SWIFT_BRANCH=swift-5.1-release",
+                    "SWIFT_VERSION=swift-5.1-RELEASE",
+                    "SWIFT_WEBROOT=https://swift.org/builds/"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"sh\" \"-c\" \"cd /Kitura-Starter && .build/x86_64-unknown-linux/debug/Kitura-Starter\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:344c54eef52ad5d09bef8980e1ad40a7fba45b578b842944e72a020e6778efcc",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "Description": "Docker image for building and running the Kitura-Starter sample application.",
+                    "maintainer": "Swift Infrastructure <swift-infrastructure@swift.org>"
+                }
+            },
+            "created": "2019-10-01T17:16:16.132226184Z",
+            "docker_version": "17.09.0-ce",
+            "history": [
+                {
+                    "created": "2019-09-18T23:20:25.001198355Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:288ac0434f65264f3c50cf3e2766c5dbf3fa953c89995dd9445063fd565aac81 in / "
+                },
+                {
+                    "created": "2019-09-18T23:20:25.907034433Z",
+                    "created_by": "/bin/sh -c [ -z \"$(apt-get indextargets)\" ]"
+                },
+                {
+                    "created": "2019-09-18T23:20:26.643052498Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2019-09-18T23:20:27.334214267Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2019-09-18T23:20:27.499267707Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-09-18T23:46:39.642491124Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Swift Infrastructure <swift-infrastructure@swift.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-09-18T23:46:39.806237969Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Description=Docker Container for the Swift programming language",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-09-23T23:21:45.518384073Z",
+                    "created_by": "/bin/sh -c export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && apt-get -q update &&     apt-get -q install -y     libatomic1     libcurl4     libxml2     libedit2     libsqlite3-0     libc6-dev     binutils     libgcc-5-dev     libstdc++-5-dev     libpython2.7     tzdata     git     pkg-config     && rm -r /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-09-23T23:21:45.947679386Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-09-23T23:21:46.114649514Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG SWIFT_PLATFORM=ubuntu18.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-09-23T23:21:46.274804778Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG SWIFT_BRANCH=swift-5.1-release",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-09-23T23:21:46.434163196Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG SWIFT_VERSION=swift-5.1-RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-09-23T23:21:46.57839272Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG SWIFT_WEBROOT=https://swift.org/builds/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-09-23T23:21:46.766542092Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV SWIFT_SIGNING_KEY=A62AE125BBBFBB96A6E042EC925CC1CCED3D1561 SWIFT_PLATFORM=ubuntu18.04 SWIFT_BRANCH=swift-5.1-release SWIFT_VERSION=swift-5.1-RELEASE SWIFT_WEBROOT=https://swift.org/builds/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-09-23T23:22:48.212337401Z",
+                    "created_by": "/bin/sh -c set -e;     SWIFT_WEBDIR=\"$SWIFT_WEBROOT/$SWIFT_BRANCH/$(echo $SWIFT_PLATFORM | tr -d .)/\"     && SWIFT_BIN_URL=\"$SWIFT_WEBDIR/$SWIFT_VERSION/$SWIFT_VERSION-$SWIFT_PLATFORM.tar.gz\"     && SWIFT_SIG_URL=\"$SWIFT_BIN_URL.sig\"     && export DEBIAN_FRONTEND=noninteractive     && apt-get -q update && apt-get -q install -y curl && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME=\"$(mktemp -d)\"     && curl -fsSL \"$SWIFT_BIN_URL\" -o swift.tar.gz \"$SWIFT_SIG_URL\" -o swift.tar.gz.sig     && gpg --batch --quiet --keyserver ha.pool.sks-keyservers.net --recv-keys \"$SWIFT_SIGNING_KEY\"     && gpg --batch --verify swift.tar.gz.sig swift.tar.gz     && tar -xzf swift.tar.gz --directory / --strip-components=1     && chmod -R o+r /usr/lib/swift     && rm -rf \"$GNUPGHOME\" swift.tar.gz.sig swift.tar.gz     && apt-get purge --auto-remove -y curl"
+                },
+                {
+                    "created": "2019-09-23T23:22:50.714083005Z",
+                    "created_by": "/bin/sh -c swift --version",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-01T17:15:03.16368035Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER IBM Swift Engineering at IBM Cloud",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-01T17:15:03.283662259Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop)  LABEL Description=Docker image for building and running the Kitura-Starter sample application.",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-01T17:15:20.932486404Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y sudo openssl libssl-dev libcurl4-openssl-dev"
+                },
+                {
+                    "created": "2019-10-01T17:15:21.059061068Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 8080/tcp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-01T17:15:21.539953503Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c mkdir /Kitura-Starter"
+                },
+                {
+                    "created": "2019-10-01T17:15:21.6922983Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:d06166618e51311213682864478d979a827fdcdfd2deb09b1c00e89f75ebc13d in /Kitura-Starter/Sources "
+                },
+                {
+                    "created": "2019-10-01T17:15:21.820784971Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:b291b3fe85ee01154b6ac897b5541984d35934ed31eb5c5db94d9641018ae080 in /Kitura-Starter/Tests "
+                },
+                {
+                    "created": "2019-10-01T17:15:21.947905773Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:41527338c5b2501e5b962ae5cf62ffca7a24e66c1ae5052ea892fc058a09520f in /Kitura-Starter/public "
+                },
+                {
+                    "created": "2019-10-01T17:15:22.063662953Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop) ADD file:622808fda4d510be65b5ddc462853d27086900d21a20f2d76ddb2b9f557c0058 in /Kitura-Starter "
+                },
+                {
+                    "created": "2019-10-01T17:15:22.192494379Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop) ADD file:2b68b709b78d4ae55285de6fba17372732e6284b4d2e9300b7ed0ceaeec33943 in /Kitura-Starter "
+                },
+                {
+                    "created": "2019-10-01T17:15:22.328789341Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop) ADD file:45f3689b8aa33f43feba61f510d52cdb25613703feb6d1e7b226c22f0c79f18f in /Kitura-Starter "
+                },
+                {
+                    "created": "2019-10-01T17:15:22.447986967Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop) ADD file:638eb25bde6fedce5460fe78e98e8261eaf590743165f9c3c5ce1ecd718230d5 in /Kitura-Starter "
+                },
+                {
+                    "created": "2019-10-01T17:16:15.859933593Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c cd /Kitura-Starter && swift build"
+                },
+                {
+                    "created": "2019-10-01T17:16:16.132226184Z",
+                    "author": "IBM Swift Engineering at IBM Cloud",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"sh\" \"-c\" \"cd /Kitura-Starter && .build/x86_64-unknown-linux/debug/Kitura-Starter\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:a1aa3da2a80a775df55e880b094a1a8de19b919435ad0c71c29a0983d64e65db",
+                    "sha256:ef1a1ec5bba9f5efcecf38693111c335cafa27f53669a91bee5d3dc17819180c",
+                    "sha256:6c3332381368f5c277995c2e1d19dc895b8a870ba7d1ccd8a4dbe4a5c26810bc",
+                    "sha256:e80c789bc6aca44ee043fb65d06ddff70f644086dd99e6c65b04149cd5787d84",
+                    "sha256:7e4706adf15ff9a2c4721a8951e1c86d7e78078ac7b85fbbc30407b3427dfb81",
+                    "sha256:4fca37fd7a7fcfc65342a408019490af97e4b979ee4c677f1abec86fc6c6a398",
+                    "sha256:78d37fcf4a791701b0c0135a3dd2eca4c15db5513e6866e9305db908c1f5a88c",
+                    "sha256:549ac3ba80644a6abbc5bc8d1bc92018f5a3d0b4e92aac347f4453fe32cbe8d9",
+                    "sha256:3c58d47132a10360fd598126709852c5ffc2c047f791a0e3c3c2341a4a86aee6",
+                    "sha256:1c917c757c754d418377532883bf73e8642a2b4b0226babae011c564a4102f2d",
+                    "sha256:8c21ab3cfc314cb7b5167555696155440b38be7eb815620448e2dc710e4ba4b4",
+                    "sha256:59b50c92d6fc07ba4b75db2f994323cf076557fba76a741eee95a7f1fa6a6506",
+                    "sha256:488f9fc4096dafcf75a4df281d877a9ba08a8d50faf442cb316cee9a068ab5a9",
+                    "sha256:ac3cf94baf178f30bbac108719dca1b65cac4ac2dbdc6dce69e43e2a8fc240dd",
+                    "sha256:07ee570e3ca1d9280c9ec89b639c56c4cced0e21442f2141acf7100fad973d72",
+                    "sha256:447ee592ca40468fe391334f164619f2e76396a6ee77e63f8e603e53c2c76821"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,198 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 7615,
+                "digest": "sha256:d18beeaeff4f611e9c6723c0423c8605caa9a682b1d37e1e2f8ce064df333f47"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2813316,
+                    "digest": "sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 24663438,
+                    "digest": "sha256:6282c10629b61d6cff45b509d9e08771c00d8931c1b0d78246bd4c82b0e11b1d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2239100,
+                    "digest": "sha256:24f383844fee1c14b52f19e127032326b6485bd58e2b6a2b7b48dd0fe2c51598"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 283,
+                    "digest": "sha256:22e94daf47977f61b25405ec3e46b95b28852b948669c293951510fa991aeb71"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 159,
+                    "digest": "sha256:c46499be6ad975f3535a4091a32c769a733ace8494492efb204a1ad51054c12e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2039,
+                    "digest": "sha256:e8441a804a73e49ef21a7f346d6f1cac59ef6fda5c215d483329a9c2a3fcf6ba"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1361142,
+                    "digest": "sha256:13221e279d754efa073673c91059ffb4cf9e1c734aaca27bce77a40314e12785"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=12.18.4",
+                    "YARN_VERSION=1.22.4"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "node /usr/src/app/index.js"
+                ],
+                "Image": "sha256:e95aaf872c0beed77bdb1b71c1c4c8e3a41d342de5d342d4996afe42ad611dc9",
+                "Volumes": null,
+                "WorkingDir": "/usr/src/app",
+                "Entrypoint": [
+                    "docker-entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "8ef8e72e9f5df1d5357649ebe77b3d7f14a2e1c4ff9a6c7e778d0c318c2c2813",
+            "container_config": {
+                "Hostname": "8ef8e72e9f5d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=12.18.4",
+                    "YARN_VERSION=1.22.4"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/sh\" \"-c\" \"node /usr/src/app/index.js\"]"
+                ],
+                "Image": "sha256:e95aaf872c0beed77bdb1b71c1c4c8e3a41d342de5d342d4996afe42ad611dc9",
+                "Volumes": null,
+                "WorkingDir": "/usr/src/app",
+                "Entrypoint": [
+                    "docker-entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2021-10-15T00:24:30.5655017Z",
+            "docker_version": "20.10.8",
+            "history": [
+                {
+                    "created": "2020-04-24T01:05:03.608058404Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b91adb67b670d3a6ff9463e48b7def903ed516be66fc4282d22c53e41512be49 in / "
+                },
+                {
+                    "created": "2020-04-24T01:05:03.92860976Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-16T15:24:55.542424448Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV NODE_VERSION=12.18.4",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-02T21:30:42.673297645Z",
+                    "created_by": "/bin/sh -c addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= && alpineArch=\"$(apk --print-arch)\"       && case \"${alpineArch##*-}\" in         x86_64)           ARCH='x64'           CHECKSUM=\"99715657ad621bd364070f176d27c6902ce49441af88e5df2dbe63392a3097da\"           ;;         *) ;;       esac   && if [ -n \"${CHECKSUM}\" ]; then     set -eu;     curl -fsSLO --compressed \"https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz\";     echo \"$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz\" | sha256sum -c -       && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo \"Building from source\"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python2     && for key in       4ED778F539E3634C779C87C6D7062848A1AB005C       94AE36675C464D64BAFA68DD7434390BDBE9B9C5       71DCFD284A79C3B38668286BC97EC7A07EDE3FC1       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       DD8F2338BAE7501E3DD5AC78C273792F7D83545D       A48C2BEE680E841632CD4E44F07496B3EB3C1762       108F52B48DB57BB0CC439B2997B01419BD92F80A       B9E2F5981AA6E0CD28160D9FF13993A75599653C     ; do       gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||       gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||       gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;     done     && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz\"     && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && grep \" node-v$NODE_VERSION.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -     && tar -xf \"node-v$NODE_VERSION.tar.xz\"     && cd \"node-v$NODE_VERSION\"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf \"node-v$NODE_VERSION\"     && rm \"node-v$NODE_VERSION.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f \"node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz\"   && apk del .build-deps   && node --version   && npm --version"
+                },
+                {
+                    "created": "2020-10-02T21:30:43.020249777Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV YARN_VERSION=1.22.4",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-02T21:30:45.295717264Z",
+                    "created_by": "/bin/sh -c apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version"
+                },
+                {
+                    "created": "2020-10-02T21:30:45.511400105Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:238737301d47304174e4d24f4def935b29b3069c03c72ae8de97d94624382fce in /usr/local/bin/ "
+                },
+                {
+                    "created": "2020-10-02T21:30:45.678280212Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"docker-entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-02T21:30:45.846904586Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"node\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-10-15T00:24:23.8942737Z",
+                    "created_by": "/bin/sh -c mkdir -p /usr/src/app"
+                },
+                {
+                    "created": "2021-10-15T00:24:24.3081815Z",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:41ad0af58b56157a315d0b46b9fea8ae3a6c9c3c75c3e12b4eb2612bf381a543 in /usr/src/app/ "
+                },
+                {
+                    "created": "2021-10-15T00:24:24.6472679Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /usr/src/app",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-10-15T00:24:30.131109Z",
+                    "created_by": "/bin/sh -c npm install"
+                },
+                {
+                    "created": "2021-10-15T00:24:30.5655017Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\" \"-c\" \"node /usr/src/app/index.js\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:3e207b409db364b595ba862cdc12be96dcdad8e36c59a03b7b3b61c946a5741a",
+                    "sha256:ce6b7d79f79f7b2ca3e5dba74e2ee39c224e1fb7409d6c3c86c05e14d046427c",
+                    "sha256:6a4836516f0572fc31e214a8b90fadb31e2c30ae90811a4b2e49c4918d8e503a",
+                    "sha256:3524e4217d789410675abb1b3790e2e7c1e26fe728814d1b0372fb996d7e5bfe",
+                    "sha256:fdb00b055f5b22fb94e47d5e2a83a29eb9ef45e0299eed8a73cf9082747388e5",
+                    "sha256:09453d37130b89642739bc1c9284b7b3f50535d7bc1f0e94e0b31fc6682fbfe1",
+                    "sha256:bda1ebceae8b1b36f18ae9f6574547c3085a49bbb0c6508cb81f623cc3aa4052"
+                ]
+            }
+        }
+    }
+}

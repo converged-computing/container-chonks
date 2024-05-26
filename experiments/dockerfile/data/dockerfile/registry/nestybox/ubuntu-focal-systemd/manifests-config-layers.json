@@ -1,0 +1,124 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3791,
+                "digest": "sha256:75f970e1e0853f35cc952aadb5e86571793fe03237b02a196336c0aac46eed2b"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28567101,
+                    "digest": "sha256:7b1a6ab2e44dbac178598dabe7cff59bd67233dba0b27e4fbd1f9d4b3c877a54"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 19735315,
+                    "digest": "sha256:dcf1b2f23b08dabaef91ac45d049ed670b75c2c1ef370f027136419ce631e5e9"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": null,
+                "Image": "sha256:ca74673e4d8d2cfce9f1e92794eeb0f7f1e80e590d640f304c628545f01253a2",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/sbin/init",
+                    "--log-level=err"
+                ],
+                "OnBuild": null,
+                "Labels": null,
+                "StopSignal": "SIGRTMIN+3"
+            },
+            "container": "40b6b3be59c6e37b61a9617b880e2d932683c13934f958b9cf5c80b990e6dfa9",
+            "container_config": {
+                "Hostname": "40b6b3be59c6",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"/sbin/init\" \"--log-level=err\"]"
+                ],
+                "Image": "sha256:ca74673e4d8d2cfce9f1e92794eeb0f7f1e80e590d640f304c628545f01253a2",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/sbin/init",
+                    "--log-level=err"
+                ],
+                "OnBuild": null,
+                "Labels": {},
+                "StopSignal": "SIGRTMIN+3"
+            },
+            "created": "2021-12-10T03:50:12.948899542Z",
+            "docker_version": "20.10.5",
+            "history": [
+                {
+                    "created": "2021-10-16T00:37:47.226745473Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:5d68d27cc15a80653c93d3a0b262a28112d47a46326ff5fc2dfbf7fa3b9a0ce8 in / "
+                },
+                {
+                    "created": "2021-10-16T00:37:47.578710012Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-10T03:50:12.073184983Z",
+                    "created_by": "/bin/sh -c apt-get update &&                                apt-get install -y --no-install-recommends               systemd                                          systemd-sysv                                     libsystemd0                                      ca-certificates                                  dbus                                             iptables                                         iproute2                                         kmod                                             locales                                          sudo                                             udev &&                                                                                   echo \"ReadKMsg=no\" >> /etc/systemd/journald.conf &&                                                                                         apt-get clean -y &&                                                   rm -rf                                                                   /var/cache/debconf/*                                                  /var/lib/apt/lists/*                                                  /var/log/*                                                            /tmp/*                                                                /var/tmp/*                                                            /usr/share/doc/*                                                      /usr/share/man/*                                                      /usr/share/local/* &&                                                                                                                    useradd --create-home --shell /bin/bash admin && echo \"admin:admin\" | chpasswd && adduser admin sudo"
+                },
+                {
+                    "created": "2021-12-10T03:50:12.819405238Z",
+                    "created_by": "/bin/sh -c #(nop)  STOPSIGNAL SIGRTMIN+3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-10T03:50:12.948899542Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/sbin/init\" \"--log-level=err\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9f54eef412758095c8079ac465d494a2872e02e90bf1fb5f12a1641c0d1bb78b",
+                    "sha256:eba9b0eeeff8ae78c4ff373ce8d9fb9aaddaf1ba554127f905227cbc7cc6f34f"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2990,
+                "digest": "sha256:45c06b77474f1b5e88d5095b0cb6a3fd25590f6a70add9204ab809a8bdbe4d43"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 30451302,
+                    "digest": "sha256:23828d760c7b04df02891af556c40ca44c2dd79d6837ea6f18fac24f4108448c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2812603,
+                    "digest": "sha256:a06f5c8b36d77a14d134f8c3425c0c57ded6df8c04bd223389e979e3f58c9148"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 46350897,
+                    "digest": "sha256:d45e30ce9fcd3986a40ccf90e4ba1945b4b9eef5fc3edb3fe61e545732364b0f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5065763,
+                    "digest": "sha256:f77e3519dfd2e195fe52de2ce12416625edc867921bd42bbabfc491d31921181"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": null,
+                "Image": "sha256:bf8f9fb60ba1f150cbeb3de242708be0fd03fb24ed16d5a10fe4397346a912d6",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "autorest"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                }
+            },
+            "container": "66b06f746035a923e6e16ec7e9906866e74671e007cbaeea8f595a6df3023442",
+            "container_config": {
+                "Hostname": "66b06f746035",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"autorest\"]"
+                ],
+                "Image": "sha256:bf8f9fb60ba1f150cbeb3de242708be0fd03fb24ed16d5a10fe4397346a912d6",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "autorest"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                }
+            },
+            "created": "2024-03-19T13:34:57.409028812Z",
+            "docker_version": "24.0.9",
+            "history": [
+                {
+                    "created": "2024-02-27T18:52:57.011931013Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-27T18:52:57.033105379Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-27T18:52:57.056007352Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-27T18:52:57.070227736Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-27T18:52:58.867932393Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:21c2e8d95909bec6f4acdaf4aed55b44ee13603681f93b152e423e3e6a4a207b in / "
+                },
+                {
+                    "created": "2024-02-27T18:52:59.070788584Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-03-19T13:33:15.029874661Z",
+                    "created_by": "/bin/sh -c apt update && apt install -y     curl     && rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2024-03-19T13:34:54.639381982Z",
+                    "created_by": "/bin/sh -c curl -sL https://deb.nodesource.com/setup_14.x | bash - && apt install nodejs -y && rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2024-03-19T13:34:56.893392929Z",
+                    "created_by": "/bin/sh -c npm install -g autorest"
+                },
+                {
+                    "created": "2024-03-19T13:34:57.409028812Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"autorest\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5498e8c22f6996f25ef193ee58617d5b37e2a96decf22e72de13c3b34e147591",
+                    "sha256:011d2c189a76f7ab2c8741b0a700922922860fb067193c2650aa2cf22f463bc2",
+                    "sha256:42cb162b728c22e51066aa307aadc6922d2790afe8078528172890896477ddca",
+                    "sha256:fbfa9f6b27fbd94e19c4c7d24ad99dd64e0609850e354fca2d586926e73f9ed4"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "manifests": {
+        "latest": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:bd7a0594408323b6782387cc06b834e9bf2a2f9322b8e2d01f83d6508071fe59",
+                    "size": 948,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:c908015df4ff44b224aa6bd47ed5ef46094c55bf949cd43449518233dcddd719",
+                    "size": 948,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Entrypoint": [
+                    "/sbin/init",
+                    "--log-level=err"
+                ],
+                "StopSignal": "SIGRTMIN+3",
+                "OnBuild": null
+            },
+            "created": "2022-08-30T21:57:18.681371731Z",
+            "history": [
+                {
+                    "created": "2022-08-02T01:30:42.697460572Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:0eb7f0555d03ff4f0755bba2c3d133e68737888f41390c17710f64b70c8e662a in / "
+                },
+                {
+                    "created": "2022-08-02T01:30:42.983551684Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-08-30T21:57:18.53818047Z",
+                    "created_by": "RUN /bin/sh -c apt-get update &&                                apt-get install -y --no-install-recommends               systemd                                          systemd-sysv                                     libsystemd0                                      ca-certificates                                  dbus                                             iptables                                         iproute2                                         kmod                                             locales                                          sudo                                             udev &&                                                                                   echo \"ReadKMsg=no\" >> /etc/systemd/journald.conf &&                                                                                         apt-get clean -y &&                                                   rm -rf                                                                   /var/cache/debconf/*                                                  /var/lib/apt/lists/*                                                  /var/log/*                                                            /tmp/*                                                                /var/tmp/*                                                            /usr/share/doc/*                                                      /usr/share/man/*                                                      /usr/share/local/* &&                                                                                                                    useradd --create-home --shell /bin/bash admin && echo \"admin:admin\" | chpasswd && adduser admin sudo # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-08-30T21:57:18.681371731Z",
+                    "created_by": "RUN /bin/sh -c systemctl mask systemd-udevd.service                    systemd-udev-trigger.service                    systemd-udevd-kernel.socket                    systemd-udevd-control.socket                    systemd-modules-load.service                    sys-kernel-config.mount                    sys-kernel-debug.mount                    sys-kernel-tracing.mount # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-08-30T21:57:18.681371731Z",
+                    "created_by": "STOPSIGNAL SIGRTMIN+3",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-08-30T21:57:18.681371731Z",
+                    "created_by": "ENTRYPOINT [\"/sbin/init\" \"--log-level=err\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2xpYnJhcnkvdWJ1bnR1OmJpb25pYyIsInBpbiI6InNoYTI1NjplYjEzOTJiYmRkZTYzMTQ3YmMyYjRmZjFhNDA1M2RjZmU2ZDE1ZTRkZmQzY2NlMjllOWI5ZjUyYTRmODhiYzc0In1dfQ==",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:e722d396f503c712107acad2a081b07e33e73d6286c43f58234f69345a216918",
+                    "sha256:0593eeaf415a6b9f1a0e0fd0f0527421d50b875fe4ba352d848192cd5534ecce",
+                    "sha256:8d2173397e35ab3c329933fa4fbe4e650714bac9c88eb9115db3b9bb9bed4157"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,160 @@
+{
+    "manifests": {
+        "1.0.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3571,
+                "digest": "sha256:847b6319746f7eeec928cfaf9c1ff94f142d1bcad554bc93203989ce6e4657b4"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 31370221,
+                    "digest": "sha256:e5ae68f740265288a4888db98d2999a638fdcb6d725f427678814538d253aa4d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 14967126,
+                    "digest": "sha256:a746674935398a1a42f3bd1096c747fc20889360da2372f22df0871b64e73cb2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29434242,
+                    "digest": "sha256:76e8ba7abb4a089372fc524a66e6bb30d28021862014a931a5db16d8ea9e9b02"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 94232016,
+                    "digest": "sha256:e81d9a5537e831b2e9631fb931e209f21094328e778a8b1e31eb2919f83cc046"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 16949111,
+                    "digest": "sha256:7ca5726d8b01174d95baba907a7916364763a7f559fc30c4232301b8ca1432b9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 192361270,
+                    "digest": "sha256:5cd40ce8e2caa2ab4e57ae216e0d7ba990bf47adf06e483cf3f9927832626464"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 145282589,
+                    "digest": "sha256:31505e2f8c12ba32f3930cc8beef0d8cf7bde9e7f5b9021398738b2d45426fba"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.0.0"
+    ],
+    "configs": {
+        "1.0.0": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "ASPNETCORE_URLS=http://+:80",
+                    "DOTNET_RUNNING_IN_CONTAINER=true",
+                    "AzureWebJobsScriptRoot=/home/site/wwwroot",
+                    "HOME=/home",
+                    "FUNCTIONS_WORKER_RUNTIME=java",
+                    "DOTNET_USE_POLLING_FILE_WATCHER=true",
+                    "HOST_VERSION=4.3.0",
+                    "ASPNETCORE_CONTENTROOT=/azure-functions-host",
+                    "JAVA_HOME=/usr/lib/jvm/msft-17-x64"
+                ],
+                "Cmd": [
+                    "/azure-functions-host/Microsoft.Azure.WebJobs.Script.WebHost"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2022-04-11T02:35:41.212601694Z",
+            "history": [
+                {
+                    "created": "2021-12-02T02:48:20.708690397Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:ece5ff85ca549f0b1e9139d29dcb43a52af672d0591c423e28180f6d8d700ad7 in / "
+                },
+                {
+                    "created": "2021-12-02T02:48:21.173095703Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-02T13:52:23.909025992Z",
+                    "created_by": "/bin/sh -c apt-get update     && apt-get install -y --no-install-recommends         ca-certificates                 libc6         libgcc1         libgssapi-krb5-2         libicu67         libssl1.1         libstdc++6         zlib1g     && rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2021-12-02T13:52:24.313001416Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV ASPNETCORE_URLS=http://+:80 DOTNET_RUNNING_IN_CONTAINER=true",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-11T02:28:43.347869351Z",
+                    "created_by": "ARG HOST_VERSION",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-11T02:28:43.347869351Z",
+                    "created_by": "ARG JAVA_HOME",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-11T02:28:43.347869351Z",
+                    "created_by": "ENV AzureWebJobsScriptRoot=/home/site/wwwroot HOME=/home FUNCTIONS_WORKER_RUNTIME=java DOTNET_USE_POLLING_FILE_WATCHER=true HOST_VERSION=4.3.0 ASPNETCORE_CONTENTROOT=/azure-functions-host JAVA_HOME=/usr/lib/jvm/msft-17-x64",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-11T02:28:43.347869351Z",
+                    "created_by": "RUN |2 HOST_VERSION=4.3.0 JAVA_HOME=/usr/lib/jvm/msft-17-x64 /bin/sh -c apt-get update &&     apt-get install -y libc-dev # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-04-11T02:35:39.312897119Z",
+                    "created_by": "COPY /azure-functions-host /azure-functions-host # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-04-11T02:35:39.359475041Z",
+                    "created_by": "COPY /workers/java /azure-functions-host/workers/java # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-04-11T02:35:40.479489825Z",
+                    "created_by": "COPY /usr/lib/jvm/msft-17-x64 /usr/lib/jvm/msft-17-x64 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-04-11T02:35:41.212601694Z",
+                    "created_by": "COPY /FuncExtensionBundles /FuncExtensionBundles # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-04-11T02:35:41.212601694Z",
+                    "created_by": "CMD [\"/azure-functions-host/Microsoft.Azure.WebJobs.Script.WebHost\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9321ff862abbe8e1532076e5fdc932371eff562334ac86984a836d77dfb717f5",
+                    "sha256:55325cadd1f8ba686f6ce0a53609470107ba19658341319d554f194599f2ca03",
+                    "sha256:221c62e55978f340823aba121b5c1d3ee52f152f6ed13b3dd8602600681c4fef",
+                    "sha256:b2e4966b926fafe13caa8d244a05cf70b43caa78254cb33248cba88801938242",
+                    "sha256:8776b36b5f10dfcade4f2b98546415b16820ff6f2a40e49476077dae35e03293",
+                    "sha256:5c35e5f96ed9ee8016caa1c01662774c095365debc46021e5581ff41c9d2ea32",
+                    "sha256:0f7c01ff9cfcee1b611e11268daee627482b161454eb353a9364217a02ee3d6a"
+                ]
+            }
+        }
+    }
+}

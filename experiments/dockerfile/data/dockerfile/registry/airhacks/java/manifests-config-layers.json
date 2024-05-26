@@ -1,0 +1,457 @@
+{
+    "manifests": {
+        "11": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3563,
+                "digest": "sha256:fb1b7b4def123791327b1e0ffb36eb27a4099951cd08259566d77fbeefe15047"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 71522807,
+                    "digest": "sha256:729ec3a6ada3a6d26faca9b4779a037231f1762f759ef34c08bdd61bf52cd704"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 183804075,
+                    "digest": "sha256:99dd733664353b912c9ce85397cce07423c7d521d91f6da913d23839b4b43143"
+                }
+            ]
+        },
+        "14": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4140,
+                "digest": "sha256:03fceb7f2a14347c5390a3ad87289788001daa035309637d12147f53fe1ba554"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 71522807,
+                    "digest": "sha256:729ec3a6ada3a6d26faca9b4779a037231f1762f759ef34c08bdd61bf52cd704"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 327001765,
+                    "digest": "sha256:e1a90b4fbf5075b90a02024eb400c92c543f57fba5bd8146c8049092eea4bf89"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3429,
+                "digest": "sha256:e05bcb1a0f255751e19089ae85ff3e6071db16efc428d6e5f01587f6f2ac2625"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70456515,
+                    "digest": "sha256:785fe1d06b2d42874d3e18fb0747ad8c9ed83d04e7641279a4d5ae353f27eff9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70504692,
+                    "digest": "sha256:b6ea41613b274ee5305271ab7e4340f63ea9c20c1e33f12f8a3263f93c4d056a"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "11",
+        "14",
+        "latest"
+    ],
+    "configs": {
+        "11": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/java-11"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:65c0187b2e94757be8b7f55e210694fc6ec4275629565aadd15890a4954da311",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "description": "Base image with JDK 11 for all docklands images",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "org.label-schema.build-date": "20190927",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "d82636f11d9b000ee1e51c2480cf94759897d635846564304c279a9a839756c2",
+            "container_config": {
+                "Hostname": "d82636f11d9b",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/java-11"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:."
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:65c0187b2e94757be8b7f55e210694fc6ec4275629565aadd15890a4954da311",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "description": "Base image with JDK 11 for all docklands images",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "org.label-schema.build-date": "20190927",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2020-04-27T11:26:41.9824783Z",
+            "docker_version": "19.03.5",
+            "history": [
+                {
+                    "created": "2019-10-01T23:19:56.428311529Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:d6fdacc1972df524a795bd36cf75dd355faefbe9a69d88d1fff95599e2eeed4c in / "
+                },
+                {
+                    "created": "2019-10-01T23:19:56.938655663Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20190927",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-01T23:19:57.105928163Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-04-27T07:23:00.2660448Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Adam Bien, adam-bien.com description=Base image with JDK 11 for all docklands images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-04-27T11:26:39.7863149Z",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && yum -y install java-11-openjdk-devel   && yum -y install glibc-locale-source glibc-langpack-en   && localedef -i en_US -f UTF-8 en_US.UTF-8   && yum clean all"
+                },
+                {
+                    "created": "2020-04-27T11:26:41.7369165Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-04-27T11:26:41.8589546Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-11",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-04-27T11:26:41.9824783Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9e607bb861a7d58bece26dd2c02874beedd6a097c1b6eca5255d5eb0d2236983",
+                    "sha256:73fa8dc65628e369855ee5c97b9112ab46f5579a36feea113f771f7cf7bd2276"
+                ]
+            }
+        },
+        "14": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.:/usr/lib/jvm/jdk-14.0.1/bin:",
+                    "JAVA_TOOLS_OPTIONS=--enable-preview",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/jdk-14.0.1"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4de660ff5badc37ff44abf600a362b79fbe646face55c3e21f865ace54a5ffca",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "description": "Base image with JDK 14 for all docklands images",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "org.label-schema.build-date": "20190927",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "f61f68d45ddff44c2ce2810eb05be6bd875484d94ab4932c696ae374167683a6",
+            "container_config": {
+                "Hostname": "f61f68d45ddf",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.:/usr/lib/jvm/jdk-14.0.1/bin:",
+                    "JAVA_TOOLS_OPTIONS=--enable-preview",
+                    "LC_ALL=en_US.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/jdk-14.0.1"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.:/usr/lib/jvm/jdk-14.0.1/bin:"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4de660ff5badc37ff44abf600a362b79fbe646face55c3e21f865ace54a5ffca",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "description": "Base image with JDK 14 for all docklands images",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "org.label-schema.build-date": "20190927",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2020-06-26T16:02:20.9788499Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2019-10-01T23:19:56.428311529Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:d6fdacc1972df524a795bd36cf75dd355faefbe9a69d88d1fff95599e2eeed4c in / "
+                },
+                {
+                    "created": "2019-10-01T23:19:56.938655663Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20190927",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-01T23:19:57.105928163Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-06-26T07:57:07.1781437Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Adam Bien, adam-bien.com description=Base image with JDK 14 for all docklands images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-06-26T08:23:58.5513406Z",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && curl -O https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_linux-x64_bin.tar.gz   && mkdir -p /usr/lib/jvm/   && tar -xvf openjdk-14.0.1_linux-x64_bin.tar.gz -C /usr/lib/jvm/   && rm openjdk-14.0.1_linux-x64_bin.tar.gz   && yum -y install glibc-locale-source   && localedef -i en_US -f UTF-8 en_US.UTF-8   && yum clean all"
+                },
+                {
+                    "created": "2020-06-26T16:02:20.593219Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_TOOLS_OPTIONS=--enable-preview",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-06-26T16:02:20.7305272Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-06-26T16:02:20.8566623Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/jdk-14.0.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-06-26T16:02:20.9788499Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:.:/usr/lib/jvm/jdk-14.0.1/bin:",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9e607bb861a7d58bece26dd2c02874beedd6a097c1b6eca5255d5eb0d2236983",
+                    "sha256:6bf4a5a82f468e90165daac1253a754ad1a8e5247b980371d9357abda4ddd443"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "author": "Adam Bien, adam-bien.com",
+            "config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:03dc4995046a63d76b12195500207311b66d8ab584ac61aff94d6e19cf848f07",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "7c8fb6fc8181f01e307a4cde15e8b84973cc33f8dc50912a153b537398d58f09",
+            "container_config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:03dc4995046a63d76b12195500207311b66d8ab584ac61aff94d6e19cf848f07",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2017-03-20T05:04:47.72673089Z",
+            "docker_version": "17.03.0-ce",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:49.626887401Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:29f66b8b4bafd0f00567ba6acbda5157ef1e874fa0b80f59ef09f8957698eb33 in / "
+                },
+                {
+                    "created": "2017-03-15T21:49:51.771775523Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20170315",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:52.758118314Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:03:38.732140412Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Adam Bien, adam-bien.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:46.759135112Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && yum -y install java-1.8.0-openjdk-devel   && yum clean all"
+                },
+                {
+                    "created": "2017-03-20T05:04:47.290005197Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:47.72673089Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9b198ff9ff5b314b0367bea097cfc320046b36ebfa6c9a1e2ba2a78665d58d87",
+                    "sha256:c3982f37ccb92c1434090da8749ddfa4f8604b4660a248809d1f75f579db554b"
+                ]
+            }
+        }
+    }
+}
