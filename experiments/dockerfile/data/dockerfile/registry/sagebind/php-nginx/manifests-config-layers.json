@@ -1,0 +1,211 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4929,
+                "digest": "sha256:eaa42eecfcc1453e076951609062ebaad1207f32763f4d59e52b5c8dc863d362"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2064911,
+                    "digest": "sha256:2fdfe1cd78c20d05774f0919be19bc1a3e4729bce219968e4188e7e0f1af679d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 292095,
+                    "digest": "sha256:b8affc648f068fa9011e1080af54b3d8c28c4b7e9ce1c00504a32fd1224a6055"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1272,
+                    "digest": "sha256:4278b14d03f21b265a51f64de7a09ca7040b853fba16c6766a743d639272e49c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 587608,
+                    "digest": "sha256:3734d7d6a808b8173424e1f8028d29be50134464fc2ba26c2ed7ef1924086092"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 754,
+                    "digest": "sha256:855d276a9065cd4ae180d8b46450f5dcb7806aeb329de4dea8859c99065279bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5427562,
+                    "digest": "sha256:dfa5b0f736f7c2ddf42789ebd13464059cee36594e691082aa7c523dc54caa85"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 930,
+                    "digest": "sha256:54dabb26c71ad3129fbaa79a2a8f93cd703ce289ca5baed0fab9cc5e279e69f2"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Stephen Coakley <me@stephencoakley.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:0f671d47d1a08f3bdb2725d9c40b9ef3130efcd736953d5ad2628beacbd6fa6c",
+                "Volumes": null,
+                "WorkingDir": "/srv/www",
+                "Entrypoint": [
+                    "/sbin/init"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY dir:49f3ae350ebca818404529bc6b89c153f33f8767fb492185e5517e0833c592a7 in / "
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:0f671d47d1a08f3bdb2725d9c40b9ef3130efcd736953d5ad2628beacbd6fa6c",
+                "Volumes": null,
+                "WorkingDir": "/srv/www",
+                "Entrypoint": [
+                    "/sbin/init"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2018-07-24T04:24:22.477328862Z",
+            "docker_version": "18.06.0-ce",
+            "history": [
+                {
+                    "created": "2017-12-01T18:48:48.77308942Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:2b00f26f6004576e2f8faeb3fb0517a14f79ea89a059fe096b54cbecf5da512e in / "
+                },
+                {
+                    "created": "2017-12-01T18:48:48.949613376Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-12-11T04:46:28.516958106Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stephen Coakley <me@stephencoakley.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-12-11T04:46:33.858032915Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c apk --no-cache upgrade &&     apk --no-cache add s6 &&     addgroup -g 9000 srv"
+                },
+                {
+                    "created": "2018-05-02T02:30:51.489505182Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:762ef5332890276c3cf5852beb6732ff6438d37dfb8673a7e0073744d0a2c152 in / "
+                },
+                {
+                    "created": "2018-05-02T02:30:51.737332309Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/sbin/init\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-05-02T02:30:52.23052532Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stephen Coakley <me@stephencoakley.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-01T05:22:07.594432759Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c apk --no-cache add nginx &&     addgroup nginx srv &&     mv /var/lib/nginx/html /srv/www &&     chown -R nginx:srv /srv/www"
+                },
+                {
+                    "created": "2018-06-01T05:22:07.896282198Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:f19019853454be56381015bcbe6b146c11bd28cb244162b839715a20ae7abb46 in / "
+                },
+                {
+                    "created": "2018-06-01T05:22:08.215006792Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /srv/www",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-01T05:22:08.53098843Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 443 80",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-24T02:56:48.454895246Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stephen Coakley <me@stephencoakley.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-24T04:24:21.745378852Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c apk --no-cache add         php7         php7-ctype         php7-dom         php7-fpm         php7-json         php7-mbstring         php7-openssl         php7-phar         php7-posix         php7-session         php7-simplexml         php7-sockets         php7-xml         php7-xmlreader         php7-xmlwriter         php7-zlib"
+                },
+                {
+                    "created": "2018-07-24T04:24:22.477328862Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:49f3ae350ebca818404529bc6b89c153f33f8767fb492185e5517e0833c592a7 in / "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:04a094fe844e055828cb2d64ead6bd3eb4257e7c7b5d1e2af0da89fa20472cf4",
+                    "sha256:214299c9c862418996bc5f615309f809dfddd262ffa60a4274849bbd8c41e602",
+                    "sha256:c1dcb4ab905ee5895c05911a9ea256112826147cb69e45e4b6b492ad2f328b2e",
+                    "sha256:5d6f2ef0cb47bee52ad4d77f41a5820d3eaff094bf6c16fc325157ae46decd58",
+                    "sha256:d0c39d9a6cfe8cace76b05eae684d6ddb7dd6a5cd301efafad76df242293a245",
+                    "sha256:9e7e7ce67eacab4f618fcf5a57fe7899d78c1269bd9077bb8e9f21da73b26106",
+                    "sha256:e26eb05bff9fa0e3cc752fa98e2b21da3a31b94482cf69375119c438dd59abba"
+                ]
+            }
+        }
+    }
+}

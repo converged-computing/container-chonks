@@ -1,0 +1,472 @@
+{
+    "manifests": {
+        "bookworm-slim": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2709,
+                "digest": "sha256:2782bc8e18aa81ed2f4dfd066582d8167ab2121cd0e599bff021cc68941b9fab"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29150411,
+                    "digest": "sha256:09f376ebb190216b0459f470e71bec7b5dfa611d66bf008492b40dcc5f1d8eae"
+                }
+            ]
+        },
+        "bullseye-slim": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2710,
+                "digest": "sha256:d468be8c23e93e132d6da74d9ef98dd7288bedf97aee09955594fc49350b866f"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 31417602,
+                    "digest": "sha256:1d5252f66ea9b661aceca1027b3d7ca259a50608261a25b51148119ecf086932"
+                }
+            ]
+        },
+        "buster-slim": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2708,
+                "digest": "sha256:5554c3310a9d2fac2b1b80b9ebe7e9ff40f9e3d9f6c9fb89b21634418ed0338b"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27187431,
+                    "digest": "sha256:3240fe174df9a5a4923c4b52f1d887dd1ad1a9ee69245c1fb867f399167584dd"
+                }
+            ]
+        },
+        "trixie-slim": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2710,
+                "digest": "sha256:facd9d6183721307c0b353bdca18020c42ae434adb38bf59c01d3c2ac2044c16"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 31920681,
+                    "digest": "sha256:2cd537844f6f80d57a58ee3d61a84af2f1221b8e8f9e9a2bd97dc528745df760"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "bookworm-slim",
+        "bullseye-slim",
+        "buster-slim",
+        "trixie-slim"
+    ],
+    "configs": {
+        "bookworm-slim": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:c70c60c738bd2ae7875b4a249d0f738fb5e13722f908057763f2ce898df03e68",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ulrich Schreiner <ulrich.schreiner@gmail.com>",
+                    "org.label-schema.docker.cmd": "docker run -it base/debian sh",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "Debian Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-description": "Debian Base Image-minimal",
+                    "org.label-schema.vendor": "Debian"
+                }
+            },
+            "container": "d07898a43dc230d51cd66063afb1b17b8836d1573a7bf2a4f6bb87f37ee024bb",
+            "container_config": {
+                "Hostname": "d07898a43dc2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/bash\"]"
+                ],
+                "Image": "sha256:c70c60c738bd2ae7875b4a249d0f738fb5e13722f908057763f2ce898df03e68",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ulrich Schreiner <ulrich.schreiner@gmail.com>",
+                    "org.label-schema.docker.cmd": "docker run -it base/debian sh",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "Debian Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-description": "Debian Base Image-minimal",
+                    "org.label-schema.vendor": "Debian"
+                }
+            },
+            "created": "2024-05-30T02:00:52.823541753Z",
+            "docker_version": "20.10.24",
+            "history": [
+                {
+                    "created": "2024-05-30T02:00:46.371933008Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=Debian Base Image maintainer=Ulrich Schreiner <ulrich.schreiner@gmail.com> org.label-schema.vcs-description=Debian Base Image-minimal org.label-schema.docker.cmd=docker run -it base/debian sh org.label-schema.vendor=Debian org.label-schema.license=GPLv2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-30T02:00:46.493750268Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG VERSION",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-30T02:00:51.26545079Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:95ae4529ed314214c24da2b1b2a404035bbe9d38aef152af7c85b07d95d729ed in / "
+                },
+                {
+                    "created": "2024-05-30T02:00:52.823541753Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5d4427064ecc46e3c2add169e9b5eafc7ed2be7861081ec925938ab628ac0e25"
+                ]
+            }
+        },
+        "bullseye-slim": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:ff88a34b331218b069accc357f6be2e21ea49cca0cdbc27f9ecfcdd8a37c7acb",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ulrich Schreiner <ulrich.schreiner@gmail.com>",
+                    "org.label-schema.docker.cmd": "docker run -it base/debian sh",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "Debian Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-description": "Debian Base Image-minimal",
+                    "org.label-schema.vendor": "Debian"
+                }
+            },
+            "container": "aeea2034b2d2bf6d3b31bcfa834e93351a844516c1e9a15b495971d2ece474e5",
+            "container_config": {
+                "Hostname": "aeea2034b2d2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/bash\"]"
+                ],
+                "Image": "sha256:ff88a34b331218b069accc357f6be2e21ea49cca0cdbc27f9ecfcdd8a37c7acb",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ulrich Schreiner <ulrich.schreiner@gmail.com>",
+                    "org.label-schema.docker.cmd": "docker run -it base/debian sh",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "Debian Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-description": "Debian Base Image-minimal",
+                    "org.label-schema.vendor": "Debian"
+                }
+            },
+            "created": "2023-07-27T05:11:23.171420127Z",
+            "docker_version": "20.10.24",
+            "history": [
+                {
+                    "created": "2023-07-27T05:11:17.823741839Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=Debian Base Image maintainer=Ulrich Schreiner <ulrich.schreiner@gmail.com> org.label-schema.vcs-description=Debian Base Image-minimal org.label-schema.docker.cmd=docker run -it base/debian sh org.label-schema.vendor=Debian org.label-schema.license=GPLv2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-27T05:11:18.011546695Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG VERSION",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-27T05:11:22.870983333Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:8c64297a7c0215c0563444989f5418348651fb5d367c4e7cba84ef114ba0cbef in / "
+                },
+                {
+                    "created": "2023-07-27T05:11:23.171420127Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8ce178ff9f343a37169f68dd0df03099524afb71a879551c5f17e493c7b1d3ec"
+                ]
+            }
+        },
+        "buster-slim": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:5ab4381ed6d59a24ea2e6f99f46a32d8695201d71894e9550936e0af41df0b3c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ulrich Schreiner <ulrich.schreiner@gmail.com>",
+                    "org.label-schema.docker.cmd": "docker run -it base/debian sh",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "Debian Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-description": "Debian Base Image-minimal",
+                    "org.label-schema.vendor": "Debian"
+                }
+            },
+            "container": "29caaff8bfc794cf0c493556faf83ab8b75aecc6b530e073825cb72bc948dc0f",
+            "container_config": {
+                "Hostname": "29caaff8bfc7",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/bash\"]"
+                ],
+                "Image": "sha256:5ab4381ed6d59a24ea2e6f99f46a32d8695201d71894e9550936e0af41df0b3c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ulrich Schreiner <ulrich.schreiner@gmail.com>",
+                    "org.label-schema.docker.cmd": "docker run -it base/debian sh",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "Debian Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-description": "Debian Base Image-minimal",
+                    "org.label-schema.vendor": "Debian"
+                }
+            },
+            "created": "2023-07-27T05:11:21.43270203Z",
+            "docker_version": "20.10.24",
+            "history": [
+                {
+                    "created": "2023-07-27T05:11:16.588337158Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=Debian Base Image maintainer=Ulrich Schreiner <ulrich.schreiner@gmail.com> org.label-schema.vcs-description=Debian Base Image-minimal org.label-schema.docker.cmd=docker run -it base/debian sh org.label-schema.vendor=Debian org.label-schema.license=GPLv2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-27T05:11:16.747309923Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG VERSION",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-27T05:11:21.011117567Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:98273f44ed0012d9e56227443f3a2bcf1cc38e0dde0794dcc62ac3bf15c46299 in / "
+                },
+                {
+                    "created": "2023-07-27T05:11:21.43270203Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:ff3e8b4eec52ddca8801cb746ccf810831e7b760ff194c5432c295e156475caf"
+                ]
+            }
+        },
+        "trixie-slim": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:665df61b7d688eaedeeafb3f2b5fd47d845cbd9fc7b733f9b7171cf59130fb09",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ulrich Schreiner <ulrich.schreiner@gmail.com>",
+                    "org.label-schema.docker.cmd": "docker run -it base/debian sh",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "Debian Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-description": "Debian Base Image-minimal",
+                    "org.label-schema.vendor": "Debian"
+                }
+            },
+            "container": "e91efe1a98716679f1d187c73be625d21394c20d98b8a03434dee13cdb4edee3",
+            "container_config": {
+                "Hostname": "e91efe1a9871",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/bash\"]"
+                ],
+                "Image": "sha256:665df61b7d688eaedeeafb3f2b5fd47d845cbd9fc7b733f9b7171cf59130fb09",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Ulrich Schreiner <ulrich.schreiner@gmail.com>",
+                    "org.label-schema.docker.cmd": "docker run -it base/debian sh",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "Debian Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-description": "Debian Base Image-minimal",
+                    "org.label-schema.vendor": "Debian"
+                }
+            },
+            "created": "2024-05-30T02:00:53.440115685Z",
+            "docker_version": "20.10.24",
+            "history": [
+                {
+                    "created": "2024-05-30T02:00:47.643379902Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=Debian Base Image maintainer=Ulrich Schreiner <ulrich.schreiner@gmail.com> org.label-schema.vcs-description=Debian Base Image-minimal org.label-schema.docker.cmd=docker run -it base/debian sh org.label-schema.vendor=Debian org.label-schema.license=GPLv2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-30T02:00:47.823563405Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG VERSION",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-30T02:00:53.162816958Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:6eed852f267131d82ea87d0aef93663b68b602d25836c173afd9e154fe33e451 in / "
+                },
+                {
+                    "created": "2024-05-30T02:00:53.440115685Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:fb50db2fb3d3c995e4948dd90643c1d917c2b73b97f3ff50160174a012fb047e"
+                ]
+            }
+        }
+    }
+}

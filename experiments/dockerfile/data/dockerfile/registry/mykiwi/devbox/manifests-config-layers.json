@@ -1,0 +1,310 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 11638,
+                "digest": "sha256:ca2f4410328e7eec812ba97d944452d297efd392a2135b81a253c58177f8ce4c"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27101001,
+                    "digest": "sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22185476,
+                    "digest": "sha256:b774e924c7bf573b3ec8321b9ffd974f2248b05311920c52bf9df8ef34ba4e2f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 30578898,
+                    "digest": "sha256:f779475e018462cf1bb8825fd5a231926f2acfed68c99105b3b46ab69eb017fc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 48672381,
+                    "digest": "sha256:3f4d35777f2936c9d8f2509988ff47c5e1a815ab8481a6db29901099f029ea4a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 15989087,
+                    "digest": "sha256:238ab88cbdb6dab2cf5b211f9f55d5778e2c7ca9566b37bdbb45b9f75c348df9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 213598873,
+                    "digest": "sha256:b2fd33ee7ee0a4146d412f4f46a7572d57be5b8c9eff29589a69da2fc24af9b8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 129004464,
+                    "digest": "sha256:cde27cc02fb4a9067432e4493899b6b224891ac331674fd3bf367d7b2c10362e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 153050588,
+                    "digest": "sha256:e47b6eca0e79c9038534627cde0d4ae6c4a1f64bc0ca51bd0bb7433df2e03510"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 34906285,
+                    "digest": "sha256:ec4d45424ad3f32e9b6db98ea06ffb3eef9d181b0c0734dea69ddefe8e8a9d57"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 49437776,
+                    "digest": "sha256:16b8eb7717c8aa4726b0f92f79c17fa79dd89677d6940fc92cd865d70e259062"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28443604,
+                    "digest": "sha256:16ec895ba780545682976ec907fc1cd1c0837c06f128ba80e83e02eefa79b30d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 9462,
+                    "digest": "sha256:495401a54f86d1584e34c97d46c93c1e5888ebf583ebddc0dc57dcc4afb649c0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 9462,
+                    "digest": "sha256:7fad3f768f8b9d2b99ee3c7cdfa22ff8fce2515fadc2939308a3413fa7376168"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "mykiwi",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "TINI_VERSION=v0.19.0",
+                    "TERM=xterm",
+                    "USER=mykiwi"
+                ],
+                "Cmd": [
+                    "zsh"
+                ],
+                "Image": "sha256:203c095ca666d987956deb981d294ecdc9423d2e0d2379bcc1ab64dae8900b49",
+                "Volumes": null,
+                "WorkingDir": "/home/mykiwi",
+                "Entrypoint": [
+                    "/tini",
+                    "--"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "dd9a70ff8583851e7aaa4ded938d35d52f269f711afad5cd0c6d47f8bebc6507",
+            "container_config": {
+                "Hostname": "dd9a70ff8583",
+                "Domainname": "",
+                "User": "mykiwi",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "TINI_VERSION=v0.19.0",
+                    "TERM=xterm",
+                    "USER=mykiwi"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"zsh\"]"
+                ],
+                "Image": "sha256:203c095ca666d987956deb981d294ecdc9423d2e0d2379bcc1ab64dae8900b49",
+                "Volumes": null,
+                "WorkingDir": "/home/mykiwi",
+                "Entrypoint": [
+                    "/tini",
+                    "--"
+                ],
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2021-03-18T10:27:27.708905945Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2021-03-12T02:20:40.804976973Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / "
+                },
+                {
+                    "created": "2021-03-12T02:20:41.106312024Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:23:09.616893723Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG CURL=curl -fsSL",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:23:09.920690929Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG UPDATE=apt update",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:23:10.237191915Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG NO_CONFIRM=--yes --no-install-recommends",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:23:10.481246517Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG INSTALL=apt install --yes --no-install-recommends",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:23:27.993028299Z",
+                    "created_by": "|4 CURL=curl -fsSL INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends UPDATE=apt update /bin/sh -c set -xe  && ${UPDATE}  && apt upgrade ${NO_CONFIRM}  && ${INSTALL}        ca-certificates        curl        gnupg        procps        unzip"
+                },
+                {
+                    "created": "2021-03-18T10:23:28.264950814Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG PHP_VERSION=8.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:23:55.365268393Z",
+                    "created_by": "|5 CURL=curl -fsSL INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c set -xe  && echo \"deb https://packages.sury.org/php buster main\" > /etc/apt/sources.list.d/sury.list  && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B188E2B695BD4743  && ${UPDATE}  && ${INSTALL}        php${PHP_VERSION}-apcu        php${PHP_VERSION}-bcmath        php${PHP_VERSION}-cli        php${PHP_VERSION}-common        php${PHP_VERSION}-curl        php${PHP_VERSION}-iconv        php${PHP_VERSION}-intl        php${PHP_VERSION}-mbstring        php${PHP_VERSION}-pgsql        php${PHP_VERSION}-uuid        php${PHP_VERSION}-xml        php${PHP_VERSION}-zip  && ${CURL} https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer  && ${CURL} https://get.symfony.com/cli/installer | bash && mv /root/.symfony/bin/symfony /usr/local/bin/symfony"
+                },
+                {
+                    "created": "2021-03-18T10:24:25.044705394Z",
+                    "created_by": "|5 CURL=curl -fsSL INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c set -xe  && ${CURL} https://deb.nodesource.com/setup_15.x | bash -  && ${INSTALL} nodejs  && npm install --global npm@latest"
+                },
+                {
+                    "created": "2021-03-18T10:24:42.119081945Z",
+                    "created_by": "|5 CURL=curl -fsSL INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c set -xe  && ${INSTALL}        python3        python3-pip        python        python-pip  && python3 -m pip install --upgrade pip  && python -m pip install --upgrade pip"
+                },
+                {
+                    "created": "2021-03-18T10:25:32.139025798Z",
+                    "created_by": "|5 CURL=curl -fsSL INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c set -xe  && ${CURL} https://sh.rustup.rs | sh -s -- -y"
+                },
+                {
+                    "created": "2021-03-18T10:25:33.473039067Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG GO_VERSION=1.16",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:25:49.926722286Z",
+                    "created_by": "|6 CURL=curl -fsSL GO_VERSION=1.16 INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c set -xe  && ${CURL} https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz > go.tar.gz && tar -C /usr/local -xzf go.tar.gz && rm go.tar.gz  && ln -s /usr/local/go/bin/go /usr/local/bin/go  && ln -s /usr/local/go/bin/gofmt /usr/local/bin/gofmt"
+                },
+                {
+                    "created": "2021-03-18T10:25:50.722002733Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DOCKER_COMPOSE_VERSION=1.28.2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:25:50.95206779Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DOCKER_MACHINE_VERSION=0.16.2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:26:29.124958319Z",
+                    "created_by": "|8 CURL=curl -fsSL DOCKER_COMPOSE_VERSION=1.28.2 DOCKER_MACHINE_VERSION=0.16.2 GO_VERSION=1.16 INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c set -xe  && ${CURL} https://get.docker.com/ | sh  && ${CURL} https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-Linux-x86_64 > /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose  && ${CURL} https://github.com/docker/machine/releases/download/v${DOCKER_MACHINE_VERSION}/docker-machine-`uname -s`-`uname -m` > /usr/local/bin/docker-machine && chmod +x /usr/local/bin/docker-machine"
+                },
+                {
+                    "created": "2021-03-18T10:26:41.483771078Z",
+                    "created_by": "|8 CURL=curl -fsSL DOCKER_COMPOSE_VERSION=1.28.2 DOCKER_MACHINE_VERSION=0.16.2 GO_VERSION=1.16 INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c set -xe  && ${CURL} https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip > awscliv2.zip && unzip awscliv2.zip && ./aws/install && rm -rf awscliv2.zip aws"
+                },
+                {
+                    "created": "2021-03-18T10:27:13.010735606Z",
+                    "created_by": "|8 CURL=curl -fsSL DOCKER_COMPOSE_VERSION=1.28.2 DOCKER_MACHINE_VERSION=0.16.2 GO_VERSION=1.16 INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c set -xe  && echo \"deb https://cli.github.com/packages buster main\" > /etc/apt/sources.list.d/sury.list  && apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0  && ${UPDATE}  && ${INSTALL}       git       gh       hub       openssh-client       sudo       zsh  && useradd mykiwi --shell /bin/zsh  && usermod -aG docker mykiwi  && echo '%mykiwi ALL= NOPASSWD: ALL' >> /etc/sudoers  && mkdir -p /home/mykiwi/.ssh/  && mkdir -p /home/mykiwi/.php/ini  && touch /home/mykiwi/.z  && ${CURL} https://github.com/mykiwi.keys > /home/mykiwi/.ssh/authorized_keys  && chown -R mykiwi:mykiwi /home/mykiwi  && chmod 700 /home/mykiwi/.ssh  && chmod 600 /home/mykiwi/.ssh/authorized_keys  && sudo -u mykiwi zsh -c 'set -xe       && cd /home/mykiwi       && git config --global url.\"https://github.com/\".insteadOf git@github.com:       && git clone --recursive git@github.com:mykiwi/dotfiles.git .dotfiles       && cd .dotfiles       && ./install.sh       && source ~/.zshrc       && composer global require --optimize-autoloader pyrech/composer-changelogs  '"
+                },
+                {
+                    "created": "2021-03-18T10:27:13.699205208Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG BAT_VERSION=0.17.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:27:24.371094848Z",
+                    "created_by": "|9 BAT_VERSION=0.17.1 CURL=curl -fsSL DOCKER_COMPOSE_VERSION=1.28.2 DOCKER_MACHINE_VERSION=0.16.2 GO_VERSION=1.16 INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c set -xe  && ${CURL} https://github.com/sharkdp/bat/releases/download/v${BAT_VERSION}/bat_${BAT_VERSION}_amd64.deb > bat.deb && dpkg -i bat.deb && rm bat.deb  && ${CURL} https://gobinaries.com/chriswalz/bit | sh  && ${INSTALL}       exa       fd-find       htop       jq       neovim       ripgrep       tmate       tmux  && ln -s /usr/lib/cargo/bin/fd /usr/local/bin/fd"
+                },
+                {
+                    "created": "2021-03-18T10:27:24.660226952Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV TINI_VERSION=v0.19.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:27:24.978180886Z",
+                    "created_by": "/bin/sh -c #(nop) ADD 84b50f1acc38c999c313832de2ae4bbedb1f1fa3ab9c76209b6f0adee5230fd1 in /tini "
+                },
+                {
+                    "created": "2021-03-18T10:27:26.27688923Z",
+                    "created_by": "|9 BAT_VERSION=0.17.1 CURL=curl -fsSL DOCKER_COMPOSE_VERSION=1.28.2 DOCKER_MACHINE_VERSION=0.16.2 GO_VERSION=1.16 INSTALL=apt install --yes --no-install-recommends NO_CONFIRM=--yes --no-install-recommends PHP_VERSION=8.0 UPDATE=apt update /bin/sh -c chmod +x /tini"
+                },
+                {
+                    "created": "2021-03-18T10:27:26.509715539Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/tini\" \"--\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:27:26.741301841Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV TERM=xterm",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:27:26.977522147Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV USER=mykiwi",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:27:27.207383405Z",
+                    "created_by": "/bin/sh -c #(nop)  USER mykiwi",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:27:27.485438001Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /home/mykiwi",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T10:27:27.708905945Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"zsh\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:14a1ca976738392ffa2ae4e54934ba28ab9cb756e924ad9297a4795a4adbfdf6",
+                    "sha256:41a5c22ee5791a1b020697b9297ee1007e144d567db9cb581aec35d0ebac9ff3",
+                    "sha256:7f2962e13f08fb72bdfc889cca83c2dd260236a791ede74a61181cc2efe844eb",
+                    "sha256:b62791f88d33ad9939bd7222ab359edee56573a0ffd63d1c3bee113dd2799ef5",
+                    "sha256:0f47f5e32f0f2c1254f185e3038d85a93805c5d72c7af8d75d307c1baed65552",
+                    "sha256:903f4119507f2edbcd3f69f05e63e3cf1dde8cc6086796643dc50cb74a52126c",
+                    "sha256:4dcfeca0caa39f6d2451cf8b59d691bce45ace2e4689401dde25a1e131438e5c",
+                    "sha256:8b15e8bcf397466f6649ec01ab6d7ccb3ff25c6cd178a9455d8628f5697d3bff",
+                    "sha256:ab7ae86a7ec0ea44b8b49d21ba63698283c7632f412b242ffe59ca203391ac03",
+                    "sha256:a3f6985317c9b01ba47fdfdb343ccff539ed380011cd12203e9f91453d08ea68",
+                    "sha256:2ed1aa7338926d20f2cce6bf6e78539bedfcd860cc1516780ff75795f89cd1f3",
+                    "sha256:cb89d6abe01848f23030b7d6df9773ea2e21db94cc95d40299dc93b483482e61",
+                    "sha256:c895014d027107c2434a8402548ca4603b324b724cd671ac4e8233cfdd471b03"
+                ]
+            }
+        }
+    }
+}

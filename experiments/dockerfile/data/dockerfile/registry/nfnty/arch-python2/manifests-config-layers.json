@@ -1,0 +1,206 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5934,
+                "digest": "sha256:a4497af6f190f006b1532899d26eb48f31810392dea7e139a995a1474b3f3984"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 137294250,
+                    "digest": "sha256:b77a855ea045148dda16c09b72d296667b2dbdff7c1154c4dca7eaa5c9c5d334"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 676,
+                    "digest": "sha256:59b34b527958c8d652157d44c0fb6cad327aa3b072dd8984e23ea0acd49cb81c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1984,
+                    "digest": "sha256:4e716e902edbe7131b4e5a72885ef13ad2701cae5929a4e0162d5e702c942326"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2226,
+                    "digest": "sha256:68354fb8541827f5b8aa1d75d2407b0a7fa85d82a6a0420fda4baf1148d8b983"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10747,
+                    "digest": "sha256:3a07200ed509e3b9171ff801d2cdcad16f655655337715815eefce6330aa4fd1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 94980413,
+                    "digest": "sha256:149747dbdb4189e62843f81680187b62261fbfa10e18418edc4020bf7a5a14d9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 24784569,
+                    "digest": "sha256:c6c128029bb1fb4c026ea3f1a1f8b3a5b18909f692de1d2846176f8309641251"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "nfnty <docker@nfnty.se>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_TIME=en_DK.UTF-8",
+                    "LC_PAPER=en_DK.UTF-8",
+                    "LC_MEASUREMENT=en_DK.UTF-8",
+                    "TZ=UTC",
+                    "VERSION_PYTHON2=2.7.15-2"
+                ],
+                "Cmd": [
+                    "/usr/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6122dc0df20b621176d66908e92f8736dcbae0003df231b536bdfc3631b5204e",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "1b4ba106531a4c161954a134c7634ababe207eac9b3eff2759322f490cc5c563",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_TIME=en_DK.UTF-8",
+                    "LC_PAPER=en_DK.UTF-8",
+                    "LC_MEASUREMENT=en_DK.UTF-8",
+                    "TZ=UTC",
+                    "VERSION_PYTHON2=2.7.15-2"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "pacman --sync --noconfirm --refresh --sysupgrade &&     pacman --sync --noconfirm \"python2=${VERSION_PYTHON2}\" &&     find /var/cache/pacman/pkg -mindepth 1 -delete"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6122dc0df20b621176d66908e92f8736dcbae0003df231b536bdfc3631b5204e",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2018-12-22T02:39:15.002501896Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2018-12-22T00:05:14.749900894Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER nfnty <docker@nfnty.se>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:06:59.288142735Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:482aa5884189a57419f83cab6310115fd8dcabf1451999caa79d06f5468bd79c in / "
+                },
+                {
+                    "created": "2018-12-22T00:07:01.160301948Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_TIME=en_DK.UTF-8 LC_PAPER=en_DK.UTF-8 LC_MEASUREMENT=en_DK.UTF-8 TZ=UTC",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:07:01.694448564Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:00dcbe668c6842f1430e2d429850af56074b8d3cad95001bbfcd7cb8ff4900a1 in /tmp/crypto/ "
+                },
+                {
+                    "created": "2018-12-22T00:07:02.284254542Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:42fbc3f8ca79473b495e438c4efa51d0c027c77f94d30c19ea2c8d230008ad17 in /etc/ "
+                },
+                {
+                    "created": "2018-12-22T00:07:02.828663786Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:be8a9c661f1b60067a9ef94d6113493a326b683c92fa3eb7af4e03bd157a9806 in /opt/ "
+                },
+                {
+                    "created": "2018-12-22T00:07:03.263156511Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:a79adcca96dd2c7b366e3a10d131cdd5d7ab051df0275cec4415dfbaff43d755 in /tmp/packages/ "
+                },
+                {
+                    "created": "2018-12-22T00:10:17.653700362Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c locale-gen &&         chmod 'u=rwX,g=rX,o=rX'         /etc/{locale.conf,locale.gen,pacman.conf,pacman.d,pacman.d/mirrorlist}         /opt/multiprocess.py &&         ln --symbolic \"/usr/share/zoneinfo/${TZ}\" /etc/localtime &&         pacman-key --init &&     pacman-key --populate archlinux &&         find /tmp/crypto/ca-certificates -type f -not -name '.gitignore'         -exec install --owner=root --group=root --mode=755             --target-directory='/etc/ca-certificates/trust-source/anchors' '{}' '+' &&     update-ca-trust &&         find /tmp/crypto/pacman/keys -type f -not -name '.gitignore' -exec pacman-key --add '{}' '+' &&     find /tmp/crypto/pacman/trust -type f -not -name '.gitignore'         -exec gpg --homedir /etc/pacman.d/gnupg --import-ownertrust '{}' '+' &&         rm --recursive /tmp/crypto &&         pacman --sync --noconfirm --refresh --sysupgrade &&     find /tmp/packages -type f -not -name '.gitignore' -and -not -name '*.sig' -exec pacman --upgrade --noconfirm '{}' '+' &&     rm --recursive /tmp/packages &&     find /var/cache/pacman/pkg -mindepth 1 -delete"
+                },
+                {
+                    "created": "2018-12-22T00:10:18.96057517Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/usr/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T02:38:50.191876919Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER nfnty <docker@nfnty.se>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T02:38:50.485184847Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  ENV VERSION_PYTHON2=2.7.15-2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T02:39:15.002501896Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c pacman --sync --noconfirm --refresh --sysupgrade &&     pacman --sync --noconfirm \"python2=${VERSION_PYTHON2}\" &&     find /var/cache/pacman/pkg -mindepth 1 -delete"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:dccfcd51ee1bb726085bb265ffcca1d54e790641f3816bb04718b21211c0ebc0",
+                    "sha256:903602e7c31c2ffe63ccad21dd334819984bc36feacf0cf5e264a87a779ec9a7",
+                    "sha256:f0abf74775481c11f04703c36c6f27d699662a52f8399bb078e5c788adc6d09a",
+                    "sha256:4ca096a3f6ac688ebb7bb52274cd8dde1e853104a8a2f2ea7a774698d7088ece",
+                    "sha256:2b99fc72f3916c33b241ff9cc8ef14b8958345789a236350ccb5afaee07c7415",
+                    "sha256:a24f0fd84a470e934ff802b15319ddb081e023ae4805cf10a9d6187e858af2b2",
+                    "sha256:de196b431822530de228d4bb25fe2339295ace2a0df27ad43bf1c9bcf452fe80"
+                ]
+            }
+        }
+    }
+}

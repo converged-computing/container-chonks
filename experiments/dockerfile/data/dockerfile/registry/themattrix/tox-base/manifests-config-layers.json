@@ -1,0 +1,324 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 10909,
+                "digest": "sha256:1c4e43167e6e7a04ac2101992803a5a391f8f78ee600303e0b7e967a60cd300e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 43252507,
+                    "digest": "sha256:3b37166ec61459e76e33282dda08f2a9cd698ca7e3d6bc44e6a6e7580cdeff8e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 846,
+                    "digest": "sha256:504facff238fde83f1ca8f9f54520b4219c5b8f80be9616ddc52d31448a044bd"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 615,
+                    "digest": "sha256:ebbcacd28e101968415b0c812b2d2dc60f969e36b0b08c073bf796e12b1bb449"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 850,
+                    "digest": "sha256:c7fb3351ecad291a88b92b600037e2435c84a347683d540042086fe72c902b8a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 168,
+                    "digest": "sha256:2e3debadcbf7e542e2aefbce1b64a358b1931fb403b3e4aeca27cb4d809d56c2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5482036,
+                    "digest": "sha256:00b434a3c28db13faa47fe4282e02e4fc298ee86ac6c2d900bf073d0f3f11ce0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27599457,
+                    "digest": "sha256:2bca64daf648d3cc563656d4f7d8c99d932fdc0888414be603e2fab7d20ef7af"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 128915336,
+                    "digest": "sha256:194f3636c5589a11109f33cc3e69883c7936c40bbd10851900d111504fdcfb27"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 169,
+                    "digest": "sha256:b16c2adee17c4b161736fd4de87bdfa3d59b32e2f297ea643cd0dde133060c75"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 282696678,
+                    "digest": "sha256:b22deea1d72fb944123c5b18b2a2b6c550a24dce20aa48045f58d552b1a6bda5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4465,
+                    "digest": "sha256:37239c8abee245518d7189020d411cb54820802a7796c48ba75eff78993d4c15"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1697832,
+                    "digest": "sha256:d16308a96ac754c50513d5e7c204153503e1653975cc8bd78ab462e0ee62869f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 12974820,
+                    "digest": "sha256:ad0b4126222acb58b7960be3bc7ab34fad9953a210535336646b481bc4e3b43d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 92,
+                    "digest": "sha256:b504efa1b170ebdf261e226984e52990481a0bfcf97a0d512b1dda28e22f6761"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 589,
+                    "digest": "sha256:7db1d7d878fe5ab7898469692838beb86f00a1a09ce2c41d9688b50bd1843347"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/.pyenv/bin:/.pyenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "LANG=en_US.UTF-8",
+                    "PYENV_ROOT=/.pyenv",
+                    "GOSU_VERSION=1.10"
+                ],
+                "Cmd": [
+                    "tox"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:fce61e10ad45f8f1365a8275d905c96df9d6062110131f0f2e1bff22de95eff5",
+                "Volumes": {
+                    "/src": {}
+                },
+                "WorkingDir": "/app",
+                "Entrypoint": [
+                    "/docker-entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Matthew Tardiff <mattrix@gmail.com>"
+                }
+            },
+            "container": "c04d7346ea8990cbb5e43a6ca163363869cf806954adf704cbd3763b3436fd67",
+            "container_config": {
+                "Hostname": "c04d7346ea89",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/.pyenv/bin:/.pyenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "LANG=en_US.UTF-8",
+                    "PYENV_ROOT=/.pyenv",
+                    "GOSU_VERSION=1.10"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"tox\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:fce61e10ad45f8f1365a8275d905c96df9d6062110131f0f2e1bff22de95eff5",
+                "Volumes": {
+                    "/src": {}
+                },
+                "WorkingDir": "/app",
+                "Entrypoint": [
+                    "/docker-entrypoint.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Matthew Tardiff <mattrix@gmail.com>"
+                }
+            },
+            "created": "2019-10-29T14:21:05.952495873Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2018-09-05T22:20:55.163307996Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a83ab1826f43e88bc0d3ab6230f14cb9b2dacab70c762c3bfc555eda733b292c in / "
+                },
+                {
+                    "created": "2018-09-05T22:20:55.867042901Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-09-05T22:20:56.423645249Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-05T22:20:57.023288712Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2018-09-05T22:20:57.602946438Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-09-05T22:20:57.758547727Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-18T15:48:34.513726102Z",
+                    "author": "Matthew Tardiff <mattrix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Matthew Tardiff <mattrix@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-18T15:48:34.872382346Z",
+                    "author": "Matthew Tardiff <mattrix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-18T15:49:08.453483771Z",
+                    "author": "Matthew Tardiff <mattrix@gmail.com>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get install -y locales &&     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* &&     localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8"
+                },
+                {
+                    "created": "2018-09-18T15:49:08.826590429Z",
+                    "author": "Matthew Tardiff <mattrix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-18T15:49:09.20920063Z",
+                    "author": "Matthew Tardiff <mattrix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PYENV_ROOT=/.pyenv PATH=/.pyenv/bin:/.pyenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-18T15:50:25.73908113Z",
+                    "author": "Matthew Tardiff <mattrix@gmail.com>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get install -y --no-install-recommends git ca-certificates curl &&     curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash &&     apt-get purge -y --auto-remove ca-certificates curl &&     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*"
+                },
+                {
+                    "created": "2018-09-18T15:52:40.486121082Z",
+                    "author": "Matthew Tardiff <mattrix@gmail.com>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get install -y --no-install-recommends         make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev         libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev         libxml2-dev libxmlsec1-dev libffi-dev         ca-certificates &&     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*"
+                },
+                {
+                    "created": "2018-09-18T15:52:42.499076187Z",
+                    "author": "Matthew Tardiff <mattrix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY python-versions.txt ./",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-18T15:52:42.769958049Z",
+                    "author": "Matthew Tardiff <mattrix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN pyenv update &&             xargs -P 4 -n 1 pyenv install < python-versions.txt &&             pyenv global $(pyenv versions --bare) &&             find $PYENV_ROOT/versions -type d '(' -name '__pycache__' -o -name 'test' -o -name 'tests' ')' -exec rm -rfv '{}' + &&             find $PYENV_ROOT/versions -type f '(' -name '*.py[co]' -o -name '*.exe' ')' -exec rm -fv '{}' + &&             mv -v -- /python-versions.txt $PYENV_ROOT/version",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-29T13:21:48.171274975Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:9fd4766afdb1a631d6ff514b97f69fd2a8d0015ede1ebb0986090c16a6aa4db9 in ./ "
+                },
+                {
+                    "created": "2019-10-29T14:20:23.715206228Z",
+                    "created_by": "/bin/sh -c pyenv update &&             xargs -P 4 -n 1 pyenv install < python-versions.txt &&             pyenv global $(pyenv versions --bare) &&             find $PYENV_ROOT/versions -type d '(' -name '__pycache__' -o -name 'test' -o -name 'tests' ')' -exec rm -rfv '{}' + &&             find $PYENV_ROOT/versions -type f '(' -name '*.py[co]' -o -name '*.exe' ')' -exec rm -fv '{}' + &&             mv -v -- /python-versions.txt $PYENV_ROOT/version"
+                },
+                {
+                    "created": "2019-10-29T14:20:24.805652165Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Matthew Tardiff <mattrix@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-29T14:20:26.202058992Z",
+                    "created_by": "/bin/sh -c groupadd -r tox --gid=999 &&     useradd -m -r -g tox --uid=999 tox"
+                },
+                {
+                    "created": "2019-10-29T14:20:26.369919595Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GOSU_VERSION=1.10",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-29T14:20:51.05789951Z",
+                    "created_by": "/bin/sh -c set -x &&     apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* &&     dpkgArch=\"$(dpkg --print-architecture | awk -F- '{ print $NF }')\" &&     wget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch\" &&     wget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc\" &&     export GNUPGHOME=\"$(mktemp -d)\" &&     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu &&     rm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu nobody true &&     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*"
+                },
+                {
+                    "created": "2019-10-29T14:21:05.052985866Z",
+                    "created_by": "/bin/sh -c pyenv local 3.7.5 &&     python -m pip install -U pip &&     python -m pip install tox==3.14.0 &&     pyenv local --unset &&     pyenv rehash"
+                },
+                {
+                    "created": "2019-10-29T14:21:05.295733033Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /app"
+                },
+                {
+                    "created": "2019-10-29T14:21:05.441583964Z",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/src]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-29T14:21:05.641666225Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:abf5a46e7361a096ed1b8e50829d4acc146bff4be8117402ba3b659957cf645f in / "
+                },
+                {
+                    "created": "2019-10-29T14:21:05.775020677Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-10-29T14:21:05.952495873Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"tox\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8823818c474862932702f8a920abea43b2560ddceb910d145be9ba0eb149a643",
+                    "sha256:19d043c86cbcb68e4f8363bf0363a2110af6e627eb9051cda1e8fc6ce1e43d7f",
+                    "sha256:883eafdbe580e33bf34cb29e9c4c01a5fd7812f7ab93f9950cad1875e13e3915",
+                    "sha256:4775b2f378bb7a98f1d64d2af7ee14251acd027c115065691719367c739ef25a",
+                    "sha256:75b79e19929ce80a6ec6c059616338272fbac9173fdd5be1ee48b949261770cf",
+                    "sha256:f1071e8142c68592911138780440933fd7fe094f0b40fd0c253c3d3298d1fba4",
+                    "sha256:3a07eac8d338a3f612a1d5aa51183df907b71edc5bdc648413ebce0fb2ed9a56",
+                    "sha256:c6a69eb3f464b27f12dfc8c609710dfeca1bca734261f7c4d0bf6ef9595dd60e",
+                    "sha256:02b5be9535976f63c4950a2c4adb7166c2f8a6cca7373e1880553a1fc002502e",
+                    "sha256:56dc33754cbf5cbb366b22b66b4d79daca3cdc7083a637123c433e305b7708d8",
+                    "sha256:545b3861a8dda22561716aa06b009ba05e8eb91b07699c2632785157efc15250",
+                    "sha256:fdfc67e4db3fb12028003f451620933602c7a9e7bc0808cd56ccc53453ecccfb",
+                    "sha256:9c170a94a037c304cc6ccd5908225000561495c4a09074cca774204d7fe6dc03",
+                    "sha256:6aa71c7d77db2b72a08bb56251f311ff7ae3c608d92d9e7eae1528ff94375635",
+                    "sha256:94783834ef2dcbb95605087c74c90f12227e6ab2178c5ca829775c127b465119"
+                ]
+            }
+        }
+    }
+}

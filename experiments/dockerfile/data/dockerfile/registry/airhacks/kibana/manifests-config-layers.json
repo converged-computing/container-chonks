@@ -1,0 +1,214 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4565,
+                "digest": "sha256:f62ce56e8a19b434e06b794aac47aaa060f4b360ef647b53ba0c396dbae02527"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70591526,
+                    "digest": "sha256:8d30e94188e7f13642d975e70c484e48c33867f3ede3277df1145803fa996ac1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 88803682,
+                    "digest": "sha256:fd40b8e9a89c36edcfe45e42e740cf6043f8220bf254bf0fdbd8097c5df942e1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 91,
+                    "digest": "sha256:8ddbec1cfff4a5908448fcd08b838f9decfc2c983648b151da2ddafa6707297c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 33679017,
+                    "digest": "sha256:84d32afc49ab582d01118e0bb22353de8cf3a02c476a1a47fa7398efee0999db"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1484,
+                    "digest": "sha256:c72cafdded0b06e058f52b8f08d52814b7d299439580d89c730afcde18211cba"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "719d8d68f3dc",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "5601/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "INSTALL_DIR=kibana"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:9c2512f376f205ca4a804af99bd6649b6a4f7123ec700f106f551931081183ef",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "${INSTALL_DIR}/bin/kibana"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20160906",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "85d89c7608d48c2f1b87f3d8d1af40419844b767b1c2a31318dff376de1e0d0f",
+            "container_config": {
+                "Hostname": "719d8d68f3dc",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "5601/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "INSTALL_DIR=kibana"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 5601/tcp"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9c2512f376f205ca4a804af99bd6649b6a4f7123ec700f106f551931081183ef",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "${INSTALL_DIR}/bin/kibana"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20160906",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2016-10-13T15:32:26.778234563Z",
+            "docker_version": "1.12.1",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-06T21:10:17.550047616Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:e336b45186086f7d9d9b8e8be3d6c027bc9c14dbfdde2bb056793ee458bd1a57 in / "
+                },
+                {
+                    "created": "2016-09-06T21:10:19.577810426Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160906",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-06T21:10:20.397787682Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-11T08:37:18.414655718Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Adam Bien, adam-bien.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-11T08:38:37.152148535Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && yum -y install java-1.8.0-openjdk-devel   && yum clean all"
+                },
+                {
+                    "created": "2016-10-11T08:38:37.656747038Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-11T08:38:38.014223667Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-13T15:31:36.350043809Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV INSTALL_DIR=kibana",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-13T15:31:37.568762723Z",
+                    "created_by": "/bin/sh -c mkdir ${INSTALL_DIR}"
+                },
+                {
+                    "created": "2016-10-13T15:32:24.210802524Z",
+                    "created_by": "/bin/sh -c curl https://download.elastic.co/kibana/kibana/kibana-4.6.1-linux-x86_64.tar.gz | tar xvz -C ${INSTALL_DIR} --strip-components=1"
+                },
+                {
+                    "created": "2016-10-13T15:32:26.000369403Z",
+                    "created_by": "/bin/sh -c echo -e 'elasticsearch.url: \"http://elasticsearch:9200\"' >> ${INSTALL_DIR}/config/kibana.yml"
+                },
+                {
+                    "created": "2016-10-13T15:32:26.368992388Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/bin/sh\" \"-c\" \"${INSTALL_DIR}/bin/kibana\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-13T15:32:26.778234563Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 5601/tcp",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:0aeb287b1ba9fd4c951bb9f4bd8e50908f51c630e07b655b3b2f9581dc0fef0d",
+                    "sha256:7432093c4daa4627b68206ecc5c19c7ed7d329ce46f5b135151ef5b86c166c37",
+                    "sha256:e25084e2399a8f582c1f00a362845db99efc327e5fad891dbdb56bdf2da329f3",
+                    "sha256:604e5555912c6b91b0e5c9e014b7c214db9706cad4d99bf1bc7836ca8a07049e",
+                    "sha256:e8a9a78210c9cb8c2a64293f84ccfb35d683505d42b7997255c6d342c19a7d91"
+                ]
+            }
+        }
+    }
+}

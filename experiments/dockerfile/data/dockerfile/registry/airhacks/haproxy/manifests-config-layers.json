@@ -1,0 +1,172 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3777,
+                "digest": "sha256:08da2702b40bfc6854d59883c4d1819aa798201b87276e6cd345a862b1a3b4d3"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70456515,
+                    "digest": "sha256:785fe1d06b2d42874d3e18fb0747ad8c9ed83d04e7641279a4d5ae353f27eff9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70504692,
+                    "digest": "sha256:b6ea41613b274ee5305271ab7e4340f63ea9c20c1e33f12f8a3263f93c4d056a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5881035,
+                    "digest": "sha256:3b3bfb7523e935905a9d4679b67a596c837552ac9b8dc2ea66b8a63cfeb62298"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Adam Bien, adam-bien.com",
+            "config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:eb55543fdb99584c31a0f31b639004ce591c3340fb903bca20adb5fde9ae71e7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "a6c228199403871b10b778ed145b9e2d47ec8f7da38beb5f48a71ca558cfb17e",
+            "container_config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "yum -y install haproxy     && yum clean all"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:eb55543fdb99584c31a0f31b639004ce591c3340fb903bca20adb5fde9ae71e7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2017-03-21T13:00:38.069693866Z",
+            "docker_version": "17.03.0-ce",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:49.626887401Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:29f66b8b4bafd0f00567ba6acbda5157ef1e874fa0b80f59ef09f8957698eb33 in / "
+                },
+                {
+                    "created": "2017-03-15T21:49:51.771775523Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20170315",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:52.758118314Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:03:38.732140412Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Adam Bien, adam-bien.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:46.759135112Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && yum -y install java-1.8.0-openjdk-devel   && yum clean all"
+                },
+                {
+                    "created": "2017-03-20T05:04:47.290005197Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:47.72673089Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:30:24.304881606Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Adam Bien, adam-bien.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-21T13:00:38.069693866Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c yum -y install haproxy     && yum clean all"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9b198ff9ff5b314b0367bea097cfc320046b36ebfa6c9a1e2ba2a78665d58d87",
+                    "sha256:c3982f37ccb92c1434090da8749ddfa4f8604b4660a248809d1f75f579db554b",
+                    "sha256:1f5511cf900d248552628f0ba7ca66498ae788a69ff07c4260c9a995255bd7fe"
+                ]
+            }
+        }
+    }
+}

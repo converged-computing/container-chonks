@@ -1,0 +1,226 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5117,
+                "digest": "sha256:0a00a64f3fd5702b2daa33c4d1f2fd2cac54aac53bb24c9ebefd6798c4551718"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 54357843,
+                    "digest": "sha256:4b105072aa89afc93b7238396c7ca2951308666854da2fb399c4ca362c93b445"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 534,
+                    "digest": "sha256:0a464367609bfeff1015e61ed4c282ba0d12daa409b6eed96a954dbb031ba5a0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10987892,
+                    "digest": "sha256:688a9b98c9f8a833ca036af557f55ef55709248e82daf667cf2ef2b702cacbf4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 35504282,
+                    "digest": "sha256:9348e9b0c3c9c7527574cac7050e5368438e76cc908ae9fe2967604d3b9893f7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1319673,
+                    "digest": "sha256:6943a93965801c3827e7ec146fce8425b4ccbf5027356853270e14fe29b446e8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1888492,
+                    "digest": "sha256:e05b67915a1f801500e372f2efb735e8024d2a65efad3a3918defdf41046fc08"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 942,
+                    "digest": "sha256:cc7d09c35f329e09493e6913a75a0cecd16d559fc8aeba1dfeda800def606232"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 528,
+                    "digest": "sha256:0e907224b61efc0a88c9280dbdd0d27a60fb325ec6f0bd41a6db05d61691ee69"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1156,
+                    "digest": "sha256:ba1c6afef7c0575a1516f45cc24640e07080c087a08a4ece4fff693076129eb8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 605,
+                    "digest": "sha256:1f9ed3c4eeaa0fc55cf626cde887b72a0f821d46f77aa798b1bb3cd54ba7155c"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "TERM=xterm"
+                ],
+                "Cmd": [
+                    "/init"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:27b443ef9d1061eafd4a0f0f57432fea12b4da54fe566f9a6b1c8fd70051c1da",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "f64ecfd1402a211fe3ab818205c2da30f746555952551cf1fd1ce6d88032312c",
+            "container_config": {
+                "Hostname": "f64ecfd1402a",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "TERM=xterm"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/init\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:27b443ef9d1061eafd4a0f0f57432fea12b4da54fe566f9a6b1c8fd70051c1da",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2018-12-18T14:56:21.142444283Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2018-11-15T22:33:25.555816424Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:0b25d0012989e20b95dd0702d9491fdc4a4d40d0994690df7ec502cf163590fe in / "
+                },
+                {
+                    "created": "2018-11-15T22:33:36.146834065Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-18T14:43:34.73403727Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-18T14:43:35.161295907Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:0d00700f2d30819c7584277f0292b62fe630b94ced8f953d255610a29d789655 in /usr/bin "
+                },
+                {
+                    "created": "2018-12-18T14:46:46.757181152Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c cleanupgrade"
+                },
+                {
+                    "created": "2018-12-18T14:49:44.060466462Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c cleaninstall     ca-certificates     curl     entr     gettext-base     git     less     lsb-release     nano"
+                },
+                {
+                    "created": "2018-12-18T14:49:44.896973836Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c #(nop)  ENV TERM=xterm",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-18T14:54:18.388662064Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-18T14:56:12.723330848Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c cleaninstall     cron     rsyslog"
+                },
+                {
+                    "created": "2018-12-18T14:56:16.248104698Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c VERSION=`latestversion just-containers/s6-overlay`     && curl -sSL \"https://github.com/just-containers/s6-overlay/releases/download/v${VERSION}/s6-overlay-amd64.tar.gz\"     | tar xzf - -C /"
+                },
+                {
+                    "created": "2018-12-18T14:56:18.029717027Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c sed -i \"s/s6-nuke -th/s6-nuke -t/\" /etc/s6/init/init-stage3"
+                },
+                {
+                    "created": "2018-12-18T14:56:18.486006923Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:20891183896356fd46d606fb16035fc865b7af36a6d43acb4f997ab5c95388be in /usr/bin "
+                },
+                {
+                    "created": "2018-12-18T14:56:18.8831429Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:0c42b90dd9542ec6118801c0a73419474ae2b0f464d7a07a8a1073b1f350af49 in /etc "
+                },
+                {
+                    "created": "2018-12-18T14:56:20.841913987Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c touch /var/log/messages     && chmod 600 /etc/crontab     && rm -f /etc/cron.daily/apt /etc/cron.daily/dpkg /etc/cron.daily/passwd"
+                },
+                {
+                    "created": "2018-12-18T14:56:21.142444283Z",
+                    "author": "Robbert Klarenbeek <robbertkl@renbeek.nl>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/init\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2eccc496e14843013797dc394723017279c5cececf50ff12eb4cf24d155b51d2",
+                    "sha256:c46c97f433918bf92b6cfdd631e6e0aebf8ce4f2fdabbf785d98fd6fe1d95fc3",
+                    "sha256:2d15189f218e50901e4260956ae3ff6089a937fe66789fc8241d403184dfe613",
+                    "sha256:7cd3e5343305cb3fc3f8f4124b90ade0b78f52a9059b173a51760f10c067e4c4",
+                    "sha256:82b200369832814ef6d6f1465f08028e2fdbae21bfc7b0fd3b370304c35c5f54",
+                    "sha256:953c7abd6c48e04ed42b894b29fb2dc1307fe7e0fa1e9c286cd41bcf1995b1b7",
+                    "sha256:f91e426b5d6455b0767f020237861689a3848c77193e589a00fcb51e5e164214",
+                    "sha256:f2304308c554cd6e52febd1d5f9215e7d174df09e10a2788835854ca21e078a6",
+                    "sha256:14de02b8eff4be5e9aef5ae3805f4f6286d565e9141fbbe2c8763db98e06beaa",
+                    "sha256:ac5fe609d2e79cbf158cc350718a6dbcdf00da56fc85b9c8fde301617e52935a"
+                ]
+            }
+        }
+    }
+}

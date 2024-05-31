@@ -1,0 +1,136 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2249,
+                "digest": "sha256:f71a9d68ae97951c5f1143d727b9bae98bb3969b3120062bd51f34c4df00ef01"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45339314,
+                    "digest": "sha256:c5e155d5a1d130a7f8a3e24cee0d9e1349bff13f90ec6a941478e558fde53c14"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 25432541,
+                    "digest": "sha256:2cab4484ef4a15877f81e2477955288139682dfd6472d7b5c541ce550b6ae37e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 109,
+                    "digest": "sha256:69891169deb5d693b5c2f2c6ea3f01ee266440e519d307dbbdf5df8fea99feab"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1ccd338070d7fc974732208ba7d558639fba9817b10a9d655e5836d507f7c6d4",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [
+                    "ENTRYPOINT [\"/usr/bin/supervisord\", \"-n\"]",
+                    "CMD []"
+                ],
+                "Labels": null
+            },
+            "container": "51fdd640df7cfadfd15a153f06c17b21c73105864f36887de878415cceee85cb",
+            "container_config": {
+                "Hostname": "51fdd640df7c",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ONBUILD CMD []"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1ccd338070d7fc974732208ba7d558639fba9817b10a9d655e5836d507f7c6d4",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [
+                    "ENTRYPOINT [\"/usr/bin/supervisord\", \"-n\"]",
+                    "CMD []"
+                ],
+                "Labels": {}
+            },
+            "created": "2019-05-08T23:12:44.381490371Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2019-05-08T00:33:09.837482517Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:caf91edab64f988bc24766c58ee66c00311c7c921296b8e5b51d7023422a1485 in / "
+                },
+                {
+                    "created": "2019-05-08T00:33:10.318602909Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-05-08T23:12:41.516051413Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get -y install -qq supervisor"
+                },
+                {
+                    "created": "2019-05-08T23:12:43.594575735Z",
+                    "created_by": "/bin/sh -c mkdir -p /app/logs"
+                },
+                {
+                    "created": "2019-05-08T23:12:44.003296708Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD ENTRYPOINT [\"/usr/bin/supervisord\", \"-n\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-05-08T23:12:44.381490371Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD CMD []",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f94641f1fe1f5c42c325652bf55f0513c881c86b620b912b15460e0bca07cc12",
+                    "sha256:5a240454695916c4a12f13681e8db63a7412c3c689502d7ac692a14e918271b1",
+                    "sha256:84ddee60b8b2af3f3b366e10be6e40ae64582794df8c50a1bb97391d68938e0a"
+                ]
+            }
+        }
+    }
+}

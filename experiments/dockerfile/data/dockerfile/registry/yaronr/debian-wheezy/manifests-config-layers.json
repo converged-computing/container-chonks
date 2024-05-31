@@ -1,0 +1,133 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3547,
+                "digest": "sha256:e604aa10419cee97aba043fb5926bbdbe06278d9c06a97beb5288a133376c5c1"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 37184894,
+                    "digest": "sha256:518dc1482465239f97033d820a12bbb0e560a871e7c018058f9aaceda82b51a7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 374,
+                    "digest": "sha256:e98d7111f751d25da70e3ad7c6d2463d25be856c0e2bdcea44704058ad811969"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 24597214,
+                    "digest": "sha256:b030cf5142f916e7eca8d3a741a425ed2b14421b4f4c3c473043dafef66617a7"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "yaronr",
+            "config": {
+                "Hostname": "0f61ac4703ba",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:7a888adb6566acb6aa2587be2c218b0c5df316f99b04bcd3820056a2863ece1c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "532eb3c3e2d5657a6820112b9b6fde2237a03f00d0c61a3f910281f0888a211f",
+            "container_config": {
+                "Hostname": "0f61ac4703ba",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "DEBIAN_FRONTEND=noninteractive apt-get update && \tDEBIAN_FRONTEND=noninteractive apt-get upgrade -yq --no-install-recommends &&     DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends wget zip unzip nano curl  &&     DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends --reinstall procps &&     DEBIAN_FRONTEND=noninteractive apt-get clean &&     rm -rf /var/lib/apt/lists/*"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:7a888adb6566acb6aa2587be2c218b0c5df316f99b04bcd3820056a2863ece1c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-05-15T12:27:40.038796686Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2016-01-25T22:26:48.616467961Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:41fbf9f100beb805491bb568f69661f98b7403baf969f0b8f1a516ba80415135 in /"
+                },
+                {
+                    "created": "2016-01-25T22:26:50.982291424Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]"
+                },
+                {
+                    "created": "2017-05-15T12:26:58.952268043Z",
+                    "author": "yaronr",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER yaronr",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-05-15T12:27:00.589179697Z",
+                    "author": "yaronr",
+                    "created_by": "/bin/sh -c (echo \"deb http://cdn.debian.net/debian wheezy-backports main\" > /etc/apt/sources.list.d/backports.list) && \t(echo \"deb http://http.debian.net/debian/ wheezy main contrib non-free\" > /etc/apt/sources.list) && \t(echo \"deb http://http.debian.net/debian/ wheezy-updates main contrib non-free\" >> /etc/apt/sources.list) && \t(echo \"deb http://security.debian.org/ wheezy/updates main contrib non-free\" >> /etc/apt/sources.list) && \techo \"force-unsafe-io\" > /etc/dpkg/dpkg.cfg.d/02apt-speedup"
+                },
+                {
+                    "created": "2017-05-15T12:27:40.038796686Z",
+                    "author": "yaronr",
+                    "created_by": "/bin/sh -c DEBIAN_FRONTEND=noninteractive apt-get update && \tDEBIAN_FRONTEND=noninteractive apt-get upgrade -yq --no-install-recommends &&     DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends wget zip unzip nano curl  &&     DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends --reinstall procps &&     DEBIAN_FRONTEND=noninteractive apt-get clean &&     rm -rf /var/lib/apt/lists/*"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:d9212b21b469e0d2754a8c67da4cd1508247b05e4a382f1b446f4819245618cb",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:19af14ac9f1fd0461488a6c4943fab50a990f3ab722c9bb3af5dab6dab650dc1",
+                    "sha256:7067d46e102c0608b6d3f8391a0f893480716d886455921b1f1fb55dc0b2546a"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,3107 @@
+{
+    "manifests": {
+        "1.0": {
+            "name": "phusion/holy-build-box-64",
+            "tag": "1.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a4762152e1589e05884954068a8cbbb65d200000c34079f39dc0294c358a3dc1"
+                },
+                {
+                    "blobSum": "sha256:a4762152e1589e05884954068a8cbbb65d200000c34079f39dc0294c358a3dc1"
+                },
+                {
+                    "blobSum": "sha256:7f74aba3246031245bd8022edc26ea797738ad9e421fe15e86760bb64c3e6ce1"
+                },
+                {
+                    "blobSum": "sha256:601be940691cd5308366d76cda99a11237261fa5d12e36f1aec90759fea3cae7"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"2cc490d444615585640f769bab1aab2cd3d06fae6340efc7aad14637d642dc73\",\"parent\":\"56e0de45502146b691a3cd0c8653a4aa3c75a610ab5f17d14f1b3fe7d0fe0dcf\",\"created\":\"2015-10-05T00:04:54.627891685Z\",\"container\":\"9865c47bf1359d9a0e19c5c02938199512f302fc21d7406f1947bbfb9abd7719\",\"container_config\":{\"Hostname\":\"ec678a6cc997\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"bash /hbb_build/build.sh\"],\"Image\":\"56e0de45502146b691a3cd0c8653a4aa3c75a610ab5f17d14f1b3fe7d0fe0dcf\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.0\",\"config\":{\"Hostname\":\"ec678a6cc997\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"56e0de45502146b691a3cd0c8653a4aa3c75a610ab5f17d14f1b3fe7d0fe0dcf\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":685549679}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"2cc490d444615585640f769bab1aab2cd3d06fae6340efc7aad14637d642dc73\",\"parent\":\"56e0de45502146b691a3cd0c8653a4aa3c75a610ab5f17d14f1b3fe7d0fe0dcf\",\"created\":\"2015-10-05T00:04:54.627891685Z\",\"container\":\"9865c47bf1359d9a0e19c5c02938199512f302fc21d7406f1947bbfb9abd7719\",\"container_config\":{\"Hostname\":\"ec678a6cc997\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"bash /hbb_build/build.sh\"],\"Image\":\"56e0de45502146b691a3cd0c8653a4aa3c75a610ab5f17d14f1b3fe7d0fe0dcf\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.0\",\"config\":{\"Hostname\":\"ec678a6cc997\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"56e0de45502146b691a3cd0c8653a4aa3c75a610ab5f17d14f1b3fe7d0fe0dcf\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":685549679}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"56e0de45502146b691a3cd0c8653a4aa3c75a610ab5f17d14f1b3fe7d0fe0dcf\",\"parent\":\"9069226e092e9c8d68450ca4a416bec6acf1709584e9fd70ea5fe8040bf9859e\",\"created\":\"2015-10-04T23:50:09.343798132Z\",\"container\":\"55361b0ec672f55f64bf88a3927111943af2200692600e0412b207a120e6a018\",\"container_config\":{\"Hostname\":\"ec678a6cc997\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD dir:99520f74dec7172c288011a687e45775f02b75f482dded814de9ce29acdd745f in /hbb_build\"],\"Image\":\"9069226e092e9c8d68450ca4a416bec6acf1709584e9fd70ea5fe8040bf9859e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.0\",\"config\":{\"Hostname\":\"ec678a6cc997\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"9069226e092e9c8d68450ca4a416bec6acf1709584e9fd70ea5fe8040bf9859e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":31859}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9069226e092e9c8d68450ca4a416bec6acf1709584e9fd70ea5fe8040bf9859e\",\"parent\":\"f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639\",\"created\":\"2015-04-22T05:13:06.559888911Z\",\"container\":\"ec678a6cc997d0d699ede0412095a4b8a07b940fb1a6555e71c4c80a551b3eb7\",\"container_config\":{\"Hostname\":\"ec678a6cc997\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:daa82c1f87a4f4827b4cfedad2f374ebccd22ff1e7371b1046c11bc3506e8886 in /\"],\"Image\":\"f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":{}},\"docker_version\":\"1.6.0\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\",\"config\":{\"Hostname\":\"ec678a6cc997\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":284081882}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f1b10cd842498c23d206ee0cbeaa9de8d2ae09ff3c7af2723a9e337a6965d639\",\"created\":\"2015-04-22T05:12:47.171582029Z\",\"container\":\"df10d6e2cabfef344bcf4c236367695f95da8f1d9bbb80e69c88ec4f4d8744f1\",\"container_config\":{\"Hostname\":\"df10d6e2cabf\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.6.0\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\",\"config\":{\"Hostname\":\"df10d6e2cabf\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                }
+            ],
+            "schemaVersion": 1,
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "ZSCK:ZRQQ:WB3D:MMWQ:LW7E:RH6T:7WOC:AG5D:VKGB:67YL:ZAOU:AE36",
+                            "kty": "EC",
+                            "x": "G9VBUQ5LhOFUIdcY-folmBkrAA5h5eYklsmSrmMkjj8",
+                            "y": "sY9E9-jXtDqnyYXVgnteb9cvsCP5_vemrG0BWS5sEKg"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "75lMunBBbHuAbZY1AEUsjWlP45i1HSeWde8kCFIn43Vuf4qeVmOKX4Qlm4xAaUdNwljJLXFDj32LS0uOPdA2vA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjg2NjcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMVQwOTowNToxMloifQ"
+                }
+            ]
+        },
+        "1.1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2691,
+                "digest": "sha256:383abc1818e65df32428129fb4606d0f6c297ade8de3e62bf8b825af6a34e61d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 87342234,
+                    "digest": "sha256:d129ecdb0249b2540429964ecf04a8f426199d27bfec517ecd9f19b2c7ae21ba"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10101,
+                    "digest": "sha256:2baaf831ff219ef9e2c32c7565034b831a2c1daeac59769bc2813db3f242eab3"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 170804724,
+                    "digest": "sha256:97df78aa10e809d32e6786848dd1f2dd96bb1a17a1e0f2398ec95460bc83bc04"
+                }
+            ]
+        },
+        "1.1.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/octet-stream",
+                "size": 2691,
+                "digest": "sha256:383abc1818e65df32428129fb4606d0f6c297ade8de3e62bf8b825af6a34e61d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 87342234,
+                    "digest": "sha256:d129ecdb0249b2540429964ecf04a8f426199d27bfec517ecd9f19b2c7ae21ba"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10101,
+                    "digest": "sha256:2baaf831ff219ef9e2c32c7565034b831a2c1daeac59769bc2813db3f242eab3"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 170804724,
+                    "digest": "sha256:97df78aa10e809d32e6786848dd1f2dd96bb1a17a1e0f2398ec95460bc83bc04"
+                }
+            ]
+        },
+        "1.2": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2928,
+                "digest": "sha256:e461e45b6ae9e364be20931968063d64dc6d8fd5f2b7a522e4ee6c5e9b8a85f1"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 87342331,
+                    "digest": "sha256:38892065247a03df10c2d52b5e12d74a7890ba65f61afcf7c0cd84eb8fd7f584"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 176950242,
+                    "digest": "sha256:6a8d056f508eb0be1838228eccc6b47446adfd2d360826117ed2cef4b15cfc24"
+                }
+            ]
+        },
+        "1.2.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2691,
+                "digest": "sha256:325629e3d336b4e49be0bef1cedef3b0f8328d509ef7cbc2918e5f58569b6f0a"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 87342331,
+                    "digest": "sha256:38892065247a03df10c2d52b5e12d74a7890ba65f61afcf7c0cd84eb8fd7f584"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10183,
+                    "digest": "sha256:bc66ade73952bd6c6746c261ddf222de2295f774db4e3796d69df040a95a4696"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 174940486,
+                    "digest": "sha256:452d2625f4cb3bed700e1e9bed9acfd91cb70cb5f2289e312e4cf7cf16046706"
+                }
+            ]
+        },
+        "1.2.1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2695,
+                "digest": "sha256:43074055c8c8e04fc7d3db748263334744b4e1bf1d1db1990f8e8b3578783a37"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 87342331,
+                    "digest": "sha256:38892065247a03df10c2d52b5e12d74a7890ba65f61afcf7c0cd84eb8fd7f584"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10734,
+                    "digest": "sha256:a6d7ea594aadd7100b366aafdd8f53400f913134168692b8cafb84838e09fd4a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 174582548,
+                    "digest": "sha256:834a14164ff91f83ffafb0d8ec450ec0e0f8ff135617d31860e2d62b61d61b5f"
+                }
+            ]
+        },
+        "1.2.2": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2927,
+                "digest": "sha256:2b41c087fbb9bfacec485141196e37cf177f8a9d9ce53bcb93708cc69661879d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 87342331,
+                    "digest": "sha256:38892065247a03df10c2d52b5e12d74a7890ba65f61afcf7c0cd84eb8fd7f584"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 176609528,
+                    "digest": "sha256:e7b71e3747e3535b4419e91f27571454b3d0753be3c87f8a86c785fcb44d1c14"
+                }
+            ]
+        },
+        "1.2.3": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2928,
+                "digest": "sha256:e461e45b6ae9e364be20931968063d64dc6d8fd5f2b7a522e4ee6c5e9b8a85f1"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 87342331,
+                    "digest": "sha256:38892065247a03df10c2d52b5e12d74a7890ba65f61afcf7c0cd84eb8fd7f584"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 176950242,
+                    "digest": "sha256:6a8d056f508eb0be1838228eccc6b47446adfd2d360826117ed2cef4b15cfc24"
+                }
+            ]
+        },
+        "2.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3235,
+                "digest": "sha256:136eafa5583aabd7a892cd10c24fc60e757672a90c3e0a07ac310c0166fbf482"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69839969,
+                    "digest": "sha256:9bfcefca2b8da38bbfb8b6178a75f05245688b83fda45578bcdf51f56e4a5a9e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 270487522,
+                    "digest": "sha256:cdef6c466d16bb763103e9aa03ac45cb2586342dd7677ff22ed83b29a5014781"
+                }
+            ]
+        },
+        "2.0.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3235,
+                "digest": "sha256:aa86375107f177ab9f3c53e336752ca68ea612b7e56e3d88a8b9b83cb1e4b966"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69839969,
+                    "digest": "sha256:9bfcefca2b8da38bbfb8b6178a75f05245688b83fda45578bcdf51f56e4a5a9e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 270484256,
+                    "digest": "sha256:6d96814523c350ceb9917d46ff4e2191d0ed7fe1d715d7502ec103cd25af7cde"
+                }
+            ]
+        },
+        "2.0.1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3235,
+                "digest": "sha256:136eafa5583aabd7a892cd10c24fc60e757672a90c3e0a07ac310c0166fbf482"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69839969,
+                    "digest": "sha256:9bfcefca2b8da38bbfb8b6178a75f05245688b83fda45578bcdf51f56e4a5a9e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 270487522,
+                    "digest": "sha256:cdef6c466d16bb763103e9aa03ac45cb2586342dd7677ff22ed83b29a5014781"
+                }
+            ]
+        },
+        "2.1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2974,
+                "digest": "sha256:08158a74e1cf2adcb25684dca2173f4687e70a9506add34700317b01d71fd37c"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69835815,
+                    "digest": "sha256:ff50d722b38227ec8f2bbf0cdbce428b66745077c173d8117d91376128fa532e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2995805,
+                    "digest": "sha256:e3e1ec5960d2215e175c45deb7f4beb781f1addf642788e5f32b7aa99877b0df"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 394382938,
+                    "digest": "sha256:8932c15c5031f7f8151b7b1d67749ab368e0abaa0a08ec737bd3d19d9e951015"
+                }
+            ]
+        },
+        "2.1.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2974,
+                "digest": "sha256:08158a74e1cf2adcb25684dca2173f4687e70a9506add34700317b01d71fd37c"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69835815,
+                    "digest": "sha256:ff50d722b38227ec8f2bbf0cdbce428b66745077c173d8117d91376128fa532e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2995805,
+                    "digest": "sha256:e3e1ec5960d2215e175c45deb7f4beb781f1addf642788e5f32b7aa99877b0df"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 394382938,
+                    "digest": "sha256:8932c15c5031f7f8151b7b1d67749ab368e0abaa0a08ec737bd3d19d9e951015"
+                }
+            ]
+        },
+        "2.2": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3157,
+                "digest": "sha256:0a15f2aa0dea6b4cdccf84b1a3fe90e46f13df1e1130a61bb79865c9098f2238"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69835815,
+                    "digest": "sha256:ff50d722b38227ec8f2bbf0cdbce428b66745077c173d8117d91376128fa532e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 11756,
+                    "digest": "sha256:5cb0f11441c25306940fb7807b804dfbe11f85cbcd9c814398e7caf1688e5c9e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 346257276,
+                    "digest": "sha256:fdc4dda8c2877ec39dcde89cfd3d0dda47c2ce3a19778c85cdd12858d98a02ea"
+                }
+            ]
+        },
+        "2.2.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3157,
+                "digest": "sha256:0a15f2aa0dea6b4cdccf84b1a3fe90e46f13df1e1130a61bb79865c9098f2238"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69835815,
+                    "digest": "sha256:ff50d722b38227ec8f2bbf0cdbce428b66745077c173d8117d91376128fa532e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 11756,
+                    "digest": "sha256:5cb0f11441c25306940fb7807b804dfbe11f85cbcd9c814398e7caf1688e5c9e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 346257276,
+                    "digest": "sha256:fdc4dda8c2877ec39dcde89cfd3d0dda47c2ce3a19778c85cdd12858d98a02ea"
+                }
+            ]
+        },
+        "3.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3341,
+                "digest": "sha256:971d2f1d3f666e4c4454d06aeae5cfea92edb2e079dfbac0b9565256c5534cb6"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10299,
+                    "digest": "sha256:99cbc097d5a3e5035af744b1eb25a7a5aa0f4ef5f20e2fa4a0f76a7e232cec98"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 342471057,
+                    "digest": "sha256:f6158608f577030c2b857680069efa4f32b66f4c0935b3a54c0e3612b878a401"
+                }
+            ]
+        },
+        "3.0.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3338,
+                "digest": "sha256:17c5ca902d11861a9540c84350e845cab4ec25974240bef63ac318cbb67252b0"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10206,
+                    "digest": "sha256:831f4b958381035eff4de7ba025f1406cf2042829f2147a1beb8a7e9b6a0d49f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 292239814,
+                    "digest": "sha256:ffd7533c1bb9dfb2e8dbd13280a53eddf16ab1c0c184f85a6f0fd282369f5e06"
+                }
+            ]
+        },
+        "3.0.1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3338,
+                "digest": "sha256:d479a2b4fdb2d7f028f51202012349a53f346b78424856ac7bb2bd8f92a72806"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10210,
+                    "digest": "sha256:acbe3ff3b40563d381f26a3eaa71987aa6a8ae565ad24f1ac629929ac498c663"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 295042014,
+                    "digest": "sha256:8bc80409702e0df7aaf016c4e0c58144a9a13b90e14e6efc68b8a1c5d6379021"
+                }
+            ]
+        },
+        "3.0.2": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3337,
+                "digest": "sha256:8d4dceff9e4d4d6bfbd542e8d2b026722a9cbdd6bd0352d56decfeba15c22a70"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10209,
+                    "digest": "sha256:35bed6fba9590a391657cc7eaca21f9f0befa53d88fd214ac3aceda253ad9790"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 295084215,
+                    "digest": "sha256:7f8911f81a088abdcf83b67206419e2ce79a0eb2540a85de12b1189384baa134"
+                }
+            ]
+        },
+        "3.0.3": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3341,
+                "digest": "sha256:3c2f7fe2cf1d577779caed881d0d2a737881862557b4f65409f7d049d4564076"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10217,
+                    "digest": "sha256:3f1e92fc7ff7b13d8c0f28fb2093858b9a1ebfc08479f7680a728a253cdd27d0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 320704545,
+                    "digest": "sha256:971a674f87925583fb7c0560f040641c9308f088f4c6d8309cfc3c597dffed4f"
+                }
+            ]
+        },
+        "3.0.4": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3341,
+                "digest": "sha256:70ed7094d33c9c40227f83c6186eb306fbd7eae084c0caa847d9fd0458bcaf42"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10301,
+                    "digest": "sha256:6e3475e6e10f29d020cf205cb0fe03b153d991772615ea4d88eafcfbfb9f5f8e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 342203621,
+                    "digest": "sha256:1cc9f3b5d2876e68f822b67e8596699782ea6fa8dec2673b800646c05dfcfcf0"
+                }
+            ]
+        },
+        "3.0.5": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3341,
+                "digest": "sha256:971d2f1d3f666e4c4454d06aeae5cfea92edb2e079dfbac0b9565256c5534cb6"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10299,
+                    "digest": "sha256:99cbc097d5a3e5035af744b1eb25a7a5aa0f4ef5f20e2fa4a0f76a7e232cec98"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 342471057,
+                    "digest": "sha256:f6158608f577030c2b857680069efa4f32b66f4c0935b3a54c0e3612b878a401"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3341,
+                "digest": "sha256:971d2f1d3f666e4c4454d06aeae5cfea92edb2e079dfbac0b9565256c5534cb6"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10299,
+                    "digest": "sha256:99cbc097d5a3e5035af744b1eb25a7a5aa0f4ef5f20e2fa4a0f76a7e232cec98"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 342471057,
+                    "digest": "sha256:f6158608f577030c2b857680069efa4f32b66f4c0935b3a54c0e3612b878a401"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.0",
+        "1.1",
+        "1.1.0",
+        "1.2",
+        "1.2.0",
+        "1.2.1",
+        "1.2.2",
+        "1.2.3",
+        "2.0",
+        "2.0.0",
+        "2.0.1",
+        "2.1",
+        "2.1.0",
+        "2.2",
+        "2.2.0",
+        "3.0",
+        "3.0.0",
+        "3.0.1",
+        "3.0.2",
+        "3.0.3",
+        "3.0.4",
+        "3.0.5",
+        "latest"
+    ],
+    "configs": {
+        "1.1": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "90e0f37852aa",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1ce0e02a4bf9f46a0a038d67f1ce130c359ecb8005ebb47a5ca4ecc4f67c032a",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "aefd2f5f8f8f4f1054b2f3663303760ca83ff87f9af7c37e232a419b13a7ae1a",
+            "container_config": {
+                "Hostname": "90e0f37852aa",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1ce0e02a4bf9f46a0a038d67f1ce130c359ecb8005ebb47a5ca4ecc4f67c032a",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2016-07-13T20:43:53.177082973Z",
+            "docker_version": "1.12.0-rc3",
+            "history": [
+                {
+                    "created": "2016-07-01T22:34:41.570231502Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-01T22:34:55.634392629Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:811d2948907b0dbea73e97efd0a5bf9b2049317f1cc394539e9e94eef103d7bf in /"
+                },
+                {
+                    "created": "2016-07-01T22:34:59.986781343Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-01T22:35:02.561227946Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-13T20:11:51.033291551Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:17a0bebfbbe1c057e4612dca03957b663818dbba71e41d030a17a6943bcca407 in /hbb_build "
+                },
+                {
+                    "created": "2016-07-13T20:43:53.177082973Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:951bee79eadd0ef12468bbe1f3804b0a626943c3fafa163b051ef4d750795d2e",
+                    "sha256:29b38b70ecac7fac1e2222adb69c5a096fb4f322055cdefc936978c2e1a781a0",
+                    "sha256:92a09f893a3564358be1177101415850ae6cac6349184d3ff8fdf6e51743688b"
+                ]
+            }
+        },
+        "1.1.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "90e0f37852aa",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1ce0e02a4bf9f46a0a038d67f1ce130c359ecb8005ebb47a5ca4ecc4f67c032a",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "aefd2f5f8f8f4f1054b2f3663303760ca83ff87f9af7c37e232a419b13a7ae1a",
+            "container_config": {
+                "Hostname": "90e0f37852aa",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1ce0e02a4bf9f46a0a038d67f1ce130c359ecb8005ebb47a5ca4ecc4f67c032a",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2016-07-13T20:43:53.177082973Z",
+            "docker_version": "1.12.0-rc3",
+            "history": [
+                {
+                    "created": "2016-07-01T22:34:41.570231502Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-01T22:34:55.634392629Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:811d2948907b0dbea73e97efd0a5bf9b2049317f1cc394539e9e94eef103d7bf in /"
+                },
+                {
+                    "created": "2016-07-01T22:34:59.986781343Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-01T22:35:02.561227946Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-13T20:11:51.033291551Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:17a0bebfbbe1c057e4612dca03957b663818dbba71e41d030a17a6943bcca407 in /hbb_build "
+                },
+                {
+                    "created": "2016-07-13T20:43:53.177082973Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:951bee79eadd0ef12468bbe1f3804b0a626943c3fafa163b051ef4d750795d2e",
+                    "sha256:29b38b70ecac7fac1e2222adb69c5a096fb4f322055cdefc936978c2e1a781a0",
+                    "sha256:92a09f893a3564358be1177101415850ae6cac6349184d3ff8fdf6e51743688b"
+                ]
+            }
+        },
+        "1.2": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:8f7d598b69b44851b3e0d94dcf19a7cffc8ea2375a18a8960c9a6ed48c9cad09",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "2c76dc94824b3623a45d301a74428248d7d17a521197d96daf7a49a4f04bf3c9",
+            "container_config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:8f7d598b69b44851b3e0d94dcf19a7cffc8ea2375a18a8960c9a6ed48c9cad09",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2018-09-21T11:35:44.325122813+02:00",
+            "docker_version": "18.06.1-ce",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:16.841905967Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:28.080275476Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:811d2948907b0dbea73e97efd0a5bf9b2049317f1cc394539e9e94eef103d7bf in / "
+                },
+                {
+                    "created": "2016-08-30T18:19:33.374089465Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:35.965870239Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-21T09:18:19.467682202Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:2602d4cc87556695c93ec767b6d115ba9defb7442588390a996270159b97a381 in /hbb_build ",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-21T09:35:39.546901902Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-21T11:35:44.325122813+02:00",
+                    "comment": "merge sha256:4490a8f59391ba7c704bbcf21228425120e5f4943d06f10167533c0f8b7098b8 to sha256:1ae98b2c895d1ceeba8913ff79f422f005b7f967a311da520a88ac89180b4c39"
+                }
+            ],
+            "os": "linux",
+            "parent": "sha256:8f7d598b69b44851b3e0d94dcf19a7cffc8ea2375a18a8960c9a6ed48c9cad09",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5513565ec546b4249cb76fec6551253c611d6ee80184807324c5c4335e4a2964",
+                    "sha256:93fcf5a0865463e92833b9a5e40211a3ed3c8611f3980b66ca92720058618752"
+                ]
+            }
+        },
+        "1.2.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:0d763158b033a2428b9dce5d6b7eda768eec2fbfda152e2ecfa60aaae68f62ce",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "f76931a99c7228193b50850b52909e6afd048850e684b31e1d5f687a1e7e5e63",
+            "container_config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:0d763158b033a2428b9dce5d6b7eda768eec2fbfda152e2ecfa60aaae68f62ce",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2016-11-11T13:59:45.196370385Z",
+            "docker_version": "1.12.3",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:16.841905967Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:28.080275476Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:811d2948907b0dbea73e97efd0a5bf9b2049317f1cc394539e9e94eef103d7bf in / "
+                },
+                {
+                    "created": "2016-08-30T18:19:33.374089465Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:35.965870239Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-11-11T13:28:58.040198664Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:e54d7763a8a09ac4a8d3754b6fe1ec29b5e31a4a6eec876c9eba86283343432d in /hbb_build "
+                },
+                {
+                    "created": "2016-11-11T13:59:45.196370385Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5513565ec546b4249cb76fec6551253c611d6ee80184807324c5c4335e4a2964",
+                    "sha256:5c3428f41cc2f32998ee9f4f95c542875c3a1128ea5ed2d4c11bcf56499719c9",
+                    "sha256:be7da7dba643099d4f27e613f3fd8e1911d12a7e861f787dd75841c005c56fc8"
+                ]
+            }
+        },
+        "1.2.1": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6c767778aa709fe4fcc14b850480db6c7457fbaa1fbe375e0eaec7e0e8fbaac7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "ca244087d14a621047b9a4e146f9c936684596e77a2b56799c2dee17ea35f24f",
+            "container_config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6c767778aa709fe4fcc14b850480db6c7457fbaa1fbe375e0eaec7e0e8fbaac7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2017-05-05T10:23:22.954874607Z",
+            "docker_version": "17.04.0-ce",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:16.841905967Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:28.080275476Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:811d2948907b0dbea73e97efd0a5bf9b2049317f1cc394539e9e94eef103d7bf in / "
+                },
+                {
+                    "created": "2016-08-30T18:19:33.374089465Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:35.965870239Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-05-05T09:52:45.887106151Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:fa8393c3cc118b047d0204a0850ca33ea4964cc8d4d4e2584517c7ac68f24675 in /hbb_build "
+                },
+                {
+                    "created": "2017-05-05T10:23:22.954874607Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5513565ec546b4249cb76fec6551253c611d6ee80184807324c5c4335e4a2964",
+                    "sha256:c2d324fb5cde001b71aa63264cac5fe1734a1c367444572ffecc0c25404a6f47",
+                    "sha256:3c49945b18a0fa57a4022467ab6097e2ad0d4ca30b792068e6d7a13ebf80b5b7"
+                ]
+            }
+        },
+        "1.2.2": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:68a3bd39f60a21c0ae5cf9d730204a7cd5f6120b0e02c5f3c878f6b60a3a973f",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "fd9d99b9cc69e69a87d46047373ca606ae5e809da21005121f78d7a2a5ab4052",
+            "container_config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:68a3bd39f60a21c0ae5cf9d730204a7cd5f6120b0e02c5f3c878f6b60a3a973f",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2018-06-11T14:13:24.678263164+02:00",
+            "docker_version": "18.03.1-ce",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:16.841905967Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:28.080275476Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:811d2948907b0dbea73e97efd0a5bf9b2049317f1cc394539e9e94eef103d7bf in / "
+                },
+                {
+                    "created": "2016-08-30T18:19:33.374089465Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:35.965870239Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-11T11:55:48.16508007Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:4749c4835baaf3fd25412781e23878620f64138eb732ab59b2dd40df1fb63604 in /hbb_build ",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-11T12:13:20.520249254Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-11T14:13:24.678263164+02:00",
+                    "comment": "merge sha256:795e131eec103ae4e9e1994578ebd56478fc139a421f4c6338d9e983a77e99e9 to sha256:1ae98b2c895d1ceeba8913ff79f422f005b7f967a311da520a88ac89180b4c39"
+                }
+            ],
+            "os": "linux",
+            "parent": "sha256:68a3bd39f60a21c0ae5cf9d730204a7cd5f6120b0e02c5f3c878f6b60a3a973f",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5513565ec546b4249cb76fec6551253c611d6ee80184807324c5c4335e4a2964",
+                    "sha256:34562a05582921ab808ed4016eb610893acf4914fb64176d3ea44906c57d949b"
+                ]
+            }
+        },
+        "1.2.3": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:8f7d598b69b44851b3e0d94dcf19a7cffc8ea2375a18a8960c9a6ed48c9cad09",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "2c76dc94824b3623a45d301a74428248d7d17a521197d96daf7a49a4f04bf3c9",
+            "container_config": {
+                "Hostname": "a4098d36af2d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:8f7d598b69b44851b3e0d94dcf19a7cffc8ea2375a18a8960c9a6ed48c9cad09",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "build-date": "2016-03-31",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2018-09-21T11:35:44.325122813+02:00",
+            "docker_version": "18.06.1-ce",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:16.841905967Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:28.080275476Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:811d2948907b0dbea73e97efd0a5bf9b2049317f1cc394539e9e94eef103d7bf in / "
+                },
+                {
+                    "created": "2016-08-30T18:19:33.374089465Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:35.965870239Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-21T09:18:19.467682202Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:2602d4cc87556695c93ec767b6d115ba9defb7442588390a996270159b97a381 in /hbb_build ",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-21T09:35:39.546901902Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-21T11:35:44.325122813+02:00",
+                    "comment": "merge sha256:4490a8f59391ba7c704bbcf21228425120e5f4943d06f10167533c0f8b7098b8 to sha256:1ae98b2c895d1ceeba8913ff79f422f005b7f967a311da520a88ac89180b4c39"
+                }
+            ],
+            "os": "linux",
+            "parent": "sha256:8f7d598b69b44851b3e0d94dcf19a7cffc8ea2375a18a8960c9a6ed48c9cad09",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5513565ec546b4249cb76fec6551253c611d6ee80184807324c5c4335e4a2964",
+                    "sha256:93fcf5a0865463e92833b9a5e40211a3ed3c8611f3980b66ca92720058618752"
+                ]
+            }
+        },
+        "2.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:82b1ea7b8a7a2ea77b15a96968b9d4fcc2cb07dba9a91fd7e46868a1ed6cf7f3",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "771009d811259c1cc1f0612518359a4978ad4ea5892cb82a9168b889ac550cdc",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:82b1ea7b8a7a2ea77b15a96968b9d4fcc2cb07dba9a91fd7e46868a1ed6cf7f3",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2019-01-03T17:47:41.0186142Z",
+            "docker_version": "18.09.0",
+            "history": [
+                {
+                    "created": "2018-10-09T18:20:03.816986835Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-09T18:20:10.444943196Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4c85cfd6f792b127518182a0761efe5c79d66f44baec1d2888f0c6746dfa4d88 in / "
+                },
+                {
+                    "created": "2018-10-09T18:20:10.842217567Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181006",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-09T18:20:11.026782808Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-03T17:22:47.5099603Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:639edf4e2201f919ebc33c26656f5cea1dd4972d95ebd10e3d1c624c2a37cc1c in /hbb_build ",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-03T17:47:26.3339686Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-03T17:47:41.0186142Z",
+                    "comment": "merge sha256:4a50f8e400e9b9c2343a0c7ab6734b9748afcfc36cea994791f301c74774b61b to sha256:0cbf37812bff083eb2325468c10aaf82011527c049d66106c3c74298ed239aaf"
+                }
+            ],
+            "os": "linux",
+            "parent": "sha256:82b1ea7b8a7a2ea77b15a96968b9d4fcc2cb07dba9a91fd7e46868a1ed6cf7f3",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5d574ede99e4892f96319a3899212029e69e0b9d28c9a84f20bc628497e931db",
+                    "sha256:5d984b866bcafdaf27e96eace8efa25433939ffd32b9425afc091718756ff296"
+                ]
+            }
+        },
+        "2.0.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:57fb04d59590186a789a96c0216861e5627979a6f2b5fca2d8222b72d03660f9",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "e035c7712c17ff0f0703781c787d4b4201e99474b0f635241f5abd43032a3441",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:57fb04d59590186a789a96c0216861e5627979a6f2b5fca2d8222b72d03660f9",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2018-12-20T08:15:26.5856067Z",
+            "docker_version": "18.09.0",
+            "history": [
+                {
+                    "created": "2018-10-09T18:20:03.816986835Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-09T18:20:10.444943196Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4c85cfd6f792b127518182a0761efe5c79d66f44baec1d2888f0c6746dfa4d88 in / "
+                },
+                {
+                    "created": "2018-10-09T18:20:10.842217567Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181006",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-09T18:20:11.026782808Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-20T07:48:12.6063626Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:b12254cbfa6a59cacdc3aed073aed4702b1e3586062df5796fdb2c1550f3e03b in /hbb_build ",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-20T08:15:13.3470025Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-20T08:15:26.5856067Z",
+                    "comment": "merge sha256:19a4d951f317938ca43896503c1b59005b9d3b627e3fc40ecca1b4d52e3c22c2 to sha256:0cbf37812bff083eb2325468c10aaf82011527c049d66106c3c74298ed239aaf"
+                }
+            ],
+            "os": "linux",
+            "parent": "sha256:57fb04d59590186a789a96c0216861e5627979a6f2b5fca2d8222b72d03660f9",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5d574ede99e4892f96319a3899212029e69e0b9d28c9a84f20bc628497e931db",
+                    "sha256:de2e2d5529852e9ef10607db5d104408e46103e9c56aed6cd00724624579a00c"
+                ]
+            }
+        },
+        "2.0.1": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:82b1ea7b8a7a2ea77b15a96968b9d4fcc2cb07dba9a91fd7e46868a1ed6cf7f3",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "771009d811259c1cc1f0612518359a4978ad4ea5892cb82a9168b889ac550cdc",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:82b1ea7b8a7a2ea77b15a96968b9d4fcc2cb07dba9a91fd7e46868a1ed6cf7f3",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2019-01-03T17:47:41.0186142Z",
+            "docker_version": "18.09.0",
+            "history": [
+                {
+                    "created": "2018-10-09T18:20:03.816986835Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-09T18:20:10.444943196Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4c85cfd6f792b127518182a0761efe5c79d66f44baec1d2888f0c6746dfa4d88 in / "
+                },
+                {
+                    "created": "2018-10-09T18:20:10.842217567Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181006",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-09T18:20:11.026782808Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-03T17:22:47.5099603Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:639edf4e2201f919ebc33c26656f5cea1dd4972d95ebd10e3d1c624c2a37cc1c in /hbb_build ",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-03T17:47:26.3339686Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-03T17:47:41.0186142Z",
+                    "comment": "merge sha256:4a50f8e400e9b9c2343a0c7ab6734b9748afcfc36cea994791f301c74774b61b to sha256:0cbf37812bff083eb2325468c10aaf82011527c049d66106c3c74298ed239aaf"
+                }
+            ],
+            "os": "linux",
+            "parent": "sha256:82b1ea7b8a7a2ea77b15a96968b9d4fcc2cb07dba9a91fd7e46868a1ed6cf7f3",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5d574ede99e4892f96319a3899212029e69e0b9d28c9a84f20bc628497e931db",
+                    "sha256:5d984b866bcafdaf27e96eace8efa25433939ffd32b9425afc091718756ff296"
+                ]
+            }
+        },
+        "2.1": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:e352d7e3e69a667145d3ce9bd957adbea9112af36ffaacd84f0c970702630d07",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "d17b68f4fb35d33477c05258b8aa503486129064a7038d7dffb55efd96977562",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:e352d7e3e69a667145d3ce9bd957adbea9112af36ffaacd84f0c970702630d07",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2021-01-15T08:06:44.986922465Z",
+            "docker_version": "19.03.14+azure",
+            "history": [
+                {
+                    "created": "2018-10-09T18:20:03.816986835Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-14T21:20:10.936939354Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:0065316a41144e95bcb133567cc86816b8368a823cc067d741e06ded59849fd8 in / "
+                },
+                {
+                    "created": "2019-03-14T21:20:11.322700622Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181006",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-14T21:20:11.486358099Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-15T07:33:32.000205913Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:186466fb06b3c50176b54ff4be1a02522f8822543d686c5746c8cada532a2675 in /hbb_build "
+                },
+                {
+                    "created": "2021-01-15T08:06:44.986922465Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:af6bf1987c2eb07d73f33836b0d8fd825d7c785273526b077e46780e8b4b2ae9",
+                    "sha256:0d518e7bac89b431578e4a216b1d39c5577a44529a6a0327fb93cf453ba29d57",
+                    "sha256:100d51306a811a2aba9c3b9172ea952c1dfb94c8ab4c803c4e4565ad19d91a8c"
+                ]
+            }
+        },
+        "2.1.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:e352d7e3e69a667145d3ce9bd957adbea9112af36ffaacd84f0c970702630d07",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "d17b68f4fb35d33477c05258b8aa503486129064a7038d7dffb55efd96977562",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:e352d7e3e69a667145d3ce9bd957adbea9112af36ffaacd84f0c970702630d07",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2021-01-15T08:06:44.986922465Z",
+            "docker_version": "19.03.14+azure",
+            "history": [
+                {
+                    "created": "2018-10-09T18:20:03.816986835Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-14T21:20:10.936939354Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:0065316a41144e95bcb133567cc86816b8368a823cc067d741e06ded59849fd8 in / "
+                },
+                {
+                    "created": "2019-03-14T21:20:11.322700622Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181006",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-14T21:20:11.486358099Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-15T07:33:32.000205913Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:186466fb06b3c50176b54ff4be1a02522f8822543d686c5746c8cada532a2675 in /hbb_build "
+                },
+                {
+                    "created": "2021-01-15T08:06:44.986922465Z",
+                    "created_by": "/bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:af6bf1987c2eb07d73f33836b0d8fd825d7c785273526b077e46780e8b4b2ae9",
+                    "sha256:0d518e7bac89b431578e4a216b1d39c5577a44529a6a0327fb93cf453ba29d57",
+                    "sha256:100d51306a811a2aba9c3b9172ea952c1dfb94c8ab4c803c4e4565ad19d91a8c"
+                ]
+            }
+        },
+        "2.2": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:cd9f8c5ff7d3301f0c9b59d6046319e34a6cb90f9340f0f04a26e35db6e44180",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "1f56e665577001407c552f55dce8817a9b3a592fe62fc9250b8eae3505bc189c",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:cd9f8c5ff7d3301f0c9b59d6046319e34a6cb90f9340f0f04a26e35db6e44180",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2021-01-16T10:36:54.464821819Z",
+            "docker_version": "19.03.14+azure",
+            "history": [
+                {
+                    "created": "2018-10-09T18:20:03.816986835Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-14T21:20:10.936939354Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:0065316a41144e95bcb133567cc86816b8368a823cc067d741e06ded59849fd8 in / "
+                },
+                {
+                    "created": "2019-03-14T21:20:11.322700622Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181006",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-14T21:20:11.486358099Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-16T10:05:41.00710808Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:4a9509d9baba0f12c651a0e12057db520887a90866838eae0a373e79146ae9f9 in /hbb_build "
+                },
+                {
+                    "created": "2021-01-16T10:05:44.529096506Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-16T10:36:54.464821819Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:af6bf1987c2eb07d73f33836b0d8fd825d7c785273526b077e46780e8b4b2ae9",
+                    "sha256:6497296e5dede0eb98e61da8fbeef3397db7c99e4f663fdb5a28b5148d098e5b",
+                    "sha256:0a39219be975c3dd00ce5352386140afdfbfea4653fc544a4445b6ea28fbc7f1"
+                ]
+            }
+        },
+        "2.2.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:cd9f8c5ff7d3301f0c9b59d6046319e34a6cb90f9340f0f04a26e35db6e44180",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "1f56e665577001407c552f55dce8817a9b3a592fe62fc9250b8eae3505bc189c",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:cd9f8c5ff7d3301f0c9b59d6046319e34a6cb90f9340f0f04a26e35db6e44180",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181006",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2021-01-16T10:36:54.464821819Z",
+            "docker_version": "19.03.14+azure",
+            "history": [
+                {
+                    "created": "2018-10-09T18:20:03.816986835Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-14T21:20:10.936939354Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:0065316a41144e95bcb133567cc86816b8368a823cc067d741e06ded59849fd8 in / "
+                },
+                {
+                    "created": "2019-03-14T21:20:11.322700622Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181006",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-14T21:20:11.486358099Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-16T10:05:41.00710808Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:4a9509d9baba0f12c651a0e12057db520887a90866838eae0a373e79146ae9f9 in /hbb_build "
+                },
+                {
+                    "created": "2021-01-16T10:05:44.529096506Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-16T10:36:54.464821819Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:af6bf1987c2eb07d73f33836b0d8fd825d7c785273526b077e46780e8b4b2ae9",
+                    "sha256:6497296e5dede0eb98e61da8fbeef3397db7c99e4f663fdb5a28b5148d098e5b",
+                    "sha256:0a39219be975c3dd00ce5352386140afdfbfea4653fc544a4445b6ea28fbc7f1"
+                ]
+            }
+        },
+        "3.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:611ab07a07eaf6852c227536b9c8431286f0e13eea0348cd933368acf8c98fbe",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "75698cef64ce281655332fb148876138a5c938081f84904f9acb0afd0a0fd20d",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:611ab07a07eaf6852c227536b9c8431286f0e13eea0348cd933368acf8c98fbe",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2022-04-12T10:13:00.425254231Z",
+            "docker_version": "20.10.14+azure-1",
+            "history": [
+                {
+                    "created": "2021-09-15T18:20:23.417639551Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2021-09-15T18:20:23.819893035Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-15T18:20:23.99863383Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T09:41:14.974502259Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:4f58e0956a1df88c9ab85e5c031ad50e5a2c325d2822ac1cd061991d5fcf082c in /hbb_build "
+                },
+                {
+                    "created": "2022-04-12T09:41:15.371509993Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T10:13:00.425254231Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02",
+                    "sha256:4bf86aea3cf3616e986d4cbae07c6317ef7c5e228c5420ce798274c0b387268f",
+                    "sha256:6b79a96f97266249246af2f91bc3d9a80cfa115fd6526c0d597cd6d4b0aa6310"
+                ]
+            }
+        },
+        "3.0.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:d82ac57b7d2bec33a6e87c205178c8e95f499c6b8d3b7350ec0cbbda20f7f6e2",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "a65180309b2d12dd5ebf60f0caf7e4b10ad77e938b510a4ccc09295841a45125",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:d82ac57b7d2bec33a6e87c205178c8e95f499c6b8d3b7350ec0cbbda20f7f6e2",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2021-01-17T18:10:09.563132732Z",
+            "docker_version": "19.03.14+azure",
+            "history": [
+                {
+                    "created": "2020-11-14T00:20:04.1030585Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2020-11-14T00:20:04.452344367Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-14T00:20:04.644613188Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-17T17:37:52.000119275Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:59706d18ec74043e375c825f3537306459df6e634eb3c62c3a9d8f4a9a4a8c74 in /hbb_build "
+                },
+                {
+                    "created": "2021-01-17T17:37:56.205897758Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-17T18:10:09.563132732Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02",
+                    "sha256:3bbc8752e2f5d40cbe8f3e1d96633216726436f82698c68384deec828d41b2de",
+                    "sha256:80869a9cc6a88a45551a37dc42fd0bc90139b6d9be0775e968ae4abdea16cf0e"
+                ]
+            }
+        },
+        "3.0.1": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:1aabd2ae89d122e9b9ecf8a4c434d5ea7154d28a721706a25a037774deeeeeef",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "81701317a77522adb5829ccb37419044dfc593431b6c4e2161480a103e8997de",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:1aabd2ae89d122e9b9ecf8a4c434d5ea7154d28a721706a25a037774deeeeeef",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2021-01-25T17:14:04.158487242Z",
+            "docker_version": "19.03.13+azure",
+            "history": [
+                {
+                    "created": "2020-11-14T00:20:04.1030585Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2020-11-14T00:20:04.452344367Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-14T00:20:04.644613188Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-25T16:42:21.000220364Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:357575dde6f52caaf633a66d0a916d72fd8f109231b067becd83c5f067adf510 in /hbb_build "
+                },
+                {
+                    "created": "2021-01-25T16:42:25.485716302Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-25T17:14:04.158487242Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02",
+                    "sha256:90ccd357314917f6beab84a81dd7db22db6cd687fbec5c4f09968e15806de33c",
+                    "sha256:44a9411225ab02b7375da0e48060e180bb09121006394577530aec1bc5c14870"
+                ]
+            }
+        },
+        "3.0.2": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:06379142488d153e079a6cdaacbee3764d89e5d227a3658e875ad28cb3b61dde",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "2549f53340082ea93e2423a119a9fbd32ba072e2fbef08d4ec69f78f6360cbb7",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:06379142488d153e079a6cdaacbee3764d89e5d227a3658e875ad28cb3b61dde",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2021-01-27T15:07:01.990300797Z",
+            "docker_version": "19.03.14+azure",
+            "history": [
+                {
+                    "created": "2020-11-14T00:20:04.1030585Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2020-11-14T00:20:04.452344367Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-14T00:20:04.644613188Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-27T14:29:46.322098498Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:386aae9250c4f1570dbea47002001d469a24691b0ba97ec2430b12f35f6ab534 in /hbb_build "
+                },
+                {
+                    "created": "2021-01-27T14:29:49.95686483Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-01-27T15:07:01.990300797Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02",
+                    "sha256:c0b3377a3d33ef44ded56bdd8f0b2f8067ef97c3843c868f8cad13c0e62367a5",
+                    "sha256:2012866ce9bf30f3bf85d253fdcfb57e543fedb37eeb4f13611486d9b101444e"
+                ]
+            }
+        },
+        "3.0.3": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:16f322869ab5ba469398c2f0283ca270af045eabd1e4a4153e929e6b68f855b1",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "651bd27d25d110f326094e62cb69664435a5ce5da865d5ea96c285a196f6ef10",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:16f322869ab5ba469398c2f0283ca270af045eabd1e4a4153e929e6b68f855b1",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2021-11-07T09:18:50.751486693Z",
+            "docker_version": "20.10.10+azure-1",
+            "history": [
+                {
+                    "created": "2021-09-15T18:20:23.417639551Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2021-09-15T18:20:23.819893035Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-15T18:20:23.99863383Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-11-07T08:43:05.980396729Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:22118b87981eb72e45a6fd7369f5b8b31f2d4acc236cec5a4b02fdde72bb8863 in /hbb_build "
+                },
+                {
+                    "created": "2021-11-07T08:43:06.417077767Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-11-07T09:18:50.751486693Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02",
+                    "sha256:c2432fa9849f3a5d523dd3304fef5b98b58dd7cfac58e6ccbe8e9e4740f01ad1",
+                    "sha256:bf5373f55acc8adfb0a9424d66509131e1afeca23c33470b4acb73882d3d488e"
+                ]
+            }
+        },
+        "3.0.4": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:de82f111083f407a6c094799332ff7a68560598c4e282dd37bb52d199c2a9805",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "3a2d9f7bb72e66d0b67fb9a7c8a0ac1acc1d2f004f6949e702695b97b07fb3f5",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:de82f111083f407a6c094799332ff7a68560598c4e282dd37bb52d199c2a9805",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2022-02-19T19:21:35.696380667Z",
+            "docker_version": "20.10.11+azure-3",
+            "history": [
+                {
+                    "created": "2021-09-15T18:20:23.417639551Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2021-09-15T18:20:23.819893035Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-15T18:20:23.99863383Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-02-19T18:47:57.826572546Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:20ca11e5a01ef831876d34a16bab71fa1960a78526d022b5bdb4786337e32d61 in /hbb_build "
+                },
+                {
+                    "created": "2022-02-19T18:47:58.208802556Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-02-19T19:21:35.696380667Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02",
+                    "sha256:e8dcf7fb8e2bb1ad9d1f42cea5832c61dbbf7432311890b2982181f7aa4f0fc9",
+                    "sha256:756aac6009a66cf085bc0f5faf873b0704c8b96b687a288e71b1afebd61294ed"
+                ]
+            }
+        },
+        "3.0.5": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:611ab07a07eaf6852c227536b9c8431286f0e13eea0348cd933368acf8c98fbe",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "75698cef64ce281655332fb148876138a5c938081f84904f9acb0afd0a0fd20d",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:611ab07a07eaf6852c227536b9c8431286f0e13eea0348cd933368acf8c98fbe",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2022-04-12T10:13:00.425254231Z",
+            "docker_version": "20.10.14+azure-1",
+            "history": [
+                {
+                    "created": "2021-09-15T18:20:23.417639551Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2021-09-15T18:20:23.819893035Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-15T18:20:23.99863383Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T09:41:14.974502259Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:4f58e0956a1df88c9ab85e5c031ad50e5a2c325d2822ac1cd061991d5fcf082c in /hbb_build "
+                },
+                {
+                    "created": "2022-04-12T09:41:15.371509993Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T10:13:00.425254231Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02",
+                    "sha256:4bf86aea3cf3616e986d4cbae07c6317ef7c5e228c5420ce798274c0b387268f",
+                    "sha256:6b79a96f97266249246af2f91bc3d9a80cfa115fd6526c0d597cd6d4b0aa6310"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:611ab07a07eaf6852c227536b9c8431286f0e13eea0348cd933368acf8c98fbe",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "75698cef64ce281655332fb148876138a5c938081f84904f9acb0afd0a0fd20d",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "|1",
+                    "DISABLE_OPTIMIZATIONS=0",
+                    "/bin/sh",
+                    "-c",
+                    "bash /hbb_build/build.sh"
+                ],
+                "Image": "sha256:611ab07a07eaf6852c227536b9c8431286f0e13eea0348cd933368acf8c98fbe",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2022-04-12T10:13:00.425254231Z",
+            "docker_version": "20.10.14+azure-1",
+            "history": [
+                {
+                    "created": "2021-09-15T18:20:23.417639551Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2021-09-15T18:20:23.819893035Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-15T18:20:23.99863383Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T09:41:14.974502259Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:4f58e0956a1df88c9ab85e5c031ad50e5a2c325d2822ac1cd061991d5fcf082c in /hbb_build "
+                },
+                {
+                    "created": "2022-04-12T09:41:15.371509993Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG DISABLE_OPTIMIZATIONS=0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T10:13:00.425254231Z",
+                    "created_by": "|1 DISABLE_OPTIMIZATIONS=0 /bin/sh -c bash /hbb_build/build.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02",
+                    "sha256:4bf86aea3cf3616e986d4cbae07c6317ef7c5e228c5420ce798274c0b387268f",
+                    "sha256:6b79a96f97266249246af2f91bc3d9a80cfa115fd6526c0d597cd6d4b0aa6310"
+                ]
+            }
+        }
+    }
+}

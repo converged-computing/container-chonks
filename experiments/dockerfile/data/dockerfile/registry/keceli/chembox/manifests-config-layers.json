@@ -1,0 +1,255 @@
+{
+    "manifests": {
+        "pacc": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6785,
+                "digest": "sha256:450abaa017058cdbc6be478152acaff4d43e62f1c3319d6ae61770618f8362e5"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45318159,
+                    "digest": "sha256:cc1a78bfd46becbfc3abb8a74d9a70a0e0dc7a5809bbd12e814f9382db003707"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 94892209,
+                    "digest": "sha256:420ea9ce27d99662ea212155ed07e75827356c8d37f8587414bff1ae8b9624b8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 92191277,
+                    "digest": "sha256:1b219c0505472aa2627d80fbb385d28eb0c9d099f79f0ddf477e50050b5d66b9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1312192,
+                    "digest": "sha256:1c177edca126d0c36166cda39ee2b9df28d9f4f8ab975d8cee58869000a79912"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 89706057,
+                    "digest": "sha256:4f9cb7880ac84747afad731224591b94f53cbc944d702fe5a6497d31dc4a7959"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1897696741,
+                    "digest": "sha256:458f518365653e94b053f737d2185159d8ea5fafadbc459d82eaa0cda4b7def8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 16817396,
+                    "digest": "sha256:016648fa19d1915e797f3b6b93e27249a7c895b29ed89b26b2c965a19726eb3c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 49329894,
+                    "digest": "sha256:60569466db3a69883bb2353e6ab24056e14846005c2f23ec73166102d78eb092"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1267501,
+                    "digest": "sha256:c3a1238f4f3cf3d249603f6144c9ff18bf5d7fceaa23246a6ce00fbf764fd0c5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 63362870,
+                    "digest": "sha256:4cdd6f222628b42f0017ce570b0f50e8514f0d878d5bb77d7c6c99fcfb5ac068"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27381265,
+                    "digest": "sha256:5e3ad37c98ea6072b578fa45f4cb6f2a25aea507cf8625d4d81ebe6b9d42c5b2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 441846,
+                    "digest": "sha256:4a13c5635962296dab3cc6d1d974e406f9f4511a7d1c38bb56b92f57239aae36"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1216277,
+                    "digest": "sha256:80286e8cfb0eaed688fcb515ba42164dfa713c42c057449f3650686e75e897c8"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "pacc"
+    ],
+    "configs": {
+        "pacc": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "LC_ALL=C.UTF-8"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:58bb1c9bcaf322fe31693ed55ecb87f7e646ba1e448f2325a37fe90d38be1ee9",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/usr/bin/tini",
+                    "--"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Murat Keceli <keceli@gmail.com>"
+                }
+            },
+            "container": "f4139fd0f0a20b8c8e98e36b67e4031c891754ccd198918efa767acbed057339",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "LC_ALL=C.UTF-8"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "cd /container &&      git clone https://github.com/PACChem/EStokTP.git"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:58bb1c9bcaf322fe31693ed55ecb87f7e646ba1e448f2325a37fe90d38be1ee9",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Murat Keceli <keceli@gmail.com>"
+                }
+            },
+            "created": "2018-10-11T06:30:42.8596015Z",
+            "docker_version": "18.06.1-ce",
+            "history": [
+                {
+                    "created": "2018-04-28T07:08:53.556603948Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:9572fdb59dfbb9b032f3331bbc2a08b31e0aef5fbde44c8f2008d22bf5290cf2 in / "
+                },
+                {
+                    "created": "2018-04-28T07:08:53.999799361Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-08T17:34:48.905829055Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8 LC_ALL=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-08T17:34:49.287649988Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-08T17:36:26.425576042Z",
+                    "created_by": "/bin/sh -c apt-get update --fix-missing && apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git mercurial subversion"
+                },
+                {
+                    "created": "2018-07-27T16:28:06.8257724Z",
+                    "created_by": "/bin/sh -c wget --quiet https://repo.anaconda.com/miniconda/Miniconda2-4.5.4-Linux-x86_64.sh -O ~/miniconda.sh &&     /bin/bash ~/miniconda.sh -b -p /opt/conda &&     rm ~/miniconda.sh &&     ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh &&     echo \". /opt/conda/etc/profile.d/conda.sh\" >> ~/.bashrc &&     echo \"conda activate base\" >> ~/.bashrc"
+                },
+                {
+                    "created": "2018-07-27T16:28:12.1270296Z",
+                    "created_by": "/bin/sh -c apt-get install -y curl grep sed dpkg &&     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o \"/v.*\\\"\" | sed 's:^..\\(.*\\).$:\\1:'` &&     curl -L \"https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb\" > tini.deb &&     dpkg -i tini.deb &&     rm tini.deb &&     apt-get clean"
+                },
+                {
+                    "created": "2018-07-27T16:28:12.5042209Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/usr/bin/tini\" \"--\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-27T16:28:12.863886Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-08-16T00:56:29.3808364Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Murat Keceli <keceli@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T02:04:49.741589Z",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get install -y --no-install-recommends build-essential                      gcc                      gfortran                      vim &&     apt-get clean"
+                },
+                {
+                    "created": "2018-10-11T02:22:07.29512Z",
+                    "created_by": "/bin/sh -c mkdir /container &&     cd /container &&     git clone https://github.com/ReactionMechanismGenerator/RMG-Py.git &&     git clone https://github.com/ReactionMechanismGenerator/RMG-database.git &&    cd RMG-Py &&     conda env update -n base -f environment_linux.yml &&     make"
+                },
+                {
+                    "created": "2018-10-11T04:59:57.1248849Z",
+                    "created_by": "/bin/sh -c cd /container &&     git clone https://github.com/keceli/QTC.git &&     cd QTC &&     conda env update -n base -f environment.yml"
+                },
+                {
+                    "created": "2018-10-11T05:00:33.3604065Z",
+                    "created_by": "/bin/sh -c apt-get install -y cmake libopenblas-dev liblapack-dev &&     cd /container &&     git clone --recurse-submodules https://github.com/PACChem/x2z &&     cd x2z &&     cmake . &&     make install"
+                },
+                {
+                    "created": "2018-10-11T05:00:39.6583903Z",
+                    "created_by": "/bin/sh -c cd /container &&      git clone https://github.com/PACChem/MESS.git &&      cd MESS &&      cmake ."
+                },
+                {
+                    "created": "2018-10-11T06:02:55.1632469Z",
+                    "created_by": "/bin/sh -c cd /container &&     git clone https://github.com/PACChem/automechanic &&     cd automechanic &&     conda env update -n base -f install/envs/amenv2.yml &&     pip install -e ."
+                },
+                {
+                    "created": "2018-10-11T06:03:13.3392817Z",
+                    "created_by": "/bin/sh -c cd /container &&      git clone https://gitlab.com/ase/ase.git &&      cd ase &&      pip install -e ."
+                },
+                {
+                    "created": "2018-10-11T06:30:39.8454283Z",
+                    "created_by": "/bin/sh -c cd /container &&      git clone https://github.com/PACChem/KinBot.git"
+                },
+                {
+                    "created": "2018-10-11T06:30:42.8596015Z",
+                    "created_by": "/bin/sh -c cd /container &&      git clone https://github.com/PACChem/EStokTP.git"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:0f3a12fef684003e8dc0dfdcea32789db2179c6f9ad1e1e89bc05754ac44c6c5",
+                    "sha256:48768004f9f8c96cc87695694a8585815a4914d425f1c15671108d14c142a573",
+                    "sha256:48b97e115f0d300788d01ba541caaa870dd958986f36cfc059b4f58ea042beec",
+                    "sha256:497e6cc52bcda615ca53fb08623bf848c9c41eef256271bc554a1dcfc4a71cce",
+                    "sha256:2f5a6b3e92f93b26704ca21163eab3c965ff743e410923e80bb2da8e29e3f339",
+                    "sha256:a62652e20b009a3c691a473c897ade36b03bc29a277a9a25bdec84895d73508e",
+                    "sha256:9aba92178f3b3f1a8bd989a8bf3a68f3346b4b6c10a6ae38bdf82afc8d51422c",
+                    "sha256:b092f2a5d3cd899ca42c84b31a82b5a1c158d76570283bdd0ec05fd0a8612121",
+                    "sha256:c652c1f9b9d4f693e5d6f4455ffc18221357db27100e935ac39ee7243d0335c4",
+                    "sha256:8d8e55c835c2d503a7ad3638a1a82c53bdd305da41e6d6e1f95c426042011848",
+                    "sha256:de82c2ff9d23518d3c4d9e9228fa9a45deedf70c0f49ba4868f54adf41b7cc89",
+                    "sha256:fbbb827c3b157b6c252ec0f9e92747d29fee1bfe47f81b54ce03b43caf05397e",
+                    "sha256:9c56d74f02c2217c58a3a3b26fc61c3ffa5901b520ea40db264a4c1a115af25e"
+                ]
+            }
+        }
+    }
+}

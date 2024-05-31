@@ -1,0 +1,179 @@
+{
+    "manifests": {
+        "baseimage": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3742,
+                "digest": "sha256:553fdce5bddbb9e7bdf297e8c397f4a81c99a6973aeddfe54dbd2322f939f90a"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 64892716,
+                    "digest": "sha256:6f01eb97e9b31168c37c5fa5bae980311ae2bf792421d16d1c59898143f218f9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 177264903,
+                    "digest": "sha256:66363e04721a80203e572e129fff8a4d407c78684d43c61bf406b3889a32c3de"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1416446065,
+                    "digest": "sha256:684c9d98aac9746c98f3efd0d763e677e96ebb9ee453145829f446a98d11c86c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28320797,
+                    "digest": "sha256:52b348025fd7b53f7130f06707017b1680bc47efcfe5a607d7f1b217424eb815"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 9343,
+                    "digest": "sha256:6dfb4ce1f43a55c4fd407d6f911f9f5a2550bd9d6cdc5ef2ba9c6331f1c67d52"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 11522758,
+                    "digest": "sha256:882f1d7c3e8bc1175e2079d62c7b907e528b55d52f5fffd1a8102dd361ae3e32"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "baseimage"
+    ],
+    "configs": {
+        "baseimage": {
+            "architecture": "amd64",
+            "author": "Patrick Diehl <patrickdiehl@lsu.edu>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DISTTAG=f34container",
+                    "FGC=f34",
+                    "FBR=f34"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:b01a5e6a16ef89ad7457a877d5cef0d80d0caa20f2cd4b92706199e8fa4e06fb",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Clement Verna <cverna@fedoraproject.org>"
+                }
+            },
+            "container": "e39e8579c26cf0780d404d0f9215e6aa5c9cab55970fd10a082c22b88a3c4ffa",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DISTTAG=f34container",
+                    "FGC=f34",
+                    "FBR=f34"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "python3 -m pip install cpp-coveralls"
+                ],
+                "Image": "sha256:b01a5e6a16ef89ad7457a877d5cef0d80d0caa20f2cd4b92706199e8fa4e06fb",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Clement Verna <cverna@fedoraproject.org>"
+                }
+            },
+            "created": "2021-05-08T18:31:25.345158421Z",
+            "docker_version": "19.03.13",
+            "history": [
+                {
+                    "created": "2021-04-01T17:59:37.09884046Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Clement Verna <cverna@fedoraproject.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-04-01T18:00:19.741002882Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DISTTAG=f34container FGC=f34 FBR=f34",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-04-27T21:21:07.464051762Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:5546861c61aa7b90b46137dc4d742af6fea22b80a695b647ba02e0ae2ccafea5 in / "
+                },
+                {
+                    "created": "2021-04-27T21:21:08.149758036Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-05-08T18:26:31.896176513Z",
+                    "author": "Patrick Diehl <patrickdiehl@lsu.edu>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Patrick Diehl <patrickdiehl@lsu.edu>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-05-08T18:27:20.277561346Z",
+                    "author": "Patrick Diehl <patrickdiehl@lsu.edu>",
+                    "created_by": "/bin/sh -c dnf update -y"
+                },
+                {
+                    "created": "2021-05-08T18:30:41.978113052Z",
+                    "author": "Patrick Diehl <patrickdiehl@lsu.edu>",
+                    "created_by": "/bin/sh -c dnf install -y hpx-devel cmake blaze-devel vtk-devel yaml-cpp-devel doxygen graphviz git libXext-devel gmsh-devel metis-devel gcovr python3 python3-pip gmsh-devel rpm-build pcl-devel"
+                },
+                {
+                    "created": "2021-05-08T18:31:14.256903896Z",
+                    "author": "Patrick Diehl <patrickdiehl@lsu.edu>",
+                    "created_by": "/bin/sh -c dnf install @development-tools -y"
+                },
+                {
+                    "created": "2021-05-08T18:31:17.281451377Z",
+                    "author": "Patrick Diehl <patrickdiehl@lsu.edu>",
+                    "created_by": "/bin/sh -c git clone https://github.com/STEllAR-GROUP/BlazeIterative.git &&  cd BlazeIterative &&  cmake . && make install && cd .. && rm -rf BlazeIterative"
+                },
+                {
+                    "created": "2021-05-08T18:31:25.345158421Z",
+                    "author": "Patrick Diehl <patrickdiehl@lsu.edu>",
+                    "created_by": "/bin/sh -c python3 -m pip install cpp-coveralls"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c510983119a6cb003ef13ede06575ca2dc87fe464c9396394be66e689b64d4d4",
+                    "sha256:dbd89e9ff0f37ae70afb6fb3c8d3b612ca05f37ebe85a9d95b45060ea1a80825",
+                    "sha256:cca15a876d697ac82e14699a49f28e2c1a880c767494bd5bb131ff16c49d0983",
+                    "sha256:c0d37fe7bc1d4db978f90ede8074770f5634126a901855ad50c38aaa780aa311",
+                    "sha256:3735c42bb56f6e11dd12497d4b34081113e3437953f4c517cd3177e2b9526003",
+                    "sha256:cb2c9e532fd1b1e814a1d865799fcec726d083adfe56b6f653eee51f7668e66e"
+                ]
+            }
+        }
+    }
+}

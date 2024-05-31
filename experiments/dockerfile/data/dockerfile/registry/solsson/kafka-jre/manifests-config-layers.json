@@ -1,0 +1,516 @@
+{
+    "manifests": {
+        "10": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2646,
+                "digest": "sha256:109ea9c784b0a3acc748886ed58cc0911ea5e523d179fe710477987991ac6b47"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22488979,
+                    "digest": "sha256:2a72cbf407d67c7a7a76dd48e432091678e297140dce050ad5eccad918a9f8d6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 144962314,
+                    "digest": "sha256:a53c407e40cffc3a64f5b2df0b8bc700743daac0cfe8dfcd77930f9cd4ca2e35"
+                }
+            ]
+        },
+        "8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3988,
+                "digest": "sha256:e44472589e2f18fee44dee971c87639e2572660dc4e4e4dc870b5651166d65f0"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22485965,
+                    "digest": "sha256:802b00ed6f79f48e6a5f44ecbcaf43563d6077aaecb565eee1dfc615c0b18c00"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 61227985,
+                    "digest": "sha256:f081c73ae13cb0f7585434ed70366ffacbcd0f73c4c66ff3ed6f520775b95597"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 877173,
+                    "digest": "sha256:b2a6e8e222bc67d5bd7621ac440e3eff5475e270fc54a9054403da165acfacc1"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3991,
+                "digest": "sha256:83de746bafa3073811c58f0c23156ed8bdafa2a7244fb1c6f8692ae0e7aa060b"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22485965,
+                    "digest": "sha256:802b00ed6f79f48e6a5f44ecbcaf43563d6077aaecb565eee1dfc615c0b18c00"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 61228084,
+                    "digest": "sha256:538c6d445743b9362d7da03ab2cf6db8bb30997f786fc2a99b5883abec7078ab"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 877180,
+                    "digest": "sha256:5daea4a4e52fde5cb7895b2e59a13b60064cc71ff41222e3f0d763fe27e7b111"
+                }
+            ]
+        },
+        "slim-beta": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3720,
+                "digest": "sha256:a5dc0f7879a94a2b062fcd69fad495e6b01a2b3bfc18f631a252d732ecae7f44"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22488057,
+                    "digest": "sha256:afeb2bfd31c0760573e7262de6ae67a84da0e0a1c3e8157bbddd41a501b18a5c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 59954351,
+                    "digest": "sha256:b008bed9c7e1b92f1c23025c35025acbadd39c1d867188ddbec76a3d863fa9a1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 876999,
+                    "digest": "sha256:08c1aeea4d09b768737f1a2fb1119980bf0bceba75e9dcd92df49903dedeb7fa"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "10",
+        "8",
+        "latest",
+        "slim-beta"
+    ],
+    "configs": {
+        "10": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/jdk-10/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1f742e0da4ca84a1e85c256e6448557e1c347e8b8725d04f05654926c0a04088",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "7e131f10f59b7e5334c3f793f82ed564e91374ad806ec559bfbe85a897275b04",
+            "container_config": {
+                "Hostname": "7e131f10f59b",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/jdk-10/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/jdk-10/bin"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1f742e0da4ca84a1e85c256e6448557e1c347e8b8725d04f05654926c0a04088",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2018-04-08T05:31:40.891477774Z",
+            "docker_version": "17.06.1-ce",
+            "history": [
+                {
+                    "created": "2018-03-13T22:27:37.022366567Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:e3250bb9848f956bdb43b205f1237df0d81a25088c95dbdeb20a1e2baf1d884f in / "
+                },
+                {
+                    "created": "2018-03-13T22:27:37.3121465Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-08T05:31:40.014449766Z",
+                    "created_by": "/bin/sh -c set -ex;   export DEBIAN_FRONTEND=noninteractive;   runDeps='';   buildDeps='curl ca-certificates';   apt-get update && apt-get install -y $runDeps $buildDeps --no-install-recommends;     cd /usr/lib;   mkdir jvm;   cd jvm;   curl -SLs -o jdk.tar.gz https://download.java.net/java/GA/jdk10/10/binaries/openjdk-10_linux-x64_bin.tar.gz;   echo \"c851df838a51af52517b74e3a4b251d90c54cf478a4ebed99e7285ef134c3435 jdk.tar.gz\" | sha256sum -c -;   tar xvzf jdk.tar.gz;   rm jdk.tar.gz;     rm -v jdk-10/lib/src.zip;   rm -r jdk-10/man/;     apt-get purge -y --auto-remove $buildDeps;   rm -rf /var/lib/apt/lists/*;   rm -rf /var/log/dpkg.log /var/log/alternatives.log /var/log/apt"
+                },
+                {
+                    "created": "2018-04-08T05:31:40.891477774Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/jdk-10/bin",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:3358360aedad76edf49d0022818228d959d20a4cccc55d01c32f8b62e226e2c2",
+                    "sha256:de7b61b669d77171a378b68409cb3fa0c2bac903ea7933153fbf5eaeb1e69318"
+                ]
+            }
+        },
+        "8": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "ZULU_OPENJDK_VERSION=8=8.31.0.1",
+                    "JAVA_HOME=/usr/lib/jvm/zulu-8-amd64",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:ba3710f867c73429c70d4570aea0695ce5a2f13ea4d04221fa2e3c08fdde4885",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "c46b64f583fb1bc52eb679400ca6528f513d4bc5ed3f4b6f59aa518ebb245604",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "ZULU_OPENJDK_VERSION=8=8.31.0.1",
+                    "JAVA_HOME=/usr/lib/jvm/zulu-8-amd64",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "set -ex;   sed -i -e \"s/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/\" /etc/locale.gen;   sed -i -e \"s/# $LANG/$LANG/\" /etc/locale.gen;   echo \"LANG=\\\"$LANG\\\"\" > /etc/default/locale;     cat /etc/locale.gen | grep -v \"^#\";   cat /etc/default/locale;   ls -la /usr/share/locale/locale.alias | grep /etc/locale.alias;   LC_ALL=C dpkg-reconfigure --frontend=noninteractive locales;"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:ba3710f867c73429c70d4570aea0695ce5a2f13ea4d04221fa2e3c08fdde4885",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2019-04-03T03:14:58.84222949Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2018-09-04T21:21:34.335927291Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:e6ca98733431f75e97eb09758ba64065d213d51bd2070a95cf15f2ff5adccfc4 in / "
+                },
+                {
+                    "created": "2018-09-04T21:21:34.566479261Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-03T03:13:16.130200703Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV ZULU_OPENJDK_VERSION=8=8.31.0.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-03T03:14:49.68624968Z",
+                    "created_by": "/bin/sh -c set -ex;   runDeps='locales procps';   buildDeps='gnupg dirmngr';   export DEBIAN_FRONTEND=noninteractive;   apt-get update && apt-get install -y $runDeps $buildDeps --no-install-recommends;     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0x219BD9C9;   echo 'deb http://repos.azulsystems.com/debian stable main' > /etc/apt/sources.list.d/zulu.list;   mkdir /usr/share/man/man1;   apt-get update && apt-get install -y zulu-${ZULU_OPENJDK_VERSION} --no-install-recommends;   rm -rf /usr/share/man/man1;     cd /usr/lib/jvm/zulu-8-amd64/;   rm -rf demo man sample src.zip;     apt-get purge -y --auto-remove $buildDeps;   rm -rf /var/lib/apt/lists/*;   rm -rf /var/log/dpkg.log /var/log/alternatives.log /var/log/apt"
+                },
+                {
+                    "created": "2019-04-03T03:14:50.176663099Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/zulu-8-amd64",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-03T03:14:50.600587788Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-03T03:14:58.84222949Z",
+                    "created_by": "/bin/sh -c set -ex;   sed -i -e \"s/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/\" /etc/locale.gen;   sed -i -e \"s/# $LANG/$LANG/\" /etc/locale.gen;   echo \"LANG=\\\"$LANG\\\"\" > /etc/default/locale;     cat /etc/locale.gen | grep -v \"^#\";   cat /etc/default/locale;   ls -la /usr/share/locale/locale.alias | grep /etc/locale.alias;   LC_ALL=C dpkg-reconfigure --frontend=noninteractive locales;"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8b15606a9e3e430cb7ba739fde2fbb3734a19f8a59a825ffa877f9be49059817",
+                    "sha256:8a69c36a2f581949dc361db3dc1d63c738b9cf43a0827554efa7d2f0cd8f4713",
+                    "sha256:f211137fcff575e0794833702976cccd20aa52bb0f32419787a2884191612f8c"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "ZULU_OPENJDK_VERSION=8=8.31.0.1",
+                    "JAVA_HOME=/usr/lib/jvm/zulu-8-amd64",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:c2dc32bb6fc38bc3e8e8363f01f0114e49370a84be2994606effa62597d5fd73",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "3785efd321498c9150962f470d649f367c979f36a92fc2e8d2540f640cfe6bd1",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "ZULU_OPENJDK_VERSION=8=8.31.0.1",
+                    "JAVA_HOME=/usr/lib/jvm/zulu-8-amd64",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "set -ex;   sed -i -e \"s/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/\" /etc/locale.gen;   sed -i -e \"s/# $LANG/$LANG/\" /etc/locale.gen;   echo \"LANG=\\\"$LANG\\\"\" > /etc/default/locale;     cat /etc/locale.gen | grep -v \"^#\";   cat /etc/default/locale;   ls -la /usr/share/locale/locale.alias | grep /etc/locale.alias;   LC_ALL=C dpkg-reconfigure --frontend=noninteractive locales;"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:c2dc32bb6fc38bc3e8e8363f01f0114e49370a84be2994606effa62597d5fd73",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2019-04-03T04:06:31.976097418Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2018-09-04T21:21:34.335927291Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:e6ca98733431f75e97eb09758ba64065d213d51bd2070a95cf15f2ff5adccfc4 in / "
+                },
+                {
+                    "created": "2018-09-04T21:21:34.566479261Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-03T04:04:52.873773709Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV ZULU_OPENJDK_VERSION=8=8.31.0.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-03T04:06:22.904211489Z",
+                    "created_by": "/bin/sh -c set -ex;   runDeps='locales procps';   buildDeps='gnupg dirmngr';   export DEBIAN_FRONTEND=noninteractive;   apt-get update && apt-get install -y $runDeps $buildDeps --no-install-recommends;     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0x219BD9C9;   echo 'deb http://repos.azulsystems.com/debian stable main' > /etc/apt/sources.list.d/zulu.list;   mkdir /usr/share/man/man1;   apt-get update && apt-get install -y zulu-${ZULU_OPENJDK_VERSION} --no-install-recommends;   rm -rf /usr/share/man/man1;     cd /usr/lib/jvm/zulu-8-amd64/;   rm -rf demo man sample src.zip;     apt-get purge -y --auto-remove $buildDeps;   rm -rf /var/lib/apt/lists/*;   rm -rf /var/log/dpkg.log /var/log/alternatives.log /var/log/apt"
+                },
+                {
+                    "created": "2019-04-03T04:06:23.445701656Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/zulu-8-amd64",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-03T04:06:23.771778959Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-03T04:06:31.976097418Z",
+                    "created_by": "/bin/sh -c set -ex;   sed -i -e \"s/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/\" /etc/locale.gen;   sed -i -e \"s/# $LANG/$LANG/\" /etc/locale.gen;   echo \"LANG=\\\"$LANG\\\"\" > /etc/default/locale;     cat /etc/locale.gen | grep -v \"^#\";   cat /etc/default/locale;   ls -la /usr/share/locale/locale.alias | grep /etc/locale.alias;   LC_ALL=C dpkg-reconfigure --frontend=noninteractive locales;"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8b15606a9e3e430cb7ba739fde2fbb3734a19f8a59a825ffa877f9be49059817",
+                    "sha256:8ba1661e33e6d2d6ce7b624e33505cd0973ab09731d091e61683575865098215",
+                    "sha256:41f91fa8bdd65628088b83d6414b6e836f7c7192026b49283120ab58330e4554"
+                ]
+            }
+        },
+        "slim-beta": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "ZULU_OPENJDK_VERSION=8=8.23.0.3",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:37ecd81d990cf2a9920b2deacc36df9bb6234d6fe71add1fd1d4de1ac37b0431",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "28aebbc53d6fc06b9eaa4f37353dd5239ce997739643a302b28c34d32f6ef905",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "ZULU_OPENJDK_VERSION=8=8.23.0.3",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "set -ex;   sed -i -e \"s/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/\" /etc/locale.gen;   sed -i -e \"s/# $LANG/$LANG/\" /etc/locale.gen;   echo \"LANG=\\\"$LANG\\\"\" > /etc/default/locale;     cat /etc/locale.gen | grep -v \"^#\";   cat /etc/default/locale;   ln -s /etc/locale.alias /usr/share/locale/locale.alias;   LC_ALL=C dpkg-reconfigure --frontend=noninteractive locales;"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:37ecd81d990cf2a9920b2deacc36df9bb6234d6fe71add1fd1d4de1ac37b0431",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "created": "2017-10-02T09:18:53.987975948Z",
+            "docker_version": "17.06.1-ce",
+            "history": [
+                {
+                    "created": "2017-09-13T08:41:48.769754197Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:2bc9df54d28d9ec75722f6748834a1aea0baf089047e86a541064c282246c300 in / "
+                },
+                {
+                    "created": "2017-09-13T08:41:49.023897636Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-10-02T09:18:13.051483999Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV ZULU_OPENJDK_VERSION=8=8.23.0.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-10-02T09:18:50.505826018Z",
+                    "created_by": "/bin/sh -c set -ex;   runDeps='locales';   buildDeps='gnupg dirmngr';   export DEBIAN_FRONTEND=noninteractive;   apt-get update && apt-get install -y $runDeps $buildDeps --no-install-recommends;     mkdir /usr/share/man/man1;     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0x219BD9C9;   echo 'deb http://repos.azulsystems.com/debian stable main' > /etc/apt/sources.list.d/zulu.list;   apt-get update && apt-get install -y zulu-${ZULU_OPENJDK_VERSION} --no-install-recommends;     cd /usr/lib/jvm/zulu-8-amd64/;   rm -rf demo man sample src.zip;     apt-get purge -y --auto-remove $buildDeps;   rm -rf /var/lib/apt/lists/*;   rm -rf /var/log/dpkg.log /var/log/alternatives.log /var/log/apt"
+                },
+                {
+                    "created": "2017-10-02T09:18:50.939117095Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-10-02T09:18:53.987975948Z",
+                    "created_by": "/bin/sh -c set -ex;   sed -i -e \"s/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/\" /etc/locale.gen;   sed -i -e \"s/# $LANG/$LANG/\" /etc/locale.gen;   echo \"LANG=\\\"$LANG\\\"\" > /etc/default/locale;     cat /etc/locale.gen | grep -v \"^#\";   cat /etc/default/locale;   ln -s /etc/locale.alias /usr/share/locale/locale.alias;   LC_ALL=C dpkg-reconfigure --frontend=noninteractive locales;"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:24e065a5f328cfecf35d5aed36cd0695688ac3de24bd553011c286d5cca5e2c7",
+                    "sha256:0a9184f9adb34c2b70a92a51743978ad870469c33f1de04ea1da7b52e5de4d83",
+                    "sha256:efa748a06947e31d1fb27504c9d6e977fbffcd2dbbacb9a1c1c28eb73bf612fe"
+                ]
+            }
+        }
+    }
+}

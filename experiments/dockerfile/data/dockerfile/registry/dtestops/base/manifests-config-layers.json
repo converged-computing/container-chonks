@@ -1,0 +1,168 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4771,
+                "digest": "sha256:1b8fabf4865ba19308c04a822ed8b976ace9fc6410af48afa010fc1966a53c94"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 65693853,
+                    "digest": "sha256:c60055a51d748f34ebd4a7c4872c5d727e0ef96fbf9cd9b248e931b222828c23"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 71553,
+                    "digest": "sha256:755da0cdb7d25b74b205ff1eccd26ea4eede693ec7cf2150ae4c1caafe6394b1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 358,
+                    "digest": "sha256:969d017f67e62ae323a3e8077e3ac4a5b1bf4a27c349148c1f6c28bd6ca3bbb8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 681,
+                    "digest": "sha256:37c9a911359525fa28aa16715d36954723a8924492b5216cc97d1099251a5023"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 162,
+                    "digest": "sha256:a3d9f847978686a04b694253ea6c6873fb60a495dc742a92d097ccc3c2855641"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4596342,
+                    "digest": "sha256:22761a70c8130eda13371440b22d0b593386c1c1889e33cb231cb2b2259bd6f2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 61879200,
+                    "digest": "sha256:ec5e3276af5de5866ef93abe20f641a090466eefcacdfbb0ad72eed8add6e5b7"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "dtestops@gmail.com",
+            "config": {
+                "Hostname": "b6b4cb6241ef",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:5b3310fbd266daa0fc27a053d7c281705c024589a3f07e2c774f5db01d0641d5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "0d74dd3829afed5314a2278b43bc4f3e279a316473b24f4bd7975d4d7004337a",
+            "container_config": {
+                "Hostname": "b6b4cb6241ef",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "deps='     gcc     python     python-dev     python-pip   '   && set -x   && apt-get update   && apt-get install -y --no-install-recommends $deps   && rm -rf /var/lib/apt/lists/*"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:5b3310fbd266daa0fc27a053d7c281705c024589a3f07e2c774f5db01d0641d5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-02-27T13:42:24.243362048Z",
+            "docker_version": "1.13.1",
+            "history": [
+                {
+                    "created": "2017-01-20T21:42:50.662917247Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:c383f1cde338921411168cc34a10e3a221ae55e569768e1551274f8fddc54415 in / "
+                },
+                {
+                    "created": "2017-01-20T21:42:52.848164424Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2017-01-20T21:42:54.405772069Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-01-20T21:42:55.802093462Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2017-01-20T21:42:57.075943079Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2017-01-20T21:42:57.719936661Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-27T13:39:59.28262341Z",
+                    "author": "dtestops@gmail.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER dtestops@gmail.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-27T13:40:57.225833296Z",
+                    "author": "dtestops@gmail.com",
+                    "created_by": "/bin/sh -c deps='     curl     ca-certificates     unzip   '   && set -x   && apt-get update   && apt-get install -y --no-install-recommends $deps   && rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-02-27T13:42:24.243362048Z",
+                    "author": "dtestops@gmail.com",
+                    "created_by": "/bin/sh -c deps='     gcc     python     python-dev     python-pip   '   && set -x   && apt-get update   && apt-get install -y --no-install-recommends $deps   && rm -rf /var/lib/apt/lists/*"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:918b1e79e35865cfaa7af9e07fa2a7aaaa2885e6bee964691a93c5db631b0aff",
+                    "sha256:83b575865dd109e77301a1be1e510cfffa6b89b9ff6355df22b5008315778263",
+                    "sha256:153bd22a8e96919e8eb890cc50aba51d7c16ea0746c2f020f21312f88e65f5c8",
+                    "sha256:ca893d4b83a60ef4e859785bc6b4072242ae07c7d6d0a07098847bc281b525b8",
+                    "sha256:c9fc7024b4847236789c072f13ee0c5f1e8718062df63654ce71ba05c4dd0ddc",
+                    "sha256:e2618b8c6310b31ebd047fe768daaa9989cd3de2aee17ef40e781b76218c0445",
+                    "sha256:19629728c3262e3a2c30adf8dcf66035f2e433ef92cdaad1684dbd0b226c8372"
+                ]
+            }
+        }
+    }
+}

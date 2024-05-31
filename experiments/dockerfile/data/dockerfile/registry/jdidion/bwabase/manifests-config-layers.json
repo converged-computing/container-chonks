@@ -1,0 +1,267 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 8573,
+                "digest": "sha256:432a21c405b171afff28e746dac476bab5455abe1304609ee84faa5e6597e8e3"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 41940227,
+                    "digest": "sha256:281a73dee0072a9983ca3a9c3af0438786267fe9a9a7b1e683400db898bddc4a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 849,
+                    "digest": "sha256:2aea1b77cff74f13640bc43debfb00ff51f4a9efe4bb959aba5ee5e8e7c88eef"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 629,
+                    "digest": "sha256:59a714b7d8bf3e1985a03a8d58894d43a01672cab81e128bc7de8e7cb08a9ea0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 864,
+                    "digest": "sha256:0218064da0a96471da7ccaa657daa880fc65eccc679fc61e87b6a14f290ddb79"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 171,
+                    "digest": "sha256:ebac621dcea37271445bf2fa54ca37b2a16b079634a787b143731c0fe757e218"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 14822,
+                    "digest": "sha256:b580731643cc5039dad03946c2e0781b010446c71bf6a01f1401fe4e4d947188"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 35291977,
+                    "digest": "sha256:faa5fbdba23902839df4d365657c0337a9c34b32c2a4ac6206bfa4494a950397"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 199012979,
+                    "digest": "sha256:3ee0db4dc372d3976d81e8de7bcaae0096f1357971581e7ad13ed4a04c1f9183"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 336973,
+                    "digest": "sha256:14901f9dc22f81d356f96075a407ee79fceb80b5f59779271ffc72ea924837a6"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "27ae0e316043",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=teletype",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "BUILD_PACKAGES=build-essential     g++     libbz2-dev     zlib1g-dev     liblzma-dev     git     wget",
+                    "RUNTIME_PACKAGES=libncurses5-dev     libncursesw5-dev     python3-pip     time",
+                    "BWA_VERSION=0.7.17",
+                    "BWA_URL=https://github.com/lh3/bwa/releases/download/v0.7.17/bwa-0.7.17.tar.bz2",
+                    "SAMTOOLS_VERSION=1.7",
+                    "SAMTOOLS_URL=https://github.com/samtools/samtools/releases/download/1.7/samtools-1.7.tar.bz2"
+                ],
+                "Cmd": [
+                    "/sbin/my_init"
+                ],
+                "Image": "sha256:3fc1bf11900c9258c2f54dc3854b02ba9d2e4578ce2f527967ea005dbd88b399",
+                "Volumes": null,
+                "WorkingDir": "/tmp",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "9b3213ad20b50bcd7b5587243a65990bb8c46cbfe6e9f5600e03cd14e6b2e33f",
+            "container_config": {
+                "Hostname": "27ae0e316043",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=teletype",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8",
+                    "BUILD_PACKAGES=build-essential     g++     libbz2-dev     zlib1g-dev     liblzma-dev     git     wget",
+                    "RUNTIME_PACKAGES=libncurses5-dev     libncursesw5-dev     python3-pip     time",
+                    "BWA_VERSION=0.7.17",
+                    "BWA_URL=https://github.com/lh3/bwa/releases/download/v0.7.17/bwa-0.7.17.tar.bz2",
+                    "SAMTOOLS_VERSION=1.7",
+                    "SAMTOOLS_URL=https://github.com/samtools/samtools/releases/download/1.7/samtools-1.7.tar.bz2"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "apt-get remove --purge -y $BUILD_PACKAGES     && rm -rf /var/lib/apt/lists/*     && rm -rf /tmp/*"
+                ],
+                "Image": "sha256:3fc1bf11900c9258c2f54dc3854b02ba9d2e4578ce2f527967ea005dbd88b399",
+                "Volumes": null,
+                "WorkingDir": "/tmp",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2018-03-05T17:22:32.651937066Z",
+            "docker_version": "17.12.0-ce",
+            "history": [
+                {
+                    "created": "2018-01-25T18:23:30.610528428Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a3344b835ea6fdc5692df23826c970403656c6947342e117b2ac1a05956679af in / "
+                },
+                {
+                    "created": "2018-01-25T18:23:39.075632267Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-01-25T18:23:39.843140353Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-01-25T18:23:50.734158349Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2018-01-25T18:23:51.48088772Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-01-25T18:23:51.755470218Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-01-26T09:29:05.236031138Z",
+                    "author": "Phusion <info@phusion.nl>",
+                    "created_by": "/bin/sh -c #(nop) MAINTAINER Phusion <info@phusion.nl>"
+                },
+                {
+                    "created": "2018-01-26T09:29:05.39744516Z",
+                    "author": "Phusion <info@phusion.nl>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:e7a5eda59d878c69cfd87231b043d062999bd85e034d8fcd4cb384bfbfe5b471 in /bd_build"
+                },
+                {
+                    "created": "2018-01-26T09:31:00.255359811Z",
+                    "author": "Phusion <info@phusion.nl>",
+                    "created_by": "/bin/sh -c /bd_build/prepare.sh && \t/bd_build/system_services.sh && \t/bd_build/utilities.sh && \t/bd_build/cleanup.sh"
+                },
+                {
+                    "created": "2018-01-26T09:31:02.406801366Z",
+                    "author": "Phusion <info@phusion.nl>",
+                    "created_by": "/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=teletype LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8"
+                },
+                {
+                    "created": "2018-01-26T09:31:02.58538605Z",
+                    "author": "Phusion <info@phusion.nl>",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/sbin/my_init\"]"
+                },
+                {
+                    "created": "2018-03-05T15:40:28.953817264Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /tmp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-03-05T17:20:48.795330573Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BUILD_PACKAGES=build-essential     g++     libbz2-dev     zlib1g-dev     liblzma-dev     git     wget",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-03-05T17:20:49.126236896Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUNTIME_PACKAGES=libncurses5-dev     libncursesw5-dev     python3-pip     time",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-03-05T17:20:49.43963812Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BWA_VERSION=0.7.17",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-03-05T17:20:49.798919759Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BWA_URL=https://github.com/lh3/bwa/releases/download/v0.7.17/bwa-0.7.17.tar.bz2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-03-05T17:20:50.076071577Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV SAMTOOLS_VERSION=1.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-03-05T17:20:50.38871497Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV SAMTOOLS_URL=https://github.com/samtools/samtools/releases/download/1.7/samtools-1.7.tar.bz2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-03-05T17:22:29.70766342Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install --yes         $BUILD_PACKAGES         $RUNTIME_PACKAGES     && ln -s /usr/bin/python3 /usr/bin/python     && ln -s /usr/bin/pip3 /usr/bin/pip     && wget -q -O - $BWA_URL | tar -jxv     && cd bwa-${BWA_VERSION}     && sed -i '1i#include <stdint.h>' kthread.c     && sed -i[.bak] \"s/u_int32_t/uint32_t/g\" *.c     && sed -i[.bak] \"s/u_int32_t/uint32_t/g\" *.h     && make     && mv /tmp/bwa-${BWA_VERSION}/bwa /usr/local/bin     && cd ..     && git clone --recursive https://github.com/brentp/bwa-meth     && cd bwa-meth     && python setup.py install     && wget -q -O - $SAMTOOLS_URL | tar -jxv     && cd samtools-${SAMTOOLS_VERSION}     && ./configure --prefix=/usr/local/ --without-curses     && make     && make install     && rm -Rf /tmp/samtools-${SAMTOOLS_VERSION}"
+                },
+                {
+                    "created": "2018-03-05T17:22:32.651937066Z",
+                    "created_by": "/bin/sh -c apt-get remove --purge -y $BUILD_PACKAGES     && rm -rf /var/lib/apt/lists/*     && rm -rf /tmp/*"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:ff986b10a018b48074e6d3a68b39aad8ccc002cdad912d4148c0f92b3729323e",
+                    "sha256:9c7183e0ea88b265d83708dfe5b9189c4e12f9a1d8c3e5bce7f286417653f9b7",
+                    "sha256:c98ef191df4b42c3fd5155d23385e75ee59707c6a448dfc6c8e4e9c005a3df11",
+                    "sha256:92914665e7f61f8f19b56bf7983a2b3758cb617bef498b37adb80899e8b86e32",
+                    "sha256:6f4ce6b888495c7c9bd4a0ac124b039d986a3b18250fa873d11d13b42f6a79f4",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:97017ee135c9e4add75043df47180248e8311c56daa84d6ca0f29c5d495d3e3b",
+                    "sha256:cee29f16e214c5a8f4624947e61e7dbe0837214ef0398eefc474af27c3139fa6",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:760afb6a6b77d586db9e5c7e6770dec1821d9b4b5693c620541529d94b6ca3c1",
+                    "sha256:bea4fd54d6571d7df7c2e12047070c48d781d630a6c91a0ff968cfe8ab816fba"
+                ]
+            }
+        }
+    }
+}

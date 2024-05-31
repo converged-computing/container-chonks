@@ -1,0 +1,293 @@
+{
+    "manifests": {
+        "latest": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:fcaeb07fc0a5daf4c955a844e8a535d2998a9f59894ad8a86af9c1e4df5d638f",
+                    "size": 3522,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:ce9b815b2fc20090a15d0c221582eb4edfa8252fd4d091a4cb73873fc1a5be0c",
+                    "size": 567,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:fcaeb07fc0a5daf4c955a844e8a535d2998a9f59894ad8a86af9c1e4df5d638f",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "User": "opencog",
+                "Env": [
+                    "PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "LAST_OS_UPDATE=2023-02-07",
+                    "LAST_OCPKG_UPDATE=2023-02-07",
+                    "GITHUB_NAME=opencog",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_ALL=en_US.UTF-8"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "bash"
+                ],
+                "WorkingDir": "/home/opencog",
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": [
+                    "USER root"
+                ]
+            },
+            "created": "2023-03-06T02:55:28.165368449Z",
+            "history": [
+                {
+                    "created": "2023-03-01T04:38:47.040890156Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-01T04:38:47.090459553Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-01T04:38:47.148005051Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-01T04:38:47.204693847Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-01T04:38:48.972030133Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:fb4c8244f4468cdd3f666932f05805a3882d34010d3a0c14b7c20589bf619a9c in / "
+                },
+                {
+                    "created": "2023-03-01T04:38:49.239257335Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:42:55.818617939Z",
+                    "created_by": "ENV DEBIAN_FRONTEND=noninteractive",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:42:55.818617939Z",
+                    "created_by": "ENV LAST_OS_UPDATE=2023-02-07",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:42:55.818617939Z",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get -y upgrade # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:43:23.204724842Z",
+                    "created_by": "RUN /bin/sh -c apt-get -y install apt-transport-https software-properties-common       sudo wget tzdata apt-utils # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:43:23.204724842Z",
+                    "created_by": "ENV LAST_OCPKG_UPDATE=2023-02-07",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:43:23.204724842Z",
+                    "created_by": "ARG GITHUB_NAME=opencog",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:43:23.204724842Z",
+                    "created_by": "ENV GITHUB_NAME=opencog",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:43:23.204724842Z",
+                    "created_by": "ARG OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:43:23.316881467Z",
+                    "created_by": "RUN |2 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /bin/sh -c echo OCPKG_URL=$OCPKG_URL # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:43:23.327620737Z",
+                    "created_by": "ADD https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /tmp/octool # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:43:23.375116934Z",
+                    "created_by": "RUN |2 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /bin/sh -c chmod 755 /tmp/octool;  sync; # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:52:53.343117581Z",
+                    "created_by": "RUN |2 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /bin/sh -c /tmp/octool -rdv # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:53:40.277948552Z",
+                    "created_by": "RUN |2 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /bin/sh -c /tmp/octool -v -l default # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:53:42.223487812Z",
+                    "created_by": "RUN |2 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /bin/sh -c locale-gen en_US.UTF-8 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:53:42.223487812Z",
+                    "created_by": "ENV LANG=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:53:42.223487812Z",
+                    "created_by": "ENV LANGUAGE=en_US:en",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:53:42.223487812Z",
+                    "created_by": "ENV LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:53:42.223487812Z",
+                    "created_by": "ENV PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:53:42.359315303Z",
+                    "created_by": "RUN |2 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /bin/sh -c adduser --disabled-password --gecos \"OpenCog Developer\" opencog # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:53:42.45264491Z",
+                    "created_by": "RUN |2 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /bin/sh -c adduser opencog sudo # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:53:42.505718366Z",
+                    "created_by": "RUN |2 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /bin/sh -c echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:53:42.505718366Z",
+                    "created_by": "USER opencog",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:53:42.528101627Z",
+                    "created_by": "WORKDIR /home/opencog",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:53:42.540891534Z",
+                    "created_by": "COPY /scripts/ /home/opencog # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:53:42.619905109Z",
+                    "created_by": "RUN |2 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg /bin/sh -c sudo chown -R opencog:opencog .guile .gdbinit # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:53:42.619905109Z",
+                    "created_by": "ARG INSTALL_HASKELL=no",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:53:42.672548958Z",
+                    "created_by": "RUN |3 GITHUB_NAME=opencog OCPKG_URL=https://raw.githubusercontent.com/opencog/ocpkg/master/ocpkg INSTALL_HASKELL=no /bin/sh -c if [ x${INSTALL_HASKELL} = \"xyes\" ]; then /tmp/octool -s; fi # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:55:28.165368449Z",
+                    "created_by": "USER root",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:55:28.165368449Z",
+                    "created_by": "RUN /bin/sh -c /tmp/octool -c && ccache -C # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-03-06T02:55:28.165368449Z",
+                    "created_by": "USER opencog",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-03-06T02:55:28.165368449Z",
+                    "created_by": "CMD [\"/bin/sh\" \"-c\" \"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL29wZW5jb2cvb3BlbmNvZy1kZXBzOmxhdGVzdCIsInBpbiI6InNoYTI1NjpiOTBkMGYwZmZlZDFkODFjM2ZkMjkyODBiYjk2ODgwMjQxOTRkZGVmMTkxNDY5ZjU1ODJhNDk0NzQ1MGVmZmE4In1dfQ==",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:202fe64c3ce39b94d8beda7d7506ccdfcf7a59f02f17c915078e4c62b5c2ed11",
+                    "sha256:c396b66f33885293fdd99c4db49c20b4d5b89c5570773b6175bd5f3d0c5daf87",
+                    "sha256:d9038dc36530d5e61954728ff4364e90279f99353cdaf815f5bbc4cf42368227",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:c374c1c1bbcabfa1b34f33a09d3d4ff76ab3807133b8e25eeb32ece57b000646",
+                    "sha256:0f68bff42048e26455e5aef66ba5bfd3d85ddfd7a846724b4e1c323d8878a977",
+                    "sha256:dee69aca78a79cca53ebd32a150abc53f6fc8a842d675daf400546914ec44c77",
+                    "sha256:a385b2c8c0f97ac08cc8ff200468f749b56e36c7030414a2f7e5f32ae486169c",
+                    "sha256:5d9ba0444b10f4fe5dd9dfaf2bf6c76b6da9b4c3bd17585e8a6a40fe6e67e0aa",
+                    "sha256:b27bb78fcb50b44e74987d93a7eff6bc2343f64913f03635e881ef94dd14b611",
+                    "sha256:a6f762ac5df540ac692addc649a3d12d5a9af7634f35368ca5f586ee1be10da2",
+                    "sha256:ba7089b0121bcb42a7d08d31f5e6ebe47ba31b7ed6b4147386c0e8e0fa1967b4",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:f9715e5fe57fe341f20604a293b4e669d8db29921fcf8ee2321661ef8062363d",
+                    "sha256:38bc513ce48f9eed7bf9a500dae1d661e6d97acc5e74ed3ada29fa6718dd7286",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:197a15aa77bda42fe3827231e6cd129623cc8ce56f147d39a4c8fa130855df3f"
+                ]
+            }
+        }
+    }
+}

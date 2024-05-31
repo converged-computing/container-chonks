@@ -1,0 +1,239 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9943,
+                "digest": "sha256:92bacd9940a32f4e80c72b3b8db73f8f3a088f749505837dcab81da46874ed2c"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2813316,
+                    "digest": "sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6668600,
+                    "digest": "sha256:d1b1b4361acfbfe2484ae26ba90866c09df8c1bacada70624f2c44a0c0390fec"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 601,
+                    "digest": "sha256:c6b64ab35715650f19f6c5037768ab6970f7973823742a61bc9669639a626d00"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 899,
+                    "digest": "sha256:1e19938642d0a6403149485ab2904e7200d83f00bf0ae1ef51b8e60768bd08ae"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 666,
+                    "digest": "sha256:4a9d7b4c22c39a56f05a1664f83f038b71f85bf7cf19d6d7600ce2e6cef08485"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6271275,
+                    "digest": "sha256:516be7f2eeb0b3b79fc606940fa19181033fb45f8484f3327e365aaa79dd9fc2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 989,
+                    "digest": "sha256:245eee05f7d95e0f028c51cf2378890a595ce0e06e77fea293f1f829530a7d20"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NGINX_VERSION=1.18.0",
+                    "NJS_VERSION=0.4.4",
+                    "PKG_RELEASE=1",
+                    "S6_BEHAVIOUR_IF_STAGE2_FAILS=2",
+                    "S6_KEEP_ENV=1",
+                    "S6_READ_ONLY_ROOT=1"
+                ],
+                "Cmd": null,
+                "Image": "sha256:e65f0b1d619e8d5fc7559e9c38deb44b97dd1d6b480eccb70a8859eba8b3452c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/init"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Morgan AUCHEDE <morgan.auchede@gmail.com>"
+                },
+                "StopSignal": "SIGTERM"
+            },
+            "container": "9ad19b93b10253276cc2a8e11f1d22feaa643fbd708784d85567161e7013c842",
+            "container_config": {
+                "Hostname": "9ad19b93b102",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NGINX_VERSION=1.18.0",
+                    "NJS_VERSION=0.4.4",
+                    "PKG_RELEASE=1",
+                    "S6_BEHAVIOUR_IF_STAGE2_FAILS=2",
+                    "S6_KEEP_ENV=1",
+                    "S6_READ_ONLY_ROOT=1"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"/init\"]"
+                ],
+                "Image": "sha256:e65f0b1d619e8d5fc7559e9c38deb44b97dd1d6b480eccb70a8859eba8b3452c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/init"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Morgan AUCHEDE <morgan.auchede@gmail.com>"
+                },
+                "StopSignal": "SIGTERM"
+            },
+            "created": "2020-10-09T12:42:20.176318061Z",
+            "docker_version": "19.03.13+azure",
+            "history": [
+                {
+                    "created": "2020-04-24T01:05:03.608058404Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b91adb67b670d3a6ff9463e48b7def903ed516be66fc4282d22c53e41512be49 in / "
+                },
+                {
+                    "created": "2020-04-24T01:05:03.92860976Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-04-24T12:58:32.274209903Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-04-24T12:59:48.811136626Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV NGINX_VERSION=1.18.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-05T22:46:52.85121138Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV NJS_VERSION=0.4.4",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-05T22:46:53.15884236Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PKG_RELEASE=1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-05T22:47:00.095606686Z",
+                    "created_by": "/bin/sh -c set -x     && addgroup -g 101 -S nginx     && adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx -g nginx nginx     && apkArch=\"$(cat /etc/apk/arch)\"     && nginxPackages=\"         nginx=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-r${PKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}.${NJS_VERSION}-r${PKG_RELEASE}     \"     && case \"$apkArch\" in         x86_64)             set -x             && KEY_SHA512=\"e7fa8303923d9b95db37a77ad46c68fd4755ff935d0a534d26eba83de193c76166c68bfe7f65471bf8881004ef4aa6df3e34689c305662750c0172fca5d8552a *stdin\"             && apk add --no-cache --virtual .cert-deps                 openssl             && wget -O /tmp/nginx_signing.rsa.pub https://nginx.org/keys/nginx_signing.rsa.pub             && if [ \"$(openssl rsa -pubin -in /tmp/nginx_signing.rsa.pub -text -noout | openssl sha512 -r)\" = \"$KEY_SHA512\" ]; then                 echo \"key verification succeeded!\";                 mv /tmp/nginx_signing.rsa.pub /etc/apk/keys/;             else                 echo \"key verification failed!\";                 exit 1;             fi             && apk del .cert-deps             && apk add -X \"https://nginx.org/packages/alpine/v$(egrep -o '^[0-9]+\\.[0-9]+' /etc/alpine-release)/main\" --no-cache $nginxPackages             ;;         *)             set -x             && tempDir=\"$(mktemp -d)\"             && chown nobody:nobody $tempDir             && apk add --no-cache --virtual .build-deps                 gcc                 libc-dev                 make                 openssl-dev                 pcre-dev                 zlib-dev                 linux-headers                 libxslt-dev                 gd-dev                 geoip-dev                 perl-dev                 libedit-dev                 mercurial                 bash                 alpine-sdk                 findutils             && su nobody -s /bin/sh -c \"                 export HOME=${tempDir}                 && cd ${tempDir}                 && hg clone https://hg.nginx.org/pkg-oss                 && cd pkg-oss                 && hg up -r 500                 && cd alpine                 && make all                 && apk index -o ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz ${tempDir}/packages/alpine/${apkArch}/*.apk                 && abuild-sign -k ${tempDir}/.abuild/abuild-key.rsa ${tempDir}/packages/alpine/${apkArch}/APKINDEX.tar.gz                 \"             && cp ${tempDir}/.abuild/abuild-key.rsa.pub /etc/apk/keys/             && apk del .build-deps             && apk add -X ${tempDir}/packages/alpine/ --no-cache $nginxPackages             ;;     esac     && if [ -n \"$tempDir\" ]; then rm -rf \"$tempDir\"; fi     && if [ -n \"/etc/apk/keys/abuild-key.rsa.pub\" ]; then rm -f /etc/apk/keys/abuild-key.rsa.pub; fi     && if [ -n \"/etc/apk/keys/nginx_signing.rsa.pub\" ]; then rm -f /etc/apk/keys/nginx_signing.rsa.pub; fi     && apk add --no-cache --virtual .gettext gettext     && mv /usr/bin/envsubst /tmp/         && runDeps=\"$(         scanelf --needed --nobanner /tmp/envsubst             | awk '{ gsub(/,/, \"\\nso:\", $2); print \"so:\" $2 }'             | sort -u             | xargs -r apk info --installed             | sort -u     )\"     && apk add --no-cache $runDeps     && apk del .gettext     && mv /tmp/envsubst /usr/local/bin/     && apk add --no-cache tzdata     && apk add --no-cache curl ca-certificates     && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log     && mkdir /docker-entrypoint.d"
+                },
+                {
+                    "created": "2020-10-05T22:47:00.728289535Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:e7e183879c35719c18aa7f733651029fbcc55f5d8c22a877ae199b389425789e in / "
+                },
+                {
+                    "created": "2020-10-05T22:47:01.236516497Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:1d0a4127e78a26c11640bbedaeaa28ecafb5c40effef923390c04428192d665a in /docker-entrypoint.d "
+                },
+                {
+                    "created": "2020-10-05T22:47:01.84568893Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:0fd5fca330dcd6a7de297435e32af634f29f7132ed0550d342cad9fd20158258 in /docker-entrypoint.d "
+                },
+                {
+                    "created": "2020-10-05T22:47:02.195809621Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-05T22:47:02.602767306Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 80",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-05T22:47:02.932400793Z",
+                    "created_by": "/bin/sh -c #(nop)  STOPSIGNAL SIGTERM",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-05T22:47:03.250666767Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"nginx\" \"-g\" \"daemon off;\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-09T12:42:13.01774788Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Morgan AUCHEDE <morgan.auchede@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-09T12:42:13.184530814Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV S6_BEHAVIOUR_IF_STAGE2_FAILS=2 S6_KEEP_ENV=1 S6_READ_ONLY_ROOT=1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-09T12:42:19.090124906Z",
+                    "created_by": "/bin/sh -c set -e -u -x     && apk add --no-cache --no-progress --virtual BUILD_DEPS curl gnupg     && apk add --no-cache --no-progress bash ca-certificates shadow tzdata     && curl --location \"https://github.com/jwilder/dockerize/releases/download/v0.6.1/dockerize-linux-amd64-v0.6.1.tar.gz\" | tar --directory /usr/local/bin --extract --gzip     && chmod +x /usr/local/bin/dockerize     && curl \"https://keybase.io/justcontainers/key.asc\" | gpg --import     && curl --location --output /tmp/s6-overlay.tar.gz \"https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.0/s6-overlay-amd64.tar.gz\"     && curl --location --output /tmp/s6-overlay.tar.gz.sig \"https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.0/s6-overlay-amd64.tar.gz.sig\"     && gpg --verify /tmp/s6-overlay.tar.gz.sig /tmp/s6-overlay.tar.gz     && tar --directory / --extract --file /tmp/s6-overlay.tar.gz --gzip     && apk del --no-progress BUILD_DEPS     && rm -f -r /root/.gnupg /tmp/*"
+                },
+                {
+                    "created": "2020-10-09T12:42:20.000187154Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:eb273ed6c3da34f56cd9888422df6046d01f4770b8a2705ea8d8a8f0f9f7f8c0 in / "
+                },
+                {
+                    "created": "2020-10-09T12:42:20.176318061Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/init\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:3e207b409db364b595ba862cdc12be96dcdad8e36c59a03b7b3b61c946a5741a",
+                    "sha256:25bf98496bd02c418a43c9315f7908435f879b4731bfef2b00a6e78ab97a1ea7",
+                    "sha256:0d2ea550ccec715e9ba7cf142c6deda0050e2931fd0bdf6cb889d793ce6cef63",
+                    "sha256:9ae289c85f0b16b9d839692d81f56a2d5a05cdaf7a34c4dd2d17cdbf78782b90",
+                    "sha256:6fad280d8b839a458bd2a954ee209ebc9d21095cad9f3af936dc753052d883fc",
+                    "sha256:def838da3cefaa4f1d18654475402526c1c2f6784e5efe072ab0aa3f4020e705",
+                    "sha256:0f95f079f08b5bd758a872db76ddd23293565b925054bcb6e7239009c4807544"
+                ]
+            }
+        }
+    }
+}

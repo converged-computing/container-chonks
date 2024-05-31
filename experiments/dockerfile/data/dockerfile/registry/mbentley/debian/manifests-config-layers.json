@@ -1,0 +1,1821 @@
+{
+    "manifests": {
+        "bookworm": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:d10666f8ac51a546e4fb90081747c3f03e4099d55286f9dc29f7d3945f9125e0",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:41d928d8410bbff8b93ddf7e3a28e8db76376195debbf864397e2c65da45ae30",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:ccec03a4c58c25cd8cae07a32bb84ca349447041543071e9320520a0b23f759f",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        },
+        "bookworm-amd64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:335cb4c6fc8d7018884f405b1ec9e3115746db5820c85a69a52e96beb7e06463",
+                "size": 839
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:bda125e00c4274e6678060851ad3ab3e24ff3f99deafd6c080da624812ebfda7",
+                    "size": 49577862
+                }
+            ]
+        },
+        "bookworm-arm64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:b58dc8c6f32d240cd2aa40fd20e528444614d208ac8d94f744ad88c68585df4b",
+                "size": 839
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:f8d2f0e927af32aeae3bac3b2ddf15e2adcb9fa5461bb33ed41cdb824503742d",
+                    "size": 49614425
+                }
+            ]
+        },
+        "bookworm-armv7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:822b0000005e53c95ea914099bf031cf140b8e65efd554c5a31fbaf3ec8ce576",
+                "size": 852
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:310fdb182e82ba9ca024e17634869af7f8f4adbc6acbd61864a14be6031882fc",
+                    "size": 45175339
+                }
+            ]
+        },
+        "bullseye": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:5ae3762f0728cbffb0be6f509cc65778174ee1f3881b57d2ceddd3a8c6e18b94",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:93d319db6554c4a9c37822b879e935edadc0014146f9ee7f392a99c7624418f2",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:0d2e67c792ad34c7f9b3b32ebddd42f0c359a7bf7cec0f631795574d22190002",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        },
+        "bullseye-amd64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:cb749f17a79eb00ed6db76e23323859b9e1d9b3e1f5da911bee6d34d6cb936aa",
+                "size": 835
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:ede7de8944d611a74514274406bf9c8a483577d74280218fe8d8cfb24f04b38d",
+                    "size": 55099397
+                }
+            ]
+        },
+        "bullseye-arm64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:b9cb8d5c6d13dfad255848cbb187f7ace007cf9cecc412adc114c43216396567",
+                "size": 839
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:8853781184999428f97f0f005e4452602ca76a6e87cf33c4fa3856e91376f6ab",
+                    "size": 53740818
+                }
+            ]
+        },
+        "bullseye-armv7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:83ce2043b481ae2532785460a9b3ccaf8ce5bf275fb16081ec09f15abe496aed",
+                "size": 852
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:5b4e0bf2bddbf1158e92718e7ddb0dbb067889bf46052e33c5fc8d1096cf69df",
+                    "size": 50257056
+                }
+            ]
+        },
+        "buster": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:2324031559fb229ed4c02355d38ce513444f31b828b48a9673e2c1c32128c58d",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:200d37d0384220b96d2f38d0964feb53a6201f600abceb8aa5cbdca9e84e4c1b",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:d12c3c113053fd4ee08c7158e02493b573070e8e20cc9c517362609ef47e5196",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        },
+        "buster-amd64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:e1da94d8fda19db5022374ad99ce9ff6e4668672ef56a6a1f367811c1a60b9e5",
+                "size": 839
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:01dfe5857a4ec1e799b526a31b5b0698da4fa229c16afcf6abf10d045a0b20e1",
+                    "size": 50658129
+                }
+            ]
+        },
+        "buster-arm64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:e2f2ac9cd337c52eec86315d50b98c1a38e3a3973df23b30fcd36a19659c2835",
+                "size": 839
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:186c6fea78ba4b15a4f532aaf611b3da110c8cc80573f14f6fdcb01831d7ce57",
+                    "size": 49453977
+                }
+            ]
+        },
+        "buster-armv7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:b4ccd9ee7f83dd5b20b17d0576eb899a7a6106a65ebadda65a9abc3c252e1cdb",
+                "size": 852
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:0540a0d1b34a3ffe57cb3482d4914a55dcd1c6d044165606f7858b580aa0ac59",
+                    "size": 46130566
+                }
+            ]
+        },
+        "jessie": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:5fe2f2eca5aac1a9c3c3a334e09f4bb7a62e5452ab7b1f934f75f9cd8a9b70a2",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:4b1f463fb0c9757fc64717f531c15622f6a74e2204287f3c0d5fad6754384b4b",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        },
+        "jessie-amd64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:39e6adcc156b12783a4cdf587d0ae61cc2a62c33225532d64f2bb47683d859e1",
+                "size": 854
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:74b033ead1d5931844aa6096970fdee958a7000314fcd046b6af674da464b77c",
+                    "size": 54391697
+                }
+            ]
+        },
+        "jessie-arm64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:544c69db9f3adc9524d968f6cf9440ab8d99ee0bd318100a5c093d8600dee903",
+                "size": 1750
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:7ac553a22140cf5456f11e4aa3152c56002bd01818e16bc01fcc52c693d3384a",
+                    "size": 51436395
+                }
+            ]
+        },
+        "jessie-armv7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:8d3d011488ea397903722b931d8e739c367698cc81c8c30e51b3abf70cc6fc61",
+                "size": 867
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:37f77349d880b1c104c4db409d965d4fe388ef72818bcb8c484fc5270fbc179f",
+                    "size": 50308343
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:d10666f8ac51a546e4fb90081747c3f03e4099d55286f9dc29f7d3945f9125e0",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:41d928d8410bbff8b93ddf7e3a28e8db76376195debbf864397e2c65da45ae30",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:ccec03a4c58c25cd8cae07a32bb84ca349447041543071e9320520a0b23f759f",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        },
+        "latest-amd64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:335cb4c6fc8d7018884f405b1ec9e3115746db5820c85a69a52e96beb7e06463",
+                "size": 839
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:bda125e00c4274e6678060851ad3ab3e24ff3f99deafd6c080da624812ebfda7",
+                    "size": 49577862
+                }
+            ]
+        },
+        "latest-arm64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:b58dc8c6f32d240cd2aa40fd20e528444614d208ac8d94f744ad88c68585df4b",
+                "size": 839
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:f8d2f0e927af32aeae3bac3b2ddf15e2adcb9fa5461bb33ed41cdb824503742d",
+                    "size": 49614425
+                }
+            ]
+        },
+        "latest-armv7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:822b0000005e53c95ea914099bf031cf140b8e65efd554c5a31fbaf3ec8ce576",
+                "size": 852
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:310fdb182e82ba9ca024e17634869af7f8f4adbc6acbd61864a14be6031882fc",
+                    "size": 45175339
+                }
+            ]
+        },
+        "sid": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:c1f4c53679dfd4338b90fd42f2cc11272b7ad29a5dba4a59f2c0061b87101326",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:53187d2529a99a250f39bd3b2de57d67a78b82b5f056de4001ae6e9eb62226da",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:2936c24c7e548ebdbeec9acdea8727f56d7f70c40e0554b3221c61e5eb4595bc",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        },
+        "sid-amd64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:dbb94bb53a6cf0e3f76fa3d9b0c2fea83c96025b413494574b77aefe0d9394ed",
+                "size": 839
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:2561748a3801f1a48bf7585cb7b03b08df6df1d5c18dc64ed22f6dc71b7295f6",
+                    "size": 52689478
+                }
+            ]
+        },
+        "sid-arm64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:79fd3ccf45a4f7780f2d161c9ade5e5ce7e34997f558bbde8c295025266d53eb",
+                "size": 839
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:ed993898214df69b1cabe11a0967f8f593803e0049ee5306ab752ea78a0b334e",
+                    "size": 52970697
+                }
+            ]
+        },
+        "sid-armv7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:dc074535971c70be24cc90cec5acab7d68bb9687499f9fad98416a44d5a9cc2a",
+                "size": 852
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:b0db5a9d192b2a96c010e264d9c1b4e572c58251ad844356ab9213b77285a7a7",
+                    "size": 47293348
+                }
+            ]
+        },
+        "stretch": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:b41741fbf8f3899a68699a17ef5a71e84ca83347e8868a9ab3b8aef95760fe7f",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:416e3d3574ef1f94771682de6db28d7da26cfe8152d467cc222103e582df856f",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:93f33874280f5bd9ef277e129be5b4a7175aba4a6fd57e173f41c0fcce17486a",
+                    "size": 503,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        },
+        "stretch-amd64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:e4e7375f3716b36af48aaa03f152334107ede6d147903fabb655788d111fd31b",
+                "size": 854
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:8156d11c223b2b1567b4340dd5d31baf8e039d9cf5ad9aa163c8e9dcc57536aa",
+                    "size": 45431266
+                }
+            ]
+        },
+        "stretch-arm64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:e1ed4e5ba453a51481e29f2d72f5aa78ed6fd85e2d58a493017548d1b55f2b75",
+                "size": 854
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:1ad144645114b62a4a64cb0402cbf6c9b9099874a58336e3c72943b3b18941ed",
+                    "size": 43222462
+                }
+            ]
+        },
+        "stretch-armv7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:a460e830021c557d9970957e475185b9ac645d76a6084dba155478214edb603c",
+                "size": 867
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:e4b874060535651d3b80135f046e0ed444953e02cc7de91ec2232aab7d1e9a1a",
+                    "size": 42158344
+                }
+            ]
+        }
+    },
+    "tags": [
+        "bookworm",
+        "bookworm-amd64",
+        "bookworm-arm64",
+        "bookworm-armv7",
+        "bullseye",
+        "bullseye-amd64",
+        "bullseye-arm64",
+        "bullseye-armv7",
+        "buster",
+        "buster-amd64",
+        "buster-arm64",
+        "buster-armv7",
+        "jessie",
+        "jessie-amd64",
+        "jessie-arm64",
+        "jessie-armv7",
+        "latest",
+        "latest-amd64",
+        "latest-arm64",
+        "latest-armv7",
+        "sid",
+        "sid-amd64",
+        "sid-arm64",
+        "sid-armv7",
+        "stretch",
+        "stretch-amd64",
+        "stretch-arm64",
+        "stretch-armv7"
+    ],
+    "configs": {
+        "bookworm": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-29T07:00:35.210849991Z",
+            "history": [
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b2cb6fea620504c12c8dba271fca5a5b2c3cc1644fdccc4a77b6bf0046eb582a"
+                ]
+            }
+        },
+        "bookworm-amd64": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-29T07:00:35.210849991Z",
+            "history": [
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b2cb6fea620504c12c8dba271fca5a5b2c3cc1644fdccc4a77b6bf0046eb582a"
+                ]
+            }
+        },
+        "bookworm-arm64": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:00:44.763518645Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:00:44.763518645Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:00:44.763518645Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:00:44.763518645Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f5cd3b7b756f00079fb3c2ebea2486b5e5cefb7dbd9c676fce71384bef2c926c"
+                ]
+            }
+        },
+        "bookworm-armv7": {
+            "architecture": "arm",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:00:56.585965696Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:00:56.585965696Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:00:56.585965696Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:00:56.585965696Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:56946eea5258cec583fbdf84845b483d2974984894baa54e2be547d8ee4bcbe8"
+                ]
+            },
+            "variant": "v7"
+        },
+        "bullseye": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:01:01.95819933Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:01:01.95819933Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:01:01.95819933Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:01:01.95819933Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4b2ddf5e26e40457c88a406313232498a0ea1f416ae320c53238367e3c9fe64e"
+                ]
+            }
+        },
+        "bullseye-amd64": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:01:01.95819933Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:01:01.95819933Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:01:01.95819933Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:01:01.95819933Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4b2ddf5e26e40457c88a406313232498a0ea1f416ae320c53238367e3c9fe64e"
+                ]
+            }
+        },
+        "bullseye-arm64": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:00:55.529822349Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:00:55.529822349Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:00:55.529822349Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:00:55.529822349Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:fd98a8e9598359cfb33a05ff8c2998a4c0eeb2cadd7ab8e881861c7bb8783b44"
+                ]
+            }
+        },
+        "bullseye-armv7": {
+            "architecture": "arm",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-17T07:00:57.539818741Z",
+            "history": [
+                {
+                    "created": "2024-05-17T07:00:57.539818741Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-17T07:00:57.539818741Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-17T07:00:57.539818741Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f8f66a063747fec7a321c09b7eaf1c32adacd7a5a289944a37e1fe288840771f"
+                ]
+            },
+            "variant": "v7"
+        },
+        "buster": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:22:46.087504668Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:22:46.087504668Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:22:46.087504668Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:22:46.087504668Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:46ec5bf640c4411d3475c536c007e033492ace82f1978cf0130a5b7b24f3620e"
+                ]
+            }
+        },
+        "buster-amd64": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:22:46.087504668Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:22:46.087504668Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:22:46.087504668Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:22:46.087504668Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:46ec5bf640c4411d3475c536c007e033492ace82f1978cf0130a5b7b24f3620e"
+                ]
+            }
+        },
+        "buster-arm64": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:00:51.346340593Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:00:51.346340593Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:00:51.346340593Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:00:51.346340593Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:fd63a1b53a7f146bc046e7763d3770a2610259b991a0dc2eba0ecce744d7b6d4"
+                ]
+            }
+        },
+        "buster-armv7": {
+            "architecture": "arm",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:01:05.217606913Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:01:05.217606913Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:01:05.217606913Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:01:05.217606913Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:87a7a4f8ab301ea5629e69e3341df933145bfc63f25df732a6623a8caea7806e"
+                ]
+            },
+            "variant": "v7"
+        },
+        "jessie": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-04-27T11:43:28.447239114Z",
+            "history": [
+                {
+                    "created": "2023-04-27T11:43:28.447239114Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-04-27T11:43:28.447239114Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-04-27T11:43:28.447239114Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:47a92a8041ccce17bf957c9a13e65360d54ce836d7afa2455c1f3bb26e401017"
+                ]
+            }
+        },
+        "jessie-amd64": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-04-27T11:43:28.447239114Z",
+            "history": [
+                {
+                    "created": "2023-04-27T11:43:28.447239114Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-04-27T11:43:28.447239114Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-04-27T11:43:28.447239114Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:47a92a8041ccce17bf957c9a13e65360d54ce836d7afa2455c1f3bb26e401017"
+                ]
+            }
+        },
+        "jessie-arm64": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-04-20T21:13:26.422069429Z",
+            "history": [
+                {
+                    "created": "2023-04-20T21:13:26.422069429Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-04-20T21:13:26.422069429Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-04-20T21:13:26.422069429Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.cache.v0": "W3siZGlnZXN0Ijoic2hhMjU2OjIyZjFiNWRhNmNlYjAyZTc3M2EzMjFmYTFlOWFiZmIwNjE3YmRmOGZjNzk3MDkwNGNjMjQ5NDNhOTE1YWRiMDAifSx7ImRpZ2VzdCI6InNoYTI1Njo1NzM5NDY1ZDY5NjZkNzQ3OGE4ZjVkZGQ1Y2FjMzE3ZTc4MTI0N2UwMzRlYjJlM2Q3NDMxYjY0Njg5YzYxYTUyIiwiaW5wdXRzIjpbW3sibGluayI6M30seyJsaW5rIjo0fV1dfSx7ImxheWVycyI6W3sibGF5ZXIiOjAsImNyZWF0ZWRBdCI6IjIwMjMtMDQtMjBUMjE6MTM6MjYuNDI0OTIyNjMzWiJ9XSwiZGlnZXN0Ijoic2hhMjU2OmFjM2M4ZTE3N2FhZDZlMmVlNTdiZDkwYTBiYzAzY2M1NWIxM2ZhNWY3Nzg2NmFkZDI2MDUzNWUyYzUzYzE3NzciLCJpbnB1dHMiOltbeyJsaW5rIjowfSx7InNlbGVjdG9yIjoic2hhMjU2OjhhNWVkYWIyODI2MzI0NDMyMTllMDUxZTRhZGUyZDFkNWJiYzY3MWM3ODEwNTFiZjE0Mzc4OTdjYmRmZWEwZjEiLCJsaW5rIjoxfV1dfSx7ImRpZ2VzdCI6InNoYTI1NjpiODFiYjk1YmQ5MDNlOGI3MjQ2NjFkM2YzYmMzNjgwMzQ3ZTcwNDM4MGY3ZTI0ZTA3Y2Q1N2RjODU3N2FiMDA3In0seyJkaWdlc3QiOiJzaGEyNTY6ZDQzMGM4ZjMzNmZhNWJjYTk2NmUzMDY3OTk0OTAzMDg2YzY4MzhlNjc3N2JlNmNjMTRhMzgzYjYyMTdlMWVlNyJ9XQ==",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:08912d12fa1ef43961a8510741584741f11f1ad609396b820d10c02965297458"
+                ]
+            }
+        },
+        "jessie-armv7": {
+            "architecture": "arm",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-04-27T11:43:27.097370215Z",
+            "history": [
+                {
+                    "created": "2023-04-27T11:43:27.097370215Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-04-27T11:43:27.097370215Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-04-27T11:43:27.097370215Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4242a2d7b7765dc7ea7d857b1eca540b9f6b73b7d46443a8727817ed255aff90"
+                ]
+            },
+            "variant": "v7"
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-29T07:00:35.210849991Z",
+            "history": [
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b2cb6fea620504c12c8dba271fca5a5b2c3cc1644fdccc4a77b6bf0046eb582a"
+                ]
+            }
+        },
+        "latest-amd64": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-29T07:00:35.210849991Z",
+            "history": [
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T07:00:35.210849991Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b2cb6fea620504c12c8dba271fca5a5b2c3cc1644fdccc4a77b6bf0046eb582a"
+                ]
+            }
+        },
+        "latest-arm64": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:00:44.763518645Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:00:44.763518645Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:00:44.763518645Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:00:44.763518645Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f5cd3b7b756f00079fb3c2ebea2486b5e5cefb7dbd9c676fce71384bef2c926c"
+                ]
+            }
+        },
+        "latest-armv7": {
+            "architecture": "arm",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:00:56.585965696Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:00:56.585965696Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:00:56.585965696Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:00:56.585965696Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:56946eea5258cec583fbdf84845b483d2974984894baa54e2be547d8ee4bcbe8"
+                ]
+            },
+            "variant": "v7"
+        },
+        "sid": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:01:13.878488977Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:01:13.878488977Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:01:13.878488977Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:01:13.878488977Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c6026f49cd1b617a7c1379c77da67176435564aeb64ea75a365b2aec04ccefd4"
+                ]
+            }
+        },
+        "sid-amd64": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:01:13.878488977Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:01:13.878488977Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:01:13.878488977Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:01:13.878488977Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c6026f49cd1b617a7c1379c77da67176435564aeb64ea75a365b2aec04ccefd4"
+                ]
+            }
+        },
+        "sid-arm64": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:01:05.021395097Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:01:05.021395097Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:01:05.021395097Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:01:05.021395097Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:aae4dd13b256777f0ab558a9920ed0f99399173bd28d744ae5b24c1a826f6d83"
+                ]
+            }
+        },
+        "sid-armv7": {
+            "architecture": "arm",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-14T07:01:17.867372736Z",
+            "history": [
+                {
+                    "created": "2024-05-14T07:01:17.867372736Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-14T07:01:17.867372736Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-14T07:01:17.867372736Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:207223b243e68163ed3f8c9418494aab8ef759a9e01e969bb717252c38918c06"
+                ]
+            },
+            "variant": "v7"
+        },
+        "stretch": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-04-27T13:39:22.617115088Z",
+            "history": [
+                {
+                    "created": "2023-04-27T13:39:22.617115088Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-04-27T13:39:22.617115088Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-04-27T13:39:22.617115088Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:d81961aeddca7965d3ce31b28f6631be16898affa1cc51eadcb91e0bd14198ca"
+                ]
+            }
+        },
+        "stretch-amd64": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-04-27T13:39:22.617115088Z",
+            "history": [
+                {
+                    "created": "2023-04-27T13:39:22.617115088Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-04-27T13:39:22.617115088Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-04-27T13:39:22.617115088Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:d81961aeddca7965d3ce31b28f6631be16898affa1cc51eadcb91e0bd14198ca"
+                ]
+            }
+        },
+        "stretch-arm64": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-04-27T13:39:29.201298447Z",
+            "history": [
+                {
+                    "created": "2023-04-27T13:39:29.201298447Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-04-27T13:39:29.201298447Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-04-27T13:39:29.201298447Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b0281436eabaf69312c963056f754d19f3d787fd007014596a00a63443f556b9"
+                ]
+            }
+        },
+        "stretch-armv7": {
+            "architecture": "arm",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "WorkingDir": "/",
+                "Labels": {
+                    "maintainer": "Matt Bentley <mbentley@mbentley.net>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-04-27T13:39:29.163339087Z",
+            "history": [
+                {
+                    "created": "2023-04-27T13:39:29.163339087Z",
+                    "created_by": "COPY / / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-04-27T13:39:29.163339087Z",
+                    "created_by": "LABEL maintainer=Matt Bentley <mbentley@mbentley.net>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-04-27T13:39:29.163339087Z",
+                    "created_by": "CMD [\"bash\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:bd6d7a5258e12f39fe4dcf905e0b07dcdd966f229ad965c8174189d97872e01b"
+                ]
+            },
+            "variant": "v7"
+        }
+    }
+}

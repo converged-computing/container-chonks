@@ -1,0 +1,265 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 7900,
+                "digest": "sha256:feb79bb374a029979286662af5ad03cfdf4d17301a5ff2c1c370e1ad77279920"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 67129254,
+                    "digest": "sha256:027274c8e1113b52e886c8f515b0abe6c67b81f17881acf3e9b7f352f901110a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 72651,
+                    "digest": "sha256:d3f9339a13595d28726bb9d01196bcae9e2409d540d276ed7ba60a6a4a226654"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 366,
+                    "digest": "sha256:872f75707cf448723cfbf8bf808539676b8a612e45f8ac6f5f64f5ed30973260"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 162,
+                    "digest": "sha256:dd5eed9f50d581a74ed418f044c631fd0ed5afa21c12456ff33456f30321d00c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 97554728,
+                    "digest": "sha256:2c3a77a28e41b3de005a024c1c644a725e9d46dbfd05313a9acb5df29843ca84"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 316951244,
+                    "digest": "sha256:a172124cdc579b22063a83e883f334921ba99b49b9b2fe72b02d08a72d877693"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 96,
+                    "digest": "sha256:a8902dd61cacb874387cc71262d4c021f9a2af05a6495f4a75765bf395045fcd"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2672477,
+                    "digest": "sha256:fd23d881bb43b5f1b7a587f8f970863824effff771b830265b98f5eed7809c8f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 153656326,
+                    "digest": "sha256:e8164de2849e6c64dc031694736a57796eb83930e0a68f55e327bb9abc551808"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1849215,
+                    "digest": "sha256:6cc6d36b902d24a467fa841faaef58d632b64e6e8b0402c7b63647eb37dba57d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 167306596,
+                    "digest": "sha256:bda2343b477307830a6c4a7c0e7861c20f011db0c9eaed3328c645ff74a5ce80"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2365,
+                    "digest": "sha256:ddb6323c1e23eaeaac785b5fa37782347314c53d088660cc212112596dab4bb1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 320,
+                    "digest": "sha256:95f6f11b4a554b802fcd8ab05edbd7861c4c9a6f8259c136bb8165721d43f073"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/mitsuba/mitsuba/wrapper:/mitsuba/mitsuba/dist:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "MITSUBA_DIR=/mitsuba/mitsuba",
+                    "PYTHONPATH=/mitsuba/mitsuba/dist/python:/mitsuba/mitsuba/dist/python/2.7:",
+                    "LD_LIBRARY_PATH=/mitsuba/mitsuba/dist:",
+                    "DISPLAY=:0"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:b8fa63a8a8fcf1a082b1c049a76a2a6c4ae06ba1ad9a0da9da4ceb77fb7d49d8",
+                "Volumes": null,
+                "WorkingDir": "/mitsuba/mitsuba",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "authors": "Ben Heasly <benjamin.heasly@gmail.com>, Marceli Wac <marceliwac@gmail.com>"
+                }
+            },
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/mitsuba/mitsuba/wrapper:/mitsuba/mitsuba/dist:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "MITSUBA_DIR=/mitsuba/mitsuba",
+                    "PYTHONPATH=/mitsuba/mitsuba/dist/python:/mitsuba/mitsuba/dist/python/2.7:",
+                    "LD_LIBRARY_PATH=/mitsuba/mitsuba/dist:",
+                    "DISPLAY=:0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY file:4f9c296de82d9cf32e165f439c403e6b2633d28a7bdc8991fee4fe4c0d91a0b2 in /mitsuba/mitsuba/wrapper/mtsimport "
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:b8fa63a8a8fcf1a082b1c049a76a2a6c4ae06ba1ad9a0da9da4ceb77fb7d49d8",
+                "Volumes": null,
+                "WorkingDir": "/mitsuba/mitsuba",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "authors": "Ben Heasly <benjamin.heasly@gmail.com>, Marceli Wac <marceliwac@gmail.com>"
+                }
+            },
+            "created": "2018-11-15T23:32:53.889640343Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2018-10-19T00:48:46.60508543Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:ecefeeae93e44cb420508628b869bab5361955c66d604e32ab5cb6dca0403c1c in / "
+                },
+                {
+                    "created": "2018-10-19T00:48:47.485666543Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-10-19T00:48:48.116251486Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-10-19T00:48:48.750858388Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-10-19T00:48:48.947763742Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-15T22:49:52.903829613Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL authors=Ben Heasly <benjamin.heasly@gmail.com>, Marceli Wac <marceliwac@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-15T22:53:25.39574227Z",
+                    "created_by": "/bin/sh -c apt-get update     && apt-get install -y     libx11-dev     libxxf86vm-dev     x11-xserver-utils     x11proto-xf86vidmode-dev     x11vnc     xpra     xserver-xorg-video-dummy     && apt-get clean     && apt-get autoclean     && apt-get autoremove"
+                },
+                {
+                    "created": "2018-11-15T22:58:38.242662078Z",
+                    "created_by": "/bin/sh -c apt-get update     && apt-get install -y     build-essential     scons     git     qt4-dev-tools     libpng12-dev     libjpeg-dev     libilmbase-dev     libxerces-c-dev     libboost-all-dev     libopenexr-dev     libglewmx-dev     libxxf86vm-dev     libpcrecpp0     libeigen3-dev     libfftw3-dev     wget     && apt-get clean     && apt-get autoclean     && apt-get autoremove"
+                },
+                {
+                    "created": "2018-11-15T22:58:40.865706976Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /mitsuba"
+                },
+                {
+                    "created": "2018-11-15T22:58:46.271704728Z",
+                    "created_by": "/bin/sh -c wget http://www.mitsuba-renderer.org/releases/current/trusty/collada-dom-dev_2.4.0-1_amd64.deb     && wget http://www.mitsuba-renderer.org/releases/current/trusty/collada-dom_2.4.0-1_amd64.deb     && dpkg --install collada-dom*.deb"
+                },
+                {
+                    "created": "2018-11-15T22:59:21.364425219Z",
+                    "created_by": "/bin/sh -c git clone https://www.github.com/mitsuba-renderer/mitsuba.git"
+                },
+                {
+                    "created": "2018-11-15T22:59:25.848493616Z",
+                    "created_by": "/bin/sh -c cd mitsuba && git checkout 2f9bf64cb49c2b4c1c945e73c50c1c0da9507add && cd .."
+                },
+                {
+                    "created": "2018-11-15T22:59:26.345653817Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /mitsuba/mitsuba",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-15T23:32:50.736432412Z",
+                    "created_by": "/bin/sh -c cp build/config-linux-gcc.py config.py     && scons"
+                },
+                {
+                    "created": "2018-11-15T23:32:52.736896913Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV MITSUBA_DIR=/mitsuba/mitsuba",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-15T23:32:52.897609424Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PYTHONPATH=/mitsuba/mitsuba/dist/python:/mitsuba/mitsuba/dist/python/2.7:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-15T23:32:53.061722473Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/mitsuba/mitsuba/wrapper:/mitsuba/mitsuba/dist:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-15T23:32:53.218051632Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/mitsuba/mitsuba/dist:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-15T23:32:53.476095897Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:6a0cf484703d47941df8784198f733d247f7d6a3e2b7e9ee166291dd4ca4ee5f in /etc/X11/xorg.conf "
+                },
+                {
+                    "created": "2018-11-15T23:32:53.633176183Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DISPLAY=:0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-15T23:32:53.889640343Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:4f9c296de82d9cf32e165f439c403e6b2633d28a7bdc8991fee4fe4c0d91a0b2 in /mitsuba/mitsuba/wrapper/mtsimport "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:adb1f7ffb432495d0345c5d1fdb165d0346735210c71fb3e52ca7f79dffe9c23",
+                    "sha256:cce4153cfb1c52d666664e85e0b00404a4d3407526606a39f19d818b3651b900",
+                    "sha256:6e62bd7245ce55eca3e19ba147f4ac631015505ef25eba0f123a639bf6056352",
+                    "sha256:53482344115410633f075abc5a5fd46a1bc351cadcf8da8e53ece564193bf676",
+                    "sha256:9b6881088878c631ec688d90e7aa3b3676640f02ecdefb334af057ad15211ac4",
+                    "sha256:c5c7f3a67a4192ddf903e7944e13cc97326425de9cefebf463bbcbc79e9f2f5b",
+                    "sha256:400cdaaf3603642c74d0934562a42cce3f702e0e5e16dbe1351e0a3c68f18b76",
+                    "sha256:58cba49a5f37f5a8924c6cca5ebe21986b01b43d19b62b61d985f4318c9a0fb5",
+                    "sha256:454a1e524a20f4fa46490a0112ebeef80b3aa61a8f7b00838647201cb716b04c",
+                    "sha256:f6c02cf6752e3c1a2316626650352cc6e9af6cd8c623fa89de5fa7f7778ce5da",
+                    "sha256:e8dab17dba7406b73a34690d476051d092b4f65f3b2b0159b4c19ed3bd68f36e",
+                    "sha256:9c3e2e102e7389059b61938acb0efc22987b6bd17113a51f22e3bf3d2ef32436",
+                    "sha256:4a73103fe4b4790e3f7b8c5c53403751aa56fcd9bc3647384a98cfe19b71da31"
+                ]
+            }
+        }
+    }
+}

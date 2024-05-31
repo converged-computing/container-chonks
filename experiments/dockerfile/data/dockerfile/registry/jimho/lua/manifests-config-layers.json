@@ -1,0 +1,1601 @@
+{
+    "manifests": {
+        "5": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4001,
+                "digest": "sha256:0e215a6ce22540dc066aa3fc9b81b7a8c7f092b5f666a5b23b7fb57c4bb0905d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69901729,
+                    "digest": "sha256:a2392627bec4b444fc1eeee61f67c569116d85eac8a9ae20600e87d8a2ea9223"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50748636,
+                    "digest": "sha256:b212048994ef536d3c2c61d49d6492acac4af2c82809e88f34347af4ded39302"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 340632,
+                    "digest": "sha256:5b6b1c3176b6000911ff491f5c97c6dd346020c8eaeb59d7a3e1d2bb30822fc3"
+                }
+            ]
+        },
+        "5.2": {
+            "schemaVersion": 1,
+            "name": "jimho/lua",
+            "tag": "5.2",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:cd3fe9c182b00f5b3915752bfb340116643ef4b95b0f59e4e30896092c5e7a64"
+                },
+                {
+                    "blobSum": "sha256:b2ae2954ca08201bb0c6549b29658ed8e86c2d5d098e3c2f6524ec3ec560ac65"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bc4d85eaf59008877f4fe5cdce3cf59cb7a6d072297c68973c7ec410ff6b98e2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\",\"config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.4\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3779e2e4012b03fe63e4ae4b6844ebba2044ae1bca99be297e4c07be247d0c09\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"9d5befe8e0ccbe3ad6835ab2f09e231322b0a6e2d2cbb850ceed101490bb0937\",\"container_config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.4\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - \\u0026\\u0026     cd /lua-$LUA_VERSION \\u0026\\u0026     make linux test \\u0026\\u0026     make install \\u0026\\u0026     cd .. \\u0026\\u0026 rm /lua-$LUA_VERSION -rf\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3779e2e4012b03fe63e4ae4b6844ebba2044ae1bca99be297e4c07be247d0c09\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-04-12T10:36:36.410808497Z\",\"docker_version\":\"1.10.2\",\"id\":\"1687c3178883b6b1f19d96afce58cdef6c68c7cadedcf994dc3b61c6291b9103\",\"os\":\"linux\",\"parent\":\"c551e759cc4ace0220cf9ca9d8c10e087fb9b49a2d56315fe9713abcab0a3a74\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c551e759cc4ace0220cf9ca9d8c10e087fb9b49a2d56315fe9713abcab0a3a74\",\"parent\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"created\":\"2016-04-12T10:36:25.325322998Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel \\u0026\\u0026 yum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"parent\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"created\":\"2016-04-12T10:35:46.370436501Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LUA_VERSION=5.2.4\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"parent\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"created\":\"2016-04-12T10:35:46.265874025Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"parent\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"created\":\"2015-12-15T19:54:38.002099648Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"parent\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"created\":\"2015-12-15T19:54:37.490112274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL license=GPLv2\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"parent\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"created\":\"2015-12-15T19:54:37.018195444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL vendor=CentOS\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"parent\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"created\":\"2015-12-15T19:54:36.522488182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-12-15T19:54:33.040113271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0f306a349a3c88d5686633e59384a6454e4058eb12195770971ee1e7c2305920 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "NH5F:6W4F:RPQJ:YR6E:OHXB:I6LA:CXNX:M72D:QAWH:A2FE:JTHQ:Z3VU",
+                            "kty": "EC",
+                            "x": "Xq0NxHmWgbdsfexvJ6EFqzODCDYOnkrkjZHFkbzzk-c",
+                            "y": "8npLkpDmY3OxDRPfwnoWIpQWbv3NvLeQbRIoFHOrKok"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "sP_LmGykXjM7VN-aow5ciXKg5jAdqL54kBwSp58dxOh363piQLYNCf263Aujme6F8zYK9m8yPd0kAu5sAlDQXw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjYzMDUsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxNjozOToxNFoifQ"
+                }
+            ]
+        },
+        "5.2.0": {
+            "schemaVersion": 1,
+            "name": "jimho/lua",
+            "tag": "5.2.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:19195d6b7a3c3d32622b94a8403c22a2e804c10068890eebc474d402b8012041"
+                },
+                {
+                    "blobSum": "sha256:086434030f4dbca13f845ea933f1ec2b76fb1ed9ea87774de225d9d44c08db63"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bc4d85eaf59008877f4fe5cdce3cf59cb7a6d072297c68973c7ec410ff6b98e2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\",\"config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.0\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:d6993e94e8fa4bc571c7214bd23a423e27b0521176f64e37f7a32edf535e9dbb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"b1e8f7b532b19b347c73b32a56647201731b7296d682fb7b3e4bc41fefab0b05\",\"container_config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - \\u0026\\u0026     cd /lua-$LUA_VERSION \\u0026\\u0026     make linux test \\u0026\\u0026     make install \\u0026\\u0026     cd .. \\u0026\\u0026 rm /lua-$LUA_VERSION -rf\"],\"ArgsEscaped\":true,\"Image\":\"sha256:d6993e94e8fa4bc571c7214bd23a423e27b0521176f64e37f7a32edf535e9dbb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-04-12T10:47:12.662577996Z\",\"docker_version\":\"1.10.2\",\"id\":\"d8f77e3d4dcc7c020b975868f2b3db932c7171430089b25d47a4875cdda7761a\",\"os\":\"linux\",\"parent\":\"dcb6165eede3faa0103c17d804c4f00b7293456ee9b25518a7c47e1ff2b689ae\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"dcb6165eede3faa0103c17d804c4f00b7293456ee9b25518a7c47e1ff2b689ae\",\"parent\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"created\":\"2016-04-12T10:47:01.460484773Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel \\u0026\\u0026 yum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"parent\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"created\":\"2016-04-12T10:46:17.010855748Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LUA_VERSION=5.2.0\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"parent\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"created\":\"2016-04-12T10:46:16.906384581Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"parent\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"created\":\"2015-12-15T19:54:38.002099648Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"parent\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"created\":\"2015-12-15T19:54:37.490112274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL license=GPLv2\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"parent\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"created\":\"2015-12-15T19:54:37.018195444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL vendor=CentOS\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"parent\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"created\":\"2015-12-15T19:54:36.522488182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-12-15T19:54:33.040113271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0f306a349a3c88d5686633e59384a6454e4058eb12195770971ee1e7c2305920 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "QQJA:PNC6:JL7W:B635:K7WB:NWGP:DWE6:Z3CC:I4CU:XE4Q:H425:GM2W",
+                            "kty": "EC",
+                            "x": "HnsmqNDUaHxC6RBJhafRgPHk2qkf2LaGUZ1JWX7rI5E",
+                            "y": "7tGvgE6srkSiP9LHEk0h1t74eKaPCGbB8lgViTuhicE"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "lYYCGlcAlKCqKRwXHSvB0E0_7_E7SAFGetoXzse7PRLr6anMfmDzhDXwFXxe_ihiKa4_ft95dgM9fKErfjVjXw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjYzMDcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxNjozOToxNVoifQ"
+                }
+            ]
+        },
+        "5.2.1": {
+            "schemaVersion": 1,
+            "name": "jimho/lua",
+            "tag": "5.2.1",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:e3a5968efd99d94723ebb22cb2a1502734aa09072d58a0b02251ebfd216ce3eb"
+                },
+                {
+                    "blobSum": "sha256:0c2f129d8c152b1d829f9c0a40bf8bf5e032bc2b2016ed6d94ea30ef4f4f5ab0"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bc4d85eaf59008877f4fe5cdce3cf59cb7a6d072297c68973c7ec410ff6b98e2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\",\"config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.1\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:771f5cac0fa7387cd52146b850df97ad72604ce895d417a74632967ae8e0daf5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"971c1e03962b2411e5e99b79837bd97a567844c7d385253b56ab99c4bc5bf704\",\"container_config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - \\u0026\\u0026     cd /lua-$LUA_VERSION \\u0026\\u0026     make linux test \\u0026\\u0026     make install \\u0026\\u0026     cd .. \\u0026\\u0026 rm /lua-$LUA_VERSION -rf\"],\"ArgsEscaped\":true,\"Image\":\"sha256:771f5cac0fa7387cd52146b850df97ad72604ce895d417a74632967ae8e0daf5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-04-12T10:32:25.43659981Z\",\"docker_version\":\"1.10.2\",\"id\":\"ae3a25c3fb844efa3d1f54f9336aa07c857411f315d3bff69260f34623254f1c\",\"os\":\"linux\",\"parent\":\"dd0efffe2b8e00f428a550d1cf95421981928829758bc523997451d31030c378\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"dd0efffe2b8e00f428a550d1cf95421981928829758bc523997451d31030c378\",\"parent\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"created\":\"2016-04-12T10:32:14.556304172Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel \\u0026\\u0026 yum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"parent\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"created\":\"2016-04-12T10:31:34.232916205Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LUA_VERSION=5.2.1\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"parent\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"created\":\"2016-04-12T10:31:34.118893249Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"parent\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"created\":\"2015-12-15T19:54:38.002099648Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"parent\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"created\":\"2015-12-15T19:54:37.490112274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL license=GPLv2\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"parent\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"created\":\"2015-12-15T19:54:37.018195444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL vendor=CentOS\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"parent\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"created\":\"2015-12-15T19:54:36.522488182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-12-15T19:54:33.040113271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0f306a349a3c88d5686633e59384a6454e4058eb12195770971ee1e7c2305920 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "EYZS:G6AQ:6TTQ:HUQP:7E6C:VQZN:G7M7:ZYYV:TGCN:V2SX:A2CE:UMBQ",
+                            "kty": "EC",
+                            "x": "FDHEjCzKLwLdCxBSG-8T_FNnqwsCLxXgchkWVXAg490",
+                            "y": "GCLF1oc97Qj8Xniq-FTeaUVYGLNJO-STgTLWFs8l98Q"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "YWNxJy3ZMhZTVd9MkwlhByfWX-tMPVSf3vD8SBuyp6vV-gjhUmChNVloKbOQv3eGu8tkZ3uDOVyo-xw50d5krA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjYzMDYsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxNjozOToxNVoifQ"
+                }
+            ]
+        },
+        "5.2.2": {
+            "schemaVersion": 1,
+            "name": "jimho/lua",
+            "tag": "5.2.2",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:c3fd40abc54baf219267aff79ece50ac0c37275a182d3eafea6c28fb47f672df"
+                },
+                {
+                    "blobSum": "sha256:4c4174f784c503790bcbcfed57a03810a199357bb829bec4a878bd7615441cf4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bc4d85eaf59008877f4fe5cdce3cf59cb7a6d072297c68973c7ec410ff6b98e2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\",\"config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.2\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4cc05cb2e70a8e08780735eb4f05945f063e1e01680fe08eee92442b3955ffef\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"cf01a15d9a6a2b57d8889aae790a6327c40a312a2b838e698476dc774067e413\",\"container_config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - \\u0026\\u0026     cd /lua-$LUA_VERSION \\u0026\\u0026     make linux test \\u0026\\u0026     make install \\u0026\\u0026     cd .. \\u0026\\u0026 rm /lua-$LUA_VERSION -rf\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4cc05cb2e70a8e08780735eb4f05945f063e1e01680fe08eee92442b3955ffef\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-04-12T10:49:17.883316607Z\",\"docker_version\":\"1.10.2\",\"id\":\"45f85f303770647cac26bf49b0a02cda51e5253676da758048d001741a4d7b04\",\"os\":\"linux\",\"parent\":\"025874f16bc6100d11009296d403215ef2f6e4f0c602b0fd6e51501b791e6da0\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"025874f16bc6100d11009296d403215ef2f6e4f0c602b0fd6e51501b791e6da0\",\"parent\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"created\":\"2016-04-12T10:49:07.110199706Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel \\u0026\\u0026 yum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"parent\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"created\":\"2016-04-12T10:48:23.406750484Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LUA_VERSION=5.2.2\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"parent\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"created\":\"2016-04-12T10:48:23.284967337Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"parent\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"created\":\"2015-12-15T19:54:38.002099648Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"parent\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"created\":\"2015-12-15T19:54:37.490112274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL license=GPLv2\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"parent\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"created\":\"2015-12-15T19:54:37.018195444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL vendor=CentOS\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"parent\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"created\":\"2015-12-15T19:54:36.522488182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-12-15T19:54:33.040113271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0f306a349a3c88d5686633e59384a6454e4058eb12195770971ee1e7c2305920 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "MRYX:2CET:FUFS:C4QQ:7I2X:GAN7:Y3UF:UMS4:TG52:LY2I:RFMV:LN7Q",
+                            "kty": "EC",
+                            "x": "NI9Awe59_7cQe3LMZSZLCmFe4_db4wkFvdomQS3SeWw",
+                            "y": "1W8bjRbeBgtMplAF6iAkvb2gtVHFyw5DMQq6OTw2QnA"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "fFGzXbB4lfOmbB3L8wS81GKUIM_xWRXAwAvzZJ8k2bAGe4i_wUjbSaW_9XreqNofmXw1N0gYS-SkLeprJOHnlQ",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjYzMDcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxNjozOToxNloifQ"
+                }
+            ]
+        },
+        "5.2.3": {
+            "schemaVersion": 1,
+            "name": "jimho/lua",
+            "tag": "5.2.3",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:787b74a53b546f12e5256d99c322e658c45bf2e879049d45331f4fd9da80ac4f"
+                },
+                {
+                    "blobSum": "sha256:61d039204eef24418e3075dd6ca508ffef1990eb7f021f9e93f7ad8a994deeda"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bc4d85eaf59008877f4fe5cdce3cf59cb7a6d072297c68973c7ec410ff6b98e2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\",\"config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.3\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:54b0094c768cbccebc2554109112bfb8533264fae248cfb8836e7c68d21ba99d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"e61c3a96e3e4265f687af88879b4f2350b3c2df0f3e2ee798b0fbfae41b2ca70\",\"container_config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.3\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - \\u0026\\u0026     cd /lua-$LUA_VERSION \\u0026\\u0026     make linux test \\u0026\\u0026     make install \\u0026\\u0026     cd .. \\u0026\\u0026 rm /lua-$LUA_VERSION -rf\"],\"ArgsEscaped\":true,\"Image\":\"sha256:54b0094c768cbccebc2554109112bfb8533264fae248cfb8836e7c68d21ba99d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-04-12T10:28:16.773903699Z\",\"docker_version\":\"1.10.2\",\"id\":\"55651b21aacdeff012bac332cd121b94c5ab90bbb60aebd17d0097ac74c6bab1\",\"os\":\"linux\",\"parent\":\"a1cc78a9c99d88a9659e08e40d25acd06b924ee149f9233d141cfdfed8a6fbef\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a1cc78a9c99d88a9659e08e40d25acd06b924ee149f9233d141cfdfed8a6fbef\",\"parent\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"created\":\"2016-04-12T10:28:05.669118221Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel \\u0026\\u0026 yum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"parent\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"created\":\"2016-04-12T10:27:20.939503722Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LUA_VERSION=5.2.3\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"parent\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"created\":\"2016-04-12T10:27:20.829190202Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"parent\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"created\":\"2015-12-15T19:54:38.002099648Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"parent\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"created\":\"2015-12-15T19:54:37.490112274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL license=GPLv2\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"parent\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"created\":\"2015-12-15T19:54:37.018195444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL vendor=CentOS\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"parent\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"created\":\"2015-12-15T19:54:36.522488182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-12-15T19:54:33.040113271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0f306a349a3c88d5686633e59384a6454e4058eb12195770971ee1e7c2305920 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "AVZX:L6L3:EHFO:HSAU:KE45:CXZ4:2YSC:7PYL:OEOG:VGFM:XEFE:3MKS",
+                            "kty": "EC",
+                            "x": "uc6AplEtGBTT_ST5fvvU4frqVJWcwUvngJOpvBDy_sc",
+                            "y": "H-duII5qFWifnZP3lEgUl-jii-iFkVT3L7ktjeXbHmg"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "VqqzHgCbFdH6RL5qYhQcUMm_aIX9E9bmQBI-5bWElfZu39kGS1k4PtKVqwWlyloQU4m-mrN0OUCt3JETjBuztQ",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjYzMDcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxNjozOToxN1oifQ"
+                }
+            ]
+        },
+        "5.2.4": {
+            "schemaVersion": 1,
+            "name": "jimho/lua",
+            "tag": "5.2.4",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:e979824e8e8d3856278612a74ad65ec14040fe9f31b637669e8bec9c1f137f65"
+                },
+                {
+                    "blobSum": "sha256:66a20dbb87a6ffcd516de0508ac7a5b8bfebd1815a09f1f68bdcfb19f06625cb"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bc4d85eaf59008877f4fe5cdce3cf59cb7a6d072297c68973c7ec410ff6b98e2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\",\"config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.4\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:fcf6ed334a86c9de292aeef386d9aadc6cb5cc2212c270cf9680a6668d47b812\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"209c5fe68581c67c8003a3967cdfce0a1859ce6fd5fa4279b5ecb85a325bff41\",\"container_config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.2.4\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - \\u0026\\u0026     cd /lua-$LUA_VERSION \\u0026\\u0026     make linux test \\u0026\\u0026     make install \\u0026\\u0026     cd .. \\u0026\\u0026 rm /lua-$LUA_VERSION -rf\"],\"ArgsEscaped\":true,\"Image\":\"sha256:fcf6ed334a86c9de292aeef386d9aadc6cb5cc2212c270cf9680a6668d47b812\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-04-12T10:45:06.400477997Z\",\"docker_version\":\"1.10.2\",\"id\":\"577223fafec24cebbf4eeaf8c418aa9701a27aaae4288fea53bb9af88fea3c79\",\"os\":\"linux\",\"parent\":\"72ab69cacda30e135b30166c2de9f341d36cb7e62688cfc2c2fdcbb9c68a34c2\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"72ab69cacda30e135b30166c2de9f341d36cb7e62688cfc2c2fdcbb9c68a34c2\",\"parent\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"created\":\"2016-04-12T10:44:55.401595363Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel \\u0026\\u0026 yum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"parent\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"created\":\"2016-04-12T10:44:09.597665187Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LUA_VERSION=5.2.4\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"parent\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"created\":\"2016-04-12T10:44:09.484609464Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"parent\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"created\":\"2015-12-15T19:54:38.002099648Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"parent\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"created\":\"2015-12-15T19:54:37.490112274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL license=GPLv2\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"parent\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"created\":\"2015-12-15T19:54:37.018195444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL vendor=CentOS\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"parent\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"created\":\"2015-12-15T19:54:36.522488182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-12-15T19:54:33.040113271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0f306a349a3c88d5686633e59384a6454e4058eb12195770971ee1e7c2305920 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "2CUC:MHS2:B3IL:TZBR:H5J6:U6H2:EKYC:3TGL:QP6K:ZYYD:E4UJ:5I7P",
+                            "kty": "EC",
+                            "x": "y8dYKTMc0HrlsrCcqZRL58AnnOLsaOH0hSyCL6O0Bhk",
+                            "y": "eTPNBm7A3JQNXZgAqpCu3Gjb6stvPoaNBgtI8IqaKeY"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "8hSGlsKIdwGA3XUaA8OzGEbsA_W0fKYqzrznimWR6x44F5Dm2kpmOaVI5Cax0FzSQWxuTNBNRgI4C0iUmL_2Mg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjYzMDcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxNjozOToxN1oifQ"
+                }
+            ]
+        },
+        "5.3": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4001,
+                "digest": "sha256:84ab4f419797d726952bfa2ac9755bf47b440eb9604d323c0100150c107313b4"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69901729,
+                    "digest": "sha256:a2392627bec4b444fc1eeee61f67c569116d85eac8a9ae20600e87d8a2ea9223"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50748487,
+                    "digest": "sha256:f0e761b3d784c424e594adf2c57f0327f8fe1ca30a2a3de3c38ef43d86ea1660"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 340664,
+                    "digest": "sha256:ab27b0bc7603fceeeb3c484ff35b3152b6133c6a8d9a0232374e662ba926ebed"
+                }
+            ]
+        },
+        "5.3.0": {
+            "schemaVersion": 1,
+            "name": "jimho/lua",
+            "tag": "5.3.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:e8846d5b3ed4a8a003bf380731623ec6b5c26a532b73dd492356e84e33034f17"
+                },
+                {
+                    "blobSum": "sha256:6e62eefe822f920f2494c439b0152b6562d4f37b135e389069e1c288e581cff6"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bc4d85eaf59008877f4fe5cdce3cf59cb7a6d072297c68973c7ec410ff6b98e2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\",\"config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.3.0\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:dcc975e07b2db44ecedf16bcc5a6cf31f16fb0a49362a050d1f7c01e5a13c952\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"83e7290d95d2bc2caf0989d2be07fe4b7f8f423c671fe735314168a5979cba10\",\"container_config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.3.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - \\u0026\\u0026     cd /lua-$LUA_VERSION \\u0026\\u0026     make linux test \\u0026\\u0026     make install \\u0026\\u0026     cd .. \\u0026\\u0026 rm /lua-$LUA_VERSION -rf\"],\"ArgsEscaped\":true,\"Image\":\"sha256:dcc975e07b2db44ecedf16bcc5a6cf31f16fb0a49362a050d1f7c01e5a13c952\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-04-12T10:40:48.649352408Z\",\"docker_version\":\"1.10.2\",\"id\":\"00d744a8eceed11cee43090d5977a758e25058d96dad05f0a5ba9ce0b9c164ee\",\"os\":\"linux\",\"parent\":\"5641879b2897d5a2074e4606ed5223abb9c8a38289252c2a25c110519db8e001\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5641879b2897d5a2074e4606ed5223abb9c8a38289252c2a25c110519db8e001\",\"parent\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"created\":\"2016-04-12T10:40:36.657770534Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel \\u0026\\u0026 yum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"parent\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"created\":\"2016-04-12T10:39:57.174869934Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LUA_VERSION=5.3.0\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"parent\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"created\":\"2016-04-12T10:39:57.050890729Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"parent\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"created\":\"2015-12-15T19:54:38.002099648Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"parent\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"created\":\"2015-12-15T19:54:37.490112274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL license=GPLv2\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"parent\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"created\":\"2015-12-15T19:54:37.018195444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL vendor=CentOS\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"parent\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"created\":\"2015-12-15T19:54:36.522488182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-12-15T19:54:33.040113271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0f306a349a3c88d5686633e59384a6454e4058eb12195770971ee1e7c2305920 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "BXO2:EJDH:MDZG:QT27:OLF6:R34Z:O2H7:DVXG:EVTH:CIVL:P66E:J6SZ",
+                            "kty": "EC",
+                            "x": "KN9pDW3UedFK1XtX5EfkbMoo3wiWSXgjoDNdoOSe4w4",
+                            "y": "Pwy7I_AmVBsey3gAsmOhgdqmIoCBHnNvVlIBFuWohhk"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "yLoDe2pWH0rKw7kDSreloUZ86Fhutrtfas14YN0ZwOwnuhAS7_bWjhlEI0IcLhV5M-R25lN0dcNAZHe0v16AYw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjYzMDcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxNjozOToyMFoifQ"
+                }
+            ]
+        },
+        "5.3.1": {
+            "schemaVersion": 1,
+            "name": "jimho/lua",
+            "tag": "5.3.1",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:8f4d9ef374ec5b2e5061f83300756ca16d6c7bcbc8fe0eed35899fe7b4e8c903"
+                },
+                {
+                    "blobSum": "sha256:0830ece6f2dbd3d36a011fa72b4ac370bec443b7010895929779d27a8d633aba"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bc4d85eaf59008877f4fe5cdce3cf59cb7a6d072297c68973c7ec410ff6b98e2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\",\"config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.3.1\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:2f1e421cb5604cc2c2189df9bbe791c7d2ea828f358147a1ebf224126e1918e8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"7ca57ba7f878635dbfa04d34e8d2965de106f53aadf3a1411b6e340ea7042a4a\",\"container_config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.3.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - \\u0026\\u0026     cd /lua-$LUA_VERSION \\u0026\\u0026     make linux test \\u0026\\u0026     make install \\u0026\\u0026     cd .. \\u0026\\u0026 rm /lua-$LUA_VERSION -rf\"],\"ArgsEscaped\":true,\"Image\":\"sha256:2f1e421cb5604cc2c2189df9bbe791c7d2ea828f358147a1ebf224126e1918e8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-04-12T10:42:56.292020578Z\",\"docker_version\":\"1.10.2\",\"id\":\"89ecd24a4c5a110a4d99ed643b02c03475d9f09e3976aaa22054ab31cc3c345c\",\"os\":\"linux\",\"parent\":\"b1f297c710208daac2007a901535a5ba8229ac88be4c420162e2c9685c9cf8ff\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b1f297c710208daac2007a901535a5ba8229ac88be4c420162e2c9685c9cf8ff\",\"parent\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"created\":\"2016-04-12T10:42:44.341898548Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel \\u0026\\u0026 yum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"parent\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"created\":\"2016-04-12T10:42:03.896612517Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LUA_VERSION=5.3.1\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"parent\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"created\":\"2016-04-12T10:42:03.780642806Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"parent\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"created\":\"2015-12-15T19:54:38.002099648Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"parent\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"created\":\"2015-12-15T19:54:37.490112274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL license=GPLv2\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"parent\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"created\":\"2015-12-15T19:54:37.018195444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL vendor=CentOS\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"parent\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"created\":\"2015-12-15T19:54:36.522488182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-12-15T19:54:33.040113271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0f306a349a3c88d5686633e59384a6454e4058eb12195770971ee1e7c2305920 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "U4OO:TYMZ:AQS5:42RQ:JUH2:DUMG:XPHO:D5ZI:UYDK:HIB3:3NOC:43FH",
+                            "kty": "EC",
+                            "x": "nXWe17H5Jif4vYCKAvyGcET6PDx5J19QHtLxLdyD-yQ",
+                            "y": "vfziTpPMq45JrD3VS7eGbIpTRdxNq1xWS0u4r1dLMY4"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "b5wQXb9f-wUfYKl6bXxBTwpD5YLn88I20nJZ_DADOEqLSLh340BZqpAWiQwLi-nkQ2-MoR_vpCW17djsMRPZ9Q",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjYzMDcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxNjozOToyMFoifQ"
+                }
+            ]
+        },
+        "5.3.2": {
+            "schemaVersion": 1,
+            "name": "jimho/lua",
+            "tag": "5.3.2",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:309ab57acc0139887befdad9e6b9702de871919f417a19588aa54f3c359fae7f"
+                },
+                {
+                    "blobSum": "sha256:e1916cd26c9818d5b1674276d54cf6e622532b49ea88316350b2c1c9a5f316ab"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bc4d85eaf59008877f4fe5cdce3cf59cb7a6d072297c68973c7ec410ff6b98e2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\",\"config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.3.2\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:973fab518cbfd67bfd40e5cc6e5c7eb957b986fd812b12e9b82589b98d02c806\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"9db699e4a687bb172d92b833e8e4806b6c64a676e717ea1f21ac1b972bb6ca16\",\"container_config\":{\"Hostname\":\"e386f1033735\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LUA_VERSION=5.3.2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - \\u0026\\u0026     cd /lua-$LUA_VERSION \\u0026\\u0026     make linux test \\u0026\\u0026     make install \\u0026\\u0026     cd .. \\u0026\\u0026 rm /lua-$LUA_VERSION -rf\"],\"ArgsEscaped\":true,\"Image\":\"sha256:973fab518cbfd67bfd40e5cc6e5c7eb957b986fd812b12e9b82589b98d02c806\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-04-12T10:30:27.053247851Z\",\"docker_version\":\"1.10.2\",\"id\":\"532c37978bb44147b872ce73c165311e402303d9014d7ce2b751b5dc889cb8c9\",\"os\":\"linux\",\"parent\":\"3e0b1a88a0705dce8d07d17f9a9f020ba7e4732046d171c183cdd8efcd0f9da7\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3e0b1a88a0705dce8d07d17f9a9f020ba7e4732046d171c183cdd8efcd0f9da7\",\"parent\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"created\":\"2016-04-12T10:30:14.953282705Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel \\u0026\\u0026 yum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"63869c2705c5df7bdf9164f65f85f0a5cb18f9a230d6f5b2385c61081faf59f3\",\"parent\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"created\":\"2016-04-12T10:29:27.700695057Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LUA_VERSION=5.3.2\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69e0252db04724c7a3f63cf927fc0491f8b916a032be06578454bce76657a821\",\"parent\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"created\":\"2016-04-12T10:29:27.592065224Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jim Holmstrom \\u003cjim.holmstroem@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3d2092e7ef02e3815f3142d42fb78cc8162884ac820cd20bb6d680454f46f9ff\",\"parent\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"created\":\"2015-12-15T19:54:38.002099648Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c9ed9abdf2763fda8004db456cf2814a4427f1874f32c8ff7df8745a3d021358\",\"parent\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"created\":\"2015-12-15T19:54:37.490112274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL license=GPLv2\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7215f41f7a75740e400c2a461c4499baf9d59f115d6f901f470acfae83999130\",\"parent\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"created\":\"2015-12-15T19:54:37.018195444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL vendor=CentOS\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cae9cb186ccd1dcb5ea8a831594dc04930b71bdf6b25dc04f1aaa343674fb66f\",\"parent\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"created\":\"2015-12-15T19:54:36.522488182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c71e50f0243ffcd5809e795a514b02330356a99e8bd5419a2e347e4c07974511\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-12-15T19:54:33.040113271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0f306a349a3c88d5686633e59384a6454e4058eb12195770971ee1e7c2305920 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "SU3R:OYCM:6LUR:QWBZ:DS3E:MVZE:G2Z6:3QQZ:B4QU:3V3P:UB7T:OGJC",
+                            "kty": "EC",
+                            "x": "C8OzkOwgmMlfqmZzoF736q-VIr4-JgE6sQpjpSjcM6s",
+                            "y": "rwL1d-E6XL_432WHmKFKJ3F8yU333nEb1GuyfeZzs_w"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "RSpPfBfwggMwKD0Q6FOTqJEdFO2iGqd5qZrpVMIAVzIOt0BdhjTLi-tSDQm1R_jHtZa0kNUq2uPKqBxLIRaeBg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjYzMDcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxNjozOToyMVoifQ"
+                }
+            ]
+        },
+        "5.3.3": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3989,
+                "digest": "sha256:8e6fdaa63e32383ac37d513a8e69e152b978e661cb266d6df6d039f1afd05b1d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69901359,
+                    "digest": "sha256:f19ed9d73b3ef2c54aef640d150f40de66926016b485da5d086f9666679ce5a0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 62524938,
+                    "digest": "sha256:a0ff10d22800429fcf4a75a60b1bff9d1c3487cf8fdb74cc6fed32dfbe23163b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 339318,
+                    "digest": "sha256:b7e9e11833e311558d1b875e5dc3e6da1bede176903b0f5569ad77aedb786597"
+                }
+            ]
+        },
+        "5.3.4": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4001,
+                "digest": "sha256:785a3800c44ea44494a97c219dccab00a65e1c82c834687ac349c99260609b2c"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69901729,
+                    "digest": "sha256:a2392627bec4b444fc1eeee61f67c569116d85eac8a9ae20600e87d8a2ea9223"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50748619,
+                    "digest": "sha256:76f6672c4ec49d82921a6356c940b8432add3e1a2570492a8f2ae872da9f62e3"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 340659,
+                    "digest": "sha256:5f037c3e3d861a52d8b5265ce7611eba5a5341249ca24b87640b4c672a4a4991"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4001,
+                "digest": "sha256:3eea68b194e6f3e911d66b07343f6f20caca892eab1d28dd2659d56e8c333e42"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 69901729,
+                    "digest": "sha256:a2392627bec4b444fc1eeee61f67c569116d85eac8a9ae20600e87d8a2ea9223"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50748511,
+                    "digest": "sha256:1b719665f80a50cff5d3e373e74c15a49432b387401808c77d5ebef5fc369d0c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 340638,
+                    "digest": "sha256:3eff165866e3fa379369c4dd6db727c63109ed440b1c26555466c10f9b29e76e"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "5",
+        "5.2",
+        "5.2.0",
+        "5.2.1",
+        "5.2.2",
+        "5.2.3",
+        "5.2.4",
+        "5.3",
+        "5.3.0",
+        "5.3.1",
+        "5.3.2",
+        "5.3.3",
+        "5.3.4",
+        "latest"
+    ],
+    "configs": {
+        "5": {
+            "architecture": "amd64",
+            "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+            "config": {
+                "Hostname": "9e26a4e75726",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.4"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:c37b684a0c4e089b2e17652b5007e65b686f022f78b840a894a9977f4144b2c0",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "e82fc5633275dc4820fe1ea8a53cc01bbf4404f6fb4aa63be574a9dd1fc09045",
+            "container_config": {
+                "Hostname": "9e26a4e75726",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.4"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:c37b684a0c4e089b2e17652b5007e65b686f022f78b840a894a9977f4144b2c0",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2017-02-06T11:09:47.963368095Z",
+            "docker_version": "1.12.6-cs6",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:16.841905967Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:48.809139063Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3bdbca0669a03490ea9267688e14695348d73f92df88a90f8c1845cb1ce7db8 in / "
+                },
+                {
+                    "created": "2016-08-30T18:19:52.088613245Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:52.865942546Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL vendor=CentOS",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:53.67794232Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL license=GPLv2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:54.461941177Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:08:47.785514387Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:08:49.407098784Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LUA_VERSION=5.3.4",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:09:34.451240655Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel && yum clean all"
+                },
+                {
+                    "created": "2017-02-06T11:09:47.963368095Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c411e76031a46fb5cf1651ce87b9efea48d151705808582ab32b208b885cb800",
+                    "sha256:ab3fff050cc7ce47671bf3ebfaa4affda232d148911870ea89a250c59e4428f8",
+                    "sha256:d56682b4d76ef818843c5f2fadb4392a4629507d1dc7e05cdfc299ee06f5ca3d"
+                ]
+            }
+        },
+        "5.3": {
+            "architecture": "amd64",
+            "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+            "config": {
+                "Hostname": "9e26a4e75726",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.4"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:48b2648863af8c57c869dca0f843461853118048995e8011c58ca3bee57f0203",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "ab9d2ef8317a31115c4c7375c39a4b2611431a2e8392d319f2595ab1fee75c0e",
+            "container_config": {
+                "Hostname": "9e26a4e75726",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.4"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:48b2648863af8c57c869dca0f843461853118048995e8011c58ca3bee57f0203",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2017-02-06T11:05:59.237150491Z",
+            "docker_version": "1.12.6-cs6",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:16.841905967Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:48.809139063Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3bdbca0669a03490ea9267688e14695348d73f92df88a90f8c1845cb1ce7db8 in / "
+                },
+                {
+                    "created": "2016-08-30T18:19:52.088613245Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:52.865942546Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL vendor=CentOS",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:53.67794232Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL license=GPLv2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:54.461941177Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:04:33.224887282Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:04:36.351757389Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LUA_VERSION=5.3.4",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:05:34.729303177Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel && yum clean all"
+                },
+                {
+                    "created": "2017-02-06T11:05:59.237150491Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c411e76031a46fb5cf1651ce87b9efea48d151705808582ab32b208b885cb800",
+                    "sha256:1afe21af927752bb0ce69355a888984178d7016ffe5599361e566eb9ddd79cab",
+                    "sha256:9733b28662b871be942624d4c9439223a95850666c3d8f3d793d5bba9f49ffdd"
+                ]
+            }
+        },
+        "5.3.3": {
+            "architecture": "amd64",
+            "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+            "config": {
+                "Hostname": "27bfed36da44",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.3"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:2d73019abafe196b0c035d634d2a85024126fcedff68cf0106966776ed232199",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "10ef069dfe3fd04bad323656cd7cce3966a6e122d2df4832dd33247c09b71a1a",
+            "container_config": {
+                "Hostname": "27bfed36da44",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.3"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:2d73019abafe196b0c035d634d2a85024126fcedff68cf0106966776ed232199",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2016-09-04T20:16:04.977751478Z",
+            "docker_version": "1.12.0",
+            "history": [
+                {
+                    "created": "2016-07-01T22:34:41.570231502Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-01T22:35:13.811746873Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3bdbca0669a03490ea9267688e14695348d73f92df88a90f8c1845cb1ce7db8 in /"
+                },
+                {
+                    "created": "2016-07-01T22:35:16.977721578Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) LABEL name=CentOS Base Image",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-01T22:35:18.226209981Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) LABEL vendor=CentOS",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-01T22:35:19.48448764Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) LABEL license=GPLv2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-01T22:35:20.7359155Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-04T20:15:03.724730069Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-04T20:15:05.300668115Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LUA_VERSION=5.3.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-04T20:15:50.577755894Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel && yum clean all"
+                },
+                {
+                    "created": "2016-09-04T20:16:04.977751478Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:dc44cf6f74b6770b59e77c1146184b637338afcf8f236ed37d2055cb00dbdbcc",
+                    "sha256:b981c987fd5ce81a998caa506c53b3266806ffe82829cbb2e67cfd8d31b24368",
+                    "sha256:0f4e3a2e19ec2bc9b8449267046403854a3755624d75114cd8662af66f927438"
+                ]
+            }
+        },
+        "5.3.4": {
+            "architecture": "amd64",
+            "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+            "config": {
+                "Hostname": "9e26a4e75726",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.4"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:114253c7278eae2e2b9cb5989da6e6c609cc9255b0597cacca2e3dc53395cc29",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "3806da076a396b5c766a8eb0feb37f0c382d8a0893f5c57c84c1d0e71207ff1a",
+            "container_config": {
+                "Hostname": "9e26a4e75726",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.4"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:114253c7278eae2e2b9cb5989da6e6c609cc9255b0597cacca2e3dc53395cc29",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2017-02-06T11:01:39.585945886Z",
+            "docker_version": "1.12.6-cs6",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:16.841905967Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:48.809139063Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3bdbca0669a03490ea9267688e14695348d73f92df88a90f8c1845cb1ce7db8 in / "
+                },
+                {
+                    "created": "2016-08-30T18:19:52.088613245Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:52.865942546Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL vendor=CentOS",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:53.67794232Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL license=GPLv2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:54.461941177Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:00:03.028132417Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:00:05.194175834Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LUA_VERSION=5.3.4",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:01:16.579784352Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel && yum clean all"
+                },
+                {
+                    "created": "2017-02-06T11:01:39.585945886Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c411e76031a46fb5cf1651ce87b9efea48d151705808582ab32b208b885cb800",
+                    "sha256:f89a089b882242c92c0ca39c4191cf9dff43a558bb63f930743b76bdbd16b54f",
+                    "sha256:512fd196414bc2f7b9b58dc4636fb808c66a31a6f0f5377c26500eb10ef6d6b5"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+            "config": {
+                "Hostname": "9e26a4e75726",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.4"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:7890f8271abdd7faebfa467d66d6e5dcf01eefe329fd7b971c61e7e34bbef4b1",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "47fceec78286080f362e2158851bde76e0e73a36fa9899304ca18bcff3c1cc17",
+            "container_config": {
+                "Hostname": "9e26a4e75726",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_VERSION=5.3.4"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:7890f8271abdd7faebfa467d66d6e5dcf01eefe329fd7b971c61e7e34bbef4b1",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2017-02-06T11:12:13.103687655Z",
+            "docker_version": "1.12.6-cs6",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:16.841905967Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:48.809139063Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3bdbca0669a03490ea9267688e14695348d73f92df88a90f8c1845cb1ce7db8 in / "
+                },
+                {
+                    "created": "2016-08-30T18:19:52.088613245Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:52.865942546Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL vendor=CentOS",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:53.67794232Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL license=GPLv2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:19:54.461941177Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:11:16.162644919Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:11:17.746940211Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LUA_VERSION=5.3.4",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-06T11:11:59.641167172Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c yum install -y make tar unzip gcc gcc-devel openssl-devel readline-devel && yum clean all"
+                },
+                {
+                    "created": "2017-02-06T11:12:13.103687655Z",
+                    "author": "Jim Holmstrom <jim.holmstroem@gmail.com>",
+                    "created_by": "/bin/sh -c curl -L http://www.lua.org/ftp/lua-${LUA_VERSION}.tar.gz | tar xzf - &&     cd /lua-$LUA_VERSION &&     make linux test &&     make install &&     cd .. && rm /lua-$LUA_VERSION -rf"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c411e76031a46fb5cf1651ce87b9efea48d151705808582ab32b208b885cb800",
+                    "sha256:1d0ae16c3cc532d054286251ab2c72b7581e25fe24a490254165e63b606c2b5a",
+                    "sha256:a5bf887c94d0216bf16ea61d77c2326586a3f095906794545f8697f04725c08a"
+                ]
+            }
+        }
+    }
+}

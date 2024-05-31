@@ -1,0 +1,470 @@
+{
+    "manifests": {
+        "3.5-alpine": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 10087,
+                "digest": "sha256:197a7a62bf410f820e7a1ca16ba78d9edfa77ca9a593a46e76de06775aaa6fc7"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2313090,
+                    "digest": "sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4123542,
+                    "digest": "sha256:45ba5a231177d6bbcdc5db8edecfaea04ceaa894d24fdcc0d7381a0746c2b201"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 144564,
+                    "digest": "sha256:ba955105a7bf76da53fbab47acfa4524842b3556ee35ee195b6c67e60ae42809"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1300,
+                    "digest": "sha256:c559500e65c0d465778564dd1f822f11bbd1ec292a76d0a8c61133be35aa3897"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 203,
+                    "digest": "sha256:34c266e3b3ef79bbae28dc72dd7e1fb1a3f4e6e3b85d2c5b1c499d6c811e3f2f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 63308949,
+                    "digest": "sha256:78e072ed8a50350751cb923681cfdcfed7a36f3199b5f4215b7f03534282cd6f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 73308327,
+                    "digest": "sha256:963f377398c6d5a432d7267760eec4133e53f6819cda5b6292159fb8498e271a"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 10087,
+                "digest": "sha256:2e78684b2a2d3702aa7e0d6f2733958720ad318843f30c2c1ad9a5ba4d63e3b1"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2313090,
+                    "digest": "sha256:b7f33cc0b48ea4fb2f0745def58c25483a5f6b7aed5b41ce8f1cb6e17f5723cf"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4123542,
+                    "digest": "sha256:45ba5a231177d6bbcdc5db8edecfaea04ceaa894d24fdcc0d7381a0746c2b201"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 144564,
+                    "digest": "sha256:ba955105a7bf76da53fbab47acfa4524842b3556ee35ee195b6c67e60ae42809"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1300,
+                    "digest": "sha256:c559500e65c0d465778564dd1f822f11bbd1ec292a76d0a8c61133be35aa3897"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 203,
+                    "digest": "sha256:34c266e3b3ef79bbae28dc72dd7e1fb1a3f4e6e3b85d2c5b1c499d6c811e3f2f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 63308949,
+                    "digest": "sha256:78e072ed8a50350751cb923681cfdcfed7a36f3199b5f4215b7f03534282cd6f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 73308135,
+                    "digest": "sha256:063d772233f5a849d0c130fb94eda969649745427a8311150763aef77ae9e38d"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "3.5-alpine",
+        "latest"
+    ],
+    "configs": {
+        "3.5-alpine": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "26ba10d264c2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin:/usr/lib/gradle/gradle-3.5/bin",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=121",
+                    "JAVA_VERSION_BUILD=13",
+                    "JAVA_PACKAGE=jdk",
+                    "JAVA_JCE=standard",
+                    "JAVA_HOME=/opt/jdk",
+                    "GLIBC_VERSION=2.23-r3",
+                    "LANG=C.UTF-8",
+                    "GRADLE_LOCATION=/usr/lib/gradle",
+                    "GRADLE_HOME=/usr/lib/gradle/gradle-3.5"
+                ],
+                "Cmd": [
+                    "sh",
+                    "-c",
+                    "exec runsvdir -P /etc/service/"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:8b7dc7812a0557e9ea25339a823792ee377ba8d3426dd32e7ff20e51a035167a",
+                "Volumes": {
+                    "/home/stakater": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "authors": "Hazim <hazim_malik@hotmail.com>"
+                }
+            },
+            "container": "6123ef63318dfc36664eaa4d605c8e69a2e69eb7cb8e563dcdafa1523cd1f314",
+            "container_config": {
+                "Hostname": "26ba10d264c2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin:/usr/lib/gradle/gradle-3.5/bin",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=121",
+                    "JAVA_VERSION_BUILD=13",
+                    "JAVA_PACKAGE=jdk",
+                    "JAVA_JCE=standard",
+                    "JAVA_HOME=/opt/jdk",
+                    "GLIBC_VERSION=2.23-r3",
+                    "LANG=C.UTF-8",
+                    "GRADLE_LOCATION=/usr/lib/gradle",
+                    "GRADLE_HOME=/usr/lib/gradle/gradle-3.5"
+                ],
+                "Cmd": [
+                    "|1",
+                    "GRADLE_VERSION=3.5",
+                    "/bin/sh",
+                    "-c",
+                    "set -x &&     wget \"https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip\" -P ${GRADLE_LOCATION} &&     mkdir -p ${GRADLE_HOME} &&     unzip ${GRADLE_LOCATION}/gradle-${GRADLE_VERSION}-bin.zip -d ${GRADLE_LOCATION} &&     rm ${GRADLE_LOCATION}/gradle-${GRADLE_VERSION}-bin.zip"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:8b7dc7812a0557e9ea25339a823792ee377ba8d3426dd32e7ff20e51a035167a",
+                "Volumes": {
+                    "/home/stakater": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "authors": "Hazim <hazim_malik@hotmail.com>"
+                }
+            },
+            "created": "2017-04-26T08:47:08.201576665Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2016-12-27T18:17:13.762716133Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / "
+                },
+                {
+                    "created": "2017-02-20T13:21:20.563745611Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL authors=Hazim <hazim_malik@hotmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:21:28.21713774Z",
+                    "created_by": "/bin/sh -c apk --no-cache add --update bash sudo nano sudo zip bzip2 fontconfig wget curl"
+                },
+                {
+                    "created": "2017-02-20T13:21:53.484105618Z",
+                    "created_by": "/bin/sh -c buildDeps='tar make gcc musl-dev'         RUNIT_VERSION=\"2.1.2\"         RUNIT_DOWNLOAD_URL=\"http://smarden.org/runit/runit-2.1.2.tar.gz\"         RUNIT_DOWNLOAD_SHA1=\"398f7bf995acd58797c1d4a7bcd75cc1fc83aa66\"         && set -x         && apk add --update $buildDeps         && curl -sSL \"$RUNIT_DOWNLOAD_URL\" -o runit.tar.gz         && echo \"$RUNIT_DOWNLOAD_SHA1 *runit.tar.gz\" | sha1sum -c -         && mkdir -p /usr/src/runit         && tar -xzf runit.tar.gz -C /usr/src/runit --strip-components=2         && rm -f runit.tar.gz         && cd /usr/src/runit/src         && make         && cd ..         && cat package/commands | xargs -I {} mv -f src/{} /sbin/         && cd /         && rm -rf /usr/src/runit         && apk del $buildDeps         && sudo mkdir -p /etc/service"
+                },
+                {
+                    "created": "2017-02-20T13:21:55.246487855Z",
+                    "created_by": "/bin/sh -c addgroup stakater &&         adduser -S -G stakater stakater &&         adduser -S -G stakater sudo"
+                },
+                {
+                    "created": "2017-02-20T13:21:56.48165686Z",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/home/stakater]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:21:58.301472948Z",
+                    "created_by": "/bin/sh -c rm -rf /var/cache/apk/*"
+                },
+                {
+                    "created": "2017-02-20T13:21:59.46738308Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"sh\" \"-c\" \"exec runsvdir -P /etc/service/\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:31:18.07963666Z",
+                    "author": "Rasheed Amir <rasheed@aurorasolutions.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Rasheed Amir <rasheed@aurorasolutions.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:31:19.331153721Z",
+                    "author": "Rasheed Amir <rasheed@aurorasolutions.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_VERSION_MAJOR=8 JAVA_VERSION_MINOR=121 JAVA_VERSION_BUILD=13 JAVA_PACKAGE=jdk JAVA_JCE=standard JAVA_HOME=/opt/jdk PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin GLIBC_VERSION=2.23-r3 LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:32:00.018538654Z",
+                    "author": "Rasheed Amir <rasheed@aurorasolutions.io>",
+                    "created_by": "/bin/sh -c set -ex &&     apk upgrade --update &&     apk add --update libstdc++ curl ca-certificates bash &&     for pkg in glibc-${GLIBC_VERSION} glibc-bin-${GLIBC_VERSION} glibc-i18n-${GLIBC_VERSION}; do curl -sSL https://github.com/andyshinn/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/${pkg}.apk -o /tmp/${pkg}.apk; done &&     apk add --allow-untrusted /tmp/*.apk &&     rm -v /tmp/*.apk &&     ( /usr/glibc-compat/bin/localedef --force --inputfile POSIX --charmap UTF-8 C.UTF-8 || true ) &&     echo \"export LANG=C.UTF-8\" > /etc/profile.d/locale.sh &&     /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib &&     mkdir /opt &&     curl -jksSLH \"Cookie: oraclelicense=accept-securebackup-cookie\" -o /tmp/java.tar.gz       http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/e9e7ea248e2c4826b92b3f075a80e441/${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz &&     gunzip /tmp/java.tar.gz &&     tar -C /opt -xf /tmp/java.tar &&     ln -s /opt/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} /opt/jdk &&     if [ \"${JAVA_JCE}\" == \"unlimited\" ]; then echo \"Installing Unlimited JCE policy\" >&2 &&       curl -jksSLH \"Cookie: oraclelicense=accept-securebackup-cookie\" -o /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip         http://download.oracle.com/otn-pub/java/jce/${JAVA_VERSION_MAJOR}/jce_policy-${JAVA_VERSION_MAJOR}.zip &&       cd /tmp && unzip /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip &&       cp -v /tmp/UnlimitedJCEPolicyJDK8/*.jar /opt/jdk/jre/lib/security;     fi &&     sed -i s/#networkaddress.cache.ttl=-1/networkaddress.cache.ttl=10/ $JAVA_HOME/jre/lib/security/java.security &&     apk del curl glibc-i18n &&     rm -rf /opt/jdk/*src.zip            /opt/jdk/lib/missioncontrol            /opt/jdk/lib/visualvm            /opt/jdk/lib/*javafx*            /opt/jdk/jre/plugin            /opt/jdk/jre/bin/javaws            /opt/jdk/jre/bin/jjs            /opt/jdk/jre/bin/orbd            /opt/jdk/jre/bin/pack200            /opt/jdk/jre/bin/policytool            /opt/jdk/jre/bin/rmid            /opt/jdk/jre/bin/rmiregistry            /opt/jdk/jre/bin/servertool            /opt/jdk/jre/bin/tnameserv            /opt/jdk/jre/bin/unpack200            /opt/jdk/jre/lib/javaws.jar            /opt/jdk/jre/lib/deploy*            /opt/jdk/jre/lib/desktop            /opt/jdk/jre/lib/*javafx*            /opt/jdk/jre/lib/*jfx*            /opt/jdk/jre/lib/amd64/libdecora_sse.so            /opt/jdk/jre/lib/amd64/libprism_*.so            /opt/jdk/jre/lib/amd64/libfxplugins.so            /opt/jdk/jre/lib/amd64/libglass.so            /opt/jdk/jre/lib/amd64/libgstreamer-lite.so            /opt/jdk/jre/lib/amd64/libjavafx*.so            /opt/jdk/jre/lib/amd64/libjfx*.so            /opt/jdk/jre/lib/ext/jfxrt.jar            /opt/jdk/jre/lib/ext/nashorn.jar            /opt/jdk/jre/lib/oblique-fonts            /opt/jdk/jre/lib/plugin.jar            /tmp/* /var/cache/apk/* &&     echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf"
+                },
+                {
+                    "created": "2017-04-26T08:46:52.304228038Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL authors=Hazim <hazim_malik@hotmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:46:53.627225722Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG GRADLE_VERSION=3.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:46:55.052045476Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GRADLE_LOCATION=/usr/lib/gradle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:46:56.986490206Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GRADLE_HOME=/usr/lib/gradle/gradle-3.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:46:58.032461597Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin:/usr/lib/gradle/gradle-3.5/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:47:08.201576665Z",
+                    "created_by": "|1 GRADLE_VERSION=3.5 /bin/sh -c set -x &&     wget \"https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip\" -P ${GRADLE_LOCATION} &&     mkdir -p ${GRADLE_HOME} &&     unzip ${GRADLE_LOCATION}/gradle-${GRADLE_VERSION}-bin.zip -d ${GRADLE_LOCATION} &&     rm ${GRADLE_LOCATION}/gradle-${GRADLE_VERSION}-bin.zip"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b",
+                    "sha256:9f71ca36a69cc983518eeea525c703611a8ae66f8055fb66ac426b17041eafbe",
+                    "sha256:6e0ba7b03a280be39cc470fd49754b6b403aabeaa412525367992fdf216d0964",
+                    "sha256:e3f6477a07cb67b9f66893911ccfd74084c1c528c4731b26aa214ecc9968f507",
+                    "sha256:b2a3273d9b2366b42babe3805620a8040a84ecd80d4f52a639445c9a405fc747",
+                    "sha256:1b4a68ce9b1d97374e77aa9ee8a334233404f3ce72a391c06e003d3cb0344850",
+                    "sha256:35d99091bcf4d2d99d1fc0832ba130ac26b3ab63d9b5e5e7d27c503940d934c2"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "26ba10d264c2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin:/usr/lib/gradle/gradle-3.5/bin",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=121",
+                    "JAVA_VERSION_BUILD=13",
+                    "JAVA_PACKAGE=jdk",
+                    "JAVA_JCE=standard",
+                    "JAVA_HOME=/opt/jdk",
+                    "GLIBC_VERSION=2.23-r3",
+                    "LANG=C.UTF-8",
+                    "GRADLE_LOCATION=/usr/lib/gradle",
+                    "GRADLE_HOME=/usr/lib/gradle/gradle-3.5"
+                ],
+                "Cmd": [
+                    "sh",
+                    "-c",
+                    "exec runsvdir -P /etc/service/"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:fc1106f4f7f15d1d2f5fec9039881d4a5213633cbb3cf306944bb105cf377d64",
+                "Volumes": {
+                    "/home/stakater": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "authors": "Hazim <hazim_malik@hotmail.com>"
+                }
+            },
+            "container": "fb2ce516e58a75445c41985595b2aa5dbeb136a5469e6a07465dc35ce773654c",
+            "container_config": {
+                "Hostname": "26ba10d264c2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin:/usr/lib/gradle/gradle-3.5/bin",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=121",
+                    "JAVA_VERSION_BUILD=13",
+                    "JAVA_PACKAGE=jdk",
+                    "JAVA_JCE=standard",
+                    "JAVA_HOME=/opt/jdk",
+                    "GLIBC_VERSION=2.23-r3",
+                    "LANG=C.UTF-8",
+                    "GRADLE_LOCATION=/usr/lib/gradle",
+                    "GRADLE_HOME=/usr/lib/gradle/gradle-3.5"
+                ],
+                "Cmd": [
+                    "|1",
+                    "GRADLE_VERSION=3.5",
+                    "/bin/sh",
+                    "-c",
+                    "set -x &&     wget \"https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip\" -P ${GRADLE_LOCATION} &&     mkdir -p ${GRADLE_HOME} &&     unzip ${GRADLE_LOCATION}/gradle-${GRADLE_VERSION}-bin.zip -d ${GRADLE_LOCATION} &&     rm ${GRADLE_LOCATION}/gradle-${GRADLE_VERSION}-bin.zip"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:fc1106f4f7f15d1d2f5fec9039881d4a5213633cbb3cf306944bb105cf377d64",
+                "Volumes": {
+                    "/home/stakater": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "authors": "Hazim <hazim_malik@hotmail.com>"
+                }
+            },
+            "created": "2017-04-26T08:44:53.275951529Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2016-12-27T18:17:13.762716133Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:eeed5f514a35d18fcd9cbfe6c40c582211020bffdd53e4799018d33826fe5067 in / "
+                },
+                {
+                    "created": "2017-02-20T13:21:20.563745611Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL authors=Hazim <hazim_malik@hotmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:21:28.21713774Z",
+                    "created_by": "/bin/sh -c apk --no-cache add --update bash sudo nano sudo zip bzip2 fontconfig wget curl"
+                },
+                {
+                    "created": "2017-02-20T13:21:53.484105618Z",
+                    "created_by": "/bin/sh -c buildDeps='tar make gcc musl-dev'         RUNIT_VERSION=\"2.1.2\"         RUNIT_DOWNLOAD_URL=\"http://smarden.org/runit/runit-2.1.2.tar.gz\"         RUNIT_DOWNLOAD_SHA1=\"398f7bf995acd58797c1d4a7bcd75cc1fc83aa66\"         && set -x         && apk add --update $buildDeps         && curl -sSL \"$RUNIT_DOWNLOAD_URL\" -o runit.tar.gz         && echo \"$RUNIT_DOWNLOAD_SHA1 *runit.tar.gz\" | sha1sum -c -         && mkdir -p /usr/src/runit         && tar -xzf runit.tar.gz -C /usr/src/runit --strip-components=2         && rm -f runit.tar.gz         && cd /usr/src/runit/src         && make         && cd ..         && cat package/commands | xargs -I {} mv -f src/{} /sbin/         && cd /         && rm -rf /usr/src/runit         && apk del $buildDeps         && sudo mkdir -p /etc/service"
+                },
+                {
+                    "created": "2017-02-20T13:21:55.246487855Z",
+                    "created_by": "/bin/sh -c addgroup stakater &&         adduser -S -G stakater stakater &&         adduser -S -G stakater sudo"
+                },
+                {
+                    "created": "2017-02-20T13:21:56.48165686Z",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/home/stakater]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:21:58.301472948Z",
+                    "created_by": "/bin/sh -c rm -rf /var/cache/apk/*"
+                },
+                {
+                    "created": "2017-02-20T13:21:59.46738308Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"sh\" \"-c\" \"exec runsvdir -P /etc/service/\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:31:18.07963666Z",
+                    "author": "Rasheed Amir <rasheed@aurorasolutions.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Rasheed Amir <rasheed@aurorasolutions.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:31:19.331153721Z",
+                    "author": "Rasheed Amir <rasheed@aurorasolutions.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_VERSION_MAJOR=8 JAVA_VERSION_MINOR=121 JAVA_VERSION_BUILD=13 JAVA_PACKAGE=jdk JAVA_JCE=standard JAVA_HOME=/opt/jdk PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin GLIBC_VERSION=2.23-r3 LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-20T13:32:00.018538654Z",
+                    "author": "Rasheed Amir <rasheed@aurorasolutions.io>",
+                    "created_by": "/bin/sh -c set -ex &&     apk upgrade --update &&     apk add --update libstdc++ curl ca-certificates bash &&     for pkg in glibc-${GLIBC_VERSION} glibc-bin-${GLIBC_VERSION} glibc-i18n-${GLIBC_VERSION}; do curl -sSL https://github.com/andyshinn/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/${pkg}.apk -o /tmp/${pkg}.apk; done &&     apk add --allow-untrusted /tmp/*.apk &&     rm -v /tmp/*.apk &&     ( /usr/glibc-compat/bin/localedef --force --inputfile POSIX --charmap UTF-8 C.UTF-8 || true ) &&     echo \"export LANG=C.UTF-8\" > /etc/profile.d/locale.sh &&     /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib &&     mkdir /opt &&     curl -jksSLH \"Cookie: oraclelicense=accept-securebackup-cookie\" -o /tmp/java.tar.gz       http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/e9e7ea248e2c4826b92b3f075a80e441/${JAVA_PACKAGE}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz &&     gunzip /tmp/java.tar.gz &&     tar -C /opt -xf /tmp/java.tar &&     ln -s /opt/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} /opt/jdk &&     if [ \"${JAVA_JCE}\" == \"unlimited\" ]; then echo \"Installing Unlimited JCE policy\" >&2 &&       curl -jksSLH \"Cookie: oraclelicense=accept-securebackup-cookie\" -o /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip         http://download.oracle.com/otn-pub/java/jce/${JAVA_VERSION_MAJOR}/jce_policy-${JAVA_VERSION_MAJOR}.zip &&       cd /tmp && unzip /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip &&       cp -v /tmp/UnlimitedJCEPolicyJDK8/*.jar /opt/jdk/jre/lib/security;     fi &&     sed -i s/#networkaddress.cache.ttl=-1/networkaddress.cache.ttl=10/ $JAVA_HOME/jre/lib/security/java.security &&     apk del curl glibc-i18n &&     rm -rf /opt/jdk/*src.zip            /opt/jdk/lib/missioncontrol            /opt/jdk/lib/visualvm            /opt/jdk/lib/*javafx*            /opt/jdk/jre/plugin            /opt/jdk/jre/bin/javaws            /opt/jdk/jre/bin/jjs            /opt/jdk/jre/bin/orbd            /opt/jdk/jre/bin/pack200            /opt/jdk/jre/bin/policytool            /opt/jdk/jre/bin/rmid            /opt/jdk/jre/bin/rmiregistry            /opt/jdk/jre/bin/servertool            /opt/jdk/jre/bin/tnameserv            /opt/jdk/jre/bin/unpack200            /opt/jdk/jre/lib/javaws.jar            /opt/jdk/jre/lib/deploy*            /opt/jdk/jre/lib/desktop            /opt/jdk/jre/lib/*javafx*            /opt/jdk/jre/lib/*jfx*            /opt/jdk/jre/lib/amd64/libdecora_sse.so            /opt/jdk/jre/lib/amd64/libprism_*.so            /opt/jdk/jre/lib/amd64/libfxplugins.so            /opt/jdk/jre/lib/amd64/libglass.so            /opt/jdk/jre/lib/amd64/libgstreamer-lite.so            /opt/jdk/jre/lib/amd64/libjavafx*.so            /opt/jdk/jre/lib/amd64/libjfx*.so            /opt/jdk/jre/lib/ext/jfxrt.jar            /opt/jdk/jre/lib/ext/nashorn.jar            /opt/jdk/jre/lib/oblique-fonts            /opt/jdk/jre/lib/plugin.jar            /tmp/* /var/cache/apk/* &&     echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf"
+                },
+                {
+                    "created": "2017-04-26T08:44:34.254536033Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL authors=Hazim <hazim_malik@hotmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:44:35.961792009Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG GRADLE_VERSION=3.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:44:37.261717688Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GRADLE_LOCATION=/usr/lib/gradle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:44:38.837869868Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GRADLE_HOME=/usr/lib/gradle/gradle-3.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:44:40.394075996Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/jdk/bin:/usr/lib/gradle/gradle-3.5/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-04-26T08:44:53.275951529Z",
+                    "created_by": "|1 GRADLE_VERSION=3.5 /bin/sh -c set -x &&     wget \"https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip\" -P ${GRADLE_LOCATION} &&     mkdir -p ${GRADLE_HOME} &&     unzip ${GRADLE_LOCATION}/gradle-${GRADLE_VERSION}-bin.zip -d ${GRADLE_LOCATION} &&     rm ${GRADLE_LOCATION}/gradle-${GRADLE_VERSION}-bin.zip"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:7cbcbac42c44c6c38559e5df3a494f44987333c8023a40fec48df2fce1fc146b",
+                    "sha256:9f71ca36a69cc983518eeea525c703611a8ae66f8055fb66ac426b17041eafbe",
+                    "sha256:6e0ba7b03a280be39cc470fd49754b6b403aabeaa412525367992fdf216d0964",
+                    "sha256:e3f6477a07cb67b9f66893911ccfd74084c1c528c4731b26aa214ecc9968f507",
+                    "sha256:b2a3273d9b2366b42babe3805620a8040a84ecd80d4f52a639445c9a405fc747",
+                    "sha256:1b4a68ce9b1d97374e77aa9ee8a334233404f3ce72a391c06e003d3cb0344850",
+                    "sha256:0b4c9dc84bf2ebc2f2d255aec3c3d374a5852d14b821ebf871be6b35015fa5db"
+                ]
+            }
+        }
+    }
+}

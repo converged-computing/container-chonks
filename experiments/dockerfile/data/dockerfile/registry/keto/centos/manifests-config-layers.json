@@ -1,0 +1,150 @@
+{
+    "manifests": {
+        "7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1661,
+                "digest": "sha256:2672c8b024f137d6c6cfab778f226029f8f6d84621d524e903aa4e8484035f80"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1661,
+                "digest": "sha256:2672c8b024f137d6c6cfab778f226029f8f6d84621d524e903aa4e8484035f80"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 76097157,
+                    "digest": "sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "7",
+        "latest"
+    ],
+    "configs": {
+        "7": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "maintainer": "Mikael Keto",
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                },
+                "OnBuild": null
+            },
+            "created": "2020-11-14T00:20:04.644613188Z",
+            "history": [
+                {
+                    "created": "2020-11-14T00:20:04.1030585Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2020-11-14T00:20:04.452344367Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-14T00:20:04.644613188Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-14T00:20:04.644613188Z",
+                    "created_by": "LABEL maintainer=Mikael Keto",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "maintainer": "Mikael Keto",
+                    "org.label-schema.build-date": "20201113",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-11-13 00:00:00+00:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                },
+                "OnBuild": null
+            },
+            "created": "2020-11-14T00:20:04.644613188Z",
+            "history": [
+                {
+                    "created": "2020-11-14T00:20:04.1030585Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b3ebbe8bd304723d43b7b44a6d990cd657b63d93d6a2a9293983a30bfc1dfa53 in / "
+                },
+                {
+                    "created": "2020-11-14T00:20:04.452344367Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20201113 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-11-13 00:00:00+00:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-14T00:20:04.644613188Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-14T00:20:04.644613188Z",
+                    "created_by": "LABEL maintainer=Mikael Keto",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:174f5685490326fc0a1c0f5570b8663732189b327007e47ff13d2ca59673db02"
+                ]
+            }
+        }
+    }
+}

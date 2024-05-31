@@ -1,0 +1,581 @@
+{
+    "manifests": {
+        "1.1.0": {
+            "schemaVersion": 1,
+            "name": "zopanix/casperjs",
+            "tag": "1.1.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:7039f087d2664d9629f009602a57ffe9fb0436cbf3a49b82310adaa72c1e9037"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:df63cf32edf9af2f2626d11118eddc99b8252e4b203bfc683771e79d6290ff64"
+                },
+                {
+                    "blobSum": "sha256:823fed7793df17b2b77141afdc714cf7afd61f789b2bfd77b8d6d2e788e62ef1"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:51900bc9e720db035e12f6c425dd9c06928a9d1eb565c86572b3aab93d24cfca"
+                },
+                {
+                    "blobSum": "sha256:f8419ea7c1b5d667cf26c2c5ec0bfb3502872e5afc6aa85caf2b8c7650bdc8d9"
+                },
+                {
+                    "blobSum": "sha256:3eed5ff20a90a40b0cb7909e79128740f1320d29bec2ae9e025a1d375555db15"
+                },
+                {
+                    "blobSum": "sha256:6c953ac5d795ea26fd59dc5bdf4d335625c69f8bcfbdd8307d6009c2e61779c9"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"zopanix \\u003czopanix@gmail.com\\u003e\",\"config\":{\"Hostname\":\"fff5562e8198\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CASPERJS_VERSION=1.1.0\"],\"Cmd\":null,\"ArgsEscaped\":true,\"Image\":\"sha256:881ab18390f16850453d077e711490844ca07ff0694f441c0e10fa1f0032d825\",\"Volumes\":{\"/data\":{}},\"WorkingDir\":\"/data\",\"Entrypoint\":[\"casperjs\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"1da93ff892a4b9615469d0b5dafefd750790dc54c6cc0f0eee8b868b35b2d965\",\"container_config\":{\"Hostname\":\"fff5562e8198\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CASPERJS_VERSION=1.1.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) WORKDIR /data\"],\"ArgsEscaped\":true,\"Image\":\"sha256:881ab18390f16850453d077e711490844ca07ff0694f441c0e10fa1f0032d825\",\"Volumes\":{\"/data\":{}},\"WorkingDir\":\"/data\",\"Entrypoint\":[\"casperjs\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-05-29T16:48:51.610586177Z\",\"docker_version\":\"1.11.1\",\"id\":\"30031fec50909e136633ce21894a00290c1374c45e4f7485ffd8f7cabc7fb6c2\",\"os\":\"linux\",\"parent\":\"0d85c85d5e45dd9b6f27bf908ee47d0e7c299ed9d8c6701594c84eecf76ed5a5\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0d85c85d5e45dd9b6f27bf908ee47d0e7c299ed9d8c6701594c84eecf76ed5a5\",\"parent\":\"7860f2097a5a70e90da52fdd700d3de3bb92628fd7f5bc6eac388f1ea3f6d8a0\",\"created\":\"2016-05-29T16:48:48.620678718Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/data]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7860f2097a5a70e90da52fdd700d3de3bb92628fd7f5bc6eac388f1ea3f6d8a0\",\"parent\":\"fcb13bde3c5db17ac7bd314e5faffb64e71ff97580e2d394d32fba1061f0a72a\",\"created\":\"2016-05-29T16:48:45.636073164Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"casperjs\\\"]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"fcb13bde3c5db17ac7bd314e5faffb64e71ff97580e2d394d32fba1061f0a72a\",\"parent\":\"796832e68676ccb01aa49565b3da2601e29c91c2e5aa11149fb859907ba69d17\",\"created\":\"2016-05-29T16:48:42.885123396Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /resources/build \\u0026\\u0026 rm -rf resources\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"796832e68676ccb01aa49565b3da2601e29c91c2e5aa11149fb859907ba69d17\",\"parent\":\"00e54bece6dcff9aa73309f0f3250f0cd9eb749db1fedb078c9d3b96109f18ae\",\"created\":\"2016-05-29T16:47:00.598716276Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:7f76712a9a873aec12261c4c7f1288887c17c79ecf11e40efbbb1c765d41c961 in /resources\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"00e54bece6dcff9aa73309f0f3250f0cd9eb749db1fedb078c9d3b96109f18ae\",\"parent\":\"c3ab7f80605a590ff275cd74f7358a60c5c6957cdd5f71af5d0e41ae8140dd93\",\"created\":\"2016-05-29T16:46:58.446101738Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CASPERJS_VERSION=1.1.0\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c3ab7f80605a590ff275cd74f7358a60c5c6957cdd5f71af5d0e41ae8140dd93\",\"parent\":\"702a6095c3cba22dd4279c3ab134acd248011ff6604e20807a12ed0cbe1e2e8b\",\"created\":\"2016-05-29T16:46:56.370564056Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER zopanix \\u003czopanix@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"702a6095c3cba22dd4279c3ab134acd248011ff6604e20807a12ed0cbe1e2e8b\",\"parent\":\"3436fb2d153cec3ec1981b7f49bc69d88705b5864e95fdf17a13b316347da00b\",\"created\":\"2016-05-27T14:13:04.103044105Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3436fb2d153cec3ec1981b7f49bc69d88705b5864e95fdf17a13b316347da00b\",\"parent\":\"2aaf3127c72c32cb81fe7085062eb83dc3727edd9d6fd2e02e5d47aba89b4cd8\",\"created\":\"2016-05-27T14:13:03.365180939Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"2aaf3127c72c32cb81fe7085062eb83dc3727edd9d6fd2e02e5d47aba89b4cd8\",\"parent\":\"460a0b713cac353ba041c303e786d6a068f515e5362f14efcf211cc7c243556f\",\"created\":\"2016-05-27T14:13:01.465351773Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"460a0b713cac353ba041c303e786d6a068f515e5362f14efcf211cc7c243556f\",\"parent\":\"39cdc7007d14204df14774895ef95342980fca2774808ebec5dfb6efa08c0e66\",\"created\":\"2016-05-27T14:12:59.725216339Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"39cdc7007d14204df14774895ef95342980fca2774808ebec5dfb6efa08c0e66\",\"created\":\"2016-05-27T14:12:54.717569308Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:aca501360d0937bc49db603ee7e5b4f28865957690eb86cef8d769fdcec5c027 in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "ZEWG:S62G:6BCQ:WXSQ:MP7X:W3L3:CK3I:YB6V:AM2H:UPYO:4GMC:EZ22",
+                            "kty": "EC",
+                            "x": "DxRDInEAe2-PbGahf4_iiO0JbPipFyZikpNt_MDrpT8",
+                            "y": "N16Xmlr7teZh0vhGHs4UdxNYOocQsHioYIZi5XgrACk"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "LRchFk-xc-HcWjNvW2nN080zscBqJJ4UVBPLeVT2T-TcQfx9vA8F0rL9TtVQlc2MWE_G1PRaL-WGbFj9Qbch-Q",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjgxNzUsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxMzowMTo0NVoifQ"
+                }
+            ]
+        },
+        "1.1.1": {
+            "schemaVersion": 1,
+            "name": "zopanix/casperjs",
+            "tag": "1.1.1",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:e4a0b638a249464e2340a2a1086286afac06ad4fc5c75b58f10d406417bdece9"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:736517cfb7895506a05adaa9fe008201e80c6b1a43e5861ba1d9925db22e970a"
+                },
+                {
+                    "blobSum": "sha256:ac1605d2c98ca3e80c2411252afad467a15ed58a024e565d926a397280d05238"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:51900bc9e720db035e12f6c425dd9c06928a9d1eb565c86572b3aab93d24cfca"
+                },
+                {
+                    "blobSum": "sha256:f8419ea7c1b5d667cf26c2c5ec0bfb3502872e5afc6aa85caf2b8c7650bdc8d9"
+                },
+                {
+                    "blobSum": "sha256:3eed5ff20a90a40b0cb7909e79128740f1320d29bec2ae9e025a1d375555db15"
+                },
+                {
+                    "blobSum": "sha256:6c953ac5d795ea26fd59dc5bdf4d335625c69f8bcfbdd8307d6009c2e61779c9"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"zopanix \\u003czopanix@gmail.com\\u003e\",\"config\":{\"Hostname\":\"fff5562e8198\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CASPERJS_VERSION=1.1.1\"],\"Cmd\":null,\"ArgsEscaped\":true,\"Image\":\"sha256:4c75468101fc6ddd21cba4e6f0474ae0e97a44f58aa2c0abfe16f051108394d8\",\"Volumes\":{\"/data\":{}},\"WorkingDir\":\"/data\",\"Entrypoint\":[\"casperjs\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"a38c6ec63be092537472ca8447066e65c9cfe68996136877a5ed9e254d35c50c\",\"container_config\":{\"Hostname\":\"fff5562e8198\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CASPERJS_VERSION=1.1.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) WORKDIR /data\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4c75468101fc6ddd21cba4e6f0474ae0e97a44f58aa2c0abfe16f051108394d8\",\"Volumes\":{\"/data\":{}},\"WorkingDir\":\"/data\",\"Entrypoint\":[\"casperjs\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-05-29T16:45:51.133987117Z\",\"docker_version\":\"1.11.1\",\"id\":\"43b2ff7f69f812d99461a0750a6115266ec9c276c2e31bdcd27ac02ebe9abe78\",\"os\":\"linux\",\"parent\":\"90a35e6bb7e3f853a951d62d14e0ce1cc5a0f165ee1fafa0f9c834e002e03908\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"90a35e6bb7e3f853a951d62d14e0ce1cc5a0f165ee1fafa0f9c834e002e03908\",\"parent\":\"9c7b1ffc6f62b45c0d7bc5bd4e81aa80a62a55da2280460e18bb7187d152acbe\",\"created\":\"2016-05-29T16:45:48.191482697Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/data]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9c7b1ffc6f62b45c0d7bc5bd4e81aa80a62a55da2280460e18bb7187d152acbe\",\"parent\":\"3f0b2dc7185ecb3176c36eb19be71831365011de399bf8aa7c5bbcf7368b92f8\",\"created\":\"2016-05-29T16:45:45.21534881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"casperjs\\\"]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3f0b2dc7185ecb3176c36eb19be71831365011de399bf8aa7c5bbcf7368b92f8\",\"parent\":\"84c118b8304cd501624b02392844fb11b2287a20cef14c8a574f3da847c0893b\",\"created\":\"2016-05-29T16:45:42.452752681Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /resources/build \\u0026\\u0026 rm -rf resources\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"84c118b8304cd501624b02392844fb11b2287a20cef14c8a574f3da847c0893b\",\"parent\":\"00e54bece6dcff9aa73309f0f3250f0cd9eb749db1fedb078c9d3b96109f18ae\",\"created\":\"2016-05-29T16:43:57.723480903Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:7f76712a9a873aec12261c4c7f1288887c17c79ecf11e40efbbb1c765d41c961 in /resources\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"00e54bece6dcff9aa73309f0f3250f0cd9eb749db1fedb078c9d3b96109f18ae\",\"parent\":\"c3ab7f80605a590ff275cd74f7358a60c5c6957cdd5f71af5d0e41ae8140dd93\",\"created\":\"2016-05-29T16:43:55.645714611Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CASPERJS_VERSION=1.1.1\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c3ab7f80605a590ff275cd74f7358a60c5c6957cdd5f71af5d0e41ae8140dd93\",\"parent\":\"702a6095c3cba22dd4279c3ab134acd248011ff6604e20807a12ed0cbe1e2e8b\",\"created\":\"2016-05-29T16:43:53.598000781Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER zopanix \\u003czopanix@gmail.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"702a6095c3cba22dd4279c3ab134acd248011ff6604e20807a12ed0cbe1e2e8b\",\"parent\":\"3436fb2d153cec3ec1981b7f49bc69d88705b5864e95fdf17a13b316347da00b\",\"created\":\"2016-05-27T14:13:04.103044105Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3436fb2d153cec3ec1981b7f49bc69d88705b5864e95fdf17a13b316347da00b\",\"parent\":\"2aaf3127c72c32cb81fe7085062eb83dc3727edd9d6fd2e02e5d47aba89b4cd8\",\"created\":\"2016-05-27T14:13:03.365180939Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"2aaf3127c72c32cb81fe7085062eb83dc3727edd9d6fd2e02e5d47aba89b4cd8\",\"parent\":\"460a0b713cac353ba041c303e786d6a068f515e5362f14efcf211cc7c243556f\",\"created\":\"2016-05-27T14:13:01.465351773Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"460a0b713cac353ba041c303e786d6a068f515e5362f14efcf211cc7c243556f\",\"parent\":\"39cdc7007d14204df14774895ef95342980fca2774808ebec5dfb6efa08c0e66\",\"created\":\"2016-05-27T14:12:59.725216339Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"39cdc7007d14204df14774895ef95342980fca2774808ebec5dfb6efa08c0e66\",\"created\":\"2016-05-27T14:12:54.717569308Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:aca501360d0937bc49db603ee7e5b4f28865957690eb86cef8d769fdcec5c027 in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "3IUB:NUVC:UHER:X2TR:L5QT:CMNS:VIW5:GDMG:KCDF:BUBV:2HYE:DU5M",
+                            "kty": "EC",
+                            "x": "OUs-Jia-WyStgDXvL0M5yZ3zAlfC8Hh9rueTyCXSRYI",
+                            "y": "fNY2zR-tMBwip-X0GTBKMYNO-pf449Wo-3QLFvXyJyg"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "4fxmXL8SUyHpBwqhT0mbs-iA7sS_PuIBHGwj-2cy8eo-mfbgQP-aBdvIEziWFEKi2pSKyIewDDVbetX5gOZv3A",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjgxNzQsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxMzowMTo0NVoifQ"
+                }
+            ]
+        },
+        "1.1.3": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4968,
+                "digest": "sha256:529068b95130333d1187ed8b9f92106f35fa57a3bce45d15634e9a5687e2074b"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 65699069,
+                    "digest": "sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 71563,
+                    "digest": "sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 365,
+                    "digest": "sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 680,
+                    "digest": "sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 449,
+                    "digest": "sha256:676ff2c1ee47769ad6cb6e5634502b6fa0dd34e797774b0766176062967748fe"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 78608459,
+                    "digest": "sha256:98378a798c38499f2f5376ea71d5edcab653dc8788d94637c9b668fa53daccd1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 92,
+                    "digest": "sha256:58e2d7348740a988284bd1585e943080894045ecbe1bae3537213f25aac7493c"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4968,
+                "digest": "sha256:20b5f1d0ac8bc2b751f7aea143bcc3a07cf0cf9d30aa45f53da0d57f13e61583"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 65699069,
+                    "digest": "sha256:96c6a1f3c3b0183063a9dad891fe6d8ec466c2fdf9571a0c19b3319ea8a58871"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 71563,
+                    "digest": "sha256:ed40d4bcb31369df1a018c64e560e94dfd106d0b2851db25f921d3708d64fac5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 365,
+                    "digest": "sha256:b171f9dbc13b68a99386e4d54e28e26144688973ad7bbdd9ec1f822dc8b0ac0a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 680,
+                    "digest": "sha256:ccfc4df4fbba7d591c1eff4972018e67c1142b21b64bc36fba3f93bd33f2ebd9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 451,
+                    "digest": "sha256:1afd7b69ee57968ec4d5f409d74784ee9eac0578f59886830a5c73539d603e7d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 80955401,
+                    "digest": "sha256:0a990e8eddc89b3b69670a06876632a146d4c320bf497f2fdaf9502366b5c5f2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 93,
+                    "digest": "sha256:ee3ad2904ca727c9c663a7627e9cddfc3e5c33b65cb7a7888b64c202b1c53b21"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.1.0",
+        "1.1.1",
+        "1.1.3",
+        "latest"
+    ],
+    "configs": {
+        "1.1.3": {
+            "architecture": "amd64",
+            "author": "zopanix <zopanix@gmail.com>",
+            "config": {
+                "Hostname": "4f17211570c2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "CASPERJS_VERSION=1.1.3"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:79d4ebbed5f0fecba9d922c11cc329978482db006d4acdb55ad36ab851291b35",
+                "Volumes": {
+                    "/data": {}
+                },
+                "WorkingDir": "/data",
+                "Entrypoint": [
+                    "casperjs"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "eaa8a1a195cdb754d7a13f5c2a3a4f177ae038c7983f256610b6c18e4471535f",
+            "container_config": {
+                "Hostname": "4f17211570c2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "CASPERJS_VERSION=1.1.3"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "WORKDIR /data"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:79d4ebbed5f0fecba9d922c11cc329978482db006d4acdb55ad36ab851291b35",
+                "Volumes": {
+                    "/data": {}
+                },
+                "WorkingDir": "/data",
+                "Entrypoint": [
+                    "casperjs"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2016-08-14T17:10:41.782217707Z",
+            "docker_version": "1.12.0",
+            "history": [
+                {
+                    "created": "2016-07-22T15:18:56.498996734Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /"
+                },
+                {
+                    "created": "2016-07-22T15:18:58.549740971Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2016-07-22T15:19:00.260822534Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2016-07-22T15:19:02.033058361Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2016-07-22T15:19:02.624014485Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-14T17:09:08.909512993Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER zopanix <zopanix@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-14T17:09:10.892124394Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV CASPERJS_VERSION=1.1.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-14T17:09:12.966944468Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:e7b666776704268b918aa5ad5d563b8dbf9e191c59b374f4408cec8eccc1c296 in /resources "
+                },
+                {
+                    "created": "2016-08-14T17:10:33.243100234Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c /resources/build && rm -rf resources"
+                },
+                {
+                    "created": "2016-08-14T17:10:35.895211929Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"casperjs\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-14T17:10:38.810397649Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/data]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-14T17:10:41.782217707Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  WORKDIR /data"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4706417442133e656592bb0b3ac1460c6f35a62a7c4abbbe93258377af3c7441",
+                    "sha256:787a9151f9aee4dfd4ece5c970c4317a51976f9558db986050dff6357b532e2e",
+                    "sha256:bab10a362750902948e2ed3ebd37599ce20020584add480d732e73878f8a1715",
+                    "sha256:c410e650f35913926dc1616780ac211c13c14055e752d7d973ea9f71eeac25d4",
+                    "sha256:745d54d0a890bd2097ea8b7ee0a7c184626c06bbde8f545ab0caeab6a0e3c912",
+                    "sha256:4c6fe7971519f1cd407adaa59316bd45a636ae813667c02c1bb6ddf6b859ea34",
+                    "sha256:b1a53c449d5fdcf67695f357e2813a43ed9a752a5b8de2eb5b37e20a0c453c70"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "author": "zopanix <zopanix@gmail.com>",
+            "config": {
+                "Hostname": "4f17211570c2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "CASPERJS_VERSION=1.1.3"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:2fa29ee4909e18e56dcc2b9919cc784f56a301333157cf8b9eec094939845b6f",
+                "Volumes": {
+                    "/data": {}
+                },
+                "WorkingDir": "/data",
+                "Entrypoint": [
+                    "casperjs"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "07ee5e01babede7f72551133d2b138574c2951227b21e034736ad3dd21879f03",
+            "container_config": {
+                "Hostname": "4f17211570c2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "CASPERJS_VERSION=1.1.3"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) WORKDIR /data"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:2fa29ee4909e18e56dcc2b9919cc784f56a301333157cf8b9eec094939845b6f",
+                "Volumes": {
+                    "/data": {}
+                },
+                "WorkingDir": "/data",
+                "Entrypoint": [
+                    "casperjs"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2018-04-13T23:43:57.897047106Z",
+            "docker_version": "17.06.1-ce",
+            "history": [
+                {
+                    "created": "2016-07-22T15:18:56.498996734Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:dc3b1b2c44af75026bc24b3f3a5bd5f45b9ca7ed395b91dfacd1b47fe0545fb5 in /"
+                },
+                {
+                    "created": "2016-07-22T15:18:58.549740971Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2016-07-22T15:19:00.260822534Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2016-07-22T15:19:02.033058361Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2016-07-22T15:19:02.624014485Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-13T23:39:26.879046085Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER zopanix <zopanix@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-13T23:39:27.095054692Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV CASPERJS_VERSION=1.1.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-13T23:39:27.457023204Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:e7b666776704268b918aa5ad5d563b8dbf9e191c59b374f4408cec8eccc1c296 in /resources "
+                },
+                {
+                    "created": "2018-04-13T23:43:56.229161696Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c /resources/build && rm -rf resources"
+                },
+                {
+                    "created": "2018-04-13T23:43:57.079115284Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"casperjs\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-13T23:43:57.480321376Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/data]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-13T23:43:57.897047106Z",
+                    "author": "zopanix <zopanix@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /data"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4706417442133e656592bb0b3ac1460c6f35a62a7c4abbbe93258377af3c7441",
+                    "sha256:787a9151f9aee4dfd4ece5c970c4317a51976f9558db986050dff6357b532e2e",
+                    "sha256:bab10a362750902948e2ed3ebd37599ce20020584add480d732e73878f8a1715",
+                    "sha256:c410e650f35913926dc1616780ac211c13c14055e752d7d973ea9f71eeac25d4",
+                    "sha256:e99460fd3813a6b87e2a3cb30ccb3f17e0b56b75460b4e4f4b5d7a77b49863bc",
+                    "sha256:3aaa2c3a2d0cb5627c78d1b43f742eac9dabeadc611896b3d93887c01baebe19",
+                    "sha256:bf654ecfaa5885f5437048546d04be31912a853b5014971a9c91323e87506975"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1790,
+                "digest": "sha256:82e4c99f4d9082f6d82e02cd9e9da1c489fed8bc51aa33501f8fcda6922cd4b2"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4057064,
+                    "digest": "sha256:d947c2a98aecc98786ad96eebf9ea3faf06e4dbf524b468c6fd15b1c4f464293"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 110471276,
+                    "digest": "sha256:97fbbf9090314a4ecf3578f4a79ce9d02f36f1b6d0c8ce067de44051164920f9"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "TZ=Europe/Stockholm"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "Labels": {
+                    "maintainer": "Odd E. Ebbesen <oddebb@gmail.com>"
+                },
+                "OnBuild": null
+            },
+            "created": "2024-04-05T16:59:49.42355975Z",
+            "history": [
+                {
+                    "created": "2024-03-29T18:06:18.697915556Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:69e9ca740b67298fe82777bb62a9104f028f1f65735e34518aa76bd73128302a in / "
+                },
+                {
+                    "created": "2024-03-29T18:06:18.803299164Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-05T16:59:49.42355975Z",
+                    "created_by": "LABEL maintainer=Odd E. Ebbesen <oddebb@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-05T16:59:49.42355975Z",
+                    "created_by": "ARG ARG_TZ=Europe/Stockholm",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-05T16:59:49.42355975Z",
+                    "created_by": "ENV TZ=Europe/Stockholm",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-05T16:59:49.42355975Z",
+                    "created_by": "RUN |1 ARG_TZ=Europe/Stockholm /bin/sh -c echo \"https://dl-cdn.alpinelinux.org/alpine/edge/testing\" >>/etc/apk/repositories \t&& apk update \t&& apk add --no-cache --update \talpine-sdk \tbat \tbc \tcoreutils \tfd \tfzf \tgit \tgit-zsh-completion \thtop \tless \tneovim \topenssh \tplzip \tripgrep \tthe_silver_searcher \ttmux \ttmux-zsh-completion \ttzdata \tunzip \turlview \tzsh \t&& rm -rf /var/cache/apk/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:0686b36697e3e57c5480b12b45cbe01da9b7c46926aa624e53bf42bab6062520",
+                    "sha256:8136f415f552ee554623a0ff0102b909c2c1e10efb7945b5d92b62bc310c7cf6"
+                ]
+            },
+            "variant": "v8"
+        }
+    }
+}

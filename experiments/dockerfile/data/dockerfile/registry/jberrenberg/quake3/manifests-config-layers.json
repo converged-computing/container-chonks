@@ -1,0 +1,358 @@
+{
+    "manifests": {
+        "1.0": {
+            "schemaVersion": 1,
+            "name": "jberrenberg/quake3",
+            "tag": "1.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:5eabd1d288ac29a83bcec63fe5c2def38d6eff7fd7cc9fb4cac7fe424f486f28"
+                },
+                {
+                    "blobSum": "sha256:f20c9b0963c52bd614a6fb665d9d5243598b5dc78c5d09827e647f34ef6ed4e7"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"52ea38a2110236d3177e3210f86390bacc5c73e2177b6550c4154297a561cac8\",\"parent\":\"bd1545a250005969cc285d85c32218919d3878521a4f53b9f0d676f625547428\",\"created\":\"2016-02-12T11:00:34.495929943Z\",\"container\":\"c4180567f1784f410a04299f2939a5f574e8a93b5c6ae8e550aee06f6b805852\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\\\"]}\"],\"Image\":\"bd1545a250005969cc285d85c32218919d3878521a4f53b9f0d676f625547428\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"bd1545a250005969cc285d85c32218919d3878521a4f53b9f0d676f625547428\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"bd1545a250005969cc285d85c32218919d3878521a4f53b9f0d676f625547428\",\"parent\":\"77c6519ec695baf407ff3e9cb2eef7235fdd930916a8db76df73f5f1976c09d5\",\"created\":\"2016-02-12T11:00:34.425740301Z\",\"container\":\"7b0737bebea9af26821b561bdd99eb5ac44cd7cb4f1965ac554c5c4d1f3cf871\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 27960/udp\"],\"Image\":\"77c6519ec695baf407ff3e9cb2eef7235fdd930916a8db76df73f5f1976c09d5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"77c6519ec695baf407ff3e9cb2eef7235fdd930916a8db76df73f5f1976c09d5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"77c6519ec695baf407ff3e9cb2eef7235fdd930916a8db76df73f5f1976c09d5\",\"parent\":\"b43786018b685ee1dd6446de77e7ec80b21fa2ea9bf9ac5595133940d1b34873\",\"created\":\"2016-02-12T11:00:34.372216241Z\",\"container\":\"ebc8306ba45df29032ada19f1c3395d165168cf80343968374cfbfff572b2cdc\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) USER [ioq3srv]\"],\"Image\":\"b43786018b685ee1dd6446de77e7ec80b21fa2ea9bf9ac5595133940d1b34873\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"b43786018b685ee1dd6446de77e7ec80b21fa2ea9bf9ac5595133940d1b34873\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b43786018b685ee1dd6446de77e7ec80b21fa2ea9bf9ac5595133940d1b34873\",\"parent\":\"f0da766b2f696028dd40a04e1e4f8706a39830f07bd66c336db797dc938e2916\",\"created\":\"2016-02-12T11:00:33.720473885Z\",\"container\":\"8d69bbb734f3ca44223d58f8b40abfc27f34a78bd47e38265560918bdc9c1e58\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo \\\"# INSTALL DEPENDENCIES ##########################################\\\" \\u0026\\u0026   apk add --update curl g++ gcc git make \\u0026\\u0026   mkdir -p /tmp/build \\u0026\\u0026   echo \\\"# FETCH INSTALLATION FILES ######################################\\\" \\u0026\\u0026   curl https://raw.githubusercontent.com/ioquake/ioq3/master/misc/linux/server_compile.sh -o /tmp/build/compile.sh \\u0026\\u0026   curl http://ioquake3.org/data/quake3-latest-pk3s.zip --referer http://ioquake3.org/extras/patch-data/ -o /tmp/build/quake3-latest-pk3s.zip \\u0026\\u0026   echo \\\"# NOW THE INSTALLATION ##########################################\\\" \\u0026\\u0026   echo \\\"y\\\" | su ioq3srv -c \\\"sh /tmp/build/compile.sh\\\" \\u0026\\u0026   unzip /tmp/build/quake3-latest-pk3s.zip -d /tmp/build/ \\u0026\\u0026   su ioq3srv -c \\\"cp -r /tmp/build/quake3-latest-pk3s/* ~/ioquake3\\\" \\u0026\\u0026   ln -s /pak0.pk3 /home/ioq3srv/ioquake3/baseq3/pak0.pk3 \\u0026\\u0026   echo \\\"# CLEAN UP ######################################################\\\" \\u0026\\u0026   apk del curl g++ gcc git make \\u0026\\u0026   rm -rf /var/cache/apk/* \\u0026\\u0026   rm -rf /tmp/build/\"],\"Image\":\"f0da766b2f696028dd40a04e1e4f8706a39830f07bd66c336db797dc938e2916\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"f0da766b2f696028dd40a04e1e4f8706a39830f07bd66c336db797dc938e2916\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":31432762}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f0da766b2f696028dd40a04e1e4f8706a39830f07bd66c336db797dc938e2916\",\"parent\":\"559d861e5bc567d9f30884333bf09b7c1e9d4411a80ba523ac914b7d222d03e4\",\"created\":\"2016-02-12T10:56:55.65969131Z\",\"container\":\"8b22472728f9033345d7a09c34dd16bd21ded11d7b42998d2a61392598017a25\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"adduser ioq3srv -D\"],\"Image\":\"559d861e5bc567d9f30884333bf09b7c1e9d4411a80ba523ac914b7d222d03e4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"559d861e5bc567d9f30884333bf09b7c1e9d4411a80ba523ac914b7d222d03e4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":4906}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"559d861e5bc567d9f30884333bf09b7c1e9d4411a80ba523ac914b7d222d03e4\",\"parent\":\"463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9\",\"created\":\"2016-02-12T10:56:55.324929014Z\",\"container\":\"c142dfcc25643b798c5d79cdef0ee50a852430f8c6f558e22d1a48907a15d7a7\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER jberrenberg v1.0\"],\"Image\":\"2314ad3eeb908bc49724ee6f8d0c3bb685d357d4234e2a69ede91eb700e6e9de\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"2314ad3eeb908bc49724ee6f8d0c3bb685d357d4234e2a69ede91eb700e6e9de\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9\",\"created\":\"2016-01-18T18:33:12.102176982Z\",\"container\":\"4ecf6d9f407a7f431f243ba9c2d306c23151322f2e186b119b35f677333b885e\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":4793939}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "OXO7:W6DS:MGS2:PWXW:WQYP:SQ67:JHC7:UVUO:HUH5:XQY5:SEIF:R4L7",
+                            "kty": "EC",
+                            "x": "tG7mPH7SZD6SVwM0HkYQoCUyxKVe8LcN0ycKhN5KkMs",
+                            "y": "VuR1nAkVk7vjeypK0hJnEmWf4ROAnEPBzVnwt_KS6Ws"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "qfgfDyuNkCy3wFn6tIY_Xf5mf9PA8Gh1k5ddgZ4EgqLP5wZ8tmqGdxyuofd1Jx7yoG2F1s99Jc_ruEx4QFNsDw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjEyMDIzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMDk6Mzc6MTFaIn0"
+                }
+            ]
+        },
+        "1.1": {
+            "schemaVersion": 1,
+            "name": "jberrenberg/quake3",
+            "tag": "1.1",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:ccb8c95f4451e1d7051c664a0e91f8a25b8c56fe556370ec48ff1e0901cb5699"
+                },
+                {
+                    "blobSum": "sha256:c6caa694acfec4c881347a0f92a8871a6d7cda3f94d513eeaa3e256f0c0be638"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"ffa7e04e85401a571f7492701d804077448809e59abfd91ba75b859a4134d80a\",\"parent\":\"1c3a9f639ec08e3ab6e8c49539a16a5dab007716e7d43fa85b1613edbd267767\",\"created\":\"2016-02-12T11:05:41.194743387Z\",\"container\":\"5d0a551690676a38217bb76ed0aee3e99e349ca49e966be732408b2c8a29d3b0\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\\\"]}\"],\"Image\":\"1c3a9f639ec08e3ab6e8c49539a16a5dab007716e7d43fa85b1613edbd267767\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"1c3a9f639ec08e3ab6e8c49539a16a5dab007716e7d43fa85b1613edbd267767\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1c3a9f639ec08e3ab6e8c49539a16a5dab007716e7d43fa85b1613edbd267767\",\"parent\":\"57bf9f285eb53b6d33d578aad7b3a61d1684969eea0803d0b4b1722ce96f14f4\",\"created\":\"2016-02-12T11:05:41.118840753Z\",\"container\":\"90dd4750585c31241c7380864c7af304867e8c84bea0912459ed259ab669fd1e\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 27960/udp\"],\"Image\":\"57bf9f285eb53b6d33d578aad7b3a61d1684969eea0803d0b4b1722ce96f14f4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"57bf9f285eb53b6d33d578aad7b3a61d1684969eea0803d0b4b1722ce96f14f4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"57bf9f285eb53b6d33d578aad7b3a61d1684969eea0803d0b4b1722ce96f14f4\",\"parent\":\"13fb1434ffc894f07147e2e0f70d9035957f36a822b1ab6a7aaf6ba65259ac3d\",\"created\":\"2016-02-12T11:05:41.051679647Z\",\"container\":\"76028515b10926fdb4c844bc369992aa532422267a1bb93e258768613c49395f\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) USER [ioq3srv]\"],\"Image\":\"13fb1434ffc894f07147e2e0f70d9035957f36a822b1ab6a7aaf6ba65259ac3d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"13fb1434ffc894f07147e2e0f70d9035957f36a822b1ab6a7aaf6ba65259ac3d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"13fb1434ffc894f07147e2e0f70d9035957f36a822b1ab6a7aaf6ba65259ac3d\",\"parent\":\"396a52141365d901aba46dbb0df08e1b19c1759ec92f1e53002cca16c4fe775e\",\"created\":\"2016-02-12T11:05:40.414327047Z\",\"container\":\"97543f278fe77611b2d64dcc59b314533e39a2e835d08028b2df8728df7a14cd\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo \\\"# INSTALL DEPENDENCIES ##########################################\\\" \\u0026\\u0026   apk add --update curl g++ gcc git make \\u0026\\u0026   mkdir -p /tmp/build \\u0026\\u0026   echo \\\"# FETCH INSTALLATION FILES ######################################\\\" \\u0026\\u0026   curl https://raw.githubusercontent.com/ioquake/ioq3/master/misc/linux/server_compile.sh -o /tmp/build/compile.sh \\u0026\\u0026   curl http://ioquake3.org/data/quake3-latest-pk3s.zip --referer http://ioquake3.org/extras/patch-data/ -o /tmp/build/quake3-latest-pk3s.zip \\u0026\\u0026   echo \\\"# NOW THE INSTALLATION ##########################################\\\" \\u0026\\u0026   echo \\\"y\\\" | su ioq3srv -c \\\"sh /tmp/build/compile.sh\\\" \\u0026\\u0026   unzip /tmp/build/quake3-latest-pk3s.zip -d /tmp/build/ \\u0026\\u0026   su ioq3srv -c \\\"cp -r /tmp/build/quake3-latest-pk3s/* ~/ioquake3\\\" \\u0026\\u0026   ln -s /pak0.pk3 /home/ioq3srv/ioquake3/baseq3/pak0.pk3 \\u0026\\u0026   echo \\\"# CLEAN UP ######################################################\\\" \\u0026\\u0026   apk del curl g++ gcc git make \\u0026\\u0026   rm -rf /var/cache/apk/* \\u0026\\u0026   rm -rf /tmp/build/\"],\"Image\":\"396a52141365d901aba46dbb0df08e1b19c1759ec92f1e53002cca16c4fe775e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"396a52141365d901aba46dbb0df08e1b19c1759ec92f1e53002cca16c4fe775e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":31432762}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"396a52141365d901aba46dbb0df08e1b19c1759ec92f1e53002cca16c4fe775e\",\"parent\":\"d0dc09d150a09af3388efa49d2836ed76ba7d10cd5a4e104f1eb5e95952cd78a\",\"created\":\"2016-02-12T11:01:54.136275299Z\",\"container\":\"7bcc75aa70132664287a713e478739b15033380532e91f2212fe4428614d23f5\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"adduser ioq3srv -D\"],\"Image\":\"d0dc09d150a09af3388efa49d2836ed76ba7d10cd5a4e104f1eb5e95952cd78a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"d0dc09d150a09af3388efa49d2836ed76ba7d10cd5a4e104f1eb5e95952cd78a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":4906}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d0dc09d150a09af3388efa49d2836ed76ba7d10cd5a4e104f1eb5e95952cd78a\",\"parent\":\"463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9\",\"created\":\"2016-02-12T11:01:53.850078148Z\",\"container\":\"410a2f30a4ec29e90bb00af632b94caa31f3d6ecce8d696f88fa5322a7efb016\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER jberrenberg v1.0\"],\"Image\":\"2314ad3eeb908bc49724ee6f8d0c3bb685d357d4234e2a69ede91eb700e6e9de\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"2314ad3eeb908bc49724ee6f8d0c3bb685d357d4234e2a69ede91eb700e6e9de\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9\",\"created\":\"2016-01-18T18:33:12.102176982Z\",\"container\":\"4ecf6d9f407a7f431f243ba9c2d306c23151322f2e186b119b35f677333b885e\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":4793939}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "KAHD:TIBJ:PMR2:M5TS:2SGL:QDEK:PMLU:6764:XZVZ:OMHA:IUXD:VCN7",
+                            "kty": "EC",
+                            "x": "fjaJmnuoSH84i_Ea8ysa6LPJy8sXJV5HEFe39Jx7rx0",
+                            "y": "t7OmMAyG45Qb7uhsCavyvBMIMG4OBiXHlXog91Iaw7g"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "bxpzmGE3mzGE2x12P44VUPYFUw_Jvt0e1WT_-JvcLSPemiXwMq2-Rkw-OYXNSefJRyJ1vxQCMHB9sJiX25sldw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjEyMDI0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMDk6Mzc6MTJaIn0"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2649,
+                "digest": "sha256:8298b6d5ac0b6753e00a2954300ce096f284a001666132586b3d709ecd2306b6"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2811969,
+                    "digest": "sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1231,
+                    "digest": "sha256:d982d0b722e874d850d66e4bb3de1082b27b899d9ed01bb889ac22abb30406b2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28519339,
+                    "digest": "sha256:48f8b3c91701d5d2afd714ddf36bbd01dedf418f4890722ba6a77b46b5335276"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 204,
+                    "digest": "sha256:569321925d5ed2bb2ce6eadb59feda303e5463f1638ea0df292b339608027831"
+                }
+            ]
+        },
+        "master": {
+            "schemaVersion": 1,
+            "name": "jberrenberg/quake3",
+            "tag": "master",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:7b6f054974af338cc1eeb75dfa1fbab279cd7600ea80783e3e554d7880eaccd2"
+                },
+                {
+                    "blobSum": "sha256:dbec03b934ccf7ada7e2c03f925e219d4b99a5e3ffd9c5f08aaa3748c2594656"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:c52e3ed763ff61271b1cd4ea3e348c1a9131492b07bf0771c7d59a34e7e8d598"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"ebb7a475017a1f586c3aab54743ce70719b84c390e5d508e86580e02e55f12ad\",\"parent\":\"401f25d35cf9f27aae192e9f4cfb77b12c384e4febc4d7ca0cffdcc90271ed4c\",\"created\":\"2016-02-12T10:55:41.642609825Z\",\"container\":\"687e5884fd2261fca791b3e1853f757bc9306e16d00a862cd5473e98452bd57e\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\\\"]}\"],\"Image\":\"401f25d35cf9f27aae192e9f4cfb77b12c384e4febc4d7ca0cffdcc90271ed4c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"401f25d35cf9f27aae192e9f4cfb77b12c384e4febc4d7ca0cffdcc90271ed4c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"401f25d35cf9f27aae192e9f4cfb77b12c384e4febc4d7ca0cffdcc90271ed4c\",\"parent\":\"8a6dcf3aad708674a06a0d72980e03d148875cd850b5a5bd7375e90aedde4caa\",\"created\":\"2016-02-12T10:55:41.582439266Z\",\"container\":\"adce611f8f0c2ee6fd3f10ec98bf2a273d5b83e6af528ba1f8ef96e70ee7aefe\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 27960/udp\"],\"Image\":\"8a6dcf3aad708674a06a0d72980e03d148875cd850b5a5bd7375e90aedde4caa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"27960/udp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"8a6dcf3aad708674a06a0d72980e03d148875cd850b5a5bd7375e90aedde4caa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8a6dcf3aad708674a06a0d72980e03d148875cd850b5a5bd7375e90aedde4caa\",\"parent\":\"10d6f39219e041f7d47cca1de35a3b93745551fa40f2a604955b7a8c333c9f2e\",\"created\":\"2016-02-12T10:55:41.522156311Z\",\"container\":\"b72c75a559d86157312312fbf1c977d928da4acf5c45952716fcd3104f4c6a3d\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) USER [ioq3srv]\"],\"Image\":\"10d6f39219e041f7d47cca1de35a3b93745551fa40f2a604955b7a8c333c9f2e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"ioq3srv\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"10d6f39219e041f7d47cca1de35a3b93745551fa40f2a604955b7a8c333c9f2e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"10d6f39219e041f7d47cca1de35a3b93745551fa40f2a604955b7a8c333c9f2e\",\"parent\":\"5037fb0e590f10ecfe70467d06d811b8cabcd11c3b66a4741b5c1a2db9c9d8c3\",\"created\":\"2016-02-12T10:55:40.90772272Z\",\"container\":\"516ecc95311372b79471abb6936af7bbe31688c61a44660e2166a9394721f962\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo \\\"# INSTALL DEPENDENCIES ##########################################\\\" \\u0026\\u0026   apk add --update curl g++ gcc git make \\u0026\\u0026   mkdir -p /tmp/build \\u0026\\u0026   echo \\\"# FETCH INSTALLATION FILES ######################################\\\" \\u0026\\u0026   curl https://raw.githubusercontent.com/ioquake/ioq3/master/misc/linux/server_compile.sh -o /tmp/build/compile.sh \\u0026\\u0026   curl http://ioquake3.org/data/quake3-latest-pk3s.zip --referer http://ioquake3.org/extras/patch-data/ -o /tmp/build/quake3-latest-pk3s.zip \\u0026\\u0026   echo \\\"# NOW THE INSTALLATION ##########################################\\\" \\u0026\\u0026   echo \\\"y\\\" | su ioq3srv -c \\\"sh /tmp/build/compile.sh\\\" \\u0026\\u0026   unzip /tmp/build/quake3-latest-pk3s.zip -d /tmp/build/ \\u0026\\u0026   su ioq3srv -c \\\"cp -r /tmp/build/quake3-latest-pk3s/* ~/ioquake3\\\" \\u0026\\u0026   ln -s /pak0.pk3 /home/ioq3srv/ioquake3/baseq3/pak0.pk3 \\u0026\\u0026   echo \\\"# CLEAN UP ######################################################\\\" \\u0026\\u0026   apk del curl g++ gcc git make \\u0026\\u0026   rm -rf /var/cache/apk/* \\u0026\\u0026   rm -rf /tmp/build/\"],\"Image\":\"5037fb0e590f10ecfe70467d06d811b8cabcd11c3b66a4741b5c1a2db9c9d8c3\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"5037fb0e590f10ecfe70467d06d811b8cabcd11c3b66a4741b5c1a2db9c9d8c3\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":31432762}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5037fb0e590f10ecfe70467d06d811b8cabcd11c3b66a4741b5c1a2db9c9d8c3\",\"parent\":\"324919b6fceeb793b66ed4fc34b0193087efcbd6727405a603fce52a893ae08f\",\"created\":\"2016-02-12T10:52:02.160224312Z\",\"container\":\"5034f517b02d7a54a906d1554304f3700d0078ca6b4e839e933f4d4d4f837e81\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"adduser ioq3srv -D\"],\"Image\":\"324919b6fceeb793b66ed4fc34b0193087efcbd6727405a603fce52a893ae08f\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"324919b6fceeb793b66ed4fc34b0193087efcbd6727405a603fce52a893ae08f\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":4906}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"324919b6fceeb793b66ed4fc34b0193087efcbd6727405a603fce52a893ae08f\",\"parent\":\"463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9\",\"created\":\"2016-02-12T10:52:01.838383914Z\",\"container\":\"69ec2bc0013460b273e5e6d10edd5f238e7c579308e073df8b85403ce097ecdf\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER jberrenberg v1.0\"],\"Image\":\"2314ad3eeb908bc49724ee6f8d0c3bb685d357d4234e2a69ede91eb700e6e9de\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"jberrenberg v1.0\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"2314ad3eeb908bc49724ee6f8d0c3bb685d357d4234e2a69ede91eb700e6e9de\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"463737dfe56d0d8095f81fbd6a67312bc88c179f59face13739bcb4b39a769a9\",\"created\":\"2016-01-18T18:33:12.102176982Z\",\"container\":\"4ecf6d9f407a7f431f243ba9c2d306c23151322f2e186b119b35f677333b885e\",\"container_config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:0fc0a5ec098241ab156dc6b23bbdbdd5b5f83d5980767456e82c9e907b6edbf2 in /\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"4ecf6d9f407a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":4793939}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "3QYP:YPQ3:MDE6:AV3L:WSHI:AERM:YVON:IJ5A:DIK5:GKD3:QMQ3:6CUL",
+                            "kty": "EC",
+                            "x": "48K1X3jm3np7Mtx5oWy0t2QjFhnv8MZWpjATY3g1aDc",
+                            "y": "Cov89qPYugH_zUa6j9O3NPdIU09QAIYrh8GeIBOejqo"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "xNvCkuhiHtbPHZS6E_LHf03HIWSPkWk25fkLy9GFJME-sFiJgefekMUWgzzaN7GSA1ZZN1Ou1RQJqhkkFuQOyg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjEyMDI2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMDk6Mzc6MTRaIn0"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.0",
+        "1.1",
+        "latest",
+        "master"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "ioq3srv",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "27960/udp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": null,
+                "Image": "sha256:41c462856891b33e4716278050d02942972a11a02ef4b0d386087fec8d3671cc",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/home/ioq3srv/ioquake3/ioq3ded.x86_64"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "4e9873040000b518a7c1977c45ddc369184c446bd1797834104fa9efc800f534",
+            "container_config": {
+                "Hostname": "4e9873040000",
+                "Domainname": "",
+                "User": "ioq3srv",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "27960/udp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\"]"
+                ],
+                "Image": "sha256:41c462856891b33e4716278050d02942972a11a02ef4b0d386087fec8d3671cc",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/home/ioq3srv/ioquake3/ioq3ded.x86_64"
+                ],
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2021-06-01T11:25:08.339368285Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2021-04-14T19:19:39.267885491Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:8ec69d882e7f29f0652d537557160e638168550f738d0d49f90a7ef96bf31787 in / "
+                },
+                {
+                    "created": "2021-04-14T19:19:39.643236135Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-06-01T11:25:05.224956985Z",
+                    "created_by": "/bin/sh -c adduser ioq3srv -D"
+                },
+                {
+                    "created": "2021-06-01T11:25:06.199707808Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:08b6a8711f54cd0d41a7764cbfd6c354f2107606637ec73e9503da16fb7d2ad7 in /home/ioq3srv/ioquake3 "
+                },
+                {
+                    "created": "2021-06-01T11:25:07.543001995Z",
+                    "created_by": "/bin/sh -c ln -s /pak0.pk3 /home/ioq3srv/ioquake3/baseq3/pak0.pk3"
+                },
+                {
+                    "created": "2021-06-01T11:25:07.810352442Z",
+                    "created_by": "/bin/sh -c #(nop)  USER ioq3srv",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-06-01T11:25:08.054418108Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 27960/udp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-06-01T11:25:08.339368285Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/home/ioq3srv/ioquake3/ioq3ded.x86_64\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b2d5eeeaba3a22b9b8aa97261957974a6bd65274ebd43e1d81d0a7b8b752b116",
+                    "sha256:e0c53578d125a33d9634c4086854b512d9c2cb60ece71c1bd65bbc1dd525231c",
+                    "sha256:671e86b87803ef9124f36d428489c3b34bae110266dcdf7e35cccfd711df281c",
+                    "sha256:6f0e651760542884ba5efe68de846b032ef32d48e605b82660c94299b503b229"
+                ]
+            }
+        }
+    }
+}

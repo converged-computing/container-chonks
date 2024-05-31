@@ -1,0 +1,172 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3515,
+                "digest": "sha256:e1eea6564c71d0664b0d3e8b6e9a56c8fda699c22f5ada8ecee3ad3b6784e188"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27092282,
+                    "digest": "sha256:58db8e8debc5a7df2fd9502ca61a5c34a7cb04f8090d3728dbe5dfedfdded09b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 252,
+                    "digest": "sha256:44fce386dd5a094962b8b877221d5665907f84a8c63eb6af3d928d4c5904dde8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 119991528,
+                    "digest": "sha256:bed93ebc6672dfd5a4f7480fa880edb39f45e2d9d987e09c41548a2fd648a3c2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 110,
+                    "digest": "sha256:152da4e1cf7823ef045ab340b30088974df65c39b437e0212d528d1e139cc35e"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Apiary <sre@apiary.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2020-11-02"
+                ],
+                "Cmd": [
+                    "make",
+                    "clean",
+                    "html"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4d5869d58fadaf901942c9ad30f2821d7124b469aba3a4ac40f479ce057f1658",
+                "Volumes": {
+                    "/mnt/docs": {}
+                },
+                "WorkingDir": "/mnt/docs",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "cae70a0eaf37ba9fea261f09d9db22ecc04a2103cc3c63d5de71aa24d2bd6413",
+            "container_config": {
+                "Hostname": "cae70a0eaf37",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2020-11-02"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"make\" \"clean\" \"html\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4d5869d58fadaf901942c9ad30f2821d7124b469aba3a4ac40f479ce057f1658",
+                "Volumes": {
+                    "/mnt/docs": {}
+                },
+                "WorkingDir": "/mnt/docs",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2020-11-03T10:01:18.815936051Z",
+            "docker_version": "17.09.0-ce",
+            "history": [
+                {
+                    "created": "2020-10-13T01:43:47.487549472Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:9b6cfb29a8d6c187b980c89730e7e7f9e282b8c1e750000dbe265ee2b77314ed in / "
+                },
+                {
+                    "created": "2020-10-13T01:43:47.794021505Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-03T10:00:24.695788543Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-03T10:00:24.863071564Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2020-11-02",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-03T10:00:25.04330954Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop) COPY file:1714b1ba50e3abfe9904e0a5ab9fcf63774afe264c26ed1813ebe5527320bd36 in /tmp/ "
+                },
+                {
+                    "created": "2020-11-03T10:01:15.973702966Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get install -y --no-install-recommends         python-sphinx         python-yaml         python-setuptools         graphviz         make         python-pip         git &&     pip install --upgrade pip setuptools wheel &&     pip install -r /tmp/requirements.txt"
+                },
+                {
+                    "created": "2020-11-03T10:01:18.220227724Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c mkdir /mnt/docs"
+                },
+                {
+                    "created": "2020-11-03T10:01:18.429487455Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /mnt/docs",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-03T10:01:18.623471328Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/mnt/docs]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-03T10:01:18.815936051Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"make\" \"clean\" \"html\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:6b1fecdd2d1b819a675d4e05820cc1d417e2458ab7f0664b47dec779795f8616",
+                    "sha256:aa09ee3b14eae8a3a989482a6f83a12c9ae7b51057daba3d70367518cb210ea3",
+                    "sha256:e8fc6f5cc761e33b8e478bffcd2a5ed9ee056bce2f849fcbe3866d8562332c51",
+                    "sha256:228183da180e7ac49739cf1298007df8b60f705536fa34325d1c36093adf028b"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,241 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5145,
+                "digest": "sha256:341d9a905b240b961e38540d066123f897b4ae58fb75760135ed9bef6dff45d3"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 25691281,
+                    "digest": "sha256:7c457f213c7634afb95a0fb2410a74b7b5bc0ba527033362c240c7a11bef4331"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4451,
+                    "digest": "sha256:0c2d6bc9d6f8629c1ced511296de27b37560dc8cef4432b73fd0ced8205611bf"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 123433729,
+                    "digest": "sha256:dcdb8f45ecbec2b89252b2421868c6b7e55d5c7e7d4139598d8ee84431f40c04"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 152,
+                    "digest": "sha256:3d353fdf8c78fdaa07b1f04e8c4d6885312cb8926897733d60b844aaca9b1cb5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 9004032,
+                    "digest": "sha256:e07df496231ba7d5c7b67cc4762816c66f938d33ff613f536a9ff5653ad632f4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 64006470,
+                    "digest": "sha256:ef4487cc2d538fabf613644085e8a2c6d17b57b78325372852d517be5f92723e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1820,
+                    "digest": "sha256:b2b8bf33e4cba03dbfb4c66fa4e5d3ce6fe766ea5273b76f61ac88db80276832"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 272,
+                    "digest": "sha256:64668fe8bd910b6825353cf071f6d151dca94caaeb38d20d4fc0fa76ab5121bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1095,
+                    "digest": "sha256:81bc931286295080d996230d643d765aa1325000096f734d937e19b6d331726b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 202,
+                    "digest": "sha256:572c04c3fd8d5879c349a5f954caee06ebab1660685b0343f32b22e9bb5b2eec"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 426535,
+                    "digest": "sha256:15666dbd0af595e4644448dbc6f5c9f7258ea49784f27738e9c4528e17dd42d3"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "no_proxy=localhost,127.0.0.1,169.254.169.254,jenkins",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "LANG=en_US.UTF-8"
+                ],
+                "Entrypoint": [
+                    "/bin/ship"
+                ],
+                "Cmd": [
+                    "run"
+                ],
+                "Labels": {
+                    "maintainer": "Socrata 'sysadmin@socrata.com'",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "18.04",
+                    "repository.socrata/base-bionic": ""
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2024-05-29T10:09:29.406405092Z",
+            "history": [
+                {
+                    "created": "2023-05-30T09:32:07.458866408Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-05-30T09:32:07.512060632Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-05-30T09:32:07.566627883Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-05-30T09:32:07.623484379Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=18.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-05-30T09:32:09.125568601Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:3c74e7e08cbf9a87694ce6fa541af617599680fa54d9e48556fc0fbc120b4a83 in / "
+                },
+                {
+                    "created": "2023-05-30T09:32:09.432301537Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T09:44:56.259363079Z",
+                    "created_by": "LABEL maintainer=Socrata 'sysadmin@socrata.com'",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T09:44:56.259363079Z",
+                    "created_by": "ENV no_proxy=localhost,127.0.0.1,169.254.169.254,jenkins",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T09:44:56.259363079Z",
+                    "created_by": "ENV DEBIAN_FRONTEND=noninteractive",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T09:44:56.259363079Z",
+                    "created_by": "RUN /bin/sh -c groupadd -r socrata && useradd -m -r -g socrata socrata # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T09:46:05.059540169Z",
+                    "created_by": "RUN /bin/sh -c apt-get -y update &&     apt-get -y upgrade;     apt-get -y install           build-essential           locales           curl           dnsutils           python-jinja2           zip           ruby2.5           iproute2           less           netcat-openbsd           sudo           vim-tiny &&     rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T09:46:05.647060013Z",
+                    "created_by": "RUN /bin/sh -c mkdir /etc/pre-init.d # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T09:47:09.714984242Z",
+                    "created_by": "RUN /bin/sh -c gem2.5 install aws-sdk-s3 -v '>= 1.76.0' # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T10:09:27.965582857Z",
+                    "created_by": "RUN /bin/sh -c gem2.5 install --no-document aws-sdk-resources --pre -v '>= 2.11.562' # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T10:09:28.071413057Z",
+                    "created_by": "COPY env_parse set_ark_host set_ark_hostname set_local_dev_hostname ship /bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T10:09:28.102507938Z",
+                    "created_by": "COPY ship.d /etc/ship.d/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T10:09:28.133567649Z",
+                    "created_by": "COPY clortho-get /etc/pre-init.d/clortho-get # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T10:09:28.165275257Z",
+                    "created_by": "COPY coredump.conf /etc/systemd/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T10:09:28.165275257Z",
+                    "created_by": "ENTRYPOINT [\"/bin/ship\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T10:09:28.165275257Z",
+                    "created_by": "CMD [\"run\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T10:09:29.406405092Z",
+                    "created_by": "RUN /bin/sh -c locale-gen en_US.UTF-8 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T10:09:29.406405092Z",
+                    "created_by": "ENV LANG=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T10:09:29.406405092Z",
+                    "created_by": "LABEL repository.socrata/base-bionic=",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:548a79621a426b4eb077c926eabac5a8620c454fb230640253e1b44dc7dd7562",
+                    "sha256:9f25357b9dfc347cd6ce97c763a9368b450538e56127364e3eae233871a72e94",
+                    "sha256:9d9c8b8972a6ea8da1970542225a65b308467d946fcaa8fa7eaae7aeb9ae385c",
+                    "sha256:5aa89e94b49bf82e18bb037dc93b5255eba84865d149235207739f65652f4dfb",
+                    "sha256:f77bf90a81b479e83967f0e6a2548d9687b1f88040fab1e5f59fa944073eafd8",
+                    "sha256:e7f88da6aeb3717cb6136c3b14bfe9b68331beaa6a6345d3a7f1132a0c347200",
+                    "sha256:57544a269e52a28e019fb6b69fac9de0caea04dcfa8adf638beff987e1a280ad",
+                    "sha256:d39ea83e81ed872bba80a43761e402674bc11d88e53c488d1c7c0a2e33268378",
+                    "sha256:18a345c2e7801fd70dba8b331cc7e24f026d9113a2ff2e774301cc1bb1036d58",
+                    "sha256:a927a6947cb39f4f1df3068e607adae62f81b613ebfe5d89a3543a6973fd037d",
+                    "sha256:313b982ec58643f3492bfc6263b8348fdd89afd3c9c42c633db6494a009f9de3"
+                ]
+            }
+        }
+    }
+}

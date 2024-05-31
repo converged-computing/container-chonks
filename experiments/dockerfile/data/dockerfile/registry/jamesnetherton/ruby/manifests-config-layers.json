@@ -1,0 +1,113 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1794,
+                "digest": "sha256:6558eaa9aa4ad86b5fdc8bffd3a271872997741b9fc84f8bb978f5beeee93e6d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2811969,
+                    "digest": "sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 51011681,
+                    "digest": "sha256:5a685d86d3733be8bab99f9a7b1873ef94b13559094b947c4cd298a12fc61166"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "irb"
+                ],
+                "Image": "sha256:47be0921a41a30eab38cf5e8a883c2ea3251e3223483b416463a773f3530a0f7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "3d6a60b69832c51453deb7a5ccdb81509e554c0b96808db2c4fb8e306c9acbda",
+            "container_config": {
+                "Hostname": "3d6a60b69832",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"irb\"]"
+                ],
+                "Image": "sha256:47be0921a41a30eab38cf5e8a883c2ea3251e3223483b416463a773f3530a0f7",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2021-04-25T10:57:44.99809708Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2021-04-14T19:19:39.267885491Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:8ec69d882e7f29f0652d537557160e638168550f738d0d49f90a7ef96bf31787 in / "
+                },
+                {
+                    "created": "2021-04-14T19:19:39.643236135Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-04-25T10:57:44.595656997Z",
+                    "created_by": "/bin/sh -c apk add --no-cache --update ca-certificates ruby ruby-dev musl-dev gcc make"
+                },
+                {
+                    "created": "2021-04-25T10:57:44.99809708Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"irb\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b2d5eeeaba3a22b9b8aa97261957974a6bd65274ebd43e1d81d0a7b8b752b116",
+                    "sha256:47e9307042ed7a0ee10b9752640a0dd16a07e44665334b725abc8340a00bee7e"
+                ]
+            }
+        }
+    }
+}

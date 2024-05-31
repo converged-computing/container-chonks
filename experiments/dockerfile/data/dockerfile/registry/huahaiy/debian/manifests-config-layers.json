@@ -1,0 +1,117 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2565,
+                "digest": "sha256:c1198ed71c2dbbff4a03cc8b38d8fe553945d343cf358d9eaa8fd8879cbd12a5"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50382927,
+                    "digest": "sha256:90fe46dd819953eb995f9cc9c326130abe9dd0b3993a998e12c01d0218a0b831"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 39078512,
+                    "digest": "sha256:32183c12b6f09f1516ba41a04bf09dc9a22fe6e0707502b92ea58f110d967b7f"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Huahai Yang <hyang@juji-inc.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4705560c07ac35f15eb91930cef60bfafb99191e848bc1e6cc8ae6bcd2baa890",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "1d2902662aa8db8ce9a94bf9fb312688e935da79df26161fc96735beaeb9aabc",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "echo \"===> update...\"  &&   apt-get update &&   apt-get -y upgrade &&   apt-get -y --no-install-recommends install wget git ca-certificates &&       echo \"===> clean up...\"  &&   apt-get clean &&   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4705560c07ac35f15eb91930cef60bfafb99191e848bc1e6cc8ae6bcd2baa890",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2020-05-11T21:53:11.136260951Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2020-04-23T00:20:17.391234962Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f086177965196842af3c15f50a7f6ad7912aaa7bf73a60b1d00e3129265eec9a in / "
+                },
+                {
+                    "created": "2020-04-23T00:20:17.678021368Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-05-11T21:51:55.651998374Z",
+                    "author": "Huahai Yang <hyang@juji-inc.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Huahai Yang <hyang@juji-inc.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-05-11T21:53:11.136260951Z",
+                    "author": "Huahai Yang <hyang@juji-inc.com>",
+                    "created_by": "/bin/sh -c echo \"===> update...\"  &&   apt-get update &&   apt-get -y upgrade &&   apt-get -y --no-install-recommends install wget git ca-certificates &&       echo \"===> clean up...\"  &&   apt-get clean &&   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:e40d297cf5f89a9822af4c2f63caa2f2085d5aa188137506918e603774b083cb",
+                    "sha256:645e20f797f07b47cc6d740d5f25c27cbe54f0428d6c2be52376faa8cf5a1c72"
+                ]
+            }
+        }
+    }
+}

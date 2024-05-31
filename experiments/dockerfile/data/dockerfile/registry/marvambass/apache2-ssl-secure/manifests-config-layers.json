@@ -1,0 +1,143 @@
+{
+    "manifests": {
+        "latest": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:050752c436336a408378ac121fa80b8a5ccb863d660dc6f3140f1a786a9c7ea9",
+                    "size": 1157,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:5fdb5fcf34e6d6de37ce5fb1bc7662bdacb233fe10ab4041fb471c906221b595",
+                    "size": 1157,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:e39de0effca71129338d523e6b4018ede0f3dac858d78efe5904f4d390912b74",
+                    "size": 1157,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:b8d356a0e6f2aa034286a77ac38717debf0d37aa8a0fe3b3c2181b7f6fa52e9c",
+                    "size": 1157,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v6"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "80/tcp": {}
+                },
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "APACHE_RUN_USER=www-data",
+                    "APACHE_RUN_GROUP=www-data",
+                    "APACHE_LOG_DIR=/var/log/apache2"
+                ],
+                "Entrypoint": [
+                    "/container/scripts/entrypoint.sh"
+                ],
+                "Healthcheck": {
+                    "Test": [
+                        "CMD-SHELL",
+                        "/container/scripts/healthcheck.sh"
+                    ],
+                    "Interval": 60000000000,
+                    "Timeout": 3000000000
+                },
+                "OnBuild": null
+            },
+            "created": "2021-08-26T16:07:13.3361254Z",
+            "history": [
+                {
+                    "created": "2021-08-17T01:23:52.705123287Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b9e6354f7b545096b6cb6072a50de0dffa2232f22d1972a4679f46a7e6394cae in / "
+                },
+                {
+                    "created": "2021-08-17T01:23:53.266720779Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-08-26T16:07:11.6064685Z",
+                    "created_by": "ENV LANG=C.UTF-8 DEBIAN_FRONTEND=noninteractive APACHE_RUN_USER=www-data APACHE_RUN_GROUP=www-data APACHE_LOG_DIR=/var/log/apache2",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-08-26T16:07:11.6064685Z",
+                    "created_by": "RUN /bin/sh -c apt-get -q -y update &&     apt-get --no-install-recommends -y install runit apache2 libapache2-mod-php php openssl &&     apt-get -q -y clean &&     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* &&         rm -rf /var/www/html/*; rm -rf /etc/apache2/sites-enabled/* &&     mkdir -p /etc/apache2/external &&         sed -i 's/^ServerSignature/#ServerSignature/g' /etc/apache2/conf-enabled/security.conf &&     sed -i 's/^ServerTokens/#ServerTokens/g' /etc/apache2/conf-enabled/security.conf &&     echo \"ServerSignature Off\" >> /etc/apache2/conf-enabled/security.conf &&     echo \"ServerTokens Prod\" >> /etc/apache2/conf-enabled/security.conf &&     a2enmod ssl &&     a2enmod headers &&     echo \"SSLProtocol ALL -SSLv2 -SSLv3\" >> /etc/apache2/apache2.conf # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-08-26T16:07:12.5105352Z",
+                    "created_by": "COPY . /container/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-08-26T16:07:13.3361254Z",
+                    "created_by": "RUN /bin/sh -c cp /container/config/sites-enabled/* /etc/apache2/sites-enabled &&     chmod a+x /container/scripts/entrypoint.sh # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-08-26T16:07:13.3361254Z",
+                    "created_by": "HEALTHCHECK &{[\"CMD-SHELL\" \"/container/scripts/healthcheck.sh\"] \"1m0s\" \"3s\" \"0s\" '\\x00'}",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-08-26T16:07:13.3361254Z",
+                    "created_by": "EXPOSE map[443/tcp:{} 80/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-08-26T16:07:13.3361254Z",
+                    "created_by": "ENTRYPOINT [\"/container/scripts/entrypoint.sh\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c2ddc1bc2645ab5d982c60434d8bbc6aecee1bd4e8eee0df7fd08c96df2d58bb",
+                    "sha256:c5640dc6407ed263034e1a876edd2afd4bbe927860f7a38767a76ec408c07663",
+                    "sha256:6a8924aaaf3b44a6757d2678485fe841fcd24f4011c4240ebe343dec2a1dc3aa",
+                    "sha256:4499307fa55d599cc45b6f9074b595fbb6b62a0671701cae7f359ee18069ab52"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 1,
+            "name": "openshift/base-centos7",
+            "tag": "latest",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:8a3400b7e31a55323583e3d585b3b0be56d9f7ae563187aec96d47ef5419982a"
+                },
+                {
+                    "blobSum": "sha256:78efc9e155c4f5ac3665c4ef14339c305672468520dc0d5ad5a254ce90a1ec28"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:734fb161cf896cf5c25a9a857a4b4d267bb5a59d5acf9ba846278ab3f3d1f5d5"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:45a2e645736c4c66ef34acce2407ded21f7a9b231199d3b92d6c9776df264729"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\",\"config\":{\"Hostname\":\"1b0d6163fdc2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"STI_SCRIPTS_URL=image:///usr/libexec/s2i\",\"STI_SCRIPTS_PATH=/usr/libexec/s2i\",\"HOME=/opt/app-root/src\",\"BASH_ENV=/opt/app-root/etc/scl_enable\",\"ENV=/opt/app-root/etc/scl_enable\",\"PROMPT_COMMAND=. /opt/app-root/etc/scl_enable\"],\"Cmd\":[\"base-usage\"],\"ArgsEscaped\":true,\"Image\":\"sha256:28ae656c7bcdcb521b2328f725cbea1ec15b5959f1e9d1c8495d4b013a15af02\",\"Volumes\":null,\"WorkingDir\":\"/opt/app-root/src\",\"Entrypoint\":[\"container-entrypoint\"],\"OnBuild\":[],\"Labels\":{\"build-date\":\"20161214\",\"io.openshift.builder-base-version\":\"bfd4736\",\"io.openshift.s2i.scripts-url\":\"image:///usr/libexec/s2i\",\"io.s2i.scripts-url\":\"image:///usr/libexec/s2i\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"211fbe72ff045a276f2e57d3762b923f747b41bb16d82d55987bf9e0140cff5b\",\"container_config\":{\"Hostname\":\"1b0d6163fdc2\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"STI_SCRIPTS_URL=image:///usr/libexec/s2i\",\"STI_SCRIPTS_PATH=/usr/libexec/s2i\",\"HOME=/opt/app-root/src\",\"BASH_ENV=/opt/app-root/etc/scl_enable\",\"ENV=/opt/app-root/etc/scl_enable\",\"PROMPT_COMMAND=. /opt/app-root/etc/scl_enable\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"LABEL io.openshift.builder-base-version=bfd4736\"],\"ArgsEscaped\":true,\"Image\":\"sha256:28ae656c7bcdcb521b2328f725cbea1ec15b5959f1e9d1c8495d4b013a15af02\",\"Volumes\":null,\"WorkingDir\":\"/opt/app-root/src\",\"Entrypoint\":[\"container-entrypoint\"],\"OnBuild\":[],\"Labels\":{\"build-date\":\"20161214\",\"io.openshift.builder-base-version\":\"bfd4736\",\"io.openshift.s2i.scripts-url\":\"image:///usr/libexec/s2i\",\"io.s2i.scripts-url\":\"image:///usr/libexec/s2i\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2017-02-01T12:38:50.598676504Z\",\"docker_version\":\"1.12.2-rc2\",\"id\":\"bb81a093d169548a95e5f050a5a74322313bcb4884252b234a1a41bc7d502055\",\"os\":\"linux\",\"parent\":\"3a300bfbb590e597674d5dea9b4bcd87818ac91d81c1917c8f7f8d955a738c48\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3a300bfbb590e597674d5dea9b4bcd87818ac91d81c1917c8f7f8d955a738c48\",\"parent\":\"99c6eb8b1b328ef4a9602bac9b5bdecda1fea5cf79bc5069e4be1d179241424c\",\"created\":\"2017-02-01T12:38:48.448663571Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"base-usage\\\"]\"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"99c6eb8b1b328ef4a9602bac9b5bdecda1fea5cf79bc5069e4be1d179241424c\",\"parent\":\"24faf900b585571c6d7d569ae6bdcdd5503280878cbae5860b3c1a4f583ad7b6\",\"created\":\"2017-02-01T12:38:46.27564274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"container-entrypoint\\\"]\"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"24faf900b585571c6d7d569ae6bdcdd5503280878cbae5860b3c1a4f583ad7b6\",\"parent\":\"a4f444b1ed32590cb3f1e104a7a40e246d421d2be39fbc4bdf2d29d1d999c6aa\",\"created\":\"2017-02-01T12:38:44.153641548Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /opt/app-root/src\"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a4f444b1ed32590cb3f1e104a7a40e246d421d2be39fbc4bdf2d29d1d999c6aa\",\"parent\":\"cf7dbbd69361f2af452bd600cd5845278d43477c66e9a1cb41897d45df17f83a\",\"created\":\"2017-02-01T12:38:41.964912469Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY dir:db143564578605b4cc3f4c2825bf5ea1812354bddf5784d97bd1c3caacfdbc03 in /usr/bin/ \"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cf7dbbd69361f2af452bd600cd5845278d43477c66e9a1cb41897d45df17f83a\",\"parent\":\"f93b41062a07ceedb1c90b6b3be4c4fd605dd6b6f7792cad0b9d9bb4083d5ac4\",\"created\":\"2017-02-01T12:38:38.610543803Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rpmkeys --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7 \\u0026\\u0026   INSTALL_PKGS=\\\"autoconf   automake   bsdtar   bzip2   findutils   gcc-c++   gd-devel   gdb   gettext   git   libcurl-devel   libxml2-devel   libxslt-devel   lsof   make   mariadb-devel   mariadb-libs   openssl-devel   patch   postgresql-devel   procps-ng   scl-utils   sqlite-devel   tar   unzip   wget   which   yum-utils   zlib-devel\\\" \\u0026\\u0026   mkdir -p ${HOME}/.pki/nssdb \\u0026\\u0026   chown -R 1001:0 ${HOME}/.pki \\u0026\\u0026   yum install -y --setopt=tsflags=nodocs $INSTALL_PKGS \\u0026\\u0026   rpm -V $INSTALL_PKGS \\u0026\\u0026   yum clean all -y \\u0026\\u0026   useradd -u 1001 -r -g 0 -d ${HOME} -s /sbin/nologin       -c \\\"Default Application User\\\" default \\u0026\\u0026   chown -R 1001:0 /opt/app-root\"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f93b41062a07ceedb1c90b6b3be4c4fd605dd6b6f7792cad0b9d9bb4083d5ac4\",\"parent\":\"8944e68374c4135149e553498387db08ff3ff945df10747f605f298f47c2bcb8\",\"created\":\"2017-02-01T12:35:18.34175466Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV BASH_ENV=/opt/app-root/etc/scl_enable ENV=/opt/app-root/etc/scl_enable PROMPT_COMMAND=. /opt/app-root/etc/scl_enable\"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8944e68374c4135149e553498387db08ff3ff945df10747f605f298f47c2bcb8\",\"parent\":\"b7a9f751f2d64842b35f56eebd2f87929aa4e34d440cd551b394344972b418ba\",\"created\":\"2017-02-01T12:35:16.320837707Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:92abfe3dd1d63ab45469e0920939e615b734160a4ddb9a9b745f18093fe54a92 in /opt/app-root/etc/scl_enable \"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b7a9f751f2d64842b35f56eebd2f87929aa4e34d440cd551b394344972b418ba\",\"parent\":\"e78b2fb0ee8d9af79e3dae18cc9702c087ca9de69ae071dbb74a27becf4bf07a\",\"created\":\"2017-02-01T12:35:14.532740148Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV STI_SCRIPTS_URL=image:///usr/libexec/s2i STI_SCRIPTS_PATH=/usr/libexec/s2i HOME=/opt/app-root/src PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e78b2fb0ee8d9af79e3dae18cc9702c087ca9de69ae071dbb74a27becf4bf07a\",\"parent\":\"4ef929f1a369bd03c4c91e32b0e6d62c0fbdae92a7563aeb657b3102ade0f62a\",\"created\":\"2017-02-01T12:35:12.609704883Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  LABEL io.openshift.s2i.scripts-url=image:///usr/libexec/s2i io.s2i.scripts-url=image:///usr/libexec/s2i\"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4ef929f1a369bd03c4c91e32b0e6d62c0fbdae92a7563aeb657b3102ade0f62a\",\"parent\":\"08e1d80f2b80b86e13801c44c691fbc5812755972d44c1b2942f7f0cfa00a438\",\"created\":\"2017-02-01T12:35:10.223863578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\"]},\"author\":\"Jakub Hadvig \\u003cjhadvig@redhat.com\\u003e\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"08e1d80f2b80b86e13801c44c691fbc5812755972d44c1b2942f7f0cfa00a438\",\"parent\":\"a04895de19968b0665115154295009f75bcba85eb71dbb7fe6ae14cb8c95a475\",\"created\":\"2016-12-15T18:21:23.875991987Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"https://github.com/CentOS/sig-cloud-instance-images\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a04895de19968b0665115154295009f75bcba85eb71dbb7fe6ae14cb8c95a475\",\"parent\":\"0a444b299d5a7868b640b12020a2684a72167b6710037b6bd4933f6713b2b47c\",\"created\":\"2016-12-15T18:21:23.00781987Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20161214\"]},\"author\":\"https://github.com/CentOS/sig-cloud-instance-images\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0a444b299d5a7868b640b12020a2684a72167b6710037b6bd4933f6713b2b47c\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2016-12-15T18:21:21.197722058Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:940c77b6724c00d4208cc72169a63951eaa605672bcc5902ab2013cbae107434 in / \"]},\"author\":\"https://github.com/CentOS/sig-cloud-instance-images\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2016-08-30T18:18:45.109943798Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images\"]},\"author\":\"https://github.com/CentOS/sig-cloud-instance-images\",\"throwaway\":true}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "27WG:6WYL:PT4L:J3KM:OD5T:K2PD:ARWL:FCSB:XM5Z:M5SK:DYKG:NJHZ",
+                            "kty": "EC",
+                            "x": "ujVecnUVJsA85fs6DfxEP0m41Z-HyF_U_yK9w9GZYf4",
+                            "y": "dG2jNo8SWsRh17IPDEBUgB43g_dW-qv4saO5YFz5VJE"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "bSQ5jFGtQlOq1WV93FCpGzwFYAo64OLARxVitEyBk_64kyVC9HuywFNrFQKt5H9w1UoIPafiQ2l6ppVmEGWhWg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjExNjc4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMjM6NTU6NDZaIn0"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {}
+}

@@ -1,0 +1,185 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3906,
+                "digest": "sha256:e038066e2d37846319a7fc1d3dc15b2169db90ce20bde8bf8923225641b8c4dd"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2064911,
+                    "digest": "sha256:2fdfe1cd78c20d05774f0919be19bc1a3e4729bce219968e4188e7e0f1af679d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 292095,
+                    "digest": "sha256:b8affc648f068fa9011e1080af54b3d8c28c4b7e9ce1c00504a32fd1224a6055"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1272,
+                    "digest": "sha256:4278b14d03f21b265a51f64de7a09ca7040b853fba16c6766a743d639272e49c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 587608,
+                    "digest": "sha256:3734d7d6a808b8173424e1f8028d29be50134464fc2ba26c2ed7ef1924086092"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 754,
+                    "digest": "sha256:855d276a9065cd4ae180d8b46450f5dcb7806aeb329de4dea8859c99065279bc"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Stephen Coakley <me@stephencoakley.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:e0a7f140db8db6e900dedea498d3dfb77e63a8d0e8d127213b1bd504bf0ddbc2",
+                "Volumes": null,
+                "WorkingDir": "/srv/www",
+                "Entrypoint": [
+                    "/sbin/init"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "3060a9cd8e438f31cfd9829cc99cf58fabc7b693bd7e8978d93e57aa781d3ed1",
+            "container_config": {
+                "Hostname": "3060a9cd8e43",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 443 80"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:e0a7f140db8db6e900dedea498d3dfb77e63a8d0e8d127213b1bd504bf0ddbc2",
+                "Volumes": null,
+                "WorkingDir": "/srv/www",
+                "Entrypoint": [
+                    "/sbin/init"
+                ],
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2018-06-01T05:22:08.53098843Z",
+            "docker_version": "18.03.1-ce",
+            "history": [
+                {
+                    "created": "2017-12-01T18:48:48.77308942Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:2b00f26f6004576e2f8faeb3fb0517a14f79ea89a059fe096b54cbecf5da512e in / "
+                },
+                {
+                    "created": "2017-12-01T18:48:48.949613376Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-12-11T04:46:28.516958106Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stephen Coakley <me@stephencoakley.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-12-11T04:46:33.858032915Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c apk --no-cache upgrade &&     apk --no-cache add s6 &&     addgroup -g 9000 srv"
+                },
+                {
+                    "created": "2018-05-02T02:30:51.489505182Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:762ef5332890276c3cf5852beb6732ff6438d37dfb8673a7e0073744d0a2c152 in / "
+                },
+                {
+                    "created": "2018-05-02T02:30:51.737332309Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/sbin/init\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-05-02T02:30:52.23052532Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stephen Coakley <me@stephencoakley.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-01T05:22:07.594432759Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c apk --no-cache add nginx &&     addgroup nginx srv &&     mv /var/lib/nginx/html /srv/www &&     chown -R nginx:srv /srv/www"
+                },
+                {
+                    "created": "2018-06-01T05:22:07.896282198Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:f19019853454be56381015bcbe6b146c11bd28cb244162b839715a20ae7abb46 in / "
+                },
+                {
+                    "created": "2018-06-01T05:22:08.215006792Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /srv/www",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-01T05:22:08.53098843Z",
+                    "author": "Stephen Coakley <me@stephencoakley.com>",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 443 80",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:04a094fe844e055828cb2d64ead6bd3eb4257e7c7b5d1e2af0da89fa20472cf4",
+                    "sha256:214299c9c862418996bc5f615309f809dfddd262ffa60a4274849bbd8c41e602",
+                    "sha256:c1dcb4ab905ee5895c05911a9ea256112826147cb69e45e4b6b492ad2f328b2e",
+                    "sha256:5d6f2ef0cb47bee52ad4d77f41a5820d3eaff094bf6c16fc325157ae46decd58",
+                    "sha256:d0c39d9a6cfe8cace76b05eae684d6ddb7dd6a5cd301efafad76df242293a245"
+                ]
+            }
+        }
+    }
+}

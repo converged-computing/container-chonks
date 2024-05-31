@@ -1,0 +1,268 @@
+{
+    "manifests": {
+        "2": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2185,
+                "digest": "sha256:e4bc7fbd2144be7af391d3be610e864b811dbe6873d9fea26d434b6e11517887"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2813316,
+                    "digest": "sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 17784960,
+                    "digest": "sha256:8b8351f8a8d9f6c0237b0dfde44cbf9654da1401438ad951a6d9e492c0112a63"
+                }
+            ]
+        },
+        "3": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1283,
+                "digest": "sha256:2ecfaaf9610a00f55e48a7e0317db3f0ac22fdc8947720f7c969c5e8d983949a"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2811478,
+                    "digest": "sha256:5843afab387455b37944e709ee8c78d7520df80f8d01cf7f861aae63beeddb6b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 23102698,
+                    "digest": "sha256:64be41fcbcfff3c15bb2edc7dc979583c2b755315dec88eb2c940c6775fbd41f"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1283,
+                "digest": "sha256:944810ca36b9266834c44d9df025794a17b64fb1f692171cf643c0df0ff403c8"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2811478,
+                    "digest": "sha256:5843afab387455b37944e709ee8c78d7520df80f8d01cf7f861aae63beeddb6b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 23102763,
+                    "digest": "sha256:efcd1234467865ffc5c4e7fb23f9fd13fcf58ae952b2bff0c124842f6028bdc8"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "2",
+        "3",
+        "latest"
+    ],
+    "configs": {
+        "2": {
+            "architecture": "amd64",
+            "author": "kev <noreply@easypi.pro>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "python"
+                ],
+                "Image": "sha256:864c28afdd6a374caca869dae4ffae7079e3fc1e42fda0531bbd9de6c63202c0",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "a26e626e356e4ab6803c8183117bd1e109992067f54ed9fc876bc769eeff630c",
+            "container_config": {
+                "Hostname": "a26e626e356e",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"python\"]"
+                ],
+                "Image": "sha256:864c28afdd6a374caca869dae4ffae7079e3fc1e42fda0531bbd9de6c63202c0",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2020-05-29T19:23:53.599656271Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2020-04-24T01:05:03.608058404Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b91adb67b670d3a6ff9463e48b7def903ed516be66fc4282d22c53e41512be49 in / "
+                },
+                {
+                    "created": "2020-04-24T01:05:03.92860976Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-05-29T19:23:38.153870557Z",
+                    "author": "kev <noreply@easypi.pro>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER kev <noreply@easypi.pro>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-05-29T19:23:53.049704443Z",
+                    "author": "kev <noreply@easypi.pro>",
+                    "created_by": "/bin/sh -c set -xe     && apk add --no-cache curl python     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python"
+                },
+                {
+                    "created": "2020-05-29T19:23:53.599656271Z",
+                    "author": "kev <noreply@easypi.pro>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"python\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:3e207b409db364b595ba862cdc12be96dcdad8e36c59a03b7b3b61c946a5741a",
+                    "sha256:ada0b6f1fa88fb784b1b9bfe54610e976cce59a92ab40ab5075c934e4e58265c"
+                ]
+            }
+        },
+        "3": {
+            "architecture": "amd64",
+            "author": "kev <noreply@easypi.pro>",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "python3"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2021-07-22T22:19:02.263793157Z",
+            "history": [
+                {
+                    "created": "2021-06-15T22:19:37.639998211Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f278386b0cef68136129f5f58c52445590a417b624d62bca158d4dc926c340df in / "
+                },
+                {
+                    "created": "2021-06-15T22:19:37.842991933Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-22T22:19:02.263793157Z",
+                    "created_by": "MAINTAINER kev <noreply@easypi.pro>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-22T22:19:02.263793157Z",
+                    "created_by": "RUN /bin/sh -c set -xe     && apk add --no-cache curl python3     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python3 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-07-22T22:19:02.263793157Z",
+                    "created_by": "CMD [\"python3\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:72e830a4dff5f0d5225cdc0a320e85ab1ce06ea5673acfe8d83a7645cbd0e9cf",
+                    "sha256:c28055eaf5e6a944d87379d6e85e5530c7f4efb94f608ce54334d5591fe76800"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "author": "kev <noreply@easypi.pro>",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "python3"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2021-07-22T17:45:23.830105601Z",
+            "history": [
+                {
+                    "created": "2021-06-15T22:19:37.639998211Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f278386b0cef68136129f5f58c52445590a417b624d62bca158d4dc926c340df in / "
+                },
+                {
+                    "created": "2021-06-15T22:19:37.842991933Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-22T17:45:23.830105601Z",
+                    "created_by": "MAINTAINER kev <noreply@easypi.pro>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-22T17:45:23.830105601Z",
+                    "created_by": "RUN /bin/sh -c set -xe     && apk add --no-cache curl python3     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python3 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-07-22T17:45:23.830105601Z",
+                    "created_by": "CMD [\"python3\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:72e830a4dff5f0d5225cdc0a320e85ab1ce06ea5673acfe8d83a7645cbd0e9cf",
+                    "sha256:74930d841210e57d6aa4ce37c2c5762c8b85d8b5404c8ae3bb7b73f396e6b326"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,282 @@
+{
+    "manifests": {
+        "7.6.2023": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:6f256cc7726ab42d4acf480faa3c37920f9ef0e083ecf1fc0c93f0ee0706ce8b",
+                    "size": 1057,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:5db7379b21569a105f7af55f8686a46cfba748636afe2ec7638a224c45c956c9",
+                    "size": 1057,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:54d64d0e92233a27580df74537590da5d3d783f7c69215c3f13799088816dd5c",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:6f256cc7726ab42d4acf480faa3c37920f9ef0e083ecf1fc0c93f0ee0706ce8b",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:f8bb3279e77ba504a7e382666120a70891adfcf93863b90a4c4545f596448b62",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:5db7379b21569a105f7af55f8686a46cfba748636afe2ec7638a224c45c956c9",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        },
+        "latest": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:6f256cc7726ab42d4acf480faa3c37920f9ef0e083ecf1fc0c93f0ee0706ce8b",
+                    "size": 1057,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:5db7379b21569a105f7af55f8686a46cfba748636afe2ec7638a224c45c956c9",
+                    "size": 1057,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:ca8129feafe883628bf94638674af1f8695bc385d9c5a7c4424dbde26c06f355",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:6f256cc7726ab42d4acf480faa3c37920f9ef0e083ecf1fc0c93f0ee0706ce8b",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:e714ffd4c9dd1448a03e5924f6bb24353d55784cd5c4e2675c513c6da1047360",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:5db7379b21569a105f7af55f8686a46cfba748636afe2ec7638a224c45c956c9",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "7.6.2023",
+        "latest"
+    ],
+    "configs": {
+        "7.6.2023": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "LC_ALL=C.UTF-8",
+                    "CONDA_PREFIX=/opt/conda"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "maintainer": "Mohammad Mostafanejad,                   Molecular Sciences Software Institute"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-07-06T23:35:34.895090923Z",
+            "history": [
+                {
+                    "created": "2023-07-04T01:20:23.226436069Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4a063d4e089ef10c6806d7042a0040078674ac2db61df02df8bbb8fa4894910a in / "
+                },
+                {
+                    "created": "2023-07-04T01:20:23.581311623Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:27:54.083173531Z",
+                    "created_by": "LABEL maintainer=Mohammad Mostafanejad,                   Molecular Sciences Software Institute",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:27:54.083173531Z",
+                    "created_by": "ENV LANG=C.UTF-8 LC_ALL=C.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:27:54.083173531Z",
+                    "created_by": "RUN /bin/sh -c apt-get update -q  && apt-get install -q -y --no-install-recommends         ca-certificates         libglib2.0-0         libsm6         libxext6         libxrender1         curl         openssh-client         git         procps         wget         vim  && apt-get clean  && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-06T22:44:58.731381955Z",
+                    "created_by": "LABEL maintainer=Mohammad Mostafanejad,                   Molecular Sciences Software Institute",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:44:58.731381955Z",
+                    "created_by": "ENV CONDA_PREFIX=/opt/conda",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:44:58.731381955Z",
+                    "created_by": "ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:44:58.731381955Z",
+                    "created_by": "COPY /opt/conda /opt/conda # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-06T23:35:34.895090923Z",
+                    "created_by": "RUN /bin/sh -c echo \". ${CONDA_PREFIX}/etc/profile.d/conda.sh\" >> $HOME/.bashrc  && echo \"conda activate base\" >> $HOME/.bashrc  && mamba clean -ay  && find ${CONDA_PREFIX} -follow -type f -name '*.a' -delete  && find ${CONDA_PREFIX} -follow -type f -name '*.pyc' -delete  && find ${CONDA_PREFIX} -follow -type f -name '*.js.map' -delete # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2NvbmRhZm9yZ2UvbWFtYmFmb3JnZTpsYXRlc3QiLCJwaW4iOiJzaGEyNTY6NjM0ZGVjMjdkMzBmMmRjNDBiMTczZTAzZGY2MDg1NGZjNTY3NWEyZjhjM2U5ZTc2MzM4OWEyZDhiYzA4MTVkNSJ9LHsidHlwZSI6ImRvY2tlci1pbWFnZSIsInJlZiI6ImRvY2tlci5pby9tb2xzc2kvZGViaWFuLWJ1bGxzZXllLXNsaW0tZGV2OmxhdGVzdCIsInBpbiI6InNoYTI1NjpiNGJhZjFhZWQxODFiYmZiMzM3YjY1ZTAzYjZkZWE5NjMwMzk3NmMzM2JkNGE3M2IyZjA0ZjczYjkyMmNmMWJjIn1dfQ==",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4b3ba104e9a8f6550a1a83280c60e513e4a16747ae5d7c7cb6c318ac1fd81afb",
+                    "sha256:a05b435eaeabfb4eea6d45ff574950f64f8db27544e4038f359dd121dd89cf48",
+                    "sha256:e36d2f1f345842fa2e8c809a11f28cac0f534343d08967259cde9efe818913b3",
+                    "sha256:af39186c77fe9a621cc52d4301e5637b9cf8ecfad3429e8d69d641521c96c61b"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "LC_ALL=C.UTF-8",
+                    "CONDA_PREFIX=/opt/conda"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "maintainer": "Mohammad Mostafanejad,                   Molecular Sciences Software Institute"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-07-06T23:35:34.895090923Z",
+            "history": [
+                {
+                    "created": "2023-07-04T01:20:23.226436069Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4a063d4e089ef10c6806d7042a0040078674ac2db61df02df8bbb8fa4894910a in / "
+                },
+                {
+                    "created": "2023-07-04T01:20:23.581311623Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:27:54.083173531Z",
+                    "created_by": "LABEL maintainer=Mohammad Mostafanejad,                   Molecular Sciences Software Institute",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:27:54.083173531Z",
+                    "created_by": "ENV LANG=C.UTF-8 LC_ALL=C.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:27:54.083173531Z",
+                    "created_by": "RUN /bin/sh -c apt-get update -q  && apt-get install -q -y --no-install-recommends         ca-certificates         libglib2.0-0         libsm6         libxext6         libxrender1         curl         openssh-client         git         procps         wget         vim  && apt-get clean  && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-06T22:44:58.731381955Z",
+                    "created_by": "LABEL maintainer=Mohammad Mostafanejad,                   Molecular Sciences Software Institute",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:44:58.731381955Z",
+                    "created_by": "ENV CONDA_PREFIX=/opt/conda",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:44:58.731381955Z",
+                    "created_by": "ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-06T22:44:58.731381955Z",
+                    "created_by": "COPY /opt/conda /opt/conda # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-06T23:35:34.895090923Z",
+                    "created_by": "RUN /bin/sh -c echo \". ${CONDA_PREFIX}/etc/profile.d/conda.sh\" >> $HOME/.bashrc  && echo \"conda activate base\" >> $HOME/.bashrc  && mamba clean -ay  && find ${CONDA_PREFIX} -follow -type f -name '*.a' -delete  && find ${CONDA_PREFIX} -follow -type f -name '*.pyc' -delete  && find ${CONDA_PREFIX} -follow -type f -name '*.js.map' -delete # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2NvbmRhZm9yZ2UvbWFtYmFmb3JnZTpsYXRlc3QiLCJwaW4iOiJzaGEyNTY6NjM0ZGVjMjdkMzBmMmRjNDBiMTczZTAzZGY2MDg1NGZjNTY3NWEyZjhjM2U5ZTc2MzM4OWEyZDhiYzA4MTVkNSJ9LHsidHlwZSI6ImRvY2tlci1pbWFnZSIsInJlZiI6ImRvY2tlci5pby9tb2xzc2kvZGViaWFuLWJ1bGxzZXllLXNsaW0tZGV2OmxhdGVzdCIsInBpbiI6InNoYTI1NjpiNGJhZjFhZWQxODFiYmZiMzM3YjY1ZTAzYjZkZWE5NjMwMzk3NmMzM2JkNGE3M2IyZjA0ZjczYjkyMmNmMWJjIn1dfQ==",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4b3ba104e9a8f6550a1a83280c60e513e4a16747ae5d7c7cb6c318ac1fd81afb",
+                    "sha256:a05b435eaeabfb4eea6d45ff574950f64f8db27544e4038f359dd121dd89cf48",
+                    "sha256:e36d2f1f345842fa2e8c809a11f28cac0f534343d08967259cde9efe818913b3",
+                    "sha256:af39186c77fe9a621cc52d4301e5637b9cf8ecfad3429e8d69d641521c96c61b"
+                ]
+            }
+        }
+    }
+}

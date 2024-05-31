@@ -1,0 +1,122 @@
+{
+    "manifests": {
+        "buster": {
+            "schemaVersion": 2,
+            "config": {
+                "mediaType": "application/vnd.oci.image.config.v1+json",
+                "digest": "sha256:ca2b0780288e9c4b5649d17e4e686432d43c9551b97d9270559bdbd2e7f91814",
+                "size": 2024
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.oci.image.layer.v1.tar",
+                    "digest": "sha256:d6ff36c9ec4822c9ff8953560f7ba41653b348a9c1136755e653575f58fbded7",
+                    "size": 50396000
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                    "digest": "sha256:29284b3b644002293338c98f4b9d39f00d8d319d635e2ba4a5d26764d326833f",
+                    "size": 320
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                    "digest": "sha256:691c639fff90d1a3eeb47dd7c82d9f16d862b2fa9f61ddaaf897234daa0ccaac",
+                    "size": 249
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                    "digest": "sha256:ef2ef0c339647a9aef4d54b72a110916b614c8c3f462338b46ef6f987e80780e",
+                    "size": 14316377
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                    "digest": "sha256:4619fd7f5114a360d994b869b032f3a96ab23fb69e6959196907b6b6c615769d",
+                    "size": 8788816
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+                    "digest": "sha256:b21385c92ca770264047e10270abe3a44265ae164ce73ec46b97a353776f2b39",
+                    "size": 218
+                }
+            ]
+        }
+    },
+    "tags": [
+        "buster"
+    ],
+    "configs": {
+        "buster": {
+            "created": "2020-08-21T10:43:29.196699344Z",
+            "architecture": "amd64",
+            "os": "linux",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "LANG=C.UTF-8",
+                    "LC_ALL=C.UTF-8"
+                ],
+                "Cmd": [
+                    "bash"
+                ]
+            },
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:0ced13fcf9441aea6c4ee1defc1549772aa2df72017588a1e05bc11dd30b97b6",
+                    "sha256:97acb11112a5e7b90378386caf4765d7dc9ba4115daac529428d1edcbe6bf76b",
+                    "sha256:0fa280fcfc764220c885a4117605a0ed245ac760a76425ec87dbc3f55de5c23e",
+                    "sha256:0af195a1a42efbd9bed71990f62867dd80216c1067f19bfe13d5744b97d4abb6",
+                    "sha256:649aafedcc9b4b9bec05471f0b43f48ee319fe11b89567c34fb23727bb61b909",
+                    "sha256:df3a3187336052d255552e230c633b35886612cd3249e0f73a526677e58af878"
+                ]
+            },
+            "history": [
+                {
+                    "created": "2020-08-04T15:42:33.850643052Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4b03b5f551e3fbdf47ec609712007327828f7530cc3455c43bbcdcaf449a75a9 in / "
+                },
+                {
+                    "created": "2020-08-04T15:42:34.128304606Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-08-21T10:43:06.502372154Z",
+                    "created_by": "/bin/sh -c #(nop) ENV DEBIAN_FRONTEND noninteractive",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-08-21T10:43:07.290114287Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:7f65ce81c9ccf6ab1dc88c05f192893e1cb94ba69e828393737a67087474f2ce in /etc/apt "
+                },
+                {
+                    "created": "2020-08-21T10:43:08.435399864Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:1e8a2f0e6e01905d82b980c38993bc7eec9748665abc6aacf75271f5df4fe11b in /root "
+                },
+                {
+                    "created": "2020-08-21T10:43:16.665567957Z",
+                    "created_by": "/bin/sh -c apt-get update"
+                },
+                {
+                    "created": "2020-08-21T10:43:25.598827694Z",
+                    "created_by": "/bin/sh -c apt-get install apt-utils locales"
+                },
+                {
+                    "created": "2020-08-21T10:43:27.988104672Z",
+                    "created_by": "/bin/sh -c locale-gen C.UTF-8 && update-locale LANG=C.UTF-8"
+                },
+                {
+                    "created": "2020-08-21T10:43:29.107100606Z",
+                    "created_by": "/bin/sh -c #(nop) ENV LANG C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-08-21T10:43:29.196699344Z",
+                    "created_by": "/bin/sh -c #(nop) ENV LC_ALL C.UTF-8",
+                    "empty_layer": true
+                }
+            ]
+        }
+    }
+}

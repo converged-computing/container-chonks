@@ -1,0 +1,149 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2649,
+                "digest": "sha256:d564e9f928f5f6489a8db0e182b0fc63608d2456297e8886ee0b5fa74f92e681"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50379858,
+                    "digest": "sha256:6a75cf7ef35e598ee3b5d997a564af73e9e3c786a4c7e4071eeba83adf9633c9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 282049226,
+                    "digest": "sha256:4c5177187772ea371cc5911f26d9c85930cdf826a5c31fb702fdc4f3727dfbc1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 240,
+                    "digest": "sha256:a3ffb6bf44fc8ca3aa58f154def3682322293040f4de2051cd7496c612f18016"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 395,
+                    "digest": "sha256:431dcf9131e7405f36647c6fc38eed6c6833f1afa30b4bf1881c561bae97f8b2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 165,
+                    "digest": "sha256:18bcf4f00a5f5cfbd9c8daccf0297a1561f00be3c60eafe8b66b0255c2c9e68e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 165,
+                    "digest": "sha256:a9be83feaed34037b2f3bd2eeafc2f5d4c25fc5978b3d7963bc3a8e8ba399f46"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6af5ba5462d82f5aa3f9bba208177bef75b272953ed9b8459eb3851ab5a5e931",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "c44a9608cc1f8379e1b729f81bc87d6d13ce1021c2317f3c2f25b195574a1fde",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "ln -s /usr/bin/xvfb-chromium /usr/bin/chromium-browser"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6af5ba5462d82f5aa3f9bba208177bef75b272953ed9b8459eb3851ab5a5e931",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2019-08-15T18:44:59.455046431Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2019-08-14T00:24:13.93890526Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:bd22a8f9357bbfdeb357befd7dbf57cfcdbacd6a3297e1108afd980a336cc5f0 in / "
+                },
+                {
+                    "created": "2019-08-14T00:24:14.218177531Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-08-15T18:44:50.347528182Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y curl xvfb chromium"
+                },
+                {
+                    "created": "2019-08-15T18:44:54.885101563Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:88d42cc0a2a44e23ff4eb7d2b66633f31c2998d03d1e8786921c8521df1dec2b in /etc/apt/preferences.d/nodesource "
+                },
+                {
+                    "created": "2019-08-15T18:44:55.436311473Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:431b097532b1202d2a6511e3257d70974666435a79d7ed5c0ff55bdb3976363e in /usr/bin/xvfb-chromium "
+                },
+                {
+                    "created": "2019-08-15T18:44:57.46876428Z",
+                    "created_by": "/bin/sh -c ln -s /usr/bin/xvfb-chromium /usr/bin/google-chrome"
+                },
+                {
+                    "created": "2019-08-15T18:44:59.455046431Z",
+                    "created_by": "/bin/sh -c ln -s /usr/bin/xvfb-chromium /usr/bin/chromium-browser"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:61eb2274b1a3214830b2aaf104fa126c553aca90b0d956c7c6b3fe4cae935657",
+                    "sha256:ad1097ed123c5fe65c45e0df961beb002e50cde35467414678d6716619dca523",
+                    "sha256:ab4e835a43ea060fa37b632e10ae1e5e60561b7bef95f6f8ffcedbf90f4d6e49",
+                    "sha256:3ace45b82c335788e75baee0796b202b923fb1545ddd1e48d636fb95b9e73c5e",
+                    "sha256:15a03461a6e284f7562988dbd2667dc57ab3c67aa6c1a95d5c731ba65b9ea45a",
+                    "sha256:fe912c2705cd74891dd2dde88182e32decd137f5c1cf89ac02c13c1fc62201ff"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 1,
+            "name": "tutum/nginx",
+            "tag": "latest",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:2642b1ce8f09841b44411d79b5ee964da553c4e1eac103bc690297d3099219f9"
+                },
+                {
+                    "blobSum": "sha256:292e9d346afc409cf10e599036e902c6eb52eddff431ce74e94821697e6685b6"
+                },
+                {
+                    "blobSum": "sha256:a69b26be3eeb302b2e3ac406e72b47e73db2a72f75b9216c4c74a5ffaeb3078a"
+                },
+                {
+                    "blobSum": "sha256:fc9f65f1d0923b18fc4584513d14587a27f269c7517e129f46209457b2b402e3"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:efb63fb8dcb6a68070f734bd51cf3699c9931c585675067371fd04aaffdaaf6e"
+                },
+                {
+                    "blobSum": "sha256:995977506e98ae413f1ee6bd9ffb8c22ae166bc81c5ce37dae4af42bb333ca14"
+                },
+                {
+                    "blobSum": "sha256:faecf96fd5abda415f967e78ccdf3c1f10dd4cd67ecadd44cc5bed4e7f234a5b"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"b4ff443ee1f6a5e6a093de48b922e0e77f61d3ad362a5c1a7ddecb510da8eec6\",\"parent\":\"7303febf8b57d77d2522ba918aeebb8be01cf98dd16e9d16b956004878d4cb5e\",\"created\":\"2016-03-17T15:03:56.027239285Z\",\"container\":\"62725b8a6cbffa2c8b01a1d196f5cd1f451f5aceb6dff931877806346a958f57\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"80/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/usr/sbin/nginx\\\"]\"],\"Image\":\"7303febf8b57d77d2522ba918aeebb8be01cf98dd16e9d16b956004878d4cb5e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1\",\"author\":\"Feng Honglin \\u003chfeng@tutum.co\\u003e\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"80/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/usr/sbin/nginx\"],\"Image\":\"7303febf8b57d77d2522ba918aeebb8be01cf98dd16e9d16b956004878d4cb5e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7303febf8b57d77d2522ba918aeebb8be01cf98dd16e9d16b956004878d4cb5e\",\"parent\":\"969ed03f050501d1168a0b7c5965668bc216aa7393c7b3a7679120f62d646627\",\"created\":\"2016-03-17T15:03:55.935238691Z\",\"container\":\"53b072ad97bd763fd9f821d42373f249884910243f0a482ac17e7d57b4103b48\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"80/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 80/tcp\"],\"Image\":\"969ed03f050501d1168a0b7c5965668bc216aa7393c7b3a7679120f62d646627\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1\",\"author\":\"Feng Honglin \\u003chfeng@tutum.co\\u003e\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"80/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"969ed03f050501d1168a0b7c5965668bc216aa7393c7b3a7679120f62d646627\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"969ed03f050501d1168a0b7c5965668bc216aa7393c7b3a7679120f62d646627\",\"parent\":\"8014d5994f4e6b8db412748143b11c3a5c2068af4fce2a6abea00d7c9e1d284a\",\"created\":\"2016-03-17T15:03:55.842578709Z\",\"container\":\"0160c5b0e4ba9f1d4e091eb8a00cc81ef7c92116f1256574a3019479e630ee5c\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD dir:c306b0e14911b68b6a54523945007ad4cd3ba76a05a0d07e9a2dab65a75a7121 in /app/\"],\"Image\":\"8014d5994f4e6b8db412748143b11c3a5c2068af4fce2a6abea00d7c9e1d284a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1\",\"author\":\"Feng Honglin \\u003chfeng@tutum.co\\u003e\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"8014d5994f4e6b8db412748143b11c3a5c2068af4fce2a6abea00d7c9e1d284a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":15021}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8014d5994f4e6b8db412748143b11c3a5c2068af4fce2a6abea00d7c9e1d284a\",\"parent\":\"a87ff8906c2ea621b4f5b633273962aa8bd1fc3154f8e742080b28c4366b6597\",\"created\":\"2016-03-17T15:03:55.726042291Z\",\"container\":\"b5df3a1089955c77bafa7b61566bd26ec72932b60a96301babf16ac60776346c\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD dir:a5e85f89b852fceb99000aae0aafc52a7e0bd250800507241d038323ba3e8813 in /etc/nginx/sites-enabled/\"],\"Image\":\"a87ff8906c2ea621b4f5b633273962aa8bd1fc3154f8e742080b28c4366b6597\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1\",\"author\":\"Feng Honglin \\u003chfeng@tutum.co\\u003e\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"a87ff8906c2ea621b4f5b633273962aa8bd1fc3154f8e742080b28c4366b6597\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":223}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a87ff8906c2ea621b4f5b633273962aa8bd1fc3154f8e742080b28c4366b6597\",\"parent\":\"30544c4c42a4e22c784af50f7112fec3113bcc40609fc17d665a148e99c41636\",\"created\":\"2016-03-17T15:03:55.597843671Z\",\"container\":\"415ce72e893cdf65af2d73743da2432defb2b6e708e18a2e4c255c6f53b2f71b\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo \\\"daemon off;\\\" \\u003e\\u003e /etc/nginx/nginx.conf\"],\"Image\":\"30544c4c42a4e22c784af50f7112fec3113bcc40609fc17d665a148e99c41636\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1\",\"author\":\"Feng Honglin \\u003chfeng@tutum.co\\u003e\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"30544c4c42a4e22c784af50f7112fec3113bcc40609fc17d665a148e99c41636\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":1613}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"30544c4c42a4e22c784af50f7112fec3113bcc40609fc17d665a148e99c41636\",\"parent\":\"03fdaf424812d32015288973b163abd00f5e52e644438e1c908a696fb317b32d\",\"created\":\"2016-03-17T15:03:55.109861557Z\",\"container\":\"dc242af3f5967c7abb87a8401a728c0ff8cd48e44e94db4a373c619c1322e655\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026     apt-get install -y nginx \\u0026\\u0026     apt-get clean \\u0026\\u0026     rm -rf /var/lib/apt/lists/*\"],\"Image\":\"03fdaf424812d32015288973b163abd00f5e52e644438e1c908a696fb317b32d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1\",\"author\":\"Feng Honglin \\u003chfeng@tutum.co\\u003e\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"03fdaf424812d32015288973b163abd00f5e52e644438e1c908a696fb317b32d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":18140807}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"03fdaf424812d32015288973b163abd00f5e52e644438e1c908a696fb317b32d\",\"parent\":\"c917d6497f55cc4f4e9c33a327d6608f5c133891baba50e43a4dd941754344e3\",\"created\":\"2016-03-17T15:03:46.135620823Z\",\"container\":\"fe3cb4f5e5e28261f86bd9bdf3bffb310aaa73e9b7990b5a45f398fba1bbfe65\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER Feng Honglin \\u003chfeng@tutum.co\\u003e\"],\"Image\":\"001d664e2dd48c995aa08d92bf7423129fcd20fd382cd7b0c8017f05faf61151\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1\",\"author\":\"Feng Honglin \\u003chfeng@tutum.co\\u003e\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"001d664e2dd48c995aa08d92bf7423129fcd20fd382cd7b0c8017f05faf61151\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c917d6497f55cc4f4e9c33a327d6608f5c133891baba50e43a4dd941754344e3\",\"parent\":\"27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516\",\"created\":\"2016-03-15T23:03:17.461817635Z\",\"container\":\"88c0a7e2c591aa76690747978b99cf0bd63cbedca3956b0e7695f485e7903605\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"docker_version\":\"1.9.1\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[],\"Cmd\":[\"/bin/bash\"],\"Image\":\"27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"27955ff53489ad82d352105f6d9cb7fb0524f774b30580884fbf429b73839516\",\"parent\":\"09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e\",\"created\":\"2016-03-15T23:03:16.973088307Z\",\"container\":\"2932bb72f37d7b05a4b619c7a8b44b731623a754f67cf7407b15f056ed350419\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[],\"Cmd\":[\"/bin/sh\",\"-c\",\"sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"],\"Image\":\"09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"docker_version\":\"1.9.1\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[],\"Cmd\":null,\"Image\":\"09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":1895}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"09694f91574ea3fca8558306c55abbbd47e01b8cb9ae782c66b9682a95c7f71e\",\"parent\":\"1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02\",\"created\":\"2016-03-15T23:03:15.681198421Z\",\"container\":\"7055a8f17df57035dd325d300de1091b16624a50015a6d314e6db93bdaa44c35\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[],\"Cmd\":[\"/bin/sh\",\"-c\",\"set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"],\"Image\":\"1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"docker_version\":\"1.9.1\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[],\"Cmd\":null,\"Image\":\"1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":194533}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1b19f5a8e3aac7b4738d14654a72ff05541a4f0c44f028dfb22044b107483a02\",\"created\":\"2016-03-15T23:03:10.90840279Z\",\"container\":\"64bf666ea130e63d6043fe2900d00e54e4f8f78d52be0812ec581993f95dfb77\",\"container_config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:d272e313f84c4fc8a1b525afe487d06b7dc98732ebeb6f3eaea3228778b16d11 in /\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.9.1\",\"config\":{\"Hostname\":\"64bf666ea130\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":187763842}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "EYZS:G6AQ:6TTQ:HUQP:7E6C:VQZN:G7M7:ZYYV:TGCN:V2SX:A2CE:UMBQ",
+                            "kty": "EC",
+                            "x": "FDHEjCzKLwLdCxBSG-8T_FNnqwsCLxXgchkWVXAg490",
+                            "y": "GCLF1oc97Qj8Xniq-FTeaUVYGLNJO-STgTLWFs8l98Q"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "0ZpPwMEACFXg-zI5AQ8z5iuVjh4Qwyct9xNQXJ12UmLSrYXP_2sXGytU3SMw0-lvIRuIQZgHoQo3BspLKjiUQQ",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjE4MjM5LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTE6NTY6NThaIn0"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {}
+}

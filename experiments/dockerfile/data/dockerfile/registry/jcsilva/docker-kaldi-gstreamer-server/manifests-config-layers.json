@@ -1,0 +1,462 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5732,
+                "digest": "sha256:13d616ef11e103ea4d820037d24bf56361bf4a9895481fbc5a90140a00a62fc5"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 54262566,
+                    "digest": "sha256:3d77ce4481b119f00e53bee9b4a443469c42c224db954ddaa2e6b74cd73cd5d0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 314884898,
+                    "digest": "sha256:53457bfe6a81879e565d4a5acacadb231c5cbda46d979a7759d54f5a5ea11255"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 201590,
+                    "digest": "sha256:6fddb03358931d25a75c1668e628b5fae1d625def5be58502bff3e8353262adb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 53062218,
+                    "digest": "sha256:8e48209c42f94aa3076027c665c379751e6291232340205b3d2c6d5674cf40d7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 745,
+                    "digest": "sha256:e24641a195b55b790c2afdd4557b6ecb5155ce03733e5c396e65c7204891ea21"
+                }
+            ]
+        },
+        "master": {
+            "schemaVersion": 1,
+            "name": "jcsilva/docker-kaldi-gstreamer-server",
+            "tag": "master",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:3f2ecd4ed58926a362f34a1cba3e538067db842ecc0b34de5f2c685fc3fdd386"
+                },
+                {
+                    "blobSum": "sha256:ebbd70a0d2d64ed418e0ba673bd487dfe1de01e9accce8fd2047ec4157d592c5"
+                },
+                {
+                    "blobSum": "sha256:6582eb5c50944a5b180eeb4d7ed3e08f1bb347e774a784f5db3898163020fd0b"
+                },
+                {
+                    "blobSum": "sha256:9057224ef9e96846aade3e4897dba04ab9b09b8d2febe6d52ab18480d16e4b63"
+                },
+                {
+                    "blobSum": "sha256:8a7c69df1b7046499b9178cb568c3bf77976cc4609c2581cd496e07f5f8db8c0"
+                },
+                {
+                    "blobSum": "sha256:5d140497413143892d4aaba2b6ef8016128200472ff2522b258dcf1db1162fe2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:3b8d91fe75724cafe136236e31d5212cb322d68aa3bfc4bfda97a0a53a55e234"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"fa6e61cfe7998518bbe6fc9c5e63d2f68852cc6a57a383226c480657421abb67\",\"parent\":\"2c65f5b641c0070c86f8caabc246f57dc35b62791e4efc9550fa83f11f82d2c6\",\"created\":\"2015-11-30T02:27:16.226874113Z\",\"container\":\"c34b4acb2290f11a8db343587b8f2e406cb63a8552602d8a3cb7862e618c98e2\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo \\\"#!/bin/bash\\\" \\u003e /opt/start-worker.sh  \\u0026\\u0026     echo \\\"[ \\\\$# -eq 0 ] \\u0026\\u0026 { echo \\\\\\\"Usage: \\\\$0 master_address yaml_file\\\\\\\"; echo \\\\\\\"Ex: ./start-worker.sh ws://localhost/worker/ws/speech sample.yaml\\\\\\\"; exit 1; }\\\" \\u003e\\u003e /opt/start-worker.sh \\u0026\\u0026     echo \\\"export GST_PLUGIN_PATH=/opt/gst-kaldi-nnet2-online/src/:/opt/kaldi/src/gst-plugin/\\\" \\u003e\\u003e /opt/start-worker.sh \\u0026\\u0026     echo \\\"python /opt/kaldi-gstreamer-server/kaldigstserver/worker.py -u \\\\$1 -c \\\\$2 \\u0026\\\" \\u003e\\u003e /opt/start-worker.sh \\u0026\\u0026     chmod +x /opt/start-worker.sh \\u0026\\u0026     echo \\\"#!/bin/bash\\\" \\u003e /opt/terminate-worker.sh  \\u0026\\u0026     echo \\\"ps axf | grep worker.py | grep -v grep | awk '{print \\\\\\\"kill -15 \\\\\\\" \\\\$1}' | sh\\\" \\u003e\\u003e /opt/terminate-worker.sh \\u0026\\u0026     chmod +x /opt/terminate-worker.sh\"],\"Image\":\"2c65f5b641c0070c86f8caabc246f57dc35b62791e4efc9550fa83f11f82d2c6\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3-rc4\",\"author\":\"Eduardo Silva \\u003czedudu@gmail.com\\u003e\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"2c65f5b641c0070c86f8caabc246f57dc35b62791e4efc9550fa83f11f82d2c6\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":401}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"2c65f5b641c0070c86f8caabc246f57dc35b62791e4efc9550fa83f11f82d2c6\",\"parent\":\"91a8ee66151a7c08c42a40a3afd665f8e14a40056fc380d6bb94271cfe58dad5\",\"created\":\"2015-11-30T02:27:12.435296254Z\",\"container\":\"9ed66b44c08a88229ce95e11780f9ff39ef6a8ee2a9bfdef4eb296348ade4afb\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get clean autoclean \\u0026\\u0026 apt-get autoremove -y \\u0026\\u0026 rm -rf /var/lib/{apt,dpkg,cache,log}/\"],\"Image\":\"91a8ee66151a7c08c42a40a3afd665f8e14a40056fc380d6bb94271cfe58dad5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3-rc4\",\"author\":\"Eduardo Silva \\u003czedudu@gmail.com\\u003e\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"91a8ee66151a7c08c42a40a3afd665f8e14a40056fc380d6bb94271cfe58dad5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"91a8ee66151a7c08c42a40a3afd665f8e14a40056fc380d6bb94271cfe58dad5\",\"parent\":\"1acb400041f81b074f7bfaa4093b9e2ba1413d4be42690e5b9724c063323622c\",\"created\":\"2015-11-30T02:27:00.594246614Z\",\"container\":\"3189595147bc39aacf79c890ec8332f5ab7570e169585c133086720bd832978f\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"cd /opt \\u0026\\u0026     git clone https://github.com/kaldi-asr/kaldi \\u0026\\u0026     cd /opt/kaldi/tools \\u0026\\u0026     make \\u0026\\u0026     ./install_portaudio.sh \\u0026\\u0026     cd /opt/kaldi/src \\u0026\\u0026 ./configure --shared \\u0026\\u0026     sed -i '/-g # -O0 -DKALDI_PARANOID/c\\\\-O3 -DNDEBUG' kaldi.mk \\u0026\\u0026     make depend \\u0026\\u0026 make \\u0026\\u0026     cd /opt/kaldi/src/online \\u0026\\u0026 make depend \\u0026\\u0026 make \\u0026\\u0026     cd /opt/kaldi/src/gst-plugin \\u0026\\u0026 make depend \\u0026\\u0026 make \\u0026\\u0026     cd /opt \\u0026\\u0026     git clone https://github.com/alumae/gst-kaldi-nnet2-online.git \\u0026\\u0026     cd /opt/gst-kaldi-nnet2-online/src \\u0026\\u0026     sed -i '/KALDI_ROOT?=\\\\/home\\\\/tanel\\\\/tools\\\\/kaldi-trunk/c\\\\KALDI_ROOT?=\\\\/opt\\\\/kaldi' Makefile \\u0026\\u0026     make depend \\u0026\\u0026 make \\u0026\\u0026     rm -rf /opt/gst-kaldi-nnet2-online/.git/ \\u0026\\u0026     find /opt/gst-kaldi-nnet2-online/src/ -type f -not -name '*.so' -delete \\u0026\\u0026     rm -rf /opt/kaldi/.git \\u0026\\u0026     rm -rf /opt/kaldi/egs/ /opt/kaldi/windows/ /opt/kaldi/misc/ \\u0026\\u0026     find /opt/kaldi/src/ -type f -not -name '*.so' -delete \\u0026\\u0026     find /opt/kaldi/tools/ -type f -not -name '*.so' -delete \\u0026\\u0026     cd /opt \\u0026\\u0026 git clone https://github.com/alumae/kaldi-gstreamer-server.git \\u0026\\u0026     rm -rf /opt/kaldi-gstreamer-server/.git/ \\u0026\\u0026     rm -rf /opt/kaldi-gstreamer-server/test/\"],\"Image\":\"1acb400041f81b074f7bfaa4093b9e2ba1413d4be42690e5b9724c063323622c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3-rc4\",\"author\":\"Eduardo Silva \\u003czedudu@gmail.com\\u003e\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"1acb400041f81b074f7bfaa4093b9e2ba1413d4be42690e5b9724c063323622c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":21565844}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1acb400041f81b074f7bfaa4093b9e2ba1413d4be42690e5b9724c063323622c\",\"parent\":\"7e63228ac577f07216277729a1e147b2e4d93322acba04e59ca17c092532330d\",\"created\":\"2015-11-30T01:17:32.980506104Z\",\"container\":\"2a9d793e97058b279b8e7f019c386a9d9cd05c89705faf8231e7db9c66352670\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"cd /opt \\u0026\\u0026 wget http://www.digip.org/jansson/releases/jansson-2.7.tar.bz2 \\u0026\\u0026     bunzip2 -c jansson-2.7.tar.bz2 | tar xf -  \\u0026\\u0026     cd jansson-2.7 \\u0026\\u0026     ./configure \\u0026\\u0026 make \\u0026\\u0026 make check \\u0026\\u0026  make install \\u0026\\u0026     echo \\\"/usr/local/lib\\\" \\u003e\\u003e /etc/ld.so.conf.d/jansson.conf \\u0026\\u0026 ldconfig \\u0026\\u0026     rm /opt/jansson-2.7.tar.bz2 \\u0026\\u0026 rm -rf /opt/jansson-2.7\"],\"Image\":\"7e63228ac577f07216277729a1e147b2e4d93322acba04e59ca17c092532330d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3-rc4\",\"author\":\"Eduardo Silva \\u003czedudu@gmail.com\\u003e\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7e63228ac577f07216277729a1e147b2e4d93322acba04e59ca17c092532330d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":645492}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7e63228ac577f07216277729a1e147b2e4d93322acba04e59ca17c092532330d\",\"parent\":\"dee745b51475f67dd71b289b1e126334059053db7f6785c6b31e5adac51b6b26\",\"created\":\"2015-11-30T01:17:03.246700475Z\",\"container\":\"c9e3555657ec509d64f37232a3bb2298b1e508a89eac1a76d5e30e86cdfc9397\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"pip install ws4py==0.3.2 \\u0026\\u0026     pip install tornado \\u0026\\u0026     ln -s /usr/bin/python2.7 /usr/bin/python ; ln -s -f bash /bin/sh\"],\"Image\":\"dee745b51475f67dd71b289b1e126334059053db7f6785c6b31e5adac51b6b26\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3-rc4\",\"author\":\"Eduardo Silva \\u003czedudu@gmail.com\\u003e\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"dee745b51475f67dd71b289b1e126334059053db7f6785c6b31e5adac51b6b26\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":3991322}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"dee745b51475f67dd71b289b1e126334059053db7f6785c6b31e5adac51b6b26\",\"parent\":\"23ff41eec0b074aef351bee6fc01f80b8d65153a8d94f92797ea2b47fa76af3a\",\"created\":\"2015-11-30T01:16:39.831312869Z\",\"container\":\"faac5599e8ef0436b5c36929c4dcff2c0a7e19386704376c43180f73e0f33e9a\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y      autoconf     automake     bzip2     g++     git     gstreamer1.0-plugins-good     gstreamer1.0-tools     gstreamer1.0-pulseaudio     gstreamer1.0-plugins-bad     gstreamer1.0-plugins-base     gstreamer1.0-plugins-ugly      libatlas3-base     libgstreamer1.0-dev     libtool-bin     make     python2.7     python-pip     python-yaml     python-simplejson     python-gi     subversion     wget     zlib1g-dev\"],\"Image\":\"23ff41eec0b074aef351bee6fc01f80b8d65153a8d94f92797ea2b47fa76af3a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3-rc4\",\"author\":\"Eduardo Silva \\u003czedudu@gmail.com\\u003e\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"23ff41eec0b074aef351bee6fc01f80b8d65153a8d94f92797ea2b47fa76af3a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":665860261}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"23ff41eec0b074aef351bee6fc01f80b8d65153a8d94f92797ea2b47fa76af3a\",\"parent\":\"ea6bab360f5604439718bbcbc77b7dabc43b137a97e4fc193a8ca4f9ef25b6ad\",\"created\":\"2015-11-30T01:11:58.950344078Z\",\"container\":\"f6266b0ee60ac3810b2b73024db1d9a4dcb3c89e27b1bcbf431d52f434a4fe19\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER Eduardo Silva \\u003czedudu@gmail.com\\u003e\"],\"Image\":\"a604b236bcdef9017d383783d75c98a681b79fe8dfd868941e7b15246a2f9587\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3-rc4\",\"author\":\"Eduardo Silva \\u003czedudu@gmail.com\\u003e\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"a604b236bcdef9017d383783d75c98a681b79fe8dfd868941e7b15246a2f9587\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ea6bab360f5604439718bbcbc77b7dabc43b137a97e4fc193a8ca4f9ef25b6ad\",\"parent\":\"5679b9b90e0939cfc7943db37daceb22006f76d9a774fdf46b898827d0eeff37\",\"created\":\"2015-11-20T00:21:33.234293776Z\",\"container\":\"142e67a46446b40df81f961f6efadc6be00b0321f7048d165757803c0caa083f\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"5679b9b90e0939cfc7943db37daceb22006f76d9a774fdf46b898827d0eeff37\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"5679b9b90e0939cfc7943db37daceb22006f76d9a774fdf46b898827d0eeff37\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5679b9b90e0939cfc7943db37daceb22006f76d9a774fdf46b898827d0eeff37\",\"created\":\"2015-11-20T00:21:30.796039846Z\",\"container\":\"11aafb97cfeb9dabaea9cec0e107aed53953d5fb1115de1002208e6d23310d0c\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:5afd8eec1dc1e7666dcacca7842e44147031003b4e85bd7d9e5122d241295da6 in /\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":125112192}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "4SPX:4XUI:5TYD:XCJZ:HHKT:EVPM:N2VQ:SMYU:TKBW:JKVN:GWDN:CD5N",
+                            "kty": "EC",
+                            "x": "WrNAVeyz0HEBKc1jRv4hsXPAoMGbkfNauY3zZvKqt30",
+                            "y": "REeYcyMFOslJwyTBl0UQQf8LKgQzx_TqZcVEulXI8Gs"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "6wObv0pkJKjhfF_sXvyGGVGbtDTjd-AaWKiWG1Ovv28cuxwYLKXLI6smmZ8BRTK_PkWq0rk8jlc1S7hxzOIo5g",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjE3NDYzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTQ6Mjg6MzdaIn0"
+                }
+            ]
+        },
+        "tedlium": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 7722,
+                "digest": "sha256:90fa9f8eaba81b1284cdda0dbd0d06bcc12bb9416554bb6bc7416a337ac7acb7"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 51352982,
+                    "digest": "sha256:3b8d91fe75724cafe136236e31d5212cb322d68aa3bfc4bfda97a0a53a55e234"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 302482168,
+                    "digest": "sha256:20e0c3ecd00b8dcae82136f8f5bce8c694f6dccd407f273412b123544f29a906"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 198999,
+                    "digest": "sha256:a6e7584f5eca8f721e2efeb2afc4c23ba0dc8930e29e12e866e40a6e19f897fa"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 24736804,
+                    "digest": "sha256:57b2092b080f6bad0fa4897e1acf367cb8ac7d74fad56c94d0d6b07bb84e5748"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 736,
+                    "digest": "sha256:0e040c7c2bc9525c6bb095c5c460f23967a676e03cefcaab50514762e045d328"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3094690799,
+                    "digest": "sha256:c487230839983bcbdfc54f1ab8e0d00cd404b67265e5171a2552922c31d00a32"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1054281,
+                    "digest": "sha256:c6e4e605352732f68ab86441d47581f3fbc2a96065cede1fcee40827fe932cc0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 448,
+                    "digest": "sha256:5ff0d70fca85ea6e8f7f9bfb3d5298b7ae34c0daffd6364f225d2e7f18ec50e1"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest",
+        "master",
+        "tedlium"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Eduardo Silva <zedudu@gmail.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:28e9143110e901d3eeb0ab61d50b8703ed871f1430288686c32478db71ed09a7",
+                "Volumes": null,
+                "WorkingDir": "/opt",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "d059f777394abdc9725c8d1f334fd12f8d5a038e4ae07a47660071912830cc16",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "chmod +x /opt/start.sh &&     chmod +x /opt/stop.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:28e9143110e901d3eeb0ab61d50b8703ed871f1430288686c32478db71ed09a7",
+                "Volumes": null,
+                "WorkingDir": "/opt",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2018-06-13T15:12:41.808879402Z",
+            "docker_version": "18.05.0-ce",
+            "history": [
+                {
+                    "created": "2018-04-28T06:44:15.690554988Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:3e6141c0c9cb74b14a281eb3ab7aaf162a625733e652c3948b323bb2ec8b4343 in / "
+                },
+                {
+                    "created": "2018-04-28T06:44:16.202044334Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T10:38:20.595394579Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Eduardo Silva <zedudu@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T10:55:45.115655873Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y      autoconf     automake     bzip2     g++     git     gstreamer1.0-plugins-good     gstreamer1.0-tools     gstreamer1.0-pulseaudio     gstreamer1.0-plugins-bad     gstreamer1.0-plugins-base     gstreamer1.0-plugins-ugly      libatlas3-base     libgstreamer1.0-dev     libtool-bin     make     python2.7     python3     python-pip     python-yaml     python-simplejson     python-gi     subversion     wget     zlib1g-dev &&     apt-get clean autoclean &&     apt-get autoremove -y &&     pip install ws4py==0.3.2 &&     pip install tornado &&     ln -s /usr/bin/python2.7 /usr/bin/python ; ln -s -f bash /bin/sh"
+                },
+                {
+                    "created": "2018-06-13T10:55:47.076995741Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /opt",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T10:56:08.065373329Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c wget http://www.digip.org/jansson/releases/jansson-2.7.tar.bz2 &&     bunzip2 -c jansson-2.7.tar.bz2 | tar xf -  &&     cd jansson-2.7 &&     ./configure && make && make check &&  make install &&     echo \"/usr/local/lib\" >> /etc/ld.so.conf.d/jansson.conf && ldconfig &&     rm /opt/jansson-2.7.tar.bz2 && rm -rf /opt/jansson-2.7"
+                },
+                {
+                    "created": "2018-06-13T15:12:37.554592064Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c git clone https://github.com/kaldi-asr/kaldi &&     cd /opt/kaldi/tools &&     make -j`nproc` &&     ./install_portaudio.sh &&     cd /opt/kaldi/src && ./configure --shared &&     sed -i '/-g # -O0 -DKALDI_PARANOID/c\\-O3 -DNDEBUG' kaldi.mk &&     make depend && make -j`nproc` &&     cd /opt/kaldi/src/online && make depend && make &&     cd /opt/kaldi/src/gst-plugin && make depend && make &&     cd /opt &&     git clone https://github.com/alumae/gst-kaldi-nnet2-online.git &&     cd /opt/gst-kaldi-nnet2-online/src &&     sed -i '/KALDI_ROOT?=\\/home\\/tanel\\/tools\\/kaldi-trunk/c\\KALDI_ROOT?=\\/opt\\/kaldi' Makefile &&     make depend && make -j`nproc` &&     rm -rf /opt/gst-kaldi-nnet2-online/.git/ &&     find /opt/gst-kaldi-nnet2-online/src/ -type f -not -name '*.so' -delete &&     rm -rf /opt/kaldi/.git &&     rm -rf /opt/kaldi/egs/ /opt/kaldi/windows/ /opt/kaldi/misc/ &&     find /opt/kaldi/src/ -type f -not -name '*.so' -delete &&     find /opt/kaldi/tools/ -type f \\( -not -name '*.so' -and -not -name '*.so*' \\) -delete &&     cd /opt && git clone https://github.com/alumae/kaldi-gstreamer-server.git &&     rm -rf /opt/kaldi-gstreamer-server/.git/ &&     rm -rf /opt/kaldi-gstreamer-server/test/"
+                },
+                {
+                    "created": "2018-06-13T15:12:39.000217536Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:6a21acc4020aa415f58ebb66a000961c3cb630c46f0a162cb524ddb4625a5e00 in /opt/ "
+                },
+                {
+                    "created": "2018-06-13T15:12:41.808879402Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c chmod +x /opt/start.sh &&     chmod +x /opt/stop.sh",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2c833f307fd8f18a378b71d3c43c575fabdb88955a2198662938ac2a08a99928",
+                    "sha256:f7c6cd10e0ced63f61ba54661e6af350949b81db17623a09d5133148e2cf9c10",
+                    "sha256:c0e61a0bf66cfc7855cc7d5633a4d1bf4245777e5b2dd7a5145cc8902cd14e03",
+                    "sha256:ca8f79612e1c3bffab614d12d0ca7a28ad6fc296d3e0180a60915b0372373b09",
+                    "sha256:1363d200c7dd2ecfef0bfa0ab9bad03734bb97662d5dccaa0b884f159d4786b9"
+                ]
+            }
+        },
+        "tedlium": {
+            "architecture": "amd64",
+            "author": "Eduardo Silva <zedudu@gmail.com>",
+            "config": {
+                "Hostname": "11aafb97cfeb",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/usr/bin/supervisord"
+                ],
+                "Image": "sha256:f818f231f5a15e7d80cc8a57ef7663716da1d9342a871d318fc61ea6752752db",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "df0c3f321e1c73719f030e7a42d0da366acdf6965dae0e4f3aa3bc888b3e3451",
+            "container_config": {
+                "Hostname": "11aafb97cfeb",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/usr/bin/supervisord\"]"
+                ],
+                "Image": "sha256:f818f231f5a15e7d80cc8a57ef7663716da1d9342a871d318fc61ea6752752db",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2016-09-04T12:43:29.90594012Z",
+            "docker_version": "1.12.1",
+            "history": [
+                {
+                    "created": "2015-11-20T00:21:30.796039846Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:5afd8eec1dc1e7666dcacca7842e44147031003b4e85bd7d9e5122d241295da6 in /"
+                },
+                {
+                    "created": "2015-11-20T00:21:33.234293776Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]"
+                },
+                {
+                    "created": "2015-12-03T22:02:33.233496055Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) MAINTAINER Eduardo Silva <zedudu@gmail.com>"
+                },
+                {
+                    "created": "2015-12-03T22:07:18.548775721Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y      autoconf     automake     bzip2     g++     git     gstreamer1.0-plugins-good     gstreamer1.0-tools     gstreamer1.0-pulseaudio     gstreamer1.0-plugins-bad     gstreamer1.0-plugins-base     gstreamer1.0-plugins-ugly      libatlas3-base     libgstreamer1.0-dev     libtool-bin     make     python2.7     python-pip     python-yaml     python-simplejson     python-gi     subversion     wget     zlib1g-dev &&     apt-get clean autoclean &&     apt-get autoremove -y &&     pip install ws4py==0.3.2 &&     pip install tornado &&     ln -s /usr/bin/python2.7 /usr/bin/python ; ln -s -f bash /bin/sh"
+                },
+                {
+                    "created": "2015-12-03T22:08:05.587629005Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c cd /opt && wget http://www.digip.org/jansson/releases/jansson-2.7.tar.bz2 &&     bunzip2 -c jansson-2.7.tar.bz2 | tar xf -  &&     cd jansson-2.7 &&     ./configure && make && make check &&  make install &&     echo \"/usr/local/lib\" >> /etc/ld.so.conf.d/jansson.conf && ldconfig &&     rm /opt/jansson-2.7.tar.bz2 && rm -rf /opt/jansson-2.7"
+                },
+                {
+                    "created": "2015-12-03T23:23:45.116060624Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c cd /opt &&     git clone https://github.com/kaldi-asr/kaldi &&     cd /opt/kaldi/tools &&     make &&     ./install_portaudio.sh &&     cd /opt/kaldi/src && ./configure --shared &&     sed -i '/-g # -O0 -DKALDI_PARANOID/c\\-O3 -DNDEBUG' kaldi.mk &&     make depend && make &&     cd /opt/kaldi/src/online && make depend && make &&     cd /opt/kaldi/src/gst-plugin && make depend && make &&     cd /opt &&     git clone https://github.com/alumae/gst-kaldi-nnet2-online.git &&     cd /opt/gst-kaldi-nnet2-online/src &&     sed -i '/KALDI_ROOT?=\\/home\\/tanel\\/tools\\/kaldi-trunk/c\\KALDI_ROOT?=\\/opt\\/kaldi' Makefile &&     make depend && make &&     rm -rf /opt/gst-kaldi-nnet2-online/.git/ &&     find /opt/gst-kaldi-nnet2-online/src/ -type f -not -name '*.so' -delete &&     rm -rf /opt/kaldi/.git &&     rm -rf /opt/kaldi/egs/ /opt/kaldi/windows/ /opt/kaldi/misc/ &&     find /opt/kaldi/src/ -type f -not -name '*.so' -delete &&     find /opt/kaldi/tools/ -type f \\( -not -name '*.so' -and -not -name '*.so*' \\) -delete &&     cd /opt && git clone https://github.com/alumae/kaldi-gstreamer-server.git &&     rm -rf /opt/kaldi-gstreamer-server/.git/ &&     rm -rf /opt/kaldi-gstreamer-server/test/"
+                },
+                {
+                    "created": "2015-12-03T23:23:49.088768466Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:0c6694098bf57a611044232c05bd3fc0567b106fbe73969b03c0a8df6540f416 in /opt/"
+                },
+                {
+                    "created": "2015-12-03T23:23:52.688393912Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c chmod +x /opt/start.sh &&     chmod +x /opt/stop.sh"
+                },
+                {
+                    "created": "2016-09-04T02:57:03.625903313Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Eduardo Silva <zedudu@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-04T05:28:07.93013129Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c mkdir -p /opt/models && cd /opt/models &&     wget https://phon.ioc.ee/~tanela/tedlium_nnet_ms_sp_online.tgz &&     tar -zxvf tedlium_nnet_ms_sp_online.tgz &&     wget https://raw.githubusercontent.com/alumae/kaldi-gstreamer-server/master/sample_english_nnet2.yaml -P /opt/models &&     find /opt/models/ -type f | xargs sed -i 's:test:/opt:g' &&     sed -i 's:full-post-processor:#full-post-processor:g' /opt/models/sample_english_nnet2.yaml"
+                },
+                {
+                    "created": "2016-09-04T05:29:43.648174197Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get install -y supervisor &&     apt-get clean autoclean &&     apt-get autoremove -y &&     rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2016-09-04T12:43:03.462441519Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY file:b52e59f9ce1e0adcc2551b4e556aae67be23b94d9a730aec65e4d2b62e25645a in /etc/supervisor/conf.d/supervisord.conf "
+                },
+                {
+                    "created": "2016-09-04T12:43:13.181972652Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 80/tcp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-04T12:43:29.90594012Z",
+                    "author": "Eduardo Silva <zedudu@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/usr/bin/supervisord\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:eb5e3e1e73517ab6e89de6cd22698e562593009bced4d2873188d1fb6d64cc4a",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:74d770846b32e0d225c5409977bbd1ab33292369ef8b7faad812527503ef10e7",
+                    "sha256:f1a86886a80184cd2cca50a75757b0c0906c30070f612f21870bce04eae25aee",
+                    "sha256:31c2bf3906af2e3068eca1337f32a1c81ffe9e4e2f9211ffd6b242a8ddf38e90",
+                    "sha256:37299616cb11b0a09f6d72498ff3765aed0bfe2077fea29d1c133a0918533c2c",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:b317173b00a50cb9b2e551d3c1a2613c1742279ac4d6d3978a75ed67dad0cef2",
+                    "sha256:d507e3ed5e65c775dfd607439bc831b90bb5617253c187f143ab2d9b1f4e7812",
+                    "sha256:ed0baa848ccf4b3f378f20660d1ee50b3f9e023855c4111218d3edae0e561e57"
+                ]
+            }
+        }
+    }
+}

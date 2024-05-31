@@ -1,0 +1,258 @@
+{
+    "manifests": {
+        "debug": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2660,
+                "digest": "sha256:6b9f37217563c4d1ddf7a0f8add88d96bb476c77c4366547091e0a9a1d2db821"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2796860,
+                    "digest": "sha256:188c0c94c7c576fff0792aca7ec73d67a2f7f4cb3a6e53a84559337260b36964"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6589946,
+                    "digest": "sha256:9921bfc8335ae5fc0885aaf7696d76663d843f6a05789841a6fd7a0e0b7c23c6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 8763293,
+                    "digest": "sha256:bbc50e489ac126589e1e21afc738e90eec65037cc4cf70ec1cde4d43216a665a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3150333,
+                    "digest": "sha256:f975c6a2039ebcf14e30fea64ed37093319530be013921b59faac368d24abc5e"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2659,
+                "digest": "sha256:b38fcfcc2ea1ec72c0acef88535d8440fe209b8e0c6b702317b1fe16b8172daf"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2764173,
+                    "digest": "sha256:9123ac7c32f74759e6283f04dbf571f18246abe5bb2c779efcb32cd50f3ff13c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6314040,
+                    "digest": "sha256:c35c9d7fae40d54e0aa5de803a5e69655f74ca812c8dcd12beb421dd80daae26"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 8710955,
+                    "digest": "sha256:70b28b8d26d6212bb56d0ca192cce7623db21edf73fd61d0eb53c573cec1f502"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3182905,
+                    "digest": "sha256:b179e0e8bb4b38aec850373146af42c42cc22a94b18a19d3fdf7af3ff6d824b3"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "debug",
+        "latest"
+    ],
+    "configs": {
+        "debug": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:d6493fe5f3b6847054e1bdb2a14c8967bf8508272188093db4ccde5c425e8027",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY dir:ec1df26584b9b8072c14af393cba477682fb97e332b723a8bdbee683576941b0 in /usr/local/bin "
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:d6493fe5f3b6847054e1bdb2a14c8967bf8508272188093db4ccde5c425e8027",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2020-11-03T16:24:07.225247945Z",
+            "docker_version": "19.03.13",
+            "history": [
+                {
+                    "created": "2020-10-22T02:19:24.33416307Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f17f65714f703db9012f00e5ec98d0b2541ff6147c2633f7ab9ba659d0c507f4 in / "
+                },
+                {
+                    "created": "2020-10-22T02:19:24.499382102Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-03T16:24:01.557285925Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-03T16:24:04.548352913Z",
+                    "created_by": "/bin/sh -c apk --no-cache --update-cache add     libgfortran openssh-client  &&    apk --no-cache --update-cache add     -X http://dl-cdn.alpinelinux.org/alpine/edge/main     numactl &&    apk --no-cache --update-cache add     -X http://dl-cdn.alpinelinux.org/alpine/edge/testing     openmpi     openmpi-dev"
+                },
+                {
+                    "created": "2020-11-03T16:24:06.732146631Z",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:ed266dc109613cd8b66f7206257e2287a9848408bfa851aef50676a12f11d07f in /usr/local/lib/ "
+                },
+                {
+                    "created": "2020-11-03T16:24:07.225247945Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:ec1df26584b9b8072c14af393cba477682fb97e332b723a8bdbee683576941b0 in /usr/local/bin "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:ace0eda3e3be35a979cec764a3321b4c7d0b9e4bb3094d20d3ff6782961a8d54",
+                    "sha256:0c2da388f08cec96934cec27965038d189a3889e29ffbeb0408d833359dd962c",
+                    "sha256:53237a27ff8dcc3b93e179d336db767448afd38fe7e096930d941625a2fd5dc8",
+                    "sha256:122e26d63a616d03206998a5d653715c77ec6356d3e3e02ad65d92521b27b960"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:8ee3e4f61620ec1e7f27770b5a5f7494a0e4868781fb17c686b83996577dfc4d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY dir:17852c43135735d1596e0aef97749ba1f5f6f965e5ff1ea2c524f094822833a0 in /usr/local/bin "
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:8ee3e4f61620ec1e7f27770b5a5f7494a0e4868781fb17c686b83996577dfc4d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2020-04-15T10:36:40.350262923Z",
+            "docker_version": "19.03.6",
+            "history": [
+                {
+                    "created": "2020-01-23T16:53:17.56318613Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f4f85ec73d7cc949662413419f8eafb31dabaa6e12cd21b7c8d5a9ef0d5b9681 in / "
+                },
+                {
+                    "created": "2020-01-23T16:53:17.710240502Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-04-15T10:36:31.591911094Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-04-15T10:36:38.495372714Z",
+                    "created_by": "/bin/sh -c apk --no-cache --update-cache add     libgfortran openssh-client  &&    apk --no-cache --update-cache add     -X http://dl-cdn.alpinelinux.org/alpine/edge/main     numactl &&    apk --no-cache --update-cache add     -X http://dl-cdn.alpinelinux.org/alpine/edge/testing     openmpi     openmpi-dev"
+                },
+                {
+                    "created": "2020-04-15T10:36:39.973118143Z",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:295af373bc6e15505b9f0c7d0cb5891f5bdb8382450d70f5caeb030324ad891b in /usr/local/lib/ "
+                },
+                {
+                    "created": "2020-04-15T10:36:40.350262923Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:17852c43135735d1596e0aef97749ba1f5f6f965e5ff1ea2c524f094822833a0 in /usr/local/bin "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:39db6acceed35328fae0746f9125ee85ea6e3600ed2c35b81fff757783b30209",
+                    "sha256:2facf8d6697cc4d8e2b3b6f333c2e22b7d505eb21d95776bb0777e7256467c76",
+                    "sha256:bf5a2199555e8bb94d9da01c63acdeb04e3dd49939ffa13788ffd3c57bb451a4",
+                    "sha256:471d3e4f51d18a456d210bd1ced85350ee22f7cea850f3e36f46604f64e1e6bb"
+                ]
+            }
+        }
+    }
+}

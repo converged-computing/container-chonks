@@ -1,0 +1,249 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3167,
+                "digest": "sha256:12b483868779b4e66c603af45ea555d18cbfe91a0dc92d071f646307e3f62b8e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 55046771,
+                    "digest": "sha256:1e4aec178e0864db93a6f97a20bde3445871a4562c1801185eca1238d3a0e80d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 25225528,
+                    "digest": "sha256:fe380138b19a346d540b2f4668d057c47b099e34bcf18b0031b9eba8916c546c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 53980,
+                    "digest": "sha256:0f2ac2a78c2408b985b2a090dc046e5fbf021c62c661f91d1f8a29105d3b0640"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 104284500,
+                    "digest": "sha256:810c7221239076058406c30135f087610f62705c2d505ea4b28b18ae14d15e38"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3681,
+                    "digest": "sha256:346dba272b74d942354c7af4779a1f8d33062ea6babf4fbc1b7ddc1a3187a164"
+                }
+            ]
+        },
+        "onbuild-latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3848,
+                "digest": "sha256:9ea9886982211406ffce4d53b110edc62d9a8c56be5fbb6579b47e2f1e03c84d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 55046771,
+                    "digest": "sha256:1e4aec178e0864db93a6f97a20bde3445871a4562c1801185eca1238d3a0e80d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 25225528,
+                    "digest": "sha256:fe380138b19a346d540b2f4668d057c47b099e34bcf18b0031b9eba8916c546c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 53980,
+                    "digest": "sha256:0f2ac2a78c2408b985b2a090dc046e5fbf021c62c661f91d1f8a29105d3b0640"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 95814780,
+                    "digest": "sha256:13fe0714713d9ddc6ff43851f3227921448ff2120667fdd389d1c85c1fec20da"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3678,
+                    "digest": "sha256:734968e532e290381f3465a7783f0b5373140f28eb3f2d983d7aa39fbf5332c8"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest",
+        "onbuild-latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Nick Roth <nlr06886@gmail.com>",
+            "config": {
+                "Env": [
+                    "PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "CONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "OnBuild": null
+            },
+            "created": "2023-02-19T17:13:50.4045239Z",
+            "history": [
+                {
+                    "created": "2023-02-09T03:20:05.109546422Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b03d13d345c29f69557f410c8504e748226756d1f48e5abdb63cd40179b2640c in / "
+                },
+                {
+                    "created": "2023-02-09T03:20:05.857748252Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-19T16:27:15.0476822Z",
+                    "created_by": "MAINTAINER Nick Roth <nlr06886@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-19T16:27:15.0476822Z",
+                    "created_by": "ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-19T16:27:15.0476822Z",
+                    "created_by": "ENV CONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-19T16:27:15.0476822Z",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     gnupg # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-19T16:27:16.2548733Z",
+                    "created_by": "RUN /bin/sh -c apt-key update && apt-get update # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-19T17:13:49.8335133Z",
+                    "created_by": "RUN /bin/sh -c apt-get install -y --no-install-recommends     bzip2     libglib2.0-0     libxext6     libsm6     libxrender1     wget     ca-certificates &&     wget --quiet https://repo.continuum.io/miniconda/${CONDA_INSTALLER} &&     /bin/bash /${CONDA_INSTALLER} -b -p /opt/conda &&     rm ${CONDA_INSTALLER} &&     /opt/conda/bin/conda install --yes conda pip &&     conda clean --all --yes &&     apt-get purge -y --auto-remove wget ca-certificates  &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-19T17:13:50.4045239Z",
+                    "created_by": "RUN /bin/sh -c for x in `ls /usr/share/locale | grep -v -i en | grep -v -i local`;       do rm -fr /usr/share/locale/$x;     done &&     rm -fr /usr/share/locale/ca*         /usr/share/locale/den         /usr/share/locale/men         /usr/share/locale/wen         /usr/share/locale/zen &&     rm -fr /usr/share/doc/* /usr/share/man/* /usr/share/groff/* /usr/share/info/* &&     rm -rf /usr/share/lintian/* /usr/share/linda/* /var/cache/man/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8e396a1aad506affc6fa1b7c7b8ee75b54b78019e0a945e6ac52e3dc407e0766",
+                    "sha256:304dafa904076523eb0fd752b2021ef77bb099123296e1096c525ee75ef862bf",
+                    "sha256:1a7d8e007a9143a4ff16d8cd071b04e91c2537926a8fd170efc031d3a93286e5",
+                    "sha256:52ccc7ce0133578711e86ba66166a8cb905d84d958967455e46f04b557bf8cde",
+                    "sha256:616460c3bf4f59d4d5b5142d8edeede2d1e5ec58717dc3cd0c3b646d6fa37101"
+                ]
+            }
+        },
+        "onbuild-latest": {
+            "architecture": "amd64",
+            "author": "Nick Roth <nlr06886@gmail.com>",
+            "config": {
+                "Env": [
+                    "PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "CONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh"
+                ],
+                "Entrypoint": [
+                    "/opt/conda/envs/app/bin/python"
+                ],
+                "OnBuild": [
+                    "ADD .condarc /root/.condarc",
+                    "ADD environment.yml /environment.yml",
+                    "RUN conda env create -f /environment.yml -n app",
+                    "ADD . /app"
+                ]
+            },
+            "created": "2023-02-19T16:37:54.4399878Z",
+            "history": [
+                {
+                    "created": "2023-02-09T03:20:05.109546422Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b03d13d345c29f69557f410c8504e748226756d1f48e5abdb63cd40179b2640c in / "
+                },
+                {
+                    "created": "2023-02-09T03:20:05.857748252Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-19T16:27:15.0476822Z",
+                    "created_by": "MAINTAINER Nick Roth <nlr06886@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-19T16:27:15.0476822Z",
+                    "created_by": "ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-19T16:27:15.0476822Z",
+                    "created_by": "ENV CONDA_INSTALLER=Miniconda3-latest-Linux-x86_64.sh",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-19T16:27:15.0476822Z",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     gnupg # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-19T16:27:16.2548733Z",
+                    "created_by": "RUN /bin/sh -c apt-key update && apt-get update # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-19T16:37:53.8945847Z",
+                    "created_by": "RUN /bin/sh -c apt-get install -y --no-install-recommends     bzip2     libglib2.0-0     libxext6     libsm6     libxrender1     wget     ca-certificates &&     wget --quiet https://repo.continuum.io/miniconda/${CONDA_INSTALLER} &&     /bin/bash /${CONDA_INSTALLER} -b -p /opt/conda &&     rm ${CONDA_INSTALLER} &&     /opt/conda/bin/conda install --yes conda &&     conda clean --yes --tarballs --packages --index-cache &&     apt-get purge -y --auto-remove wget ca-certificates  &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* &&     find /opt/conda       \\( -type d -a -name test -o -name tests \\)       -o \\( -type f -a -name '*.pyc' -o -name '*.pyo' \\)       -exec rm -rf '{}' + # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-19T16:37:54.4399878Z",
+                    "created_by": "RUN /bin/sh -c for x in `ls /usr/share/locale | grep -v -i en | grep -v -i local`;       do rm -fr /usr/share/locale/$x;     done &&     rm -fr /usr/share/locale/ca*         /usr/share/locale/den         /usr/share/locale/men         /usr/share/locale/wen         /usr/share/locale/zen &&     rm -fr /usr/share/doc/* /usr/share/man/* /usr/share/groff/* /usr/share/info/* &&     rm -rf /usr/share/lintian/* /usr/share/linda/* /var/cache/man/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-19T16:37:54.4399878Z",
+                    "created_by": "MAINTAINER Nick Roth <nlr06886@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-19T16:37:54.4399878Z",
+                    "created_by": "ENTRYPOINT [\"/opt/conda/envs/app/bin/python\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8e396a1aad506affc6fa1b7c7b8ee75b54b78019e0a945e6ac52e3dc407e0766",
+                    "sha256:304dafa904076523eb0fd752b2021ef77bb099123296e1096c525ee75ef862bf",
+                    "sha256:1a7d8e007a9143a4ff16d8cd071b04e91c2537926a8fd170efc031d3a93286e5",
+                    "sha256:8724e7dc48138733198d26b56f5ba7528d50546f50e9b95d8323d7f3cdf4234e",
+                    "sha256:02a6e18f68e961150d052dbd4f4393a0a7cb1d6953fc5f2fad8e863d7b4daa20"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,408 @@
+{
+    "manifests": {
+        "1.10.3": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2743,
+                "digest": "sha256:f94b16accdd38a07c9eb5bf700d5cdaac9735433c4e009622e5712ed7ca62ec6"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1970271,
+                    "digest": "sha256:019300c8a437a2d60248f27c206795930626dfe7ddc0323d734143bd5eb131a6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1601657,
+                    "digest": "sha256:21eb9145099c9f3f3d754ca568432325c8903f1e98049cd416473e05b7537efc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 662,
+                    "digest": "sha256:cdbce5188fabbfa6dc022a0108fb1a4bc225355b7c50237b01d9eaf0e4e73c4c"
+                }
+            ]
+        },
+        "1.10.4": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2867,
+                "digest": "sha256:303d52ccf15a3b064af6ec2be8485ac3625ccf874aa4798616553ae4cc00143f"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1970107,
+                    "digest": "sha256:128191993b8a5e9d949346160926359ad02df93bde62f5af8a7bc3573f53553e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1602804,
+                    "digest": "sha256:60409b5b1e2bddf5471c1e4ff31ab9559803ce109ae0e752cc5ff496cea35eb8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 657,
+                    "digest": "sha256:1687c103c0e9e6db6d38fa335961941b6955c941be4dc39e801e4b251506446f"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2193,
+                "digest": "sha256:eac6eb29f9153ba68f9fa7806c2f0047366603001c28ba9a762ea24e7922a7be"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1905270,
+                    "digest": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1601378,
+                    "digest": "sha256:acf93a393a2ad85217f3236d83e60f37d2bb85dbe1054b20768c160a0116e1b6"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.10.3",
+        "1.10.4",
+        "latest"
+    ],
+    "configs": {
+        "1.10.3": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "3009dd4da609",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "nginx",
+                    "-g",
+                    "daemon off;"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:87b7855c26434dbb005bbf14d74cfcb43fcf0f7ce7c96a99cd07aaae06666568",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "maintainer": "boris@insert-coin.org"
+                }
+            },
+            "container": "b319f90086e8fd219af56ee40ef53a39210c752e7eaae81e3f1a0729d19bb271",
+            "container_config": {
+                "Hostname": "3009dd4da609",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"nginx\" \"-g\" \"daemon off;\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:87b7855c26434dbb005bbf14d74cfcb43fcf0f7ce7c96a99cd07aaae06666568",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "maintainer": "boris@insert-coin.org"
+                }
+            },
+            "created": "2017-08-21T13:16:10.756763267Z",
+            "docker_version": "17.06.0-ce",
+            "history": [
+                {
+                    "created": "2017-06-27T18:39:21.039131545Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:9d67752278c0e5a1298cd2d6603ebaaab2aa342e27ddf191ee0fde138f82698c in / "
+                },
+                {
+                    "created": "2017-06-27T18:39:45.68169409Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-21T13:16:01.116057304Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=boris@insert-coin.org",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-21T13:16:08.819497273Z",
+                    "created_by": "/bin/sh -c apk --update add nginx &&       adduser -D -u 1000 -g 'www' www &&       mkdir /www &&       mkdir /run/nginx &&       chown -R www:www /var/lib/nginx &&       chown -R www:www /www &&       chown -R www:www /run/nginx"
+                },
+                {
+                    "created": "2017-08-21T13:16:09.56854341Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:b90f898d72cf46a3a04bd776eff61f5d0e7e2c224e4bc868deed92e018aade45 in /etc/nginx/conf.d "
+                },
+                {
+                    "created": "2017-08-21T13:16:10.163705383Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 80/tcp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-21T13:16:10.756763267Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"nginx\" \"-g\" \"daemon off;\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:040fd7841192c4f283485d5c7817f4508a774a8fabef8fc265c87f4d2a2ae635",
+                    "sha256:513cdb76ca0b4176eba2fd29c8a72d200e39697eaf86ea2edf18e80e0b2a59e0",
+                    "sha256:546a9de843736beace2d4c6d1b4209e947e575aa53c8334e27256c963aeaf346"
+                ]
+            }
+        },
+        "1.10.4": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "nginx",
+                    "-g",
+                    "daemon off;"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:e6eb44e0da0e214db0e485f5184c00da773f5490c0728faf53a91fb9dabf0f35",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "boris@insert-coin.org"
+                }
+            },
+            "container": "3227dada1d7bc9433f1ec8902c423f4e014f4d0d9588328f4f15a567a9c17b29",
+            "container_config": {
+                "Hostname": "3227dada1d7b",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"nginx\" \"-g\" \"daemon off;\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:e6eb44e0da0e214db0e485f5184c00da773f5490c0728faf53a91fb9dabf0f35",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "boris@insert-coin.org"
+                }
+            },
+            "created": "2018-01-08T02:30:33.220436632Z",
+            "docker_version": "17.12.0-ce",
+            "history": [
+                {
+                    "created": "2017-12-01T18:49:59.162637599Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:5595f8b7042388f1c3d5642b8581698548f99ea2f0b9324f797d2396e03e00cb in / "
+                },
+                {
+                    "created": "2017-12-01T18:49:59.45164388Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-01-08T02:30:25.512621035Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=boris@insert-coin.org",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-01-08T02:30:31.996246237Z",
+                    "created_by": "/bin/sh -c apk --update add nginx &&       adduser -D -u 1000 -g 'www' www &&       mkdir /www &&       mkdir /run/nginx &&       chown -R www:www /var/lib/nginx &&       chown -R www:www /www &&       chown -R www:www /run/nginx"
+                },
+                {
+                    "created": "2018-01-08T02:30:32.445377079Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:eb03b42567c359969189534076dffe26f4eed71313115d423ee65e00199330c2 in /etc/nginx/conf.d "
+                },
+                {
+                    "created": "2018-01-08T02:30:32.677459192Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 80",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-01-08T02:30:32.938414203Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 443",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-01-08T02:30:33.220436632Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"nginx\" \"-g\" \"daemon off;\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:6bc5936494e3f138ec7166b38ff714d86f5cdb839b8c222a90f39d30cf7b1bb6",
+                    "sha256:3fc4cb9e3d0ee9548a428ecb0f264b801f9bd844808fe423409943d0f68a102f",
+                    "sha256:c6e8175bf63487faa829af8b487772ca182414645a8d1c639ce0970bc49a503b"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "84baa8e89c00",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:5aea1813c0c44b2094798067ba2365a125f19d153ea318bf1f66cb48cbfdb408",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "maintainer": "boris@insert-coin.org"
+                }
+            },
+            "container": "28375e584d673d3977d66e0f8b794130aae5c7f811fa2427ecd8a5e19232273c",
+            "container_config": {
+                "Hostname": "84baa8e89c00",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 80/tcp"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:5aea1813c0c44b2094798067ba2365a125f19d153ea318bf1f66cb48cbfdb408",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "maintainer": "boris@insert-coin.org"
+                }
+            },
+            "created": "2017-05-02T01:13:47.593823409Z",
+            "docker_version": "17.03.1-ce",
+            "history": [
+                {
+                    "created": "2017-03-03T20:32:37.723773456Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / "
+                },
+                {
+                    "created": "2017-05-02T00:36:03.195355264Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=boris@insert-coin.org",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-05-02T01:13:47.24156968Z",
+                    "created_by": "/bin/sh -c apk --update add nginx &&       adduser -D -u 1000 -g 'www' www &&       mkdir /www &&       mkdir /run/nginx &&       chown -R www:www /var/lib/nginx &&       chown -R www:www /www &&       chown -R www:www /run/nginx"
+                },
+                {
+                    "created": "2017-05-02T01:13:47.593823409Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 80/tcp",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:23b9c7b43573dd164619ad59e9d51eda4095926729f59d5f22803bcbe9ab24c2",
+                    "sha256:cc88be08a564ec2173e65c251878284ff047531d1fc221717e8e1debeaac8a52"
+                ]
+            }
+        }
+    }
+}

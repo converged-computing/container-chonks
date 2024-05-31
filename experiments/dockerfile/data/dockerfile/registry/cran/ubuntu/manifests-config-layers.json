@@ -1,0 +1,148 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:f220e905a9fb840cf235638ca9ad5875f30de3ce81bd2e24954d59872f260f53",
+                    "size": 1625,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:b36a4997826451d189a220d18586bc269707d3f5dd7658af7b51b32abd1c6473",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:f220e905a9fb840cf235638ca9ad5875f30de3ce81bd2e24954d59872f260f53",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LC_ALL=en_US.UTF-8",
+                    "LANG=en_US.UTF-8"
+                ],
+                "Cmd": [
+                    "R"
+                ],
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "24.04"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-26T01:22:19.756709671Z",
+            "history": [
+                {
+                    "created": "2024-04-29T16:38:00.954744995Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-29T16:38:00.974574011Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-29T16:38:01.001213341Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-29T16:38:01.024846126Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=24.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-29T16:38:02.941327307Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:ac9d5a9d5b9b1217a6b26f1069a16bc48fa9c2ed76f3eaf28a8e643ae2058d11 in / "
+                },
+                {
+                    "created": "2024-04-29T16:38:03.122210017Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-26T01:13:16.07755895Z",
+                    "created_by": "RUN /bin/sh -c apt-get update &&     apt-get -y dist-upgrade &&     apt-get install -y apt-utils curl software-properties-common dirmngr &&     add-apt-repository -y ppa:marutter/rrutter4.0 &&     apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get -yq install r-base-dev language-pack-en-base cloc curl parallel vim wget debian-keyring &&    apt-get clean # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-26T01:13:16.685667167Z",
+                    "created_by": "ENV LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-26T01:13:16.685667167Z",
+                    "created_by": "ENV LANG=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-26T01:13:16.685667167Z",
+                    "created_by": "RUN /bin/sh -c curl \"https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xfe6b0f6d941769e0b8ee7c3c3b1c3b572302bcb1\" | APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1 apt-key add - # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-26T01:13:16.804423424Z",
+                    "created_by": "RUN /bin/sh -c mkdir -p /usr/share/man/man3 &&     touch /usr/share/man/man3/MPI_Comm_set_name_lam4-dev.3.gz # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-26T01:22:17.437476241Z",
+                    "created_by": "RUN /bin/sh -c echo \"deb http://statmath.wu.ac.at/AASC/debian testing main non-free\" > /etc/apt/sources.list.d/rcheckserver.list &&     apt-get -y update &&     DEBIAN_FRONTEND=noninteractive apt-get -yq install rcheckserver &&    apt-get clean # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-26T01:22:19.684537217Z",
+                    "created_by": "RUN /bin/sh -c useradd docker   && mkdir /home/docker   && chown docker:docker /home/docker   && usermod -a -G staff docker # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-26T01:22:19.756709671Z",
+                    "created_by": "RUN /bin/sh -c RPROFILE=$(R RHOME)/etc/Rprofile.site &&     echo 'options(repos = c(CRAN = \"https://p3m.dev/cran/__linux__/noble/latest\"))' >> \"$RPROFILE\" &&     echo 'options(HTTPUserAgent = sprintf(\"R/%s R (%s)\", getRversion(), paste(getRversion(), R.version$platform, R.version$arch, R.version$os)))' >> \"$RPROFILE\" # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-26T01:22:19.756709671Z",
+                    "created_by": "CMD [\"R\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:80098e3d304cd7858ad97b310cd16083fbe6fab2968be7a988fc6894cb85dc25",
+                    "sha256:145f8977ce9e1c40a2214cfa7739044dfc6e1d00e81c74e2bb6fd01049bd251f",
+                    "sha256:b5125104776716d9dde311de4be4e88f309018efa18dbab42aaffc3dd6c8a88e",
+                    "sha256:f86ca5f7273a67a7a5dc41f2d5486876b12c23cce37c96912c42c087de694d94",
+                    "sha256:e04ae59d0eca4f61e9c6df1164defba8409ea621f4d6a187059193a76894a5f6",
+                    "sha256:ad6e315cd35c3fb732203119961498732ebaf6157a9a5a0eba92d7c2dc940a6f",
+                    "sha256:5fe4232d95edb6089091960ee12687579f86d130a6b0908d7dc80dcd339efb76"
+                ]
+            }
+        }
+    }
+}

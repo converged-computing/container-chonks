@@ -1,0 +1,107 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2011,
+                "digest": "sha256:e79faab040e1f1a986aa934f40e43dbe4efd0252a00f6e3027857fe0a0d241e7"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 87094724,
+                    "digest": "sha256:2068b24f564bdb7fecaa53083a659c03a4789c8e4bdb2f7c346c17cbb635e09a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 518,
+                    "digest": "sha256:cfa7a04d855c385c7c0941318d576ccf2dac1c70d26961d15952bf85b02e83ce"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "a64418c62400",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": null,
+                "Image": "sha256:b424fba01172292ee3b8b5dad6c6618b066e9196ecfaa8cf30baf11dfe530ff9",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "ebb11d48f5c0042a81f88179133ea75ab857199211a2c5192a6ff6529e32f77d",
+            "container_config": {
+                "Hostname": "a64418c62400",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY dir:1c463ed352c7d0a9e1b04dc575151c14f184aa5a6917f876bb2b41d254447305 in /etc/yum.repos.d/ "
+                ],
+                "Image": "sha256:b424fba01172292ee3b8b5dad6c6618b066e9196ecfaa8cf30baf11dfe530ff9",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-04-13T05:10:52.092719256Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2016-08-30T18:19:55.838039529Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org> - ami_creator",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER The CentOS Project <cloud-ops@centos.org> - ami_creator",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-08-30T18:21:13.356531002Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org> - ami_creator",
+                    "created_by": "/bin/sh -c #(nop) ADD file:5eb41b74d6ed5f4540b19132c786aec1839942f9213b842f37378a6f64da4914 in / "
+                },
+                {
+                    "created": "2017-04-13T05:10:52.092719256Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:1c463ed352c7d0a9e1b04dc575151c14f184aa5a6917f876bb2b41d254447305 in /etc/yum.repos.d/ "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8e2d95010a36fc40baf8ea9050f26273c9a7d131c76aa209d834e447b824a5b3",
+                    "sha256:1c959b6f4148c185f792acd90f7412971a2c2b1fe70039f55a787b80737cfd9b"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,225 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6885,
+                "digest": "sha256:2092c4c1c34ae2893df0d4f2a7115a0cf51b1d4b9028c4cac838b3c031fddc64"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 43521448,
+                    "digest": "sha256:7b722c1070cdf5188f1f9e43b8413157f8dfb2b4fe84db3c03cb492379a42fcc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 847,
+                    "digest": "sha256:5fbf74db61f1459176d8647ba8f53f8e6cf933a2e56f73f0e8da81213117b7e9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 526,
+                    "digest": "sha256:ed41cb72e5c918bdbd78e68f02930a3f1cf1d6079402b0a5b19de8508e67b766"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 168,
+                    "digest": "sha256:7ea47a67709ebea8efed59fbda703dbd00a0d2cae7e2808959744bfa30bfc0e9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 113297122,
+                    "digest": "sha256:fa7f4e3087a40cfb55a0cc3b1acc5c2ed158af1c47b770d00882f7277e9b5377"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 426845,
+                    "digest": "sha256:d462f642fd69c275668d46dbba318e51dd4b5ea78ed47def1756fbb3bca36e55"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4136186,
+                    "digest": "sha256:81efe918291427fc217daf46a66fa72159527d1deedc11ee373d10b1d2750ee0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4136764,
+                    "digest": "sha256:05223e8f14a33e0d1a10b5ddc751f687c2a508c741418e3a82e2a92f844e4229"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 36158232,
+                    "digest": "sha256:c7d52306cf8eb6978170f97f1a3175eb3b9afa29fbce5acaa059c32c3c060abd"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 987004781,
+                    "digest": "sha256:0de8c44cdbad43a2e087f7e643442f0374ce56e9bc2e2b9020e78c202a411342"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Michael Heuer <heuermh@acm.org>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "linuxbrew",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "SHELL=/bin/bash",
+                    "USER=linuxbrew"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:58133d1df4726ce8b2776e80d50a7cfa1fcbc36788497af20e9a5b73494838ad",
+                "Volumes": null,
+                "WorkingDir": "/home/linuxbrew",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Shaun Jackman <sjackman@gmail.com>"
+                }
+            },
+            "container": "fab07a3751825ec08494eb76c4f41b29235af1fb35becb18d3581494bbaa804b",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "linuxbrew",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "SHELL=/bin/bash",
+                    "USER=linuxbrew"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "brew update   && brew install apache-spark"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:58133d1df4726ce8b2776e80d50a7cfa1fcbc36788497af20e9a5b73494838ad",
+                "Volumes": null,
+                "WorkingDir": "/home/linuxbrew",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "Shaun Jackman <sjackman@gmail.com>"
+                }
+            },
+            "created": "2020-03-18T06:09:25.648968639Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2019-01-22T22:48:13.94332672Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:916a45030dee881bbc8bbabf8bcfcc8828c29ce1c318000950bbe84c57f9df73 in / "
+                },
+                {
+                    "created": "2019-01-22T22:48:15.859378283Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2019-01-22T22:48:17.356617037Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-01-22T22:48:19.058810509Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2019-01-22T22:48:19.590431377Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-28T18:48:59.016085974Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Shaun Jackman <sjackman@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-28T18:51:37.533842098Z",
+                    "created_by": "/bin/sh -c apt-get update \t&& apt-get install -y --no-install-recommends software-properties-common \t&& add-apt-repository -y ppa:git-core/ppa \t&& apt-get update \t&& apt-get install -y --no-install-recommends \t\tbzip2 \t\tca-certificates \t\tcurl \t\tfile \t\tfonts-dejavu-core \t\tg++ \t\tgit \t\tlocales \t\tmake \t\topenssh-client \t\tpatch \t\tsudo \t\tuuid-runtime \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-01-28T18:51:45.634933769Z",
+                    "created_by": "/bin/sh -c localedef -i en_US -f UTF-8 en_US.UTF-8 \t&& useradd -m -s /bin/bash linuxbrew \t&& echo 'linuxbrew ALL=(ALL) NOPASSWD:ALL' >>/etc/sudoers"
+                },
+                {
+                    "created": "2019-01-28T18:51:50.449639374Z",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:9cf22880e394f5f7709e424dd6c38284230c59fa69474f80265a4a03f64987a3 in /home/linuxbrew/.linuxbrew/Homebrew "
+                },
+                {
+                    "created": "2019-01-28T18:52:03.877697218Z",
+                    "created_by": "/bin/sh -c cd /home/linuxbrew/.linuxbrew \t&& mkdir -p bin etc include lib opt sbin share var/homebrew/linked Cellar \t&& ln -s ../Homebrew/bin/brew /home/linuxbrew/.linuxbrew/bin/ \t&& chown -R linuxbrew: /home/linuxbrew/.linuxbrew \t&& cd /home/linuxbrew/.linuxbrew/Homebrew \t&& git remote set-url origin https://github.com/Linuxbrew/brew"
+                },
+                {
+                    "created": "2019-01-28T18:52:04.314343251Z",
+                    "created_by": "/bin/sh -c #(nop)  USER linuxbrew",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-28T18:52:04.711551869Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /home/linuxbrew",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-28T18:52:05.117285386Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin SHELL=/bin/bash USER=linuxbrew",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-28T18:53:04.463994155Z",
+                    "created_by": "/bin/sh -c HOMEBREW_NO_ANALYTICS=1 HOMEBREW_NO_AUTO_UPDATE=1 brew tap homebrew/core \t&& rm -rf ~/.cache"
+                },
+                {
+                    "created": "2020-03-18T05:39:41.94424516Z",
+                    "author": "Michael Heuer <heuermh@acm.org>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Michael Heuer <heuermh@acm.org>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-03-18T06:09:25.648968639Z",
+                    "author": "Michael Heuer <heuermh@acm.org>",
+                    "created_by": "/bin/sh -c brew update   && brew install apache-spark"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:0de2edf7bff41238438e25b6f2de055b97c7fb6fe095cd560c2095b8dd70fc99",
+                    "sha256:b2fd8b4c3da7e720f748179985ff20f537d504a9f4b0df09ac7611b390addab8",
+                    "sha256:f67191ae09b8f583063c9f2e369ce3743a4f4eca91e2f7c4c3e4f5a7fba6b24a",
+                    "sha256:68dda0c9a8cd82911fa164ad1461ded7901784ddc4f221c3bd0ae6acbea7ad36",
+                    "sha256:098c5917e25ecf20a5aab8ecb7e116e58aae42a13d8e53a892ff6ff922b5317a",
+                    "sha256:c3863ff85e058a3c41056b09bc178fe47e39acc68b9acf114026a99b310f83dc",
+                    "sha256:2462cad5a4031d4826673b20a190fa213b3d9472b3ff296cad4117838fe0d563",
+                    "sha256:e74c83ed55431daeb95bcb826021fe54e8c77d75be88f736aa59016f7bf2ae9f",
+                    "sha256:c7fb07610e46ab40c6a69bc9aabbe5911fb333fba83070c9d51f0318db437181",
+                    "sha256:32c8223976762a8c9ac345e9b6544a51113d86ee9e5a0808fbd68b157685f448"
+                ]
+            }
+        }
+    }
+}

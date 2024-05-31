@@ -1,0 +1,236 @@
+{
+    "manifests": {
+        "14": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2097,
+                "digest": "sha256:ca0f5d00ade97a90726705706dd789aed5636963e23cdb855e64196b1cd7cf25"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 34865160,
+                    "digest": "sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4465,
+                    "digest": "sha256:8b276b980349f362f4f74bf3d3b36a420319c2c848354f6a67a66d01afbed8b1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 500798776,
+                    "digest": "sha256:b44e0afe276bf337376639451ee381e90aa52731987c2977ddb9a0b998f7f721"
+                }
+            ]
+        },
+        "14.v14": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2097,
+                "digest": "sha256:ca0f5d00ade97a90726705706dd789aed5636963e23cdb855e64196b1cd7cf25"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 34865160,
+                    "digest": "sha256:c02c7df4a131d5f0376e1c7f1648add5f443facc8e18c7deeb0e85af7308ec76"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4465,
+                    "digest": "sha256:8b276b980349f362f4f74bf3d3b36a420319c2c848354f6a67a66d01afbed8b1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 500798776,
+                    "digest": "sha256:b44e0afe276bf337376639451ee381e90aa52731987c2977ddb9a0b998f7f721"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "14",
+        "14.v14"
+    ],
+    "configs": {
+        "14": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "ac89db2897a5",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:130050a92f18cfe7a87c8d00ff2f008a927db80bf0088f5d048035c9cd416434",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "f6ef6261ef87416f16e0482fbc1f2c83f2b9db82b836555a73da0e83a75d26d7",
+            "container_config": {
+                "Hostname": "ac89db2897a5",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "LC_ALL=C DEBIAN_FRONTEND=noninteractive /tmp/build.sh   && rm -rf /var/lib/apt/lists/*"
+                ],
+                "Image": "sha256:130050a92f18cfe7a87c8d00ff2f008a927db80bf0088f5d048035c9cd416434",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "created": "2019-04-25T12:34:06.569017612Z",
+            "docker_version": "17.09.0-ce",
+            "history": [
+                {
+                    "created": "2015-10-14T03:34:56.337856659Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /"
+                },
+                {
+                    "created": "2015-10-14T03:34:58.747120322Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]"
+                },
+                {
+                    "created": "2019-04-25T12:26:36.697925274Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:3e63fe80534d541b52df71e45313cbaa9a24551b24ae8cd4d1581fc196b118da in /tmp/build.sh "
+                },
+                {
+                    "created": "2019-04-25T12:34:06.569017612Z",
+                    "created_by": "/bin/sh -c LC_ALL=C DEBIAN_FRONTEND=noninteractive /tmp/build.sh   && rm -rf /var/lib/apt/lists/*"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:45befd8a8901eecc964f2c766a93cb8f0f49752a31db8db3af854798f75ebf8e",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:88597c8d823b89c9210e4d8d2fe964820dd89aac0fa1d7c01525e2956918041f",
+                    "sha256:43728ec0b03251693b5c53441aa2820a843c9033f0475e88c647100aa4463aae"
+                ]
+            }
+        },
+        "14.v14": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "ac89db2897a5",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:130050a92f18cfe7a87c8d00ff2f008a927db80bf0088f5d048035c9cd416434",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "f6ef6261ef87416f16e0482fbc1f2c83f2b9db82b836555a73da0e83a75d26d7",
+            "container_config": {
+                "Hostname": "ac89db2897a5",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "LC_ALL=C DEBIAN_FRONTEND=noninteractive /tmp/build.sh   && rm -rf /var/lib/apt/lists/*"
+                ],
+                "Image": "sha256:130050a92f18cfe7a87c8d00ff2f008a927db80bf0088f5d048035c9cd416434",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "created": "2019-04-25T12:34:06.569017612Z",
+            "docker_version": "17.09.0-ce",
+            "history": [
+                {
+                    "created": "2015-10-14T03:34:56.337856659Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:1d6c943b8cfe3ff8248653657d4bdd832f647e03df1925d1df6444c1b6e7a4e0 in /"
+                },
+                {
+                    "created": "2015-10-14T03:34:58.747120322Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]"
+                },
+                {
+                    "created": "2019-04-25T12:26:36.697925274Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:3e63fe80534d541b52df71e45313cbaa9a24551b24ae8cd4d1581fc196b118da in /tmp/build.sh "
+                },
+                {
+                    "created": "2019-04-25T12:34:06.569017612Z",
+                    "created_by": "/bin/sh -c LC_ALL=C DEBIAN_FRONTEND=noninteractive /tmp/build.sh   && rm -rf /var/lib/apt/lists/*"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:45befd8a8901eecc964f2c766a93cb8f0f49752a31db8db3af854798f75ebf8e",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:88597c8d823b89c9210e4d8d2fe964820dd89aac0fa1d7c01525e2956918041f",
+                    "sha256:43728ec0b03251693b5c53441aa2820a843c9033f0475e88c647100aa4463aae"
+                ]
+            }
+        }
+    }
+}

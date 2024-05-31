@@ -1,0 +1,220 @@
+{
+    "manifests": {
+        "1.1.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5126,
+                "digest": "sha256:688e065a2013698d26644d9d820f3967510315d7b5301a82c22e98963ef76865"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2206542,
+                    "digest": "sha256:8e3ba11ec2a2b39ab372c60c16b421536e50e5ce64a0bc81765c2e38381bcff6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 239,
+                    "digest": "sha256:311ad0da45338842480bf25c6e6b7bb133b7b8cf709c3470db171ec370da5539"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 54798327,
+                    "digest": "sha256:391a6a6b36513d84d55cbbe7e13bca7e92fbf257d910a5255f2b7bc9fcff4edf"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2307817,
+                    "digest": "sha256:7d51ffbdc38898c174e51bc5a4ff0c54208eebc4e9d16e2e05f3e19f4730fbc0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50390936,
+                    "digest": "sha256:e4481af2e7fb14175b786ab988e076efaf43dfb6dd04a7129cf73a31ed1089f0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 156,
+                    "digest": "sha256:29adeba9d7e8dec37d3c536a8a29ad3bae61d78930dd690334f64f3a5e48ae13"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.1.0"
+    ],
+    "configs": {
+        "1.1.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "9092/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/kafka/bin",
+                    "LANG=C.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre",
+                    "JAVA_VERSION=8u171",
+                    "JAVA_ALPINE_VERSION=8.171.11-r0",
+                    "KAFKA_VERSION=1.1.0",
+                    "SCALA_VERSION=2.12",
+                    "KAFKA_HOME=/usr/local/kafka"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:33f6e0de52069b6f227d3f901e8128851a9129fcf433e73155e6e1973e57a593",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "ffc7bce7902f1df2d45d620f3895d11885d243de9e8f7285ebef78dba54d9a63",
+            "container_config": {
+                "Hostname": "ffc7bce7902f",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "9092/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/kafka/bin",
+                    "LANG=C.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre",
+                    "JAVA_VERSION=8u171",
+                    "JAVA_ALPINE_VERSION=8.171.11-r0",
+                    "KAFKA_VERSION=1.1.0",
+                    "SCALA_VERSION=2.12",
+                    "KAFKA_HOME=/usr/local/kafka"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 9092"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:33f6e0de52069b6f227d3f901e8128851a9129fcf433e73155e6e1973e57a593",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2018-07-30T19:31:41.011378771Z",
+            "docker_version": "18.03.1-ee-1-tp5",
+            "history": [
+                {
+                    "created": "2018-07-06T14:14:06.165546783Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:25f61d70254b9807a40cd3e8d820f6a5ec0e1e596de04e325f6a33810393e95a in / "
+                },
+                {
+                    "created": "2018-07-06T14:14:06.393355914Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-11T00:34:53.496461361Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-11T00:34:54.224816353Z",
+                    "created_by": "/bin/sh -c { \t\techo '#!/bin/sh'; \t\techo 'set -e'; \t\techo; \t\techo 'dirname \"$(dirname \"$(readlink -f \"$(which javac || which java)\")\")\"'; \t} > /usr/local/bin/docker-java-home \t&& chmod +x /usr/local/bin/docker-java-home"
+                },
+                {
+                    "created": "2018-07-11T00:35:25.029262354Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-11T00:35:25.250795435Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-11T00:35:25.472470772Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_VERSION=8u171",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-11T00:35:25.716553249Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_ALPINE_VERSION=8.171.11-r0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-11T00:35:30.501380694Z",
+                    "created_by": "/bin/sh -c set -x \t&& apk add --no-cache \t\topenjdk8-jre=\"$JAVA_ALPINE_VERSION\" \t&& [ \"$JAVA_HOME\" = \"$(docker-java-home)\" ]"
+                },
+                {
+                    "created": "2018-07-30T19:31:12.150302123Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV KAFKA_VERSION=1.1.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-30T19:31:12.487507847Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV SCALA_VERSION=2.12",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-30T19:31:12.895522453Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV KAFKA_HOME=/usr/local/kafka",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-30T19:31:13.216352129Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/usr/local/kafka/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-07-30T19:31:19.915837255Z",
+                    "created_by": "/bin/sh -c packages='     bash     curl     ca-certificates     sed     tar     snappy-dev     wget   '   set -x   && apk --update add $packages   && rm -rf /var/cache/apk/*"
+                },
+                {
+                    "created": "2018-07-30T19:31:38.688066736Z",
+                    "created_by": "/bin/sh -c wget -qO- http://www-eu.apache.org/dist/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz | tar xvz -C /usr/local"
+                },
+                {
+                    "created": "2018-07-30T19:31:40.615231072Z",
+                    "created_by": "/bin/sh -c ln -s /usr/local/kafka_${SCALA_VERSION}-${KAFKA_VERSION} ${KAFKA_HOME}"
+                },
+                {
+                    "created": "2018-07-30T19:31:41.011378771Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 9092",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:73046094a9b835e443af1a9d736fcfc11a994107500e474d0abf399499ed280c",
+                    "sha256:298c3bb2664fb7f8514ecdde8b76c0ca95c7c7b82eaa326a7e9661e017488164",
+                    "sha256:8bc7bbcd76b68a51a3b70de9f19faed58f9c0795802dbff98de584b7e7eb9c22",
+                    "sha256:b5537e50eff73eeb8f7eff567ab6db82a505528025dccae740e02f817a5742be",
+                    "sha256:4a9f649f4e2b87ba759926724efadad7fb6023d23cf1bfabf699b4bc36be19d5",
+                    "sha256:8c978ce64eb002676e6efdee1f0ef48905efe005ca79f7c203c2007dc160fac2"
+                ]
+            }
+        }
+    }
+}

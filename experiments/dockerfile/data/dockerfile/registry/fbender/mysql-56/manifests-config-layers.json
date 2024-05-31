@@ -1,0 +1,340 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9785,
+                "digest": "sha256:105dc3108659e48687da981b1c985721ccf6b266c46b62cf40f0a0cc2b894da9"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22496034,
+                    "digest": "sha256:f7e2b70d04ae3f516c08c24d88de0f82699aaf3ee98af6eb208bd234136142b4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1744,
+                    "digest": "sha256:df7f6307ff0a4de80759b9e6b9b5c641b5162e05f266c8f23901c9f2939e942f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4501177,
+                    "digest": "sha256:e29ed02b101347c5e0d6658c744ccc737d2abf2ef15e27bab4fa9228abcc3aee"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1270367,
+                    "digest": "sha256:9cb929db392cd66fa8d0b5f4d8e916cf85042b7fac096e46cba1f8f5b3832c65"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 115,
+                    "digest": "sha256:42cc77b242867361487763045d855f7344cff9607d8cd35bfff9c2ff1cb6f805"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10168826,
+                    "digest": "sha256:b7493809599fd43a9f1014b4aae47adf4d046e3bb54b8b5385d89afccc585021"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 26081,
+                    "digest": "sha256:9e72fa203c2bbb607a3056b947583ee1619af7a20e42ada34d7a0804fc633b39"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 221,
+                    "digest": "sha256:e4a5e4487a943cbaca0f21ccc400c67b18f127625956d272dc37e805e599943f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 44234300,
+                    "digest": "sha256:165ca9a539aa44b080f51caf6b356bbe9c42d2f3de2d9d4ee309441445fd0566"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2859,
+                    "digest": "sha256:81140eaaa67e77c27decc3ec977e05bc25709091ee6ca1189bca890251535ee0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 121,
+                    "digest": "sha256:19021337b46f597bc47275bdce346c6b77768b7e3029b3124ded629285e3a393"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 662509,
+                    "digest": "sha256:7129f0635c83ebbbcb60f8c33514dec8fd97c1b32c684e6fe7d21e77b09ec3a3"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 364,
+                    "digest": "sha256:fd629630f5ddd5ace541a19b8a13f55f5bb4ba36fcce847cfc85b8ae36c16a34"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 571,
+                    "digest": "sha256:afbfd9e0baae043798198cdd41c07192ed4ee38e8e2735b396688a758234007e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2847,
+                    "digest": "sha256:32fb1e7ad3ae434d5518dc808543b768ea6d1b7749c3d420c732b8175712a8bc"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "3306/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "GOSU_VERSION=1.7",
+                    "MYSQL_MAJOR=5.6",
+                    "MYSQL_VERSION=5.6.43-1debian9"
+                ],
+                "Cmd": [
+                    "mysqld"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:0c93886bcaed702ca267deb20315d25eff0e1754482374e85ca32b21b3210441",
+                "Volumes": {
+                    "/var/lib/automysqlbackup": {},
+                    "/var/lib/mysql": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "docker-entrypoint.sh"
+                ],
+                "OnBuild": [
+                    "COPY mysql-conf.d/* /etc/mysql/conf.d/",
+                    "COPY docker-env-vars.d/* /envars.d/",
+                    "COPY docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/"
+                ],
+                "Labels": null
+            },
+            "container": "27e393b41c04ec0261efc76c7bf3e462e97b912ef9309307d3210a842d8712f0",
+            "container_config": {
+                "Hostname": "27e393b41c04",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "3306/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "GOSU_VERSION=1.7",
+                    "MYSQL_MAJOR=5.6",
+                    "MYSQL_VERSION=5.6.43-1debian9"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ONBUILD COPY docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:0c93886bcaed702ca267deb20315d25eff0e1754482374e85ca32b21b3210441",
+                "Volumes": {
+                    "/var/lib/automysqlbackup": {},
+                    "/var/lib/mysql": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "docker-entrypoint.sh"
+                ],
+                "OnBuild": [
+                    "COPY mysql-conf.d/* /etc/mysql/conf.d/",
+                    "COPY docker-env-vars.d/* /envars.d/",
+                    "COPY docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/"
+                ],
+                "Labels": {}
+            },
+            "created": "2019-03-15T15:49:49.548741904Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2019-03-04T23:22:21.800977094Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:5ea7dfe8c8bc87ebe0d06d275bce41e015310bdfc04546246302e9ce07ee416c in / "
+                },
+                {
+                    "created": "2019-03-04T23:22:22.028080852Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-05T03:29:51.072443501Z",
+                    "created_by": "/bin/sh -c groupadd -r mysql && useradd -r -g mysql mysql"
+                },
+                {
+                    "created": "2019-03-05T03:29:59.231496441Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends gnupg dirmngr && rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-03-05T03:29:59.723617442Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GOSU_VERSION=1.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-05T03:30:12.296917164Z",
+                    "created_by": "/bin/sh -c set -x \t&& apt-get update && apt-get install -y --no-install-recommends ca-certificates wget && rm -rf /var/lib/apt/lists/* \t&& wget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)\" \t&& wget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc\" \t&& export GNUPGHOME=\"$(mktemp -d)\" \t&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \t&& gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu \t&& gpgconf --kill all \t&& rm -rf \"$GNUPGHOME\" /usr/local/bin/gosu.asc \t&& chmod +x /usr/local/bin/gosu \t&& gosu nobody true \t&& apt-get purge -y --auto-remove ca-certificates wget"
+                },
+                {
+                    "created": "2019-03-05T03:30:14.095298393Z",
+                    "created_by": "/bin/sh -c mkdir /docker-entrypoint-initdb.d"
+                },
+                {
+                    "created": "2019-03-05T03:31:48.058792695Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tpwgen \t\tperl \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-03-05T03:31:52.223309473Z",
+                    "created_by": "/bin/sh -c set -ex; \tkey='A4A9406876FCBD3C456770C88C718D3B5072E1F5'; \texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys \"$key\"; \tgpg --batch --export \"$key\" > /etc/apt/trusted.gpg.d/mysql.gpg; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\"; \tapt-key list > /dev/null"
+                },
+                {
+                    "created": "2019-03-05T03:31:52.751295917Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV MYSQL_MAJOR=5.6",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-05T03:31:53.249361449Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV MYSQL_VERSION=5.6.43-1debian9",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-05T03:31:53.96781022Z",
+                    "created_by": "/bin/sh -c echo \"deb http://repo.mysql.com/apt/debian/ stretch mysql-${MYSQL_MAJOR}\" > /etc/apt/sources.list.d/mysql.list"
+                },
+                {
+                    "created": "2019-03-05T03:32:11.902443835Z",
+                    "created_by": "/bin/sh -c { \t\techo mysql-community-server mysql-community-server/data-dir select ''; \t\techo mysql-community-server mysql-community-server/root-pass password ''; \t\techo mysql-community-server mysql-community-server/re-root-pass password ''; \t\techo mysql-community-server mysql-community-server/remove-test-db select false; \t} | debconf-set-selections \t&& apt-get update && apt-get install -y mysql-server=\"${MYSQL_VERSION}\" && rm -rf /var/lib/apt/lists/* \t&& rm -rf /var/lib/mysql && mkdir -p /var/lib/mysql /var/run/mysqld \t&& chown -R mysql:mysql /var/lib/mysql /var/run/mysqld \t&& chmod 777 /var/run/mysqld \t&& find /etc/mysql/ -name '*.cnf' -print0 \t\t| xargs -0 grep -lZE '^(bind-address|log)' \t\t| xargs -rt -0 sed -Ei 's/^(bind-address|log)/#&/' \t&& echo '[mysqld]\\nskip-host-cache\\nskip-name-resolve' > /etc/mysql/conf.d/docker.cnf"
+                },
+                {
+                    "created": "2019-03-05T03:32:12.275021066Z",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/var/lib/mysql]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-05T03:32:12.688232794Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:9db0d75a8e0e8b283795127306781433510d4b8cc1490431021784417fba8d1d in /usr/local/bin/ "
+                },
+                {
+                    "created": "2019-03-05T03:32:14.050660538Z",
+                    "created_by": "/bin/sh -c ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat"
+                },
+                {
+                    "created": "2019-03-05T03:32:14.612819042Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"docker-entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-05T03:32:15.059428367Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 3306",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-05T03:32:15.591598496Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"mysqld\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-15T15:49:24.50554635Z",
+                    "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-15T15:49:44.418658935Z",
+                    "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "created_by": "/bin/sh -c apt-get update     && apt-get -y install automysqlbackup ssmtp --no-install-recommends     && apt-get -y clean     && rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-03-15T15:49:44.827355363Z",
+                    "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/var/lib/automysqlbackup]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-15T15:49:45.420652958Z",
+                    "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:c69f5fb0d42e9541e0384111badc86d611b6bbb3e7398a95bb9efa20ebb99454 in /envars.d/ "
+                },
+                {
+                    "created": "2019-03-15T15:49:46.023524236Z",
+                    "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:8a9a999b513e804156d7826ca9faec4c6a13b3ca9a9ac0fea9664ad0ed256593 in /docker-entrypoint-initdb.d/ "
+                },
+                {
+                    "created": "2019-03-15T15:49:48.042305228Z",
+                    "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "created_by": "/bin/sh -c sed -i.bak '2ifor f in /envars.d/*; do . $f; done\\n' /entrypoint.sh"
+                },
+                {
+                    "created": "2019-03-15T15:49:48.409571283Z",
+                    "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY mysql-conf.d/* /etc/mysql/conf.d/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-15T15:49:49.167401537Z",
+                    "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY docker-env-vars.d/* /envars.d/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-15T15:49:49.548741904Z",
+                    "author": "Florian Bender <fb+dockerhub@quantumedia.de>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:6744ca1b11903f4db4d5e26145f6dd20f9a6d321a7f725f1a0a7a45a4174c579",
+                    "sha256:58971f8cad817c11e6fdd888d2be80b513afd08f8d5134a3d58dcf236b369342",
+                    "sha256:995c0c3b48eeced25c5e3d9c742e67a380479be92d8353c10a818f524b8af1ae",
+                    "sha256:f5cf40856f4d1e6250bdcaa456a4068c247f4f2f7264c2a3c7169358b6c7e0ef",
+                    "sha256:2d31a90867de87742bb1daeb0a88e9f5ed32fcbfa0122aa69263bdd6f42f2b2d",
+                    "sha256:f9f4437bfcbf7c38eac825372a7d8ca4489bf9bcf98fa99699a6c7e274dfec40",
+                    "sha256:80e5d80b7438270765e54e769e9ef3d8ec65d00395728bb9fec3513e1f454fd8",
+                    "sha256:b993e8a5a7573940af81a6d8442f28c378269ca91c29fd4f8ee8971106c75907",
+                    "sha256:80b6bfea695e740ec1ff04c6f7747c18082584603d1a9bcfdd792de705805142",
+                    "sha256:cbf7dda36ef5ea804a01c08eb391ec66dfa3d4e1a7607d68bce443047371e5ab",
+                    "sha256:506b64364b9d47588da8049da1417c9a3c3503584cf504d3fba9a4acae986680",
+                    "sha256:61ba99a4723a038a32ab00698af86a45e1ca4607ed930a32e9d64ae29e01f866",
+                    "sha256:61735606511b1ea6b2d27a76524c430343366e6c740cd526d562d4a8da6a637c",
+                    "sha256:b8715495d45c33d4f1bbc397c560e10551b3d94f3588a8af0f9c211622a5bf34",
+                    "sha256:47b8d8437e730f566da68b83b9c3709db544000056ce7018bd82e7a396c3dd67"
+                ]
+            }
+        }
+    }
+}

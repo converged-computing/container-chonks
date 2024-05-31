@@ -1,0 +1,127 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:2ccf05a335a268383a245b7e261b79ec5e595a24ea838a1ebd06b7d2027dd934",
+                    "size": 2290,
+                    "platform": {
+                        "os": "linux",
+                        "architecture": "amd64"
+                    },
+                    "annotations": {
+                        "com.docker.official-images.bashbrew.arch": "amd64",
+                        "org.opencontainers.image.base.digest": "sha256:92e936b55db7da3460a5d6b9f1934c555b2dcae181a4fe90cbfb51e426c4ec38",
+                        "org.opencontainers.image.base.name": "perl:5.38",
+                        "org.opencontainers.image.created": "2024-05-14T17:40:46Z",
+                        "org.opencontainers.image.revision": "8edfdd9c4a779c7f5416061a52d26b6126819285",
+                        "org.opencontainers.image.source": "https://github.com/tianon/dockerfiles.git#8edfdd9c4a779c7f5416061a52d26b6126819285:perl",
+                        "org.opencontainers.image.url": "https://hub.docker.com/r/tianon/perl",
+                        "org.opencontainers.image.version": "latest"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:45ddb8c106ff55a2df311aa397ac9a2f1245eddb13482d324a3aeebc2f3d85b5",
+                    "size": 566,
+                    "platform": {
+                        "os": "unknown",
+                        "architecture": "unknown"
+                    },
+                    "annotations": {
+                        "com.docker.official-images.bashbrew.arch": "amd64",
+                        "vnd.docker.reference.digest": "sha256:2ccf05a335a268383a245b7e261b79ec5e595a24ea838a1ebd06b7d2027dd934",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "PERL_CPANM_OPT=--verbose --mirror https://cpan.metacpan.org --mirror-only"
+                ],
+                "Cmd": [
+                    "perl5.38.2",
+                    "-de0"
+                ],
+                "WorkingDir": "/usr/src/app",
+                "ArgsEscaped": true
+            },
+            "created": "2024-01-28T16:30:46Z",
+            "history": [
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b9a9fc37b874060c713002ae1ac220f097edd7c6576116c22bb15aad8229b1b3 in / "
+                },
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tgnupg \t\tnetbase \t\tsq \t\twget \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdefault-libmysqlclient-dev \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "WORKDIR /usr/src/perl",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "RUN /bin/sh -c true     && curl -fL https://cpan.metacpan.org/authors/id/P/PE/PEVANS/perl-5.38.2.tar.gz -o perl-5.38.2.tar.gz     && echo 'a0a31534451eb7b83c7d6594a497543a54d488bc90ca00f5e34762577f40655e *perl-5.38.2.tar.gz' | sha256sum --strict --check -     && tar --strip-components=1 -xaf perl-5.38.2.tar.gz -C /usr/src/perl     && rm perl-5.38.2.tar.gz     && cat *.patch | patch -p1     && gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"     && archBits=\"$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)\"     && archFlag=\"$([ \"$archBits\" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')\"     && ./Configure -Darchname=\"$gnuArch\" \"$archFlag\" -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -fLO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7047.tar.gz     && echo '963e63c6e1a8725ff2f624e9086396ae150db51dd0a337c3781d09a994af05a5 *App-cpanminus-1.7047.tar.gz' | sha256sum --strict --check -     && tar -xzf App-cpanminus-1.7047.tar.gz && cd App-cpanminus-1.7047 && perl bin/cpanm . && cd /root     && cpanm IO::Socket::SSL     && curl -fL https://raw.githubusercontent.com/skaji/cpm/0.997014/cpm -o /usr/local/bin/cpm     && echo 'ee525f2493e36c6f688eddabaf53a51c4d3b2a4ebaa81576ac8b9f78ab57f4a1 */usr/local/bin/cpm' | sha256sum --strict --check -     && chmod +x /usr/local/bin/cpm     && true     && rm -fr /root/.cpanm /usr/src/perl /usr/src/App-cpanminus-1.7047* /tmp/*     && cpanm --version && cpm --version # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "WORKDIR /usr/src/app",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "CMD [\"perl5.38.2\" \"-de0\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-01-28T16:30:46Z",
+                    "created_by": "ENV PERL_CPANM_OPT=--verbose --mirror https://cpan.metacpan.org --mirror-only",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:bbe1a212f7e9f1baaef62491a51254f3adda514c22632ea719f62713fad80f77",
+                    "sha256:d7d4c2f9d26b2dad32b86ed9739919f76ae423f16aa103924c183048810290de",
+                    "sha256:8845ab872c1ce04cf64c4755aa585386c7ebe1b7633d977d275d6f2d2146000d",
+                    "sha256:734c0f0b65c287d2ffe5a9a547985c4f18c8f2cc538ac315127a3f4e9dfadd21",
+                    "sha256:160cf828b79ea20be24657d64802417b8d20c7c66c9b1248d15b1a948ff36ec3",
+                    "sha256:fd601a3f4be60368b94817fda88e16e0b6565c5064cb34da290d8c4d9e65ea92",
+                    "sha256:ac673019b55ae7d84d2615d96dd48966e4d300fef22b1d739bfcbd2e77d4903e"
+                ]
+            }
+        }
+    }
+}

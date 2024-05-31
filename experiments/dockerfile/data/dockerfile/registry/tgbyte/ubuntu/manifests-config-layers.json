@@ -1,0 +1,260 @@
+{
+    "manifests": {
+        "20.04": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "size": 740,
+                    "digest": "sha256:b233616e03a852f4f70b35af51c20a6b7410d55aab791f0989a0a8f850c2a1a0",
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "size": 740,
+                    "digest": "sha256:dfe0d1b6c92049ed49c060cbeec2ea52b8948dd23cb2ce06955e305c258f3dc1",
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "20.04-amd64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1619,
+                "digest": "sha256:dd4668c64cbdaad2b2d1a8bbc39746031b09baff2aab19983d52e122bb978815"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27511841,
+                    "digest": "sha256:43cfb69dbb464ebad014cd4687bf02ee4f5011d540916c658af36faafbfd3481"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 7816817,
+                    "digest": "sha256:5adb4c8a2169031ce8ebdd0bdb938b2c4f105ea8de1b6cc64b5dc2d402dbf2c2"
+                }
+            ]
+        },
+        "20.04-arm64": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1620,
+                "digest": "sha256:003ffbc10cfd1c140d869c6abe17d12bd5c1613ca9ac1600341eeb4fece20367"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 25974891,
+                    "digest": "sha256:fb67143098b346a05ff35775af9ba34ccf9a89e4079f4ceb9a51b05ae257e78c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6719829,
+                    "digest": "sha256:dc6014b50cb2146a8a979a5d43c12f1d5eb9b9d7d87e8b6ceac6206d563e32ce"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "20.04",
+        "20.04-amd64",
+        "20.04-arm64"
+    ],
+    "configs": {
+        "20.04": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "20.04"
+                },
+                "OnBuild": null
+            },
+            "created": "2024-04-19T22:04:22.027808337Z",
+            "history": [
+                {
+                    "created": "2024-04-10T18:50:35.72773029Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T18:50:35.75382666Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T18:50:35.786388285Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T18:50:35.810453242Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=20.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T18:50:37.575221925Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:ea2128e23dce0162557abadd80656bd5ae047d573095d1d4323eb4154490dfdc in / "
+                },
+                {
+                    "created": "2024-04-10T18:50:37.922041804Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-19T22:04:22.027808337Z",
+                    "created_by": "RUN /bin/sh -c set -x     && apt-get update -qq     && apt-get upgrade -y -qq     && apt-get autoremove -y     && apt-get autoclean     && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:106e8431b412f51ccd75ea46a2d5cb4343b23273cbcf50188377cb93aa9a6d82",
+                    "sha256:08ea1be319494eccf78416489ace9770eb86d2c18481171b605e2aeaeaee1bec"
+                ]
+            }
+        },
+        "20.04-amd64": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "20.04"
+                },
+                "OnBuild": null
+            },
+            "created": "2024-04-19T22:04:22.027808337Z",
+            "history": [
+                {
+                    "created": "2024-04-10T18:50:35.72773029Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T18:50:35.75382666Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T18:50:35.786388285Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T18:50:35.810453242Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=20.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T18:50:37.575221925Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:ea2128e23dce0162557abadd80656bd5ae047d573095d1d4323eb4154490dfdc in / "
+                },
+                {
+                    "created": "2024-04-10T18:50:37.922041804Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-19T22:04:22.027808337Z",
+                    "created_by": "RUN /bin/sh -c set -x     && apt-get update -qq     && apt-get upgrade -y -qq     && apt-get autoremove -y     && apt-get autoclean     && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:106e8431b412f51ccd75ea46a2d5cb4343b23273cbcf50188377cb93aa9a6d82",
+                    "sha256:08ea1be319494eccf78416489ace9770eb86d2c18481171b605e2aeaeaee1bec"
+                ]
+            }
+        },
+        "20.04-arm64": {
+            "architecture": "arm64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "20.04"
+                },
+                "OnBuild": null
+            },
+            "created": "2024-04-19T22:04:57.922328075Z",
+            "history": [
+                {
+                    "created": "2024-04-10T19:07:29.93318909Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T19:07:30.019988636Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T19:07:30.093059274Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T19:07:30.167524083Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=20.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-10T19:07:39.508523323Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:acbed61dbc48e6a7411bf9844ddddb8ea75cd88378599d63b0b603e98acf0762 in / "
+                },
+                {
+                    "created": "2024-04-10T19:07:40.260524963Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-19T22:04:57.922328075Z",
+                    "created_by": "RUN /bin/sh -c set -x     && apt-get update -qq     && apt-get upgrade -y -qq     && apt-get autoremove -y     && apt-get autoclean     && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:35e1ca4c242f5a0a27202af68bd8c69f0a9562153a8142fd9fa5eaddcb86953e",
+                    "sha256:3dd309db13c02bb30c67cf97b46813031201a3e5389384e4a0bac967969e3f3f"
+                ]
+            }
+        }
+    }
+}

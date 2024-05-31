@@ -1,0 +1,305 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9038,
+                "digest": "sha256:6c90cb0f23a96f39392c89e116d8d2669f7281b8a1f92281d0eec274a76efa09"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 137294250,
+                    "digest": "sha256:b77a855ea045148dda16c09b72d296667b2dbdff7c1154c4dca7eaa5c9c5d334"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 676,
+                    "digest": "sha256:59b34b527958c8d652157d44c0fb6cad327aa3b072dd8984e23ea0acd49cb81c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1984,
+                    "digest": "sha256:4e716e902edbe7131b4e5a72885ef13ad2701cae5929a4e0162d5e702c942326"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2226,
+                    "digest": "sha256:68354fb8541827f5b8aa1d75d2407b0a7fa85d82a6a0420fda4baf1148d8b983"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10747,
+                    "digest": "sha256:3a07200ed509e3b9171ff801d2cdcad16f655655337715815eefce6330aa4fd1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 94980413,
+                    "digest": "sha256:149747dbdb4189e62843f81680187b62261fbfa10e18418edc4020bf7a5a14d9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 406,
+                    "digest": "sha256:67aef79f5aac4fdc1fb17d1d36d893bed9a6d49884ee59592b32737d800c50d5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2668554,
+                    "digest": "sha256:45600cb0c6846af46305f7b276c7f7008c46819b81871044c7fe343c41c74e54"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 104642805,
+                    "digest": "sha256:ae882f7d1e2a23b3cee5523f367228f994f9b1f28e0d70a1f0d280cedbaaf5e5"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "nfnty <docker@nfnty.se>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "contusr",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_TIME=en_DK.UTF-8",
+                    "LC_PAPER=en_DK.UTF-8",
+                    "LC_MEASUREMENT=en_DK.UTF-8",
+                    "TZ=UTC",
+                    "VERSION_NGINX_MAINLINE=1.15.7-1",
+                    "VERSION_PHP=7.3.0-1"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:d13f445d9c63243b9a555b83546c6c887ff57dd9911aa16248b23ef7eaefe4bc",
+                "Volumes": {
+                    "/var/lib/nginx": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/opt/multiprocess.py",
+                    "--",
+                    "/usr/bin/php-fpm --fpm-config /etc/php/php-fpm.conf",
+                    "/usr/bin/nginx -g 'daemon off;'"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "1eece3ffe4ffd03e7696df11c323f09c8bf6f4aa62193984b70f06289386808e",
+            "container_config": {
+                "Hostname": "1eece3ffe4ff",
+                "Domainname": "",
+                "User": "contusr",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "443/tcp": {},
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl",
+                    "LANG=en_US.UTF-8",
+                    "LANGUAGE=en_US:en",
+                    "LC_TIME=en_DK.UTF-8",
+                    "LC_PAPER=en_DK.UTF-8",
+                    "LC_MEASUREMENT=en_DK.UTF-8",
+                    "TZ=UTC",
+                    "VERSION_NGINX_MAINLINE=1.15.7-1",
+                    "VERSION_PHP=7.3.0-1"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"/opt/multiprocess.py\" \"--\" \"/usr/bin/php-fpm --fpm-config /etc/php/php-fpm.conf\" \"/usr/bin/nginx -g 'daemon off;'\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:d13f445d9c63243b9a555b83546c6c887ff57dd9911aa16248b23ef7eaefe4bc",
+                "Volumes": {
+                    "/var/lib/nginx": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/opt/multiprocess.py",
+                    "--",
+                    "/usr/bin/php-fpm --fpm-config /etc/php/php-fpm.conf",
+                    "/usr/bin/nginx -g 'daemon off;'"
+                ],
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2018-12-22T02:45:08.143115145Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2018-12-22T00:05:14.749900894Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER nfnty <docker@nfnty.se>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:06:59.288142735Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:482aa5884189a57419f83cab6310115fd8dcabf1451999caa79d06f5468bd79c in / "
+                },
+                {
+                    "created": "2018-12-22T00:07:01.160301948Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_TIME=en_DK.UTF-8 LC_PAPER=en_DK.UTF-8 LC_MEASUREMENT=en_DK.UTF-8 TZ=UTC",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:07:01.694448564Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:00dcbe668c6842f1430e2d429850af56074b8d3cad95001bbfcd7cb8ff4900a1 in /tmp/crypto/ "
+                },
+                {
+                    "created": "2018-12-22T00:07:02.284254542Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:42fbc3f8ca79473b495e438c4efa51d0c027c77f94d30c19ea2c8d230008ad17 in /etc/ "
+                },
+                {
+                    "created": "2018-12-22T00:07:02.828663786Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:be8a9c661f1b60067a9ef94d6113493a326b683c92fa3eb7af4e03bd157a9806 in /opt/ "
+                },
+                {
+                    "created": "2018-12-22T00:07:03.263156511Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:a79adcca96dd2c7b366e3a10d131cdd5d7ab051df0275cec4415dfbaff43d755 in /tmp/packages/ "
+                },
+                {
+                    "created": "2018-12-22T00:10:17.653700362Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c locale-gen &&         chmod 'u=rwX,g=rX,o=rX'         /etc/{locale.conf,locale.gen,pacman.conf,pacman.d,pacman.d/mirrorlist}         /opt/multiprocess.py &&         ln --symbolic \"/usr/share/zoneinfo/${TZ}\" /etc/localtime &&         pacman-key --init &&     pacman-key --populate archlinux &&         find /tmp/crypto/ca-certificates -type f -not -name '.gitignore'         -exec install --owner=root --group=root --mode=755             --target-directory='/etc/ca-certificates/trust-source/anchors' '{}' '+' &&     update-ca-trust &&         find /tmp/crypto/pacman/keys -type f -not -name '.gitignore' -exec pacman-key --add '{}' '+' &&     find /tmp/crypto/pacman/trust -type f -not -name '.gitignore'         -exec gpg --homedir /etc/pacman.d/gnupg --import-ownertrust '{}' '+' &&         rm --recursive /tmp/crypto &&         pacman --sync --noconfirm --refresh --sysupgrade &&     find /tmp/packages -type f -not -name '.gitignore' -and -not -name '*.sig' -exec pacman --upgrade --noconfirm '{}' '+' &&     rm --recursive /tmp/packages &&     find /var/cache/pacman/pkg -mindepth 1 -delete"
+                },
+                {
+                    "created": "2018-12-22T00:10:18.96057517Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/usr/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:29:27.957526344Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER nfnty <docker@nfnty.se>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:29:30.304282767Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c ugid='880016' &&     groupadd --gid \"${ugid}\" contgrp &&     useradd --uid \"${ugid}\" --gid \"${ugid}\" --shell /usr/bin/false contusr"
+                },
+                {
+                    "created": "2018-12-22T00:29:30.801258111Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  ENV VERSION_NGINX_MAINLINE=1.15.7-1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:29:39.728279107Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c pacman --sync --noconfirm --refresh --sysupgrade &&     pacman --sync --noconfirm \"nginx-mainline=${VERSION_NGINX_MAINLINE}\" &&     find /var/cache/pacman/pkg -mindepth 1 -delete &&     setcap 'cap_net_bind_service=ep' /usr/bin/nginx &&     chown --recursive contusr:contgrp /var/lib/nginx /var/log/nginx &&     install --directory --owner=contusr --group=contgrp --mode=700 /run/nginx"
+                },
+                {
+                    "created": "2018-12-22T00:29:40.472516793Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  USER contusr",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:29:40.794242445Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/var/lib/nginx]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:29:41.196944069Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 443/tcp 80/tcp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T00:29:41.582289767Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/usr/bin/nginx\" \"-g\" \"daemon off;\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T02:43:42.401744227Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER nfnty <docker@nfnty.se>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T02:43:42.801075146Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T02:43:43.227752234Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  ENV VERSION_PHP=7.3.0-1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T02:45:06.238504184Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c pacman --sync --noconfirm --refresh --sysupgrade &&     pacman --sync --noconfirm \"php=${VERSION_PHP}\" \"php-fpm=${VERSION_PHP}\" python &&     find /var/cache/pacman/pkg -mindepth 1 -delete &&     install --directory --owner=contusr --group=contgrp --mode=700 /run/php-fpm"
+                },
+                {
+                    "created": "2018-12-22T02:45:07.76975312Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  USER contusr",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-22T02:45:08.143115145Z",
+                    "author": "nfnty <docker@nfnty.se>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/opt/multiprocess.py\" \"--\" \"/usr/bin/php-fpm --fpm-config /etc/php/php-fpm.conf\" \"/usr/bin/nginx -g 'daemon off;'\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:dccfcd51ee1bb726085bb265ffcca1d54e790641f3816bb04718b21211c0ebc0",
+                    "sha256:903602e7c31c2ffe63ccad21dd334819984bc36feacf0cf5e264a87a779ec9a7",
+                    "sha256:f0abf74775481c11f04703c36c6f27d699662a52f8399bb078e5c788adc6d09a",
+                    "sha256:4ca096a3f6ac688ebb7bb52274cd8dde1e853104a8a2f2ea7a774698d7088ece",
+                    "sha256:2b99fc72f3916c33b241ff9cc8ef14b8958345789a236350ccb5afaee07c7415",
+                    "sha256:a24f0fd84a470e934ff802b15319ddb081e023ae4805cf10a9d6187e858af2b2",
+                    "sha256:0aaf5675baec86c675f75db1b8b53fac824b8a62505701eedbba517cfb927ce3",
+                    "sha256:ab6850682e505d928d7e6c62818ac01cbf032b7fff698ed4188f0a9a01514ed5",
+                    "sha256:d45a1494b5dd54e49e937c0115d4505653e2b3daabd659362b48c35616ee9e03"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:f7e635f823a465f880d980dc786a4bf4f47cf9a008a8a8c4b1d58c33b9084d23",
+                    "size": 1249,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:a6f569493eedfeb56e6a37ed8426d9c035b2cabf138e502751bea9f0bd35819a",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:f7e635f823a465f880d980dc786a4bf4f47cf9a008a8a8c4b1d58c33b9084d23",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "./server/minimal-server"
+                ],
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "24.04"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-29T17:30:30.548980019Z",
+            "history": [
+                {
+                    "created": "2024-04-29T16:38:00.954744995Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-29T16:38:00.974574011Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-29T16:38:01.001213341Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-29T16:38:01.024846126Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=24.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-29T16:38:02.941327307Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:ac9d5a9d5b9b1217a6b26f1069a16bc48fa9c2ed76f3eaf28a8e643ae2058d11 in / "
+                },
+                {
+                    "created": "2024-04-29T16:38:03.122210017Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-29T17:30:21.884607794Z",
+                    "created_by": "RUN /bin/sh -c apt update &&     DEBIAN_FRONTEND=\"noninteractive\" apt install -y build-essential libssl-dev git # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T17:30:22.740304672Z",
+                    "created_by": "RUN /bin/sh -c cd / && git clone https://github.com/UM-Bridge/umbridge.git # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T17:30:22.752692656Z",
+                    "created_by": "COPY . /server # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T17:30:30.548980019Z",
+                    "created_by": "RUN /bin/sh -c cd /server &&     g++ -I/umbridge/lib minimal-server.cpp -pthread -lssl -lcrypto -o minimal-server # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-29T17:30:30.548980019Z",
+                    "created_by": "CMD [\"/bin/sh\" \"-c\" \"./server/minimal-server\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:80098e3d304cd7858ad97b310cd16083fbe6fab2968be7a988fc6894cb85dc25",
+                    "sha256:be10179178b83925ab4914bf42b14f2294d7f05bfcbe1de8820cc6c3698f24c3",
+                    "sha256:e1a58438b7823238e9ab3013cd9dc232f9c71db981d7dbdef2d892628dc99e03",
+                    "sha256:ad33b158c7d5035404b2f1a25b5ea4cdc0a4437a400a16e30ae044c318f5b4ee",
+                    "sha256:935b57dff57e9cc7266e075c3fc550001590521945d0f9d2f1e1b7c8fa2e42da"
+                ]
+            }
+        }
+    }
+}

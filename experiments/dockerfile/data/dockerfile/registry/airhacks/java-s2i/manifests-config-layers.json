@@ -1,0 +1,258 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 7927,
+                "digest": "sha256:6f900a241134b363c7e0e1baebebb1bae384d5b948a9302e9f8bf48be8630df8"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70389679,
+                    "digest": "sha256:45a2e645736c4c66ef34acce2407ded21f7a9b231199d3b92d6c9776df264729"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 256,
+                    "digest": "sha256:734fb161cf896cf5c25a9a857a4b4d267bb5a59d5acf9ba846278ab3f3d1f5d5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 68747156,
+                    "digest": "sha256:78efc9e155c4f5ac3665c4ef14339c305672468520dc0d5ad5a254ce90a1ec28"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1979,
+                    "digest": "sha256:8a3400b7e31a55323583e3d585b3b0be56d9f7ae563187aec96d47ef5419982a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 193505055,
+                    "digest": "sha256:533a438cb4782393793cabdbae230e08708e58a15435507097810ebae9e12e69"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "1b0d6163fdc2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "STI_SCRIPTS_URL=image:///usr/libexec/s2i",
+                    "STI_SCRIPTS_PATH=/usr/libexec/s2i",
+                    "HOME=/opt/app-root/src",
+                    "BASH_ENV=/opt/app-root/etc/scl_enable",
+                    "ENV=/opt/app-root/etc/scl_enable",
+                    "PROMPT_COMMAND=. /opt/app-root/etc/scl_enable",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0"
+                ],
+                "Cmd": [
+                    "base-usage"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:5478c19adc783170732b7f848bc26f041070d4801bc3be8e8ff1f5e25eb395e6",
+                "Volumes": null,
+                "WorkingDir": "/opt/app-root/src",
+                "Entrypoint": [
+                    "container-entrypoint"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20161214",
+                    "description": "Base image for all docklands images",
+                    "io.openshift.builder-base-version": "bfd4736",
+                    "io.openshift.s2i.scripts-url": "image:///usr/libexec/s2i",
+                    "io.s2i.scripts-url": "image:///usr/libexec/s2i",
+                    "license": "GPLv2",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "4ed1c6249de7e4f660bd6db65c4f6c6c3c7d2ac730e2d557a07c046a9d84e82b",
+            "container_config": {
+                "Hostname": "1b0d6163fdc2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "STI_SCRIPTS_URL=image:///usr/libexec/s2i",
+                    "STI_SCRIPTS_PATH=/usr/libexec/s2i",
+                    "HOME=/opt/app-root/src",
+                    "BASH_ENV=/opt/app-root/etc/scl_enable",
+                    "ENV=/opt/app-root/etc/scl_enable",
+                    "PROMPT_COMMAND=. /opt/app-root/etc/scl_enable",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:5478c19adc783170732b7f848bc26f041070d4801bc3be8e8ff1f5e25eb395e6",
+                "Volumes": null,
+                "WorkingDir": "/opt/app-root/src",
+                "Entrypoint": [
+                    "container-entrypoint"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20161214",
+                    "description": "Base image for all docklands images",
+                    "io.openshift.builder-base-version": "bfd4736",
+                    "io.openshift.s2i.scripts-url": "image:///usr/libexec/s2i",
+                    "io.s2i.scripts-url": "image:///usr/libexec/s2i",
+                    "license": "GPLv2",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2018-12-02T03:44:42.062783085Z",
+            "docker_version": "18.09.0",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-15T18:21:21.197722058Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:940c77b6724c00d4208cc72169a63951eaa605672bcc5902ab2013cbae107434 in / "
+                },
+                {
+                    "created": "2016-12-15T18:21:23.00781987Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20161214",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-15T18:21:23.875991987Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-01T12:35:10.223863578Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Jakub Hadvig <jhadvig@redhat.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-01T12:35:12.609704883Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL io.openshift.s2i.scripts-url=image:///usr/libexec/s2i io.s2i.scripts-url=image:///usr/libexec/s2i",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-01T12:35:14.532740148Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV STI_SCRIPTS_URL=image:///usr/libexec/s2i STI_SCRIPTS_PATH=/usr/libexec/s2i HOME=/opt/app-root/src PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-01T12:35:16.320837707Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY file:92abfe3dd1d63ab45469e0920939e615b734160a4ddb9a9b745f18093fe54a92 in /opt/app-root/etc/scl_enable "
+                },
+                {
+                    "created": "2017-02-01T12:35:18.34175466Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV BASH_ENV=/opt/app-root/etc/scl_enable ENV=/opt/app-root/etc/scl_enable PROMPT_COMMAND=. /opt/app-root/etc/scl_enable",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-01T12:38:38.610543803Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c rpmkeys --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7 &&   INSTALL_PKGS=\"autoconf   automake   bsdtar   bzip2   findutils   gcc-c++   gd-devel   gdb   gettext   git   libcurl-devel   libxml2-devel   libxslt-devel   lsof   make   mariadb-devel   mariadb-libs   openssl-devel   patch   postgresql-devel   procps-ng   scl-utils   sqlite-devel   tar   unzip   wget   which   yum-utils   zlib-devel\" &&   mkdir -p ${HOME}/.pki/nssdb &&   chown -R 1001:0 ${HOME}/.pki &&   yum install -y --setopt=tsflags=nodocs $INSTALL_PKGS &&   rpm -V $INSTALL_PKGS &&   yum clean all -y &&   useradd -u 1001 -r -g 0 -d ${HOME} -s /sbin/nologin       -c \"Default Application User\" default &&   chown -R 1001:0 /opt/app-root"
+                },
+                {
+                    "created": "2017-02-01T12:38:41.964912469Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:db143564578605b4cc3f4c2825bf5ea1812354bddf5784d97bd1c3caacfdbc03 in /usr/bin/ "
+                },
+                {
+                    "created": "2017-02-01T12:38:44.153641548Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  WORKDIR /opt/app-root/src",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-01T12:38:46.27564274Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"container-entrypoint\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-01T12:38:48.448663571Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"base-usage\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-01T12:38:50.598676504Z",
+                    "author": "Jakub Hadvig <jhadvig@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  LABEL io.openshift.builder-base-version=bfd4736",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-02T03:41:46.139691899Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Adam Bien, adam-bien.com description=Base image for all docklands images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-02T03:44:41.002907949Z",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && yum -y install java-1.8.0-openjdk-devel   && yum clean all"
+                },
+                {
+                    "created": "2018-12-02T03:44:41.713525771Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-02T03:44:42.062783085Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:34e7b85d83e48a22bd5dfa2b6b9ee9565b7ef672f09b3d2409c61635f9bca4db",
+                    "sha256:4b1e8db0189ac3a71680b0308706e4f0cd37288c98fabbd4316444e2b6a94707",
+                    "sha256:f1bbaf33b49c616a9da5660e208b4a2a92b0caccdae38b2eed215d0dfdae5486",
+                    "sha256:cb96aea742c3a6e7e6160ddd986069a72a0ff38b174fa161ba26333f82e3f605",
+                    "sha256:84d03cb4270a65761532f2d07491cc954a926490b5d8cb6837472ab89fdef61b"
+                ]
+            }
+        }
+    }
+}

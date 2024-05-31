@@ -1,0 +1,212 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5556,
+                "digest": "sha256:ef2e49e62359fd3a12e39ed6828a3e63a155e3a96455ec7811549da66362f93e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2796860,
+                    "digest": "sha256:188c0c94c7c576fff0792aca7ec73d67a2f7f4cb3a6e53a84559337260b36964"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1610325,
+                    "digest": "sha256:c38e17a7f410a3987cb4cc030eacf64e86af408cb8e4a42138e8c19753d337f9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 489,
+                    "digest": "sha256:62b7ffbe53ee8cc1e179f58e4018842ba0be9470d8c749f1c8600236ecec854e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 562,
+                    "digest": "sha256:de63ea018a66cb2b1e5b6ceb7ee0b94c041ca283481098bde1e020cfac9d8391"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 228,
+                    "digest": "sha256:34c41011c36b9e317dff8c1ae903423b414e0f8f05898d8c81a18d637d08d848"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 57838045,
+                    "digest": "sha256:da22d8ffd478994fd6703a740edff69834b13f061dfc2471250ce719fa611b77"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 128,
+                    "digest": "sha256:38d4a9dcd61fe8ef7c217122c3559d553efcee03d8d58324ae04e3df2859c4b5"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "totto@totto.org",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1f428c1e95974cdc83c533a08a2ce78a5fe93ad6bcab6e61b3a6a2f29e167077",
+                "Volumes": null,
+                "WorkingDir": "/root",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "2020-10-24T18:39:56Z",
+                    "org.label-schema.docker.dockerfile": "/maven-infrastructure/docker-baseimages/alpine-zulu-jdk9/Dockerfile",
+                    "org.label-schema.license": "Apache License - Version 2.0",
+                    "org.label-schema.name": "Maven Docker Infrastructure - Zulu JDK8 Baseimage",
+                    "org.label-schema.vcs-ref": "73d6a0e37fddef86ce1a13369f313bf4ae447d6a",
+                    "org.label-schema.vcs-type": "Github",
+                    "org.label-schema.vcs-url": "https://github.com/Cantara/maven-infrastructure"
+                }
+            },
+            "container": "fa550f950c69ab23ca570252be27720b06ef74c0bd067ba62f829a3406027edb",
+            "container_config": {
+                "Hostname": "fa550f950c69",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) WORKDIR /root"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1f428c1e95974cdc83c533a08a2ce78a5fe93ad6bcab6e61b3a6a2f29e167077",
+                "Volumes": null,
+                "WorkingDir": "/root",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "2020-10-24T18:39:56Z",
+                    "org.label-schema.docker.dockerfile": "/maven-infrastructure/docker-baseimages/alpine-zulu-jdk9/Dockerfile",
+                    "org.label-schema.license": "Apache License - Version 2.0",
+                    "org.label-schema.name": "Maven Docker Infrastructure - Zulu JDK8 Baseimage",
+                    "org.label-schema.vcs-ref": "73d6a0e37fddef86ce1a13369f313bf4ae447d6a",
+                    "org.label-schema.vcs-type": "Github",
+                    "org.label-schema.vcs-url": "https://github.com/Cantara/maven-infrastructure"
+                }
+            },
+            "created": "2020-10-24T18:40:14.954070064Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2020-10-22T02:19:24.33416307Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f17f65714f703db9012f00e5ec98d0b2541ff6147c2633f7ab9ba659d0c507f4 in / "
+                },
+                {
+                    "created": "2020-10-22T02:19:24.499382102Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-24T18:39:58.189907647Z",
+                    "author": "totto@totto.org",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER totto@totto.org",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-24T18:39:58.48392341Z",
+                    "author": "totto@totto.org",
+                    "created_by": "/bin/sh -c #(nop)  ARG BUILD_DATE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-24T18:39:58.776217651Z",
+                    "author": "totto@totto.org",
+                    "created_by": "/bin/sh -c #(nop)  ARG VCS_REF",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-24T18:39:59.09368826Z",
+                    "author": "totto@totto.org",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.build-date=2020-10-24T18:39:56Z org.label-schema.docker.dockerfile=/maven-infrastructure/docker-baseimages/alpine-zulu-jdk9/Dockerfile org.label-schema.license=Apache License - Version 2.0 org.label-schema.name=Maven Docker Infrastructure - Zulu JDK8 Baseimage org.label-schema.vcs-ref=73d6a0e37fddef86ce1a13369f313bf4ae447d6a org.label-schema.vcs-type=Github org.label-schema.vcs-url=https://github.com/Cantara/maven-infrastructure",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-24T18:40:02.230579103Z",
+                    "author": "totto@totto.org",
+                    "created_by": "|2 BUILD_DATE=2020-10-24T18:39:56Z VCS_REF=73d6a0e37fddef86ce1a13369f313bf4ae447d6a /bin/sh -c apk update &&   apk upgrade &&   apk add wget curl &&   rm -rf /var/cache/apk/*"
+                },
+                {
+                    "created": "2020-10-24T18:40:03.867525897Z",
+                    "author": "totto@totto.org",
+                    "created_by": "|2 BUILD_DATE=2020-10-24T18:39:56Z VCS_REF=73d6a0e37fddef86ce1a13369f313bf4ae447d6a /bin/sh -c wget https://cdn.azul.com/public_keys/alpine-signing@azul.com-5d5dc44c.rsa.pub"
+                },
+                {
+                    "created": "2020-10-24T18:40:05.334707267Z",
+                    "author": "totto@totto.org",
+                    "created_by": "|2 BUILD_DATE=2020-10-24T18:39:56Z VCS_REF=73d6a0e37fddef86ce1a13369f313bf4ae447d6a /bin/sh -c cp alpine-signing@azul.com-5d5dc44c.rsa.pub /etc/apk/keys/"
+                },
+                {
+                    "created": "2020-10-24T18:40:06.813059447Z",
+                    "author": "totto@totto.org",
+                    "created_by": "|2 BUILD_DATE=2020-10-24T18:39:56Z VCS_REF=73d6a0e37fddef86ce1a13369f313bf4ae447d6a /bin/sh -c echo \"https://repos.azul.com/zulu/alpine\" >> /etc/apk/repositories"
+                },
+                {
+                    "created": "2020-10-24T18:40:12.953152401Z",
+                    "author": "totto@totto.org",
+                    "created_by": "|2 BUILD_DATE=2020-10-24T18:39:56Z VCS_REF=73d6a0e37fddef86ce1a13369f313bf4ae447d6a /bin/sh -c apk update &&  apk add zulu8-jdk"
+                },
+                {
+                    "created": "2020-10-24T18:40:14.631988811Z",
+                    "author": "totto@totto.org",
+                    "created_by": "|2 BUILD_DATE=2020-10-24T18:39:56Z VCS_REF=73d6a0e37fddef86ce1a13369f313bf4ae447d6a /bin/sh -c java -version"
+                },
+                {
+                    "created": "2020-10-24T18:40:14.954070064Z",
+                    "author": "totto@totto.org",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /root",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:ace0eda3e3be35a979cec764a3321b4c7d0b9e4bb3094d20d3ff6782961a8d54",
+                    "sha256:3a2dbff0c365169ac655151d17010191b77a53edfcdca2140a16019a90641d61",
+                    "sha256:5789c34ed39cc37175c3d94487511a7ee3d56b8b7d6a90468eede2c3bb23a9ed",
+                    "sha256:cf6059c81778961dc7d437230e7b172e6a7d8ede20b940132711530bdc3bfa4b",
+                    "sha256:070fe52ecb3a22ae6a8894cc7ee97b84052a9d77e057a20428bb69f1d0a2c2b9",
+                    "sha256:d6b4694a0359d598d72903c25ebdd776502b7358821a3d094ebfb142b19daa22",
+                    "sha256:0ecb97a1656a34145bfecedddc5f44269f8be3e16f1ce0426f9ac9b0f5039c4c"
+                ]
+            }
+        }
+    }
+}

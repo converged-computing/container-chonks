@@ -1,0 +1,751 @@
+{
+    "manifests": {
+        "1.9.1": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:74510ac3e38ce0057d313bd99b40a6087311a0ef8bc2190b706aa5862c854712",
+                    "size": 2833,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:6b24a6f75c4bea0e49b27458a122ccc3148045eef9bf779bce76a483fbd0721b",
+                    "size": 2833,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "1.9.1-vanilla": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:741a79898104766778c6072a5108efb2e1aab6bcf8d7fcb460b4028b9880e235",
+                    "size": 2415,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:7b43fde9931db8d56c486ee2f5edafe7fa36d4868875e185689ab41f3b4fa59f",
+                    "size": 2415,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "latest": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:74510ac3e38ce0057d313bd99b40a6087311a0ef8bc2190b706aa5862c854712",
+                    "size": 2833,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:6b24a6f75c4bea0e49b27458a122ccc3148045eef9bf779bce76a483fbd0721b",
+                    "size": 2833,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.9.1",
+        "1.9.1-vanilla",
+        "latest"
+    ],
+    "configs": {
+        "1.9.1": {
+            "architecture": "amd64",
+            "config": {
+                "ExposedPorts": {
+                    "29418/tcp": {},
+                    "80/tcp": {},
+                    "8080/tcp": {},
+                    "8443/tcp": {},
+                    "9418/tcp": {}
+                },
+                "Env": [
+                    "PATH=/opt/gitblit:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/local/openjdk-8",
+                    "LANG=C.UTF-8",
+                    "JAVA_VERSION=8u312",
+                    "GITBLIT_VERSION=1.9.1",
+                    "GITBLIT_DOWNLOAD_SHA=c0b3095add8cb935f14a9ad1db571be74144f1c71f6495769390b94ca6b7525f",
+                    "GITBLIT_DOWNLOAD_URL=https://github.com/gitblit/gitblit/releases/download/v1.9.1/gitblit-1.9.1.tar.gz",
+                    "GITBLIT_VAR=/var/opt/gitblit",
+                    "GITBLIT_RPC=on"
+                ],
+                "Entrypoint": [
+                    "docker-entrypoint.sh"
+                ],
+                "Cmd": [
+                    "gitblit"
+                ],
+                "Volumes": {
+                    "/var/opt/gitblit": {}
+                },
+                "WorkingDir": "/opt/gitblit",
+                "Labels": {
+                    "maintainer": "James Moger <james.moger@gitblit.com>, Florian Zschocke <f.zschocke+gitblit@gmail.com>",
+                    "org.label-schema.description": "Gitblit is an open-source, pure Java stack for managing, viewing, and serving Git repositories.",
+                    "org.label-schema.name": "gitblit",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.url": "http://gitblit.com",
+                    "org.label-schema.version": "1.9.1"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2022-01-26T14:34:25.470735209Z",
+            "history": [
+                {
+                    "created": "2021-12-21T01:22:43.418913408Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:09675d11695f65c55efdc393ff0cd32f30194cd7d0fbef4631eebfed4414ac97 in / "
+                },
+                {
+                    "created": "2021-12-21T01:22:43.799429634Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T22:57:38.657322946Z",
+                    "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates p11-kit \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2021-12-21T23:06:21.305139125Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/local/openjdk-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:06:22.27358261Z",
+                    "created_by": "/bin/sh -c { echo '#/bin/sh'; echo 'echo \"$JAVA_HOME\"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ \"$JAVA_HOME\" = \"$(docker-java-home)\" ] # backwards compatibility"
+                },
+                {
+                    "created": "2021-12-21T23:06:22.482002216Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:06:22.712960086Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:06:22.933466923Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_VERSION=8u312",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:08:10.87361527Z",
+                    "created_by": "/bin/sh -c set -eux; \t\tarch=\"$(dpkg --print-architecture)\"; \tcase \"$arch\" in \t\t'amd64') \t\t\tdownloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_8u312b07.tar.gz'; \t\t\t;; \t\t'arm64') \t\t\tdownloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_aarch64_linux_8u312b07.tar.gz'; \t\t\t;; \t\t*) echo >&2 \"error: unsupported architecture: '$arch'\"; exit 1 ;; \tesac; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tdirmngr \t\tgnupg \t\twget \t; \trm -rf /var/lib/apt/lists/*; \t\twget --progress=dot:giga -O openjdk.tgz \"$downloadUrl\"; \twget --progress=dot:giga -O openjdk.tgz.asc \"$downloadUrl.sign\"; \t\texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; \tgpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; \tgpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F \t\t| tee /dev/stderr \t\t| grep '0xA5CD6035332FA671' \t\t| grep 'Andrew Haley'; \tgpg --batch --verify openjdk.tgz.asc openjdk.tgz; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\"; \t\tmkdir -p \"$JAVA_HOME\"; \ttar --extract \t\t--file openjdk.tgz \t\t--directory \"$JAVA_HOME\" \t\t--strip-components 1 \t\t--no-same-owner \t; \trm openjdk.tgz*; \t\tapt-mark auto '.*' > /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \t\t{ \t\techo '#!/usr/bin/env bash'; \t\techo 'set -Eeuo pipefail'; \t\techo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth \"$JAVA_HOME/lib/security/cacerts\"'; \t} > /etc/ca-certificates/update.d/docker-openjdk; \tchmod +x /etc/ca-certificates/update.d/docker-openjdk; \t/etc/ca-certificates/update.d/docker-openjdk; \t\tfind \"$JAVA_HOME/lib\" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; \tldconfig; \t\tjava -version"
+                },
+                {
+                    "created": "2022-01-26T08:09:41.82725988Z",
+                    "created_by": "RUN /bin/sh -c groupadd -r -g 8117 gitblit && useradd -r -M -g gitblit -u 8117 -d /opt/gitblit gitblit # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_VERSION=1.9.1",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_DOWNLOAD_SHA=c0b3095add8cb935f14a9ad1db571be74144f1c71f6495769390b94ca6b7525f",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_DOWNLOAD_URL=https://github.com/gitblit/gitblit/releases/download/v1.9.1/gitblit-1.9.1.tar.gz",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "RUN /bin/sh -c set -eux ;     apt-get update && apt-get install -y --no-install-recommends         wget         gosu         ;     rm -rf /var/lib/apt/lists/* ;     wget --progress=bar:force:noscroll -O gitblit.tar.gz ${GITBLIT_DOWNLOAD_URL} ;     echo \"${GITBLIT_DOWNLOAD_SHA} *gitblit.tar.gz\" | sha256sum -c - ;     mkdir -p /opt/gitblit ;     tar xzf gitblit.tar.gz -C /opt/gitblit --strip-components 1 ;     rm -f gitblit.tar.gz ;     rm -f /opt/gitblit/install-service-*.sh ;     rm -r /opt/gitblit/service-*.sh ; # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "LABEL maintainer=James Moger <james.moger@gitblit.com>, Florian Zschocke <f.zschocke+gitblit@gmail.com> org.label-schema.schema-version=1.0 org.label-schema.name=gitblit org.label-schema.description=Gitblit is an open-source, pure Java stack for managing, viewing, and serving Git repositories. org.label-schema.url=http://gitblit.com org.label-schema.version=1.9.1",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_VAR=/var/opt/gitblit",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.160773251Z",
+                    "created_by": "RUN /bin/sh -c set -eux ;     mkdir -p -m 0775 $GITBLIT_VAR ;     gbetc=$GITBLIT_VAR/etc ;     gbsrv=$GITBLIT_VAR/srv ;     mkdir -p -m 0775 $gbsrv ;     mv /opt/gitblit/data/git $gbsrv ;     ln -s $gbsrv/git /opt/gitblit/data/git ;     mv /opt/gitblit/data $gbetc ;     ln -s $gbetc /opt/gitblit/data ;         mkdir -p /opt/gitblit/etc/ ;     mv $gbetc/defaults.properties /opt/gitblit/etc ;     printf \"6 c\\\\\\n\\\\\\n\\\\\\n\"\"#\\\\\\n\"\"# DO NOT EDIT THIS FILE. IT CAN BE OVERWRITTEN BY UPDATES.\\\\\\n\"\"# FOR YOUR OWN CUSTOM SETTINGS USE THE FILE ${gbetc}/gitblit.properties\\\\\\n\"\"# THIS FILE IS ONLY FOR REFERENCE.\\\\\\n\"\"#\\\\\\n\\\\\\n\\\\\\n\\n/^# Base folder for repositories/,/^git.repositoriesFolder/d\\n/^# The location to save the filestore blobs/,/^filestore.storageFolder/d\\n/^# Specify the location of the Lucene Ticket index/,/^tickets.indexFolder/d\\n/^# The destination folder for cached federation proposals/,/^federation.proposalsFolder/d\\n/^# The temporary folder to decompress/,/^server.tempFolder/d\\ns/^server.httpPort.*/#server.httpPort = 8080/\\ns/^server.httpsPort.*/#server.httpsPort = 8443/\\ns/^server.redirectToHttpsPort.*/#server.redirectToHttpsPort = true/\\n    \" > /tmp/defaults.sed ;     sed -f /tmp/defaults.sed /opt/gitblit/etc/defaults.properties > $gbetc/defaults.properties ;     rm -f /tmp/defaults.sed ;     grep  \"^git.repositoriesFolder\" $gbetc/defaults.properties && false ;     grep  \"^filestore.storageFolder\" $gbetc/defaults.properties && false ;     grep  \"^tickets.indexFolder\" $gbetc/defaults.properties && false ;     grep  \"^federation.proposalsFolder\" $gbetc/defaults.properties && false ;     grep  \"^server.tempFolder\" $gbetc/defaults.properties && false ;         echo \"git.repositoriesFolder = ${gbsrv}/git\" >  /opt/gitblit/etc/system.properties ;     echo \"filestore.storageFolder = ${gbsrv}/lfs\" >> /opt/gitblit/etc/system.properties ;     echo \"tickets.indexFolder = ${gbsrv}/tickets/lucene\" >> /opt/gitblit/etc/system.properties ;     echo \"federation.proposalsFolder = ${gbsrv}/fedproposals\" >> /opt/gitblit/etc/system.properties ;     echo \"server.tempFolder = ${GITBLIT_VAR}/temp\" >> /opt/gitblit/etc/system.properties ;     echo \"server.httpPort = 8080\" >> /opt/gitblit/etc/system.properties ;     echo \"server.httpsPort = 8443\" >> /opt/gitblit/etc/system.properties ;     echo \"server.redirectToHttpsPort = true\" >> /opt/gitblit/etc/system.properties ;         printf '''#\\n''# GITBLIT-DOCKER.PROPERTIES\\n''#\\n''# This file is used by the docker image to store settings that are defined\\n''# via environment variables. The settings in this file are automatically changed,\\n''# added or deleted.\\n''#\\n''# Do not define your custom settings in this file. Your overrides or\\n''# custom settings should be defined in the \"gitblit.properties\" file.\\n''#\\n''# Do NOT change this include line. It makes sure that settings for this docker image are set.\\n''#\\ninclude = /opt/gitblit/etc/defaults.properties,/opt/gitblit/etc/system.properties\\n\\n' > $gbetc/gitblit-docker.properties ;         sed -i -e 's/^\\(web.enableRpcServlet.*\\)/#\\1/'            -e 's/^\\(web.enableRpcManagement.*\\)/#\\1/'            -e 's/^\\(web.enableRpcAdministration.*\\)/#\\1/'         $gbetc/defaults.properties ;         printf '''#\\n''# GITBLIT.PROPERTIES\\n''#\\n''# Define your custom settings in this file and/or include settings defined in\\n''# other properties files.\\n''#\\n\\n''# NOTE: Gitblit will not automatically reload \"included\" properties.  Gitblit\\n''# only watches the \"gitblit.properties\" file for modifications.\\n''#\\n''# Paths may be relative to the ${baseFolder} or they may be absolute.\\n''#\\n''# ONLY append your custom settings files at the END of the \"include\" line.\\n''# The present files define the default settings for the docker container. If you\\n''# remove them or change the order, things may break.\\n''#\\ninclude = gitblit-docker.properties\\n\\n''#\\n''# Define your overrides or custom settings below\\n''#\\n\\n' > $gbetc/gitblit.properties ;             chown -R gitblit:gitblit $GITBLIT_VAR ;     chmod ug+rwxs $gbsrv $gbsrv/git ;     chmod ug+rwxs $gbetc $gbetc/certs ;     chmod go=r $gbetc/defaults.properties ;     chmod 0664 $gbetc/gitblit-docker.properties ;     chmod 0664 $gbetc/gitblit.properties ;         cp -a $gbetc /opt/gitblit/vog-etc ;     cp -a $gbsrv/git/project.mkd /opt/gitblit/srv-project.mkd ; # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.176999626Z",
+                    "created_by": "COPY migrate/migrate-data /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "COPY migrate/non-etc-files migrate/defaults.* /usr/local/share/gitblit/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "ARG GITBLIT_RPC",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "ENV GITBLIT_RPC=on",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "ENV PATH=/opt/gitblit:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "WORKDIR /opt/gitblit",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "VOLUME [/var/opt/gitblit]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "COPY docker-entrypoint.sh /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "EXPOSE map[29418/tcp:{} 8080/tcp:{} 8443/tcp:{} 9418/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "CMD [\"gitblit\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T14:34:25.403035584Z",
+                    "created_by": "RUN /bin/sh -c rm /opt/gitblit/ext/jna-*.jar  && wget -O /opt/gitblit/ext/jna-4.5.2.jar https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.5.2/jna-4.5.2.jar  && wget -O /opt/gitblit/ext/jna-platform-4.5.2.jar https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.5.2/jna-platform-4.5.2.jar # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T14:34:25.470735209Z",
+                    "created_by": "RUN /bin/sh -c echo server.httpPort = 80 \\\\nserver.httpsPort = 0 \\\\nserver.redirectToHttpsPort = false \\\\nweb.enableRpcServlet = true \\\\nweb.enableRpcManagement = true \\\\nweb.enableRpcAdministration = true \\\\n>> /var/opt/gitblit/etc/gitblit.properties # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T14:34:25.470735209Z",
+                    "created_by": "EXPOSE map[80/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2edcec3590a4ec7f40cf0743c15d78fb39d8326bc029073b41ef9727da6c851f",
+                    "sha256:afda989d53ee25f18b7810206b39580df30518043d1f34f1d514f665ba8026f4",
+                    "sha256:3341e899db61c984184c8aaaaf61251e0bc7dc363592e529875f1873745c2e84",
+                    "sha256:1ea6f0837cd698f676e8541b2171860f6089a0fd0e471dbda97f1a52e454282c",
+                    "sha256:a080c2ad62ed53e33959ca68a2a03c1a333657c57250c85b6856eb054e9e8aed",
+                    "sha256:de8523ca46a6a98121313e4c3decb3bb8a714f4af9255507d708312719586b83",
+                    "sha256:746fd2979b3472af2e02eeae9b5b31cb95ed439b1c94aa2862bca4c14da01efd",
+                    "sha256:5b4d56b9ebcbb7344e248e82405fd8ecc5de625292e903559bc26f06679e369f",
+                    "sha256:1cbfe16ed3d442e10d4f27d48aaf69c3df5e60d2670bb03cb09e66729152c046",
+                    "sha256:b3b64137e0582fcb8c8cefdbaca1e5a5876d643a5f4724f86af168037d2b1e83",
+                    "sha256:0318a6e08d1eb3a09bad3d8133e2dee4226b9ae9be92f6f805767801e728d6f2",
+                    "sha256:21d1cdba126ca40d97cabee0bf211eba820444e1c000b3a8d4275978c8221f11"
+                ]
+            }
+        },
+        "1.9.1-vanilla": {
+            "architecture": "amd64",
+            "config": {
+                "ExposedPorts": {
+                    "29418/tcp": {},
+                    "8080/tcp": {},
+                    "8443/tcp": {},
+                    "9418/tcp": {}
+                },
+                "Env": [
+                    "PATH=/opt/gitblit:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/local/openjdk-8",
+                    "LANG=C.UTF-8",
+                    "JAVA_VERSION=8u312",
+                    "GITBLIT_VERSION=1.9.1",
+                    "GITBLIT_DOWNLOAD_SHA=c0b3095add8cb935f14a9ad1db571be74144f1c71f6495769390b94ca6b7525f",
+                    "GITBLIT_DOWNLOAD_URL=https://github.com/gitblit/gitblit/releases/download/v1.9.1/gitblit-1.9.1.tar.gz",
+                    "GITBLIT_VAR=/var/opt/gitblit",
+                    "GITBLIT_RPC=on"
+                ],
+                "Entrypoint": [
+                    "docker-entrypoint.sh"
+                ],
+                "Cmd": [
+                    "gitblit"
+                ],
+                "Volumes": {
+                    "/var/opt/gitblit": {}
+                },
+                "WorkingDir": "/opt/gitblit",
+                "Labels": {
+                    "maintainer": "James Moger <james.moger@gitblit.com>, Florian Zschocke <f.zschocke+gitblit@gmail.com>",
+                    "org.label-schema.description": "Gitblit is an open-source, pure Java stack for managing, viewing, and serving Git repositories.",
+                    "org.label-schema.name": "gitblit",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.url": "http://gitblit.com",
+                    "org.label-schema.version": "1.9.1"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2022-01-26T08:10:03.204101918Z",
+            "history": [
+                {
+                    "created": "2021-12-21T01:22:43.418913408Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:09675d11695f65c55efdc393ff0cd32f30194cd7d0fbef4631eebfed4414ac97 in / "
+                },
+                {
+                    "created": "2021-12-21T01:22:43.799429634Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T22:57:38.657322946Z",
+                    "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates p11-kit \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2021-12-21T23:06:21.305139125Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/local/openjdk-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:06:22.27358261Z",
+                    "created_by": "/bin/sh -c { echo '#/bin/sh'; echo 'echo \"$JAVA_HOME\"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ \"$JAVA_HOME\" = \"$(docker-java-home)\" ] # backwards compatibility"
+                },
+                {
+                    "created": "2021-12-21T23:06:22.482002216Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:06:22.712960086Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:06:22.933466923Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_VERSION=8u312",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:08:10.87361527Z",
+                    "created_by": "/bin/sh -c set -eux; \t\tarch=\"$(dpkg --print-architecture)\"; \tcase \"$arch\" in \t\t'amd64') \t\t\tdownloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_8u312b07.tar.gz'; \t\t\t;; \t\t'arm64') \t\t\tdownloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_aarch64_linux_8u312b07.tar.gz'; \t\t\t;; \t\t*) echo >&2 \"error: unsupported architecture: '$arch'\"; exit 1 ;; \tesac; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tdirmngr \t\tgnupg \t\twget \t; \trm -rf /var/lib/apt/lists/*; \t\twget --progress=dot:giga -O openjdk.tgz \"$downloadUrl\"; \twget --progress=dot:giga -O openjdk.tgz.asc \"$downloadUrl.sign\"; \t\texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; \tgpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; \tgpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F \t\t| tee /dev/stderr \t\t| grep '0xA5CD6035332FA671' \t\t| grep 'Andrew Haley'; \tgpg --batch --verify openjdk.tgz.asc openjdk.tgz; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\"; \t\tmkdir -p \"$JAVA_HOME\"; \ttar --extract \t\t--file openjdk.tgz \t\t--directory \"$JAVA_HOME\" \t\t--strip-components 1 \t\t--no-same-owner \t; \trm openjdk.tgz*; \t\tapt-mark auto '.*' > /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \t\t{ \t\techo '#!/usr/bin/env bash'; \t\techo 'set -Eeuo pipefail'; \t\techo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth \"$JAVA_HOME/lib/security/cacerts\"'; \t} > /etc/ca-certificates/update.d/docker-openjdk; \tchmod +x /etc/ca-certificates/update.d/docker-openjdk; \t/etc/ca-certificates/update.d/docker-openjdk; \t\tfind \"$JAVA_HOME/lib\" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; \tldconfig; \t\tjava -version"
+                },
+                {
+                    "created": "2022-01-26T08:09:41.82725988Z",
+                    "created_by": "RUN /bin/sh -c groupadd -r -g 8117 gitblit && useradd -r -M -g gitblit -u 8117 -d /opt/gitblit gitblit # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_VERSION=1.9.1",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_DOWNLOAD_SHA=c0b3095add8cb935f14a9ad1db571be74144f1c71f6495769390b94ca6b7525f",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_DOWNLOAD_URL=https://github.com/gitblit/gitblit/releases/download/v1.9.1/gitblit-1.9.1.tar.gz",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "RUN /bin/sh -c set -eux ;     apt-get update && apt-get install -y --no-install-recommends         wget         gosu         ;     rm -rf /var/lib/apt/lists/* ;     wget --progress=bar:force:noscroll -O gitblit.tar.gz ${GITBLIT_DOWNLOAD_URL} ;     echo \"${GITBLIT_DOWNLOAD_SHA} *gitblit.tar.gz\" | sha256sum -c - ;     mkdir -p /opt/gitblit ;     tar xzf gitblit.tar.gz -C /opt/gitblit --strip-components 1 ;     rm -f gitblit.tar.gz ;     rm -f /opt/gitblit/install-service-*.sh ;     rm -r /opt/gitblit/service-*.sh ; # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "LABEL maintainer=James Moger <james.moger@gitblit.com>, Florian Zschocke <f.zschocke+gitblit@gmail.com> org.label-schema.schema-version=1.0 org.label-schema.name=gitblit org.label-schema.description=Gitblit is an open-source, pure Java stack for managing, viewing, and serving Git repositories. org.label-schema.url=http://gitblit.com org.label-schema.version=1.9.1",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_VAR=/var/opt/gitblit",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.160773251Z",
+                    "created_by": "RUN /bin/sh -c set -eux ;     mkdir -p -m 0775 $GITBLIT_VAR ;     gbetc=$GITBLIT_VAR/etc ;     gbsrv=$GITBLIT_VAR/srv ;     mkdir -p -m 0775 $gbsrv ;     mv /opt/gitblit/data/git $gbsrv ;     ln -s $gbsrv/git /opt/gitblit/data/git ;     mv /opt/gitblit/data $gbetc ;     ln -s $gbetc /opt/gitblit/data ;         mkdir -p /opt/gitblit/etc/ ;     mv $gbetc/defaults.properties /opt/gitblit/etc ;     printf \"6 c\\\\\\n\\\\\\n\\\\\\n\"\"#\\\\\\n\"\"# DO NOT EDIT THIS FILE. IT CAN BE OVERWRITTEN BY UPDATES.\\\\\\n\"\"# FOR YOUR OWN CUSTOM SETTINGS USE THE FILE ${gbetc}/gitblit.properties\\\\\\n\"\"# THIS FILE IS ONLY FOR REFERENCE.\\\\\\n\"\"#\\\\\\n\\\\\\n\\\\\\n\\n/^# Base folder for repositories/,/^git.repositoriesFolder/d\\n/^# The location to save the filestore blobs/,/^filestore.storageFolder/d\\n/^# Specify the location of the Lucene Ticket index/,/^tickets.indexFolder/d\\n/^# The destination folder for cached federation proposals/,/^federation.proposalsFolder/d\\n/^# The temporary folder to decompress/,/^server.tempFolder/d\\ns/^server.httpPort.*/#server.httpPort = 8080/\\ns/^server.httpsPort.*/#server.httpsPort = 8443/\\ns/^server.redirectToHttpsPort.*/#server.redirectToHttpsPort = true/\\n    \" > /tmp/defaults.sed ;     sed -f /tmp/defaults.sed /opt/gitblit/etc/defaults.properties > $gbetc/defaults.properties ;     rm -f /tmp/defaults.sed ;     grep  \"^git.repositoriesFolder\" $gbetc/defaults.properties && false ;     grep  \"^filestore.storageFolder\" $gbetc/defaults.properties && false ;     grep  \"^tickets.indexFolder\" $gbetc/defaults.properties && false ;     grep  \"^federation.proposalsFolder\" $gbetc/defaults.properties && false ;     grep  \"^server.tempFolder\" $gbetc/defaults.properties && false ;         echo \"git.repositoriesFolder = ${gbsrv}/git\" >  /opt/gitblit/etc/system.properties ;     echo \"filestore.storageFolder = ${gbsrv}/lfs\" >> /opt/gitblit/etc/system.properties ;     echo \"tickets.indexFolder = ${gbsrv}/tickets/lucene\" >> /opt/gitblit/etc/system.properties ;     echo \"federation.proposalsFolder = ${gbsrv}/fedproposals\" >> /opt/gitblit/etc/system.properties ;     echo \"server.tempFolder = ${GITBLIT_VAR}/temp\" >> /opt/gitblit/etc/system.properties ;     echo \"server.httpPort = 8080\" >> /opt/gitblit/etc/system.properties ;     echo \"server.httpsPort = 8443\" >> /opt/gitblit/etc/system.properties ;     echo \"server.redirectToHttpsPort = true\" >> /opt/gitblit/etc/system.properties ;         printf '''#\\n''# GITBLIT-DOCKER.PROPERTIES\\n''#\\n''# This file is used by the docker image to store settings that are defined\\n''# via environment variables. The settings in this file are automatically changed,\\n''# added or deleted.\\n''#\\n''# Do not define your custom settings in this file. Your overrides or\\n''# custom settings should be defined in the \"gitblit.properties\" file.\\n''#\\n''# Do NOT change this include line. It makes sure that settings for this docker image are set.\\n''#\\ninclude = /opt/gitblit/etc/defaults.properties,/opt/gitblit/etc/system.properties\\n\\n' > $gbetc/gitblit-docker.properties ;         sed -i -e 's/^\\(web.enableRpcServlet.*\\)/#\\1/'            -e 's/^\\(web.enableRpcManagement.*\\)/#\\1/'            -e 's/^\\(web.enableRpcAdministration.*\\)/#\\1/'         $gbetc/defaults.properties ;         printf '''#\\n''# GITBLIT.PROPERTIES\\n''#\\n''# Define your custom settings in this file and/or include settings defined in\\n''# other properties files.\\n''#\\n\\n''# NOTE: Gitblit will not automatically reload \"included\" properties.  Gitblit\\n''# only watches the \"gitblit.properties\" file for modifications.\\n''#\\n''# Paths may be relative to the ${baseFolder} or they may be absolute.\\n''#\\n''# ONLY append your custom settings files at the END of the \"include\" line.\\n''# The present files define the default settings for the docker container. If you\\n''# remove them or change the order, things may break.\\n''#\\ninclude = gitblit-docker.properties\\n\\n''#\\n''# Define your overrides or custom settings below\\n''#\\n\\n' > $gbetc/gitblit.properties ;             chown -R gitblit:gitblit $GITBLIT_VAR ;     chmod ug+rwxs $gbsrv $gbsrv/git ;     chmod ug+rwxs $gbetc $gbetc/certs ;     chmod go=r $gbetc/defaults.properties ;     chmod 0664 $gbetc/gitblit-docker.properties ;     chmod 0664 $gbetc/gitblit.properties ;         cp -a $gbetc /opt/gitblit/vog-etc ;     cp -a $gbsrv/git/project.mkd /opt/gitblit/srv-project.mkd ; # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.176999626Z",
+                    "created_by": "COPY migrate/migrate-data /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "COPY migrate/non-etc-files migrate/defaults.* /usr/local/share/gitblit/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "ARG GITBLIT_RPC",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "ENV GITBLIT_RPC=on",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "ENV PATH=/opt/gitblit:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "WORKDIR /opt/gitblit",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "VOLUME [/var/opt/gitblit]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "COPY docker-entrypoint.sh /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "EXPOSE map[29418/tcp:{} 8080/tcp:{} 8443/tcp:{} 9418/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "CMD [\"gitblit\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2edcec3590a4ec7f40cf0743c15d78fb39d8326bc029073b41ef9727da6c851f",
+                    "sha256:afda989d53ee25f18b7810206b39580df30518043d1f34f1d514f665ba8026f4",
+                    "sha256:3341e899db61c984184c8aaaaf61251e0bc7dc363592e529875f1873745c2e84",
+                    "sha256:1ea6f0837cd698f676e8541b2171860f6089a0fd0e471dbda97f1a52e454282c",
+                    "sha256:a080c2ad62ed53e33959ca68a2a03c1a333657c57250c85b6856eb054e9e8aed",
+                    "sha256:de8523ca46a6a98121313e4c3decb3bb8a714f4af9255507d708312719586b83",
+                    "sha256:746fd2979b3472af2e02eeae9b5b31cb95ed439b1c94aa2862bca4c14da01efd",
+                    "sha256:5b4d56b9ebcbb7344e248e82405fd8ecc5de625292e903559bc26f06679e369f",
+                    "sha256:1cbfe16ed3d442e10d4f27d48aaf69c3df5e60d2670bb03cb09e66729152c046",
+                    "sha256:b3b64137e0582fcb8c8cefdbaca1e5a5876d643a5f4724f86af168037d2b1e83"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "ExposedPorts": {
+                    "29418/tcp": {},
+                    "80/tcp": {},
+                    "8080/tcp": {},
+                    "8443/tcp": {},
+                    "9418/tcp": {}
+                },
+                "Env": [
+                    "PATH=/opt/gitblit:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/local/openjdk-8",
+                    "LANG=C.UTF-8",
+                    "JAVA_VERSION=8u312",
+                    "GITBLIT_VERSION=1.9.1",
+                    "GITBLIT_DOWNLOAD_SHA=c0b3095add8cb935f14a9ad1db571be74144f1c71f6495769390b94ca6b7525f",
+                    "GITBLIT_DOWNLOAD_URL=https://github.com/gitblit/gitblit/releases/download/v1.9.1/gitblit-1.9.1.tar.gz",
+                    "GITBLIT_VAR=/var/opt/gitblit",
+                    "GITBLIT_RPC=on"
+                ],
+                "Entrypoint": [
+                    "docker-entrypoint.sh"
+                ],
+                "Cmd": [
+                    "gitblit"
+                ],
+                "Volumes": {
+                    "/var/opt/gitblit": {}
+                },
+                "WorkingDir": "/opt/gitblit",
+                "Labels": {
+                    "maintainer": "James Moger <james.moger@gitblit.com>, Florian Zschocke <f.zschocke+gitblit@gmail.com>",
+                    "org.label-schema.description": "Gitblit is an open-source, pure Java stack for managing, viewing, and serving Git repositories.",
+                    "org.label-schema.name": "gitblit",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.url": "http://gitblit.com",
+                    "org.label-schema.version": "1.9.1"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2022-01-26T14:34:25.470735209Z",
+            "history": [
+                {
+                    "created": "2021-12-21T01:22:43.418913408Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:09675d11695f65c55efdc393ff0cd32f30194cd7d0fbef4631eebfed4414ac97 in / "
+                },
+                {
+                    "created": "2021-12-21T01:22:43.799429634Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T22:57:38.657322946Z",
+                    "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates p11-kit \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2021-12-21T23:06:21.305139125Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/local/openjdk-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:06:22.27358261Z",
+                    "created_by": "/bin/sh -c { echo '#/bin/sh'; echo 'echo \"$JAVA_HOME\"'; } > /usr/local/bin/docker-java-home && chmod +x /usr/local/bin/docker-java-home && [ \"$JAVA_HOME\" = \"$(docker-java-home)\" ] # backwards compatibility"
+                },
+                {
+                    "created": "2021-12-21T23:06:22.482002216Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:06:22.712960086Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:06:22.933466923Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_VERSION=8u312",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-12-21T23:08:10.87361527Z",
+                    "created_by": "/bin/sh -c set -eux; \t\tarch=\"$(dpkg --print-architecture)\"; \tcase \"$arch\" in \t\t'amd64') \t\t\tdownloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_x64_linux_8u312b07.tar.gz'; \t\t\t;; \t\t'arm64') \t\t\tdownloadUrl='https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u312-b07/OpenJDK8U-jre_aarch64_linux_8u312b07.tar.gz'; \t\t\t;; \t\t*) echo >&2 \"error: unsupported architecture: '$arch'\"; exit 1 ;; \tesac; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tdirmngr \t\tgnupg \t\twget \t; \trm -rf /var/lib/apt/lists/*; \t\twget --progress=dot:giga -O openjdk.tgz \"$downloadUrl\"; \twget --progress=dot:giga -O openjdk.tgz.asc \"$downloadUrl.sign\"; \t\texport GNUPGHOME=\"$(mktemp -d)\"; \tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys EAC843EBD3EFDB98CC772FADA5CD6035332FA671; \tgpg --batch --keyserver keyserver.ubuntu.com --keyserver-options no-self-sigs-only --recv-keys CA5F11C6CE22644D42C6AC4492EF8D39DC13168F; \tgpg --batch --list-sigs --keyid-format 0xLONG CA5F11C6CE22644D42C6AC4492EF8D39DC13168F \t\t| tee /dev/stderr \t\t| grep '0xA5CD6035332FA671' \t\t| grep 'Andrew Haley'; \tgpg --batch --verify openjdk.tgz.asc openjdk.tgz; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\"; \t\tmkdir -p \"$JAVA_HOME\"; \ttar --extract \t\t--file openjdk.tgz \t\t--directory \"$JAVA_HOME\" \t\t--strip-components 1 \t\t--no-same-owner \t; \trm openjdk.tgz*; \t\tapt-mark auto '.*' > /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \t\t{ \t\techo '#!/usr/bin/env bash'; \t\techo 'set -Eeuo pipefail'; \t\techo 'trust extract --overwrite --format=java-cacerts --filter=ca-anchors --purpose=server-auth \"$JAVA_HOME/lib/security/cacerts\"'; \t} > /etc/ca-certificates/update.d/docker-openjdk; \tchmod +x /etc/ca-certificates/update.d/docker-openjdk; \t/etc/ca-certificates/update.d/docker-openjdk; \t\tfind \"$JAVA_HOME/lib\" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf; \tldconfig; \t\tjava -version"
+                },
+                {
+                    "created": "2022-01-26T08:09:41.82725988Z",
+                    "created_by": "RUN /bin/sh -c groupadd -r -g 8117 gitblit && useradd -r -M -g gitblit -u 8117 -d /opt/gitblit gitblit # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_VERSION=1.9.1",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_DOWNLOAD_SHA=c0b3095add8cb935f14a9ad1db571be74144f1c71f6495769390b94ca6b7525f",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_DOWNLOAD_URL=https://github.com/gitblit/gitblit/releases/download/v1.9.1/gitblit-1.9.1.tar.gz",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "RUN /bin/sh -c set -eux ;     apt-get update && apt-get install -y --no-install-recommends         wget         gosu         ;     rm -rf /var/lib/apt/lists/* ;     wget --progress=bar:force:noscroll -O gitblit.tar.gz ${GITBLIT_DOWNLOAD_URL} ;     echo \"${GITBLIT_DOWNLOAD_SHA} *gitblit.tar.gz\" | sha256sum -c - ;     mkdir -p /opt/gitblit ;     tar xzf gitblit.tar.gz -C /opt/gitblit --strip-components 1 ;     rm -f gitblit.tar.gz ;     rm -f /opt/gitblit/install-service-*.sh ;     rm -r /opt/gitblit/service-*.sh ; # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "LABEL maintainer=James Moger <james.moger@gitblit.com>, Florian Zschocke <f.zschocke+gitblit@gmail.com> org.label-schema.schema-version=1.0 org.label-schema.name=gitblit org.label-schema.description=Gitblit is an open-source, pure Java stack for managing, viewing, and serving Git repositories. org.label-schema.url=http://gitblit.com org.label-schema.version=1.9.1",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:02.473422751Z",
+                    "created_by": "ENV GITBLIT_VAR=/var/opt/gitblit",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.160773251Z",
+                    "created_by": "RUN /bin/sh -c set -eux ;     mkdir -p -m 0775 $GITBLIT_VAR ;     gbetc=$GITBLIT_VAR/etc ;     gbsrv=$GITBLIT_VAR/srv ;     mkdir -p -m 0775 $gbsrv ;     mv /opt/gitblit/data/git $gbsrv ;     ln -s $gbsrv/git /opt/gitblit/data/git ;     mv /opt/gitblit/data $gbetc ;     ln -s $gbetc /opt/gitblit/data ;         mkdir -p /opt/gitblit/etc/ ;     mv $gbetc/defaults.properties /opt/gitblit/etc ;     printf \"6 c\\\\\\n\\\\\\n\\\\\\n\"\"#\\\\\\n\"\"# DO NOT EDIT THIS FILE. IT CAN BE OVERWRITTEN BY UPDATES.\\\\\\n\"\"# FOR YOUR OWN CUSTOM SETTINGS USE THE FILE ${gbetc}/gitblit.properties\\\\\\n\"\"# THIS FILE IS ONLY FOR REFERENCE.\\\\\\n\"\"#\\\\\\n\\\\\\n\\\\\\n\\n/^# Base folder for repositories/,/^git.repositoriesFolder/d\\n/^# The location to save the filestore blobs/,/^filestore.storageFolder/d\\n/^# Specify the location of the Lucene Ticket index/,/^tickets.indexFolder/d\\n/^# The destination folder for cached federation proposals/,/^federation.proposalsFolder/d\\n/^# The temporary folder to decompress/,/^server.tempFolder/d\\ns/^server.httpPort.*/#server.httpPort = 8080/\\ns/^server.httpsPort.*/#server.httpsPort = 8443/\\ns/^server.redirectToHttpsPort.*/#server.redirectToHttpsPort = true/\\n    \" > /tmp/defaults.sed ;     sed -f /tmp/defaults.sed /opt/gitblit/etc/defaults.properties > $gbetc/defaults.properties ;     rm -f /tmp/defaults.sed ;     grep  \"^git.repositoriesFolder\" $gbetc/defaults.properties && false ;     grep  \"^filestore.storageFolder\" $gbetc/defaults.properties && false ;     grep  \"^tickets.indexFolder\" $gbetc/defaults.properties && false ;     grep  \"^federation.proposalsFolder\" $gbetc/defaults.properties && false ;     grep  \"^server.tempFolder\" $gbetc/defaults.properties && false ;         echo \"git.repositoriesFolder = ${gbsrv}/git\" >  /opt/gitblit/etc/system.properties ;     echo \"filestore.storageFolder = ${gbsrv}/lfs\" >> /opt/gitblit/etc/system.properties ;     echo \"tickets.indexFolder = ${gbsrv}/tickets/lucene\" >> /opt/gitblit/etc/system.properties ;     echo \"federation.proposalsFolder = ${gbsrv}/fedproposals\" >> /opt/gitblit/etc/system.properties ;     echo \"server.tempFolder = ${GITBLIT_VAR}/temp\" >> /opt/gitblit/etc/system.properties ;     echo \"server.httpPort = 8080\" >> /opt/gitblit/etc/system.properties ;     echo \"server.httpsPort = 8443\" >> /opt/gitblit/etc/system.properties ;     echo \"server.redirectToHttpsPort = true\" >> /opt/gitblit/etc/system.properties ;         printf '''#\\n''# GITBLIT-DOCKER.PROPERTIES\\n''#\\n''# This file is used by the docker image to store settings that are defined\\n''# via environment variables. The settings in this file are automatically changed,\\n''# added or deleted.\\n''#\\n''# Do not define your custom settings in this file. Your overrides or\\n''# custom settings should be defined in the \"gitblit.properties\" file.\\n''#\\n''# Do NOT change this include line. It makes sure that settings for this docker image are set.\\n''#\\ninclude = /opt/gitblit/etc/defaults.properties,/opt/gitblit/etc/system.properties\\n\\n' > $gbetc/gitblit-docker.properties ;         sed -i -e 's/^\\(web.enableRpcServlet.*\\)/#\\1/'            -e 's/^\\(web.enableRpcManagement.*\\)/#\\1/'            -e 's/^\\(web.enableRpcAdministration.*\\)/#\\1/'         $gbetc/defaults.properties ;         printf '''#\\n''# GITBLIT.PROPERTIES\\n''#\\n''# Define your custom settings in this file and/or include settings defined in\\n''# other properties files.\\n''#\\n\\n''# NOTE: Gitblit will not automatically reload \"included\" properties.  Gitblit\\n''# only watches the \"gitblit.properties\" file for modifications.\\n''#\\n''# Paths may be relative to the ${baseFolder} or they may be absolute.\\n''#\\n''# ONLY append your custom settings files at the END of the \"include\" line.\\n''# The present files define the default settings for the docker container. If you\\n''# remove them or change the order, things may break.\\n''#\\ninclude = gitblit-docker.properties\\n\\n''#\\n''# Define your overrides or custom settings below\\n''#\\n\\n' > $gbetc/gitblit.properties ;             chown -R gitblit:gitblit $GITBLIT_VAR ;     chmod ug+rwxs $gbsrv $gbsrv/git ;     chmod ug+rwxs $gbetc $gbetc/certs ;     chmod go=r $gbetc/defaults.properties ;     chmod 0664 $gbetc/gitblit-docker.properties ;     chmod 0664 $gbetc/gitblit.properties ;         cp -a $gbetc /opt/gitblit/vog-etc ;     cp -a $gbsrv/git/project.mkd /opt/gitblit/srv-project.mkd ; # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.176999626Z",
+                    "created_by": "COPY migrate/migrate-data /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "COPY migrate/non-etc-files migrate/defaults.* /usr/local/share/gitblit/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "ARG GITBLIT_RPC",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "ENV GITBLIT_RPC=on",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "ENV PATH=/opt/gitblit:/usr/local/openjdk-8/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "WORKDIR /opt/gitblit",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.191267418Z",
+                    "created_by": "VOLUME [/var/opt/gitblit]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "COPY docker-entrypoint.sh /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "EXPOSE map[29418/tcp:{} 8080/tcp:{} 8443/tcp:{} 9418/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T08:10:03.204101918Z",
+                    "created_by": "CMD [\"gitblit\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-01-26T14:34:25.403035584Z",
+                    "created_by": "RUN /bin/sh -c rm /opt/gitblit/ext/jna-*.jar  && wget -O /opt/gitblit/ext/jna-4.5.2.jar https://repo1.maven.org/maven2/net/java/dev/jna/jna/4.5.2/jna-4.5.2.jar  && wget -O /opt/gitblit/ext/jna-platform-4.5.2.jar https://repo1.maven.org/maven2/net/java/dev/jna/jna-platform/4.5.2/jna-platform-4.5.2.jar # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T14:34:25.470735209Z",
+                    "created_by": "RUN /bin/sh -c echo server.httpPort = 80 \\\\nserver.httpsPort = 0 \\\\nserver.redirectToHttpsPort = false \\\\nweb.enableRpcServlet = true \\\\nweb.enableRpcManagement = true \\\\nweb.enableRpcAdministration = true \\\\n>> /var/opt/gitblit/etc/gitblit.properties # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-01-26T14:34:25.470735209Z",
+                    "created_by": "EXPOSE map[80/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2edcec3590a4ec7f40cf0743c15d78fb39d8326bc029073b41ef9727da6c851f",
+                    "sha256:afda989d53ee25f18b7810206b39580df30518043d1f34f1d514f665ba8026f4",
+                    "sha256:3341e899db61c984184c8aaaaf61251e0bc7dc363592e529875f1873745c2e84",
+                    "sha256:1ea6f0837cd698f676e8541b2171860f6089a0fd0e471dbda97f1a52e454282c",
+                    "sha256:a080c2ad62ed53e33959ca68a2a03c1a333657c57250c85b6856eb054e9e8aed",
+                    "sha256:de8523ca46a6a98121313e4c3decb3bb8a714f4af9255507d708312719586b83",
+                    "sha256:746fd2979b3472af2e02eeae9b5b31cb95ed439b1c94aa2862bca4c14da01efd",
+                    "sha256:5b4d56b9ebcbb7344e248e82405fd8ecc5de625292e903559bc26f06679e369f",
+                    "sha256:1cbfe16ed3d442e10d4f27d48aaf69c3df5e60d2670bb03cb09e66729152c046",
+                    "sha256:b3b64137e0582fcb8c8cefdbaca1e5a5876d643a5f4724f86af168037d2b1e83",
+                    "sha256:0318a6e08d1eb3a09bad3d8133e2dee4226b9ae9be92f6f805767801e728d6f2",
+                    "sha256:21d1cdba126ca40d97cabee0bf211eba820444e1c000b3a8d4275978c8221f11"
+                ]
+            }
+        }
+    }
+}

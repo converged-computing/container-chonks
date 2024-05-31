@@ -1,0 +1,350 @@
+{
+    "manifests": {
+        "latest": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:01af3247b7e455632d36da590ab51c38803dbbd4d997f6946835fb1b10e8d5de",
+                    "size": 1576,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:01074c6d96ea49a4820a662eb9729b896f39aab5ff11b4aa5dcbcc771c09e316",
+                    "size": 1576,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "master": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:01af3247b7e455632d36da590ab51c38803dbbd4d997f6946835fb1b10e8d5de",
+                    "size": 1576,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:01074c6d96ea49a4820a662eb9729b896f39aab5ff11b4aa5dcbcc771c09e316",
+                    "size": 1576,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest",
+        "master"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "ExposedPorts": {
+                    "1025/tcp": {},
+                    "1080/tcp": {}
+                },
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "RUBY_MAJOR=2.7",
+                    "RUBY_VERSION=2.7.6",
+                    "RUBY_DOWNLOAD_SHA256=54dcd3044726c4ab75a9d4604720501442b229a3aed6a55fe909567da8807f24",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLE_SILENCE_ROOT_WARNING=1",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "HTTPPATH=/"
+                ],
+                "Cmd": [
+                    "sh",
+                    "-c",
+                    "mailcatcher --no-quit --foreground --ip=0.0.0.0 --http-path $HTTPPATH"
+                ],
+                "Labels": {
+                    "maintainer": "Johannes Schickling <schickling.j@gmail.com>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2022-06-06T15:42:51.923985484Z",
+            "history": [
+                {
+                    "created": "2022-04-05T00:19:59.790636867Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:5d673d25da3a14ce1f6cf66e4c7fd4f4b85a3759a9d93efb3fd9ff852b5b56e4 in / "
+                },
+                {
+                    "created": "2022-04-05T00:19:59.912662499Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-05T03:09:59.705845738Z",
+                    "created_by": "/bin/sh -c set -eux; \tapk add --no-cache \t\tbzip2 \t\tca-certificates \t\tgmp-dev \t\tlibffi-dev \t\tprocps \t\tyaml-dev \t\tzlib-dev \t;"
+                },
+                {
+                    "created": "2022-04-05T03:10:00.270628783Z",
+                    "created_by": "/bin/sh -c set -eux; \tmkdir -p /usr/local/etc; \t{ \t\techo 'install: --no-document'; \t\techo 'update: --no-document'; \t} >> /usr/local/etc/gemrc"
+                },
+                {
+                    "created": "2022-04-05T03:10:00.365161702Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-05T03:32:43.893990654Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_MAJOR=2.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:55:43.093860688Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_VERSION=2.7.6",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:55:43.188940403Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_DOWNLOAD_SHA256=54dcd3044726c4ab75a9d4604720501442b229a3aed6a55fe909567da8807f24",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:57:26.503089949Z",
+                    "created_by": "/bin/sh -c set -eux; \t\tapk add --no-cache --virtual .ruby-builddeps \t\tautoconf \t\tbison \t\tbzip2 \t\tbzip2-dev \t\tca-certificates \t\tcoreutils \t\tdpkg-dev dpkg \t\tg++ \t\tgcc \t\tgdbm-dev \t\tglib-dev \t\tlibc-dev \t\tlibffi-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlinux-headers \t\tmake \t\tncurses-dev \t\topenssl \t\topenssl-dev \t\tpatch \t\tprocps \t\treadline-dev \t\truby \t\ttar \t\txz \t\tyaml-dev \t\tzlib-dev \t; \t\twget -O ruby.tar.xz \"https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz\"; \techo \"$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz\" | sha256sum --check --strict; \t\tmkdir -p /usr/src/ruby; \ttar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; \trm ruby.tar.xz; \t\tcd /usr/src/ruby; \t\twget -O 'thread-stack-fix.patch' 'https://bugs.ruby-lang.org/attachments/download/7081/0001-thread_pthread.c-make-get_main_stack-portable-on-lin.patch'; \techo '3ab628a51d92fdf0d2b5835e93564857aea73e0c1de00313864a94a6255cb645 *thread-stack-fix.patch' | sha256sum --check --strict; \tpatch -p1 -i thread-stack-fix.patch; \trm thread-stack-fix.patch; \t\texport ac_cv_func_isnan=yes ac_cv_func_isinf=yes; \t\t{ \t\techo '#define ENABLE_PATH_CHECK 0'; \t\techo; \t\tcat file.c; \t} > file.c.new; \tmv file.c.new file.c; \t\tautoconf; \tapkArch=\"$(apk --print-arch)\"; \tcase \"$apkArch\" in \t\ts390x | armhf | armv7) \t\t\tapk add --no-cache libucontext-dev; \t\t\texport LIBS='-lucontext'; \t\t\t;; \tesac; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--disable-install-doc \t\t--enable-shared \t; \tmake -j \"$(nproc)\"; \tmake install; \t\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t)\"; \tapk add --no-network --virtual .ruby-rundeps $runDeps; \tapk del --no-network .ruby-builddeps; \t\tcd /; \trm -r /usr/src/ruby; \tif \t\tapk --no-network list --installed \t\t\t| grep -v '^[.]ruby-rundeps' \t\t\t| grep -i ruby \t; then \t\texit 1; \tfi; \t[ \"$(command -v ruby)\" = '/usr/local/bin/ruby' ]; \truby --version; \tgem --version; \tbundle --version"
+                },
+                {
+                    "created": "2022-04-12T18:57:26.698942059Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GEM_HOME=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:57:26.791774559Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:57:26.886588348Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:57:27.436766198Z",
+                    "created_by": "/bin/sh -c mkdir -p \"$GEM_HOME\" && chmod 777 \"$GEM_HOME\""
+                },
+                {
+                    "created": "2022-04-12T18:57:27.532580515Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"irb\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "LABEL maintainer=Johannes Schickling <schickling.j@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "RUN /bin/sh -c set -xe     && apk add --no-cache         libstdc++         sqlite-libs     && apk add --no-cache --virtual .build-deps         build-base         sqlite-dev     && gem install mailcatcher -v 0.8.2 -N     && apk del .build-deps # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "ENV HTTPPATH=/",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "EXPOSE map[1025/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "EXPOSE map[1080/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "CMD [\"sh\" \"-c\" \"mailcatcher --no-quit --foreground --ip=0.0.0.0 --http-path $HTTPPATH\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2xpYnJhcnkvcnVieToyLjcuNi1hbHBpbmUzLjE1IiwicGluIjoic2hhMjU2Ojc3NTJmNzBlN2E1MGRjZjQ4OTJiZDM0MjdjM2VmOGRkNWJjMTAwMTY5ZGVlZWNmYzdkMDdkYjY3YjUyZDgxYmMifV19",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4fc242d58285699eca05db3cc7c7122a2b8e014d9481f323bd9277baacfa0628",
+                    "sha256:fba256ecd95b857e3c319164cb8ed078327b71d809b4a1c9272689a98110334f",
+                    "sha256:98a10757ac1744ff8802ba71ff267f14b8477aaa0c9c5033b6af863d59fb6e97",
+                    "sha256:1818f58748f63b019cb21eddfd03dfc54baad099b6f4b0ba0fa4bcac756d03be",
+                    "sha256:7548c2308991c9d02399cbb65f4e3f8cd7394b8921939fd3938e0c6991c77db9",
+                    "sha256:403144c6ca33c9d5406471c36f9f71b1e69484a33273557fdbe7fb853100fcc6"
+                ]
+            }
+        },
+        "master": {
+            "architecture": "amd64",
+            "config": {
+                "ExposedPorts": {
+                    "1025/tcp": {},
+                    "1080/tcp": {}
+                },
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "RUBY_MAJOR=2.7",
+                    "RUBY_VERSION=2.7.6",
+                    "RUBY_DOWNLOAD_SHA256=54dcd3044726c4ab75a9d4604720501442b229a3aed6a55fe909567da8807f24",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLE_SILENCE_ROOT_WARNING=1",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "HTTPPATH=/"
+                ],
+                "Cmd": [
+                    "sh",
+                    "-c",
+                    "mailcatcher --no-quit --foreground --ip=0.0.0.0 --http-path $HTTPPATH"
+                ],
+                "Labels": {
+                    "maintainer": "Johannes Schickling <schickling.j@gmail.com>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2022-06-06T15:42:51.923985484Z",
+            "history": [
+                {
+                    "created": "2022-04-05T00:19:59.790636867Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:5d673d25da3a14ce1f6cf66e4c7fd4f4b85a3759a9d93efb3fd9ff852b5b56e4 in / "
+                },
+                {
+                    "created": "2022-04-05T00:19:59.912662499Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-05T03:09:59.705845738Z",
+                    "created_by": "/bin/sh -c set -eux; \tapk add --no-cache \t\tbzip2 \t\tca-certificates \t\tgmp-dev \t\tlibffi-dev \t\tprocps \t\tyaml-dev \t\tzlib-dev \t;"
+                },
+                {
+                    "created": "2022-04-05T03:10:00.270628783Z",
+                    "created_by": "/bin/sh -c set -eux; \tmkdir -p /usr/local/etc; \t{ \t\techo 'install: --no-document'; \t\techo 'update: --no-document'; \t} >> /usr/local/etc/gemrc"
+                },
+                {
+                    "created": "2022-04-05T03:10:00.365161702Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-05T03:32:43.893990654Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_MAJOR=2.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:55:43.093860688Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_VERSION=2.7.6",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:55:43.188940403Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_DOWNLOAD_SHA256=54dcd3044726c4ab75a9d4604720501442b229a3aed6a55fe909567da8807f24",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:57:26.503089949Z",
+                    "created_by": "/bin/sh -c set -eux; \t\tapk add --no-cache --virtual .ruby-builddeps \t\tautoconf \t\tbison \t\tbzip2 \t\tbzip2-dev \t\tca-certificates \t\tcoreutils \t\tdpkg-dev dpkg \t\tg++ \t\tgcc \t\tgdbm-dev \t\tglib-dev \t\tlibc-dev \t\tlibffi-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlinux-headers \t\tmake \t\tncurses-dev \t\topenssl \t\topenssl-dev \t\tpatch \t\tprocps \t\treadline-dev \t\truby \t\ttar \t\txz \t\tyaml-dev \t\tzlib-dev \t; \t\twget -O ruby.tar.xz \"https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz\"; \techo \"$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz\" | sha256sum --check --strict; \t\tmkdir -p /usr/src/ruby; \ttar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1; \trm ruby.tar.xz; \t\tcd /usr/src/ruby; \t\twget -O 'thread-stack-fix.patch' 'https://bugs.ruby-lang.org/attachments/download/7081/0001-thread_pthread.c-make-get_main_stack-portable-on-lin.patch'; \techo '3ab628a51d92fdf0d2b5835e93564857aea73e0c1de00313864a94a6255cb645 *thread-stack-fix.patch' | sha256sum --check --strict; \tpatch -p1 -i thread-stack-fix.patch; \trm thread-stack-fix.patch; \t\texport ac_cv_func_isnan=yes ac_cv_func_isinf=yes; \t\t{ \t\techo '#define ENABLE_PATH_CHECK 0'; \t\techo; \t\tcat file.c; \t} > file.c.new; \tmv file.c.new file.c; \t\tautoconf; \tapkArch=\"$(apk --print-arch)\"; \tcase \"$apkArch\" in \t\ts390x | armhf | armv7) \t\t\tapk add --no-cache libucontext-dev; \t\t\texport LIBS='-lucontext'; \t\t\t;; \tesac; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--disable-install-doc \t\t--enable-shared \t; \tmake -j \"$(nproc)\"; \tmake install; \t\trunDeps=\"$( \t\tscanelf --needed --nobanner --format '%n#p' --recursive /usr/local \t\t\t| tr ',' '\\n' \t\t\t| sort -u \t\t\t| awk 'system(\"[ -e /usr/local/lib/\" $1 \" ]\") == 0 { next } { print \"so:\" $1 }' \t)\"; \tapk add --no-network --virtual .ruby-rundeps $runDeps; \tapk del --no-network .ruby-builddeps; \t\tcd /; \trm -r /usr/src/ruby; \tif \t\tapk --no-network list --installed \t\t\t| grep -v '^[.]ruby-rundeps' \t\t\t| grep -i ruby \t; then \t\texit 1; \tfi; \t[ \"$(command -v ruby)\" = '/usr/local/bin/ruby' ]; \truby --version; \tgem --version; \tbundle --version"
+                },
+                {
+                    "created": "2022-04-12T18:57:26.698942059Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GEM_HOME=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:57:26.791774559Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:57:26.886588348Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-04-12T18:57:27.436766198Z",
+                    "created_by": "/bin/sh -c mkdir -p \"$GEM_HOME\" && chmod 777 \"$GEM_HOME\""
+                },
+                {
+                    "created": "2022-04-12T18:57:27.532580515Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"irb\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "LABEL maintainer=Johannes Schickling <schickling.j@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "RUN /bin/sh -c set -xe     && apk add --no-cache         libstdc++         sqlite-libs     && apk add --no-cache --virtual .build-deps         build-base         sqlite-dev     && gem install mailcatcher -v 0.8.2 -N     && apk del .build-deps # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "ENV HTTPPATH=/",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "EXPOSE map[1025/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "EXPOSE map[1080/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-06-06T15:42:51.923985484Z",
+                    "created_by": "CMD [\"sh\" \"-c\" \"mailcatcher --no-quit --foreground --ip=0.0.0.0 --http-path $HTTPPATH\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2xpYnJhcnkvcnVieToyLjcuNi1hbHBpbmUzLjE1IiwicGluIjoic2hhMjU2Ojc3NTJmNzBlN2E1MGRjZjQ4OTJiZDM0MjdjM2VmOGRkNWJjMTAwMTY5ZGVlZWNmYzdkMDdkYjY3YjUyZDgxYmMifV19",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4fc242d58285699eca05db3cc7c7122a2b8e014d9481f323bd9277baacfa0628",
+                    "sha256:fba256ecd95b857e3c319164cb8ed078327b71d809b4a1c9272689a98110334f",
+                    "sha256:98a10757ac1744ff8802ba71ff267f14b8477aaa0c9c5033b6af863d59fb6e97",
+                    "sha256:1818f58748f63b019cb21eddfd03dfc54baad099b6f4b0ba0fa4bcac756d03be",
+                    "sha256:7548c2308991c9d02399cbb65f4e3f8cd7394b8921939fd3938e0c6991c77db9",
+                    "sha256:403144c6ca33c9d5406471c36f9f71b1e69484a33273557fdbe7fb853100fcc6"
+                ]
+            }
+        }
+    }
+}

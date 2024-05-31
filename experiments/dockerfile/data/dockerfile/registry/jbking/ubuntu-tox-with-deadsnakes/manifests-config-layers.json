@@ -1,0 +1,296 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 8674,
+                "digest": "sha256:081fc95bf33f5b92409b1d4d4a46a3b7a5d3e9f9f103cd4659f64bb8ddb2fdb5"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2206931,
+                    "digest": "sha256:4fe2ade4980c2dda4fc95858ebb981489baec8c1e4bd282ab1c3560be8ff9bde"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 238,
+                    "digest": "sha256:6fc58a8d4ae4b3eeb215330632931dda9d60c645588c5750498ded35aa974c5a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 54798258,
+                    "digest": "sha256:d3e6d7e9702afb6c02946a1861b0a3d48b06c6614df4dd382ad81b20da30a0dc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3120,
+                    "digest": "sha256:294fa7ddeedc1437b1d3826c147e4d8c36f90b673642e60b758e9d16b6c9d2c2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 116687402,
+                    "digest": "sha256:12a3bc97abf2899f7aa8ac952d4684306094d00386d3ba1a4f394883d89b58c2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 361,
+                    "digest": "sha256:4b4bc34e6c27ba8eb28533e155a63953cb02d8bb4a3013580029c99024db1f71"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 407885,
+                    "digest": "sha256:9a3b1db2b27f6f2aad3df6347a2e79283749e19a5e3c5e4c9efbbdf14cdc44b1"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "2c662fda21e2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "9092/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "KAFKA_ADVERTISED_HOST_NAME=172.20.10.2",
+                    "KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181",
+                    "affinity:container==05c8aed8b5201ef1f4ad7f0eda2ec1fea12da6dbb18d15f8c7c9705e8e774560",
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/opt/kafka/bin",
+                    "LANG=C.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre",
+                    "JAVA_VERSION=8u171",
+                    "JAVA_ALPINE_VERSION=8.171.11-r0",
+                    "KAFKA_VERSION=1.1.1",
+                    "SCALA_VERSION=2.11",
+                    "KAFKA_HOME=/opt/kafka",
+                    "GLIBC_VERSION=2.27-r0"
+                ],
+                "Cmd": [
+                    "start-kafka.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "wurstmeister/kafka:2.11-1.1.1",
+                "Volumes": {
+                    "/kafka": {},
+                    "/var/run/docker.sock": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "com.docker.compose.config-hash": "aa5a8d83bfd984b0e20b28f429e75fb840a495c9d0364cb1ef0f5448547b4996",
+                    "com.docker.compose.container-number": "1",
+                    "com.docker.compose.oneoff": "False",
+                    "com.docker.compose.project": "kafka-docker",
+                    "com.docker.compose.service": "kafka",
+                    "com.docker.compose.version": "1.22.0",
+                    "maintainer": "wurstmeister",
+                    "org.label-schema.build-date": "2018-10-11T11:25:01Z",
+                    "org.label-schema.description": "Apache Kafka",
+                    "org.label-schema.name": "kafka",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-ref": "441ec4560397af62626e1decc498f3b4db5f174c",
+                    "org.label-schema.vcs-url": "https://github.com/wurstmeister/kafka-docker",
+                    "org.label-schema.version": "2.11_1.1.1"
+                }
+            },
+            "container": "2c662fda21e2198dc1d04f8082f413e1e0736bf911d6cc3c02da77eda5307469",
+            "container_config": {
+                "Hostname": "2c662fda21e2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "9092/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "KAFKA_ADVERTISED_HOST_NAME=172.20.10.2",
+                    "KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181",
+                    "affinity:container==05c8aed8b5201ef1f4ad7f0eda2ec1fea12da6dbb18d15f8c7c9705e8e774560",
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/opt/kafka/bin",
+                    "LANG=C.UTF-8",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre",
+                    "JAVA_VERSION=8u171",
+                    "JAVA_ALPINE_VERSION=8.171.11-r0",
+                    "KAFKA_VERSION=1.1.1",
+                    "SCALA_VERSION=2.11",
+                    "KAFKA_HOME=/opt/kafka",
+                    "GLIBC_VERSION=2.27-r0"
+                ],
+                "Cmd": [
+                    "start-kafka.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "wurstmeister/kafka:2.11-1.1.1",
+                "Volumes": {
+                    "/kafka": {},
+                    "/var/run/docker.sock": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "com.docker.compose.config-hash": "aa5a8d83bfd984b0e20b28f429e75fb840a495c9d0364cb1ef0f5448547b4996",
+                    "com.docker.compose.container-number": "1",
+                    "com.docker.compose.oneoff": "False",
+                    "com.docker.compose.project": "kafka-docker",
+                    "com.docker.compose.service": "kafka",
+                    "com.docker.compose.version": "1.22.0",
+                    "maintainer": "wurstmeister",
+                    "org.label-schema.build-date": "2018-10-11T11:25:01Z",
+                    "org.label-schema.description": "Apache Kafka",
+                    "org.label-schema.name": "kafka",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vcs-ref": "441ec4560397af62626e1decc498f3b4db5f174c",
+                    "org.label-schema.vcs-url": "https://github.com/wurstmeister/kafka-docker",
+                    "org.label-schema.version": "2.11_1.1.1"
+                }
+            },
+            "created": "2018-11-11T05:40:52.3172148Z",
+            "docker_version": "18.06.1-ce",
+            "history": [
+                {
+                    "created": "2018-09-11T22:19:50.165674013Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:25c10b1d1b41d46a1827ad0b0d2389c24df6d31430005ff4e9a2d84ea23ebd42 in / "
+                },
+                {
+                    "created": "2018-09-11T22:19:50.322783064Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-12T00:06:51.075402137Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-12T00:06:51.703320999Z",
+                    "created_by": "/bin/sh -c { \t\techo '#!/bin/sh'; \t\techo 'set -e'; \t\techo; \t\techo 'dirname \"$(dirname \"$(readlink -f \"$(which javac || which java)\")\")\"'; \t} > /usr/local/bin/docker-java-home \t&& chmod +x /usr/local/bin/docker-java-home"
+                },
+                {
+                    "created": "2018-09-12T00:07:19.666727127Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/jre",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-12T00:07:19.850595296Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-12T00:07:20.034682396Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_VERSION=8u171",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-12T00:07:20.206356114Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_ALPINE_VERSION=8.171.11-r0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-12T00:07:22.896994996Z",
+                    "created_by": "/bin/sh -c set -x \t&& apk add --no-cache \t\topenjdk8-jre=\"$JAVA_ALPINE_VERSION\" \t&& [ \"$JAVA_HOME\" = \"$(docker-java-home)\" ]"
+                },
+                {
+                    "created": "2018-10-11T11:25:05.219216952Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG kafka_version=2.0.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T11:25:05.34389665Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG scala_version=2.12",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T11:25:05.46203846Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG glibc_version=2.27-r0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T11:25:05.587207006Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG vcs_ref=unspecified",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T11:25:05.712465234Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG build_date=unspecified",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T11:25:05.844123424Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.name=kafka org.label-schema.description=Apache Kafka org.label-schema.build-date=2018-10-11T11:25:01Z org.label-schema.vcs-url=https://github.com/wurstmeister/kafka-docker org.label-schema.vcs-ref=441ec4560397af62626e1decc498f3b4db5f174c org.label-schema.version=2.11_1.1.1 org.label-schema.schema-version=1.0 maintainer=wurstmeister",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T11:25:05.963523838Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV KAFKA_VERSION=1.1.1 SCALA_VERSION=2.11 KAFKA_HOME=/opt/kafka GLIBC_VERSION=2.27-r0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T11:25:06.083041739Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin:/opt/kafka/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T11:25:06.399991714Z",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:2853629ae545d147e29320e4983c1f975a9a26cd89c69d64416e7daeae4fa7e1 in /tmp/ "
+                },
+                {
+                    "created": "2018-10-11T11:25:18.528382111Z",
+                    "created_by": "|5 build_date=2018-10-11T11:25:01Z glibc_version=2.27-r0 kafka_version=1.1.1 scala_version=2.11 vcs_ref=441ec4560397af62626e1decc498f3b4db5f174c /bin/sh -c apk add --no-cache bash curl jq docker  && mkdir /opt  && chmod a+x /tmp/*.sh  && mv /tmp/start-kafka.sh /tmp/broker-list.sh /tmp/create-topics.sh /tmp/versions.sh /usr/bin  && sync && /tmp/download-kafka.sh  && tar xfz /tmp/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz -C /opt  && rm /tmp/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz  && ln -s /opt/kafka_${SCALA_VERSION}-${KAFKA_VERSION} /opt/kafka  && rm /tmp/*  && wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/glibc-${GLIBC_VERSION}.apk  && apk add --no-cache --allow-untrusted glibc-${GLIBC_VERSION}.apk  && rm glibc-${GLIBC_VERSION}.apk"
+                },
+                {
+                    "created": "2018-10-11T11:25:18.717834334Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:8bf4b3a676905dc254118c551d86158b00c98da0da0aa945087f4b93be077054 in /opt/overrides "
+                },
+                {
+                    "created": "2018-10-11T11:25:18.823767754Z",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/kafka]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-11T11:25:18.935875967Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"start-kafka.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-11T05:40:52.3172148Z",
+                    "created_by": "start-kafka.sh"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:df64d3292fd6194b7865d7326af5255db6d81e9df29f48adde61a918fbd8c332",
+                    "sha256:0c317090579594bffe8131ea6302a7439b03e5065714ed27b5e621a167746e78",
+                    "sha256:12c374f8270aba8ee07318d9b22a40c00ab2f7bac4fb5d16ade7bf59320c8845",
+                    "sha256:17c8d6e40cad02edb87a48558a24e10528047cabfadb0142e5c2f029a02efd9f",
+                    "sha256:f264e14911ed22c1afd3d48051aaf22d0ae7331d5fd2ffcce78116fcf380ac96",
+                    "sha256:5788739b6bf8ede8009af1cf26dd983868581e6cce28846d761889b33f7cc388",
+                    "sha256:1a7d8deec598efbe00251ef77b7d4df9630cfa50503246a8eed6c07cc56f4b35"
+                ]
+            }
+        }
+    }
+}

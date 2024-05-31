@@ -1,0 +1,168 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4926,
+                "digest": "sha256:f1912ef7d7cb955ca47cd1185b4734bd5811f4629a2fc1d265f13dd342c819b9"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 65694192,
+                    "digest": "sha256:16da43b30d897cf2826bf61806d6da79d67ff1caeaa9bab650f7d503db200561"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 71558,
+                    "digest": "sha256:1840843dafedebd856ed6d39163c298e3f8a939f78b1ec26e9b8d753a4cd493b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 364,
+                    "digest": "sha256:91246eb75b7da4d6c45bc96c72180830c7146c6395069457a893ad63b84a2de7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 680,
+                    "digest": "sha256:7faa681b41d79d2982921bf4f0ee7892690e67a338b8fb70fbd8e90950f9d2b1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 163,
+                    "digest": "sha256:97b84c64d4262ace291e55ae89ac447ccfe37a9946df127892b369a2cfb7fa5b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 305849002,
+                    "digest": "sha256:7963600a7211d42a044e698ec9ee4592c492dac93a91e633c9f640ff5b6681f5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 208788769,
+                    "digest": "sha256:25df569a2c15df405facc51d72e4b0d8cc30beec2aec10c42d1c0bf3bbc92294"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Kai Arulkumaran <design@kaixhin.com>",
+            "config": {
+                "Hostname": "45d266dde38f",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:ab0c61ebf0cc8694b0d3fbd3e9908222eb3462b4de64831b1554baa27a542e1e",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "b436e88b55949839894274323d219f0513452a7bc994f03be0eacab6788a7c34",
+            "container_config": {
+                "Hostname": "45d266dde38f",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "cd /root && git clone https://github.com/BVLC/caffe.git && cd caffe &&   cat python/requirements.txt | xargs -n1 pip install"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:ab0c61ebf0cc8694b0d3fbd3e9908222eb3462b4de64831b1554baa27a542e1e",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-01-16T06:48:32.562572927Z",
+            "docker_version": "1.12.3-cs3",
+            "history": [
+                {
+                    "created": "2016-12-15T17:44:58.048383765Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:b2236d49147fe14d8d4970b667155ad84bde96d183889a76a7512560a0da3f82 in / "
+                },
+                {
+                    "created": "2016-12-15T17:44:59.522075807Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2016-12-15T17:45:00.480054319Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2016-12-15T17:45:01.46405046Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2016-12-15T17:45:02.481014601Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2016-12-15T17:45:02.914816128Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-16T06:00:32.092135632Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Kai Arulkumaran <design@kaixhin.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-16T06:04:32.519473768Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y   git   wget   bc   cmake   libatlas-base-dev   libatlas-dev   libboost-all-dev   libopencv-dev   libprotobuf-dev   libgoogle-glog-dev   libgflags-dev   protobuf-compiler   libhdf5-dev   libleveldb-dev   liblmdb-dev   libsnappy-dev   python-dev   python-pip   python-numpy   gfortran > /dev/null"
+                },
+                {
+                    "created": "2017-01-16T06:48:32.562572927Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c cd /root && git clone https://github.com/BVLC/caffe.git && cd caffe &&   cat python/requirements.txt | xargs -n1 pip install"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:bc224b1b676d12be2a49f99778dda08b90d22747244d0a0afcdf4cfeb7db5d89",
+                    "sha256:53edc9780c07c9c8074f2d05064df0b11bbed9a69082fb613e690bc2a290983d",
+                    "sha256:738d3f35b582973d1fc86ff87edb9b84c90d6a33c7901a7d670278eecc2e6ad9",
+                    "sha256:4375cecd293e9455903aeb7b5de2287544f7cefa482eda989e73ad0ca908c51b",
+                    "sha256:4fcb79d431cc1198f07561d015f88bb492fe399515a21c5636cfb89064423d79",
+                    "sha256:eee742e52d325a3043282930364e9b125df814d226490714dc485d0044c17d7a",
+                    "sha256:0adf22d492a5b96d538eb60fd78f0374019a193540ccc0451ad13b66af0b1913"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,200 @@
+{
+    "manifests": {
+        "1.0.0": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:ded6a2e55a09381324c2970c46b7875b89227c3beae81f80b4b9252ed4fe73c6",
+                    "size": 737,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:0f0654974a39b492ce5f9c69f7a8920fac7d6f8b3e38ef1c5dd8d42ae03836bc",
+                    "size": 737,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "c68ac2b": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:2a4ed345b1ff11a6a5b14515158c777823541aa8cc2a919483a7a028ecef75cb",
+                    "size": 737,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:3c57e0066105b133d0f2ecb571737f3b2a9ebdf436692035c90be8f72f224cb7",
+                    "size": 737,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        },
+        "latest": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:fcd6964f140c865c840ce7bd9cd7eff481e3cb7bfbf443d0ee534c2a8b24fa80",
+                    "size": 738,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:1fa1acbe090947dffb8e1374025fa9437698cf967a32175e92487397a3836c45",
+                    "size": 738,
+                    "platform": {
+                        "architecture": "arm",
+                        "os": "linux",
+                        "variant": "v7"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.0.0",
+        "c68ac2b",
+        "latest"
+    ],
+    "configs": {
+        "1.0.0": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2019-12-27T23:26:22.49649329Z",
+            "history": [
+                {
+                    "created": "2019-10-21T17:21:42.078618181Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:fe1f09249227e2da2089afb4d07e16cbf832eeb804120074acd2b8192876cd28 in / "
+                },
+                {
+                    "created": "2019-10-21T17:21:42.387111039Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-12-27T23:26:22.49649329Z",
+                    "created_by": "RUN /bin/sh -c apk add --no-cache curl ca-certificates # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:77cae8ab23bf486355d1b3191259705374f4a11d483b24964d2f729dd8c076a0",
+                    "sha256:fc8314ad89075564cb76a52c4ce0bbe78ea5de6641663273a5d2e622f65baa86"
+                ]
+            }
+        },
+        "c68ac2b": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2019-12-27T23:24:59.522723869Z",
+            "history": [
+                {
+                    "created": "2019-10-21T17:21:42.078618181Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:fe1f09249227e2da2089afb4d07e16cbf832eeb804120074acd2b8192876cd28 in / "
+                },
+                {
+                    "created": "2019-10-21T17:21:42.387111039Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-12-27T23:24:59.522723869Z",
+                    "created_by": "RUN /bin/sh -c apk add --no-cache curl ca-certificates # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:77cae8ab23bf486355d1b3191259705374f4a11d483b24964d2f729dd8c076a0",
+                    "sha256:a62f66eb045441e3ee19d2aa710c96ee0ec63857557bc9f5ad8946e91e1b5444"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2020-03-14T02:10:51.544049195Z",
+            "history": [
+                {
+                    "created": "2020-01-18T01:19:37.02673981Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:e69d441d729412d24675dcd33e04580885df99981cec43de8c9b24015313ff8e in / "
+                },
+                {
+                    "created": "2020-01-18T01:19:37.187497623Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-03-14T02:10:51.544049195Z",
+                    "created_by": "RUN /bin/sh -c apk add --no-cache curl ca-certificates jq # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5216338b40a7b96416b8b9858974bbe4acc3096ee60acbc4dfb1ee02aecceb10",
+                    "sha256:f4685472bd998bf15306dd6f2756a161735687ad1f8f422419b0a61ce4e300f9"
+                ]
+            }
+        }
+    }
+}

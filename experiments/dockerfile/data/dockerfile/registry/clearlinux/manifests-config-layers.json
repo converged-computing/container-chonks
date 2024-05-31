@@ -1,0 +1,216 @@
+{
+    "manifests": {
+        "base": {
+            "manifests": [
+                {
+                    "digest": "sha256:0f9cbcb789eb6ea44a7f964d1f3aef6555891fd57122849c5a5e53f78dbb7be4",
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    },
+                    "size": 736
+                }
+            ],
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2
+        },
+        "latest": {
+            "manifests": [
+                {
+                    "digest": "sha256:0f9cbcb789eb6ea44a7f964d1f3aef6555891fd57122849c5a5e53f78dbb7be4",
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    },
+                    "size": 736
+                }
+            ],
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2
+        }
+    },
+    "tags": [
+        "base",
+        "latest"
+    ],
+    "configs": {
+        "base": {
+            "architecture": "amd64",
+            "author": "William Douglas <william.douglas@intel.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:aceaa35af66e6873422b9273cce7b0dd7ee38ce6fd554c8654093b1052774d9d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "ffb4f413677021e1354493b43b3e321d9cf9d9d209720f4c005c33147c2808aa",
+            "container_config": {
+                "Hostname": "ffb4f4136770",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/bash\"]"
+                ],
+                "Image": "sha256:aceaa35af66e6873422b9273cce7b0dd7ee38ce6fd554c8654093b1052774d9d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2024-05-28T19:38:46.434190721Z",
+            "docker_version": "23.0.11",
+            "history": [
+                {
+                    "created": "2024-05-28T19:38:39.878347915Z",
+                    "author": "William Douglas <william.douglas@intel.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER William Douglas <william.douglas@intel.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-28T19:38:45.226739576Z",
+                    "author": "William Douglas <william.douglas@intel.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a79c448585720b0b948c358a3c0ce2e65bb6501f73bf21a49ceb3a4b6ea77128 in / "
+                },
+                {
+                    "created": "2024-05-28T19:38:46.324997371Z",
+                    "author": "William Douglas <william.douglas@intel.com>",
+                    "created_by": "/bin/sh -c cd /etc &&     grep root /usr/share/defaults/etc/passwd > /etc/passwd &&     grep root /usr/share/defaults/etc/group > /etc/group &&     echo 'root:!:::::::' > /etc/shadow"
+                },
+                {
+                    "created": "2024-05-28T19:38:46.434190721Z",
+                    "author": "William Douglas <william.douglas@intel.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2fe1b333a4ba3ec1bacffe7608aad6d6f8232c138ccf7ad9a12c20412303bae6",
+                    "sha256:b4a32cb0add6fe46a1c24bee6e9411672ac06ab8aa37f8e7a855a516ba7f8f04"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "author": "William Douglas <william.douglas@intel.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:aceaa35af66e6873422b9273cce7b0dd7ee38ce6fd554c8654093b1052774d9d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "ffb4f413677021e1354493b43b3e321d9cf9d9d209720f4c005c33147c2808aa",
+            "container_config": {
+                "Hostname": "ffb4f4136770",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/bash\"]"
+                ],
+                "Image": "sha256:aceaa35af66e6873422b9273cce7b0dd7ee38ce6fd554c8654093b1052774d9d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2024-05-28T19:38:46.434190721Z",
+            "docker_version": "23.0.11",
+            "history": [
+                {
+                    "created": "2024-05-28T19:38:39.878347915Z",
+                    "author": "William Douglas <william.douglas@intel.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER William Douglas <william.douglas@intel.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-28T19:38:45.226739576Z",
+                    "author": "William Douglas <william.douglas@intel.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a79c448585720b0b948c358a3c0ce2e65bb6501f73bf21a49ceb3a4b6ea77128 in / "
+                },
+                {
+                    "created": "2024-05-28T19:38:46.324997371Z",
+                    "author": "William Douglas <william.douglas@intel.com>",
+                    "created_by": "/bin/sh -c cd /etc &&     grep root /usr/share/defaults/etc/passwd > /etc/passwd &&     grep root /usr/share/defaults/etc/group > /etc/group &&     echo 'root:!:::::::' > /etc/shadow"
+                },
+                {
+                    "created": "2024-05-28T19:38:46.434190721Z",
+                    "author": "William Douglas <william.douglas@intel.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2fe1b333a4ba3ec1bacffe7608aad6d6f8232c138ccf7ad9a12c20412303bae6",
+                    "sha256:b4a32cb0add6fe46a1c24bee6e9411672ac06ab8aa37f8e7a855a516ba7f8f04"
+                ]
+            }
+        }
+    }
+}

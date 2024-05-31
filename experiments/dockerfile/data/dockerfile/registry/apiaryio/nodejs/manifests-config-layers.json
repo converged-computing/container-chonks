@@ -1,0 +1,1609 @@
+{
+    "manifests": {
+        "0.10": {
+            "schemaVersion": 1,
+            "name": "apiaryio/nodejs",
+            "tag": "0.10",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:14e1fec130c6f27121ea3ebcdcedd1b2718b9dd6c637dc6b1f5e286d2557d759"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:1049fdf338b3a8ee90b5b94cab9f79cb5a0fdf139e46a2f5144ed2ce7ae91778"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:0ce4b037e17fe0acf550faad6cfccaf454e96698ba56e902efcc2c934147ee52"
+                },
+                {
+                    "blobSum": "sha256:6a3d69edbe90ef916e1ecd8d197f056de873ed08bcfd55a1cd0b43588f3dbb9a"
+                },
+                {
+                    "blobSum": "sha256:ff18e19c2db42055e6f34323700737bde3c819b413997cddace2c1b7180d7efd"
+                },
+                {
+                    "blobSum": "sha256:7b9457ec39de00bc70af1c9631b9ae6ede5a3ab715e6492c0a2641868ec1deda"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:6a5a5368e0c2d3e5909184fa28ddfd56072e7ff3ee9a945876f7eee5896ef5bb"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"1aeec3e0ca4b2842b542e3109b7d0bd384ed868b407c8c245d6e5fdd52c06bfe\",\"parent\":\"8663212373c509025117448054d170e2e5f6785c9bdbe4f8ca713d9825dae13b\",\"created\":\"2016-10-20T12:54:59.394886755Z\",\"container\":\"68119b5500cb466f02f8d1a0fd13fe3ae7db071bf920a256578e82bc91cccb20\",\"container_config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\",\"REFRESHED_AT=2016-10-19\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026     apt-get -y upgrade \\u0026\\u0026     apt-get clean -y \\u0026\\u0026     apt-get autoclean -y \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026     rm -rf /usr/share/locale/* \\u0026\\u0026     rm -rf /var/cache/debconf/*-old \\u0026\\u0026     rm -rf /var/lib/apt/lists/* \\u0026\\u0026     rm -rf /usr/share/doc/*\"],\"Image\":\"8663212373c509025117448054d170e2e5f6785c9bdbe4f8ca713d9825dae13b\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\",\"REFRESHED_AT=2016-10-19\"],\"Cmd\":[\"node\"],\"Image\":\"8663212373c509025117448054d170e2e5f6785c9bdbe4f8ca713d9825dae13b\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":5454945}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8663212373c509025117448054d170e2e5f6785c9bdbe4f8ca713d9825dae13b\",\"parent\":\"64b70d307eb4a3891382f5fc71385ce2ebb0baf165d105726a103e1a9ca0d37a\",\"created\":\"2016-10-20T12:54:47.110965119Z\",\"container\":\"30645ef820130e7e39bf432181f8ac7d3f613ec663c18441684f4961f7296926\",\"container_config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\",\"REFRESHED_AT=2016-10-19\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) USER [root]\"],\"Image\":\"64b70d307eb4a3891382f5fc71385ce2ebb0baf165d105726a103e1a9ca0d37a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\",\"REFRESHED_AT=2016-10-19\"],\"Cmd\":[\"node\"],\"Image\":\"64b70d307eb4a3891382f5fc71385ce2ebb0baf165d105726a103e1a9ca0d37a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"64b70d307eb4a3891382f5fc71385ce2ebb0baf165d105726a103e1a9ca0d37a\",\"parent\":\"d182ee7c0673098b18022f7f9a87f0ac51d425a39ae1433dfb695aa8cb973feb\",\"created\":\"2016-10-20T12:54:45.621374187Z\",\"container\":\"fcd06293c2945d032d21ea0cf302d87dab9ed225e9435d58bc3c0d83374f6659\",\"container_config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\",\"REFRESHED_AT=2016-10-19\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV REFRESHED_AT=2016-10-19\"],\"Image\":\"d182ee7c0673098b18022f7f9a87f0ac51d425a39ae1433dfb695aa8cb973feb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\",\"REFRESHED_AT=2016-10-19\"],\"Cmd\":[\"node\"],\"Image\":\"d182ee7c0673098b18022f7f9a87f0ac51d425a39ae1433dfb695aa8cb973feb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d182ee7c0673098b18022f7f9a87f0ac51d425a39ae1433dfb695aa8cb973feb\",\"parent\":\"4e344fd0444547b15007814d1aab934541e31e74327a99f67d30eae3f028b6c4\",\"created\":\"2016-10-20T12:54:43.846854794Z\",\"container\":\"9fe3e0af8eb37a45aec5f2aab5ed78355572af6b13a4061994f46b9370d5f307\",\"container_config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER Apiary \\u003csre@apiary.io\\u003e\"],\"Image\":\"286755cd3110058ac5229ff1aa57b1095dd0edc0326751fbcdc9fe69ac63214b\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\"],\"Cmd\":[\"node\"],\"Image\":\"286755cd3110058ac5229ff1aa57b1095dd0edc0326751fbcdc9fe69ac63214b\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\"],\"Cmd\":[\"node\"],\"ArgsEscaped\":true,\"Image\":\"sha256:6036da94a168e51ae4ab5f5f2c673c2087a8f8a79897cbcb47d118787b6a9b52\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"177d98f24255e24242a950ae81806b770282e06a6b21de15744664e93dde3b07\",\"container_config\":{\"Hostname\":\"383850eeb47b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.10.48\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"node\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:6036da94a168e51ae4ab5f5f2c673c2087a8f8a79897cbcb47d118787b6a9b52\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-10-18T19:28:34.781878344Z\",\"docker_version\":\"1.12.1\",\"id\":\"4e344fd0444547b15007814d1aab934541e31e74327a99f67d30eae3f028b6c4\",\"os\":\"linux\",\"parent\":\"69f8124f67c05e412980c0f5b77cb39b6d48c112f5e2e6346e234a28a2bfc850\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"69f8124f67c05e412980c0f5b77cb39b6d48c112f5e2e6346e234a28a2bfc850\",\"parent\":\"f05e40d21d32444dd687fe12859d23c8fc07ab2ef978e20b3fa682aae987d23b\",\"created\":\"2016-10-18T19:28:34.49403756Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -SLO \\\"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz\\\"   \\u0026\\u0026 curl -SLO \\\"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\\\"   \\u0026\\u0026 gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   \\u0026\\u0026 grep \\\" node-v$NODE_VERSION-linux-x64.tar.xz\\\\$\\\" SHASUMS256.txt | sha256sum -c -   \\u0026\\u0026 tar -xJf \\\"node-v$NODE_VERSION-linux-x64.tar.xz\\\" -C /usr/local --strip-components=1   \\u0026\\u0026 rm \\\"node-v$NODE_VERSION-linux-x64.tar.xz\\\" SHASUMS256.txt.asc SHASUMS256.txt   \\u0026\\u0026 ln -s /usr/local/bin/node /usr/local/bin/nodejs\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f05e40d21d32444dd687fe12859d23c8fc07ab2ef978e20b3fa682aae987d23b\",\"parent\":\"8f906884e1dded46e458379a29bd0c4cc14be289ee58f40592490c795a0b2d62\",\"created\":\"2016-10-18T19:28:31.12592453Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NODE_VERSION=0.10.48\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8f906884e1dded46e458379a29bd0c4cc14be289ee58f40592490c795a0b2d62\",\"parent\":\"e06baeaca3b4f7f81f3827d801271d75be15c1145b5daf0c0a7ce41e64d25575\",\"created\":\"2016-09-24T04:20:26.054012756Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex   \\u0026\\u0026 for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\";   done\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e06baeaca3b4f7f81f3827d801271d75be15c1145b5daf0c0a7ce41e64d25575\",\"parent\":\"fc5c800d14124f71dd1e017cceffd4135e9c029a79bacf4f5a17e984ec85fa10\",\"created\":\"2016-09-24T00:13:01.965583524Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibmysqlclient-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"fc5c800d14124f71dd1e017cceffd4135e9c029a79bacf4f5a17e984ec85fa10\",\"parent\":\"9a187a25eaf134be37cab1f724499187d92539a68139390412e8ec22beaa5e3e\",\"created\":\"2016-09-23T18:26:18.915116934Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9a187a25eaf134be37cab1f724499187d92539a68139390412e8ec22beaa5e3e\",\"parent\":\"faeaf6fdfdcbb18d68c12db9683a02428bab83962a493de88b4c7b1ec941db8f\",\"created\":\"2016-09-23T18:25:17.560400608Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"faeaf6fdfdcbb18d68c12db9683a02428bab83962a493de88b4c7b1ec941db8f\",\"parent\":\"d0c4f1eb7dc8f4dae2b45fe5c0cf4cfc70e5be85d933f5f5f4deb59f134fb520\",\"created\":\"2016-09-23T18:08:51.133779867Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d0c4f1eb7dc8f4dae2b45fe5c0cf4cfc70e5be85d933f5f5f4deb59f134fb520\",\"created\":\"2016-09-23T18:08:50.537223822Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:c6c23585ab140b0b320d4e99bc1b0eb544c9e96c24d90fec5e069a6d57d335ca in / \"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "662Z:FX6B:C7XM:JBJN:CTUR:XUDE:JDXX:NVBK:2X7B:2SAW:4AYH:VT2F",
+                            "kty": "EC",
+                            "x": "ck2Bek8usxhbl1XCYH8Rgk97ag-IUvwYxcX_2jdSw-4",
+                            "y": "fksoPNtwbLxm1YaQwtbuSE-kZb2hzRlo81FOLLoNETY"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "H3nYU0hnWxk2YOdJ3PwzViB4CibkYL4f8WpQm9d8KzJRV6-37jeH-ZXIKk_wolR53k3WOuazDpbBRAoqkPlcuA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjE0NDQzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTE6NTc6MDlaIn0"
+                }
+            ]
+        },
+        "0.12": {
+            "schemaVersion": 1,
+            "name": "apiaryio/nodejs",
+            "tag": "0.12",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:8a97d5e2ecb2524e30f25807f772f16e24ba7b80ce0b84d3f8bf79731fc522fa"
+                },
+                {
+                    "blobSum": "sha256:ae678f74551cec12d4054aee1ce84cfa9ffe1de7845a6dc5ebba1409858c56ff"
+                },
+                {
+                    "blobSum": "sha256:4cf91e7d61d72cbf321ef80c587ca136d0ca961597574bb95cc33ba069f2ac3f"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:0b871a0f1b3f1d1f3f3089f46a750da71a52dd5c50502b4b1fa6bd0c67b22440"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:1f04fe713f1b4a69e025c1acc5861877c9b2f799ec814734732ed9bb78bb607c"
+                },
+                {
+                    "blobSum": "sha256:0110c26a367a1906458e53dd2df6b9adb3dd3115eb14cbb42b26b82d8a6d2a4e"
+                },
+                {
+                    "blobSum": "sha256:871436ab7225503e9e951a7acb7b1689a91a60d033bf8cbabcd40fe5ca4cfc87"
+                },
+                {
+                    "blobSum": "sha256:4306be1e8943b446026b96c2ef7b3ab8471c760774fd1cd11334df7084fed57b"
+                },
+                {
+                    "blobSum": "sha256:57de64c72267e88e952b064236cb906c7626f7c07a1a2d5900cf6953e72632b3"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"0f8923fd8f99ee141bbc4f69a855b6f303d9edc6ad9c824a93ec1f1ea4e30d63\",\"parent\":\"d94efa33f137daaf9cdaf8eca64571ee4c7af2d8dc46acd27c40433036d6d052\",\"created\":\"2018-01-12T23:15:57.833119317Z\",\"container\":\"5e97daeddf4dd175647327148ecd6b017aa805b759ef8834f0a819db4bcb8a71\",\"container_config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"npm install -g npm@$NPM_VERSION\"],\"Image\":\"d94efa33f137daaf9cdaf8eca64571ee4c7af2d8dc46acd27c40433036d6d052\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"node\"],\"Image\":\"d94efa33f137daaf9cdaf8eca64571ee4c7af2d8dc46acd27c40433036d6d052\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":23386935}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d94efa33f137daaf9cdaf8eca64571ee4c7af2d8dc46acd27c40433036d6d052\",\"parent\":\"a16dc7ef1b2035a7a6a47917659b78fb77e4e620ef909b254fa6eecea30d2165\",\"created\":\"2018-01-12T23:15:34.928109369Z\",\"container\":\"929c015d83934d0b59694fea3866e04d8e5fdc415fd2616a90e1efdc28756d7b\",\"container_config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026     apt-get -y upgrade \\u0026\\u0026     apt-get clean -y \\u0026\\u0026     apt-get autoclean -y \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026     rm -rf /usr/share/locale/* \\u0026\\u0026     rm -rf /var/cache/debconf/*-old \\u0026\\u0026     rm -rf /var/lib/apt/lists/* \\u0026\\u0026     rm -rf /usr/share/doc/*\"],\"Image\":\"a16dc7ef1b2035a7a6a47917659b78fb77e4e620ef909b254fa6eecea30d2165\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"node\"],\"Image\":\"a16dc7ef1b2035a7a6a47917659b78fb77e4e620ef909b254fa6eecea30d2165\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":262538298}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a16dc7ef1b2035a7a6a47917659b78fb77e4e620ef909b254fa6eecea30d2165\",\"parent\":\"ed58d2d140bece4d7f1ddf383bcf48716811efb7562755254cbbe8abdc220bd5\",\"created\":\"2018-01-12T23:14:33.873103643Z\",\"container\":\"98368d6eacf1df5e95c57108fa1d2e116b52e75476f9920ae2330debbcb80453\",\"container_config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"userdel node\"],\"Image\":\"ed58d2d140bece4d7f1ddf383bcf48716811efb7562755254cbbe8abdc220bd5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"node\"],\"Image\":\"ed58d2d140bece4d7f1ddf383bcf48716811efb7562755254cbbe8abdc220bd5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":6411}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ed58d2d140bece4d7f1ddf383bcf48716811efb7562755254cbbe8abdc220bd5\",\"parent\":\"930819172e760603cb7ba742664ab59bb12390273c5589c6f095f090d29f456f\",\"created\":\"2018-01-12T23:14:29.143619101Z\",\"container\":\"dd87f47818d6121b6525a7e2f4b5e474b5a57abdf814517b675a51c271f86263\",\"container_config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) USER [root]\"],\"Image\":\"930819172e760603cb7ba742664ab59bb12390273c5589c6f095f090d29f456f\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"node\"],\"Image\":\"930819172e760603cb7ba742664ab59bb12390273c5589c6f095f090d29f456f\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"930819172e760603cb7ba742664ab59bb12390273c5589c6f095f090d29f456f\",\"parent\":\"6a6d43b3eee1cbedca0fa01cc25b28aa5668338bc008f09418cecde3b2d8303a\",\"created\":\"2018-01-12T23:14:27.315764868Z\",\"container\":\"38526c48f1738f57606acb24b359415b82d3e7e10de195361e2e00c393a3fe15\",\"container_config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV NPM_VERSION=2.15.11\"],\"Image\":\"6a6d43b3eee1cbedca0fa01cc25b28aa5668338bc008f09418cecde3b2d8303a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\",\"NPM_VERSION=2.15.11\"],\"Cmd\":[\"node\"],\"Image\":\"6a6d43b3eee1cbedca0fa01cc25b28aa5668338bc008f09418cecde3b2d8303a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6a6d43b3eee1cbedca0fa01cc25b28aa5668338bc008f09418cecde3b2d8303a\",\"parent\":\"755f83748f5053f33a000bdacdd4894f99f85e5296fd2c5836ebeaf6d119e7f7\",\"created\":\"2018-01-12T23:14:25.377551988Z\",\"container\":\"b14fb66cc3918036fd52055b8dbd5910ab7efd02c20c661e1a8a2f3142063344\",\"container_config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV REFRESHED_AT=2016-12-20\"],\"Image\":\"755f83748f5053f33a000bdacdd4894f99f85e5296fd2c5836ebeaf6d119e7f7\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\",\"REFRESHED_AT=2016-12-20\"],\"Cmd\":[\"node\"],\"Image\":\"755f83748f5053f33a000bdacdd4894f99f85e5296fd2c5836ebeaf6d119e7f7\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"755f83748f5053f33a000bdacdd4894f99f85e5296fd2c5836ebeaf6d119e7f7\",\"parent\":\"c4b18fd7769a64dc13f1f9a86fd04449b802fb6a60e0d830cf30988677ed96ba\",\"created\":\"2018-01-12T23:14:23.283805694Z\",\"container\":\"e13b18f76f4db07b8259ebdba5369e1b41a0dd4c2ac034452c30d6e546161c0a\",\"container_config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER Apiary \\u003csre@apiary.io\\u003e\"],\"Image\":\"6d6de015b7609975867986b43a898ab4ae7e873c12a09569b38e8ea6d638a429\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\"],\"Cmd\":[\"node\"],\"Image\":\"6d6de015b7609975867986b43a898ab4ae7e873c12a09569b38e8ea6d638a429\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\"],\"Cmd\":[\"node\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3551d11bde47812ab2d2c440337fa6a3204b085842c5622ccfa7dd5455828866\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"7423b490a02f9d024e2d550fdf9ec6553216cb85d895b20342e6f854489ad151\",\"container_config\":{\"Hostname\":\"45f28166fed1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=0.12.18\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"node\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3551d11bde47812ab2d2c440337fa6a3204b085842c5622ccfa7dd5455828866\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-12-21T19:34:02.734298028Z\",\"docker_version\":\"1.12.3\",\"id\":\"c4b18fd7769a64dc13f1f9a86fd04449b802fb6a60e0d830cf30988677ed96ba\",\"os\":\"linux\",\"parent\":\"9a853df076b256c1d341f760c5f8fc17c9a295245a5ecc3ea871999f817110a6\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9a853df076b256c1d341f760c5f8fc17c9a295245a5ecc3ea871999f817110a6\",\"parent\":\"36b581a081534bb857dfdf16da2d20ac15b19367cdd01282fa746ed5929128fa\",\"created\":\"2016-12-21T19:33:55.919963853Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -SLO \\\"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz\\\"   \\u0026\\u0026 curl -SLO \\\"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\\\"   \\u0026\\u0026 gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   \\u0026\\u0026 grep \\\" node-v$NODE_VERSION-linux-x64.tar.xz\\\\$\\\" SHASUMS256.txt | sha256sum -c -   \\u0026\\u0026 tar -xJf \\\"node-v$NODE_VERSION-linux-x64.tar.xz\\\" -C /usr/local --strip-components=1   \\u0026\\u0026 rm \\\"node-v$NODE_VERSION-linux-x64.tar.xz\\\" SHASUMS256.txt.asc SHASUMS256.txt   \\u0026\\u0026 ln -s /usr/local/bin/node /usr/local/bin/nodejs\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"36b581a081534bb857dfdf16da2d20ac15b19367cdd01282fa746ed5929128fa\",\"parent\":\"d97d97d1e7acd0a9f91d416d6c7bef585d025e4a48fadd257b8a8f8d756d58d9\",\"created\":\"2016-12-21T19:33:48.775776204Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NODE_VERSION=0.12.18\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d97d97d1e7acd0a9f91d416d6c7bef585d025e4a48fadd257b8a8f8d756d58d9\",\"parent\":\"726df725e83e1fedbdb3f8bce5ba04357bd287ec73512b79ac90a227938507b6\",\"created\":\"2016-12-16T02:31:46.176425688Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex   \\u0026\\u0026 for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     0034A06D9D9B0064CE8ADF6BF1747F4AD2306D93     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\";   done\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"726df725e83e1fedbdb3f8bce5ba04357bd287ec73512b79ac90a227938507b6\",\"parent\":\"b8a55ac0c99e07be5e11cdc8e0fdaacf5b5bc625bc2e26113c4aa75d28de43be\",\"created\":\"2016-12-16T02:31:43.198529466Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd --gid 1000 node   \\u0026\\u0026 useradd --uid 1000 --gid node --shell /bin/bash --create-home node\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b8a55ac0c99e07be5e11cdc8e0fdaacf5b5bc625bc2e26113c4aa75d28de43be\",\"parent\":\"b74c739ef73edfac6a38ad8934c7ec0de5fb973896ac4dff4e376e3d593a9f3f\",\"created\":\"2016-12-15T18:59:13.02815109Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibmysqlclient-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b74c739ef73edfac6a38ad8934c7ec0de5fb973896ac4dff4e376e3d593a9f3f\",\"parent\":\"4dc0c76ee6cedffe9a0015901dd87fc66982f9c00a2b35eb8e55eb03574562b1\",\"created\":\"2016-12-13T23:00:33.748130352Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4dc0c76ee6cedffe9a0015901dd87fc66982f9c00a2b35eb8e55eb03574562b1\",\"parent\":\"1849b66675154ff728d401ea465e2183425e12b232b4ae750c0878f23d995755\",\"created\":\"2016-12-13T23:00:11.852536913Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1849b66675154ff728d401ea465e2183425e12b232b4ae750c0878f23d995755\",\"parent\":\"32734c6d04f6b3a35c392dc81f33a324741eb23189848062134bce2162780c83\",\"created\":\"2016-12-13T22:10:59.712034744Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"32734c6d04f6b3a35c392dc81f33a324741eb23189848062134bce2162780c83\",\"created\":\"2016-12-13T22:10:59.102721199Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / \"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "VOF3:HIDP:PZWJ:U7KX:YTKA:N7N7:5ESL:3LRF:GIXG:YTO3:QIDQ:XAGM",
+                            "kty": "EC",
+                            "x": "VTKO0kQZfFdE5HpMeBSjaN0XwJ-or90lZ38jLJMTBj4",
+                            "y": "KE09c0mLk2lDkuTbSMCins78Chv_rY9CNmcrH2MXgm8"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "7j7-PwbGDtM8Q71rKzCg5eDRBnIZ8w_sAGIDMSNN7AEpCYTrkIJ8g2ZP2gbD1fmdMqAkkX6inHDD9a_jt0MDRg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjIwMjkyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTE6NTc6MDlaIn0"
+                }
+            ]
+        },
+        "10": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9104,
+                "digest": "sha256:be10f2eb8ccea724911bfb54f856e769a5211d669b814f0fa527bfc4bb9d9280"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45339314,
+                    "digest": "sha256:c5e155d5a1d130a7f8a3e24cee0d9e1349bff13f90ec6a941478e558fde53c14"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10784878,
+                    "digest": "sha256:221d80d00ae9675aad24913aacbadfac1ce8b7084f9765a6c0813486082c5c69"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4340094,
+                    "digest": "sha256:4250b3117dca5e14edc32ebf1366cd54e4cda91f17610b76c504a86917ff8b95"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50066382,
+                    "digest": "sha256:3b7ca19181b24b87e24423c01b490633bc1e47d2fcdc1987bf2e37949d6789b5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 215079034,
+                    "digest": "sha256:425d7b2a5bcc7e8df5041d66655cd6173c16799afefb1645ca0e0b3fa8a1043d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4159,
+                    "digest": "sha256:69df12c70287cf403446724e92cae1e0aa1c74713e27106525e433037c43a087"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 19270204,
+                    "digest": "sha256:ad53476a61f2f03d530034bac9e9f8027aa3e36a7f641206854d18d929207bc7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1323193,
+                    "digest": "sha256:204bb8bac4a1aabf0abf449b69dbc46e15782eaaf5b2c809354205fd292a614a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1249,
+                    "digest": "sha256:90b209dd44777772c0766e36120d22881f3772e4f6ddc2a94715376918bbd5ec"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 9825699,
+                    "digest": "sha256:f0a47e37c13511c19f348a162e84a99bcaf2f88fff7db6557d58a28cf1a69431"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5547091,
+                    "digest": "sha256:c13ef0293f1c352ac23ac63971480462072112ca113e6c6932ba8a2e35ea6323"
+                }
+            ]
+        },
+        "4": {
+            "schemaVersion": 1,
+            "name": "apiaryio/nodejs",
+            "tag": "4",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:3a3b7ae715cfcc998bf28e9cce170238a0cb76fec34d81cc60be7580f61de681"
+                },
+                {
+                    "blobSum": "sha256:1d21b79674955f69f0752fc63e0e6036196849c73dd67e4df6dec9ed7935080d"
+                },
+                {
+                    "blobSum": "sha256:c7305d49b5ded753ae8e9447fc3152ae0d6d237ecbea53121d8ed74eba61c862"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:21f4b864ce66d4f1ec60e3e4bab9a02f8bab6dec73865dc9c25b704b610a305d"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:04ef3fd45c205499f3b36f2d4504f09825fca57768f0603070458724a64b3245"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:94b2bbd8d9089dd8121d4796f2e3d39a70507c13a93a256283b77014febb3f08"
+                },
+                {
+                    "blobSum": "sha256:48ddd9a0b451e56b04441f03c3a070c5b7211c59a2497bfd029c124917a9d122"
+                },
+                {
+                    "blobSum": "sha256:be0c55e0f36d7dd585071620e18f5ac70ca5bd121c481f9de8307ada6b73a7d8"
+                },
+                {
+                    "blobSum": "sha256:6ce527086ba0f423501995144891dfcb3ae53e5e711f35f0db027e61b1b2d6de"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:529316cd8b894c0b73f0f20c6691e7015604ccfe0e253473c00ef7f9ac2610ea"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:5dfbbcdbbb10c8866d960993f3d61226205792b09f795711634b357cdcf04290"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"390512fa15f93d869fd17c4a2997c2f0b9fce58b60ac577c1417e94d22951530\",\"parent\":\"d793d1d2806f30f4c3ebc548c6809bdd732f4c41379825b90688eb0d4ed3371a\",\"created\":\"2018-08-17T14:18:16.089029627Z\",\"container\":\"377651f8170db50aeab721ec6a53c4357a9ebf54bcf3e37eaed9aa59971bda04\",\"container_config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"npm install -g npm@$NPM_VERSION\"],\"Image\":\"d793d1d2806f30f4c3ebc548c6809bdd732f4c41379825b90688eb0d4ed3371a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"node\"],\"Image\":\"d793d1d2806f30f4c3ebc548c6809bdd732f4c41379825b90688eb0d4ed3371a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":30206855}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d793d1d2806f30f4c3ebc548c6809bdd732f4c41379825b90688eb0d4ed3371a\",\"parent\":\"e12937fa8fd004d43d3d85c367c9bc73bfe9b7d8938042189cdc5bbb11388a0b\",\"created\":\"2018-08-17T14:17:58.678893497Z\",\"container\":\"de4e2ca4044d7426cabb2f49f0f1a173a23decb065c9f1718529f1d4b412c65b\",\"container_config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026     apt-get -y upgrade \\u0026\\u0026     apt-get clean -y \\u0026\\u0026     apt-get autoclean -y \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026     rm -rf /usr/share/locale/* \\u0026\\u0026     rm -rf /var/cache/debconf/*-old \\u0026\\u0026     rm -rf /var/lib/apt/lists/* \\u0026\\u0026     rm -rf /usr/share/doc/*\"],\"Image\":\"e12937fa8fd004d43d3d85c367c9bc73bfe9b7d8938042189cdc5bbb11388a0b\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"node\"],\"Image\":\"e12937fa8fd004d43d3d85c367c9bc73bfe9b7d8938042189cdc5bbb11388a0b\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":114229706}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e12937fa8fd004d43d3d85c367c9bc73bfe9b7d8938042189cdc5bbb11388a0b\",\"parent\":\"931f9b39c5971a4530d178ff8afa75f2332632280dc72a29ca75ed51bb8d5097\",\"created\":\"2018-08-17T14:17:23.932206868Z\",\"container\":\"f1137ee5d69f7d74e18b62ccb7ffe54665dad63feb628c75280cbb8541024577\",\"container_config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"userdel node\"],\"Image\":\"931f9b39c5971a4530d178ff8afa75f2332632280dc72a29ca75ed51bb8d5097\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"node\"],\"Image\":\"931f9b39c5971a4530d178ff8afa75f2332632280dc72a29ca75ed51bb8d5097\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":6411}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"931f9b39c5971a4530d178ff8afa75f2332632280dc72a29ca75ed51bb8d5097\",\"parent\":\"8eba294f28357796c1b7770cc43a0cb54970b52d4e9ef5af54a5c984021f643c\",\"created\":\"2018-08-17T14:17:20.018592504Z\",\"container\":\"35b4edf8e567fe70160ec5b6b575e6305884ea51ab9d1f1b1f51e02a20aa4b5d\",\"container_config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) USER [root]\"],\"Image\":\"8eba294f28357796c1b7770cc43a0cb54970b52d4e9ef5af54a5c984021f643c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"node\"],\"Image\":\"8eba294f28357796c1b7770cc43a0cb54970b52d4e9ef5af54a5c984021f643c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8eba294f28357796c1b7770cc43a0cb54970b52d4e9ef5af54a5c984021f643c\",\"parent\":\"6d2c08d90bd7a17c8600bc9182af304825a6fcefa69030f972f41f3d778546af\",\"created\":\"2018-08-17T14:17:17.88132557Z\",\"container\":\"6f5796920c341d663b29882a610ea0330e7643fed705bb528ba8d8705bc4775d\",\"container_config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV NPM_VERSION=4.4.4\"],\"Image\":\"6d2c08d90bd7a17c8600bc9182af304825a6fcefa69030f972f41f3d778546af\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\",\"NPM_VERSION=4.4.4\"],\"Cmd\":[\"node\"],\"Image\":\"6d2c08d90bd7a17c8600bc9182af304825a6fcefa69030f972f41f3d778546af\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6d2c08d90bd7a17c8600bc9182af304825a6fcefa69030f972f41f3d778546af\",\"parent\":\"31bd8d8be52fe793ff0fd6d9956c9f5d3b9422094f92c6b9903953a3e33295c3\",\"created\":\"2018-08-17T14:17:16.066509871Z\",\"container\":\"0c52738aa80cb45d3492ac0a009b0c11ccc18db0fbf3da5781b5186aa8151639\",\"container_config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV REFRESHED_AT=2018-08-16\"],\"Image\":\"31bd8d8be52fe793ff0fd6d9956c9f5d3b9422094f92c6b9903953a3e33295c3\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\",\"REFRESHED_AT=2018-08-16\"],\"Cmd\":[\"node\"],\"Image\":\"31bd8d8be52fe793ff0fd6d9956c9f5d3b9422094f92c6b9903953a3e33295c3\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"31bd8d8be52fe793ff0fd6d9956c9f5d3b9422094f92c6b9903953a3e33295c3\",\"parent\":\"0fedeac06bd0aa6eeb474f959dda5c52ebef1b85fd77ac45d7f17464d5033005\",\"created\":\"2018-08-17T14:17:13.938733412Z\",\"container\":\"fac8d5698018c522740af39899982e61b32b01430958a66859f3518f6cfd4008\",\"container_config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER Apiary \\u003csre@apiary.io\\u003e\"],\"Image\":\"d24af1d39345513a60497fe08e5d456423497b60600b16b4128a255a5af30cd8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.9.1-circleci-cp-workaround\",\"author\":\"Apiary \\u003csre@apiary.io\\u003e\",\"config\":{\"Hostname\":\"fac8d5698018\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\"],\"Cmd\":[\"node\"],\"Image\":\"d24af1d39345513a60497fe08e5d456423497b60600b16b4128a255a5af30cd8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\"],\"Cmd\":[\"node\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3eeb31559de23066361f2693fde4fe99dd1ba3e313de80391962e2c273e506d1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"container\":\"46cd1df6e306f10f2944d98fb21856606fee0c586a963b649218c5dafc470976\",\"container_config\":{\"Hostname\":\"46cd1df6e306\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NODE_VERSION=4.9.1\",\"YARN_VERSION=1.5.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"node\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3eeb31559de23066361f2693fde4fe99dd1ba3e313de80391962e2c273e506d1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2018-05-05T06:44:44.63572147Z\",\"docker_version\":\"17.06.2-ce\",\"id\":\"0fedeac06bd0aa6eeb474f959dda5c52ebef1b85fd77ac45d7f17464d5033005\",\"os\":\"linux\",\"parent\":\"5c078fcd7840f027b75745008c0bf9ff17bafc7d9efebd1f4b48dfa26cf61f0e\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5c078fcd7840f027b75745008c0bf9ff17bafc7d9efebd1f4b48dfa26cf61f0e\",\"parent\":\"42d6e0d1e02e11dc92a6b7d121ec535a1cf31ac25488e3cfee227cbe4f79c35c\",\"created\":\"2018-05-05T06:44:44.389877215Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex   \\u0026\\u0026 for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \\\"$key\\\" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \\\"$key\\\" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys \\\"$key\\\" ;   done   \\u0026\\u0026 curl -fSLO --compressed \\\"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\\\"   \\u0026\\u0026 curl -fSLO --compressed \\\"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\\\"   \\u0026\\u0026 gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   \\u0026\\u0026 mkdir -p /opt   \\u0026\\u0026 tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   \\u0026\\u0026 ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   \\u0026\\u0026 ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   \\u0026\\u0026 rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"42d6e0d1e02e11dc92a6b7d121ec535a1cf31ac25488e3cfee227cbe4f79c35c\",\"parent\":\"1b782b9c66c61914dd9b2fc2072309608b856366a5353a27e29760192cecddd2\",\"created\":\"2018-05-05T06:44:41.524165714Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV YARN_VERSION=1.5.1\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1b782b9c66c61914dd9b2fc2072309608b856366a5353a27e29760192cecddd2\",\"parent\":\"a5a61e4d7f51c0fc309d04db8477881d0420ec610e4947b822e3da959bcf2beb\",\"created\":\"2018-05-05T06:44:41.250202295Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ARCH= \\u0026\\u0026 dpkgArch=\\\"$(dpkg --print-architecture)\\\"   \\u0026\\u0026 case \\\"${dpkgArch##*-}\\\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \\\"unsupported architecture\\\"; exit 1 ;;   esac   \\u0026\\u0026 curl -SLO \\\"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\\\"   \\u0026\\u0026 curl -SLO --compressed \\\"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\\\"   \\u0026\\u0026 gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   \\u0026\\u0026 grep \\\" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\\\$\\\" SHASUMS256.txt | sha256sum -c -   \\u0026\\u0026 tar -xJf \\\"node-v$NODE_VERSION-linux-$ARCH.tar.xz\\\" -C /usr/local --strip-components=1 --no-same-owner   \\u0026\\u0026 rm \\\"node-v$NODE_VERSION-linux-$ARCH.tar.xz\\\" SHASUMS256.txt.asc SHASUMS256.txt   \\u0026\\u0026 ln -s /usr/local/bin/node /usr/local/bin/nodejs\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a5a61e4d7f51c0fc309d04db8477881d0420ec610e4947b822e3da959bcf2beb\",\"parent\":\"fd37e8ba612b1ee9d492828fe471572a74600e0e027c18d83b3c44d192c8f1a8\",\"created\":\"2018-05-05T06:44:37.027596149Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NODE_VERSION=4.9.1\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"fd37e8ba612b1ee9d492828fe471572a74600e0e027c18d83b3c44d192c8f1a8\",\"parent\":\"f6634fca3ec1c4296e97d9190f19db7750e646ee56149f7f85418a1988c9ce98\",\"created\":\"2018-05-05T06:40:25.771053304Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex   \\u0026\\u0026 for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     56730D5401028683275BD23C23EFEFE93C4CFFFE     77984A986EBC2AA786BC0F66B01FBB92821C587A   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \\\"$key\\\" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \\\"$key\\\" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys \\\"$key\\\" ;   done\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f6634fca3ec1c4296e97d9190f19db7750e646ee56149f7f85418a1988c9ce98\",\"parent\":\"e83fd56a52c0f9807367d0a34ae72700860315a0e4345a92f9b66149631d0c75\",\"created\":\"2018-05-05T06:40:20.837494868Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd --gid 1000 node   \\u0026\\u0026 useradd --uid 1000 --gid node --shell /bin/bash --create-home node\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e83fd56a52c0f9807367d0a34ae72700860315a0e4345a92f9b66149631d0c75\",\"parent\":\"6801f0e48163cf3f3114f06f8eef129beecf6c6d2b70d7903f81efc7e35377a1\",\"created\":\"2018-05-04T17:37:32.13450773Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\tapt-get update; \\tapt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tdpkg-dev \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibncurses5-dev \\t\\tlibncursesw5-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\t\\t\\t$( \\t\\t\\tif apt-cache show 'default-libmysqlclient-dev' 2\\u003e/dev/null | grep -q '^Version:'; then \\t\\t\\t\\techo 'default-libmysqlclient-dev'; \\t\\t\\telse \\t\\t\\t\\techo 'libmysqlclient-dev'; \\t\\t\\tfi \\t\\t) \\t; \\trm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6801f0e48163cf3f3114f06f8eef129beecf6c6d2b70d7903f81efc7e35377a1\",\"parent\":\"06f11220807eb7c75e9adda1b8721bccad5c5b77113af8a110fc36ce39f16670\",\"created\":\"2018-05-04T17:35:46.94495652Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"06f11220807eb7c75e9adda1b8721bccad5c5b77113af8a110fc36ce39f16670\",\"parent\":\"4bde5e3181218e0aaac9cc030e8c04fe8ac327e2ab138c81ec728663c2b2d1d4\",\"created\":\"2018-05-04T17:35:09.528330454Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\tif ! command -v gpg \\u003e /dev/null; then \\t\\tapt-get update; \\t\\tapt-get install -y --no-install-recommends \\t\\t\\tgnupg \\t\\t\\tdirmngr \\t\\t; \\t\\trm -rf /var/lib/apt/lists/*; \\tfi\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4bde5e3181218e0aaac9cc030e8c04fe8ac327e2ab138c81ec728663c2b2d1d4\",\"parent\":\"0b3b206a3a686ab82cc0d1c23b797865f3967311600021c0d5b38d148fb80337\",\"created\":\"2018-05-04T17:35:08.834407567Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\tnetbase \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0b3b206a3a686ab82cc0d1c23b797865f3967311600021c0d5b38d148fb80337\",\"parent\":\"dfbd7e636870d404c2f9385d93866afda30c7a5804945a66d2e87980aa40002c\",\"created\":\"2018-04-28T06:44:16.202044334Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"bash\\\"]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"dfbd7e636870d404c2f9385d93866afda30c7a5804945a66d2e87980aa40002c\",\"created\":\"2018-04-28T06:44:15.690554988Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:3e6141c0c9cb74b14a281eb3ab7aaf162a625733e652c3948b323bb2ec8b4343 in / \"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "E45V:2PLR:LCOI:PYH2:V6KV:KSV7:VQQ6:C2HW:7D4R:HRP6:P24K:C6BZ",
+                            "kty": "EC",
+                            "x": "6kGczSpeThkTQfJIeINoqZiGpEoe9jE3oeSvyfHC6Xo",
+                            "y": "399HND_lB1-XNmYYFyJulzkLWqf0qhuYESvaRXI8n8M"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "WQMpWFPOeNJFObqIbFGyMKWlJRdEDQimaoxGl3i9afRpPzrhFwLJX_g6npypAvC68Z9yhpbhhJKTokd2Qkuf_g",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjIzOTA3LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTE6NTc6MTFaIn0"
+                }
+            ]
+        },
+        "6": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9080,
+                "digest": "sha256:4bb0b40ffee9c3755a15ba94c07cf48bdf2f9c36fafaf5e440478c6b64116e80"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45344292,
+                    "digest": "sha256:741437d97401b83849ccbfe4ed8964049b752081647d7f1ea8aea29d989f8968"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10781099,
+                    "digest": "sha256:34d8874714d74b636739b8a52204650a664fca8ff9741dd66810f30196f103e2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4340044,
+                    "digest": "sha256:0a108aa2667933b852b8d003f97b344d014fcd7e06a0c0e6e04f2d6906738388"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50063121,
+                    "digest": "sha256:7f0334c36886bd4619e8d05ccf68003e53b0b6098b2166a216bd009dba678ed8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 214278093,
+                    "digest": "sha256:65c95cb8b3be70ecc403d2622ee4098d481d1b95c0e6ed70fa0582cf31a961d1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4168,
+                    "digest": "sha256:a36b708560f80b9511c858eefc9f5cf7312b6b2b5750b389e2f29152f058079b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 14579492,
+                    "digest": "sha256:b385317dd451b9889e31d8e4d4f663f2a63c5959686035894511740ee9cc72a9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1321430,
+                    "digest": "sha256:edada47c23a46c3154533bfa6e35029e92632a7b96ff6f67fa30453e456596f6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1247,
+                    "digest": "sha256:25f485e51ecc4ad543208a33cc252d413b4454299adfed47ee436d038efebb1d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2822627,
+                    "digest": "sha256:2d29b4fa9fa946afb73b915d3f189f9d679a096ac89faa6d738a526d6012b069"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 8083530,
+                    "digest": "sha256:51f3ba9b34e26a1cc0e8621e190ef6aef26e1c1592485a33db6c537609fc19e9"
+                }
+            ]
+        },
+        "6-npm6": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9110,
+                "digest": "sha256:17975b80ac0500770fc81d406efd9dff5f2cfaf1430b90becee6dd588bf95d7d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45320257,
+                    "digest": "sha256:54f7e8ac135a5f502a6ee9537ef3d64b1cd2fa570dc0a40b4d3b6f7ac81e7486"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10740278,
+                    "digest": "sha256:d6341e30912f12f56e18564a3b582853f65376766f5f9d641a68a724ed6db88f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4340083,
+                    "digest": "sha256:087a57faf9491b1b82a83e26bc8cc90c90c30e4a4d858b57ddd5b4c2c90095f6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50063138,
+                    "digest": "sha256:5d71636fb824265e30ff34bf20737c9cdc4f5af28b6bce86f08215c55b89bfab"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 213213743,
+                    "digest": "sha256:0c1db95989906f161007d8ef2a6ef6e0ec64bc15bf2c993fd002edbdfc7aa7df"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4168,
+                    "digest": "sha256:89669bc2deb2e52ba42349c17168b131be9016eb9c6ef03cd98218fcd4b7a60e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 132664,
+                    "digest": "sha256:983ea4fdf0c23309cb77bc0231a6f797b44adbbc4d25e6b0b3b7f007e3aa6710"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 14481628,
+                    "digest": "sha256:497c83fb0229a43bcc567acc96ea72af861a252baaafa51caa375f0d824f8441"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1086657,
+                    "digest": "sha256:e60cab5c0fe2744aefd7f72d028ea3f42a29f80e2cc8a8f12bf214f6f8aa7b48"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1251,
+                    "digest": "sha256:847bc92b76bda82e0c4e37013f20dbbe57991b21e517773db3b044f0a611919a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 20370931,
+                    "digest": "sha256:e8be15e54b5d0254ce6b6bfe8dc3a78905c826bd8a44857a0a99847baddbe53b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 17690264,
+                    "digest": "sha256:de14f1a2dcce4ec2a8c59e6eb11f5c2129d0b416109998c93b95a4e5282dde0f"
+                }
+            ]
+        },
+        "8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9087,
+                "digest": "sha256:70cf13164e1d3e7d26d158b80fd041f41c19fbf57300a112df55cf5fb5aec90d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45344292,
+                    "digest": "sha256:741437d97401b83849ccbfe4ed8964049b752081647d7f1ea8aea29d989f8968"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10781099,
+                    "digest": "sha256:34d8874714d74b636739b8a52204650a664fca8ff9741dd66810f30196f103e2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4340044,
+                    "digest": "sha256:0a108aa2667933b852b8d003f97b344d014fcd7e06a0c0e6e04f2d6906738388"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50063121,
+                    "digest": "sha256:7f0334c36886bd4619e8d05ccf68003e53b0b6098b2166a216bd009dba678ed8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 214278093,
+                    "digest": "sha256:65c95cb8b3be70ecc403d2622ee4098d481d1b95c0e6ed70fa0582cf31a961d1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4168,
+                    "digest": "sha256:a36b708560f80b9511c858eefc9f5cf7312b6b2b5750b389e2f29152f058079b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 17756576,
+                    "digest": "sha256:81a7e69fab678a03558dad82704c7ca9082a2ae82f1d590e56ba068da7abbe2e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1321420,
+                    "digest": "sha256:a88b577be604a4926c90a6c9eae338c0639b4381bc333c12d957cc3f9fa991a6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1247,
+                    "digest": "sha256:bf76f07a1f778b6af12d06015d64b73e27e53d212adfad443a694adf238531e7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2822608,
+                    "digest": "sha256:c662ad3edfd5a2568cf48e965dabd914c78c7b53ada05744e84650c902db1820"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 7622725,
+                    "digest": "sha256:a96c1ef7b7a608f9645d186e99238c23c2661f2dcff349128cf54da724bdb393"
+                }
+            ]
+        },
+        "8-npm6": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9086,
+                "digest": "sha256:0eb31152d07ae0ca2f90fd743da378bfa7c6e0f3143ee3c488ef91f82448687a"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45344292,
+                    "digest": "sha256:741437d97401b83849ccbfe4ed8964049b752081647d7f1ea8aea29d989f8968"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10781099,
+                    "digest": "sha256:34d8874714d74b636739b8a52204650a664fca8ff9741dd66810f30196f103e2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4340044,
+                    "digest": "sha256:0a108aa2667933b852b8d003f97b344d014fcd7e06a0c0e6e04f2d6906738388"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50063121,
+                    "digest": "sha256:7f0334c36886bd4619e8d05ccf68003e53b0b6098b2166a216bd009dba678ed8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 214278093,
+                    "digest": "sha256:65c95cb8b3be70ecc403d2622ee4098d481d1b95c0e6ed70fa0582cf31a961d1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4168,
+                    "digest": "sha256:a36b708560f80b9511c858eefc9f5cf7312b6b2b5750b389e2f29152f058079b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 17756576,
+                    "digest": "sha256:81a7e69fab678a03558dad82704c7ca9082a2ae82f1d590e56ba068da7abbe2e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1321420,
+                    "digest": "sha256:a88b577be604a4926c90a6c9eae338c0639b4381bc333c12d957cc3f9fa991a6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1248,
+                    "digest": "sha256:cd8e74505c044a1799cc70b65acf7f48b7d573089e6a110cd32dd31d8b3a743c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2822623,
+                    "digest": "sha256:90bb14303fe84b7f67194ef541092ecbd0688834fe9b500377d0476893726f0b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5534650,
+                    "digest": "sha256:5c7dbf6578ad99b5cee67eb9404f9155b1adf270a4191d07cc9ab59d2aefb6b8"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "0.10",
+        "0.12",
+        "10",
+        "4",
+        "6",
+        "6-npm6",
+        "8",
+        "8-npm6"
+    ],
+    "configs": {
+        "10": {
+            "architecture": "amd64",
+            "author": "Apiary <sre@apiary.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=10.15.3",
+                    "YARN_VERSION=1.13.0",
+                    "REFRESHED_AT=2019-08-13",
+                    "NPM_VERSION=6.4.1"
+                ],
+                "Cmd": [
+                    "node"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:ca44ea367ce644d6989d71f4624e78a41c452da03ec21c465d49e81eb2c7e545",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "c3ed3a565d4672a9c52e20cf0189d69a720ce12daae6102caa72b7aa6bc4971d",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=10.15.3",
+                    "YARN_VERSION=1.13.0",
+                    "REFRESHED_AT=2019-08-13",
+                    "NPM_VERSION=6.4.1"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "npm install -g npm@$NPM_VERSION"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:ca44ea367ce644d6989d71f4624e78a41c452da03ec21c465d49e81eb2c7e545",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2019-08-13T13:15:34.960127312Z",
+            "docker_version": "18.03.1-ol",
+            "history": [
+                {
+                    "created": "2019-05-08T00:33:09.837482517Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:caf91edab64f988bc24766c58ee66c00311c7c921296b8e5b51d7023422a1485 in / "
+                },
+                {
+                    "created": "2019-05-08T00:33:10.318602909Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-05-08T01:40:06.883391667Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-05-08T01:40:12.958225472Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+                },
+                {
+                    "created": "2019-05-08T01:40:37.91362002Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-05-08T01:41:59.367097891Z",
+                    "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-05-08T02:14:27.571056071Z",
+                    "created_by": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+                },
+                {
+                    "created": "2019-05-08T02:22:49.338948858Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV NODE_VERSION=10.15.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-05-08T02:22:56.856461334Z",
+                    "created_by": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+                },
+                {
+                    "created": "2019-05-08T02:22:57.15489888Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV YARN_VERSION=1.13.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-05-08T02:23:00.639004638Z",
+                    "created_by": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+                },
+                {
+                    "created": "2019-05-08T02:23:00.855318378Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"node\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-08-13T13:15:05.381434043Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-08-13T13:15:07.064134745Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2019-08-13",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-08-13T13:15:08.749944468Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NPM_VERSION=6.4.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-08-13T13:15:10.419465378Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-08-13T13:15:12.656609413Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c userdel node"
+                },
+                {
+                    "created": "2019-08-13T13:15:24.779364671Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get -y upgrade &&     apt-get clean -y &&     apt-get autoclean -y &&     apt-get autoremove -y &&     rm -rf /usr/share/locale/* &&     rm -rf /var/cache/debconf/*-old &&     rm -rf /var/lib/apt/lists/* &&     rm -rf /usr/share/doc/*"
+                },
+                {
+                    "created": "2019-08-13T13:15:34.960127312Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c npm install -g npm@$NPM_VERSION"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f94641f1fe1f5c42c325652bf55f0513c881c86b620b912b15460e0bca07cc12",
+                    "sha256:ec62f19bb3aa1dcfacc9864be06f0af635c18021893d42598da1564beed97448",
+                    "sha256:2c719774c1e1c4b82c5b23bd40a7fc139aa5f0efddf7a969f72f8170c71dd058",
+                    "sha256:4230ff7f22885369f095f4414ef0ff1a94b93a6c93dc754b89ae14e470955ee7",
+                    "sha256:910d7fd9e23e694537aec2205e5d529fdac81cfc90f52fcd62ed3f056ff0e72e",
+                    "sha256:a27518e43e49be20afbafd75d24a6ca8da8cd170c0986d705c691beb0862eabd",
+                    "sha256:5f7bfa7e154cf69488e4c4ad086476eefbfa4a82f49443cb1343b3f4bc7de3d2",
+                    "sha256:2371e8a98212014da608b5a84e3886cc7f04eef9a30f5c655b54e065ca6e5921",
+                    "sha256:08486d6c1c8efa282051d9fdddffde3a370e34fae5db9647726ed43532f09d08",
+                    "sha256:22493eddf39cd30e7419ad4d13b417761fbd3f9c46af8ac44dbbea29bc851bfd",
+                    "sha256:f160729055ac18f34c6dd2fb8a757ed85341e38dc4f6b0ca1a71339df742d8fc"
+                ]
+            }
+        },
+        "6": {
+            "architecture": "amd64",
+            "author": "Apiary <sre@apiary.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=6.16.0",
+                    "YARN_VERSION=1.12.3",
+                    "REFRESHED_AT=2018-12-05",
+                    "NPM_VERSION=4.6.1"
+                ],
+                "Cmd": [
+                    "node"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:dcf4925be1c103bba747098c49b77260138fbfbc28484598fb4e9e3f9ec9f531",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "ab452dfa3b8f8c48923ebabc6249da6faab9c4ea511718268921955bdc53ba0f",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=6.16.0",
+                    "YARN_VERSION=1.12.3",
+                    "REFRESHED_AT=2018-12-05",
+                    "NPM_VERSION=4.6.1"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "npm install -g npm@$NPM_VERSION"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:dcf4925be1c103bba747098c49b77260138fbfbc28484598fb4e9e3f9ec9f531",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2019-02-13T07:29:25.726042703Z",
+            "docker_version": "18.03.1-ol",
+            "history": [
+                {
+                    "created": "2019-02-06T03:30:01.714540068Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4fec879fdca802d6920b8981b409b19ded75aff693eaaba1ba4cf5ecb7594fdb in / "
+                },
+                {
+                    "created": "2019-02-06T03:30:02.095682729Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-06T05:51:03.607050513Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-02-06T05:51:14.391936075Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+                },
+                {
+                    "created": "2019-02-06T05:51:50.706559429Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-02-06T05:53:42.363280507Z",
+                    "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-02-06T06:47:16.355361149Z",
+                    "created_by": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+                },
+                {
+                    "created": "2019-02-06T06:50:34.55128155Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV NODE_VERSION=6.16.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-06T06:50:40.463110863Z",
+                    "created_by": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+                },
+                {
+                    "created": "2019-02-06T06:50:40.710955585Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV YARN_VERSION=1.12.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-06T06:50:44.24752846Z",
+                    "created_by": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+                },
+                {
+                    "created": "2019-02-06T06:50:44.427333401Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"node\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-13T07:28:49.735475334Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-13T07:28:51.346709916Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2018-12-05",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-13T07:28:53.00547Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NPM_VERSION=4.6.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-13T07:28:54.6582442Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-13T07:28:56.954717995Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c userdel node"
+                },
+                {
+                    "created": "2019-02-13T07:29:05.121594433Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get -y upgrade &&     apt-get clean -y &&     apt-get autoclean -y &&     apt-get autoremove -y &&     rm -rf /usr/share/locale/* &&     rm -rf /var/cache/debconf/*-old &&     rm -rf /var/lib/apt/lists/* &&     rm -rf /usr/share/doc/*"
+                },
+                {
+                    "created": "2019-02-13T07:29:25.726042703Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c npm install -g npm@$NPM_VERSION"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:13d5529fd232cacdd8cd561148560e0bf5d65dbc1149faf0c68240985607c303",
+                    "sha256:abc3250a6c7ff22a6a366d9c175033ef0b2859f9d03676410c2f21d0fe568da4",
+                    "sha256:578414b395b98d02c5f284e83c8db080afcbbde8012478054af22df2edb9336d",
+                    "sha256:6257fa9f9597f43a167036d7bf748c5872c38803fa09e2493e119e512c6ac949",
+                    "sha256:a22a5ac18042c7ea8f9f4cb6f15bf5dda84a752fa8893a5a3d842b38285fba50",
+                    "sha256:8579c758b9d010a1ad8d506a48481c3d4860b167d8b2a983289890965dfba6b2",
+                    "sha256:01a7bc5e7fe6cdc9f6c033d6fecae9d9e68db357c431199041f83b43cfd1b0fb",
+                    "sha256:83854fb714f0e28304ad1f9580fd4e91f2f2b8491e33aca3f212093ce85d0402",
+                    "sha256:a8cc69c90693169a56ced93a003b374044f8f702340dfe2b40b6096e9c613741",
+                    "sha256:11a256383a8c68dc8c18b3fe93cdbcacf5d6a2642f12a58d21237fa9bb43bd8b",
+                    "sha256:689e7fffc8379496a4bc622491beffe75700fd1df9de11995d29a7707cecd7b9"
+                ]
+            }
+        },
+        "6-npm6": {
+            "architecture": "amd64",
+            "author": "Apiary <sre@apiary.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=6.15.0",
+                    "YARN_VERSION=1.6.0",
+                    "REFRESHED_AT=2018-12-05",
+                    "NPM_VERSION=6.1.0"
+                ],
+                "Cmd": [
+                    "node"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1a1977fa996d1d1c8758785adb90ddb606ad619850314190ad2b604d67819d86",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "748627eb87cef442f5eeac0e5edb8d599cee0412377c97cef620e7f8183eae9b",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=6.15.0",
+                    "YARN_VERSION=1.6.0",
+                    "REFRESHED_AT=2018-12-05",
+                    "NPM_VERSION=6.1.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "npm install -g npm@$NPM_VERSION"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:1a1977fa996d1d1c8758785adb90ddb606ad619850314190ad2b604d67819d86",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "created": "2018-12-04T18:10:34.216777153Z",
+            "docker_version": "18.03.1-ol",
+            "history": [
+                {
+                    "created": "2018-11-15T22:44:00.252707299Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a61c14b18252183a4719980da97ac483044bcaa9df8a569a6d7bf0f719384b5e in / "
+                },
+                {
+                    "created": "2018-11-15T22:44:09.056859416Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-16T11:15:57.824013954Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-11-16T11:16:02.994302329Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+                },
+                {
+                    "created": "2018-11-16T11:17:06.349456518Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-11-16T11:19:28.390538514Z",
+                    "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-11-16T14:02:04.189987647Z",
+                    "created_by": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+                },
+                {
+                    "created": "2018-11-27T02:11:04.951352437Z",
+                    "created_by": "/bin/sh -c set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     56730D5401028683275BD23C23EFEFE93C4CFFFE     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done"
+                },
+                {
+                    "created": "2018-11-28T12:35:00.11938494Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV NODE_VERSION=6.15.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-28T12:35:05.047246372Z",
+                    "created_by": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+                },
+                {
+                    "created": "2018-11-28T12:35:05.511725681Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV YARN_VERSION=1.6.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-28T12:35:09.960029295Z",
+                    "created_by": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+                },
+                {
+                    "created": "2018-11-28T12:35:10.275594431Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"node\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-04T14:28:53.647470064Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-04T18:09:34.924471123Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2018-12-05",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-04T18:09:36.681207329Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NPM_VERSION=6.1.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-04T18:09:38.349245137Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-04T18:09:41.043459175Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c userdel node"
+                },
+                {
+                    "created": "2018-12-04T18:09:54.559109419Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get -y upgrade &&     apt-get clean -y &&     apt-get autoclean -y &&     apt-get autoremove -y &&     rm -rf /usr/share/locale/* &&     rm -rf /var/cache/debconf/*-old &&     rm -rf /var/lib/apt/lists/* &&     rm -rf /usr/share/doc/*"
+                },
+                {
+                    "created": "2018-12-04T18:10:34.216777153Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c npm install -g npm@$NPM_VERSION"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:90d1009ce6fe3102fee728742a3bd73eea2b39c88cdda99977a3fb130dbc17ac",
+                    "sha256:c23711a84ad43e5062e70a4055d7df344087649bec7eac06a40a8b1af4cef86e",
+                    "sha256:8f7ee6d76fd9da1ecfcfcd893357e78d7dcd4ca877295b7565c71728411f9126",
+                    "sha256:f75e64f96dbc610a00722afa3826745952db8d1416f6405e7e87c20868b9f542",
+                    "sha256:e02b32b1ff99a237da5c0cc4bb46dd672447b66c1b524975ae1f59c11abfd79c",
+                    "sha256:4a6166f16a0e1bdcc6d89733c8ef8795b545a645ad9ed9ef5bd5477cda7f2e31",
+                    "sha256:7baec434a9c928d521c3e8cb31f7e215310a1657b735ee56af1ea4d2b9bbf686",
+                    "sha256:ac02c6e38bb5b344420c07ea87e3f54a9090c8a999eb817415ba23f9c6985a2c",
+                    "sha256:ccb0b6d086b4bf6503b7824e8c3ac0c76111924e0d81ff5675896a86f98a5358",
+                    "sha256:adf947861f39ebc9637c178521a7133438c743f1866c1cac6aff85fd9b82b8fc",
+                    "sha256:bb3fa9e2a23c2ce4a7798867d6d93b500b758507dcb1a174983675808751319c",
+                    "sha256:fb04ab16fe7ce4926c248f55a8081b0ddb64e2e9b8d39fc9e4b1c28fb9284d0d"
+                ]
+            }
+        },
+        "8": {
+            "architecture": "amd64",
+            "author": "Apiary <sre@apiary.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=8.15.0",
+                    "YARN_VERSION=1.12.3",
+                    "REFRESHED_AT=2018-12-05",
+                    "NPM_VERSION=4.6.1"
+                ],
+                "Cmd": [
+                    "node"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4573b8ea6ea18c8691d8f970f170834dff37af4cc5220251bc7fe2ada00557af",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "b3f711e987dea58637f8009f58918c4cc5c792f63fa24c10923be67d1d05ed59",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=8.15.0",
+                    "YARN_VERSION=1.12.3",
+                    "REFRESHED_AT=2018-12-05",
+                    "NPM_VERSION=4.6.1"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "npm install -g npm@$NPM_VERSION"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:4573b8ea6ea18c8691d8f970f170834dff37af4cc5220251bc7fe2ada00557af",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2019-02-13T07:29:53.608951878Z",
+            "docker_version": "18.03.1-ol",
+            "history": [
+                {
+                    "created": "2019-02-06T03:30:01.714540068Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4fec879fdca802d6920b8981b409b19ded75aff693eaaba1ba4cf5ecb7594fdb in / "
+                },
+                {
+                    "created": "2019-02-06T03:30:02.095682729Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-06T05:51:03.607050513Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-02-06T05:51:14.391936075Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+                },
+                {
+                    "created": "2019-02-06T05:51:50.706559429Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-02-06T05:53:42.363280507Z",
+                    "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-02-06T06:47:16.355361149Z",
+                    "created_by": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+                },
+                {
+                    "created": "2019-02-06T06:47:16.514800318Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV NODE_VERSION=8.15.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-06T06:47:22.370924011Z",
+                    "created_by": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+                },
+                {
+                    "created": "2019-02-06T06:47:22.623088372Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV YARN_VERSION=1.12.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-06T06:47:25.943476561Z",
+                    "created_by": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+                },
+                {
+                    "created": "2019-02-06T06:47:26.11956999Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"node\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-12T14:18:40.390488153Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-13T07:29:27.536292283Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2018-12-05",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-13T07:29:29.229298365Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NPM_VERSION=4.6.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-13T07:29:30.890383231Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-13T07:29:33.142667863Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c userdel node"
+                },
+                {
+                    "created": "2019-02-13T07:29:41.347420167Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get -y upgrade &&     apt-get clean -y &&     apt-get autoclean -y &&     apt-get autoremove -y &&     rm -rf /usr/share/locale/* &&     rm -rf /var/cache/debconf/*-old &&     rm -rf /var/lib/apt/lists/* &&     rm -rf /usr/share/doc/*"
+                },
+                {
+                    "created": "2019-02-13T07:29:53.608951878Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c npm install -g npm@$NPM_VERSION"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:13d5529fd232cacdd8cd561148560e0bf5d65dbc1149faf0c68240985607c303",
+                    "sha256:abc3250a6c7ff22a6a366d9c175033ef0b2859f9d03676410c2f21d0fe568da4",
+                    "sha256:578414b395b98d02c5f284e83c8db080afcbbde8012478054af22df2edb9336d",
+                    "sha256:6257fa9f9597f43a167036d7bf748c5872c38803fa09e2493e119e512c6ac949",
+                    "sha256:a22a5ac18042c7ea8f9f4cb6f15bf5dda84a752fa8893a5a3d842b38285fba50",
+                    "sha256:8579c758b9d010a1ad8d506a48481c3d4860b167d8b2a983289890965dfba6b2",
+                    "sha256:e9f2ab8c50406ee0aa244c4fbcc2a91b28e57c0c581c86907feb7bdf627c7a40",
+                    "sha256:c315992b27e92a918ee62e5b7ef2da84ed7d687fa20327b30fc6fb67252674af",
+                    "sha256:4643ff0cf987f8bb3dc478763bd0f7ec597e77bcdfb8be1109dc8e300b7c27cb",
+                    "sha256:72cc3293c107b92776bce7ad4b6e2f08a3cb2fd811fac463d359ec4de57f24f7",
+                    "sha256:bfdc8f412eb03eca3cea10509043efc86e2faff0474b1942646889122de3dfcd"
+                ]
+            }
+        },
+        "8-npm6": {
+            "architecture": "amd64",
+            "author": "Apiary <sre@apiary.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=8.15.0",
+                    "YARN_VERSION=1.12.3",
+                    "REFRESHED_AT=2019-02-12",
+                    "NPM_VERSION=6.4.1"
+                ],
+                "Cmd": [
+                    "node"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:8ce00fb53a1b777ad2500de1fa6866b323c24fec79ad756d6f55a9fe892f6a3d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "d15108fb20bc06c1640b9f300aa2c9c2ce33504ba754fa806eb07e2532653874",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NODE_VERSION=8.15.0",
+                    "YARN_VERSION=1.12.3",
+                    "REFRESHED_AT=2019-02-12",
+                    "NPM_VERSION=6.4.1"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "npm install -g npm@$NPM_VERSION"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:8ce00fb53a1b777ad2500de1fa6866b323c24fec79ad756d6f55a9fe892f6a3d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2019-02-12T14:19:06.791690924Z",
+            "docker_version": "18.03.1-ol",
+            "history": [
+                {
+                    "created": "2019-02-06T03:30:01.714540068Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4fec879fdca802d6920b8981b409b19ded75aff693eaaba1ba4cf5ecb7594fdb in / "
+                },
+                {
+                    "created": "2019-02-06T03:30:02.095682729Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-06T05:51:03.607050513Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-02-06T05:51:14.391936075Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+                },
+                {
+                    "created": "2019-02-06T05:51:50.706559429Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-02-06T05:53:42.363280507Z",
+                    "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-02-06T06:47:16.355361149Z",
+                    "created_by": "/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node"
+                },
+                {
+                    "created": "2019-02-06T06:47:16.514800318Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV NODE_VERSION=8.15.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-06T06:47:22.370924011Z",
+                    "created_by": "/bin/sh -c ARCH= && dpkgArch=\"$(dpkg --print-architecture)\"   && case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   && set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     4ED778F539E3634C779C87C6D7062848A1AB005C     A48C2BEE680E841632CD4E44F07496B3EB3C1762     B9E2F5981AA6E0CD28160D9FF13993A75599653C   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   && curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   && tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   && rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs"
+                },
+                {
+                    "created": "2019-02-06T06:47:22.623088372Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV YARN_VERSION=1.12.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-06T06:47:25.943476561Z",
+                    "created_by": "/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys \"$key\" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys \"$key\" ;   done   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   && curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz"
+                },
+                {
+                    "created": "2019-02-06T06:47:26.11956999Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"node\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-12T14:18:40.390488153Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-12T14:18:42.161279859Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2019-02-12",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-12T14:18:43.824341776Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NPM_VERSION=6.4.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-12T14:18:45.452412614Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-12T14:18:47.78351606Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c userdel node"
+                },
+                {
+                    "created": "2019-02-12T14:18:56.141442758Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get -y upgrade &&     apt-get clean -y &&     apt-get autoclean -y &&     apt-get autoremove -y &&     rm -rf /usr/share/locale/* &&     rm -rf /var/cache/debconf/*-old &&     rm -rf /var/lib/apt/lists/* &&     rm -rf /usr/share/doc/*"
+                },
+                {
+                    "created": "2019-02-12T14:19:06.791690924Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c npm install -g npm@$NPM_VERSION"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:13d5529fd232cacdd8cd561148560e0bf5d65dbc1149faf0c68240985607c303",
+                    "sha256:abc3250a6c7ff22a6a366d9c175033ef0b2859f9d03676410c2f21d0fe568da4",
+                    "sha256:578414b395b98d02c5f284e83c8db080afcbbde8012478054af22df2edb9336d",
+                    "sha256:6257fa9f9597f43a167036d7bf748c5872c38803fa09e2493e119e512c6ac949",
+                    "sha256:a22a5ac18042c7ea8f9f4cb6f15bf5dda84a752fa8893a5a3d842b38285fba50",
+                    "sha256:8579c758b9d010a1ad8d506a48481c3d4860b167d8b2a983289890965dfba6b2",
+                    "sha256:e9f2ab8c50406ee0aa244c4fbcc2a91b28e57c0c581c86907feb7bdf627c7a40",
+                    "sha256:c315992b27e92a918ee62e5b7ef2da84ed7d687fa20327b30fc6fb67252674af",
+                    "sha256:92a16e596c59ac7f00297b76030db506062c0cc837d238cbd7a97c69832e9d7e",
+                    "sha256:6977babd531ac0400cb1c74a35865745176cd5afcadeb5fc96b52fdbd8c2479f",
+                    "sha256:7632746d550d80c438da3fe0cd8e6f25f8c51e67988b20771e1819f655c38f7e"
+                ]
+            }
+        }
+    }
+}

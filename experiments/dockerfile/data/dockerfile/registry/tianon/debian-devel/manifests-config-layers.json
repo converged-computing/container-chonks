@@ -1,0 +1,250 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6062,
+                "digest": "sha256:75669544e2991e5de6025366e10f65097bafd58ba5c81ae7204410ddf6737484"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50280291,
+                    "digest": "sha256:9f461c014a9fc3819d75cbcc934f902a02440dfb147daee11bfe78ab6c5d512d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 218,
+                    "digest": "sha256:e8bbefb3c6e980729a907155c7073965baa378130cf26930998b3b174d9309a7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 217,
+                    "digest": "sha256:9934c1a5e9ee2c3fbecbdaa15fd92a2d19aa743083e24be9861a6ab466e93766"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 229,
+                    "digest": "sha256:f802348dabf01190cce79f3099987c6cf2a93c5069867b3073e2eb9a8e0630b7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 332474907,
+                    "digest": "sha256:5a2a80b4176931fd51b74fc009bb1105bc5f29e148d5121a97321e5b85df494c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6986251,
+                    "digest": "sha256:300a8ac6d844bb1c8fc6a75100a9deb9485f571decd9c17a535e93abd783074e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 350,
+                    "digest": "sha256:b4547d146dc4e2c9ee367a8eb4a14777b7fa3c5402cf0cb94247e6908249ea04"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 194,
+                    "digest": "sha256:08e5624190558a3634f1dfbc7de879f996d388056df48cd5624188505f0b5484"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 242,
+                    "digest": "sha256:9b42edbfc4fdb390e874eed658427e9140f6cefab3917980eb5c194a10bb7634"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 63939,
+                    "digest": "sha256:55db6112fded26bacd016fb480b45fd2e48601794a3e98e4c7003ee0239dd185"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1723,
+                    "digest": "sha256:03f438640e6654556f777ab760f8ebbb875a628970574d2054323cc59410c1c1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2642,
+                    "digest": "sha256:5d6405d8a11bc0721ee5a8fbaee7615ffeb3df2b9780305f32a7a19388eedb1b"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "HOME=/root",
+                    "LANG=C.UTF-8",
+                    "TERM=xterm-256color",
+                    "QUILT_PATCHES=debian/patches",
+                    "QUILT_REFRESH_ARGS=-p ab --no-timestamps --no-index",
+                    "UBUNTUTOOLS_DEBIAN_MIRROR=http://deb.debian.org/debian"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:ef397d61ff6ad302327e43ce8195c9e2509e4db88b2a71340406f9de9ae95fae",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "HOME=/root",
+                    "LANG=C.UTF-8",
+                    "TERM=xterm-256color",
+                    "QUILT_PATCHES=debian/patches",
+                    "QUILT_REFRESH_ARGS=-p ab --no-timestamps --no-index",
+                    "UBUNTUTOOLS_DEBIAN_MIRROR=http://deb.debian.org/debian"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY dir:fb510b4b560ede62207b6b6ee708b51263f93b0b9697326bca22d16e132996c9 in /tianon "
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:ef397d61ff6ad302327e43ce8195c9e2509e4db88b2a71340406f9de9ae95fae",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2019-04-15T20:57:43.439353179Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2019-03-26T22:42:02.004971164Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:7bd173b1f1e8a12dc6ddd2c6717ced6ed27486963b9ca106218ca239fdc8c0da in / "
+                },
+                {
+                    "created": "2019-03-26T22:42:02.295505443Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-26T22:42:16.783544132Z",
+                    "created_by": "/bin/sh -c echo 'deb http://deb.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list"
+                },
+                {
+                    "created": "2019-04-15T20:49:36.504185719Z",
+                    "created_by": "/bin/sh -c echo 'APT::Get::Show-Versions \"1\";' > /etc/apt/apt.conf.d/verbose"
+                },
+                {
+                    "created": "2019-04-15T20:49:38.251800175Z",
+                    "created_by": "/bin/sh -c echo 'deb http://incoming.debian.org/debian-buildd buildd-unstable main' > /etc/apt/sources.list.d/incoming.list"
+                },
+                {
+                    "created": "2019-04-15T20:56:37.261960201Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y \t\tautopkgtest qemu \t\tbash-completion curl less rsync vim wget \t\tbuild-essential \t\tdebian-keyring \t\tdevscripts \t\tdh-make \t\tdput-ng \t\tequivs \t\tgit mercurial subversion \t\tgit-buildpackage git-dpm svn-buildpackage \t\tgolang-go \t\tlibcrypt-ssleay-perl \t\tlibdistro-info-perl \t\tlibfile-fcntllock-perl \t\tlibwww-perl \t\tlintian \t\topenssh-client \t\tpristine-tar \t\tpython-distro-info \t\tpython3-debian \t\tquilt \t\treprepro \t\tsudo \t\tubuntu-dev-tools pbuilder \t\t--no-install-recommends \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-04-15T20:57:30.709705742Z",
+                    "created_by": "/bin/sh -c mkdir -p /go \t&& export GOPATH=/go \t&& go get -v github.com/debian/dh-make-golang \t&& mv /go/bin/dh-make-golang /usr/local/bin/ \t&& rm -rf /go"
+                },
+                {
+                    "created": "2019-04-15T20:57:32.616660563Z",
+                    "created_by": "/bin/sh -c find /etc/apt/sources.list* -type f -exec sed -i 'p; s/^deb /deb-src /' '{}' +"
+                },
+                {
+                    "created": "2019-04-15T20:57:34.545856476Z",
+                    "created_by": "/bin/sh -c echo 'ALL ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/allusers-nopass"
+                },
+                {
+                    "created": "2019-04-15T20:57:34.949857782Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HOME=/root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-15T20:57:36.914475432Z",
+                    "created_by": "/bin/sh -c { \techo \"export DEBFULLNAME='' DEBEMAIL=''\"; \techo 'dch -i'; \techo 'lintian --ftp-master-rejects'; \techo 'uscan --force-download --verbose --download-current-version'; } >> ~/.bash_history"
+                },
+                {
+                    "created": "2019-04-15T20:57:39.464870311Z",
+                    "created_by": "/bin/sh -c mkdir -p ~/.ssh && chmod 700 ~/.ssh \t&& wget -O ~/.ssh/known_hosts https://db.debian.org/debian_known_hosts \t&& chmod 644 ~/.ssh/known_hosts"
+                },
+                {
+                    "created": "2019-04-15T20:57:39.896467937Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-15T20:57:40.159340494Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV TERM=xterm-256color",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-15T20:57:42.044627963Z",
+                    "created_by": "/bin/sh -c cp /etc/skel/.bashrc ~/ \t&& sed -ri 's/^#(force_color_prompt=yes)/\\1/' ~/.bashrc"
+                },
+                {
+                    "created": "2019-04-15T20:57:42.390604541Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV QUILT_PATCHES=debian/patches",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-15T20:57:42.737774607Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV QUILT_REFRESH_ARGS=-p ab --no-timestamps --no-index",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-15T20:57:43.038701004Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV UBUNTUTOOLS_DEBIAN_MIRROR=http://deb.debian.org/debian",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-04-15T20:57:43.439353179Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:fb510b4b560ede62207b6b6ee708b51263f93b0b9697326bca22d16e132996c9 in /tianon "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f6dabfe7c19dce44d89200f635a3a3ee6daf7d09e1689b29a7b538690957e5cf",
+                    "sha256:95a4aea6864cddebc0efa10bddfef774f843754878800b39f5c0cb6ca65cda54",
+                    "sha256:bbdd2bb27212a154ca9c741b340a2af2e22d22c9b271b4a96cd998440d36376b",
+                    "sha256:c2ed162c39fc0ca3e1b720f548f463ad337f359516ecf38e0518345f47285aa1",
+                    "sha256:2d8f8b0c6806097aa246e8bbd21943978925f0fc551befc959227f7c168c8e09",
+                    "sha256:bad2c1d18719de62133acde2bf2961cc6ff7306c01b12b2cd4e9b149f7342f78",
+                    "sha256:3dc33869e08c35fc3f0268c08c4fb33be8ed4a42a0fe9b059c7e8844045eac82",
+                    "sha256:e705367f1783484177186f84d91b1fda9003282bd2f24c71cb5aba7732a19c27",
+                    "sha256:153bc060c9ff01bcfdeddb11626965362a42af08b2ff128cc84e226fcfff2e78",
+                    "sha256:bc3a784bd293b97ad99c6693a8cec648e3dfd3b753b4aa93322ca520cdbe6fe7",
+                    "sha256:719b38cdd3d0a8b9ae829bb63de0e4529f7629d4cb209f5443dba520be1e3859",
+                    "sha256:9a3a53c0ff0148418a2dcd6518ee10230646204be921284975e2f7395903ca5b"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,277 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 17904,
+                "digest": "sha256:44729ce23c5b31796cbfecc280a1e16945392d772ff36ad6c33f097abf34df4c"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 43442989,
+                    "digest": "sha256:b849b56b69e770db0ae9e71f818f5be89ba0e30c14133c8a0c7b2ca0eeac15b4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 845,
+                    "digest": "sha256:42986ef25bcd19ccfcb5964cdffc5704dcb663c9c7bbb494707c9aa7b1c4f1d5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 528,
+                    "digest": "sha256:d927c1b717ec274345e85adaa6f1074974d943fd3481cd64e9488ad9841e3016"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 170,
+                    "digest": "sha256:15b86ea202330d8a60b52809277c566a318663dc824319ddfca663e6c90ae7bd"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 140410778,
+                    "digest": "sha256:6fbe8572b2582ba32a1cfcb5e60c5cb99df45bcbfb3c1da430ee02be0f18fa4f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 189047,
+                    "digest": "sha256:a039ea01e3b6a23be7d06b3b2f061404e72c03828290df76d0dedae34b772b80"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 20319745,
+                    "digest": "sha256:39dcc7cef001c1ce82b2c1faccb910ca287c9285bfb721d4393154546d13529b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2530,
+                    "digest": "sha256:7977879fa5cb32c677ba5c745937a19636318ed438bdfa65989ea3e0116c9b56"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 16867,
+                    "digest": "sha256:208e33169b9a43eb4417fd75a65aed53e06c6d05034d8afd79ad90662f41b671"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 152,
+                    "digest": "sha256:a2168f60677b68550204573bfb702c0c6ebbc3cca9d9e21de45bce1143e3d878"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 774,
+                    "digest": "sha256:7e730805acbe092f5f56500829c711674f9dd1822f54aa6b6e775553f878d6be"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "TIMEZONE=GMT+08",
+                    "LANGUAGE=en_US.UTF-8",
+                    "APTGET_PRESCRIPT=",
+                    "APTGET_INSTALL=",
+                    "APTGET_UPGRADE=false",
+                    "APTGET_POSTSCRIPT=",
+                    "ANCHOR_FILE_CHECK_PATH=",
+                    "ANCHOR_FILE_FAILURE_DELAY=10s"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "echo \"### hello world : overwrite your actual command here\""
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:335d1d1add9f6825d616cb6df4bf8e4f882d49437fb8d854cf3fc7036e37127b",
+                "Volumes": null,
+                "WorkingDir": "/workspace",
+                "Entrypoint": [
+                    "/entrypoint/primer.sh"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "2bbfe7b963ac789de95e3178ca73a8bc6b7ff61c994622535ad173958ce3fbe7",
+            "container_config": {
+                "Hostname": "2bbfe7b963ac",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "TIMEZONE=GMT+08",
+                    "LANGUAGE=en_US.UTF-8",
+                    "APTGET_PRESCRIPT=",
+                    "APTGET_INSTALL=",
+                    "APTGET_UPGRADE=false",
+                    "APTGET_POSTSCRIPT=",
+                    "ANCHOR_FILE_CHECK_PATH=",
+                    "ANCHOR_FILE_FAILURE_DELAY=10s"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/sh\" \"-c\" \"echo \\\"### hello world : overwrite your actual command here\\\"\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:335d1d1add9f6825d616cb6df4bf8e4f882d49437fb8d854cf3fc7036e37127b",
+                "Volumes": null,
+                "WorkingDir": "/workspace",
+                "Entrypoint": [
+                    "/entrypoint/primer.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2019-01-09T05:33:29.545493889Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2018-12-28T23:25:34.612476212Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:7f95be7c8278786d52495288f3e55febaa3341412888e021c65f07ae6885d1ff in / "
+                },
+                {
+                    "created": "2018-12-28T23:25:38.939265817Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-12-28T23:25:39.651562846Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-12-28T23:25:40.451716047Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-12-28T23:25:40.631263429Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:32:23.02653757Z",
+                    "created_by": "/bin/sh -c apt-get update && \tapt-get install -y \tsudo apt-transport-https ca-certificates curl zip openssl build-essential \tsoftware-properties-common python-software-properties iputils-ping net-tools locales && \tapt-get clean;"
+                },
+                {
+                    "created": "2019-01-09T05:32:48.10232834Z",
+                    "created_by": "/bin/sh -c curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && apt-get update && apt-get clean;"
+                },
+                {
+                    "created": "2019-01-09T05:33:14.128630032Z",
+                    "created_by": "/bin/sh -c sudo apt-get install -y nodejs;"
+                },
+                {
+                    "created": "2019-01-09T05:33:18.995946332Z",
+                    "created_by": "/bin/sh -c add-apt-repository ppa:gluster/glusterfs-3.12;"
+                },
+                {
+                    "created": "2019-01-09T05:33:21.908977398Z",
+                    "created_by": "/bin/sh -c curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -"
+                },
+                {
+                    "created": "2019-01-09T05:33:22.23588074Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV TIMEZONE=GMT+08",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:22.534310004Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANGUAGE=en_US.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:22.863937175Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV APTGET_PRESCRIPT=",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:23.218945178Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV APTGET_INSTALL=",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:23.512201668Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV APTGET_UPGRADE=false",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:23.876153397Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV APTGET_POSTSCRIPT=",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:24.202972314Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV ANCHOR_FILE_CHECK_PATH=",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:24.525922457Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV ANCHOR_FILE_FAILURE_DELAY=10s",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:26.622235551Z",
+                    "created_by": "/bin/sh -c mkdir /workspace && mkdir /entrypoint && \tln -s /workspace /appspace && \tchmod -R 0777 /workspace && chmod +x /workspace;"
+                },
+                {
+                    "created": "2019-01-09T05:33:26.938536752Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /workspace",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:28.787108987Z",
+                    "created_by": "/bin/sh -c echo '#!/bin/bash'                                                                  > /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo 'echo \"###\"'                                                                   >> /entrypoint/primer.sh && \techo 'echo \"### Start of picoded/ubuntu-base : entrypoint/primer.sh\"'               >> /entrypoint/primer.sh && \techo 'echo \"###\"'                                                                   >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '# Enters the /workspace'                                                      >> /entrypoint/primer.sh && \techo 'cd /workspace;'                                                               >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '# Anchor file check'                                                          >> /entrypoint/primer.sh && \techo 'if [ -n \"$ANCHOR_FILE_CHECK_PATH\" ] ; then'                                   >> /entrypoint/primer.sh && \techo '   if [ -e \"$ANCHOR_FILE_CHECK_PATH\" ] ; then'                                >> /entrypoint/primer.sh && \techo '      echo \"### Anchor file validated : $ANCHOR_FILE_CHECK_PATH\"'             >> /entrypoint/primer.sh && \techo '   else'                                                                      >> /entrypoint/primer.sh && \techo '      echo \"### [ERROR] Anchor file missing : $ANCHOR_FILE_CHECK_PATH\"'       >> /entrypoint/primer.sh && \techo '      echo \"### [ERROR] sleeping for $ANCHOR_FILE_FAILURE_DELAY\"'             >> /entrypoint/primer.sh && \techo '      sleep $ANCHOR_FILE_FAILURE_DELAY;'                                      >> /entrypoint/primer.sh && \techo '      echo \"### [FATAL] exiting with 404\"'                                    >> /entrypoint/primer.sh && \techo '      exit 404;'                                                              >> /entrypoint/primer.sh && \techo '   fi'                                                                        >> /entrypoint/primer.sh && \techo 'fi'                                                                           >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '# TIMEZONE run'                                                               >> /entrypoint/primer.sh && \techo 'if [ -n \"$TIMEZONE\" ] ; then'                                                 >> /entrypoint/primer.sh && \techo '   echo \"### Enforce TIMEZONE config : $TIMEZONE\"'                            >> /entrypoint/primer.sh && \techo '   TZ=\"$TIMEZONE\";'                                                           >> /entrypoint/primer.sh && \techo '   export TZ;'                                                                >> /entrypoint/primer.sh && \techo 'fi'                                                                           >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '# LANGUAGE run'                                                               >> /entrypoint/primer.sh && \techo 'if [ -n \"$LANGUAGE\" ] ; then'                                                 >> /entrypoint/primer.sh && \techo '   echo \"### Enforce LANGUAGE config : $LANGUAGE\"'                            >> /entrypoint/primer.sh && \techo '   locale-gen \"$LANGUAGE\";'                                                   >> /entrypoint/primer.sh && \techo 'fi'                                                                           >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '# APTGET_PRESCRIPT run'                                                       >> /entrypoint/primer.sh && \techo 'if [ -n \"$APTGET_PRESCRIPT\" ] ; then'                                         >> /entrypoint/primer.sh && \techo '   echo \"### Running APTGET_PRESCRIPT\"'                                       >> /entrypoint/primer.sh && \techo '   eval \"$APTGET_PRESCRIPT\";'                                                 >> /entrypoint/primer.sh && \techo 'fi'                                                                           >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '# APTGET_INSTALL run'                                                         >> /entrypoint/primer.sh && \techo 'if [ -n \"$APTGET_INSTALL\" ] ; then'                                           >> /entrypoint/primer.sh && \techo '   echo \"### Running APTGET_INSTALL\"'                                         >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '   APTGET_INSTALL_ARRAY=($APTGET_INSTALL)'                                    >> /entrypoint/primer.sh && \techo '   ACTUAL_INSTALL_ARRAY=()'                                                   >> /entrypoint/primer.sh && \techo '   for NAME in \"${APTGET_INSTALL_ARRAY[@]}\"'                                  >> /entrypoint/primer.sh && \techo '   do'                                                                        >> /entrypoint/primer.sh && \techo '      if [ -z $(which $NAME) ] ; then'                                        >> /entrypoint/primer.sh && \techo '         ACTUAL_INSTALL_ARRAY+=($NAME)'                                       >> /entrypoint/primer.sh && \techo '      fi'                                                                     >> /entrypoint/primer.sh && \techo '   done'                                                                      >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '   if [ \"${#ACTUAL_INSTALL_ARRAY[@]}\" = 0 ] ; then'                           >> /entrypoint/primer.sh && \techo '      echo \"### - No additional installation needed\"'                         >> /entrypoint/primer.sh && \techo '   else'                                                                      >> /entrypoint/primer.sh && \techo '      apt-get update;'                                                        >> /entrypoint/primer.sh && \techo '      apt-get install -y $APTGET_INSTALL'                                     >> /entrypoint/primer.sh && \techo '   fi'                                                                        >> /entrypoint/primer.sh && \techo 'fi'                                                                           >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '# APTGET_UPGRADE run'                                                         >> /entrypoint/primer.sh && \techo 'if [ \"$APTGET_UPGRADE\" = true ] || [ \"$APTGET_UPGRADE\" = \"true\" ] ; then'     >> /entrypoint/primer.sh && \techo '   echo \"### Running APTGET_UPGRADE\"'                                         >> /entrypoint/primer.sh && \techo '   apt-get update; apt-get -y upgrade;'                                       >> /entrypoint/primer.sh && \techo 'fi'                                                                           >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '# APTGET_POSTSCRIPT run'                                                      >> /entrypoint/primer.sh && \techo 'if [ -n \"$APTGET_POSTSCRIPT\" ] ; then'                                        >> /entrypoint/primer.sh && \techo '   echo \"### Running APTGET_POSTSCRIPT\"'                                      >> /entrypoint/primer.sh && \techo '   eval \"$APTGET_POSTSCRIPT\";'                                                >> /entrypoint/primer.sh && \techo 'fi'                                                                           >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo 'echo \"###\"'                                                                   >> /entrypoint/primer.sh && \techo 'echo \"### Finished picoded/ubuntu-base : entrypoint/primer.sh\"'               >> /entrypoint/primer.sh && \techo 'echo \"###\"'                                                                   >> /entrypoint/primer.sh && \techo ''                                                                             >> /entrypoint/primer.sh && \techo '# Chain the execution commands'                                               >> /entrypoint/primer.sh && \techo 'exec \"$@\"'                                                                    >> /entrypoint/primer.sh && \tchmod +x /entrypoint/primer.sh;"
+                },
+                {
+                    "created": "2019-01-09T05:33:29.1993303Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/entrypoint/primer.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-01-09T05:33:29.545493889Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\" \"-c\" \"echo \\\"### hello world : overwrite your actual command here\\\"\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8241afc74c6f5ca20c3bd7f3ddb3e5621d637ee85aaf40de440bf465b2a9984f",
+                    "sha256:27712caf437141a6f663701ae94737c677e67febb4f7feca9521d424b2f15504",
+                    "sha256:b097f5edab7b98568f202972e3aa9dff7c27f7f47d5f0b664bd3f9954d714e0d",
+                    "sha256:428c1ba1135447a82bd52058d55028390a03e1b6341f97166483067e6a77b164",
+                    "sha256:06760627228b03e5c4b1c2094ef4b640f24b271466bffaca4d1e7941a404cd03",
+                    "sha256:e2fa9716b5514e17255e3f07b08aa5459d8cff4649bc7f5611e6f5185a0cf216",
+                    "sha256:3eafabc46b3d00035305f7152abc598920bca706686bfe973cd79c2d35a3b0fa",
+                    "sha256:e728648eaff5ab3ecf2b91d0a19275bc8fb77a89ff2732c34d77dfc76b25a469",
+                    "sha256:e5f5401e3b5c294c93a0b3c1067d606b1888d78aca46213eb6bf4d2f182b4c30",
+                    "sha256:7986a4cfb9bd2c779e26570dc262be9bdb42c83e2ccbb05188f9d77bb5e8374e",
+                    "sha256:a050d4eed607b9d0213577598128fd4cb9f992d518612de9b5b6e0b9d12a9c68"
+                ]
+            }
+        }
+    }
+}

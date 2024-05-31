@@ -1,0 +1,686 @@
+{
+    "manifests": {
+        "node10": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5626,
+                "digest": "sha256:f6377d0e5a4f118fa335f0b21f3184b7268f2199a49eed358adda04e7c874fd8"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 48259572,
+                    "digest": "sha256:0df82e2779b8235d6babd25457b87762ea8300fb3797ea03adccf472e7a598df"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 101224198,
+                    "digest": "sha256:68cb434ed6f6fdfa08f2aa12e288a7dd744ba93352c19a133b00cf30005928fa"
+                }
+            ]
+        },
+        "node12": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5630,
+                "digest": "sha256:df60953e016e3fea020236eb384f7054d7a1aae966824f80dd7f4620e73730ec"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 48259572,
+                    "digest": "sha256:0df82e2779b8235d6babd25457b87762ea8300fb3797ea03adccf472e7a598df"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 107298200,
+                    "digest": "sha256:88c6f8e4d0444c4ae2fadd49b3ba66b0f033a37ab6f536de319ac057095ac6ad"
+                }
+            ]
+        },
+        "node8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4145,
+                "digest": "sha256:de7531dc7f78681b805c7377cab82a1690a7993bd930692b8b109922ae226c59"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 42712648,
+                    "digest": "sha256:977461c903012ec41b22a4c1bf975a3199570bd92ccc75a70f5a1119bca6d402"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 103854233,
+                    "digest": "sha256:dbf206ae54a62438967e154c3ea6a14bc7104a9c2315c6fa95134f9d4fdded32"
+                }
+            ]
+        },
+        "python36": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2519,
+                "digest": "sha256:ae38d063f186fe78f04f734e73bbbd7e1d6bc343e396daf1878879410f5ac525"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 48263590,
+                    "digest": "sha256:69d77e45731bec64e61a0f08021494f9c0f93a8dc00071bebe5ce614dec1f72a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 103516442,
+                    "digest": "sha256:4d8159e2e6db4f28f63bcff328cec28cd1ed3916b33c92b756acc6fd55929dab"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "node10",
+        "node12",
+        "node8",
+        "python36"
+    ],
+    "configs": {
+        "node10": {
+            "architecture": "amd64",
+            "author": "Apiary <sre@apiary.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2020-11-13",
+                    "NODEJS_VERSION_MAJOR=10",
+                    "NPM_VERSION=6.4.1"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:44a043498c354c1ae2f63d1059ed2e69a1830e287bc5c1e515f61d349a412166",
+                "Volumes": null,
+                "WorkingDir": "/app",
+                "Entrypoint": [
+                    "bash"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "org.opencontainers.image.authors": "Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>",
+                    "org.opencontainers.image.description": "Oracle Linux is an open-source       operating system available under the GNU General Public License (GPLv2) and       is suitable for both general purpose or Oracle workloads.",
+                    "org.opencontainers.image.source": "https://github.com/oracle/container-images/tree/dist-amd64/7-slim",
+                    "org.opencontainers.image.title": "Oracle Linux 7 (slim)",
+                    "org.opencontainers.image.url": "https://github.com/oracle/container-images",
+                    "org.opencontainers.image.vendor": "Oracle America, Inc"
+                }
+            },
+            "container": "34bf4be421c16344e20408f22a147ce4fde6be1567e88669f9bc7ffa1ef77374",
+            "container_config": {
+                "Hostname": "34bf4be421c1",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2020-11-13",
+                    "NODEJS_VERSION_MAJOR=10",
+                    "NPM_VERSION=6.4.1"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"bash\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:44a043498c354c1ae2f63d1059ed2e69a1830e287bc5c1e515f61d349a412166",
+                "Volumes": null,
+                "WorkingDir": "/app",
+                "Entrypoint": [
+                    "bash"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "org.opencontainers.image.authors": "Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>",
+                    "org.opencontainers.image.description": "Oracle Linux is an open-source       operating system available under the GNU General Public License (GPLv2) and       is suitable for both general purpose or Oracle workloads.",
+                    "org.opencontainers.image.source": "https://github.com/oracle/container-images/tree/dist-amd64/7-slim",
+                    "org.opencontainers.image.title": "Oracle Linux 7 (slim)",
+                    "org.opencontainers.image.url": "https://github.com/oracle/container-images",
+                    "org.opencontainers.image.vendor": "Oracle America, Inc"
+                }
+            },
+            "created": "2020-11-13T18:09:24.531032726Z",
+            "docker_version": "17.09.0-ce",
+            "history": [
+                {
+                    "created": "2020-09-15T21:23:41.169595874Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.authors=Oracle Linux Product Team <ol-ovm-info_ww@oracle.com> org.opencontainers.image.url=https://github.com/oracle/container-images org.opencontainers.image.source=https://github.com/oracle/container-images/tree/dist-amd64/7-slim org.opencontainers.image.vendor=Oracle America, Inc org.opencontainers.image.title=Oracle Linux 7 (slim) org.opencontainers.image.description=Oracle Linux is an open-source       operating system available under the GNU General Public License (GPLv2) and       is suitable for both general purpose or Oracle workloads.",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-30T02:06:29.566184117Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:145961aa92d5a9c6b87e124b38a59e7a4a08910f8cb21414300096f88cc5cb82 in / "
+                },
+                {
+                    "created": "2020-10-30T02:06:29.902836199Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:08:37.871309976Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:08:38.031049162Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2020-11-13",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:08:38.190561143Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NODEJS_VERSION_MAJOR=10",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:08:38.347492325Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NPM_VERSION=6.4.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:08:38.499841418Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  USER [root]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:09:21.410958579Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c yum install -y oracle-nodejs-release-el7     && yum-config-manager --enable ol7_developer_nodejs${NODEJS_VERSION_MAJOR}     && yum install -y nodejs-${NODEJS_VERSION_MAJOR}.*     && yum install -y gcc gcc-c++ autoconf automake make     && npm i -g npm@${NPM_VERSION}     && yum clean all     && mkdir -p /app"
+                },
+                {
+                    "created": "2020-11-13T18:09:22.93446867Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /app",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:09:23.531355024Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c node -v",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:09:24.35906098Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c npm -v",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:09:24.531032726Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:eb346351f655c84c9ed0e71b3b172d0f856fe1f81f918d56e6715150db2288ea",
+                    "sha256:5bf3c425350e798f7206b7a23bbe53eacad4d771e65ae77231bfa19699f1a4dd"
+                ]
+            }
+        },
+        "node12": {
+            "architecture": "amd64",
+            "author": "Apiary <sre@apiary.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2020-11-13",
+                    "NODEJS_VERSION_MAJOR=12",
+                    "NPM_VERSION=6.13.4"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:ac2d6a95044394123cde4182e08063a8e617a4169d725ee8314bbdb6307c393c",
+                "Volumes": null,
+                "WorkingDir": "/app",
+                "Entrypoint": [
+                    "bash"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "org.opencontainers.image.authors": "Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>",
+                    "org.opencontainers.image.description": "Oracle Linux is an open-source       operating system available under the GNU General Public License (GPLv2) and       is suitable for both general purpose or Oracle workloads.",
+                    "org.opencontainers.image.source": "https://github.com/oracle/container-images/tree/dist-amd64/7-slim",
+                    "org.opencontainers.image.title": "Oracle Linux 7 (slim)",
+                    "org.opencontainers.image.url": "https://github.com/oracle/container-images",
+                    "org.opencontainers.image.vendor": "Oracle America, Inc"
+                }
+            },
+            "container": "84f3c962e2064cfada1eec02cca987a8ecf680b1c64888e235c32d82b62057b8",
+            "container_config": {
+                "Hostname": "84f3c962e206",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2020-11-13",
+                    "NODEJS_VERSION_MAJOR=12",
+                    "NPM_VERSION=6.13.4"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"bash\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:ac2d6a95044394123cde4182e08063a8e617a4169d725ee8314bbdb6307c393c",
+                "Volumes": null,
+                "WorkingDir": "/app",
+                "Entrypoint": [
+                    "bash"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "org.opencontainers.image.authors": "Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>",
+                    "org.opencontainers.image.description": "Oracle Linux is an open-source       operating system available under the GNU General Public License (GPLv2) and       is suitable for both general purpose or Oracle workloads.",
+                    "org.opencontainers.image.source": "https://github.com/oracle/container-images/tree/dist-amd64/7-slim",
+                    "org.opencontainers.image.title": "Oracle Linux 7 (slim)",
+                    "org.opencontainers.image.url": "https://github.com/oracle/container-images",
+                    "org.opencontainers.image.vendor": "Oracle America, Inc"
+                }
+            },
+            "created": "2020-11-13T18:10:13.298566941Z",
+            "docker_version": "17.09.0-ce",
+            "history": [
+                {
+                    "created": "2020-09-15T21:23:41.169595874Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.authors=Oracle Linux Product Team <ol-ovm-info_ww@oracle.com> org.opencontainers.image.url=https://github.com/oracle/container-images org.opencontainers.image.source=https://github.com/oracle/container-images/tree/dist-amd64/7-slim org.opencontainers.image.vendor=Oracle America, Inc org.opencontainers.image.title=Oracle Linux 7 (slim) org.opencontainers.image.description=Oracle Linux is an open-source       operating system available under the GNU General Public License (GPLv2) and       is suitable for both general purpose or Oracle workloads.",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-10-30T02:06:29.566184117Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:145961aa92d5a9c6b87e124b38a59e7a4a08910f8cb21414300096f88cc5cb82 in / "
+                },
+                {
+                    "created": "2020-10-30T02:06:29.902836199Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:08:37.871309976Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:08:38.031049162Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2020-11-13",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:09:24.983071046Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NODEJS_VERSION_MAJOR=12",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:09:25.155124673Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NPM_VERSION=6.13.4",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:09:25.319363249Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  USER [root]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:10:10.04277556Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c yum install -y oracle-nodejs-release-el7     && yum-config-manager --enable ol7_developer_nodejs${NODEJS_VERSION_MAJOR}     && yum install -y nodejs-${NODEJS_VERSION_MAJOR}.*     && yum install -y gcc gcc-c++ autoconf automake make     && npm i -g npm@${NPM_VERSION}     && yum clean all     && mkdir -p /app"
+                },
+                {
+                    "created": "2020-11-13T18:10:11.663676935Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /app",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:10:12.251775844Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c node -v",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:10:13.119883752Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c npm -v",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-11-13T18:10:13.298566941Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:eb346351f655c84c9ed0e71b3b172d0f856fe1f81f918d56e6715150db2288ea",
+                    "sha256:5f1d36db64aca6d6430d892139d7e17b1bd769f62c5bb2b9d42195b9c603831e"
+                ]
+            }
+        },
+        "node8": {
+            "architecture": "amd64",
+            "author": "Apiary <sre@apiary.io>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2019-11-20",
+                    "NODEJS_VERSION_MAJOR=8",
+                    "NPM_VERSION=5.6.0"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:f6817287e3e943c122a3219338913b59a5951341e7515dd36e497e2b32d1a124",
+                "Volumes": null,
+                "WorkingDir": "/app",
+                "Entrypoint": [
+                    "bash"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "3f4b760662633b959e45118b5c29d96192b12d4d37a8dd7f1f821cbfa56f42f9",
+            "container_config": {
+                "Hostname": "3f4b76066263",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2019-11-20",
+                    "NODEJS_VERSION_MAJOR=8",
+                    "NPM_VERSION=5.6.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"bash\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:f6817287e3e943c122a3219338913b59a5951341e7515dd36e497e2b32d1a124",
+                "Volumes": null,
+                "WorkingDir": "/app",
+                "Entrypoint": [
+                    "bash"
+                ],
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2019-11-20T14:37:37.767884127Z",
+            "docker_version": "18.09.1-ol",
+            "history": [
+                {
+                    "created": "2018-08-30T21:49:27.028879762Z",
+                    "author": "Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-18T23:05:29.821494762Z",
+                    "author": "Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:c8bbabb7270612c9e26467e961293f9b6550a7a7ad2bb07d08c08e14c8ea2961 in / "
+                },
+                {
+                    "created": "2019-11-18T23:05:30.264599698Z",
+                    "author": "Oracle Linux Product Team <ol-ovm-info_ww@oracle.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:02:47.614863439Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:02:48.449000984Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2019-11-20",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:36:37.547858717Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NODEJS_VERSION_MAJOR=8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:36:38.44292268Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENV NPM_VERSION=5.6.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:36:39.447996077Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:36:40.457759244Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:37:31.81852474Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c yum install -y oracle-nodejs-release-el7     && yum-config-manager --enable ol7_developer_nodejs${NODEJS_VERSION_MAJOR}     && yum install -y nodejs     && npm i -g npm@${NPM_VERSION}     && mkdir -p /app"
+                },
+                {
+                    "created": "2019-11-20T14:37:33.257975607Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /app",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:37:34.807087732Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c node -v",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:37:36.848875807Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c npm -v",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-11-20T14:37:37.767884127Z",
+                    "author": "Apiary <sre@apiary.io>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:969fd6ad73dc06170d89f9899e9f6cf20c4eded83e2cdd39307b467a7f39028e",
+                    "sha256:aea3cd9299e6b2610efc00223885527ee29634d44245083b20f7be8b48fc1fe6"
+                ]
+            }
+        },
+        "python36": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2021-02-02"
+                ],
+                "Cmd": null,
+                "Image": "sha256:fd6dfb175c5106d07e18feb43bc164b1f2ff235357145f924504dc2e7a2192a9",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/usr/bin/python3"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "maintainer": "Apiary <sre@apiary.io>"
+                }
+            },
+            "container": "6892ac9422edf6308ae6bf5e217a236b5bd02a8705cdc4e663a97052a546be70",
+            "container_config": {
+                "Hostname": "6892ac9422ed",
+                "Domainname": "",
+                "User": "root",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "REFRESHED_AT=2021-02-02"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"/usr/bin/python3\"]"
+                ],
+                "Image": "sha256:fd6dfb175c5106d07e18feb43bc164b1f2ff235357145f924504dc2e7a2192a9",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/usr/bin/python3"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "maintainer": "Apiary <sre@apiary.io>"
+                }
+            },
+            "created": "2021-02-03T16:39:56.228116535Z",
+            "docker_version": "17.09.0-ce",
+            "history": [
+                {
+                    "created": "2021-02-01T20:32:48.88726932Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:430ae887b8a202818526e7c39819c089bee09a496bbd4cab85759814c30dde4b in / "
+                },
+                {
+                    "created": "2021-02-01T20:32:49.212337325Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-02-03T16:39:37.480675008Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Apiary <sre@apiary.io>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-02-03T16:39:37.648298677Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV REFRESHED_AT=2021-02-02",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-02-03T16:39:37.819613235Z",
+                    "created_by": "/bin/sh -c #(nop)  USER [root]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-02-03T16:39:54.676566892Z",
+                    "created_by": "/bin/sh -c yum install -y yum-utils && yum-config-manager --enable ol7_developer_EPEL &&     yum install -y scl-utils python36 python36-setuptools &&     easy_install-3.6 pip"
+                },
+                {
+                    "created": "2021-02-03T16:39:56.228116535Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/usr/bin/python3\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8a53a328e1e98e7885efc2e3feae692ea62ac9de7b8982401fda9fe584a66320",
+                    "sha256:c94dfc08407d3a8e7e039a37e9f037e6a8b7b5318789e82ab7357369f2ce7580"
+                ]
+            }
+        }
+    }
+}

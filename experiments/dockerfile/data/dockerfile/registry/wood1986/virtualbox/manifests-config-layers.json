@@ -1,0 +1,186 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4049,
+                "digest": "sha256:344cc8fb75fd5e69e6f616d9c0d709ec1fef49ce368cf753cf7492d6fb780863"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 75165529,
+                    "digest": "sha256:a02a4930cb5d36f3290eb84f4bfa30668ef2e9fe3a1fb73ec015fc58b9958b17"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 335,
+                    "digest": "sha256:f25c32631814c33d274c1ea225fc9f06ad2d9f440a728187982a23c5edaf922a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 192783209,
+                    "digest": "sha256:8b2eca8e3e07fb02f7f69bc8749b1cdb12503a86965a59d7306f163d50c1e3fd"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 23792525,
+                    "digest": "sha256:efa754574e6cef2476befdde6330af367223be65ed727af8cbf60ebdb11d6977"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 99958159,
+                    "digest": "sha256:b12ba585f3d3288a12826dccbd153afa1159e62c2ef85ce2525580fb5c7846e5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 8806748,
+                    "digest": "sha256:2a5b97950ab2a706b3b07ba813d746aaede352a30e0b9594d610f02623ead4b5"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "setup"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:b70466db7b2e9bd41aa01fba0d0236474f0e985c909663153922eea9fe2822df",
+                "Volumes": null,
+                "WorkingDir": "/lib/virtualbox",
+                "Entrypoint": [
+                    "./vboxdrv.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181205",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "container": "b140f23f9733acd12145c976a5f379306bea845851f3ceb003bc0a10f8c8acdb",
+            "container_config": {
+                "Hostname": "b140f23f9733",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"setup\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:b70466db7b2e9bd41aa01fba0d0236474f0e985c909663153922eea9fe2822df",
+                "Volumes": null,
+                "WorkingDir": "/lib/virtualbox",
+                "Entrypoint": [
+                    "./vboxdrv.sh"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20181205",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS"
+                }
+            },
+            "created": "2019-03-04T21:18:57.814134826Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2018-12-06T00:21:06.488375516Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:6f877549795f4798a38b318c0f63f6646dbf10d3c249c7f4b73cc7cfe42dc0f5 in / "
+                },
+                {
+                    "created": "2018-12-06T00:21:06.910715944Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20181205",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-12-06T00:21:07.135655444Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-04T21:12:18.35099833Z",
+                    "created_by": "/bin/sh -c #(nop) ADD ec25a29d747d94d46b96956ff5cb5c20660e52a0de4789fdbe7300a43a2e2576 in /etc/yum.repos.d/ "
+                },
+                {
+                    "created": "2019-03-04T21:15:39.552863995Z",
+                    "created_by": "/bin/sh -c yum -y install $(yum -y list | grep VirtualBox | sort | tail -1 | cut -f 1 -d \" \")"
+                },
+                {
+                    "created": "2019-03-04T21:15:58.443833334Z",
+                    "created_by": "/bin/sh -c VERSION=$(VBoxManage --version | tail -1 | cut -f 1 -d \"r\") &&     curl -Lo /Oracle_VM_VirtualBox_Extension_Pack-${VERSION}.vbox-extpack http://download.virtualbox.org/virtualbox/${VERSION}/Oracle_VM_VirtualBox_Extension_Pack-${VERSION}.vbox-extpack &&     yes | VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-${VERSION}.vbox-extpack &&     rm -rf Oracle_VM_VirtualBox_Extension_Pack-${VERSION}.vbox-extpack"
+                },
+                {
+                    "created": "2019-03-04T21:18:49.387338374Z",
+                    "created_by": "/bin/sh -c yum -y install make epel-release initscripts && yum -y install dkms"
+                },
+                {
+                    "created": "2019-03-04T21:18:56.699910837Z",
+                    "created_by": "/bin/sh -c yum clean all"
+                },
+                {
+                    "created": "2019-03-04T21:18:57.155903291Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /lib/virtualbox",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-04T21:18:57.469059499Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"./vboxdrv.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-03-04T21:18:57.814134826Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"setup\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:071d8bd765171080d01682844524be57ac9883e53079b6ac66707e192ea25956",
+                    "sha256:9438c08446da813df0879428b822f3ae68125a6040bc867fcf3f505f367b8f85",
+                    "sha256:97771b68835819988101006df1878cc88c1a6865fdc1713b1cbff295efdef12c",
+                    "sha256:f4a3255b5eeaa47dd400ad7062f54edc215b14863b5d6d5a4871edd64f5b42e8",
+                    "sha256:d51c9e4eebb1bd9e26be4d0eeb4f0405abb3fa0879caab006ef7582cbd6c9ed2",
+                    "sha256:beadb3abde4134ab4a7dbc4ba9ff7befea2930777518fb7cac340b2b68c0a904"
+                ]
+            }
+        }
+    }
+}

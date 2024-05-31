@@ -1,0 +1,216 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5906,
+                "digest": "sha256:62b86fb47d6e07f1d1a9c534ac381f1c88d445a239c09b5ab93645cd16b89fd0"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 49325555,
+                    "digest": "sha256:43db9dbdcb300fc39b23e88a1721bdaa95c7fe396bd89d6a4b1a39e8da1a2d4c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 828,
+                    "digest": "sha256:2dc64e8f8d4f2e7511f002e12474ae01a482a9727d620f49a3871b5882891b3f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 442,
+                    "digest": "sha256:670a583e1b5043337f8c73dcad9ff019f2ac0971475456fd4fdf296f2c5b939f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 681,
+                    "digest": "sha256:183b0bfcd10e095bb23120d43204762e2aa9b5a53e2060817a2460bafc76ad37"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 719,
+                    "digest": "sha256:01b9723deeb7c0d8c3c37e8aff8eb44f67164e73c36d17a4cce4acd8ed8600be"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 48309701,
+                    "digest": "sha256:86d0e9dd36473744d72a764157a32249cd68bfa0e44fadd6ea59ecb8b4585bae"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5757059,
+                    "digest": "sha256:c5ac3d392f21e98cc0724b2d01a0a2d5951e4142f7c74d57214dd890f203f623"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 299,
+                    "digest": "sha256:b3c524395b3a86f84979ebd7c4a0681a954c92944e44047e54e12c1323a9d575"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Jim Tittsler <jimt@onjapan.net>",
+            "config": {
+                "Hostname": "827f45722fd6",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:70b7a913c964ea424a6dec5e1a31b9c7e1eefbd6e67117b3b7b2aef97cc4e0c5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/bash",
+                    "/opt/startup.sh"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "38e0e9fb64f16f477bf8841c051ac84314fbb8b9e43f4233e13eb17e0f23476e",
+            "container_config": {
+                "Hostname": "827f45722fd6",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ENTRYPOINT [\"/bin/bash\" \"/opt/startup.sh\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:70b7a913c964ea424a6dec5e1a31b9c7e1eefbd6e67117b3b7b2aef97cc4e0c5",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/bash",
+                    "/opt/startup.sh"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2016-07-26T04:53:19.354810457Z",
+            "docker_version": "1.11.2",
+            "history": [
+                {
+                    "created": "2016-07-22T15:19:25.758413369Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:fdbd881d78f9d7d9245d0838389ebc793bef13243b9e3269512046cd75216baf in /"
+                },
+                {
+                    "created": "2016-07-22T15:19:27.823239184Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2016-07-22T15:19:29.465885677Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2016-07-22T15:19:31.340086445Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2016-07-22T15:19:31.961254889Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-26T04:52:40.337003457Z",
+                    "author": "Jim Tittsler <jimt@onjapan.net>",
+                    "created_by": "/bin/sh -c #(nop) MAINTAINER Jim Tittsler <jimt@onjapan.net>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-26T04:52:41.556533136Z",
+                    "author": "Jim Tittsler <jimt@onjapan.net>",
+                    "created_by": "/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-26T04:52:43.101170098Z",
+                    "author": "Jim Tittsler <jimt@onjapan.net>",
+                    "created_by": "/bin/sh -c echo \"deb http://archive.ubuntu.com/ubuntu/ vivid-updates main\\ndeb http://archive.ubuntu.com/ubuntu/ vivid universe\\ndeb http://archive.ubuntu.com/ubuntu/ vivid-updates universe\\ndeb http://security.ubuntu.com/ubuntu/ vivid-security main\\ndeb http://security.ubuntu.com/ubuntu/ vivid-security universe\\n\" >> /etc/apt/sources.list"
+                },
+                {
+                    "created": "2016-07-26T04:53:03.7381691Z",
+                    "author": "Jim Tittsler <jimt@onjapan.net>",
+                    "created_by": "/bin/sh -c apt-get update && apt-get upgrade -y"
+                },
+                {
+                    "created": "2016-07-26T04:53:14.039964103Z",
+                    "author": "Jim Tittsler <jimt@onjapan.net>",
+                    "created_by": "/bin/sh -c apt-get install --no-install-recommends -y openssh-server pwgen sudo vim-tiny"
+                },
+                {
+                    "created": "2016-07-26T04:53:15.469100294Z",
+                    "author": "Jim Tittsler <jimt@onjapan.net>",
+                    "created_by": "/bin/sh -c apt-get clean",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-26T04:53:16.805429593Z",
+                    "author": "Jim Tittsler <jimt@onjapan.net>",
+                    "created_by": "/bin/sh -c #(nop) EXPOSE 22/tcp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-26T04:53:18.179514189Z",
+                    "author": "Jim Tittsler <jimt@onjapan.net>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:175864f22bb6aec7f5ab3d80d071fe1fef383465b729fdb64fb986c121cef826 in /opt/startup.sh"
+                },
+                {
+                    "created": "2016-07-26T04:53:19.354810457Z",
+                    "author": "Jim Tittsler <jimt@onjapan.net>",
+                    "created_by": "/bin/sh -c #(nop) ENTRYPOINT [\"/bin/bash\" \"/opt/startup.sh\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:ea9f151abb7e06353e73172dad421235611d4f6d0560ec95db26e0dc240642c1",
+                    "sha256:0185b3091e8ee299850b096aeb9693d7132f50622d20ea18f88b6a73e9a3309c",
+                    "sha256:98305c1a8f5e5666d42b578043e3266f19e22512daa8c6b44c480b177f0bf006",
+                    "sha256:9a39129ae0ac2fccf7814b8e29dde5002734c1699d4e9176061d66f5b1afc95c",
+                    "sha256:0b4412e9f5e8656fa25c5b0378bba889978fc663280d30cb97fb9fabdd9e7535",
+                    "sha256:fd404a79232898af9906e28dd5526a20511fd5e9e81a69b27316d2330c86fe77",
+                    "sha256:4556d7a412a0b78a4beb214a24917aa13890a14502425763676a5dc8c96f1424",
+                    "sha256:f987ad6d98e68834559e36a0a0084ed7616d62c6e4e61b2154b65ebd55844aab"
+                ]
+            }
+        }
+    }
+}

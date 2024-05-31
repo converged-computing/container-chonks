@@ -1,0 +1,652 @@
+{
+    "manifests": {
+        "1.0.0": {
+            "schemaVersion": 1,
+            "name": "smebberson/alpine-rabbitmq",
+            "tag": "1.0.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:3bc26d38bb0577723a05d912a1bdeba15c74f9b50d6d236fdb38a992e1dbee2b"
+                },
+                {
+                    "blobSum": "sha256:620e81095f003d9cc43b141a5dd13e98e431703b56f61cb1633fe41f1ad0ba1d"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:fe8233d1e689534dd951884fe3d18de248c99b08e054af950571c56a890db295"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:22da06e3eb34ec672e102f48f878a2bb88a22e8f2a49b27313438d8ca3d9f6bf"
+                },
+                {
+                    "blobSum": "sha256:0303bdd894072b7361dca78eabc22f3c4295abce25ee37552953464162328cfa"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:6f0e559dd3c691ea1b4d15bb998a24318ac93177c6f3625e4438f21b033ef6dc"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:ac6ed54e68caac26dcbf86671fbcacc0207541f68fbeb85024b76df7c793bcf6"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"b69202d13ebe081002c691f0cfe5570476dc0f595a3207c0e6c4ba5d4275bcde\",\"parent\":\"6772fc251e46cfb5b34471b6d6cec270b4c36ef444297e666b602b890ea22f96\",\"created\":\"2016-01-18T05:43:07.82669463Z\",\"container\":\"902a1adc48011d7a0be2f16ba0b429427bc64b7b2fa29d847b454b8cec1e69a4\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 15672/tcp 5672/tcp\"],\"Image\":\"6772fc251e46cfb5b34471b6d6cec270b4c36ef444297e666b602b890ea22f96\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[],\"Image\":\"6772fc251e46cfb5b34471b6d6cec270b4c36ef444297e666b602b890ea22f96\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6772fc251e46cfb5b34471b6d6cec270b4c36ef444297e666b602b890ea22f96\",\"parent\":\"e9ba883c24ed9ad38dce9daa3db47ad884d4a911cb1b91c149fbbcf614dc9892\",\"created\":\"2016-01-18T05:43:07.773120489Z\",\"container\":\"c8206d0ee1b5be8ca00126c4ca9b72059a6b7ba2526d65f7b6fe4aef13251a09\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) VOLUME [/data/rabbitmq]\"],\"Image\":\"e9ba883c24ed9ad38dce9daa3db47ad884d4a911cb1b91c149fbbcf614dc9892\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[],\"Image\":\"e9ba883c24ed9ad38dce9daa3db47ad884d4a911cb1b91c149fbbcf614dc9892\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e9ba883c24ed9ad38dce9daa3db47ad884d4a911cb1b91c149fbbcf614dc9892\",\"parent\":\"4eb37ad98e9105e4b422d865d2a88c5e15175b79f96bd9c6fcc8b28cd8666d6c\",\"created\":\"2016-01-18T05:43:07.692234599Z\",\"container\":\"b40345dce874ed8d41808641e7a0124ae0460b04c3d09c3d0f806bdce612a2f0\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD dir:4805c5023d0863d284992c95888ab57e50506c0a30d8cb0aab0cd09baccffb35 in /\"],\"Image\":\"4eb37ad98e9105e4b422d865d2a88c5e15175b79f96bd9c6fcc8b28cd8666d6c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[],\"Image\":\"4eb37ad98e9105e4b422d865d2a88c5e15175b79f96bd9c6fcc8b28cd8666d6c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":3793}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4eb37ad98e9105e4b422d865d2a88c5e15175b79f96bd9c6fcc8b28cd8666d6c\",\"parent\":\"010543a6e48f42c3f08fd58f2d7f5eca064b80ca8c64a30f6e5ff7a34d446d0a\",\"created\":\"2016-01-18T05:43:05.564277387Z\",\"container\":\"b8199e8a4b0db087e1834a6c698637fc01d1c8f80f59d1896cbe7f8e71e9ce76\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apk add --update curl tar gzip bash \\u0026\\u0026     echo \\\"http://dl-4.alpinelinux.org/alpine/edge/main\\\" \\u003e\\u003e /etc/apk/repositories \\u0026\\u0026     echo \\\"http://dl-4.alpinelinux.org/alpine/edge/community\\\" \\u003e\\u003e /etc/apk/repositories \\u0026\\u0026     apk add --update-cache --allow-untrusted         erlang=${ERLANG_PKG_VERSION} erlang-mnesia=${ERLANG_PKG_VERSION}         erlang-public-key=${ERLANG_PKG_VERSION} erlang-crypto=${ERLANG_PKG_VERSION}         erlang-ssl=${ERLANG_PKG_VERSION} erlang-sasl=${ERLANG_PKG_VERSION}         erlang-asn1=${ERLANG_PKG_VERSION} erlang-inets=${ERLANG_PKG_VERSION}         erlang-os-mon=${ERLANG_PKG_VERSION} erlang-xmerl=${ERLANG_PKG_VERSION} erlang-eldap=${ERLANG_PKG_VERSION} \\u0026\\u0026     curl -sSL https://www.rabbitmq.com/releases/rabbitmq-server/v${RABBITMQ_VERSION}/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.gz | tar -xz -C / --strip-components 1 \\u0026\\u0026     rm -rf /share/**/rabbitmq*.gz \\u0026\\u0026     apk del --purge tar gzip curl \\u0026\\u0026     rm -rf /var/cache/apk/* \\u0026\\u0026     addgroup rabbitmq \\u0026\\u0026     adduser -DS -G rabbitmq -s /bin/sh -h /var/lib/rabbitmq rabbitmq \\u0026\\u0026     mkdir -p /data/rabbitmq\"],\"Image\":\"010543a6e48f42c3f08fd58f2d7f5eca064b80ca8c64a30f6e5ff7a34d446d0a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[],\"Image\":\"010543a6e48f42c3f08fd58f2d7f5eca064b80ca8c64a30f6e5ff7a34d446d0a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":27776018}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"010543a6e48f42c3f08fd58f2d7f5eca064b80ca8c64a30f6e5ff7a34d446d0a\",\"parent\":\"203438fbb61010f71e2c711daa139bb2e7c5e54d9c1bf8b4a33b909ba4559db9\",\"created\":\"2016-01-18T05:42:50.969947449Z\",\"container\":\"bbb1011c7d597b9de60fbc912db3f1cb7fa9ba07fbeb559aee619ef5cb3969b3\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RABBITMQ_VERSION=3.5.7 ERLANG_PKG_VERSION=18.1-r5\"],\"Image\":\"203438fbb61010f71e2c711daa139bb2e7c5e54d9c1bf8b4a33b909ba4559db9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[],\"Image\":\"203438fbb61010f71e2c711daa139bb2e7c5e54d9c1bf8b4a33b909ba4559db9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"203438fbb61010f71e2c711daa139bb2e7c5e54d9c1bf8b4a33b909ba4559db9\",\"parent\":\"018a4ab6cf5587cc87ad08849eda0d89c7982dae5234eee5785c731fc94d26e8\",\"created\":\"2016-01-18T05:42:50.905923937Z\",\"container\":\"6d5c50dcf1aead9957b5f51f00cf4980734b8998b4afc8a2b1794fe80560278b\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"],\"Image\":\"283fbffa57eef459b23dfc069e88113601f4760f239553accf31158204a21e15\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\"],\"Cmd\":[],\"Image\":\"283fbffa57eef459b23dfc069e88113601f4760f239553accf31158204a21e15\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"018a4ab6cf5587cc87ad08849eda0d89c7982dae5234eee5785c731fc94d26e8\",\"parent\":\"70627eb130e0b3b2a32b03b449f57c1a8f30e841cfafbf969f69e4142b160821\",\"created\":\"2016-01-18T05:27:13.479275107Z\",\"container\":\"2068fbab30736b5dea04732bc93c7c9ec9c5e0b671488ffa117e2c19f6fc021d\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apk add --update go git gcc musl-dev \\u0026\\u0026     git clone https://github.com/kelseyhightower/confd.git /src/confd \\u0026\\u0026     cd /src/confd/src/github.com/kelseyhightower/confd/ \\u0026\\u0026     GOPATH=/src/confd/vendor:/src/confd go build -a -installsuffix cgo -ldflags '-extld ld -extldflags -static' -x . \\u0026\\u0026     mv ./confd /bin/ \\u0026\\u0026     chmod +x /bin/confd \\u0026\\u0026     apk del go git gcc musl-dev \\u0026\\u0026     rm -rf /var/cache/apk/* /src\"],\"Image\":\"70627eb130e0b3b2a32b03b449f57c1a8f30e841cfafbf969f69e4142b160821\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\"],\"Cmd\":[],\"Image\":\"70627eb130e0b3b2a32b03b449f57c1a8f30e841cfafbf969f69e4142b160821\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":9989090}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"70627eb130e0b3b2a32b03b449f57c1a8f30e841cfafbf969f69e4142b160821\",\"parent\":\"521676f4c4df4d19abddef9002f7f7306fb28e8afd4d65ae52ff4336000c65d9\",\"created\":\"2016-01-18T05:26:37.649725562Z\",\"container\":\"167e304cb2b170f5399755efac0e045e15e71747a9ac420c0d8c3f0463759949\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV CONFD_VERSION=0.11.0 GOMAXPROCS=2\"],\"Image\":\"521676f4c4df4d19abddef9002f7f7306fb28e8afd4d65ae52ff4336000c65d9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\",\"CONFD_VERSION=0.11.0\",\"GOMAXPROCS=2\"],\"Cmd\":[],\"Image\":\"521676f4c4df4d19abddef9002f7f7306fb28e8afd4d65ae52ff4336000c65d9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"521676f4c4df4d19abddef9002f7f7306fb28e8afd4d65ae52ff4336000c65d9\",\"parent\":\"81855cca5b78d9786d7cba151224594e7e1ee15cc11df76fad8e2e1ccbd2a9ed\",\"created\":\"2016-01-18T05:26:37.588964799Z\",\"container\":\"bf75bd1d8e4f3294e97850733658168d79390e9e71d804a9be9b112861655857\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"],\"Image\":\"7b018d013dbcb8296eb27ba33f6a533d41c4b52cfedb904afdcd38b609e2d14f\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":[],\"Image\":\"7b018d013dbcb8296eb27ba33f6a533d41c4b52cfedb904afdcd38b609e2d14f\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"81855cca5b78d9786d7cba151224594e7e1ee15cc11df76fad8e2e1ccbd2a9ed\",\"parent\":\"07e546f8b5a80831645e16d4ffcaa2c1ce0b20352d7eeba7c9f324072e00fd10\",\"created\":\"2016-01-18T01:25:06.314500642Z\",\"container\":\"fa265fb4c06aca2b23463cff110a316f912f78b4a9a04c53cd70a8c13d2d7e63\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD []\"],\"Image\":\"07e546f8b5a80831645e16d4ffcaa2c1ce0b20352d7eeba7c9f324072e00fd10\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":[],\"Image\":\"07e546f8b5a80831645e16d4ffcaa2c1ce0b20352d7eeba7c9f324072e00fd10\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"07e546f8b5a80831645e16d4ffcaa2c1ce0b20352d7eeba7c9f324072e00fd10\",\"parent\":\"77f7090ca473ad5743ff172938aacd9f2bcf55ef7530a3a16215682af3bee140\",\"created\":\"2016-01-18T01:25:06.248652478Z\",\"container\":\"8ce1981dc84cc5fa52d1c55f4f865457a731391cfad3eb69a10d2323662422d0\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/init\\\"]}\"],\"Image\":\"77f7090ca473ad5743ff172938aacd9f2bcf55ef7530a3a16215682af3bee140\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":null,\"Image\":\"77f7090ca473ad5743ff172938aacd9f2bcf55ef7530a3a16215682af3bee140\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"77f7090ca473ad5743ff172938aacd9f2bcf55ef7530a3a16215682af3bee140\",\"parent\":\"cce64ad4cf25d04ea7a52dbda9805c539fd3224bf97c3e1f6ee72e793b845cee\",\"created\":\"2016-01-18T01:25:06.188786763Z\",\"container\":\"316bd1f651e4dc7e048ebc285a4d49efd946ac0805f73295d5e43737bd401dea\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD dir:0ecb68edcfa92b04289a972ed07f82772608f8f3a5b7c5f0943021ab34641838 in /\"],\"Image\":\"cce64ad4cf25d04ea7a52dbda9805c539fd3224bf97c3e1f6ee72e793b845cee\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":null,\"Image\":\"cce64ad4cf25d04ea7a52dbda9805c539fd3224bf97c3e1f6ee72e793b845cee\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":651}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cce64ad4cf25d04ea7a52dbda9805c539fd3224bf97c3e1f6ee72e793b845cee\",\"parent\":\"5f2a69515f302a67e88f1610a1d8e0c6014a2f84279cc72314b6003492de9773\",\"created\":\"2016-01-18T01:25:05.758571068Z\",\"container\":\"5ce6087400f66e5bc1c808787e95827c33387a895d7c8629623dd3299e38cb14\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apk add --update curl \\u0026\\u0026     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz     | tar xvfz - -C / \\u0026\\u0026     curl -sSL https://github.com/janeczku/go-dnsmasq/releases/download/${GODNSMASQ_VERSION}/go-dnsmasq-min_linux-amd64 -o /bin/go-dnsmasq \\u0026\\u0026     chmod +x /bin/go-dnsmasq \\u0026\\u0026     apk del curl \\u0026\\u0026     rm -rf /var/cache/apk/*\"],\"Image\":\"5f2a69515f302a67e88f1610a1d8e0c6014a2f84279cc72314b6003492de9773\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":null,\"Image\":\"5f2a69515f302a67e88f1610a1d8e0c6014a2f84279cc72314b6003492de9773\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":4660174}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5f2a69515f302a67e88f1610a1d8e0c6014a2f84279cc72314b6003492de9773\",\"parent\":\"4574ab217f7f8755c6f5853cfa412b75061b1baa61bca7d49778f3c369f6e3c9\",\"created\":\"2016-01-18T01:25:01.992114241Z\",\"container\":\"f5cfcfc62a5cbcd98374bab8ad14c8eca0801070e720f2d863eb581049daa05f\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV S6_OVERLAY_VERSION=v1.16.0.1 GODNSMASQ_VERSION=0.9.8\"],\"Image\":\"4574ab217f7f8755c6f5853cfa412b75061b1baa61bca7d49778f3c369f6e3c9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.16.0.1\",\"GODNSMASQ_VERSION=0.9.8\"],\"Cmd\":null,\"Image\":\"4574ab217f7f8755c6f5853cfa412b75061b1baa61bca7d49778f3c369f6e3c9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4574ab217f7f8755c6f5853cfa412b75061b1baa61bca7d49778f3c369f6e3c9\",\"parent\":\"658d65862819d9121c0418163110011c9c6fde4b462141d84fc77c40cb1434b0\",\"created\":\"2016-01-18T01:25:01.818975063Z\",\"container\":\"884e4fad9209de23563a70e242395990e90238cf50574141e5805811cf8c9937\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apk add --update bind-tools \\u0026\\u0026     rm -rf /var/cache/apk/*\"],\"Image\":\"658d65862819d9121c0418163110011c9c6fde4b462141d84fc77c40cb1434b0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"658d65862819d9121c0418163110011c9c6fde4b462141d84fc77c40cb1434b0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":2919004}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"658d65862819d9121c0418163110011c9c6fde4b462141d84fc77c40cb1434b0\",\"parent\":\"a767e6385402001ae8ade0d7a966c8c4451dd704d031f22d526fb5b039d8e6e8\",\"created\":\"2016-01-18T01:24:59.929410958Z\",\"container\":\"290bc214bcf6fcb74ee706532df8aa3954e7743c47f1c996593fdcb7e1c4eebb\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"],\"Image\":\"b98ffa2251d3d7911ed090eb2f9036eb895169a18319421e5ee3b914ccb152a3\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"b98ffa2251d3d7911ed090eb2f9036eb895169a18319421e5ee3b914ccb152a3\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a767e6385402001ae8ade0d7a966c8c4451dd704d031f22d526fb5b039d8e6e8\",\"created\":\"2015-12-24T15:25:41.85559173Z\",\"container\":\"84057be02ab62ba0044d95c2996ec6fe98d98bf2d9b95e49686092222ebd5a89\",\"container_config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:6b329aef17286aa10a0eceedad94e25bc6ed8a1b223516922a1a7c507cfb71eb in /\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"84057be02ab6\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":5253683}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "2IFF:CIBN:ZWFF:DW6B:63DV:QVQH:AZMT:R5YN:N224:SFZP:VGWW:YTVA",
+                            "kty": "EC",
+                            "x": "1cuumAyS7lSglkW6er-RjPVjex4gizA_nsICNOaB24Q",
+                            "y": "33baKbH2ILjeFDB38leYTXSd3Bsj0qbSbGDmfIFVz0k"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "pYr-62spS0VopsviluqrDhbcPEdYNOQqJxrmM8_QQEd8dc_Ny-1kepHQQbsohY3WyyIXHV7gpmFYPfUGFEv4Rg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjMyMjk2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTU6NTg6MjFaIn0"
+                }
+            ]
+        },
+        "2.0.0": {
+            "schemaVersion": 1,
+            "name": "smebberson/alpine-rabbitmq",
+            "tag": "2.0.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:fa41856dcd15588ac7e2b499cdd81c85293042a02aacd2804319f3f133a6ca89"
+                },
+                {
+                    "blobSum": "sha256:ec5916a1ba801a910636eb0edd87a77d24674c6fa332ce6a4a19958d4a9e58c6"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:915a2008d959840b4f3a53015a85a2a9ef70613ec1af6002fbc9d3a0e2c50228"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:fd6f0c3cca8bda00953a34299b01063e2aaded46a96e2cc34b24dc7c0be6f510"
+                },
+                {
+                    "blobSum": "sha256:e9ec730690589574b9d2af6ca53e2f7dfb948d833762f4c2477950b19c032392"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:e6c7cdd84a10535191159cf5293139c39f41627196a9edb7ca0771796ff480a6"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:420890c9e918b6668faaedd9000e220190f2493b0693ee563ebd7b4cc754a57d"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"b14cd8298755\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.17.2.0\",\"GODNSMASQ_VERSION=1.0.4\",\"CONFD_VERSION=0.11.0\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[],\"ArgsEscaped\":true,\"Image\":\"sha256:822feefc9e0246ad03d61728fd6bc5a8ed18633159c8e9106946d4b019daaa77\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"4a008b4c1ff5326ce027bfef377cab1659781aabe8351d54eee998e8f31a7771\",\"container_config\":{\"Hostname\":\"b14cd8298755\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.17.2.0\",\"GODNSMASQ_VERSION=1.0.4\",\"CONFD_VERSION=0.11.0\",\"RABBITMQ_VERSION=3.5.7\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 15672/tcp 5672/tcp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:822feefc9e0246ad03d61728fd6bc5a8ed18633159c8e9106946d4b019daaa77\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-11T04:07:16.736293752Z\",\"docker_version\":\"1.10.2\",\"id\":\"7160ee854e030f0aec27635a7db67578facae105cee96dafb1ffce8f74dfcb4f\",\"os\":\"linux\",\"parent\":\"ef9b47fabeaf8ac15f2074d5e76c1ce0aab92b590e75a6568414c745e17c6cc7\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ef9b47fabeaf8ac15f2074d5e76c1ce0aab92b590e75a6568414c745e17c6cc7\",\"parent\":\"1f59b0e2912af055bf91d721c064d3762a41a30fe4bb46b9327b30aa9f4955d1\",\"created\":\"2016-04-11T04:07:16.623068153Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/data/rabbitmq]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1f59b0e2912af055bf91d721c064d3762a41a30fe4bb46b9327b30aa9f4955d1\",\"parent\":\"8b767eedcee3f56c6ffd88264836167c7a0dd9401be7f4403a59db10141cb3fe\",\"created\":\"2016-04-11T04:07:16.469255311Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:87ce19402ecf6ed41c22085afc53251f2f8a066ed7c133a6e7f4328a0ec5e242 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8b767eedcee3f56c6ffd88264836167c7a0dd9401be7f4403a59db10141cb3fe\",\"parent\":\"a7f50601664c09921cc7787a7ca5ea7bece2172b3378e8020a521166b48e008c\",\"created\":\"2016-04-11T04:07:16.161184928Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --update --no-cache curl tar bash         erlang=${ERLANG_PKG_VERSION} erlang-mnesia=${ERLANG_PKG_VERSION}         erlang-public-key=${ERLANG_PKG_VERSION} erlang-crypto=${ERLANG_PKG_VERSION}         erlang-ssl=${ERLANG_PKG_VERSION} erlang-sasl=${ERLANG_PKG_VERSION}         erlang-asn1=${ERLANG_PKG_VERSION} erlang-inets=${ERLANG_PKG_VERSION}         erlang-os-mon=${ERLANG_PKG_VERSION} erlang-xmerl=${ERLANG_PKG_VERSION} erlang-eldap=${ERLANG_PKG_VERSION} \\u0026\\u0026     curl -sSL https://www.rabbitmq.com/releases/rabbitmq-server/v${RABBITMQ_VERSION}/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.gz | tar -xz -C / --strip-components 1 \\u0026\\u0026     rm -rf /share/**/rabbitmq*.gz \\u0026\\u0026     apk del --purge tar curl \\u0026\\u0026     addgroup rabbitmq \\u0026\\u0026     adduser -DS -g \\\"\\\" -G rabbitmq -s /bin/sh -h /var/lib/rabbitmq rabbitmq \\u0026\\u0026     mkdir -p /data/rabbitmq \\u0026\\u0026     chown -R rabbitmq:rabbitmq /data/rabbitmq\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a7f50601664c09921cc7787a7ca5ea7bece2172b3378e8020a521166b48e008c\",\"parent\":\"9ebf644132e10faffbd7adee0f1a6d50b1b04d2ea345a3edbf36458092646c1d\",\"created\":\"2016-04-11T04:07:03.486893113Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV RABBITMQ_VERSION=3.5.7 ERLANG_PKG_VERSION=18.1-r5\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9ebf644132e10faffbd7adee0f1a6d50b1b04d2ea345a3edbf36458092646c1d\",\"parent\":\"7a3e21a7833afefd1e2d2565a4a7fcd14d1e5db5f944c7d3565e361c69b52627\",\"created\":\"2016-04-11T04:07:03.373912849Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7a3e21a7833afefd1e2d2565a4a7fcd14d1e5db5f944c7d3565e361c69b52627\",\"parent\":\"184f5ef3b4dba5ae0d5cc867f743c0249977cf724920b2b4d78d8acfe798e2a5\",\"created\":\"2016-04-07T13:10:54.218303148Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache go git gcc musl-dev \\u0026\\u0026     git clone https://github.com/kelseyhightower/confd.git /src/confd \\u0026\\u0026     cd /src/confd \\u0026\\u0026     git checkout -q --detach \\\"v$CONFD_VERSION\\\" \\u0026\\u0026     cd /src/confd/src/github.com/kelseyhightower/confd \\u0026\\u0026     GOPATH=/src/confd/vendor:/src/confd go build -a -installsuffix cgo -ldflags '-extld ld -extldflags -static' -x . \\u0026\\u0026     mv ./confd /bin/ \\u0026\\u0026     chmod +x /bin/confd \\u0026\\u0026     apk del go git gcc musl-dev \\u0026\\u0026     rm -rf /src\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"184f5ef3b4dba5ae0d5cc867f743c0249977cf724920b2b4d78d8acfe798e2a5\",\"parent\":\"6c2bc7df73cfc7d712047ea5bdcab20f2137e37b46310cae5b0fde8b8a0bb6a0\",\"created\":\"2016-04-07T13:09:52.919121401Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CONFD_VERSION=0.11.0\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6c2bc7df73cfc7d712047ea5bdcab20f2137e37b46310cae5b0fde8b8a0bb6a0\",\"parent\":\"ca9c5741748a6e64772fa46112ffedf27b8a2c179a77a9669308ed6e575485fc\",\"created\":\"2016-04-07T13:09:52.820421022Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ca9c5741748a6e64772fa46112ffedf27b8a2c179a77a9669308ed6e575485fc\",\"parent\":\"83beb2ac7b22701fd167aaa24a24110c76258ba54db25d8fd8cf4024f077eab2\",\"created\":\"2016-04-05T03:08:11.417510198Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD []\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"83beb2ac7b22701fd167aaa24a24110c76258ba54db25d8fd8cf4024f077eab2\",\"parent\":\"9362dae09b61ff17adeeb027458a66f94003d9a3eb6dd6d147b62bcaf8059371\",\"created\":\"2016-04-05T03:08:11.308782021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT \\u0026{[\\\"/init\\\"]}\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9362dae09b61ff17adeeb027458a66f94003d9a3eb6dd6d147b62bcaf8059371\",\"parent\":\"519ff635cd1f7aecfe856884486bfef4ebced4c7a5288b114301b574ae1eb379\",\"created\":\"2016-04-05T03:08:11.202976776Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:349c81198facb7f36d9eaf5d3cdb272787b00dabc5bb4cefd0c7d69e06491f30 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"519ff635cd1f7aecfe856884486bfef4ebced4c7a5288b114301b574ae1eb379\",\"parent\":\"ac067f2a507339e49778ad2a60892970494e13b50fc889262228b524af8a86ff\",\"created\":\"2016-04-05T03:08:10.9914449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache curl \\u0026\\u0026     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz     | tar xfz - -C / \\u0026\\u0026     curl -sSL https://github.com/janeczku/go-dnsmasq/releases/download/${GODNSMASQ_VERSION}/go-dnsmasq-min_linux-amd64 -o /bin/go-dnsmasq \\u0026\\u0026     chmod +x /bin/go-dnsmasq \\u0026\\u0026     apk del curl\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ac067f2a507339e49778ad2a60892970494e13b50fc889262228b524af8a86ff\",\"parent\":\"4eda7779801a3bfc77f54eeff39cfb6aea76cfd6d9b13222c7c3d8446061b329\",\"created\":\"2016-04-05T03:08:08.184065469Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV S6_OVERLAY_VERSION=v1.17.2.0 GODNSMASQ_VERSION=1.0.4\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4eda7779801a3bfc77f54eeff39cfb6aea76cfd6d9b13222c7c3d8446061b329\",\"parent\":\"bb7044f479acfd44704c849a7cbac982e9d8ced3b845a32e7f78ed59d338b790\",\"created\":\"2016-04-05T03:08:08.055885116Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache bind-tools\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"bb7044f479acfd44704c849a7cbac982e9d8ced3b845a32e7f78ed59d338b790\",\"parent\":\"1348eb573a47d363b35f3bf2ddb3df35b92b694824f159798d336bb16e78fac2\",\"created\":\"2016-04-05T03:08:06.185604954Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1348eb573a47d363b35f3bf2ddb3df35b92b694824f159798d336bb16e78fac2\",\"created\":\"2016-04-01T20:53:00.160300546Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:033ab063740d9ff4dcfb1c69eccf25f91d88729f57cd5a73050e014e3e094aa0 in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "V7NV:TJBG:W4FQ:EVY7:S7MQ:5YPN:QUYM:LVPE:ODGM:KHER:5MIB:IZ3W",
+                            "kty": "EC",
+                            "x": "VGjauzkoj6vqZ8U_-z8L8cHg-48IBdO4sUFGPbIqOnQ",
+                            "y": "wrag6A0eBVFrJRIo-MRfx3B4HNfIuJeamxv-rmjQa4E"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "fTJhaA9vfSu5ILarcPAJ1pHNmr1s0p2ZrQwetUdmtPFj4nvfy9f6PqH3-KO871KUb4v_hrEkSYPpEd88fNuz6Q",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjExNjMzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTU6NTg6MjJaIn0"
+                }
+            ]
+        },
+        "2.1.0": {
+            "schemaVersion": 1,
+            "name": "smebberson/alpine-rabbitmq",
+            "tag": "2.1.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:3b0c5d59d0d6f1d0546ef3348626a4311580a316d00e26f8cd7b7d459798e4ee"
+                },
+                {
+                    "blobSum": "sha256:c646d849a9a19418f0c19d1521201ca46c1ee384edf46dc6b04507c24dc21ac7"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:915a2008d959840b4f3a53015a85a2a9ef70613ec1af6002fbc9d3a0e2c50228"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:fd6f0c3cca8bda00953a34299b01063e2aaded46a96e2cc34b24dc7c0be6f510"
+                },
+                {
+                    "blobSum": "sha256:e9ec730690589574b9d2af6ca53e2f7dfb948d833762f4c2477950b19c032392"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:e6c7cdd84a10535191159cf5293139c39f41627196a9edb7ca0771796ff480a6"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:420890c9e918b6668faaedd9000e220190f2493b0693ee563ebd7b4cc754a57d"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"b14cd8298755\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.17.2.0\",\"GODNSMASQ_VERSION=1.0.4\",\"CONFD_VERSION=0.11.0\",\"RABBITMQ_VERSION=3.6.0\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[],\"ArgsEscaped\":true,\"Image\":\"sha256:52e80c4981b9629e44d7d1340d9e5a61ccda3068c0ac071853ba9591d8fbd386\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"b6443f65f63df8150b1373a2a63ea50ab7a3180d1e76e34736c1f7a1fb383269\",\"container_config\":{\"Hostname\":\"b14cd8298755\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.17.2.0\",\"GODNSMASQ_VERSION=1.0.4\",\"CONFD_VERSION=0.11.0\",\"RABBITMQ_VERSION=3.6.0\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 15672/tcp 5672/tcp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:52e80c4981b9629e44d7d1340d9e5a61ccda3068c0ac071853ba9591d8fbd386\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-11T05:23:31.443465534Z\",\"docker_version\":\"1.10.2\",\"id\":\"f280ddf992fc79c163d952b4ccf3defb67b1ecf3df101c16ac2f98c24238f7d8\",\"os\":\"linux\",\"parent\":\"79ab33623d7413cf723ccd3d58acf1a98748660e1156c5558196ced7d77ae9d4\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"79ab33623d7413cf723ccd3d58acf1a98748660e1156c5558196ced7d77ae9d4\",\"parent\":\"768731fd8f37335d524a0d7f5893631a3feeec82024a647506cfe5099085e339\",\"created\":\"2016-04-11T05:23:31.32763406Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/data/rabbitmq]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"768731fd8f37335d524a0d7f5893631a3feeec82024a647506cfe5099085e339\",\"parent\":\"1b59d3dde5545de38a56df79fc23a666bfbbf1f09210db4ab86d608db5821326\",\"created\":\"2016-04-11T05:23:31.171723686Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:87ce19402ecf6ed41c22085afc53251f2f8a066ed7c133a6e7f4328a0ec5e242 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1b59d3dde5545de38a56df79fc23a666bfbbf1f09210db4ab86d608db5821326\",\"parent\":\"a7f50601664c09921cc7787a7ca5ea7bece2172b3378e8020a521166b48e008c\",\"created\":\"2016-04-11T05:23:30.85790488Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --update --no-cache curl tar xz bash         erlang=${ERLANG_PKG_VERSION} erlang-mnesia=${ERLANG_PKG_VERSION}         erlang-public-key=${ERLANG_PKG_VERSION} erlang-crypto=${ERLANG_PKG_VERSION}         erlang-ssl=${ERLANG_PKG_VERSION} erlang-sasl=${ERLANG_PKG_VERSION}         erlang-asn1=${ERLANG_PKG_VERSION} erlang-inets=${ERLANG_PKG_VERSION}         erlang-os-mon=${ERLANG_PKG_VERSION} erlang-xmerl=${ERLANG_PKG_VERSION}         erlang-eldap=${ERLANG_PKG_VERSION} erlang-syntax-tools=${ERLANG_PKG_VERSION} \\u0026\\u0026     curl -sSL https://www.rabbitmq.com/releases/rabbitmq-server/v${RABBITMQ_VERSION}/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz | tar -xJ -C / --strip-components 1 \\u0026\\u0026     rm -rf /share/**/rabbitmq*.xz \\u0026\\u0026     apk del --purge curl tar xz \\u0026\\u0026     addgroup rabbitmq \\u0026\\u0026     adduser -DS -g \\\"\\\" -G rabbitmq -s /bin/sh -h /var/lib/rabbitmq rabbitmq \\u0026\\u0026     mkdir -p /data/rabbitmq \\u0026\\u0026     chown -R rabbitmq:rabbitmq /data/rabbitmq\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a7f50601664c09921cc7787a7ca5ea7bece2172b3378e8020a521166b48e008c\",\"parent\":\"9ebf644132e10faffbd7adee0f1a6d50b1b04d2ea345a3edbf36458092646c1d\",\"created\":\"2016-04-11T05:23:20.556709576Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV RABBITMQ_VERSION=3.6.0 ERLANG_PKG_VERSION=18.1-r5\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9ebf644132e10faffbd7adee0f1a6d50b1b04d2ea345a3edbf36458092646c1d\",\"parent\":\"7a3e21a7833afefd1e2d2565a4a7fcd14d1e5db5f944c7d3565e361c69b52627\",\"created\":\"2016-04-11T05:23:20.456362185Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7a3e21a7833afefd1e2d2565a4a7fcd14d1e5db5f944c7d3565e361c69b52627\",\"parent\":\"184f5ef3b4dba5ae0d5cc867f743c0249977cf724920b2b4d78d8acfe798e2a5\",\"created\":\"2016-04-07T13:10:54.218303148Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache go git gcc musl-dev \\u0026\\u0026     git clone https://github.com/kelseyhightower/confd.git /src/confd \\u0026\\u0026     cd /src/confd \\u0026\\u0026     git checkout -q --detach \\\"v$CONFD_VERSION\\\" \\u0026\\u0026     cd /src/confd/src/github.com/kelseyhightower/confd \\u0026\\u0026     GOPATH=/src/confd/vendor:/src/confd go build -a -installsuffix cgo -ldflags '-extld ld -extldflags -static' -x . \\u0026\\u0026     mv ./confd /bin/ \\u0026\\u0026     chmod +x /bin/confd \\u0026\\u0026     apk del go git gcc musl-dev \\u0026\\u0026     rm -rf /src\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"184f5ef3b4dba5ae0d5cc867f743c0249977cf724920b2b4d78d8acfe798e2a5\",\"parent\":\"6c2bc7df73cfc7d712047ea5bdcab20f2137e37b46310cae5b0fde8b8a0bb6a0\",\"created\":\"2016-04-07T13:09:52.919121401Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CONFD_VERSION=0.11.0\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6c2bc7df73cfc7d712047ea5bdcab20f2137e37b46310cae5b0fde8b8a0bb6a0\",\"parent\":\"ca9c5741748a6e64772fa46112ffedf27b8a2c179a77a9669308ed6e575485fc\",\"created\":\"2016-04-07T13:09:52.820421022Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ca9c5741748a6e64772fa46112ffedf27b8a2c179a77a9669308ed6e575485fc\",\"parent\":\"83beb2ac7b22701fd167aaa24a24110c76258ba54db25d8fd8cf4024f077eab2\",\"created\":\"2016-04-05T03:08:11.417510198Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD []\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"83beb2ac7b22701fd167aaa24a24110c76258ba54db25d8fd8cf4024f077eab2\",\"parent\":\"9362dae09b61ff17adeeb027458a66f94003d9a3eb6dd6d147b62bcaf8059371\",\"created\":\"2016-04-05T03:08:11.308782021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT \\u0026{[\\\"/init\\\"]}\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9362dae09b61ff17adeeb027458a66f94003d9a3eb6dd6d147b62bcaf8059371\",\"parent\":\"519ff635cd1f7aecfe856884486bfef4ebced4c7a5288b114301b574ae1eb379\",\"created\":\"2016-04-05T03:08:11.202976776Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:349c81198facb7f36d9eaf5d3cdb272787b00dabc5bb4cefd0c7d69e06491f30 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"519ff635cd1f7aecfe856884486bfef4ebced4c7a5288b114301b574ae1eb379\",\"parent\":\"ac067f2a507339e49778ad2a60892970494e13b50fc889262228b524af8a86ff\",\"created\":\"2016-04-05T03:08:10.9914449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache curl \\u0026\\u0026     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz     | tar xfz - -C / \\u0026\\u0026     curl -sSL https://github.com/janeczku/go-dnsmasq/releases/download/${GODNSMASQ_VERSION}/go-dnsmasq-min_linux-amd64 -o /bin/go-dnsmasq \\u0026\\u0026     chmod +x /bin/go-dnsmasq \\u0026\\u0026     apk del curl\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ac067f2a507339e49778ad2a60892970494e13b50fc889262228b524af8a86ff\",\"parent\":\"4eda7779801a3bfc77f54eeff39cfb6aea76cfd6d9b13222c7c3d8446061b329\",\"created\":\"2016-04-05T03:08:08.184065469Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV S6_OVERLAY_VERSION=v1.17.2.0 GODNSMASQ_VERSION=1.0.4\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4eda7779801a3bfc77f54eeff39cfb6aea76cfd6d9b13222c7c3d8446061b329\",\"parent\":\"bb7044f479acfd44704c849a7cbac982e9d8ced3b845a32e7f78ed59d338b790\",\"created\":\"2016-04-05T03:08:08.055885116Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache bind-tools\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"bb7044f479acfd44704c849a7cbac982e9d8ced3b845a32e7f78ed59d338b790\",\"parent\":\"1348eb573a47d363b35f3bf2ddb3df35b92b694824f159798d336bb16e78fac2\",\"created\":\"2016-04-05T03:08:06.185604954Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1348eb573a47d363b35f3bf2ddb3df35b92b694824f159798d336bb16e78fac2\",\"created\":\"2016-04-01T20:53:00.160300546Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:033ab063740d9ff4dcfb1c69eccf25f91d88729f57cd5a73050e014e3e094aa0 in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "5B2Z:Q7QW:EW3A:CDQJ:3HJN:RTIM:BDX3:S4X7:4B5P:ESGV:MJ2Y:TGKW",
+                            "kty": "EC",
+                            "x": "uCUe116KXqik--0v-9R489ysuNaivrzWc0wKqX5JmyY",
+                            "y": "3YKOkxBrxGa3q0FVMZK3ilcJSbMgWTeXrHUD3N13A3U"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "3O2lkIXF-tVgMgmUEcZtIlwRvV-Ue9D3hsWqFQmVGVGpQyz9f9QUYUxQJcegEVej2WApqJrINOQoX-z8wYCamw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjExNjg3LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTU6NTg6MjJaIn0"
+                }
+            ]
+        },
+        "2.1.1": {
+            "schemaVersion": 1,
+            "name": "smebberson/alpine-rabbitmq",
+            "tag": "2.1.1",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:f3b5d5622212a5983d98848870f404d303dbeb0fb53112427df1747114216392"
+                },
+                {
+                    "blobSum": "sha256:bec2cbf7baf061e0b27c2fbb0361fcaad7531d23f1c7e93171001feea536d9ba"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:915a2008d959840b4f3a53015a85a2a9ef70613ec1af6002fbc9d3a0e2c50228"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:fd6f0c3cca8bda00953a34299b01063e2aaded46a96e2cc34b24dc7c0be6f510"
+                },
+                {
+                    "blobSum": "sha256:e9ec730690589574b9d2af6ca53e2f7dfb948d833762f4c2477950b19c032392"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:e6c7cdd84a10535191159cf5293139c39f41627196a9edb7ca0771796ff480a6"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:420890c9e918b6668faaedd9000e220190f2493b0693ee563ebd7b4cc754a57d"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"b14cd8298755\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.17.2.0\",\"GODNSMASQ_VERSION=1.0.4\",\"CONFD_VERSION=0.11.0\",\"RABBITMQ_VERSION=3.6.1\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[],\"ArgsEscaped\":true,\"Image\":\"sha256:f54e9a2aea0b16cff8b048de0d067f8e20430a30b475db03d1ed4d8a7d86c75a\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"a312813b10674f77ad8a6ba199b8da5627a4a9972eb6b246ba38e540ab70561a\",\"container_config\":{\"Hostname\":\"b14cd8298755\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.17.2.0\",\"GODNSMASQ_VERSION=1.0.4\",\"CONFD_VERSION=0.11.0\",\"RABBITMQ_VERSION=3.6.1\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 15672/tcp 5672/tcp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:f54e9a2aea0b16cff8b048de0d067f8e20430a30b475db03d1ed4d8a7d86c75a\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-11T06:13:37.918255941Z\",\"docker_version\":\"1.10.2\",\"id\":\"449437f9885c39c64cf6eaabddccf2b2b36c942e06b3544a7d270f9f2c33cd59\",\"os\":\"linux\",\"parent\":\"f231eb58f0a8aaa8fcc649ed50da730032ef0d296ad48ea1e93f5076378d8186\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f231eb58f0a8aaa8fcc649ed50da730032ef0d296ad48ea1e93f5076378d8186\",\"parent\":\"ada3daeedc5edaca64a5a4512c8b6cc27a491a7c3e9c9ea6d292726b530df02a\",\"created\":\"2016-04-11T06:13:37.76615423Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/data/rabbitmq]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ada3daeedc5edaca64a5a4512c8b6cc27a491a7c3e9c9ea6d292726b530df02a\",\"parent\":\"a5676380ff4688cd30d542823ca896e73daea4325b6a04886c3587b46d02f62c\",\"created\":\"2016-04-11T06:13:37.667521066Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:87ce19402ecf6ed41c22085afc53251f2f8a066ed7c133a6e7f4328a0ec5e242 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a5676380ff4688cd30d542823ca896e73daea4325b6a04886c3587b46d02f62c\",\"parent\":\"a7f50601664c09921cc7787a7ca5ea7bece2172b3378e8020a521166b48e008c\",\"created\":\"2016-04-11T06:13:37.346608215Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --update --no-cache curl tar xz bash         erlang=${ERLANG_PKG_VERSION} erlang-mnesia=${ERLANG_PKG_VERSION}         erlang-public-key=${ERLANG_PKG_VERSION} erlang-crypto=${ERLANG_PKG_VERSION}         erlang-ssl=${ERLANG_PKG_VERSION} erlang-sasl=${ERLANG_PKG_VERSION}         erlang-asn1=${ERLANG_PKG_VERSION} erlang-inets=${ERLANG_PKG_VERSION}         erlang-os-mon=${ERLANG_PKG_VERSION} erlang-xmerl=${ERLANG_PKG_VERSION}         erlang-eldap=${ERLANG_PKG_VERSION} erlang-syntax-tools=${ERLANG_PKG_VERSION} \\u0026\\u0026     curl -sSL https://www.rabbitmq.com/releases/rabbitmq-server/v${RABBITMQ_VERSION}/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz | tar -xJ -C / --strip-components 1 \\u0026\\u0026     rm -rf /share/**/rabbitmq*.xz \\u0026\\u0026     apk del --purge curl tar xz \\u0026\\u0026     addgroup rabbitmq \\u0026\\u0026     adduser -DS -g \\\"\\\" -G rabbitmq -s /bin/sh -h /var/lib/rabbitmq rabbitmq \\u0026\\u0026     mkdir -p /data/rabbitmq \\u0026\\u0026     chown -R rabbitmq:rabbitmq /data/rabbitmq\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a7f50601664c09921cc7787a7ca5ea7bece2172b3378e8020a521166b48e008c\",\"parent\":\"9ebf644132e10faffbd7adee0f1a6d50b1b04d2ea345a3edbf36458092646c1d\",\"created\":\"2016-04-11T06:13:27.987482623Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV RABBITMQ_VERSION=3.6.1 ERLANG_PKG_VERSION=18.1-r5\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9ebf644132e10faffbd7adee0f1a6d50b1b04d2ea345a3edbf36458092646c1d\",\"parent\":\"7a3e21a7833afefd1e2d2565a4a7fcd14d1e5db5f944c7d3565e361c69b52627\",\"created\":\"2016-04-11T06:13:27.884329477Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7a3e21a7833afefd1e2d2565a4a7fcd14d1e5db5f944c7d3565e361c69b52627\",\"parent\":\"184f5ef3b4dba5ae0d5cc867f743c0249977cf724920b2b4d78d8acfe798e2a5\",\"created\":\"2016-04-07T13:10:54.218303148Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache go git gcc musl-dev \\u0026\\u0026     git clone https://github.com/kelseyhightower/confd.git /src/confd \\u0026\\u0026     cd /src/confd \\u0026\\u0026     git checkout -q --detach \\\"v$CONFD_VERSION\\\" \\u0026\\u0026     cd /src/confd/src/github.com/kelseyhightower/confd \\u0026\\u0026     GOPATH=/src/confd/vendor:/src/confd go build -a -installsuffix cgo -ldflags '-extld ld -extldflags -static' -x . \\u0026\\u0026     mv ./confd /bin/ \\u0026\\u0026     chmod +x /bin/confd \\u0026\\u0026     apk del go git gcc musl-dev \\u0026\\u0026     rm -rf /src\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"184f5ef3b4dba5ae0d5cc867f743c0249977cf724920b2b4d78d8acfe798e2a5\",\"parent\":\"6c2bc7df73cfc7d712047ea5bdcab20f2137e37b46310cae5b0fde8b8a0bb6a0\",\"created\":\"2016-04-07T13:09:52.919121401Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CONFD_VERSION=0.11.0\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6c2bc7df73cfc7d712047ea5bdcab20f2137e37b46310cae5b0fde8b8a0bb6a0\",\"parent\":\"ca9c5741748a6e64772fa46112ffedf27b8a2c179a77a9669308ed6e575485fc\",\"created\":\"2016-04-07T13:09:52.820421022Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ca9c5741748a6e64772fa46112ffedf27b8a2c179a77a9669308ed6e575485fc\",\"parent\":\"83beb2ac7b22701fd167aaa24a24110c76258ba54db25d8fd8cf4024f077eab2\",\"created\":\"2016-04-05T03:08:11.417510198Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD []\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"83beb2ac7b22701fd167aaa24a24110c76258ba54db25d8fd8cf4024f077eab2\",\"parent\":\"9362dae09b61ff17adeeb027458a66f94003d9a3eb6dd6d147b62bcaf8059371\",\"created\":\"2016-04-05T03:08:11.308782021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT \\u0026{[\\\"/init\\\"]}\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9362dae09b61ff17adeeb027458a66f94003d9a3eb6dd6d147b62bcaf8059371\",\"parent\":\"519ff635cd1f7aecfe856884486bfef4ebced4c7a5288b114301b574ae1eb379\",\"created\":\"2016-04-05T03:08:11.202976776Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:349c81198facb7f36d9eaf5d3cdb272787b00dabc5bb4cefd0c7d69e06491f30 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"519ff635cd1f7aecfe856884486bfef4ebced4c7a5288b114301b574ae1eb379\",\"parent\":\"ac067f2a507339e49778ad2a60892970494e13b50fc889262228b524af8a86ff\",\"created\":\"2016-04-05T03:08:10.9914449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache curl \\u0026\\u0026     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz     | tar xfz - -C / \\u0026\\u0026     curl -sSL https://github.com/janeczku/go-dnsmasq/releases/download/${GODNSMASQ_VERSION}/go-dnsmasq-min_linux-amd64 -o /bin/go-dnsmasq \\u0026\\u0026     chmod +x /bin/go-dnsmasq \\u0026\\u0026     apk del curl\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ac067f2a507339e49778ad2a60892970494e13b50fc889262228b524af8a86ff\",\"parent\":\"4eda7779801a3bfc77f54eeff39cfb6aea76cfd6d9b13222c7c3d8446061b329\",\"created\":\"2016-04-05T03:08:08.184065469Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV S6_OVERLAY_VERSION=v1.17.2.0 GODNSMASQ_VERSION=1.0.4\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4eda7779801a3bfc77f54eeff39cfb6aea76cfd6d9b13222c7c3d8446061b329\",\"parent\":\"bb7044f479acfd44704c849a7cbac982e9d8ced3b845a32e7f78ed59d338b790\",\"created\":\"2016-04-05T03:08:08.055885116Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache bind-tools\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"bb7044f479acfd44704c849a7cbac982e9d8ced3b845a32e7f78ed59d338b790\",\"parent\":\"1348eb573a47d363b35f3bf2ddb3df35b92b694824f159798d336bb16e78fac2\",\"created\":\"2016-04-05T03:08:06.185604954Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1348eb573a47d363b35f3bf2ddb3df35b92b694824f159798d336bb16e78fac2\",\"created\":\"2016-04-01T20:53:00.160300546Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:033ab063740d9ff4dcfb1c69eccf25f91d88729f57cd5a73050e014e3e094aa0 in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "4JHN:O6WA:7SFS:EYF3:WWXE:SYZH:5L37:BXCK:53DT:IQER:TUJY:Z4HA",
+                            "kty": "EC",
+                            "x": "pN5fqieMUWqv6bRwfdwl2S9TEm_93e6KrLvFBfPbN7Y",
+                            "y": "0nLFKrZ56zX2uude9kNec2q2b0WxMFsa3kwZIHxd3Hs"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "0CcIhUdxWe1_ujyUlU7KO1xj0b3cdw2043Z1Q-ExfgmG_HvypHS-f7u0Uph79af4lZlFswYjxSk-fOfLVZxUZA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjExNjg4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTU6NTg6MjNaIn0"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 1,
+            "name": "smebberson/alpine-rabbitmq",
+            "tag": "latest",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:2a088f8c2a881400d00bb293f4a91154e10b389895a2d2ce92f6dc5167e1c3db"
+                },
+                {
+                    "blobSum": "sha256:a87c3dc8d4dd2fe448420f8e7d12ee035c8e5e9ca1281d242d18cab6f3990d5e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:915a2008d959840b4f3a53015a85a2a9ef70613ec1af6002fbc9d3a0e2c50228"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:fd6f0c3cca8bda00953a34299b01063e2aaded46a96e2cc34b24dc7c0be6f510"
+                },
+                {
+                    "blobSum": "sha256:e9ec730690589574b9d2af6ca53e2f7dfb948d833762f4c2477950b19c032392"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:e6c7cdd84a10535191159cf5293139c39f41627196a9edb7ca0771796ff480a6"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:420890c9e918b6668faaedd9000e220190f2493b0693ee563ebd7b4cc754a57d"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\",\"config\":{\"Hostname\":\"b14cd8298755\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.17.2.0\",\"GODNSMASQ_VERSION=1.0.4\",\"CONFD_VERSION=0.11.0\",\"RABBITMQ_VERSION=3.6.1\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[],\"ArgsEscaped\":true,\"Image\":\"sha256:1604cda7d65bd78a56aa4b1702290160eebbf749403964e6bed19b97198f4535\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"e6e656176286046f2968ef79b5de5631833d6874bfd35825e1e333ab5be7c831\",\"container_config\":{\"Hostname\":\"b14cd8298755\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"15672/tcp\":{},\"5672/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"S6_OVERLAY_VERSION=v1.17.2.0\",\"GODNSMASQ_VERSION=1.0.4\",\"CONFD_VERSION=0.11.0\",\"RABBITMQ_VERSION=3.6.1\",\"ERLANG_PKG_VERSION=18.1-r5\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 15672/tcp 5672/tcp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1604cda7d65bd78a56aa4b1702290160eebbf749403964e6bed19b97198f4535\",\"Volumes\":{\"/data/rabbitmq\":{}},\"WorkingDir\":\"\",\"Entrypoint\":[\"/init\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-11T06:13:42.402713855Z\",\"docker_version\":\"1.10.2\",\"id\":\"9265162cd75178bb038426fc979fc38ac832ac454e2a93435661780064e8c3f7\",\"os\":\"linux\",\"parent\":\"56cdaf1004da0d87c7f660ff4ebb5e2d9a280dd018b1e15db355600aa1744425\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"56cdaf1004da0d87c7f660ff4ebb5e2d9a280dd018b1e15db355600aa1744425\",\"parent\":\"eda3b782cfdda88879921e79fa8cdd5d52318c2f213d47c2124c5594f5996c36\",\"created\":\"2016-04-11T06:13:42.291922289Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/data/rabbitmq]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"eda3b782cfdda88879921e79fa8cdd5d52318c2f213d47c2124c5594f5996c36\",\"parent\":\"6f07d87272ed595525cc55fb48c7233f0ec82da50bc4497a42f0fbb632098ca9\",\"created\":\"2016-04-11T06:13:42.154927544Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:87ce19402ecf6ed41c22085afc53251f2f8a066ed7c133a6e7f4328a0ec5e242 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6f07d87272ed595525cc55fb48c7233f0ec82da50bc4497a42f0fbb632098ca9\",\"parent\":\"a7f50601664c09921cc7787a7ca5ea7bece2172b3378e8020a521166b48e008c\",\"created\":\"2016-04-11T06:13:41.861422074Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --update --no-cache curl tar xz bash         erlang=${ERLANG_PKG_VERSION} erlang-mnesia=${ERLANG_PKG_VERSION}         erlang-public-key=${ERLANG_PKG_VERSION} erlang-crypto=${ERLANG_PKG_VERSION}         erlang-ssl=${ERLANG_PKG_VERSION} erlang-sasl=${ERLANG_PKG_VERSION}         erlang-asn1=${ERLANG_PKG_VERSION} erlang-inets=${ERLANG_PKG_VERSION}         erlang-os-mon=${ERLANG_PKG_VERSION} erlang-xmerl=${ERLANG_PKG_VERSION}         erlang-eldap=${ERLANG_PKG_VERSION} erlang-syntax-tools=${ERLANG_PKG_VERSION} \\u0026\\u0026     curl -sSL https://www.rabbitmq.com/releases/rabbitmq-server/v${RABBITMQ_VERSION}/rabbitmq-server-generic-unix-${RABBITMQ_VERSION}.tar.xz | tar -xJ -C / --strip-components 1 \\u0026\\u0026     rm -rf /share/**/rabbitmq*.xz \\u0026\\u0026     apk del --purge curl tar xz \\u0026\\u0026     addgroup rabbitmq \\u0026\\u0026     adduser -DS -g \\\"\\\" -G rabbitmq -s /bin/sh -h /var/lib/rabbitmq rabbitmq \\u0026\\u0026     mkdir -p /data/rabbitmq \\u0026\\u0026     chown -R rabbitmq:rabbitmq /data/rabbitmq\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a7f50601664c09921cc7787a7ca5ea7bece2172b3378e8020a521166b48e008c\",\"parent\":\"9ebf644132e10faffbd7adee0f1a6d50b1b04d2ea345a3edbf36458092646c1d\",\"created\":\"2016-04-11T06:13:31.247736099Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV RABBITMQ_VERSION=3.6.1 ERLANG_PKG_VERSION=18.1-r5\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9ebf644132e10faffbd7adee0f1a6d50b1b04d2ea345a3edbf36458092646c1d\",\"parent\":\"7a3e21a7833afefd1e2d2565a4a7fcd14d1e5db5f944c7d3565e361c69b52627\",\"created\":\"2016-04-11T06:13:31.136639393Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7a3e21a7833afefd1e2d2565a4a7fcd14d1e5db5f944c7d3565e361c69b52627\",\"parent\":\"184f5ef3b4dba5ae0d5cc867f743c0249977cf724920b2b4d78d8acfe798e2a5\",\"created\":\"2016-04-07T13:10:54.218303148Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache go git gcc musl-dev \\u0026\\u0026     git clone https://github.com/kelseyhightower/confd.git /src/confd \\u0026\\u0026     cd /src/confd \\u0026\\u0026     git checkout -q --detach \\\"v$CONFD_VERSION\\\" \\u0026\\u0026     cd /src/confd/src/github.com/kelseyhightower/confd \\u0026\\u0026     GOPATH=/src/confd/vendor:/src/confd go build -a -installsuffix cgo -ldflags '-extld ld -extldflags -static' -x . \\u0026\\u0026     mv ./confd /bin/ \\u0026\\u0026     chmod +x /bin/confd \\u0026\\u0026     apk del go git gcc musl-dev \\u0026\\u0026     rm -rf /src\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"184f5ef3b4dba5ae0d5cc867f743c0249977cf724920b2b4d78d8acfe798e2a5\",\"parent\":\"6c2bc7df73cfc7d712047ea5bdcab20f2137e37b46310cae5b0fde8b8a0bb6a0\",\"created\":\"2016-04-07T13:09:52.919121401Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CONFD_VERSION=0.11.0\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6c2bc7df73cfc7d712047ea5bdcab20f2137e37b46310cae5b0fde8b8a0bb6a0\",\"parent\":\"ca9c5741748a6e64772fa46112ffedf27b8a2c179a77a9669308ed6e575485fc\",\"created\":\"2016-04-07T13:09:52.820421022Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ca9c5741748a6e64772fa46112ffedf27b8a2c179a77a9669308ed6e575485fc\",\"parent\":\"83beb2ac7b22701fd167aaa24a24110c76258ba54db25d8fd8cf4024f077eab2\",\"created\":\"2016-04-05T03:08:11.417510198Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD []\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"83beb2ac7b22701fd167aaa24a24110c76258ba54db25d8fd8cf4024f077eab2\",\"parent\":\"9362dae09b61ff17adeeb027458a66f94003d9a3eb6dd6d147b62bcaf8059371\",\"created\":\"2016-04-05T03:08:11.308782021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT \\u0026{[\\\"/init\\\"]}\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9362dae09b61ff17adeeb027458a66f94003d9a3eb6dd6d147b62bcaf8059371\",\"parent\":\"519ff635cd1f7aecfe856884486bfef4ebced4c7a5288b114301b574ae1eb379\",\"created\":\"2016-04-05T03:08:11.202976776Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:349c81198facb7f36d9eaf5d3cdb272787b00dabc5bb4cefd0c7d69e06491f30 in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"519ff635cd1f7aecfe856884486bfef4ebced4c7a5288b114301b574ae1eb379\",\"parent\":\"ac067f2a507339e49778ad2a60892970494e13b50fc889262228b524af8a86ff\",\"created\":\"2016-04-05T03:08:10.9914449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache curl \\u0026\\u0026     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz     | tar xfz - -C / \\u0026\\u0026     curl -sSL https://github.com/janeczku/go-dnsmasq/releases/download/${GODNSMASQ_VERSION}/go-dnsmasq-min_linux-amd64 -o /bin/go-dnsmasq \\u0026\\u0026     chmod +x /bin/go-dnsmasq \\u0026\\u0026     apk del curl\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ac067f2a507339e49778ad2a60892970494e13b50fc889262228b524af8a86ff\",\"parent\":\"4eda7779801a3bfc77f54eeff39cfb6aea76cfd6d9b13222c7c3d8446061b329\",\"created\":\"2016-04-05T03:08:08.184065469Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV S6_OVERLAY_VERSION=v1.17.2.0 GODNSMASQ_VERSION=1.0.4\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4eda7779801a3bfc77f54eeff39cfb6aea76cfd6d9b13222c7c3d8446061b329\",\"parent\":\"bb7044f479acfd44704c849a7cbac982e9d8ced3b845a32e7f78ed59d338b790\",\"created\":\"2016-04-05T03:08:08.055885116Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache bind-tools\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"bb7044f479acfd44704c849a7cbac982e9d8ced3b845a32e7f78ed59d338b790\",\"parent\":\"1348eb573a47d363b35f3bf2ddb3df35b92b694824f159798d336bb16e78fac2\",\"created\":\"2016-04-05T03:08:06.185604954Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Scott Mebberson \\u003cscott@scottmebberson.com\\u003e\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1348eb573a47d363b35f3bf2ddb3df35b92b694824f159798d336bb16e78fac2\",\"created\":\"2016-04-01T20:53:00.160300546Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:033ab063740d9ff4dcfb1c69eccf25f91d88729f57cd5a73050e014e3e094aa0 in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "5ON6:YSAF:G6C2:HYKT:DWVJ:VZAR:4HPT:UMOR:UWEM:WGPN:AILU:622E",
+                            "kty": "EC",
+                            "x": "3yVVl9SEcPzOtFmuUSFIISjHVNMFQnPWwQgoeoeuD5U",
+                            "y": "piDUEX6l8N6wtB-dA9If_8p2pKA6uUZz4gg6CpoIypA"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "Awm4YEXsTGTF_jl8LvoF6a0NB593xDHLnjKm05py0zW5-8Pe_GbhkRcVXKhrZErmPQmm3DwAaqqsPdx4e6CP5g",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjExNjkwLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTU6NTg6MjRaIn0"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.0.0",
+        "2.0.0",
+        "2.1.0",
+        "2.1.1",
+        "latest"
+    ],
+    "configs": {}
+}

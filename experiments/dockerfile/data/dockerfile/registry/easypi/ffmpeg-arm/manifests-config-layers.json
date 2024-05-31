@@ -1,0 +1,143 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2425,
+                "digest": "sha256:319655f4dc21d27831ee1d08ad5ddd4b1156974549a8085d87ebdf271b66bddf"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2407555,
+                    "digest": "sha256:c58e8a26a8407acc3ead776f6526efa889fda03270a8d05109208d9f59159420"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 18516347,
+                    "digest": "sha256:83d104b42e6856855940323149204b093eed2d3ae700bdcd9c9d306a7ebedf68"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 125,
+                    "digest": "sha256:70dda6cb050e9fd81df4982479c5ea47a8785de923d21e2694dd9e6162868049"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "arm",
+            "author": "EasyPi Software Foundation",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "--help"
+                ],
+                "Image": "sha256:93b15de72553a5230fb30014b0e0fe070aebab133cbaab633a2bd9bd4dab0435",
+                "Volumes": null,
+                "WorkingDir": "/data",
+                "Entrypoint": [
+                    "ffmpeg"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "088119d9b8be8f84a8d44fa2ea21c988efd35e8b96582929ddde9e3eb92a8a5a",
+            "container_config": {
+                "Hostname": "088119d9b8be",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"--help\"]"
+                ],
+                "Image": "sha256:93b15de72553a5230fb30014b0e0fe070aebab133cbaab633a2bd9bd4dab0435",
+                "Volumes": null,
+                "WorkingDir": "/data",
+                "Entrypoint": [
+                    "ffmpeg"
+                ],
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2021-02-08T07:35:47.472802082Z",
+            "docker_version": "20.10.2",
+            "history": [
+                {
+                    "created": "2020-12-16T23:58:14.671390111Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:bd07f77a2b2741ca6bda80d9203be9c7274cf73145bff778cf000db0d8d4e903 in / "
+                },
+                {
+                    "created": "2020-12-16T23:58:15.972713651Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-02-01T05:17:25.7696356Z",
+                    "author": "EasyPi Software Foundation",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER EasyPi Software Foundation",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-02-08T07:35:44.133641556Z",
+                    "author": "EasyPi Software Foundation",
+                    "created_by": "/bin/sh -c apk add --no-cache ffmpeg"
+                },
+                {
+                    "created": "2021-02-08T07:35:46.242074604Z",
+                    "author": "EasyPi Software Foundation",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /data"
+                },
+                {
+                    "created": "2021-02-08T07:35:46.831010534Z",
+                    "author": "EasyPi Software Foundation",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"ffmpeg\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-02-08T07:35:47.472802082Z",
+                    "author": "EasyPi Software Foundation",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"--help\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:72bbe6b5204e7df9466d6597c4888cf950f0b379bf476a76925feabf17e94aa9",
+                    "sha256:dcbac746242ec46771397c8c5fed4dfe5bce35f736993e38aa5658d776b5dac1",
+                    "sha256:8911b7364a25f0270957360dba03f9f9af343c10218f2ed77e3ecda486c20607"
+                ]
+            }
+        }
+    }
+}

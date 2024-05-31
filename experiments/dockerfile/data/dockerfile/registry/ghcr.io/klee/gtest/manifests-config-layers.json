@@ -1,0 +1,141 @@
+{
+    "manifests": {
+        "1.11.0_ubuntu_jammy-20230126": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2638,
+                "digest": "sha256:a3a25392e49208cbcdc57d6fdcfc33f7c5d05f5cb66b18defd2abbd05ea3c383"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29528717,
+                    "digest": "sha256:677076032cca0a2362d25cf3660072e738d1b96fe860409a33ce901d695d7ee8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 890076,
+                    "digest": "sha256:5de39b2ede57ff603842f41fb552e0e58a3be9fc05a2bf108ae9056be31935d7"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.11.0_ubuntu_jammy-20230126"
+    ],
+    "configs": {
+        "1.11.0_ubuntu_jammy-20230126": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:7f0db8ad3456077ddc0809d2a733ad97047109e87d0729fa35ea2f91ba8d1107",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "KLEE Developers",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                }
+            },
+            "container": "7317f759563d0b82fc9c9d901731b76ffc57df17b1dfd9d1162e128097c73467",
+            "container_config": {
+                "Hostname": "7317f759563d",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "LABEL maintainer=KLEE Developers"
+                ],
+                "Image": "sha256:7f0db8ad3456077ddc0809d2a733ad97047109e87d0729fa35ea2f91ba8d1107",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "KLEE Developers",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                }
+            },
+            "created": "2023-02-14T17:35:12.455053895Z",
+            "docker_version": "20.10.22",
+            "history": [
+                {
+                    "created": "2023-01-26T04:57:59.893830181Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:57:59.959936538Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.031088326Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.098806406Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:02.097080644Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:18e71f049606f6339ce7a995839623f50e6ec6474bfd0a3a7ca799db726f47f6 in / "
+                },
+                {
+                    "created": "2023-01-26T04:58:02.385638665Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-14T17:35:12.067115605Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:adf5d72a8fd6e9bebbefbaa839b2884f8940a6ef7d1d1d03528d0396859c22ba in /tmp/googletest-release-1.11.0 "
+                },
+                {
+                    "created": "2023-02-14T17:35:12.455053895Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=KLEE Developers",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c5ff2d88f67954bdcf1cfdd46fe3d683858d69c2cadd6660812edfc83726c654",
+                    "sha256:dc2d423a81f4922592486be38c7263b23fe058aafdd46ac5c3239c44a454a679"
+                ]
+            }
+        }
+    }
+}

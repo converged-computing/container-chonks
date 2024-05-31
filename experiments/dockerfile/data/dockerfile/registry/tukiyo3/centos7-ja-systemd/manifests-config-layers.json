@@ -1,0 +1,196 @@
+{
+    "manifests": {
+        "ansible": {
+            "schemaVersion": 1,
+            "name": "tukiyo3/centos7-ja-systemd",
+            "tag": "ansible",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:b159e913a7bc34269319874adcd06270365809ad258c1b7005e415a2a185a09a"
+                },
+                {
+                    "blobSum": "sha256:1775fca35fb6a4d31c541746eaea63c5cb3c00280c8b5a351d4e944cdca7489d"
+                },
+                {
+                    "blobSum": "sha256:1775fca35fb6a4d31c541746eaea63c5cb3c00280c8b5a351d4e944cdca7489d"
+                },
+                {
+                    "blobSum": "sha256:9b0458e66a4b2e13b4f54a77ccb2cfa719029ff1bbb380060d04cb4e50faece9"
+                },
+                {
+                    "blobSum": "sha256:04773c6168fdc1f040e02db2e87befe9ad692d3c897287750baa111c588cc065"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"b6141c49eb058fc999bc288b757947ce156cf9b986b1d049c15ba529a6ef9776\",\"parent\":\"8b0ef8f19ace6deb9015a612e3bc7f4ec8fb992eff9c0d66176d0aadcc180f84\",\"created\":\"2014-10-27T02:24:33.143782382Z\",\"container\":\"634db06b9b5cec01295d5945e553f641f45f4e06c88ea9d986259f50761adcb5\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"exec \\u003e\\u0026 /root/build-ansible.log ;  set -eux ;  yum install -y ansible git tig vim-enhanced screen openssh-server net-tools ack wget sudo ;  yum clean all\"],\"Image\":\"8b0ef8f19ace6deb9015a612e3bc7f4ec8fb992eff9c0d66176d0aadcc180f84\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/init\"],\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":null,\"Image\":\"8b0ef8f19ace6deb9015a612e3bc7f4ec8fb992eff9c0d66176d0aadcc180f84\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/init\"],\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":283269404}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8b0ef8f19ace6deb9015a612e3bc7f4ec8fb992eff9c0d66176d0aadcc180f84\",\"parent\":\"b4361ba604cab20714f563b4059334c4ea86752f2272f2db85b3da538d442cbd\",\"created\":\"2014-10-27T02:12:17.308408572Z\",\"container\":\"b6dfd1ded9fa4491089f26763e30eba0fac42530056bd203bfe15e769ab6082a\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT [/sbin/init]\"],\"Image\":\"b4361ba604cab20714f563b4059334c4ea86752f2272f2db85b3da538d442cbd\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/init\"],\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":null,\"Image\":\"b4361ba604cab20714f563b4059334c4ea86752f2272f2db85b3da538d442cbd\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/init\"],\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b4361ba604cab20714f563b4059334c4ea86752f2272f2db85b3da538d442cbd\",\"parent\":\"935469febe51223f600451ee126dfa3025510f8ba2b44830639d80326e1feea6\",\"created\":\"2014-10-27T02:12:14.740546543Z\",\"container\":\"dfcd218c2df8fe583c4faa2f37b7bcdd8c6bee7e8c8897c933327668b9e53527\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV LANG=ja_JP.UTF-8\"],\"Image\":\"935469febe51223f600451ee126dfa3025510f8ba2b44830639d80326e1feea6\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":null,\"Image\":\"935469febe51223f600451ee126dfa3025510f8ba2b44830639d80326e1feea6\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"935469febe51223f600451ee126dfa3025510f8ba2b44830639d80326e1feea6\",\"parent\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"created\":\"2014-10-27T02:12:11.578354116Z\",\"container\":\"ed2fb36bbf9c9f06affd30d7b0a4f43fd7e448fbad11fcbf41c0d5968dc757f5\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"exec \\u003e\\u0026 /root/build.log ;  set -eux ;  yum swap -y fakesystemd systemd ;  unlink /etc/localtime ;  ln -s /usr/share/zoneinfo/Japan /etc/localtime ;  localedef -f UTF-8 -i ja_JP ja_JP.UTF-8 ;  touch /etc/rc.d/init.d/functions ;  yum install -y epel-release ;  rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm ;  yum clean all\"],\"Image\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":35428148}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"parent\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"created\":\"2014-10-01T20:46:20.364145577Z\",\"container\":\"6cc6bbfa18d1772e5a086154c7cf8a471bb1d23c62d7bf1b352aa039edbb73ed\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:9b13ab24098a9148d6585fcbe0e762470fddb9b660de8431125bf8a834dbe593 in /\"],\"Image\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":223996162}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"parent\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"created\":\"2014-10-01T20:46:13.51090041Z\",\"container\":\"fed991d241a9e03e1b38c985a9b9300d144b375c7ff41d5f3c49b27d6250e16d\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\"],\"Image\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"comment\":\"Imported from -\",\"created\":\"2013-06-13T14:03:50.821769-07:00\",\"container_config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"0.4.0\",\"architecture\":\"x86_64\",\"Size\":0}\n"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "G5Y5:SNHT:SRYO:WMFL:JC56:5RIV:PUC3:J6CX:JQ7U:KMV2:SLA3:5NCI",
+                            "kty": "EC",
+                            "x": "fYdz37_kd-4PZQV-UzwkXLyr3-sNTCsQSNYEganZ8s4",
+                            "y": "S5JszP1MDTC5ExFwHvjxuZmlALSzxX3XeHCLzQNGoaM"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "Kal9_P52_uKpZGwZhZNOy_KAtmKHOePTL7U_51Mo6vYhNQZTZjiVE7LQbMLuBEn153s6F0O0dry8A32_oI0GiA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjEyMzQ5LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTA6MDQ6MDVaIn0"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 1,
+            "name": "tukiyo3/centos7-ja-systemd",
+            "tag": "latest",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:83c26ef207a6afc285763f8797e1f6b60a2c39eb5f47af912a21df3d914022d4"
+                },
+                {
+                    "blobSum": "sha256:04773c6168fdc1f040e02db2e87befe9ad692d3c897287750baa111c588cc065"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"Size\":0,\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"f3eb9ea41375ee181015450839b58cbeefbb7d9e85256b288247696f5a5e7e40\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/init\"],\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"container\":\"f6e90746e02112bcb3591f68397ead343caf16ea0c15c1af390a7ef0cf1f5094\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT [/sbin/init]\"],\"Image\":\"f3eb9ea41375ee181015450839b58cbeefbb7d9e85256b288247696f5a5e7e40\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/init\"],\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"created\":\"2014-11-01T20:31:57.122114921Z\",\"docker_version\":\"1.3.1\",\"id\":\"072a992a080a83f3300f6d4db6d2b5b14174354f6c671b17f7e86741d317c6d1\",\"os\":\"linux\",\"parent\":\"4e939a9d547e8dd480ff51292ba684f1fae4c0f76913f5c8968279bfa3d99daa\"}"
+                },
+                {
+                    "v1Compatibility": "{\"Size\":95204919,\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"container\":\"9cdfd624eae98a6e85660783909686e53e3ee6eda52d113a91b9edd01cfac4c6\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"exec \\u003e\\u0026 /root/build-systemd.log ;  set -eux ;  yum swap -y fakesystemd systemd initscripts epel-release vim ;  unlink /etc/localtime ;  ln -s /usr/share/zoneinfo/Japan /etc/localtime ;  localedef -f UTF-8 -i ja_JP ja_JP.UTF-8 ;  rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm ;  yum clean all ;  echo ;  echo \\\"export HOME=/root\\\" \\u003e /root/.bashrc ;  echo \\\"export EDITOR=vim\\\" \\u003e\\u003e /root/.bashrc ;  echo \\\"export LANG=ja_JP.UTF-8\\\" \\u003e\\u003e /root/.bashrc ;  echo \\\"alias ls='ls --color'\\\" \\u003e\\u003e /root/.bashrc ;  echo \\\"alias vi='vim -p'\\\" \\u003e\\u003e /root/.bashrc ;  echo \\\"alias vim='vim -p'\\\" \\u003e\\u003e /root/.bashrc ;  echo ;  echo \\\"set smartindent\\\" \\u003e /root/.vimrc ;  echo \\\"set nowrapscan\\\" \\u003e\\u003e /root/.vimrc ;  echo \\\"set nowrap\\\" \\u003e\\u003e /root/.vimrc ;  echo \\\"set nu\\\" \\u003e\\u003e /root/.vimrc ;  echo \\\"colorscheme desert\\\" \\u003e\\u003e /root/.vimrc ;  echo \\\"highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=22\\\" \\u003e\\u003e /root/.vimrc ;  echo \\\"highlight DiffDelete cterm=bold ctermfg=10 ctermbg=52\\\" \\u003e\\u003e /root/.vimrc ;  echo \\\"highlight DiffChange cterm=bold ctermfg=10 ctermbg=17\\\" \\u003e\\u003e /root/.vimrc ;  echo \\\"highlight DiffText   cterm=bold ctermfg=10 ctermbg=21\\\" \\u003e\\u003e /root/.vimrc ;  echo ;  echo \\\"[user]\\\" \\u003e /root/.gitconfig ;  echo \\\"\\temail = root@localhost.localdomain\\\" \\u003e\\u003e /root/.gitconfig ;  echo \\\"\\tname = root\\\" \\u003e\\u003e /root/.gitconfig ;  echo \\\"[info] done.\\\"\"],\"Image\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"created\":\"2014-11-01T20:31:53.421265927Z\",\"docker_version\":\"1.3.1\",\"id\":\"4e939a9d547e8dd480ff51292ba684f1fae4c0f76913f5c8968279bfa3d99daa\",\"os\":\"linux\",\"parent\":\"6ee405986e7885d679ba65223e1d27f55baacafbaf33365f44fa743d44456956\"}"
+                },
+                {
+                    "v1Compatibility": "{\"Size\":223996162,\"architecture\":\"amd64\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"container\":\"6cc6bbfa18d1772e5a086154c7cf8a471bb1d23c62d7bf1b352aa039edbb73ed\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:9b13ab24098a9148d6585fcbe0e762470fddb9b660de8431125bf8a834dbe593 in /\"],\"Image\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"created\":\"2014-10-01T20:46:20.364145577Z\",\"docker_version\":\"1.2.0\",\"id\":\"6ee405986e7885d679ba65223e1d27f55baacafbaf33365f44fa743d44456956\",\"os\":\"linux\",\"parent\":\"85d143815933776c56cec04736f8f93898c4c850be948b182344fc3819565837\"}"
+                },
+                {
+                    "v1Compatibility": "{\"Size\":0,\"architecture\":\"amd64\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"container\":\"fed991d241a9e03e1b38c985a9b9300d144b375c7ff41d5f3c49b27d6250e16d\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\"],\"Image\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"created\":\"2014-10-01T20:46:13.51090041Z\",\"docker_version\":\"1.2.0\",\"id\":\"85d143815933776c56cec04736f8f93898c4c850be948b182344fc3819565837\",\"os\":\"linux\",\"parent\":\"f8e60071b62d0678142d3b8293287e9db66b60d308d16ed97759ae042e976ab6\"}"
+                },
+                {
+                    "v1Compatibility": "{\"Size\":0,\"architecture\":\"x86_64\",\"comment\":\"Imported from -\",\"container_config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"created\":\"2013-06-13T14:03:50.821769-07:00\",\"docker_version\":\"0.4.0\",\"id\":\"f8e60071b62d0678142d3b8293287e9db66b60d308d16ed97759ae042e976ab6\"}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "X4QR:EPMP:2AGO:6IEH:6H4Z:EP5D:HKDS:NIVV:ZY77:6X4Y:SWAA:MUSF",
+                            "kty": "EC",
+                            "x": "704mnS7bQFMho9JLOAZKKf_g-TtMOiVT_oDnpavsfQk",
+                            "y": "CtaeHUzqtvcsmJR21xbl0dkjnlOH2mspiqa15AJZ3yU"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "FvuXwlX9YOEHw7vwWDdHlkwbAruZJY56M118Uf_VCVH3JcrF3Kw1LqjMol81q0CCE-0if8pKjx0YDzvR9zzR0A",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjk4NDUsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxMDowNDowNloifQ"
+                }
+            ]
+        },
+        "systemd": {
+            "schemaVersion": 1,
+            "name": "tukiyo3/centos7-ja-systemd",
+            "tag": "systemd",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:1775fca35fb6a4d31c541746eaea63c5cb3c00280c8b5a351d4e944cdca7489d"
+                },
+                {
+                    "blobSum": "sha256:1775fca35fb6a4d31c541746eaea63c5cb3c00280c8b5a351d4e944cdca7489d"
+                },
+                {
+                    "blobSum": "sha256:bb2ac0b1a8a54e3ffc28b1f87864212504b32165820cb392a5d3e60bd987fe84"
+                },
+                {
+                    "blobSum": "sha256:04773c6168fdc1f040e02db2e87befe9ad692d3c897287750baa111c588cc065"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"28a3fdb42bf09993c0ff3936892653d971a738ec3d90c83a83e2e411cbb5ed7f\",\"parent\":\"017b3453ad8bdd6cfc72fc2761d522bd8438b7113eb1000149ec9703ae196349\",\"created\":\"2014-10-27T02:32:41.130004074Z\",\"container\":\"c6dfbc631c8833d6175c1547e97e652ccad419b9d00e1065f7b8909c78944904\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT [/sbin/init]\"],\"Image\":\"017b3453ad8bdd6cfc72fc2761d522bd8438b7113eb1000149ec9703ae196349\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/init\"],\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":null,\"Image\":\"017b3453ad8bdd6cfc72fc2761d522bd8438b7113eb1000149ec9703ae196349\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/init\"],\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"017b3453ad8bdd6cfc72fc2761d522bd8438b7113eb1000149ec9703ae196349\",\"parent\":\"0595e16e980d03d178e2b45c90e9b6f3b3138296dd1038eec1bea5904d7dd9b3\",\"created\":\"2014-10-27T02:32:38.777461016Z\",\"container\":\"740566c34a676690aff7c96d5746a8f1e92afa3f438b943a04ae899147dab933\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV LANG=ja_JP.UTF-8\"],\"Image\":\"0595e16e980d03d178e2b45c90e9b6f3b3138296dd1038eec1bea5904d7dd9b3\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=ja_JP.UTF-8\"],\"Cmd\":null,\"Image\":\"0595e16e980d03d178e2b45c90e9b6f3b3138296dd1038eec1bea5904d7dd9b3\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0595e16e980d03d178e2b45c90e9b6f3b3138296dd1038eec1bea5904d7dd9b3\",\"parent\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"created\":\"2014-10-27T02:32:36.212757Z\",\"container\":\"ae471e21afc30aa1a42c0d040e38af7e947fa3b6f9fd0eb577284969dedd229b\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"exec \\u003e\\u0026 /root/build-systemd.log ;  set -eux ;  yum swap -y fakesystemd systemd initscripts epel-release ;  unlink /etc/localtime ;  ln -s /usr/share/zoneinfo/Japan /etc/localtime ;  localedef -f UTF-8 -i ja_JP ja_JP.UTF-8 ;  touch /etc/rc.d/init.d/functions ;  rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm ;  yum clean all\"],\"Image\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":36914957}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"87e5b6b3ccc119ebfe9344583fb3f77804d6e3d9a3553d916fbf807028310e8e\",\"parent\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"created\":\"2014-10-01T20:46:20.364145577Z\",\"container\":\"6cc6bbfa18d1772e5a086154c7cf8a471bb1d23c62d7bf1b352aa039edbb73ed\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:9b13ab24098a9148d6585fcbe0e762470fddb9b660de8431125bf8a834dbe593 in /\"],\"Image\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":223996162}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5b12ef8fd57065237a6833039acc0e7f68e363c15d8abb5cacce7143a1f7de8a\",\"parent\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"created\":\"2014-10-01T20:46:13.51090041Z\",\"container\":\"fed991d241a9e03e1b38c985a9b9300d144b375c7ff41d5f3c49b27d6250e16d\",\"container_config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\"],\"Image\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.2.0\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e - ami_creator\",\"config\":{\"Hostname\":\"fed991d241a9\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"comment\":\"Imported from -\",\"created\":\"2013-06-13T14:03:50.821769-07:00\",\"container_config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"0.4.0\",\"architecture\":\"x86_64\",\"Size\":0}\n"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "ZSCK:ZRQQ:WB3D:MMWQ:LW7E:RH6T:7WOC:AG5D:VKGB:67YL:ZAOU:AE36",
+                            "kty": "EC",
+                            "x": "G9VBUQ5LhOFUIdcY-folmBkrAA5h5eYklsmSrmMkjj8",
+                            "y": "sY9E9-jXtDqnyYXVgnteb9cvsCP5_vemrG0BWS5sEKg"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "LHAejW5QejKEXWgCOj_UIs6BBGbSi23KjcgU3S1iWSQRf5Mnb6Nmn4RUxxjYb1SpB8wEFHmcScRbgiw1u31KAA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjEwNDAwLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMTA6MDQ6MDdaIn0"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "ansible",
+        "latest",
+        "systemd"
+    ],
+    "configs": {}
+}

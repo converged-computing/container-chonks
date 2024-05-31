@@ -1,0 +1,593 @@
+{
+    "manifests": {
+        "11": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5186,
+                "digest": "sha256:a240ec4882cb0760072c4e5cd64c25dd317a0c4c74b7024b6740baad319c5684"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 75863188,
+                    "digest": "sha256:75f829a71a1c5277a7abf55495ac8d16759691d980bf1d931795e5eb68a294c0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10787837,
+                    "digest": "sha256:7b11f246b3d389c3a1dc3c6f025fde3ff70cd8a4c8c0ed9b415abbdc62b4278e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2037,
+                    "digest": "sha256:b765648c2a586e99c71375471b09d121dbb6e34028f62bb1bea8dbe15068b89e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 80631332,
+                    "digest": "sha256:506aff4a9c5a9a14eea7d0a2885e7e9dcc3e2c3bfa92b8f06238367ee834266c"
+                }
+            ]
+        },
+        "7": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5188,
+                "digest": "sha256:5193615a02a2a6aff73b0312ddc9144372a130136a659d3a5231ca18da96c53d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 75863188,
+                    "digest": "sha256:75f829a71a1c5277a7abf55495ac8d16759691d980bf1d931795e5eb68a294c0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10787837,
+                    "digest": "sha256:7b11f246b3d389c3a1dc3c6f025fde3ff70cd8a4c8c0ed9b415abbdc62b4278e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2037,
+                    "digest": "sha256:b765648c2a586e99c71375471b09d121dbb6e34028f62bb1bea8dbe15068b89e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 81931207,
+                    "digest": "sha256:c0aab07424b58155cb3823bfb8d82f3d2c984442a133031ad0247eca98e72f8d"
+                }
+            ]
+        },
+        "8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5189,
+                "digest": "sha256:b0802b3eccf0fe955c64a98840276b7b5ac8af44a8f45bbe60e794afff320047"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 75863188,
+                    "digest": "sha256:75f829a71a1c5277a7abf55495ac8d16759691d980bf1d931795e5eb68a294c0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10787837,
+                    "digest": "sha256:7b11f246b3d389c3a1dc3c6f025fde3ff70cd8a4c8c0ed9b415abbdc62b4278e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2037,
+                    "digest": "sha256:b765648c2a586e99c71375471b09d121dbb6e34028f62bb1bea8dbe15068b89e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 87535098,
+                    "digest": "sha256:3672c49587a4b8408a334d374b01b6a5437a4f8056f626495243b5572a2abb21"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "11",
+        "7",
+        "8"
+    ],
+    "configs": {
+        "11": {
+            "architecture": "amd64",
+            "author": "Marek Goldmann <mgoldman@redhat.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "jboss",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/lib/jvm/java"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:8622c2b3543bc988198a580000752b41bc9ca9261dfe8074061faa7a6c770004",
+                "Volumes": null,
+                "WorkingDir": "/opt/jboss",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20200809",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-08-09 00:00:00+01:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "7a98b0cca3afdaed41ac269f71198e303ec70163ea3264eeb41ea90effff2abe",
+            "container_config": {
+                "Hostname": "7a98b0cca3af",
+                "Domainname": "",
+                "User": "jboss",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/lib/jvm/java"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV JAVA_HOME=/usr/lib/jvm/java"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:8622c2b3543bc988198a580000752b41bc9ca9261dfe8074061faa7a6c770004",
+                "Volumes": null,
+                "WorkingDir": "/opt/jboss",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20200809",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-08-09 00:00:00+01:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2020-09-07T08:50:54.225497876Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2020-08-10T18:20:08.948813347Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:61908381d3142ffba798ae9a904476d19b197ab79d0338f14bec0f76649df8d4 in / "
+                },
+                {
+                    "created": "2020-08-10T18:20:09.298928893Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20200809 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-08-09 00:00:00+01:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-08-10T18:20:09.474278304Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:43:01.839486024Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Marek Goldmann <mgoldman@redhat.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:43:13.969410759Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c yum update -y && yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all"
+                },
+                {
+                    "created": "2020-09-07T08:43:15.488843462Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c groupadd -r jboss -g 1000 && useradd -u 1000 -r -g jboss -m -d /opt/jboss -s /sbin/nologin -c \"JBoss user\" jboss &&     chmod 755 /opt/jboss"
+                },
+                {
+                    "created": "2020-09-07T08:43:15.794580872Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /opt/jboss",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:43:16.076293057Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  USER jboss",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:50:21.530236406Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Marek Goldmann <mgoldman@redhat.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:50:21.821987979Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:50:53.478720537Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c yum -y install java-11-openjdk-devel && yum clean all"
+                },
+                {
+                    "created": "2020-09-07T08:50:53.951149274Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  USER jboss",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:50:54.225497876Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:613be09ab3c0860a5216936f412f09927947012f86bfa89b263dfa087a725f81",
+                    "sha256:115463be137a0574052941cb2acf1b9b8e848f8b335bc5a81d48e55a717b9da3",
+                    "sha256:3fbe1e874b0d6308c4cda289677c8fe30f5edcc457ce93efcabac45938160ec8",
+                    "sha256:869989761eb2743b74259c959501a857c9a3f9a97aaea261f99eb08b427099d7"
+                ]
+            }
+        },
+        "7": {
+            "architecture": "amd64",
+            "author": "Marek Goldmann <mgoldman@redhat.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "jboss",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/lib/jvm/java"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:7d6c70d25d22e9f6fee3e8075e6ecd50e02fe1edea7aaffc9ac9ff0c75ec8d80",
+                "Volumes": null,
+                "WorkingDir": "/opt/jboss",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20200809",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-08-09 00:00:00+01:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "ac3c91bacff99e363e156f5fb1b70672572015c6893f2f5dea7fa37d921fc150",
+            "container_config": {
+                "Hostname": "ac3c91bacff9",
+                "Domainname": "",
+                "User": "jboss",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/lib/jvm/java"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV JAVA_HOME=/usr/lib/jvm/java"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:7d6c70d25d22e9f6fee3e8075e6ecd50e02fe1edea7aaffc9ac9ff0c75ec8d80",
+                "Volumes": null,
+                "WorkingDir": "/opt/jboss",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20200809",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-08-09 00:00:00+01:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2020-09-07T08:54:43.317102374Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2020-08-10T18:20:08.948813347Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:61908381d3142ffba798ae9a904476d19b197ab79d0338f14bec0f76649df8d4 in / "
+                },
+                {
+                    "created": "2020-08-10T18:20:09.298928893Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20200809 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-08-09 00:00:00+01:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-08-10T18:20:09.474278304Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:43:01.839486024Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Marek Goldmann <mgoldman@redhat.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:43:13.969410759Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c yum update -y && yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all"
+                },
+                {
+                    "created": "2020-09-07T08:43:15.488843462Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c groupadd -r jboss -g 1000 && useradd -u 1000 -r -g jboss -m -d /opt/jboss -s /sbin/nologin -c \"JBoss user\" jboss &&     chmod 755 /opt/jboss"
+                },
+                {
+                    "created": "2020-09-07T08:43:15.794580872Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /opt/jboss",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:43:16.076293057Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  USER jboss",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:53:55.769324696Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Marek Goldmann <mgoldman@redhat.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:53:56.029771368Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:54:42.627977092Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c yum -y install java-1.7.0-openjdk-devel && yum clean all"
+                },
+                {
+                    "created": "2020-09-07T08:54:43.10428641Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  USER jboss",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:54:43.317102374Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:613be09ab3c0860a5216936f412f09927947012f86bfa89b263dfa087a725f81",
+                    "sha256:115463be137a0574052941cb2acf1b9b8e848f8b335bc5a81d48e55a717b9da3",
+                    "sha256:3fbe1e874b0d6308c4cda289677c8fe30f5edcc457ce93efcabac45938160ec8",
+                    "sha256:d1ae947d1e564bbdaa89704db279b5846c51792c0e6bca9d5629b6419ee53d08"
+                ]
+            }
+        },
+        "8": {
+            "architecture": "amd64",
+            "author": "Marek Goldmann <mgoldman@redhat.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "jboss",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/lib/jvm/java"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:414d104595171f9721d13625432fd686f1b321a50bb5ac5993603633e6a01e66",
+                "Volumes": null,
+                "WorkingDir": "/opt/jboss",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20200809",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-08-09 00:00:00+01:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "container": "43cdac77713e4655592a4b70c8a4b012ce2701d2a9b76425a9d6111f7d41e070",
+            "container_config": {
+                "Hostname": "43cdac77713e",
+                "Domainname": "",
+                "User": "jboss",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/lib/jvm/java"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV JAVA_HOME=/usr/lib/jvm/java"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:414d104595171f9721d13625432fd686f1b321a50bb5ac5993603633e6a01e66",
+                "Volumes": null,
+                "WorkingDir": "/opt/jboss",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "org.label-schema.build-date": "20200809",
+                    "org.label-schema.license": "GPLv2",
+                    "org.label-schema.name": "CentOS Base Image",
+                    "org.label-schema.schema-version": "1.0",
+                    "org.label-schema.vendor": "CentOS",
+                    "org.opencontainers.image.created": "2020-08-09 00:00:00+01:00",
+                    "org.opencontainers.image.licenses": "GPL-2.0-only",
+                    "org.opencontainers.image.title": "CentOS Base Image",
+                    "org.opencontainers.image.vendor": "CentOS"
+                }
+            },
+            "created": "2020-09-07T08:46:56.988950808Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2020-08-10T18:20:08.948813347Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:61908381d3142ffba798ae9a904476d19b197ab79d0338f14bec0f76649df8d4 in / "
+                },
+                {
+                    "created": "2020-08-10T18:20:09.298928893Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version=1.0 org.label-schema.name=CentOS Base Image org.label-schema.vendor=CentOS org.label-schema.license=GPLv2 org.label-schema.build-date=20200809 org.opencontainers.image.title=CentOS Base Image org.opencontainers.image.vendor=CentOS org.opencontainers.image.licenses=GPL-2.0-only org.opencontainers.image.created=2020-08-09 00:00:00+01:00",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-08-10T18:20:09.474278304Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:43:01.839486024Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Marek Goldmann <mgoldman@redhat.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:43:13.969410759Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c yum update -y && yum -y install xmlstarlet saxon augeas bsdtar unzip && yum clean all"
+                },
+                {
+                    "created": "2020-09-07T08:43:15.488843462Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c groupadd -r jboss -g 1000 && useradd -u 1000 -r -g jboss -m -d /opt/jboss -s /sbin/nologin -c \"JBoss user\" jboss &&     chmod 755 /opt/jboss"
+                },
+                {
+                    "created": "2020-09-07T08:43:15.794580872Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /opt/jboss",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:43:16.076293057Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  USER jboss",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:46:11.241863723Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Marek Goldmann <mgoldman@redhat.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:46:11.480277381Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:46:56.361714939Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c yum -y install java-1.8.0-openjdk-devel && yum clean all"
+                },
+                {
+                    "created": "2020-09-07T08:46:56.760372354Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  USER jboss",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-09-07T08:46:56.988950808Z",
+                    "author": "Marek Goldmann <mgoldman@redhat.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:613be09ab3c0860a5216936f412f09927947012f86bfa89b263dfa087a725f81",
+                    "sha256:115463be137a0574052941cb2acf1b9b8e848f8b335bc5a81d48e55a717b9da3",
+                    "sha256:3fbe1e874b0d6308c4cda289677c8fe30f5edcc457ce93efcabac45938160ec8",
+                    "sha256:6608ef36b5b5804c9750a07f6125caea30a4a6ce171df11150eb6a7315e85efe"
+                ]
+            }
+        }
+    }
+}

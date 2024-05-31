@@ -1,0 +1,665 @@
+{
+    "manifests": {
+        "14.04": {
+            "schemaVersion": 1,
+            "name": "coaxys/ubuntu",
+            "tag": "14.04",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:fc27bfa4b0c85b996d39e9eb5e1ec482316386f702454a8e8ec1bd37ef876906"
+                },
+                {
+                    "blobSum": "sha256:cd25e1881d0f8356908aebb7a9feec17d036ef56c718531e0d5dbde4e8a2adf7"
+                },
+                {
+                    "blobSum": "sha256:c91f1bb179d646adc3407af0c221621ab6fd01e41d17e4dd2e3bdf91366c33c2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:52de432f084bc072024d55b0f483358b607d0cf46d7053e3b6aefc98beaf27bf"
+                },
+                {
+                    "blobSum": "sha256:f0be3084efe90c704df85e3bff8df5d858e1ff546511c8306d80de561cc18fb5"
+                },
+                {
+                    "blobSum": "sha256:23eda618d4513331d49c6de76aaa051919f7b57752bcd8fee3cba37f816cbafd"
+                },
+                {
+                    "blobSum": "sha256:6599cadaf950a71af51aa84b85e6cdb1990287b79f8e71a78f6986b318d4c4a0"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Nicolas Giard, nicolas.giard@coaxys.com\",\"config\":{\"Hostname\":\"3713552cb044\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4dd81dfcd50b802deb1a057c1fff5047642f1f9dc6fcde4fd96ef8fb5320c129\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"25952e4dd5b9f04af7685cd14d9226627e9f4a8c99f49b7fae07d0695be30e69\",\"container_config\":{\"Hostname\":\"3713552cb044\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get clean \\u0026\\u0026 apt-get autoremove\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4dd81dfcd50b802deb1a057c1fff5047642f1f9dc6fcde4fd96ef8fb5320c129\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-05-17T06:17:47.086234479Z\",\"docker_version\":\"1.11.1\",\"id\":\"d766c961dae78f4c8ddbbdc1b788d7c7675f296ca6b0f2b4c4e5d34f3d7721e4\",\"os\":\"linux\",\"parent\":\"b7349b5a9a41bba05ea27ab780ad20e2e402289fad66c0a9c2afdbaf008b63f2\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b7349b5a9a41bba05ea27ab780ad20e2e402289fad66c0a9c2afdbaf008b63f2\",\"parent\":\"410161df17111035fb7de7059ee53889ba8c0acdd14699859115bd12f1d47acd\",\"created\":\"2016-05-17T06:17:44.944840681Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get -y install software-properties-common python-software-properties curl wget unzip\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"410161df17111035fb7de7059ee53889ba8c0acdd14699859115bd12f1d47acd\",\"parent\":\"fa6123def274102ee3c082f684ca644baa5e54a61f2f428d66664f9e88e6e336\",\"created\":\"2016-05-17T06:16:40.897416898Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"fa6123def274102ee3c082f684ca644baa5e54a61f2f428d66664f9e88e6e336\",\"parent\":\"5513002504a599cd056ed6a7e1c24d1b7e96252af5c3bc850caecc0c913ee50e\",\"created\":\"2016-05-17T06:16:16.754903897Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Nicolas Giard, nicolas.giard@coaxys.com\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5513002504a599cd056ed6a7e1c24d1b7e96252af5c3bc850caecc0c913ee50e\",\"parent\":\"0e23078ccd338d08cf033f6a300f4dce86a95381c4a9a4beed6cd5a460645ee1\",\"created\":\"2016-05-03T23:11:04.403014677Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0e23078ccd338d08cf033f6a300f4dce86a95381c4a9a4beed6cd5a460645ee1\",\"parent\":\"3fef90246eb176ac4a388399ac10317ccd27df3bedbc6d9c2222685774378ad4\",\"created\":\"2016-05-03T23:11:03.725185145Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3fef90246eb176ac4a388399ac10317ccd27df3bedbc6d9c2222685774378ad4\",\"parent\":\"b122d4ef87dc7f5f36f8c4245e823c46f0a2e4cb15eb6e7a35a8df6a946d4d68\",\"created\":\"2016-05-03T23:11:02.04115502Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b122d4ef87dc7f5f36f8c4245e823c46f0a2e4cb15eb6e7a35a8df6a946d4d68\",\"parent\":\"cea86fd90f0b54fd12eaa74af632fd7f39f6836e10bfddc00aef381ad28b0385\",\"created\":\"2016-05-03T23:11:00.35720194Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cea86fd90f0b54fd12eaa74af632fd7f39f6836e10bfddc00aef381ad28b0385\",\"created\":\"2016-05-03T23:10:55.024441269Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b64f702c5b33d12426b57d1e25d5c6de0f2331d390d78b6dff16289914ad6098 in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "QCEC:5OJL:IKDU:2FBB:PTY5:ZCML:HZ2Y:ZMCI:ZSKV:2WC5:ETBE:L6G7",
+                            "kty": "EC",
+                            "x": "ri4P46Reyxp-WDzWoETtaDyBjyy2c_JebacYUwxbbSE",
+                            "y": "Yi1pRLHbjTYdaDRdiTmBWotdmS8LoynVzXtUlVYhC-M"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "FtNPuGdGhxSL9v6Yj9r3UluMJokm7nZsbRztUZN0pUMcVqx0NTL5nFdLV9dPrOO3YxGrMPAk8B9yRNssJfk43Q",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjY2ODIsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQwNjo0MDoxOVoifQ"
+                }
+            ]
+        },
+        "14.04.2": {
+            "name": "coaxys/ubuntu",
+            "tag": "14.04.2",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:451d34d449cd23655a44c4930e9c2a35d5534f624e1aa74f6fbd23e720881127"
+                },
+                {
+                    "blobSum": "sha256:451d34d449cd23655a44c4930e9c2a35d5534f624e1aa74f6fbd23e720881127"
+                },
+                {
+                    "blobSum": "sha256:43feff85bbd540008247ada0af2c18dadab8c0534fef4b89d12fcc8b23cf03c6"
+                },
+                {
+                    "blobSum": "sha256:42929cf3afc77203801eee4d39ee72e315044f9cc026c691848d8e5e7ef7df0c"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:706514fbad74415cfa9031632da31cdefa54d8e39b4dbc41b48f8c8ebbf96d04"
+                },
+                {
+                    "blobSum": "sha256:a898f8c7f6baf9856ae304aa278d5193a4728776f1ecfe2978cbebfb0b6abd81"
+                },
+                {
+                    "blobSum": "sha256:2de59b831a23576036e5d44abfaf79c957eba5e794a819ba3aa76bfa413e8e02"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"53deacbb9feed281604150dd51d81dcc76b0908fd84f7f15d21359822d2cf9bc\",\"parent\":\"bd134b7f9a25f7ec7fdc8d49e1644ef0e32abe07abf72eaf49c75b625d74b75b\",\"created\":\"2015-03-31T05:17:32.429667875Z\",\"container\":\"d6879587f9b79148994aae65532fe3c1dd887b19fd7bc60ac2cd8190fb534312\",\"container_config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get clean \\u0026\\u0026 apt-get autoremove\"],\"Image\":\"bd134b7f9a25f7ec7fdc8d49e1644ef0e32abe07abf72eaf49c75b625d74b75b\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.5.0\",\"author\":\"Nicolas Giard, nicolas.giard@coaxys.com\",\"config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"bd134b7f9a25f7ec7fdc8d49e1644ef0e32abe07abf72eaf49c75b625d74b75b\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"53deacbb9feed281604150dd51d81dcc76b0908fd84f7f15d21359822d2cf9bc\",\"parent\":\"bd134b7f9a25f7ec7fdc8d49e1644ef0e32abe07abf72eaf49c75b625d74b75b\",\"created\":\"2015-03-31T05:17:32.429667875Z\",\"container\":\"d6879587f9b79148994aae65532fe3c1dd887b19fd7bc60ac2cd8190fb534312\",\"container_config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get clean \\u0026\\u0026 apt-get autoremove\"],\"Image\":\"bd134b7f9a25f7ec7fdc8d49e1644ef0e32abe07abf72eaf49c75b625d74b75b\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.5.0\",\"author\":\"Nicolas Giard, nicolas.giard@coaxys.com\",\"config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"bd134b7f9a25f7ec7fdc8d49e1644ef0e32abe07abf72eaf49c75b625d74b75b\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"bd134b7f9a25f7ec7fdc8d49e1644ef0e32abe07abf72eaf49c75b625d74b75b\",\"parent\":\"4315fe24d151c507c08b5234af31ad87359f66aad94b932c058f229c309d7196\",\"created\":\"2015-03-31T05:17:29.31244536Z\",\"container\":\"e979256992136cfaaf6004a5d8e32bb4f4cbc236161bd2dc212e96e06fcd5a57\",\"container_config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get -y install software-properties-common python-software-properties curl wget unzip\"],\"Image\":\"4315fe24d151c507c08b5234af31ad87359f66aad94b932c058f229c309d7196\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.5.0\",\"author\":\"Nicolas Giard, nicolas.giard@coaxys.com\",\"config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"4315fe24d151c507c08b5234af31ad87359f66aad94b932c058f229c309d7196\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":65946661}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4315fe24d151c507c08b5234af31ad87359f66aad94b932c058f229c309d7196\",\"parent\":\"0dbbe6ee8d8eb9225d5ae3caa3ac3abec456356ae1b61c391166e88eccb3648e\",\"created\":\"2015-03-31T05:16:41.077446289Z\",\"container\":\"519fb86735c238cef249f347a151a8a63b2666fe206028b634675f457dd04e5d\",\"container_config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update\"],\"Image\":\"0dbbe6ee8d8eb9225d5ae3caa3ac3abec456356ae1b61c391166e88eccb3648e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.5.0\",\"author\":\"Nicolas Giard, nicolas.giard@coaxys.com\",\"config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"0dbbe6ee8d8eb9225d5ae3caa3ac3abec456356ae1b61c391166e88eccb3648e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":20719201}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0dbbe6ee8d8eb9225d5ae3caa3ac3abec456356ae1b61c391166e88eccb3648e\",\"parent\":\"d0955f21bf24f5bfffd32d2d0bb669d0564701c271bc3dfc64cfc5adfdec2d07\",\"created\":\"2015-03-31T05:15:46.808432282Z\",\"container\":\"b03eefc2e684f958a8b7a3df957a1fbdd88c467eb623600a6ce7e7e1458981fb\",\"container_config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER Nicolas Giard, nicolas.giard@coaxys.com\"],\"Image\":\"d0955f21bf24f5bfffd32d2d0bb669d0564701c271bc3dfc64cfc5adfdec2d07\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.5.0\",\"author\":\"Nicolas Giard, nicolas.giard@coaxys.com\",\"config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"d0955f21bf24f5bfffd32d2d0bb669d0564701c271bc3dfc64cfc5adfdec2d07\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d0955f21bf24f5bfffd32d2d0bb669d0564701c271bc3dfc64cfc5adfdec2d07\",\"parent\":\"9fec74352904baf5ab5237caa39a84b0af5c593dc7cc08839e2ba65193024507\",\"created\":\"2015-03-20T06:16:47.003636554Z\",\"container\":\"97ed9ba2eafbeff577a82c7314bf60836e4c340f3d22fdcdf670523ab01eea13\",\"container_config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [/bin/bash]\"],\"Image\":\"9fec74352904baf5ab5237caa39a84b0af5c593dc7cc08839e2ba65193024507\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.4.1\",\"config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"9fec74352904baf5ab5237caa39a84b0af5c593dc7cc08839e2ba65193024507\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9fec74352904baf5ab5237caa39a84b0af5c593dc7cc08839e2ba65193024507\",\"parent\":\"a1a958a248181c9aa6413848cd67646e5afb9797f1a3da5995c7a636f050f537\",\"created\":\"2015-03-20T06:16:43.241802895Z\",\"container\":\"b384876f79c6048f963694765d6fd81a76b984d85a3838dd3d67b107f63f549d\",\"container_config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"],\"Image\":\"a1a958a248181c9aa6413848cd67646e5afb9797f1a3da5995c7a636f050f537\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.4.1\",\"config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"a1a958a248181c9aa6413848cd67646e5afb9797f1a3da5995c7a636f050f537\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":1895}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a1a958a248181c9aa6413848cd67646e5afb9797f1a3da5995c7a636f050f537\",\"parent\":\"f3c84ac3a0533f691c9fea4cc2ceaaf43baec22bf8d6a479e069f6d814be9b86\",\"created\":\"2015-03-20T06:16:38.442145507Z\",\"container\":\"283bfa698391d45e7b266eac847cc94891b117fcbf21a24d9443194c7a7d4de2\",\"container_config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"],\"Image\":\"f3c84ac3a0533f691c9fea4cc2ceaaf43baec22bf8d6a479e069f6d814be9b86\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.4.1\",\"config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"f3c84ac3a0533f691c9fea4cc2ceaaf43baec22bf8d6a479e069f6d814be9b86\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":194533}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f3c84ac3a0533f691c9fea4cc2ceaaf43baec22bf8d6a479e069f6d814be9b86\",\"parent\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"created\":\"2015-03-20T06:16:30.512430276Z\",\"container\":\"e7128b67d9e7ec22ac466dddbb6a693ac6de94d1a54fcc24ba34fabf573e892c\",\"container_config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:777fad733fc954c0c161670c48c10ea1787a6e5d544daa20e55d593279df3fa3 in /\"],\"Image\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.4.1\",\"config\":{\"Hostname\":\"e7128b67d9e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":188104128}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"comment\":\"Imported from -\",\"created\":\"2013-06-13T14:03:50.821769-07:00\",\"container_config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"0.4.0\",\"architecture\":\"x86_64\",\"Size\":0}\n"
+                }
+            ],
+            "schemaVersion": 1,
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "KV6F:7AEQ:PLXH:K2YN:OCKW:GFVV:27PO:DHZG:6RC2:52KB:C73Y:IGUY",
+                            "kty": "EC",
+                            "x": "5_13z_KFtUWC3AUkUBR_wXwM8sPzuMSzAhwXR9RvOes",
+                            "y": "4LbhhlKfaKZDyHH-El4WxNSKmJK4mgMAqnU-6LbGrjQ"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "KPtHQtTGdmuuswKuspXELPOvIGkgRXK6M2GpUQMaKxbvGXre1msE7O50frq8ZSU7ebPD6c_EEF4ZFsBcs6VjGA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjE4MzMyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzBUMDY6NDA6MjBaIn0"
+                }
+            ]
+        },
+        "16.04": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4620,
+                "digest": "sha256:3d703d81cc907c207d2ecc747168203a6fbd36c4bc385ae85bda32c8a87ac86f"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 47103294,
+                    "digest": "sha256:75c416ea735c42a4a0b2c8f31946a1918adc7853373c411abbec424391fb989c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 814,
+                    "digest": "sha256:c6ff40b6d658359b7b428e76db4b9f6f921e47dda0a9a25537c09cc0f031c206"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 513,
+                    "digest": "sha256:a7050fc1f338be18d965236f3bf937073e82d3846e362b4525815be483984ffb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 851,
+                    "digest": "sha256:f0ffb5cf6ba990b18c314f5758f6e68609f1e32b3d35769b74264150d317b728"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 163,
+                    "digest": "sha256:be232718519c940b04bc576366a58df53418d8e8bdb605f4e3ca66775735fdca"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28566598,
+                    "digest": "sha256:5661bdba239dc93d9bbf9ad387e475aa30321965066ab2556c68396f9f6b706c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 48091952,
+                    "digest": "sha256:a2a00aafaa9f45de721cd838a103e9d4dde57f2ebe95bbeab7e8b73460e97bce"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 259,
+                    "digest": "sha256:0552d72a493675a3cb3d32866719828f38fee3e723cd7984ee2b449e2c17aa34"
+                }
+            ]
+        },
+        "18.04": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4240,
+                "digest": "sha256:8c6e32f6af6fee589d5bce515bcb99d6b25d0ccbe245c361f44071d0a791b070"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 37206102,
+                    "digest": "sha256:f476d66f540886e2bb4d9c8cc8c0f8915bca7d387e536957796ea6c2f8e7dfff"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 851,
+                    "digest": "sha256:8882c27f669ef315fc231f272965cd5ee8507c0f376855d6f9c012aae0224797"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 547,
+                    "digest": "sha256:d9af21273955749bb8250c7a883fcce21647b54f5a685d237bc6b920a2ebad1a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 162,
+                    "digest": "sha256:f5029279ec1223b70f2cbb2682ab360e1837a2ea59a8d7ff64b38e9eab5fb8c0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 60529380,
+                    "digest": "sha256:e9805bc659f3b4b8ea80fb6fafee0bc8dbfc128cf0817f2749582e284fa2ff29"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4620,
+                "digest": "sha256:3d703d81cc907c207d2ecc747168203a6fbd36c4bc385ae85bda32c8a87ac86f"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 47103294,
+                    "digest": "sha256:75c416ea735c42a4a0b2c8f31946a1918adc7853373c411abbec424391fb989c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 814,
+                    "digest": "sha256:c6ff40b6d658359b7b428e76db4b9f6f921e47dda0a9a25537c09cc0f031c206"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 513,
+                    "digest": "sha256:a7050fc1f338be18d965236f3bf937073e82d3846e362b4525815be483984ffb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 851,
+                    "digest": "sha256:f0ffb5cf6ba990b18c314f5758f6e68609f1e32b3d35769b74264150d317b728"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 163,
+                    "digest": "sha256:be232718519c940b04bc576366a58df53418d8e8bdb605f4e3ca66775735fdca"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28566598,
+                    "digest": "sha256:5661bdba239dc93d9bbf9ad387e475aa30321965066ab2556c68396f9f6b706c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 48091952,
+                    "digest": "sha256:a2a00aafaa9f45de721cd838a103e9d4dde57f2ebe95bbeab7e8b73460e97bce"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 259,
+                    "digest": "sha256:0552d72a493675a3cb3d32866719828f38fee3e723cd7984ee2b449e2c17aa34"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "14.04",
+        "14.04.2",
+        "16.04",
+        "18.04",
+        "latest"
+    ],
+    "configs": {
+        "16.04": {
+            "architecture": "amd64",
+            "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+            "config": {
+                "Hostname": "d4f93cc44884",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9931c0b544e03a25151cef8ce722a3ead251f11dadf4779ca2e151f5e03e07f4",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "aedaaacbabc3a51e924c72ec58a5d05a53d69a821a798763b7fc39a8e331c36e",
+            "container_config": {
+                "Hostname": "d4f93cc44884",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "apt-get clean && apt-get autoremove"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9931c0b544e03a25151cef8ce722a3ead251f11dadf4779ca2e151f5e03e07f4",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-07-04T13:35:30.281677691Z",
+            "docker_version": "1.12.0",
+            "history": [
+                {
+                    "created": "2017-06-20T23:18:13.495195899Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:c251a21fbe3a651352aff2e222db19b7b179e1640cf4e9b75f55fd6f85f40366 in / "
+                },
+                {
+                    "created": "2017-06-20T23:18:35.848222735Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2017-06-20T23:18:37.558735642Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-06-20T23:18:39.245423699Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2017-06-20T23:19:03.64264843Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2017-06-20T23:19:04.474198922Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-04T13:33:38.905423749Z",
+                    "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Nicolas Giard, nicolas.giard@coaxys.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-04T13:33:45.206275457Z",
+                    "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+                    "created_by": "/bin/sh -c apt-get update"
+                },
+                {
+                    "created": "2017-07-04T13:35:28.00270072Z",
+                    "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+                    "created_by": "/bin/sh -c apt-get -y install software-properties-common python-software-properties curl wget unzip"
+                },
+                {
+                    "created": "2017-07-04T13:35:30.281677691Z",
+                    "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+                    "created_by": "/bin/sh -c apt-get clean && apt-get autoremove"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:cb11ba6054003d39da5c681006ea346e04fb3444086331176bf57255f149c670",
+                    "sha256:5a4c2c9a24fc72cc78b3dabee0ae32be12ab197732df433ecb81cef8a00b5f87",
+                    "sha256:182d2a55830d06a1f25899b81a3fc83dfc4e30eb5c8cad164e0024657dba7528",
+                    "sha256:6f9cf951edf547ab4895ee15110108dd6659952b1479a95bd348c204035da461",
+                    "sha256:0566c118947e4983e51c1deddc184238cb372d4318c75a15f9a143a89797c04a",
+                    "sha256:4b788ebd68e57d8b962176f72914da0dd27eeba6807d48b30d19aeec02e71ea3",
+                    "sha256:f941573ada31450fb754df0efcbc6ad70f5244b4887a5a3cb07002d3928646f7",
+                    "sha256:dc81ffd98e8081257c6c58832eb54dac2de48734dd64fc77574556e77f2c4d7a"
+                ]
+            }
+        },
+        "18.04": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:daaa6a53df55835a5725ac35d189e0dac0d9d1c621f7a9ae347bf64ab27003f0",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer.email": "nicolas.giard@coaxys.com",
+                    "maintainer.name": "Nicolas Giard"
+                }
+            },
+            "container": "e6e5757a056b93d2611d8f74ffec56fd70de758446cc2eb3d34e6c15a97e2be3",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "apt-get update && apt-get -y install software-properties-common curl wget unzip && apt-get clean && apt-get autoremove"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:daaa6a53df55835a5725ac35d189e0dac0d9d1c621f7a9ae347bf64ab27003f0",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer.email": "nicolas.giard@coaxys.com",
+                    "maintainer.name": "Nicolas Giard"
+                }
+            },
+            "created": "2019-05-09T08:21:44.963226324Z",
+            "docker_version": "18.03.1-ce",
+            "history": [
+                {
+                    "created": "2019-04-26T22:21:02.724843678Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:7ce84f13f11609a50ece7823578159412e2299c812746d1d1f1ed5db0728bd37 in / "
+                },
+                {
+                    "created": "2019-04-26T22:21:03.471632173Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2019-04-26T22:21:04.220422684Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2019-04-26T22:21:04.936777709Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2019-04-26T22:21:05.100534088Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-05-09T08:19:43.328081164Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer.name=Nicolas Giard",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-05-09T08:19:45.06918862Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer.email=nicolas.giard@coaxys.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-05-09T08:21:44.963226324Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get -y install software-properties-common curl wget unzip && apt-get clean && apt-get autoremove"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:604cbde1a4c8fee1b102f8b64d4f41e62d770b5f8a6b06fb809cfd873a2643c3",
+                    "sha256:5d74a98c48bcfc2d04e9d679ea095d360ac0b2f2a27312c8e95a7f5ba5341d9c",
+                    "sha256:94e5c4ea5da6d2a5e0232458e8f14a2cdba0d0f0ce1bdd8098789477c89a7f45",
+                    "sha256:7660ded5319c352f98b8b305b6bd11a501b9704f5e31d1e3b1d3da644f1c3fb8",
+                    "sha256:811ab64fa649b8fca3eff0332f7109197184756f89ee199380f567058da3f956"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+            "config": {
+                "Hostname": "d4f93cc44884",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9931c0b544e03a25151cef8ce722a3ead251f11dadf4779ca2e151f5e03e07f4",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "aedaaacbabc3a51e924c72ec58a5d05a53d69a821a798763b7fc39a8e331c36e",
+            "container_config": {
+                "Hostname": "d4f93cc44884",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "apt-get clean && apt-get autoremove"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:9931c0b544e03a25151cef8ce722a3ead251f11dadf4779ca2e151f5e03e07f4",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-07-04T13:35:30.281677691Z",
+            "docker_version": "1.12.0",
+            "history": [
+                {
+                    "created": "2017-06-20T23:18:13.495195899Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:c251a21fbe3a651352aff2e222db19b7b179e1640cf4e9b75f55fd6f85f40366 in / "
+                },
+                {
+                    "created": "2017-06-20T23:18:35.848222735Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2017-06-20T23:18:37.558735642Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-06-20T23:18:39.245423699Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2017-06-20T23:19:03.64264843Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2017-06-20T23:19:04.474198922Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-04T13:33:38.905423749Z",
+                    "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Nicolas Giard, nicolas.giard@coaxys.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-04T13:33:45.206275457Z",
+                    "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+                    "created_by": "/bin/sh -c apt-get update"
+                },
+                {
+                    "created": "2017-07-04T13:35:28.00270072Z",
+                    "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+                    "created_by": "/bin/sh -c apt-get -y install software-properties-common python-software-properties curl wget unzip"
+                },
+                {
+                    "created": "2017-07-04T13:35:30.281677691Z",
+                    "author": "Nicolas Giard, nicolas.giard@coaxys.com",
+                    "created_by": "/bin/sh -c apt-get clean && apt-get autoremove"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:cb11ba6054003d39da5c681006ea346e04fb3444086331176bf57255f149c670",
+                    "sha256:5a4c2c9a24fc72cc78b3dabee0ae32be12ab197732df433ecb81cef8a00b5f87",
+                    "sha256:182d2a55830d06a1f25899b81a3fc83dfc4e30eb5c8cad164e0024657dba7528",
+                    "sha256:6f9cf951edf547ab4895ee15110108dd6659952b1479a95bd348c204035da461",
+                    "sha256:0566c118947e4983e51c1deddc184238cb372d4318c75a15f9a143a89797c04a",
+                    "sha256:4b788ebd68e57d8b962176f72914da0dd27eeba6807d48b30d19aeec02e71ea3",
+                    "sha256:f941573ada31450fb754df0efcbc6ad70f5244b4887a5a3cb07002d3928646f7",
+                    "sha256:dc81ffd98e8081257c6c58832eb54dac2de48734dd64fc77574556e77f2c4d7a"
+                ]
+            }
+        }
+    }
+}

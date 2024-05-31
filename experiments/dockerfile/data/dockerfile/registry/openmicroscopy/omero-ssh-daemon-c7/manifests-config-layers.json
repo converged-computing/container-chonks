@@ -1,0 +1,545 @@
+{
+    "manifests": {
+        "0.1.0": {
+            "schemaVersion": 1,
+            "name": "openmicroscopy/omero-ssh-daemon-c7",
+            "tag": "0.1.0",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a1ccd7501433968a201f186f637d305ade6b406d0f516456fc1e3268e7c52227"
+                },
+                {
+                    "blobSum": "sha256:998b29cdb0c86c08a8b3f79a8ba094192aee737b2df0f0ceebf4a1765a7047c4"
+                },
+                {
+                    "blobSum": "sha256:67ee0c298948704d63966ff287ef67d363bdaf271761d08a1a55170d67328138"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:5989106db7fbf3f693f916dcb13ee7a42b9a8f9a5d188e2168602766989b5f57"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"ome-devel@lists.openmicroscopy.org.uk\",\"config\":{\"Hostname\":\"9bedafc83c11\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/usr/sbin/sshd\",\"-eD\"],\"ArgsEscaped\":true,\"Image\":\"sha256:6eacec225653cc9bff4df7e6ec604d8113066d1690992b68319f25b95e7b922f\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"build-date\":\"2016-03-31\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"af7c876ae6672e281e1d3eb46e131c632b250a304943f10e22f7b9c593bf1c5b\",\"container_config\":{\"Hostname\":\"9bedafc83c11\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/usr/sbin/sshd\\\" \\\"-eD\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:6eacec225653cc9bff4df7e6ec604d8113066d1690992b68319f25b95e7b922f\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"build-date\":\"2016-03-31\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-05-02T10:53:01.015781468Z\",\"docker_version\":\"1.10.2\",\"id\":\"626241c96f2e47235d5e4a8695ddace77e3d02d325ab06f82f891dd3faf3bd72\",\"os\":\"linux\",\"parent\":\"42c6719ab9ec1e6667a013fc63ee1078b7738c8c5c038f39d93d83baab0b04e2\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"42c6719ab9ec1e6667a013fc63ee1078b7738c8c5c038f39d93d83baab0b04e2\",\"parent\":\"b220337d3dba9a427dfb675ac03bd6e9dd7f92b87414bd8e3388ff193a1bc4ae\",\"created\":\"2016-05-02T10:53:00.889608069Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 22/tcp\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b220337d3dba9a427dfb675ac03bd6e9dd7f92b87414bd8e3388ff193a1bc4ae\",\"parent\":\"dda631eeee878212d22bfe84fb18cbe314a2b596a8f5e87c89d76b5847ed8e0c\",\"created\":\"2016-05-02T10:53:00.779537788Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd omero \\u0026\\u0026 \\techo 'omero:omero' | chpasswd omero \\u0026\\u0026\\techo \\\"omero ALL= (ALL) NOPASSWD: ALL\\\" \\u003e\\u003e /etc/sudoers.d/omero\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"dda631eeee878212d22bfe84fb18cbe314a2b596a8f5e87c89d76b5847ed8e0c\",\"parent\":\"d8db9ca6fe0910376a728bbf6182198476d62be9dd052882133a5ec1a0165c86\",\"created\":\"2016-05-02T10:53:00.264910076Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i \\t's@session\\\\s*required\\\\s*pam_loginuid.so@session optional pam_loginuid.so@g' \\t/etc/pam.d/sshd \\u0026\\u0026 \\t/usr/bin/ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key \\t-C '' -N ''\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d8db9ca6fe0910376a728bbf6182198476d62be9dd052882133a5ec1a0165c86\",\"parent\":\"f3b78c658786e4616b299171cf5f716d95ebf5b33c3830383590be963491511b\",\"created\":\"2016-05-02T10:52:59.590146963Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y sudo openssh-server openssh-clients \\u0026\\u0026 \\tyum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f3b78c658786e4616b299171cf5f716d95ebf5b33c3830383590be963491511b\",\"parent\":\"bd510c860c2e58069ad4c0a6dbed170e8ca1747fe3748baa47258325aadb8856\",\"created\":\"2016-05-02T10:52:47.238440245Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER ome-devel@lists.openmicroscopy.org.uk\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"bd510c860c2e58069ad4c0a6dbed170e8ca1747fe3748baa47258325aadb8856\",\"parent\":\"172ab63cd5e007f8b1dbd7659c2d9520bf9e50755c081f39d171a603ad5d0890\",\"created\":\"2016-04-01T21:28:22.271063694Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"172ab63cd5e007f8b1dbd7659c2d9520bf9e50755c081f39d171a603ad5d0890\",\"parent\":\"0c908fa575ec22f872f78b12d9e57d132b67a683f7deacd9f02462c546bf52dd\",\"created\":\"2016-04-01T21:28:21.706982438Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0c908fa575ec22f872f78b12d9e57d132b67a683f7deacd9f02462c546bf52dd\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2016-04-01T21:28:18.131842562Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:6dd89087d4d418ca0c44704c36e86d70267dcb206aa4e2c446bba52f362c172b in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "CD5O:CGIA:LJ5P:W2LX:W2Y2:MTNI:ONJX:5VVB:OVG4:ADIC:YRJG:R2XP",
+                            "kty": "EC",
+                            "x": "GhRAlcQcU2xCcEbXpvh6VRPtnaOTJ50LzbKkUUEmHyU",
+                            "y": "1Ycp22MbvUH6SDuW9wTXwnT9aTN1uF2JNWZmQCHEkAc"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "7OVYTA6HaAWPWSc3zwa1yMKeIt2oQrJ7dwviv9YyA6YEE4yvHmRMV-mr1X-_8HkLO7g14GHuR-G3AjQWOJ8-tg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjY1NjAsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxMzoyOTo0MFoifQ"
+                }
+            ]
+        },
+        "0.1.1": {
+            "schemaVersion": 1,
+            "name": "openmicroscopy/omero-ssh-daemon-c7",
+            "tag": "0.1.1",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:508c8ad328ebc20653c8729f39e75470f5a40d456344b3959e25e21f1d210702"
+                },
+                {
+                    "blobSum": "sha256:632aa88b5838207d3660a4187ce6dec5ac0dd1cf2e81387adcb6ad17504d4de9"
+                },
+                {
+                    "blobSum": "sha256:c6299676fb41a7e93ec46c3e65a01cfdf7c1cb8f34f326640ac437b5b9a7ff4a"
+                },
+                {
+                    "blobSum": "sha256:301fbeb829f37661f910440da160cffa42f4900ed412709bf83ba86c88208f31"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:5989106db7fbf3f693f916dcb13ee7a42b9a8f9a5d188e2168602766989b5f57"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"ome-devel@lists.openmicroscopy.org.uk\",\"config\":{\"Hostname\":\"9bedafc83c11\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/usr/sbin/sshd\",\"-eD\"],\"ArgsEscaped\":true,\"Image\":\"sha256:75490d760689b5108ff3c25c23bffd08dda57d0dcd882460133fc7d5f8418f06\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"build-date\":\"2016-03-31\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"1552635467ad4819b3704b6570fc93359125de2e4bce1602874ce4c4cdfc9e7f\",\"container_config\":{\"Hostname\":\"9bedafc83c11\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/usr/sbin/sshd\\\" \\\"-eD\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:75490d760689b5108ff3c25c23bffd08dda57d0dcd882460133fc7d5f8418f06\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"build-date\":\"2016-03-31\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-05-02T12:47:39.257738989Z\",\"docker_version\":\"1.10.2\",\"id\":\"d965a74bbd9655311d72f0e60c28e003cef6c51987f86e907447a92e0a0b56d0\",\"os\":\"linux\",\"parent\":\"e746de00f9a4527556714a9bd8862ecb6aa71aff8d053f392c4e3ba00ffd6398\",\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e746de00f9a4527556714a9bd8862ecb6aa71aff8d053f392c4e3ba00ffd6398\",\"parent\":\"0dad64b53ea3cc816fac4bdf73a4b621408979ef41af394e651bb2461de52ca5\",\"created\":\"2016-05-02T12:47:39.136107231Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 22/tcp\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0dad64b53ea3cc816fac4bdf73a4b621408979ef41af394e651bb2461de52ca5\",\"parent\":\"b11e944a7d086985bdb99159cbf2a21fa2c7e9fb8f98e4fb71000c8cce5c6f56\",\"created\":\"2016-05-02T12:47:39.004856199Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd omero \\u0026\\u0026 \\techo 'omero:omero' | chpasswd omero \\u0026\\u0026\\techo \\\"omero ALL= (ALL) NOPASSWD: ALL\\\" \\u003e\\u003e /etc/sudoers.d/omero\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b11e944a7d086985bdb99159cbf2a21fa2c7e9fb8f98e4fb71000c8cce5c6f56\",\"parent\":\"e7283bd5327c99443061174c22c9d082a965ee91cb4f8a1c3865cf8f85fa4ea4\",\"created\":\"2016-05-02T12:47:38.482031463Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i -e \\\"s/Defaults    requiretty.*/ #Defaults    requiretty/g\\\" /etc/sudoers\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e7283bd5327c99443061174c22c9d082a965ee91cb4f8a1c3865cf8f85fa4ea4\",\"parent\":\"46fd7f5ab53a69b5a3045b0798b5df946b19f774569e4050ee362752a4329a64\",\"created\":\"2016-05-02T12:47:38.037089926Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i \\t's@session\\\\s*required\\\\s*pam_loginuid.so@session optional pam_loginuid.so@g' \\t/etc/pam.d/sshd \\u0026\\u0026 \\t/usr/bin/ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key \\t-C '' -N ''\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"46fd7f5ab53a69b5a3045b0798b5df946b19f774569e4050ee362752a4329a64\",\"parent\":\"f3b78c658786e4616b299171cf5f716d95ebf5b33c3830383590be963491511b\",\"created\":\"2016-05-02T12:47:37.2370708Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y sudo openssh-server openssh-clients \\u0026\\u0026 \\tyum clean all\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f3b78c658786e4616b299171cf5f716d95ebf5b33c3830383590be963491511b\",\"parent\":\"bd510c860c2e58069ad4c0a6dbed170e8ca1747fe3748baa47258325aadb8856\",\"created\":\"2016-05-02T12:47:23.681310842Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER ome-devel@lists.openmicroscopy.org.uk\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"bd510c860c2e58069ad4c0a6dbed170e8ca1747fe3748baa47258325aadb8856\",\"parent\":\"172ab63cd5e007f8b1dbd7659c2d9520bf9e50755c081f39d171a603ad5d0890\",\"created\":\"2016-04-01T21:28:22.271063694Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"172ab63cd5e007f8b1dbd7659c2d9520bf9e50755c081f39d171a603ad5d0890\",\"parent\":\"0c908fa575ec22f872f78b12d9e57d132b67a683f7deacd9f02462c546bf52dd\",\"created\":\"2016-04-01T21:28:21.706982438Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0c908fa575ec22f872f78b12d9e57d132b67a683f7deacd9f02462c546bf52dd\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2016-04-01T21:28:18.131842562Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:6dd89087d4d418ca0c44704c36e86d70267dcb206aa4e2c446bba52f362c172b in /\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "OXO7:W6DS:MGS2:PWXW:WQYP:SQ67:JHC7:UVUO:HUH5:XQY5:SEIF:R4L7",
+                            "kty": "EC",
+                            "x": "tG7mPH7SZD6SVwM0HkYQoCUyxKVe8LcN0ycKhN5KkMs",
+                            "y": "VuR1nAkVk7vjeypK0hJnEmWf4ROAnEPBzVnwt_KS6Ws"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "pHX9pHDL5lkhG9hNej4uBC2Z6MBEzToOnMrYoL12-ZtA58j9YyB8PP-UgdCCHE3ok6S8tkhvmVRk1yuV0kgbqw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjcwNTQsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQxMzoyOTo0MVoifQ"
+                }
+            ]
+        },
+        "0.1.1-1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4234,
+                "digest": "sha256:65349fbb6c78af119ac6f563467e4365e4ef616f51c19b072052761115d775ec"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70389679,
+                    "digest": "sha256:45a2e645736c4c66ef34acce2407ded21f7a9b231199d3b92d6c9776df264729"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 7815732,
+                    "digest": "sha256:0a49767e4664ef2427992282c3ee27724e0c32b91783eacedc5ee854769bb51f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2183,
+                    "digest": "sha256:46b6dc0b9c82860b0cc74c06f6f48a1885fc457f0be138e6e8df5ba327da01de"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1905,
+                    "digest": "sha256:859086ad042d82e921746a32ce9385fdb6d2dde38914922c27088f867c387efa"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2289,
+                    "digest": "sha256:5cdc075cd4655af8f76923fee867651915bee25f04169da3b74a61e107666526"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4150,
+                "digest": "sha256:d85df573a09aad6646109fec7eb7c495c0012af5a2a67d7dbb3415b6419fd771"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 73167580,
+                    "digest": "sha256:469cfcc7a4b3947a4fa549c68cf4f8570be53779725f0c19f3d33d1520b08db0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 8169579,
+                    "digest": "sha256:844c1994f953a22f4571147f3f9948b2cab350603a7921862e6a48e095e6ae09"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2174,
+                    "digest": "sha256:e064967bde0f13eaaab60f423fb7e6235ee92750069dd9c8af2bed2681e93a5a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1927,
+                    "digest": "sha256:cb3ef694a1a36b575e3fd1fb86555845fc61c86f2b6410326210f42aa3a87480"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2255,
+                    "digest": "sha256:0e435d2486d9a91e0af637a0031f6072b9398fb7b1d911d80cf091b6bb19b30e"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "0.1.0",
+        "0.1.1",
+        "0.1.1-1",
+        "latest"
+    ],
+    "configs": {
+        "0.1.1-1": {
+            "architecture": "amd64",
+            "author": "ome-devel@lists.openmicroscopy.org.uk",
+            "config": {
+                "Hostname": "1b0d6163fdc2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/usr/sbin/sshd",
+                    "-eD"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:c48094882007e107b02c27fc20d277917f084b4782e036ea18b7d0d28fc024d8",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20161214",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "6bed4b23f625df7051db2ffb4a8cb24e38228c4f0cecfd3fd438190ff0aa2536",
+            "container_config": {
+                "Hostname": "1b0d6163fdc2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/usr/sbin/sshd\" \"-eD\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:c48094882007e107b02c27fc20d277917f084b4782e036ea18b7d0d28fc024d8",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20161214",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2017-01-04T12:40:42.272551216Z",
+            "docker_version": "1.12.3-cs3",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-15T18:21:21.197722058Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:940c77b6724c00d4208cc72169a63951eaa605672bcc5902ab2013cbae107434 in / "
+                },
+                {
+                    "created": "2016-12-15T18:21:23.00781987Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20161214",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-15T18:21:23.875991987Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-04T12:40:02.056016846Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER ome-devel@lists.openmicroscopy.org.uk",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-04T12:40:24.187229978Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c yum install -y sudo openssh-server openssh-clients && \tyum clean all"
+                },
+                {
+                    "created": "2017-01-04T12:40:28.240436401Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c sed -i \t's@session\\s*required\\s*pam_loginuid.so@session optional pam_loginuid.so@g' \t/etc/pam.d/sshd && \t/usr/bin/ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key \t-C '' -N ''"
+                },
+                {
+                    "created": "2017-01-04T12:40:32.055998178Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c sed -i -e \"s/Defaults    requiretty.*/ #Defaults    requiretty/g\" /etc/sudoers"
+                },
+                {
+                    "created": "2017-01-04T12:40:35.911321888Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c useradd omero && \techo 'omero:omero' | chpasswd omero &&\techo \"omero ALL= (ALL) NOPASSWD: ALL\" >> /etc/sudoers.d/omero"
+                },
+                {
+                    "created": "2017-01-04T12:40:38.887175004Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 22/tcp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-04T12:40:42.272551216Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/usr/sbin/sshd\" \"-eD\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:34e7b85d83e48a22bd5dfa2b6b9ee9565b7ef672f09b3d2409c61635f9bca4db",
+                    "sha256:2202e900736ae907e53429a8d35d468d36ea07e540ef98e6606e9e4c2e71739d",
+                    "sha256:a094cf1df481ac9b8e6f0934be95940dd69f211245bd4b342a23c0f66fbbd835",
+                    "sha256:945119959f58780303ca37a8873d3a3a036777a43872bc5bb5ce3aca1ffc0104",
+                    "sha256:f215f4eb0b901b900e3c1f6db47de70b9acfab851ba49d06a1c2409802aa272c"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "author": "ome-devel@lists.openmicroscopy.org.uk",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/usr/sbin/sshd",
+                    "-eD"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:5aa798c6e3bec2876a92b307039bad5de2ae60a199f9b04bfaf578409ed55542",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "org.label-schema.schema-version": "= 1.0     org.label-schema.name=CentOS Base Image     org.label-schema.vendor=CentOS     org.label-schema.license=GPLv2     org.label-schema.build-date=20180402"
+                }
+            },
+            "container": "a59c8ff8f139780b4313d2d24af06968bd4e110494427342259c5f38039ec62a",
+            "container_config": {
+                "Hostname": "a59c8ff8f139",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/usr/sbin/sshd\" \"-eD\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:5aa798c6e3bec2876a92b307039bad5de2ae60a199f9b04bfaf578409ed55542",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "org.label-schema.schema-version": "= 1.0     org.label-schema.name=CentOS Base Image     org.label-schema.vendor=CentOS     org.label-schema.license=GPLv2     org.label-schema.build-date=20180402"
+                }
+            },
+            "created": "2018-04-13T20:50:19.978410591Z",
+            "docker_version": "17.06.1-ce",
+            "history": [
+                {
+                    "created": "2018-04-06T21:01:50.49984667Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f755805244a649eccae3a3e63be291048deeb23e1c5a500d2f92b4eedc452322 in / "
+                },
+                {
+                    "created": "2018-04-06T21:01:50.94761272Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.label-schema.schema-version== 1.0     org.label-schema.name=CentOS Base Image     org.label-schema.vendor=CentOS     org.label-schema.license=GPLv2     org.label-schema.build-date=20180402",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-06T21:01:51.215822656Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-13T20:49:49.691841444Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER ome-devel@lists.openmicroscopy.org.uk",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-13T20:50:15.046747856Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c yum install -y sudo openssh-server openssh-clients && \tyum clean all"
+                },
+                {
+                    "created": "2018-04-13T20:50:17.330825233Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c sed -i \t's@session\\s*required\\s*pam_loginuid.so@session optional pam_loginuid.so@g' \t/etc/pam.d/sshd && \t/usr/bin/ssh-keygen -q -t rsa -f /etc/ssh/ssh_host_rsa_key \t-C '' -N ''"
+                },
+                {
+                    "created": "2018-04-13T20:50:18.332579248Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c sed -i -e \"s/Defaults    requiretty.*/ #Defaults    requiretty/g\" /etc/sudoers"
+                },
+                {
+                    "created": "2018-04-13T20:50:19.418712698Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c useradd omero && \techo 'omero:omero' | chpasswd omero &&\techo \"omero ALL= (ALL) NOPASSWD: ALL\" >> /etc/sudoers.d/omero"
+                },
+                {
+                    "created": "2018-04-13T20:50:19.697320566Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 22/tcp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-04-13T20:50:19.978410591Z",
+                    "author": "ome-devel@lists.openmicroscopy.org.uk",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/usr/sbin/sshd\" \"-eD\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:43e653f84b79ba52711b0f726ff5a7fd1162ae9df4be76ca1de8370b8bbf9bb0",
+                    "sha256:48d43f75483a411f8332b30c61121f9f5d5695b7fbeda5fe3d3c033a401be62d",
+                    "sha256:ccdcaa400d0e14626a275bce6fb4f360904081e400f1080a07f7c069fcdd5c5b",
+                    "sha256:be90925bf982cdb07261b8efa517a6e96812ee67d6c5c7ec2c1172c42a651805",
+                    "sha256:18400ca7887996f404aeaca507920ba4e964db191ce79172d340e7a59d76bfee"
+                ]
+            }
+        }
+    }
+}

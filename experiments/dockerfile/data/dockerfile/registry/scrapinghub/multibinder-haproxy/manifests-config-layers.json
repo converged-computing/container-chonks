@@ -1,0 +1,263 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 7268,
+                "digest": "sha256:5e34e59df772d4f9f93ec83ca07f17651ca3787b7a9c3e4ff5b21a531d24f6d3"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 52595547,
+                    "digest": "sha256:aa18ad1a0d334d80981104c599fa8cef9264552a265b1197af11274beba767cf"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 224,
+                    "digest": "sha256:2b28e4afdec2f8d17bbcbe8577f98d1871948d56d797389bc79af519d4a58bcf"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2022675,
+                    "digest": "sha256:50b2367d147e25a1dbd366731b5784e7cc394380a9775e2013826e8ff6f530a1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3187139,
+                    "digest": "sha256:01de3ea287cf4da3470547a3f2c3438130a2208de895ce7a9dcf87ee1bc85b80"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 346,
+                    "digest": "sha256:e37ff4b44a439fd4e88c02aea44ccf4625dcc263f40a55b536aac74129d0dd72"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4373,
+                    "digest": "sha256:db47a46aef2f282dd0239fff10dc05d2191e8c08a1cfce8b3ace7501eb072679"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 21578115,
+                    "digest": "sha256:8b929151c3d051490e197aa4307a1bc8315fb014cc5ff28569ea68b29246d6df"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 818808,
+                    "digest": "sha256:47377bf11bf957ac714a3dc803f713c1bbbe0c99b25fbdd0f915cbb59c52490c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3407527,
+                    "digest": "sha256:5a4e56c66a63d297a40d0470570da7e40ee8e48c53c159e351d88980da739110"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 329,
+                    "digest": "sha256:157b45877cda83629493e4a90fcd60f6c8e8958865ce18965011c0eb4b5decdb"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "HAPROXY_MAJOR=1.7",
+                    "HAPROXY_VERSION=1.7.9",
+                    "HAPROXY_MD5=a2bbbdd45ffe18d99cdcf26aa992f92d",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "GOSU_VERSION=1.7",
+                    "MULTIBINDER_SOCK=/run/multibinder.sock",
+                    "HAPROXY_CONFIG=/etc/haproxy/site.cfg.erb"
+                ],
+                "Cmd": [
+                    "haproxy"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:24f28579c8edd2b8190b86ce5966bd4946ad7b0924bf4f5d26b6540f2ccfcc82",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/entrypoint.sh"
+                ],
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "29605b9d3248ae4dd2bf6c8f03ad4505e57fc53d974e4301af364f9817c7611c",
+            "container_config": {
+                "Hostname": "29605b9d3248",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "HAPROXY_MAJOR=1.7",
+                    "HAPROXY_VERSION=1.7.9",
+                    "HAPROXY_MD5=a2bbbdd45ffe18d99cdcf26aa992f92d",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "GOSU_VERSION=1.7",
+                    "MULTIBINDER_SOCK=/run/multibinder.sock",
+                    "HAPROXY_CONFIG=/etc/haproxy/site.cfg.erb"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"haproxy\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:24f28579c8edd2b8190b86ce5966bd4946ad7b0924bf4f5d26b6540f2ccfcc82",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/entrypoint.sh"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-09-27T03:00:49.708229046Z",
+            "docker_version": "17.06.1-ce",
+            "history": [
+                {
+                    "created": "2017-09-13T08:40:43.31679503Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:d7333b3e0bc6479d2faed32e06d85f1975e5b23e13e75555aeed0f639770413b in / "
+                },
+                {
+                    "created": "2017-09-13T08:40:43.607157197Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-13T08:40:45.39948786Z",
+                    "created_by": "/bin/sh -c echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/backports.list"
+                },
+                {
+                    "created": "2017-09-18T21:25:45.672715196Z",
+                    "created_by": "/bin/sh -c apt-get update \t&& apt-get install -y --no-install-recommends \t\tliblua5.3-0 \t\tlibpcre3 \t\tlibssl1.0.0 \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-09-18T21:27:33.555424624Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_MAJOR=1.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-18T21:27:33.723727329Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_VERSION=1.7.9",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-18T21:27:33.879290743Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_MD5=a2bbbdd45ffe18d99cdcf26aa992f92d",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-18T21:28:26.826550955Z",
+                    "created_by": "/bin/sh -c set -x \t\t&& buildDeps=' \t\tgcc \t\tlibc6-dev \t\tliblua5.3-dev \t\tlibpcre3-dev \t\tlibssl-dev \t\tmake \t\twget \t' \t&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* \t\t&& wget -O haproxy.tar.gz \"http://www.haproxy.org/download/${HAPROXY_MAJOR}/src/haproxy-${HAPROXY_VERSION}.tar.gz\" \t&& echo \"$HAPROXY_MD5 *haproxy.tar.gz\" | md5sum -c \t&& mkdir -p /usr/src/haproxy \t&& tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1 \t&& rm haproxy.tar.gz \t\t&& makeOpts=' \t\tTARGET=linux2628 \t\tUSE_LUA=1 LUA_INC=/usr/include/lua5.3 \t\tUSE_OPENSSL=1 \t\tUSE_PCRE=1 PCREDIR= \t\tUSE_ZLIB=1 \t' \t&& make -C /usr/src/haproxy -j \"$(nproc)\" all $makeOpts \t&& make -C /usr/src/haproxy install-bin $makeOpts \t\t&& mkdir -p /usr/local/etc/haproxy \t&& cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors \t&& rm -rf /usr/src/haproxy \t\t&& apt-get purge -y --auto-remove $buildDeps"
+                },
+                {
+                    "created": "2017-09-18T21:28:27.102991051Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:b1cb7b827dc9fcd27909f9c233ac2faa2d7534c25992fa5f3402d22503666d6d in / "
+                },
+                {
+                    "created": "2017-09-18T21:28:27.255876782Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-18T21:28:27.411232082Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"haproxy\" \"-f\" \"/usr/local/etc/haproxy/haproxy.cfg\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-27T02:59:51.485283943Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-27T02:59:52.140287864Z",
+                    "created_by": "/bin/sh -c groupadd -r haproxy && useradd -r -m -g haproxy haproxy"
+                },
+                {
+                    "created": "2017-09-27T03:00:40.196564078Z",
+                    "created_by": "/bin/sh -c apt-get update -qq &&     apt-get install -y wget ruby --no-install-recommends && rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-09-27T03:00:40.628906567Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GOSU_VERSION=1.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-27T03:00:41.806137022Z",
+                    "created_by": "/bin/sh -c set -x     && wget -O /usr/local/bin/gosu \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture)\"     && wget -O /usr/local/bin/gosu.asc \"https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$(dpkg --print-architecture).asc\"     && export GNUPGHOME=\"$(mktemp -d)\"     && gpg --keyserver ha.pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4     && gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu     && rm -r \"$GNUPGHOME\" /usr/local/bin/gosu.asc     && chmod +x /usr/local/bin/gosu     && gosu nobody true"
+                },
+                {
+                    "created": "2017-09-27T03:00:49.073324673Z",
+                    "created_by": "/bin/sh -c gem install multibinder -v 0.0.4"
+                },
+                {
+                    "created": "2017-09-27T03:00:49.186458351Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV MULTIBINDER_SOCK=/run/multibinder.sock",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-27T03:00:49.313961101Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV HAPROXY_CONFIG=/etc/haproxy/site.cfg.erb",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-27T03:00:49.473052167Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:d03a079721ffc5d3e8740277f3ce85cb215131d66f97f1c5ee3b60646138a9d2 in / "
+                },
+                {
+                    "created": "2017-09-27T03:00:49.582495113Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-27T03:00:49.708229046Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"haproxy\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:18f9b4e2e1bcd5abe381a557c44cba379884c88f6049564f58fd8c10ab5733df",
+                    "sha256:13df24531f39d8361a9ea78b6c468c7ef83be00bae7e605306621c52a390fc1f",
+                    "sha256:35ee8682742997c0d81d3399b88915ac9e4e645b8d03953f78b00bfea3e99500",
+                    "sha256:b8bc8aae1bb1d3e84562759a19adda539f7a4654f641dd46eda445b99a5cf9c8",
+                    "sha256:c910a0fdf94ca0d63114d9152bdceacc4d53b3cfc8c4457a17e8bc18392b9b8c",
+                    "sha256:168134e983f9f1e5e210da86306d8cc1894ebdfb1ee9083a85a91e6d0b844595",
+                    "sha256:bb8aed3fa94e06c39458a6fccedd6a49dc5d2a73f18a1beb95f72afc7550e913",
+                    "sha256:eba5caa3d41f9779aec256cae043f042ae1c00ebeeae097bed4bb6f1f7662180",
+                    "sha256:b516c5065c2fe36921ddb4e66188e2cd74b8b3f69add4712eb6e1bb9fa12d7f8",
+                    "sha256:a7ad7c18cc68463af6d1b6680532bae89d2d7fee9f1a0bab001f87223a004dad"
+                ]
+            }
+        }
+    }
+}

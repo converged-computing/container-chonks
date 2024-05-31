@@ -1,0 +1,359 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:3291d8067a663d7c3ed8a1ab98775b7d1a2b979d070c195437cd235c6c26057f",
+                    "size": 676,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:001b6446a91693d10ca3f367c93d1fda1d723189a6805570f809603ef25976c4",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:3291d8067a663d7c3ed8a1ab98775b7d1a2b979d070c195437cd235c6c26057f",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        },
+        "v1.5.4": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "schemaVersion": 2,
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:42f2a669c080a579ae4f6f0686d035690cd424056e608628d18536d4747bdf2b",
+                "size": 1340
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:1230f17f526cb07307d41462355b10488b994e8bdafe0d8f275a405fa3b33831",
+                    "size": 50437098
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:7c758d5d6f9a3bac2ea2a614d74c7881ef9d3a866b88117017973f9ae0d678a3",
+                    "size": 615266907
+                }
+            ]
+        },
+        "v1.5.5": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "schemaVersion": 2,
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:e22a201fb9b18ba94230a07e3954ede94444454a5d2acf8fb94a8de6c64aef46",
+                "size": 1825
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:ac7f2e1c758675427623d0da4faa88b336c62466c15a98af61efd3f015282f2f",
+                    "size": 50448910
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:bc629637bcd1b6dcdc69356f9db3912e194f3962c7bdaf52b0b6fe8d0e49b8ca",
+                    "size": 649291632
+                }
+            ]
+        },
+        "v1.6.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:f7a56b43d37a612a9ceb874d2e056e914904c3a2c38b8674046f89b8c0f58a2b",
+                    "size": 676,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:8d0396392bec3a5f8c64601a281d6785b4b7bad1c18da9ff0c584a575f3d1fb8",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:f7a56b43d37a612a9ceb874d2e056e914904c3a2c38b8674046f89b8c0f58a2b",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest",
+        "v1.5.4",
+        "v1.5.5",
+        "v1.6.0"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash",
+                    "-c",
+                    "amptk"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null,
+                "Shell": [
+                    "/bin/bash",
+                    "-c"
+                ]
+            },
+            "created": "2023-11-18T23:48:09.504391557Z",
+            "history": [
+                {
+                    "created": "2023-11-01T00:21:21.778123547Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:e12306e266f3e237ff7df5ea95bd339c3eb4a539f31be801afd63a76e116f522 in / "
+                },
+                {
+                    "created": "2023-11-01T00:21:22.300113004Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-18T23:48:09.504391557Z",
+                    "created_by": "COPY /venv /venv # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-11-18T23:48:09.504391557Z",
+                    "created_by": "ENV PATH=/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-18T23:48:09.504391557Z",
+                    "created_by": "SHELL [/bin/bash -c]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-18T23:48:09.504391557Z",
+                    "created_by": "CMD [\"/bin/bash\" \"-c\" \"amptk\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2c1854d95a401c6afa553b8d6deb6f23c891026ec5d719d0e5ce46947d274546",
+                    "sha256:8fe43bfe7e35664ce834477617e10439e31612b7181e768309c73688a603ee0b"
+                ]
+            }
+        },
+        "v1.5.4": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash",
+                    "-c",
+                    "amptk"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null,
+                "Shell": [
+                    "/bin/bash",
+                    "-c"
+                ]
+            },
+            "created": "2021-11-26T22:04:18.84666572Z",
+            "history": [
+                {
+                    "created": "2021-11-17T02:20:51.334553938Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:cb5ed7070880d4c0177fbe6dd278adb7926e38cd73e6abd582fd8d67e4bbf06c in / "
+                },
+                {
+                    "created": "2021-11-17T02:20:51.921052716Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-11-26T22:04:18.84666572Z",
+                    "created_by": "COPY /venv /venv # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-11-26T22:04:18.84666572Z",
+                    "created_by": "ENV PATH=/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-11-26T22:04:18.84666572Z",
+                    "created_by": "SHELL [/bin/bash -c]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-11-26T22:04:18.84666572Z",
+                    "created_by": "CMD [\"/bin/bash\" \"-c\" \"amptk\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:040a44cff5e0b241b36b400b96a614b2fb9037e9e983dddcc8d437377a663601",
+                    "sha256:d47e22a529ac295141b78681940107716564733d9052c331b8a17a2276dd8f03"
+                ]
+            }
+        },
+        "v1.5.5": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash",
+                    "-c",
+                    "amptk"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null,
+                "Shell": [
+                    "/bin/bash",
+                    "-c"
+                ]
+            },
+            "created": "2023-01-11T23:47:11.800945895Z",
+            "history": [
+                {
+                    "created": "2023-01-11T02:34:54.999052854Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:4bf66d4081da52e8b692fcff96aad84d3e68bda4f62e870e8f4803153c70e24c in / "
+                },
+                {
+                    "created": "2023-01-11T02:34:55.608587219Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-11T23:47:11.800945895Z",
+                    "created_by": "COPY /venv /venv # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-01-11T23:47:11.800945895Z",
+                    "created_by": "ENV PATH=/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-11T23:47:11.800945895Z",
+                    "created_by": "SHELL [/bin/bash -c]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-11T23:47:11.800945895Z",
+                    "created_by": "CMD [\"/bin/bash\" \"-c\" \"amptk\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2NvbnRpbnV1bWlvL21pbmljb25kYTM6bGF0ZXN0IiwicGluIjoic2hhMjU2OjEwYjM4YzlhOGE1MTY5MjgzOGNlNDUxN2U4Yzc0NTE1NDk5YjY4ZDU4YzhhMjAwMGQ4YTlkZjdmMGYwOGZjNWUifSx7InR5cGUiOiJkb2NrZXItaW1hZ2UiLCJyZWYiOiJkb2NrZXIuaW8vbGlicmFyeS9kZWJpYW46YnVzdGVyIiwicGluIjoic2hhMjU2OmJiOGM2MmY5ZjU0MGE1ZjVmNDlmN2VkNWNhYWUwZTI4ODlmOTk5Y2QxNDU1M2YyYWFjY2FmMWZhNGZjYjk5OGQifV19",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:083aacb889b3fc7c21c3c680a541f50b467ec7d7de97a48e43122d9a34219788",
+                    "sha256:36d10d33a275acc6c655ea90c32c50f5da99462f6015165d55a27a777299068b"
+                ]
+            }
+        },
+        "v1.6.0": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash",
+                    "-c",
+                    "amptk"
+                ],
+                "ArgsEscaped": true,
+                "OnBuild": null,
+                "Shell": [
+                    "/bin/bash",
+                    "-c"
+                ]
+            },
+            "created": "2023-11-06T18:43:37.425388996Z",
+            "history": [
+                {
+                    "created": "2023-11-01T00:21:21.778123547Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:e12306e266f3e237ff7df5ea95bd339c3eb4a539f31be801afd63a76e116f522 in / "
+                },
+                {
+                    "created": "2023-11-01T00:21:22.300113004Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T18:43:37.425388996Z",
+                    "created_by": "COPY /venv /venv # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-11-06T18:43:37.425388996Z",
+                    "created_by": "ENV PATH=/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T18:43:37.425388996Z",
+                    "created_by": "SHELL [/bin/bash -c]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-11-06T18:43:37.425388996Z",
+                    "created_by": "CMD [\"/bin/bash\" \"-c\" \"amptk\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2c1854d95a401c6afa553b8d6deb6f23c891026ec5d719d0e5ce46947d274546",
+                    "sha256:50466dac47cf4860668535ff2c9ac616c0b96ee7a3aaf4d8b3640acc445d768e"
+                ]
+            }
+        }
+    }
+}

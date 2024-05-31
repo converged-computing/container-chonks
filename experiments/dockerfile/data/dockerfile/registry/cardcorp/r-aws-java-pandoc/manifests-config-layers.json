@@ -1,0 +1,263 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9167,
+                "digest": "sha256:7d04cbe822afaaa771e5575b4bb941db848f315a2db4c7f1b6bf5dc6c850b4fb"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 51261759,
+                    "digest": "sha256:ebbe46658ae1eddd748e3222cbc9dd7109f9fd7f279a4b2f9d6a32d0a58b4c16"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3340,
+                    "digest": "sha256:4ade4cbe0c7e776cd60102751e29ec82271b08f5a086da6ccfef0574f6a040db"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 31166364,
+                    "digest": "sha256:4be550b6d67c5ef8b2ae801804eabe3acefc327f4abfa62a3e364f311a1e25b4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 865855,
+                    "digest": "sha256:5fe7cbdf1a7c13b846f5fa6e716cf72a115b877f48d2693b9a1fbe7788d36b1d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 350,
+                    "digest": "sha256:5790fe4db759efadbc15af34fc7b9ae6f5ebadf8ce05baec4309b73b79cec810"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 268759935,
+                    "digest": "sha256:bd556fe2886dac2a22b5e02cf43558766730e3423978522b24f2457ff2d489d0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 20814233,
+                    "digest": "sha256:48cc8e7781d69961ccbc4cbcf0e81ccf4aa77cd71cecc0ded4d5a9eaa41d3c84"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 294,
+                    "digest": "sha256:378b2577203b681cdde09c2eccc966e47bba05dfa134be59aac5104365b49644"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 41051657,
+                    "digest": "sha256:b6dca7b06d04c5290ae1be9f5edbf3d3e23dac709511659e99382075bd374551"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 152272556,
+                    "digest": "sha256:00964d90d4c4fd42d791e79e864829d7e87d646b9a5408368f045218258b03ba"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 198,
+                    "digest": "sha256:91289f0d8ef56dfd64fb7209eafa213c472ad5345f946ad59a16637a6c633dfc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 8426,
+                    "digest": "sha256:4b1b0431e84f5cbaff5866be00b431c57f56d09526c281de825a059f17ab51ef"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 260678538,
+                    "digest": "sha256:077524202112d9ffa7d8f66a6c6bd19cadac2be358a9a85fb76b4f864640e888"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 18987979,
+                    "digest": "sha256:a56ee60e9a737e58cfb1737f9c9e58c86713e63ca29309753bfccc01754b6946"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32624561,
+                    "digest": "sha256:445becb7d209a8d4b0051ce45c2277a08cf20bd88d33609663f663ad7d9ed19d"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Gergely Daroczi <gergely.daroczi@card.com>",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LC_ALL=en_US.UTF-8",
+                    "LANG=en_US.UTF-8",
+                    "R_BASE_VERSION=4.3.1"
+                ],
+                "Cmd": [
+                    "R"
+                ],
+                "Labels": {
+                    "org.opencontainers.image.authors": "Dirk Eddelbuettel <edd@debian.org>",
+                    "org.opencontainers.image.licenses": "GPL-2.0-or-later",
+                    "org.opencontainers.image.source": "https://github.com/rocker-org/rocker",
+                    "org.opencontainers.image.vendor": "Rocker Project"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2024-02-02T12:42:59.601865905Z",
+            "history": [
+                {
+                    "created": "2022-10-25T01:45:19.037941824Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:7b3c3912d73330bfbb6eb18f8cba6491e0c4b2be59bc6b846a4a0cde39b1ad27 in / "
+                },
+                {
+                    "created": "2022-10-25T01:45:19.526721233Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-16T19:17:34.679702478-05:00",
+                    "created_by": "LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-16T19:17:34.679702478-05:00",
+                    "created_by": "RUN /bin/sh -c useradd -s /bin/bash -m docker \t&& usermod -a -G staff docker # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-16T19:17:47.597139049-05:00",
+                    "created_by": "RUN /bin/sh -c apt-get update \t&& apt-get install -y --no-install-recommends \t\ted \t\tless \t\tlocales \t\tvim-tiny \t\twget \t\tca-certificates \t\tfonts-texgyre \t&& rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-16T19:17:49.164064219-05:00",
+                    "created_by": "RUN /bin/sh -c echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen \t&& locale-gen en_US.utf8 \t&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-16T19:17:49.164064219-05:00",
+                    "created_by": "ENV LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-16T19:17:49.164064219-05:00",
+                    "created_by": "ENV LANG=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-16T19:17:49.614589289-05:00",
+                    "created_by": "RUN /bin/sh -c echo \"deb http://http.debian.net/debian sid main\" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release \"testing\";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends \"false\";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-16T19:17:49.614589289-05:00",
+                    "created_by": "ENV R_BASE_VERSION=4.3.1",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-16T19:18:49.66388-05:00",
+                    "created_by": "RUN /bin/sh -c apt-get update         && apt-get install -y --no-install-recommends                 libopenblas0-pthread \t\tlittler                 r-cran-docopt                 r-cran-littler \t\tr-base=${R_BASE_VERSION}-* \t\tr-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* \t\tr-recommended=${R_BASE_VERSION}-* \t&& chown root:staff \"/usr/local/lib/R/site-library\" \t&& chmod g+ws \"/usr/local/lib/R/site-library\" \t&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r \t&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r \t&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r \t&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r \t&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r \t&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r \t&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds \t&& rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-16T19:18:49.66388-05:00",
+                    "created_by": "CMD [\"R\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-02T12:21:37.998319583Z",
+                    "created_by": "MAINTAINER Gergely Daroczi <gergely.daroczi@card.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-02T12:21:37.998319583Z",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get install -y apt-transport-https   && apt-get clean && rm -rf /var/lib/apt/lists/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-02-02T12:21:38.515360159Z",
+                    "created_by": "RUN /bin/sh -c echo 'deb https://cloudfront.debian.net/debian/ testing main\\ndeb https://cloudfront.debian.net/debian/ testing-updates main\\ndeb https://cloudfront.debian.net/debian-security/ testing-security/updates main\\n' | tee /etc/apt/sources.list  && echo \"deb https://cloudfront.debian.net/debian/ sid main\"  | tee /etc/apt/sources.list.d/debian-unstable.list # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-02-02T12:24:34.994228305Z",
+                    "created_by": "MAINTAINER Gergely Daroczi <gergely.daroczi@card.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-02T12:24:34.994228305Z",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get install -y libssl-dev libssl-dev libcurl4-openssl-dev # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-02-02T12:25:36.402648619Z",
+                    "created_by": "RUN /bin/sh -c mkdir -p /usr/share/binfmts   && apt update   && apt install -y openjdk-8-jdk   && R CMD javareconf # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-02-02T12:25:37.028490295Z",
+                    "created_by": "RUN /bin/sh -c echo \"/usr/lib/jvm/java-8-oracle/jre/lib/amd64/server/\" > /etc/ld.so.conf.d/rJava.conf # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-02-02T12:25:37.65894579Z",
+                    "created_by": "RUN /bin/sh -c /sbin/ldconfig # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-02-02T12:29:14.355104393Z",
+                    "created_by": "RUN /bin/sh -c apt-get install -y --no-install-recommends       ghostscript       imagemagick       lmodern       texlive-fonts-recommended       texlive-humanities       texlive-latex-extra       texinfo   && apt-get clean   && rm -rf /var/lib/apt/lists/   && cd /usr/share/texlive/texmf-dist   && wget http://mirrors.ctan.org/install/fonts/inconsolata.tds.zip   && unzip inconsolata.tds.zip   && rm inconsolata.tds.zip   && echo \"Map zi4.map\" >> /usr/share/texlive/texmf-dist/web2c/updmap.cfg   && mktexlsr   && updmap-sys # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-02-02T12:29:18.779020956Z",
+                    "created_by": "RUN /bin/sh -c mkdir -p /opt/pandoc   && wget --no-check-certificate -O /tmp/pandoc.zip https://s3.amazonaws.com/rstudio-buildtools/pandoc-1.13.1.zip   && unzip -j /tmp/pandoc.zip \"pandoc-1.13.1/linux/debian/x86_64/pandoc\" -d /opt/pandoc   && chmod +x /opt/pandoc/pandoc   && ln -s /opt/pandoc/pandoc /usr/local/bin   && unzip -j /tmp/pandoc.zip \"pandoc-1.13.1/linux/debian/x86_64/pandoc-citeproc\" -d /opt/pandoc   && chmod +x \"/opt/pandoc/pandoc-citeproc\"   && ln -s \"/opt/pandoc/pandoc-citeproc\" /usr/local/bin   && rm -f /tmp/pandoc.zip # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-02-02T12:42:59.601865905Z",
+                    "created_by": "RUN /bin/sh -c install2.r --error     httr     rJava     AWR     knitr     rmarkdown     pander   && rm -rf /tmp/downloaded_packages/ /tmp/*.rds # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:0e8aa3a6d415ebff37eb75112c43a3b8fe8c99800b5aae101ca793992f547b1b",
+                    "sha256:23f249d77ca0369876d0b9db3f7426e3431798e92f1242cd57426d37452f3be6",
+                    "sha256:63d2606aac5a0d846f231112efb5f258a433eadd492da3c1808285ae58c45ccc",
+                    "sha256:8d70d7de518176508d53103b536622a939c6c2cd4cdca8d64f5a864f9062e31d",
+                    "sha256:95f8b4a288a3d86675bf67b69dd9871dc3a753f0a2f75ae3b3a59c33172e4bab",
+                    "sha256:df2ba0fbb60ed94a6787daa4a4e420d99ed191634b961b9145a948ca11238a98",
+                    "sha256:9a4f98f31fc3fbec24693480374e6fa958f80b8b12284d504ad420c9267554db",
+                    "sha256:96da87b5848eb5fbc78b1837817cba3d8a259a374abc79ab9977542cdafcc145",
+                    "sha256:055114eac39cea13a02d02b7168ffb53aa31595a470532ce87f4f60fd295da9c",
+                    "sha256:aa598eb52997d0a1626ac3f4b6a9668470a577f36c8db6a769af12ce351fe973",
+                    "sha256:264f423447a573be6e6a8ae0a67e25148a4611b43db03609b66183809d5b2131",
+                    "sha256:05cd252f17fa86487cf3c338c197a47cb41a9484fae91c38a8cf269d212587f6",
+                    "sha256:ce2c472a31c73a8cc40d271fd713d05200bc39cf0b43b143c9fdc602fa0acc8a",
+                    "sha256:21e6b7a472961362b89c0aab4a828c53e66cc436232cae940abfd2fc1759a5bb",
+                    "sha256:ec4ab03fd954abf37c06a1644f126e1df8613a18613f83f186fa3ee845ed26bd"
+                ]
+            }
+        }
+    }
+}

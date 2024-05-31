@@ -1,0 +1,218 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4677,
+                "digest": "sha256:20d5c295e983da142cffa863128135c632d006ed59fd4e17ca179a70e1a24ea3"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27101001,
+                    "digest": "sha256:6f28985ad1843afd6fd4fe0b42a30bfab63c27d302362e7341e3316e8ba25ced"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 67629622,
+                    "digest": "sha256:5ea5ac7f4024b9d025dd0323e028d45cd7cf6be91b0c14ed6a4b618158f8e4d8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22014371,
+                    "digest": "sha256:826bdb020d3bb4cbdd6b728bf91173653946097d107cce3f296c9f56ca975241"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 71451,
+                    "digest": "sha256:aa0ff968cafa1d579b9920a0d69e0d1a55f106ab3e03be47fe6e71d2b9009e2b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 505,
+                    "digest": "sha256:c08fa9d1794f53cc2f5cd853cc69c14df1feed9a1f7e7ac54019fceecea293eb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2574922,
+                    "digest": "sha256:217ca8840f84ba2060da6b4e852e0d0560423b60b1c41e9f39e95c01e7b000e6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1172243,
+                    "digest": "sha256:1811c32dd5cfe7cf6f41150f0cd8116c318ea561510ec70c2d50ca6e692bbd54"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 673780,
+                    "digest": "sha256:99ae4ddf51bda2d2a1d7d811cd92eadbad3dd17f8c3794250423f291de1e6211"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4177557,
+                    "digest": "sha256:0e6aa38ffe9aa3f36298b22a5140d4592b33d5c2cb9a15c4381e10ef217de90b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 306,
+                    "digest": "sha256:502bafd1da0e5e0d214804f9ba82ddba70e713fbe095fc9c6a6dcefaf048abba"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 179,
+                    "digest": "sha256:b4441e98c4a8d4ddd56a9fbe11ac55d659e56e0f9ebea948ea1c363e46c27117"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6205,
+                    "digest": "sha256:5ddca61117f1ca1a6e67d04f53913cba166dd8dbd94e698ce12f93492919ee80"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 254,
+                    "digest": "sha256:99306a48833d8446867cdb528ca45d790ef271d099c3855e53b8cda6e8228980"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "BIN=/usr/local/bin",
+                    "DOCROOT=/var/www/wordpress"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "maintainer": "ixkaito <ixkaito@gmail.com>",
+                    "version": "2.0"
+                },
+                "OnBuild": null
+            },
+            "created": "2021-03-18T05:45:21.675027314Z",
+            "history": [
+                {
+                    "created": "2021-03-12T02:20:40.804976973Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:3c32f1cd03198e141dd233a7ffd13444157d4150ad917d548f3ee9bf5953ce22 in / "
+                },
+                {
+                    "created": "2021-03-12T02:20:41.106312024Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-16T08:38:55.851811499Z",
+                    "created_by": "LABEL maintainer=ixkaito <ixkaito@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-16T08:38:55.851811499Z",
+                    "created_by": "LABEL version=2.0",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-16T08:38:55.851811499Z",
+                    "created_by": "RUN /bin/sh -c apt-get update;   apt-get clean;   DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends     ca-certificates     curl     less     lftp     libyaml-0-2     mariadb-client     mariadb-server     nano     openssh-client     sshpass   ;   rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:38:55.851811499Z",
+                    "created_by": "ENV BIN=/usr/local/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-16T08:38:56.344758288Z",
+                    "created_by": "COPY /usr/local/lib/ /usr/local/lib/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:38:56.393852733Z",
+                    "created_by": "COPY /usr/local/bin/ruby /usr/local/bin/ruby # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:38:56.442357829Z",
+                    "created_by": "COPY /usr/local/bin/gem /usr/local/bin/gem # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:39:00.558864562Z",
+                    "created_by": "RUN /bin/sh -c gem install wordmove --no-document # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:39:03.762834794Z",
+                    "created_by": "RUN /bin/sh -c curl -o ${BIN}/wp -L https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar;   chmod +x ${BIN}/wp # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:40:22.827548705Z",
+                    "created_by": "RUN /bin/sh -c curl -o ${BIN}/phpunit -L https://phar.phpunit.de/phpunit.phar;   chmod +x ${BIN}/phpunit # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:40:30.281375676Z",
+                    "created_by": "RUN /bin/sh -c curl -o ${BIN}/mailhog -L https://github.com/mailhog/MailHog/releases/download/v1.0.0/MailHog_linux_amd64;   chmod +x ${BIN}/mailhog # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:40:30.383780406Z",
+                    "created_by": "COPY xdebug.ini /etc/php/7.3/cli/conf.d/20-xdebug.ini # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:40:30.648006629Z",
+                    "created_by": "RUN /bin/sh -c echo \"set ssl:verify-certificate no\" >> ~/.lftp.rc # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-16T08:40:30.648006629Z",
+                    "created_by": "ENV DOCROOT=/var/www/wordpress",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-03-18T05:45:21.618005427Z",
+                    "created_by": "RUN /bin/sh -c mkdir -p ${DOCROOT};   adduser --uid 1000 --gecos '' --disabled-password wocker;   sed -i -e \"s/^bind-address.*/bind-address = 0.0.0.0/\" /etc/mysql/mariadb.conf.d/50-server.cnf # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-03-18T05:45:21.675027314Z",
+                    "created_by": "COPY wp-cli.yml /var/www # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:14a1ca976738392ffa2ae4e54934ba28ab9cb756e924ad9297a4795a4adbfdf6",
+                    "sha256:838be597ddabba564950ae2ec6a4a945fca1aeca84630eecdeb9a743c9e77687",
+                    "sha256:62547c7ee9ea467ebc78aa5bf90dc630d3f915c51156421db0a4f181c705e758",
+                    "sha256:878d5b426a7044cc87d696d15d68f672ecb0a3dcdf54a6bd6e8ca60b60461063",
+                    "sha256:f28bd55649d0baf0ffa75bdb1db8708a1b2f940ad2d2d915ee601d20084e6547",
+                    "sha256:a0993146521bce5c12578fdb6445589cd0c1f871c18c36fc51627a442b9976dc",
+                    "sha256:a435facab94083af8134f11dfd8518b360d050621cfdc65a062d3ccd980c6635",
+                    "sha256:3c01af427923388914b9a23e30d421f616f6a202ba413ecf766b1daac9e90dd2",
+                    "sha256:1f9ea83156090176aedf68d90a6b4785368d18125401a3ed810a08a89b3d512e",
+                    "sha256:632fbdbe6acb8c4b40d1df38b1d40f7b082f241139f3605d8ced7c4f11a3ef52",
+                    "sha256:c6eb3169023c467e4f83cb6d97d4109024702c948b3281fec3b67a9f5a4a227b",
+                    "sha256:0d14d0cedd707635a0c303383ad6afd1f8e6fa27166c6d7169d126c0a4b4f110",
+                    "sha256:a2a4cc0f182b15e2bcb7d86fb84ed356d71d67f6c9a993806701425bb95c8051"
+                ]
+            }
+        }
+    }
+}

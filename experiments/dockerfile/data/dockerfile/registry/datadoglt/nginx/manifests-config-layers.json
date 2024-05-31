@@ -1,0 +1,274 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6297,
+                "digest": "sha256:7217402531cba561f79da9f22ed9406d9d721a0cd4d6829849bbbd73e487241d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70591526,
+                    "digest": "sha256:8d30e94188e7f13642d975e70c484e48c33867f3ede3277df1145803fa996ac1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1600,
+                    "digest": "sha256:eb2522b74e2d8248015d79f1ffec0d9afc5399bbb60414850ed3c359b1263edb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 248,
+                    "digest": "sha256:ef72f62edadd0b0f71e2982901ee29dd003a9e28fdb0c039351dc6d2ad17b590"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6281493,
+                    "digest": "sha256:c0c17e9e3dc531fa2fa1bfebacb2a21ef0209786b591fa524373be806d63c513"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 820333,
+                    "digest": "sha256:4ac7bcf7d1345ac095842ebb3ccd7e76636c9caeea6c2da94ffedb1367de2799"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 162,
+                    "digest": "sha256:f4a3cedd500bedc16d3e41aacaec0c405eaf4b5c77b6b6c21ddfeb2e70164b5e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 529,
+                    "digest": "sha256:d126dd8bbffcc45409f2339aea679099ced52e0aff5cd6af62dec41561a8fe58"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 335,
+                    "digest": "sha256:bd19ef3518bfefe299cdf911bdd4cdbf9b51ec5bfb8867a8f9179051fd4837e4"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "\"DataDog\" <info@datadog.lt>",
+            "config": {
+                "Hostname": "719d8d68f3dc",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "USER_GUID=1000",
+                    "USER_UID=1000"
+                ],
+                "Cmd": [
+                    "/usr/local/bin/ep",
+                    "-v",
+                    "/etc/nginx/sites-enabled/*.conf",
+                    "--",
+                    "/usr/sbin/nginx"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6bcdf0776490334d5e1fd3a233cb0bdac50c95c5a9139cd2ad1e3ec5b86f6295",
+                "Volumes": {
+                    "/etc/nginx/certs": {},
+                    "/var/log/nginx": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/entrypoint.sh"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20160906",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "0a89678f389898037ca6837cd078320b90290f3d7828e02ad9cc7396c5eb694a",
+            "container_config": {
+                "Hostname": "719d8d68f3dc",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "80/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "USER_GUID=1000",
+                    "USER_UID=1000"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/usr/local/bin/ep\" \"-v\" \"/etc/nginx/sites-enabled/*.conf\" \"--\" \"/usr/sbin/nginx\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6bcdf0776490334d5e1fd3a233cb0bdac50c95c5a9139cd2ad1e3ec5b86f6295",
+                "Volumes": {
+                    "/etc/nginx/certs": {},
+                    "/var/log/nginx": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/entrypoint.sh"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20160906",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2016-09-12T07:52:16.626105127Z",
+            "docker_version": "1.12.1",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-06T21:10:17.550047616Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:e336b45186086f7d9d9b8e8be3d6c027bc9c14dbfdde2bb056793ee458bd1a57 in / "
+                },
+                {
+                    "created": "2016-09-06T21:10:19.577810426Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20160906",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-06T21:10:20.397787682Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-12T07:28:34.094554323Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER \"DataDog\" <info@datadog.lt>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-12T07:28:37.606585887Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop)  ENV USER_GUID=1000",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-12T07:28:40.123240764Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop)  ENV USER_UID=1000",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-12T07:28:43.563030463Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c groupadd www -g ${USER_GUID} &&     useradd www -g ${USER_GUID} -u ${USER_UID}"
+                },
+                {
+                    "created": "2016-09-12T07:28:59.793039351Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER \"DataDog\" <info@datadog.lt>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-12T07:51:26.706271674Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 80/tcp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-12T07:51:30.419677955Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/var/log/nginx /etc/nginx/certs]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-12T07:51:33.219816988Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop) COPY file:6ebce51085a4778ecb7e4fb7c7c4b00855a027acf7c03ba5a96f26686bb66525 in /etc/yum.repos.d/nginx.repo "
+                },
+                {
+                    "created": "2016-09-12T07:51:52.22057168Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c yum -y install nginx --enablerepo=nginx &&     yum clean all"
+                },
+                {
+                    "created": "2016-09-12T07:51:58.203276696Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c curl -sLo /usr/local/bin/ep https://github.com/kreuzwerker/envplate/releases/download/v0.0.8/ep-linux &&     chmod +x /usr/local/bin/ep"
+                },
+                {
+                    "created": "2016-09-12T07:52:01.349748025Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c mkdir /etc/nginx/site-templates && mkdir /etc/nginx/sites-enabled"
+                },
+                {
+                    "created": "2016-09-12T07:52:04.426268239Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop) COPY file:b7a1c508ae4f6396053a26c4078aa0791eaada3942a3ac8433520f49b0afd80c in /etc/nginx/nginx.conf "
+                },
+                {
+                    "created": "2016-09-12T07:52:07.096307289Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:999da2e90c0a4946b8281183ea9a725f32eb33c956e95164c13e2ba3c333db7b in /entrypoint.sh "
+                },
+                {
+                    "created": "2016-09-12T07:52:14.096259Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-09-12T07:52:16.626105127Z",
+                    "author": "\"DataDog\" <info@datadog.lt>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/usr/local/bin/ep\" \"-v\" \"/etc/nginx/sites-enabled/*.conf\" \"--\" \"/usr/sbin/nginx\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:0aeb287b1ba9fd4c951bb9f4bd8e50908f51c630e07b655b3b2f9581dc0fef0d",
+                    "sha256:d15e8d4ce99372c3566a44bcce8b13e587b8352fb25dbe520131771bdddd7eda",
+                    "sha256:0be8404ea962b56fa009798ce050f376aa529256c530aa4b7c3e4c1e7e3a0241",
+                    "sha256:132dfc483c17c5d3c1f5d28bc24883f450db53fe572cc1fc3d18ea47421afa3c",
+                    "sha256:0699efdb362618e2206ebbf13a1c648a8f6f3e483a81463281f2e75b9fa2ac6a",
+                    "sha256:274cc47434dcde93252b99f08c5cde8f5486a3b95dfd101142aab855dbe97d84",
+                    "sha256:1b73d3af51bba0dfdd7f6f3e701c9d6063c396079d8b0bd22cc2204dffa61ced",
+                    "sha256:6525d2810b6c7f1f436eaf708f26531f551425766e18297b88b3edd1035c9501"
+                ]
+            }
+        }
+    }
+}

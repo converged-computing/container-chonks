@@ -1,0 +1,201 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5289,
+                "digest": "sha256:5be72f61c605c085f21064f69f1e0fa0117493e69e8d02f040ee155836ff47cd"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 72996858,
+                    "digest": "sha256:99ad4e3ced4d361a0f042c611a6fe5295ed5364287276a96483b80ca85588041"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 72658,
+                    "digest": "sha256:ec5a723f4e2aa55867633696e9763c27fce7b7a143e30b36571a5f9a3142022c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 630,
+                    "digest": "sha256:2a175e11567c4a374dd86c53ab8744d9ba21046fbed1fea612d1d37ae0e24afa"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 851,
+                    "digest": "sha256:8d26426e95e04222aa7782fb871a3beeee110d03b312ed89b428e72c0b747b2c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 163,
+                    "digest": "sha256:46e451596b7c64397d1d3c39cd6ea32a055f456fafaf3ce79a92725c9b47e404"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 172029572,
+                    "digest": "sha256:b20a368f0f95d9f54c337008b355e167e8e783826a96e6dca49a8d6a917eba50"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 240,
+                    "digest": "sha256:2e9dc6f683d1b99c59c9644e06a97f43d81880d222d20887ef89d651a439844d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2292602,
+                    "digest": "sha256:d3de37646ff4b863ce4431aa3740eb3e2833ab161b0ca5f437cabcfb934109f2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 77686,
+                    "digest": "sha256:dfc0f4f7aecbdd6dec2a851cd7a3a087ad9d6e51f217f33c51f96a928490bec0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4548516,
+                    "digest": "sha256:bae371e29e70aceccdc315fe3200482b6ea865bbd1c49047d9488d53c7f74c61"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Kai Arulkumaran <design@kaixhin.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6772d6fdd5396c8fef3356dc3ce8c77a6f558f1af390bc5e04c94305ad4c7a4b",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "e148bd8873ea01e7c235b9233d297a7f1d766e04b027d3168f2c7901a17e7364",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6772d6fdd5396c8fef3356dc3ce8c77a6f558f1af390bc5e04c94305ad4c7a4b",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2018-03-24T17:50:30.940245271Z",
+            "docker_version": "17.12.0-ce",
+            "history": [
+                {
+                    "created": "2018-03-06T22:16:48.581498541Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:3900b83a46e97708aef19ab39e8e6d44b2a8443b193bdbed6f9b6bd722ef9f7f in / "
+                },
+                {
+                    "created": "2018-03-06T22:16:49.55806718Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-03-06T22:16:50.304002312Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-03-06T22:16:51.018872568Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2018-03-06T22:16:51.792483993Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-03-06T22:16:52.079792907Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-03-24T17:40:46.523521216Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Kai Arulkumaran <design@kaixhin.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-03-24T17:42:53.950542547Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y   build-essential   gfortran   git   wget   liblapack-dev   libopenblas-dev   python-dev   python-pip   python-nose   python-numpy   python-scipy"
+                },
+                {
+                    "created": "2018-03-24T17:42:55.517579126Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c rm /usr/lib/python2.7/dist-packages/six*"
+                },
+                {
+                    "created": "2018-03-24T17:42:58.860814594Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c pip install --upgrade pip"
+                },
+                {
+                    "created": "2018-03-24T17:49:39.596068135Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c pip install --upgrade six"
+                },
+                {
+                    "created": "2018-03-24T17:50:30.940245271Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:92fb50b4d953c72eb1d5c045bab47a78f5c02348d8f004f7229a7b8fef16608d",
+                    "sha256:e95051d9cb9b95bf46df6cf5affab21157019659b3405e9c69f1f4a8376b24e7",
+                    "sha256:3abb69fb15dc83c0bf7a562f7bda73844fd20ed8cc4aec7b28ebd4113797cd9a",
+                    "sha256:dd420adea0d3f9f9da8500d4a8ec542ae0a32e78de557c9ce3755bd416431b5a",
+                    "sha256:65262d4f5516e81457c1ad5e14da8fbf66a999557107bbc7c2a635cbf94e64d9",
+                    "sha256:2d2871ddfb92d7ff201c4acefc426e8fe670fe44a4458962f5fa99655cb38319",
+                    "sha256:a3f3b87e06749c412518703a16e6b3b2f1f63a9702cdb2c85f1c8d9b1cbd0938",
+                    "sha256:4eddd27e2b1377be45a63ab1096d2e3691619deb5bd1d43b32bc9f1141542dbb",
+                    "sha256:07b5e44ff710b10c8b68850743d01e3445b00c11e9413a59b89a0b1b93d036cc",
+                    "sha256:be7167969d7a9d3c05397c262c7e7e0969897dc40b67fcb63716d754bf1e6d99"
+                ]
+            }
+        }
+    }
+}

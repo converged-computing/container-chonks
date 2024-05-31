@@ -1,0 +1,880 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6173,
+                "digest": "sha256:dd1c576326090d7de58bfb261f42988194d5ff2e605b3517d8a554b5d7e1f871"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1928430,
+                    "digest": "sha256:fe2a0d033fc4104cf66bed5e778d032a5d582c10c4683f1bac9b0d43f4c380ef"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 65759252,
+                    "digest": "sha256:194bbeb87a87d33ed01e2576eb1cb2131628aac05049091734e35d534230f4ef"
+                }
+            ]
+        },
+        "openjdk8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2582,
+                "digest": "sha256:67ca0c0fb5e76266070688647a6982349821d6fe69b48d650326bfd1f6e57ac4"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1928430,
+                    "digest": "sha256:fe2a0d033fc4104cf66bed5e778d032a5d582c10c4683f1bac9b0d43f4c380ef"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 71153981,
+                    "digest": "sha256:d0c27bf385d2793c68ba028b73097f6f079345d748cfa37e4ea1762c97c0e257"
+                }
+            ]
+        },
+        "openjre8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2594,
+                "digest": "sha256:6e004274eacf1c2faee63a0923586eebc4b42cb1871144ec122caf58be0cea54"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1928430,
+                    "digest": "sha256:fe2a0d033fc4104cf66bed5e778d032a5d582c10c4683f1bac9b0d43f4c380ef"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 55385299,
+                    "digest": "sha256:38ff8898f2befcf217da159aafb76625db6e65c62a7b5c8fc5c000d6da89b157"
+                }
+            ]
+        },
+        "oraclejdk7": {
+            "name": "cgswong/java",
+            "tag": "oraclejdk7",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:71307f933f5eab632160e98a32cd4dc6bc80dfa3389bbf1688270a9b7c15afdb"
+                },
+                {
+                    "blobSum": "sha256:71307f933f5eab632160e98a32cd4dc6bc80dfa3389bbf1688270a9b7c15afdb"
+                },
+                {
+                    "blobSum": "sha256:91254a5e99ab01e766404bede8b3f8d2de707bde4e07d929654b6adba0997665"
+                },
+                {
+                    "blobSum": "sha256:78acd6185084752c543ce8af1ed09f3b4a69a032fcf877bba8a972f5551f18c2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:57c7bc02f7a10fae85afe50dec6b2f6ba009124d05674bc33c15ee365219d061"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"437305e8b95533e8a020b183e547fe30506e6a4ce76296416e5866ad682a98e7\",\"parent\":\"686183f329bbde1c816eca26d502728e1e9f098e259a54d2617422a0be9e35a5\",\"comment\":\"Initial build for Oracle JDK 7.\",\"created\":\"2015-01-30T18:06:39.689641749Z\",\"container\":\"fbe8edacf6a4b60eb41626bbf6205311cfe88c5c09fc25545ce49e72b1075e37\",\"container_config\":{\"Hostname\":\"fbe8edacf6a4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":true,\"AttachStdout\":true,\"AttachStderr\":true,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":true,\"OpenStdin\":true,\"StdinOnce\":true,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"cgswong/min-jessie\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.4.1\",\"author\":\"Stuart Wong\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":518726450}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"437305e8b95533e8a020b183e547fe30506e6a4ce76296416e5866ad682a98e7\",\"parent\":\"686183f329bbde1c816eca26d502728e1e9f098e259a54d2617422a0be9e35a5\",\"comment\":\"Initial build for Oracle JDK 7.\",\"created\":\"2015-01-30T18:06:39.689641749Z\",\"container\":\"fbe8edacf6a4b60eb41626bbf6205311cfe88c5c09fc25545ce49e72b1075e37\",\"container_config\":{\"Hostname\":\"fbe8edacf6a4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":true,\"AttachStdout\":true,\"AttachStderr\":true,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":true,\"OpenStdin\":true,\"StdinOnce\":true,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"cgswong/min-jessie\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.4.1\",\"author\":\"Stuart Wong\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":518726450}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"686183f329bbde1c816eca26d502728e1e9f098e259a54d2617422a0be9e35a5\",\"parent\":\"989f56a25140999a983ce01bef56c6f3d5c5c38d6e45a8b6465e08df69af32ea\",\"comment\":\"Minimize effort.\",\"created\":\"2015-01-30T17:54:47.580253301Z\",\"container\":\"5dca9092adef5078984df7a46d7b49ccef3c3199e7c129288036a070852ed916\",\"container_config\":{\"Hostname\":\"5dca9092adef\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":true,\"AttachStdout\":true,\"AttachStderr\":true,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":true,\"OpenStdin\":true,\"StdinOnce\":true,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"cgswong/min-jessie\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.4.1\",\"author\":\"Stuart Wong\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":960}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"989f56a25140999a983ce01bef56c6f3d5c5c38d6e45a8b6465e08df69af32ea\",\"parent\":\"ed3df4446a48abda5492e10040e7496014728eb7d6eeb0a834cac47f681ddc67\",\"comment\":\"Initial build\",\"created\":\"2015-01-30T17:39:06.718107427Z\",\"container\":\"e3faa3ceab72b51aa909a340a623e6d6d2d25f32ded9bc5969598ca991b9d67c\",\"container_config\":{\"Hostname\":\"e3faa3ceab72\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":true,\"AttachStdout\":true,\"AttachStderr\":true,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":true,\"OpenStdin\":true,\"StdinOnce\":true,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"ed3df4446a48\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.4.1\",\"author\":\"Stuart Wong\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":46047304}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ed3df4446a48abda5492e10040e7496014728eb7d6eeb0a834cac47f681ddc67\",\"parent\":\"607318a929f0781a36e2acab066980037dc6722b33d7d60ecebee57535be4e82\",\"created\":\"2015-01-14T20:27:54.591866577Z\",\"container\":\"5f1566a95adc38f5d6f4b0ce4d74e773c1642ad7d944ed2530568e16bd62225b\",\"container_config\":{\"Hostname\":\"0696a74b2bf1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [/bin/bash]\"],\"Image\":\"16386e29a1f406598dc63cb798e9e4e969704397764ae09b0fb78565cdc6d191\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.4.1\",\"config\":{\"Hostname\":\"0696a74b2bf1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"16386e29a1f406598dc63cb798e9e4e969704397764ae09b0fb78565cdc6d191\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"607318a929f0781a36e2acab066980037dc6722b33d7d60ecebee57535be4e82\",\"parent\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"comment\":\"squashed w/ docker-squash\",\"created\":\"2015-01-14T20:27:49.999656095Z\",\"container_config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(squash) from 511136ea3c5a\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"0.1.2\",\"architecture\":\"x86_64\",\"Size\":79841558}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"comment\":\"Imported from -\",\"created\":\"2013-06-13T14:03:50.821769-07:00\",\"container_config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"0.4.0\",\"architecture\":\"x86_64\",\"Size\":0}\n"
+                }
+            ],
+            "schemaVersion": 1,
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "SU3R:OYCM:6LUR:QWBZ:DS3E:MVZE:G2Z6:3QQZ:B4QU:3V3P:UB7T:OGJC",
+                            "kty": "EC",
+                            "x": "C8OzkOwgmMlfqmZzoF736q-VIr4-JgE6sQpjpSjcM6s",
+                            "y": "rwL1d-E6XL_432WHmKFKJ3F8yU333nEb1GuyfeZzs_w"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "MEoud3f5uDDS-umoGzYM0xnqFSu8sIphAEc1TYUHDc885SEZL-HYMKSliIfsfn7jqQULXNG1y9R-7I0EugncAw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjEwMjQxLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDg6MzM6NTdaIn0"
+                }
+            ]
+        },
+        "oraclejdk8": {
+            "name": "cgswong/java",
+            "tag": "oraclejdk8",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:37cdaae7bf94641b96134e9fbe15b10a0c6766280712ee45b54c6bbc4763a748"
+                },
+                {
+                    "blobSum": "sha256:37cdaae7bf94641b96134e9fbe15b10a0c6766280712ee45b54c6bbc4763a748"
+                },
+                {
+                    "blobSum": "sha256:cf8d195e33b48921c8718510aa200241fcbe7eeb1ac444cbbd357bd4776dae07"
+                },
+                {
+                    "blobSum": "sha256:91254a5e99ab01e766404bede8b3f8d2de707bde4e07d929654b6adba0997665"
+                },
+                {
+                    "blobSum": "sha256:78acd6185084752c543ce8af1ed09f3b4a69a032fcf877bba8a972f5551f18c2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:57c7bc02f7a10fae85afe50dec6b2f6ba009124d05674bc33c15ee365219d061"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"5960ca9db94210be617918d53d6c844eacf3dcb90cb7f761a99e5c8bd718cff3\",\"parent\":\"f7f48537e71a7cd84c1da66466156013cad59b7ef264fc04fb21538296b468cf\",\"comment\":\"Updated motd to match container.\",\"created\":\"2015-01-30T18:11:37.405325927Z\",\"container\":\"160ca706aa9ba74b94a1488cec136ec0610090a4fd0b12d618d2e6bc518dd26e\",\"container_config\":{\"Hostname\":\"160ca706aa9b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":true,\"AttachStdout\":true,\"AttachStderr\":true,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":true,\"OpenStdin\":true,\"StdinOnce\":true,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"cgswong/java:oraclejdk8\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.4.1\",\"author\":\"Stuart Wong\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":1863}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5960ca9db94210be617918d53d6c844eacf3dcb90cb7f761a99e5c8bd718cff3\",\"parent\":\"f7f48537e71a7cd84c1da66466156013cad59b7ef264fc04fb21538296b468cf\",\"comment\":\"Updated motd to match container.\",\"created\":\"2015-01-30T18:11:37.405325927Z\",\"container\":\"160ca706aa9ba74b94a1488cec136ec0610090a4fd0b12d618d2e6bc518dd26e\",\"container_config\":{\"Hostname\":\"160ca706aa9b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":true,\"AttachStdout\":true,\"AttachStderr\":true,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":true,\"OpenStdin\":true,\"StdinOnce\":true,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"cgswong/java:oraclejdk8\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.4.1\",\"author\":\"Stuart Wong\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":1863}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f7f48537e71a7cd84c1da66466156013cad59b7ef264fc04fb21538296b468cf\",\"parent\":\"686183f329bbde1c816eca26d502728e1e9f098e259a54d2617422a0be9e35a5\",\"comment\":\"Initial build for OraJDK8.\",\"created\":\"2015-01-30T18:00:41.350724276Z\",\"container\":\"6840e7e4225790bc8f5ffac2208a11655885c71cc8f8580c2dae7b5eeb292aa2\",\"container_config\":{\"Hostname\":\"6840e7e42257\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":true,\"AttachStdout\":true,\"AttachStderr\":true,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":true,\"OpenStdin\":true,\"StdinOnce\":true,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"cgswong/min-jessie\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.4.1\",\"author\":\"Stuart Wong\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":570825396}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"686183f329bbde1c816eca26d502728e1e9f098e259a54d2617422a0be9e35a5\",\"parent\":\"989f56a25140999a983ce01bef56c6f3d5c5c38d6e45a8b6465e08df69af32ea\",\"comment\":\"Minimize effort.\",\"created\":\"2015-01-30T17:54:47.580253301Z\",\"container\":\"5dca9092adef5078984df7a46d7b49ccef3c3199e7c129288036a070852ed916\",\"container_config\":{\"Hostname\":\"5dca9092adef\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":true,\"AttachStdout\":true,\"AttachStderr\":true,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":true,\"OpenStdin\":true,\"StdinOnce\":true,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"cgswong/min-jessie\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.4.1\",\"author\":\"Stuart Wong\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":960}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"989f56a25140999a983ce01bef56c6f3d5c5c38d6e45a8b6465e08df69af32ea\",\"parent\":\"ed3df4446a48abda5492e10040e7496014728eb7d6eeb0a834cac47f681ddc67\",\"comment\":\"Initial build\",\"created\":\"2015-01-30T17:39:06.718107427Z\",\"container\":\"e3faa3ceab72b51aa909a340a623e6d6d2d25f32ded9bc5969598ca991b9d67c\",\"container_config\":{\"Hostname\":\"e3faa3ceab72\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":true,\"AttachStdout\":true,\"AttachStderr\":true,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":true,\"OpenStdin\":true,\"StdinOnce\":true,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"ed3df4446a48\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.4.1\",\"author\":\"Stuart Wong\",\"config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":46047304}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ed3df4446a48abda5492e10040e7496014728eb7d6eeb0a834cac47f681ddc67\",\"parent\":\"607318a929f0781a36e2acab066980037dc6722b33d7d60ecebee57535be4e82\",\"created\":\"2015-01-14T20:27:54.591866577Z\",\"container\":\"5f1566a95adc38f5d6f4b0ce4d74e773c1642ad7d944ed2530568e16bd62225b\",\"container_config\":{\"Hostname\":\"0696a74b2bf1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [/bin/bash]\"],\"Image\":\"16386e29a1f406598dc63cb798e9e4e969704397764ae09b0fb78565cdc6d191\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.4.1\",\"config\":{\"Hostname\":\"0696a74b2bf1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"16386e29a1f406598dc63cb798e9e4e969704397764ae09b0fb78565cdc6d191\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"607318a929f0781a36e2acab066980037dc6722b33d7d60ecebee57535be4e82\",\"parent\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"comment\":\"squashed w/ docker-squash\",\"created\":\"2015-01-14T20:27:49.999656095Z\",\"container_config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(squash) from 511136ea3c5a\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"0.1.2\",\"architecture\":\"x86_64\",\"Size\":79841558}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"511136ea3c5a64f264b78b5433614aec563103b4d4702f3ba7d4d2698e22c158\",\"comment\":\"Imported from -\",\"created\":\"2013-06-13T14:03:50.821769-07:00\",\"container_config\":{\"Hostname\":\"\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"PortSpecs\":null,\"ExposedPorts\":null,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"0.4.0\",\"architecture\":\"x86_64\",\"Size\":0}\n"
+                }
+            ],
+            "schemaVersion": 1,
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "YLUU:QRPK:O5HH:ZDG4:DSJV:U6RI:BWH5:OWM7:ASKB:KVNC:CNCH:NT4D",
+                            "kty": "EC",
+                            "x": "-FGQdB0RW2C5TF98Yeov5tAi-3xn5IPKllm5nnjrzmE",
+                            "y": "WHRax4voXFrPXZ9jHFr6rNU_5Ti7YR9vS58mGOeEBZk"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "t0hesRghUpUpzwVJMbzYJo2N31IX8PTPpAD_pPuyaTb8kbMIj_F99qmGg3RQ2FJbJk_3qjD4w0OrVkqaUKAC6g",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjExODk3LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDg6MzM6NThaIn0"
+                }
+            ]
+        },
+        "orajdk8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6173,
+                "digest": "sha256:74eb13662bd3b71c973f6dd491151fcf1c74f9a698bf9d9d3d9504ae548d117e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1928430,
+                    "digest": "sha256:fe2a0d033fc4104cf66bed5e778d032a5d582c10c4683f1bac9b0d43f4c380ef"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 65759336,
+                    "digest": "sha256:4c6418a210418cef650702009dce0aaf0414904f1a8779eb5da1800daf14bdaf"
+                }
+            ]
+        },
+        "orajre8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6192,
+                "digest": "sha256:b1a6644684f1bcff32aa6a61f8b4cf1f5b99e842165c7fb8c10f53184bc09691"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1928430,
+                    "digest": "sha256:fe2a0d033fc4104cf66bed5e778d032a5d582c10c4683f1bac9b0d43f4c380ef"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 59907150,
+                    "digest": "sha256:5f8ae22260e93e3c514adf61e23a4affc997025fde8faa0e24561aac2cf5041d"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest",
+        "openjdk8",
+        "openjre8",
+        "oraclejdk7",
+        "oraclejdk8",
+        "orajdk8",
+        "orajre8"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Stuart Wong <cgs.wong@gmail.com>",
+            "config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk/bin",
+                    "JAVA_PKG=jdk",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=144",
+                    "JAVA_VERSION_BUILD=01",
+                    "JAVA_BASE=/usr/local/java",
+                    "JAVA_HOME=/usr/local/java/jdk",
+                    "LANG=en_US.UTF-8",
+                    "GLIBC_VERSION=2.25-r0"
+                ],
+                "Cmd": [
+                    "java",
+                    "-Djava.security.egd=file:/dev/urandom"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:020e49b4fdfb5048e4458cfaf3f73fde6479b80268ebf235f438b1b599512f34",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "c48e1060ea457d65d7705e1503eca81a8d962423dbcb9545587d325a283e0477",
+            "container_config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk/bin",
+                    "JAVA_PKG=jdk",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=144",
+                    "JAVA_VERSION_BUILD=01",
+                    "JAVA_BASE=/usr/local/java",
+                    "JAVA_HOME=/usr/local/java/jdk",
+                    "LANG=en_US.UTF-8",
+                    "GLIBC_VERSION=2.25-r0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"java\" \"-Djava.security.egd=file:/dev/urandom\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:020e49b4fdfb5048e4458cfaf3f73fde6479b80268ebf235f438b1b599512f34",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-08-01T00:02:58.864060246Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2017-07-28T13:58:29.754226653Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:59580e63746b4615212e25eb50d0b26381659ce7c2b191dc20f8525c796948a6 in /"
+                },
+                {
+                    "created": "2017-07-28T13:58:29.958633121Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/sh\"]"
+                },
+                {
+                    "created": "2017-08-01T00:02:07.008010664Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stuart Wong <cgs.wong@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:02:07.329868686Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_PKG=jdk JAVA_VERSION_MAJOR=8 JAVA_VERSION_MINOR=144 JAVA_VERSION_BUILD=01 JAVA_BASE=/usr/local/java",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:02:07.563336016Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/local/java/jdk",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:02:07.867762677Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk/bin LANG=en_US.UTF-8 GLIBC_VERSION=2.25-r0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:02:58.368869351Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c apk --no-cache upgrade --update &&    apk --no-cache add --update       ca-certificates       curl       libstdc++ &&    for pkg in glibc-${GLIBC_VERSION} glibc-bin-${GLIBC_VERSION} glibc-i18n-${GLIBC_VERSION}; do curl -sSL https://github.com/andyshinn/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/${pkg}.apk -o /tmp/${pkg}.apk; done &&     apk --allow-untrusted add /tmp/*.apk &&    ( /usr/glibc-compat/bin/localedef --force --inputfile POSIX --charmap UTF-8 ${LANG} || true ) &&    echo \"export LANG=${LANG}\" > /etc/profile.d/locale.sh &&    /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib &&    mkdir -p ${JAVA_BASE} &&    curl -sSL --header \"Cookie: oraclelicense=accept-securebackup-cookie\"       http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/090f390dda5b47b9b721c7dfaa008135/${JAVA_PKG}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz | tar zxf - -C ${JAVA_BASE} &&    ln -s ${JAVA_BASE}/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} ${JAVA_HOME} &&    curl -sSL --header \"Cookie: oraclelicense=accept-securebackup-cookie\" --output /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip       http://download.oracle.com/otn-pub/java/jce/${JAVA_VERSION_MAJOR}/jce_policy-${JAVA_VERSION_MAJOR}.zip &&    unzip -q /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip -d /tmp/ &&    cp -R /tmp/UnlimitedJCEPolicyJDK8/*.jar ${JAVA_HOME}/jre/lib/security &&    sed -i s/#networkaddress.cache.ttl=-1/networkaddress.cache.ttl=30/ ${JAVA_HOME}/jre/lib/security/java.security &&    echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf &&    apk del curl glibc-i18n &&    rm -rf /tmp/*         ${JAVA_HOME}/*src.zip         ${JAVA_HOME}/lib/missioncontrol         ${JAVA_HOME}/lib/visualvm         ${JAVA_HOME}/lib/*javafx*         ${JAVA_HOME}/jre/lib/plugin.jar         ${JAVA_HOME}/jre/lib/ext/jfxrt.jar         ${JAVA_HOME}/jre/bin/javaws         ${JAVA_HOME}/jre/lib/javaws.jar         ${JAVA_HOME}/jre/lib/desktop         ${JAVA_HOME}/jre/plugin         ${JAVA_HOME}/jre/lib/deploy*         ${JAVA_HOME}/jre/lib/*javafx*         ${JAVA_HOME}/jre/lib/*jfx*         ${JAVA_HOME}/jre/lib/amd64/libdecora_sse.so         ${JAVA_HOME}/jre/lib/amd64/libprism_*.so         ${JAVA_HOME}/jre/lib/amd64/libfxplugins.so         ${JAVA_HOME}/jre/lib/amd64/libglass.so         ${JAVA_HOME}/jre/lib/amd64/libgstreamer-lite.so         ${JAVA_HOME}/jre/lib/amd64/libjavafx*.so         ${JAVA_HOME}/jre/lib/amd64/libjfx*.so"
+                },
+                {
+                    "created": "2017-08-01T00:02:58.864060246Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"java\" \"-Djava.security.egd=file:/dev/urandom\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:44ac4101f43de091e48cede50fe7231141689f14ee84a6cb4355bed0e3cd0ca2",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:6e9d4971c82a6ffe453f4a258b9d2a47c819b41ad046ec703b33758b63794fbe"
+                ]
+            }
+        },
+        "openjdk8": {
+            "architecture": "amd64",
+            "author": "Stuart Wong <cgs.wong@gmail.com>",
+            "config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_PKG=openjdk8"
+                ],
+                "Cmd": [
+                    "java",
+                    "-version"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:c5302da035c9342f9599fcd3053865839bd1ffbc9fc2c7cd945ae30105edd36d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "40b5f89fe93d0e569cbd383f3886412c78af60d67d54b77ca424c4d94bafeb4e",
+            "container_config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_PKG=openjdk8"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"java\" \"-version\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:c5302da035c9342f9599fcd3053865839bd1ffbc9fc2c7cd945ae30105edd36d",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-08-01T00:10:26.194096418Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2017-07-28T13:58:29.754226653Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:59580e63746b4615212e25eb50d0b26381659ce7c2b191dc20f8525c796948a6 in /"
+                },
+                {
+                    "created": "2017-07-28T13:58:29.958633121Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/sh\"]"
+                },
+                {
+                    "created": "2017-08-01T00:10:07.14301929Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stuart Wong <cgs.wong@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:10:07.375263975Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_PKG=openjdk8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:10:25.964130612Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c apk --no-cache update &&    apk --no-cache upgrade &&    apk --no-cache add ${JAVA_PKG}  &&    rm -rf /tmp/*"
+                },
+                {
+                    "created": "2017-08-01T00:10:26.194096418Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"java\" \"-version\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:44ac4101f43de091e48cede50fe7231141689f14ee84a6cb4355bed0e3cd0ca2",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:08c01b7ca2d3ecbce041862761a7534479b51f52b38174f2b273c1b990a5766a"
+                ]
+            }
+        },
+        "openjre8": {
+            "architecture": "amd64",
+            "author": "Stuart Wong <cgs.wong@gmail.com>",
+            "config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_PKG=openjdk8-jre"
+                ],
+                "Cmd": [
+                    "java",
+                    "-version"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6edd65dc0a053c43dcb4b3984039461dfd56db88bb356c33004bc45f7ea15b90",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "a505c09f6f38321547546392699dd55863cf241d9d06a62aecfcbac53eef1b59",
+            "container_config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_PKG=openjdk8-jre"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"java\" \"-version\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6edd65dc0a053c43dcb4b3984039461dfd56db88bb356c33004bc45f7ea15b90",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-08-01T00:05:11.991813681Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2017-07-28T13:58:29.754226653Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:59580e63746b4615212e25eb50d0b26381659ce7c2b191dc20f8525c796948a6 in /"
+                },
+                {
+                    "created": "2017-07-28T13:58:29.958633121Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/sh\"]"
+                },
+                {
+                    "created": "2017-08-01T00:04:54.51064137Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stuart Wong <cgs.wong@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:04:54.864174468Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_PKG=openjdk8-jre",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:05:11.702829706Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c apk --no-cache update &&\t\tapk --no-cache upgrade &&\t\tapk --no-cache add ${JAVA_PKG}  &&    rm -rf /tmp/*"
+                },
+                {
+                    "created": "2017-08-01T00:05:11.991813681Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"java\" \"-version\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:44ac4101f43de091e48cede50fe7231141689f14ee84a6cb4355bed0e3cd0ca2",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:add029201668dad8e335a1c641b8986f52e568535b85ecac54929c6b286dac28"
+                ]
+            }
+        },
+        "orajdk8": {
+            "architecture": "amd64",
+            "author": "Stuart Wong <cgs.wong@gmail.com>",
+            "config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk/bin",
+                    "JAVA_PKG=jdk",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=144",
+                    "JAVA_VERSION_BUILD=01",
+                    "JAVA_BASE=/usr/local/java",
+                    "JAVA_HOME=/usr/local/java/jdk",
+                    "LANG=en_US.UTF-8",
+                    "GLIBC_VERSION=2.25-r0"
+                ],
+                "Cmd": [
+                    "java",
+                    "-Djava.security.egd=file:/dev/urandom"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:7a6735a49a48945e8f27dd6b2ddff9401054008f8f83a3e900de5b648a9f2f49",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "73297a65b74431654e5d53225097a767f006daf694d1c40aedf8e58314ac4173",
+            "container_config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk/bin",
+                    "JAVA_PKG=jdk",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=144",
+                    "JAVA_VERSION_BUILD=01",
+                    "JAVA_BASE=/usr/local/java",
+                    "JAVA_HOME=/usr/local/java/jdk",
+                    "LANG=en_US.UTF-8",
+                    "GLIBC_VERSION=2.25-r0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"java\" \"-Djava.security.egd=file:/dev/urandom\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:7a6735a49a48945e8f27dd6b2ddff9401054008f8f83a3e900de5b648a9f2f49",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-08-01T00:08:54.303250235Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2017-07-28T13:58:29.754226653Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:59580e63746b4615212e25eb50d0b26381659ce7c2b191dc20f8525c796948a6 in /"
+                },
+                {
+                    "created": "2017-07-28T13:58:29.958633121Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/sh\"]"
+                },
+                {
+                    "created": "2017-08-01T00:08:07.435614717Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stuart Wong <cgs.wong@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:08:07.670846742Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_PKG=jdk JAVA_VERSION_MAJOR=8 JAVA_VERSION_MINOR=144 JAVA_VERSION_BUILD=01 JAVA_BASE=/usr/local/java",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:08:07.838565664Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/local/java/jdk",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:08:08.029883217Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk/bin LANG=en_US.UTF-8 GLIBC_VERSION=2.25-r0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:08:53.930760169Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c apk --no-cache upgrade --update &&    apk --no-cache add --update       ca-certificates       curl       libstdc++ &&    for pkg in glibc-${GLIBC_VERSION} glibc-bin-${GLIBC_VERSION} glibc-i18n-${GLIBC_VERSION}; do curl -sSL https://github.com/andyshinn/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/${pkg}.apk -o /tmp/${pkg}.apk; done &&     apk --allow-untrusted add /tmp/*.apk &&    ( /usr/glibc-compat/bin/localedef --force --inputfile POSIX --charmap UTF-8 ${LANG} || true ) &&    echo \"export LANG=${LANG}\" > /etc/profile.d/locale.sh &&    /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib &&    mkdir -p ${JAVA_BASE} &&    curl -sSL --header \"Cookie: oraclelicense=accept-securebackup-cookie\"       http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/090f390dda5b47b9b721c7dfaa008135/${JAVA_PKG}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz | tar zxf - -C ${JAVA_BASE} &&    ln -s ${JAVA_BASE}/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} ${JAVA_HOME} &&    curl -sSL --header \"Cookie: oraclelicense=accept-securebackup-cookie\" --output /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip       http://download.oracle.com/otn-pub/java/jce/${JAVA_VERSION_MAJOR}/jce_policy-${JAVA_VERSION_MAJOR}.zip &&    unzip -q /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip -d /tmp/ &&    cp -R /tmp/UnlimitedJCEPolicyJDK8/*.jar ${JAVA_HOME}/jre/lib/security &&    sed -i s/#networkaddress.cache.ttl=-1/networkaddress.cache.ttl=30/ ${JAVA_HOME}/jre/lib/security/java.security &&    echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf &&    apk del curl glibc-i18n &&    rm -rf /tmp/*         ${JAVA_HOME}/*src.zip         ${JAVA_HOME}/lib/missioncontrol         ${JAVA_HOME}/lib/visualvm         ${JAVA_HOME}/lib/*javafx*         ${JAVA_HOME}/jre/lib/plugin.jar         ${JAVA_HOME}/jre/lib/ext/jfxrt.jar         ${JAVA_HOME}/jre/bin/javaws         ${JAVA_HOME}/jre/lib/javaws.jar         ${JAVA_HOME}/jre/lib/desktop         ${JAVA_HOME}/jre/plugin         ${JAVA_HOME}/jre/lib/deploy*         ${JAVA_HOME}/jre/lib/*javafx*         ${JAVA_HOME}/jre/lib/*jfx*         ${JAVA_HOME}/jre/lib/amd64/libdecora_sse.so         ${JAVA_HOME}/jre/lib/amd64/libprism_*.so         ${JAVA_HOME}/jre/lib/amd64/libfxplugins.so         ${JAVA_HOME}/jre/lib/amd64/libglass.so         ${JAVA_HOME}/jre/lib/amd64/libgstreamer-lite.so         ${JAVA_HOME}/jre/lib/amd64/libjavafx*.so         ${JAVA_HOME}/jre/lib/amd64/libjfx*.so"
+                },
+                {
+                    "created": "2017-08-01T00:08:54.303250235Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"java\" \"-Djava.security.egd=file:/dev/urandom\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:44ac4101f43de091e48cede50fe7231141689f14ee84a6cb4355bed0e3cd0ca2",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:1163133bec12734ad7b67f8332c35ac81c1c1add292b317096c5d3eb187f35a1"
+                ]
+            }
+        },
+        "orajre8": {
+            "architecture": "amd64",
+            "author": "Stuart Wong <cgs.wong@gmail.com>",
+            "config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk/bin",
+                    "JAVA_PKG=server-jre",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=144",
+                    "JAVA_VERSION_BUILD=01",
+                    "JAVA_BASE=/usr/local/java",
+                    "JAVA_HOME=/usr/local/java/jdk",
+                    "LANG=en_US.UTF-8",
+                    "GLIBC_VERSION=2.25-r0"
+                ],
+                "Cmd": [
+                    "java",
+                    "-Djava.security.egd=file:/dev/urandom"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6c89e9ded9ed0a5562d37e916f8b4c9a1f5a598700679c03c60c5990653c1491",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "bf2f1e906cabe25cb74af5f20c2c006ff838c07b910d4104438f1ee9abd34f47",
+            "container_config": {
+                "Hostname": "8eebfce03173",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk/bin",
+                    "JAVA_PKG=server-jre",
+                    "JAVA_VERSION_MAJOR=8",
+                    "JAVA_VERSION_MINOR=144",
+                    "JAVA_VERSION_BUILD=01",
+                    "JAVA_BASE=/usr/local/java",
+                    "JAVA_HOME=/usr/local/java/jdk",
+                    "LANG=en_US.UTF-8",
+                    "GLIBC_VERSION=2.25-r0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"java\" \"-Djava.security.egd=file:/dev/urandom\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:6c89e9ded9ed0a5562d37e916f8b4c9a1f5a598700679c03c60c5990653c1491",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-08-01T00:06:21.454742853Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2017-07-28T13:58:29.754226653Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:59580e63746b4615212e25eb50d0b26381659ce7c2b191dc20f8525c796948a6 in /"
+                },
+                {
+                    "created": "2017-07-28T13:58:29.958633121Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/sh\"]"
+                },
+                {
+                    "created": "2017-08-01T00:05:55.56437016Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Stuart Wong <cgs.wong@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:05:55.76659537Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_PKG=server-jre JAVA_VERSION_MAJOR=8 JAVA_VERSION_MINOR=144 JAVA_VERSION_BUILD=01 JAVA_BASE=/usr/local/java",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:05:55.953970301Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/local/java/jdk",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:05:56.119767881Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk/bin LANG=en_US.UTF-8 GLIBC_VERSION=2.25-r0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-01T00:06:21.246376352Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c apk --no-cache upgrade --update &&    apk --no-cache add --update       ca-certificates       curl       libstdc++ &&    for pkg in glibc-${GLIBC_VERSION} glibc-bin-${GLIBC_VERSION} glibc-i18n-${GLIBC_VERSION}; do curl -sSL https://github.com/andyshinn/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/${pkg}.apk -o /tmp/${pkg}.apk; done &&     apk --allow-untrusted add /tmp/*.apk &&    ( /usr/glibc-compat/bin/localedef --force --inputfile POSIX --charmap UTF-8 ${LANG} || true ) &&    echo \"export LANG=${LANG}\" > /etc/profile.d/locale.sh &&    /usr/glibc-compat/sbin/ldconfig /lib /usr/glibc-compat/lib &&    mkdir -p ${JAVA_BASE} &&    curl -sSL --header \"Cookie: oraclelicense=accept-securebackup-cookie\"       http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/090f390dda5b47b9b721c7dfaa008135/${JAVA_PKG}-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz | tar zxf - -C ${JAVA_BASE} &&    ln -s ${JAVA_BASE}/jdk1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR} ${JAVA_HOME} &&    curl -sSL --header \"Cookie: oraclelicense=accept-securebackup-cookie\" --output /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip       http://download.oracle.com/otn-pub/java/jce/${JAVA_VERSION_MAJOR}/jce_policy-${JAVA_VERSION_MAJOR}.zip &&    unzip -q /tmp/jce_policy-${JAVA_VERSION_MAJOR}.zip -d /tmp/ &&    cp -R /tmp/UnlimitedJCEPolicyJDK8/*.jar ${JAVA_HOME}/jre/lib/security &&    sed -i s/#networkaddress.cache.ttl=-1/networkaddress.cache.ttl=30/ ${JAVA_HOME}/jre/lib/security/java.security &&    echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf &&    apk del curl glibc-i18n &&    rm -rf /tmp/*         ${JAVA_HOME}/*src.zip         ${JAVA_HOME}/lib/missioncontrol         ${JAVA_HOME}/lib/visualvm         ${JAVA_HOME}/lib/*javafx*         ${JAVA_HOME}/jre/lib/plugin.jar         ${JAVA_HOME}/jre/lib/ext/jfxrt.jar         ${JAVA_HOME}/jre/bin/javaws         ${JAVA_HOME}/jre/lib/javaws.jar         ${JAVA_HOME}/jre/lib/desktop         ${JAVA_HOME}/jre/plugin         ${JAVA_HOME}/jre/lib/deploy*         ${JAVA_HOME}/jre/lib/*javafx*         ${JAVA_HOME}/jre/lib/*jfx*         ${JAVA_HOME}/jre/lib/amd64/libdecora_sse.so         ${JAVA_HOME}/jre/lib/amd64/libprism_*.so         ${JAVA_HOME}/jre/lib/amd64/libfxplugins.so         ${JAVA_HOME}/jre/lib/amd64/libglass.so         ${JAVA_HOME}/jre/lib/amd64/libgstreamer-lite.so         ${JAVA_HOME}/jre/lib/amd64/libjavafx*.so         ${JAVA_HOME}/jre/lib/amd64/libjfx*.so"
+                },
+                {
+                    "created": "2017-08-01T00:06:21.454742853Z",
+                    "author": "Stuart Wong <cgs.wong@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"java\" \"-Djava.security.egd=file:/dev/urandom\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:44ac4101f43de091e48cede50fe7231141689f14ee84a6cb4355bed0e3cd0ca2",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:4c87c1798ae7a943fa5fad8edc3eb0c3621e3c4e26615bfa8adc34bc0a7fb2c9"
+                ]
+            }
+        }
+    }
+}

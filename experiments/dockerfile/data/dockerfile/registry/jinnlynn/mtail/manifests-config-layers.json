@@ -1,0 +1,174 @@
+{
+    "manifests": {
+        "latest": {
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "schemaVersion": 2,
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:9c3192c4f5d8af5db781fd4dd8362830e62d1a82df309837d84395dd56ef5daf",
+                    "size": 1363,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "digest": "sha256:808c0538e11308c4e5eca146f6f8f20f8a92acdde55decdb80c274eb579b2cad",
+                    "size": 1363,
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/app/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Entrypoint": [
+                    "mtail"
+                ],
+                "Cmd": [
+                    "--help"
+                ],
+                "Labels": {
+                    "maintainer": "JinnLynn <eatfishlin@gmail.com>"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2022-03-28T03:32:38.964878879Z",
+            "history": [
+                {
+                    "created": "2021-11-24T20:19:40.199700946Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:9233f6f2237d79659a9521f7e390df217cec49f1a8aa3a12147bbca1956acdb9 in / "
+                },
+                {
+                    "created": "2021-11-24T20:19:40.483367546Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-16T04:37:19.563832456Z",
+                    "created_by": "LABEL maintainer=JinnLynn <eatfishlin@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-16T04:37:19.563832456Z",
+                    "created_by": "ARG VERSION",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-16T04:37:19.563832456Z",
+                    "created_by": "ARG BRANCH=3.15",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-16T04:37:19.563832456Z",
+                    "created_by": "ARG MIRROR=https://mirrors.cloud.tencent.com/alpine",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-16T04:37:19.563832456Z",
+                    "created_by": "ARG TIMEZONE=Asia/Shanghai",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-16T04:37:19.563832456Z",
+                    "created_by": "ARG APP_DIRS",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-16T04:37:19.563832456Z",
+                    "created_by": "ARG TARGETPLATFORM",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-16T04:37:19.563832456Z",
+                    "created_by": "ENV PATH=/app/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-16T04:37:19.563832456Z",
+                    "created_by": "COPY arch.sh /app/bin/arch # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-03-16T09:16:15.945811399Z",
+                    "created_by": "COPY xinfo.sh /app/bin/xinfo # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-03-16T09:16:27.117023113Z",
+                    "created_by": "RUN |6 VERSION=3.15 BRANCH=3.15 MIRROR=https://mirrors.cloud.tencent.com/alpine TIMEZONE=Asia/Shanghai APP_DIRS= TARGETPLATFORM=linux/amd64 /bin/sh -c set -ex &&     [ \"${BRANCH:0:1}\" -gt 0 ] 2>/dev/null && BRANCH=\"v${BRANCH}\" || true &&     echo -e \"$MIRROR/$BRANCH/main\\\\n$MIRROR/$BRANCH/community\" >/etc/apk/repositories &&     [ \"$BRANCH\" == \"edge\" ] && echo \"$MIRROR/$BRANCH/testing\" >>/etc/apk/repositories || true &&     apk add --no-cache tzdata &&     mkdir -p \"/etc/zoneinfo/$(dirname $TIMEZONE)\" &&     cp \"/usr/share/zoneinfo/$TIMEZONE\" \"/etc/zoneinfo/$TIMEZONE\" &&     ln -sf /etc/zoneinfo/$TIMEZONE /etc/localtime &&     apk del --no-cache tzdata &&     xinfo check arm v6 && touch /.armv6 || true &&     for d in ${APP_DIRS:-bin etc opt mnt local log tmp var}; do mkdir -p /app/$d; done # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-03-16T09:16:27.117023113Z",
+                    "created_by": "CMD [\"/bin/sh\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-28T03:32:38.964878879Z",
+                    "created_by": "LABEL maintainer=JinnLynn <eatfishlin@gmail.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-28T03:32:38.964878879Z",
+                    "created_by": "ARG VERSION=3.0.0-rc48",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-28T03:32:38.964878879Z",
+                    "created_by": "RUN |1 VERSION=3.0.0-rc48 /bin/sh -c set -ex &&     wget -O- https://github.com/google/mtail/releases/download/v${VERSION}/mtail_${VERSION}_Linux_$(xinfo --amd64 x86_64).tar.gz |         tar xz -C /app/bin --exclude LICENSE --exclude README.md # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2022-03-28T03:32:38.964878879Z",
+                    "created_by": "ENTRYPOINT [\"mtail\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-03-28T03:32:38.964878879Z",
+                    "created_by": "CMD [\"--help\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJzb3VyY2VzIjpbeyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2ppbm5seW5uL2FscGluZTpsYXRlc3QiLCJwaW4iOiJzaGEyNTY6NTJkYWM2YTNjN2Q4NjFjNzEyNDU5MTMzMDM2N2RlOTc2NTZlMzg1MzQ1YmExZWIzMWI4NjY4NjQwY2NiZmEyMCJ9XX0=",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759",
+                    "sha256:6a2a94033177a32acc76c0390efc0d4a6ed0fb372cde2e70c5b0f61a1a757e8a",
+                    "sha256:0ecc6c79e02d7f89b692679d68a5e4e4586bb94690506231b6299f235291a150",
+                    "sha256:58989983a59e1dde70e7c57c9baf12ff560e5ced07a59424e4161a1c29bfb8aa",
+                    "sha256:29125843a1bfae5a662a11f0dab78559af68d3a0189c038309050efcc084b5fd"
+                ]
+            }
+        }
+    }
+}

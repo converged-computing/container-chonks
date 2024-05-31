@@ -1,0 +1,323 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 13063,
+                "digest": "sha256:a6ebb18f25bd76f052995197d356f2ea027c9b8c63b2ac88551e07c064d9422e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 31262546,
+                    "digest": "sha256:6b98dfc1607190243b0938e62c5ba2b7daedf2c56d7825dfb835208344705641"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 843,
+                    "digest": "sha256:4001a1209541c37465e524db0b9bb20744ceb319e8303ebec3259fc8317e2dec"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 469,
+                    "digest": "sha256:6319fc68c576d6bd3e469b0ae31e9a010bc9b71ed286cf4e632424d82dca70d8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 853,
+                    "digest": "sha256:b24603670dc3e91d00439b5d56701884e4fc313877ef3940183a7e8e25fa5f1b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 162,
+                    "digest": "sha256:97f170c87c6f10548068b35cbe9bd00da1278b92f700a5e66c6a16ec04ba456b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1949,
+                    "digest": "sha256:8283914e3aad4a12d10415470f349cf9f32eb8a849bee11c97765ba16a47d7b0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 95,
+                    "digest": "sha256:0bed0f67f15d99fb3fc36ef223a0686059872ee753abb25bd688e2b27a22f137"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "JustAdam <adambell7@gmail.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin:/workspace/bin:/gopath/bin",
+                    "PROTOCOL_BUFFERS_VERSION=3.5.1",
+                    "GOPATH=/gopath"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:72d2823a99bd23d0f07dd773f477020375dfa4f916e6cca18459d071ed8a878f",
+                "Volumes": {
+                    "/workspace": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/bash"
+                ],
+                "OnBuild": [
+                    "ADD release /release",
+                    "ENV GOROOT_BOOTSTRAP /go1.4/go/",
+                    "RUN apt-get clean &&     apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get upgrade -y &&     DEBIAN_FRONTEND=noninteractive apt-get install -y git mercurial make wget gcc unzip &&     apt-get clean &&     wget https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz &&     mkdir go1.4 &&     tar -C go1.4 -xvf go1.4.2.linux-amd64.tar.gz &&     rm go1.4.2.linux-amd64.tar.gz &&     git clone https://go.googlesource.com/go &&     cd go &&     git checkout $(cat /release) &&     cd src &&     DEBIAN_FRONTEND=noninteractive ./make.bash &&     rm -rf /go1.4 &&     mkdir protoc &&     cd protoc &&     wget https://github.com/google/protobuf/releases/download/v${PROTOCOL_BUFFERS_VERSION}/protoc-${PROTOCOL_BUFFERS_VERSION}-linux-x86_64.zip &&     unzip protoc-${PROTOCOL_BUFFERS_VERSION}-linux-x86_64.zip &&     mv bin/protoc /usr/local/bin/protoc &&     chmod +x  /usr/local/bin/protoc &&     cd .. &&     rm -rf protoc",
+                    "RUN echo \"[web]\\ncacerts = /etc/ssl/certs/ca-certificates.crt\" > /etc/mercurial/hgrc",
+                    "RUN /go/bin/go get golang.org/x/tools/cmd/...",
+                    "RUN /go/bin/go get github.com/golang/lint/golint",
+                    "RUN /go/bin/go get github.com/kisielk/errcheck",
+                    "RUN /go/bin/go get -u github.com/derekparker/delve/cmd/dlv",
+                    "RUN /go/bin/go get -u github.com/govend/govend",
+                    "RUN /go/bin/go get -u github.com/golang/dep/cmd/dep",
+                    "RUN /go/bin/go get github.com/constabulary/gb/...",
+                    "RUN /go/bin/go get -u github.com/golang/protobuf/protoc-gen-go",
+                    "USER golang",
+                    "ENV GOPATH /gopath:/workspace"
+                ],
+                "Labels": null
+            },
+            "container": "ce93757074b04fceb1e42b53230c1024d7cb59b7ce98c99f959311c0d61350d7",
+            "container_config": {
+                "Hostname": "ce93757074b0",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin:/workspace/bin:/gopath/bin",
+                    "PROTOCOL_BUFFERS_VERSION=3.5.1",
+                    "GOPATH=/gopath"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENTRYPOINT [\"/bin/bash\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:72d2823a99bd23d0f07dd773f477020375dfa4f916e6cca18459d071ed8a878f",
+                "Volumes": {
+                    "/workspace": {}
+                },
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/bash"
+                ],
+                "OnBuild": [
+                    "ADD release /release",
+                    "ENV GOROOT_BOOTSTRAP /go1.4/go/",
+                    "RUN apt-get clean &&     apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get upgrade -y &&     DEBIAN_FRONTEND=noninteractive apt-get install -y git mercurial make wget gcc unzip &&     apt-get clean &&     wget https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz &&     mkdir go1.4 &&     tar -C go1.4 -xvf go1.4.2.linux-amd64.tar.gz &&     rm go1.4.2.linux-amd64.tar.gz &&     git clone https://go.googlesource.com/go &&     cd go &&     git checkout $(cat /release) &&     cd src &&     DEBIAN_FRONTEND=noninteractive ./make.bash &&     rm -rf /go1.4 &&     mkdir protoc &&     cd protoc &&     wget https://github.com/google/protobuf/releases/download/v${PROTOCOL_BUFFERS_VERSION}/protoc-${PROTOCOL_BUFFERS_VERSION}-linux-x86_64.zip &&     unzip protoc-${PROTOCOL_BUFFERS_VERSION}-linux-x86_64.zip &&     mv bin/protoc /usr/local/bin/protoc &&     chmod +x  /usr/local/bin/protoc &&     cd .. &&     rm -rf protoc",
+                    "RUN echo \"[web]\\ncacerts = /etc/ssl/certs/ca-certificates.crt\" > /etc/mercurial/hgrc",
+                    "RUN /go/bin/go get golang.org/x/tools/cmd/...",
+                    "RUN /go/bin/go get github.com/golang/lint/golint",
+                    "RUN /go/bin/go get github.com/kisielk/errcheck",
+                    "RUN /go/bin/go get -u github.com/derekparker/delve/cmd/dlv",
+                    "RUN /go/bin/go get -u github.com/govend/govend",
+                    "RUN /go/bin/go get -u github.com/golang/dep/cmd/dep",
+                    "RUN /go/bin/go get github.com/constabulary/gb/...",
+                    "RUN /go/bin/go get -u github.com/golang/protobuf/protoc-gen-go",
+                    "USER golang",
+                    "ENV GOPATH /gopath:/workspace"
+                ],
+                "Labels": {}
+            },
+            "created": "2018-06-13T09:23:56.106675848Z",
+            "docker_version": "18.05.0-ce",
+            "history": [
+                {
+                    "created": "2018-06-05T21:20:51.286433694Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:28c0771e44ff530dba3f237024acc38e8ec9293d60f0e44c8c78536c12f13a0b in / "
+                },
+                {
+                    "created": "2018-06-05T21:20:52.045074543Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-06-05T21:20:52.712120056Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-06-05T21:20:53.405342638Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2018-06-05T21:20:54.091704323Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-06-05T21:20:54.310450149Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:19:02.291908065Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER JustAdam <adambell7@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:19:02.60906079Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PROTOCOL_BUFFERS_VERSION=3.5.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:48.252333643Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD ADD release /release",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:48.563708064Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD ENV GOROOT_BOOTSTRAP /go1.4/go/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:48.899467479Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN apt-get clean &&     apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get upgrade -y &&     DEBIAN_FRONTEND=noninteractive apt-get install -y git mercurial make wget gcc unzip &&     apt-get clean &&     wget https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz &&     mkdir go1.4 &&     tar -C go1.4 -xvf go1.4.2.linux-amd64.tar.gz &&     rm go1.4.2.linux-amd64.tar.gz &&     git clone https://go.googlesource.com/go &&     cd go &&     git checkout $(cat /release) &&     cd src &&     DEBIAN_FRONTEND=noninteractive ./make.bash &&     rm -rf /go1.4 &&     mkdir protoc &&     cd protoc &&     wget https://github.com/google/protobuf/releases/download/v${PROTOCOL_BUFFERS_VERSION}/protoc-${PROTOCOL_BUFFERS_VERSION}-linux-x86_64.zip &&     unzip protoc-${PROTOCOL_BUFFERS_VERSION}-linux-x86_64.zip &&     mv bin/protoc /usr/local/bin/protoc &&     chmod +x  /usr/local/bin/protoc &&     cd .. &&     rm -rf protoc",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:49.207031279Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN echo \"[web]\\ncacerts = /etc/ssl/certs/ca-certificates.crt\" > /etc/mercurial/hgrc",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:49.531784332Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN /go/bin/go get golang.org/x/tools/cmd/...",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:49.860372405Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN /go/bin/go get github.com/golang/lint/golint",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:50.216822433Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN /go/bin/go get github.com/kisielk/errcheck",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:50.50410107Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN /go/bin/go get -u github.com/derekparker/delve/cmd/dlv",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:50.816126798Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN /go/bin/go get -u github.com/govend/govend",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:51.10504839Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN /go/bin/go get -u github.com/golang/dep/cmd/dep",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:51.424303648Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN /go/bin/go get github.com/constabulary/gb/...",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:51.71651088Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN /go/bin/go get -u github.com/golang/protobuf/protoc-gen-go",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:52.844064246Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c groupadd -g 1000 golang &&     useradd -d /workspace -g 1000 golang"
+                },
+                {
+                    "created": "2018-06-13T09:23:53.165846745Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/go/bin:/workspace/bin:/gopath/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:54.425610022Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c mkdir /gopath"
+                },
+                {
+                    "created": "2018-06-13T09:23:54.745505017Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV GOPATH=/gopath",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:55.04635424Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD USER golang",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:55.356716024Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD ENV GOPATH /gopath:/workspace",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:55.794744941Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/workspace]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-13T09:23:56.106675848Z",
+                    "author": "JustAdam <adambell7@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/bin/bash\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:db9476e6d963ed2b6042abef1c354223148cdcdbd6c7416c71a019ebcaea0edb",
+                    "sha256:3a89e0d8654e098e949764b1cb23018e27f299b0931c5fd41c207d610ff356c4",
+                    "sha256:904d60939c360b5f528b886c1b534855a008f9a7fd411d4977e09aa7de74c834",
+                    "sha256:a20a262b87bd8a00717f3b30c001bcdaf0fd85d049e6d10500597caa29c013c5",
+                    "sha256:b6f13d447e00fba3b9bd10c1e5c6697e913462f44aa24af349bfaea2054e32f4",
+                    "sha256:7f409fe5ee60dd21ab9014920373d8ec8835f678fc9449bd37b7571705f60620",
+                    "sha256:c5ddf34483216309a31add6db27aabe16ec076739b33d9965539551af76fe144"
+                ]
+            }
+        }
+    }
+}

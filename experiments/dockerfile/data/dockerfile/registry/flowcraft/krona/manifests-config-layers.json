@@ -1,0 +1,235 @@
+{
+    "manifests": {
+        "2.7-1": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6194,
+                "digest": "sha256:d18bf15410f1b68f7c64889206952c3b3b20a95363e536a0355d67cd69339a4e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 43252507,
+                    "digest": "sha256:3b37166ec61459e76e33282dda08f2a9cd698ca7e3d6bc44e6a6e7580cdeff8e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 846,
+                    "digest": "sha256:504facff238fde83f1ca8f9f54520b4219c5b8f80be9616ddc52d31448a044bd"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 615,
+                    "digest": "sha256:ebbcacd28e101968415b0c812b2d2dc60f969e36b0b08c073bf796e12b1bb449"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 850,
+                    "digest": "sha256:c7fb3351ecad291a88b92b600037e2435c84a347683d540042086fe72c902b8a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 168,
+                    "digest": "sha256:2e3debadcbf7e542e2aefbce1b64a358b1931fb403b3e4aeca27cb4d809d56c2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 97,
+                    "digest": "sha256:692a38ba2d987681850aef6b46033c356155925b1fca4c36716ba665efaf78ca"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 37791438,
+                    "digest": "sha256:c86dab68059db3c1ce5d8863a7d2a849ade837e87f34faf72cb87e469c4cfe07"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 165507,
+                    "digest": "sha256:7e0639627112008a56158fa279ed03804016922ed148c4e37f639ad07eb66576"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 164346,
+                    "digest": "sha256:81186fdffc8ebe5434e2a55965bbbb4aa4e18ae94454f8bca3101767659ff6c9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 651,
+                    "digest": "sha256:d4a1903de19bf43e154ddf47c47e6d00e2b891727ac3c28ef6d071b6e9e7591e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 20908360,
+                    "digest": "sha256:26846af390e91d0d50fd26c837d49d60db66ffb924924d9e1d6c15caeb7ff3e3"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 93,
+                    "digest": "sha256:d3c410d624ffdd206fac423b568cbe0a93a7eecb44d99b0e6dda771d7651a816"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "2.7-1"
+    ],
+    "configs": {
+        "2.7-1": {
+            "architecture": "amd64",
+            "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/NGStools/KronaTools-2.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:621d451926afe5c913e196f51d5886f6af69a058e26025b6da1e2fefd85b6e65",
+                "Volumes": null,
+                "WorkingDir": "/data/",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "0fa01cf10bf340441a0a015f570a0a7785723a36ca303c52c92b428332bab37a",
+            "container_config": {
+                "Hostname": "0fa01cf10bf3",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/NGStools/KronaTools-2.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) WORKDIR /data/"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:621d451926afe5c913e196f51d5886f6af69a058e26025b6da1e2fefd85b6e65",
+                "Volumes": null,
+                "WorkingDir": "/data",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2018-10-03T07:16:57.847113067Z",
+            "docker_version": "18.03.1-ee-1-tp5",
+            "history": [
+                {
+                    "created": "2018-09-05T22:20:55.163307996Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a83ab1826f43e88bc0d3ab6230f14cb9b2dacab70c762c3bfc555eda733b292c in / "
+                },
+                {
+                    "created": "2018-09-05T22:20:55.867042901Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-09-05T22:20:56.423645249Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-05T22:20:57.023288712Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2018-09-05T22:20:57.602946438Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-09-05T22:20:57.758547727Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-03T07:12:16.052179551Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-03T07:12:16.348984846Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /NGStools/"
+                },
+                {
+                    "created": "2018-10-03T07:13:02.943482785Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c apt-get update && apt-get -y install     wget     bzip2     curl     make"
+                },
+                {
+                    "created": "2018-10-03T07:13:05.341944268Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c wget https://github.com/marbl/Krona/releases/download/v2.7/KronaTools-2.7.tar"
+                },
+                {
+                    "created": "2018-10-03T07:13:07.416535871Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c tar xf KronaTools-2.7.tar && rm KronaTools-2.7.tar"
+                },
+                {
+                    "created": "2018-10-03T07:13:07.720682498Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /NGStools/KronaTools-2.7/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-03T07:13:09.797581616Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c ./install.pl --prefix /NGStools/KronaTools-2.7/"
+                },
+                {
+                    "created": "2018-10-03T07:16:57.140562802Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c ./updateTaxonomy.sh"
+                },
+                {
+                    "created": "2018-10-03T07:16:57.439556453Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/NGStools/KronaTools-2.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-03T07:16:57.847113067Z",
+                    "author": "I Mendes <cimendes@medicina.ulisboa.pt>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /data/"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:8823818c474862932702f8a920abea43b2560ddceb910d145be9ba0eb149a643",
+                    "sha256:19d043c86cbcb68e4f8363bf0363a2110af6e627eb9051cda1e8fc6ce1e43d7f",
+                    "sha256:883eafdbe580e33bf34cb29e9c4c01a5fd7812f7ab93f9950cad1875e13e3915",
+                    "sha256:4775b2f378bb7a98f1d64d2af7ee14251acd027c115065691719367c739ef25a",
+                    "sha256:75b79e19929ce80a6ec6c059616338272fbac9173fdd5be1ee48b949261770cf",
+                    "sha256:4b1ba7eea0df0498a54c7a3b1414665f91d150dac96e2159f91724eaee71baef",
+                    "sha256:c93d5eba34efcdc44d7cf51e48df473624f6fdfbb873fe987c80ca5634862cf5",
+                    "sha256:19f836e78dd175b0aa29335eaea6dbaa0365048672b1e9e3ffecfa4dd9d7d589",
+                    "sha256:e511e8a4f8d26261c6db64e00d9f0ad15898d31e2ad7adbb0084774bfd05379c",
+                    "sha256:0773e648735006b23c69a561eab86b3457fb820367b6dca0324668418d1262b1",
+                    "sha256:f1b15d1478e0b79db2aa757070e75da0bfab621861524a4b9e3b9f23dcb62855",
+                    "sha256:c41b829b6f62a57c7f80f6ceeeede8c948625fb5434efafe9a7dff23063cbe52"
+                ]
+            }
+        }
+    }
+}

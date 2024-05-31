@@ -1,0 +1,123 @@
+{
+    "manifests": {
+        "pytest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1911,
+                "digest": "sha256:e1935a5d1c4f5852872f1f010607c6397339c4614fd618465c664e826f051551"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2065537,
+                    "digest": "sha256:ff3a5c916c92643ff77519ffa742d3ec61b7f591b6b7504599d95a4a41134e28"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "pytest"
+    ],
+    "configs": {
+        "pytest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "IMAGE=image1"
+                ],
+                "Cmd": [
+                    "env"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:acd854d684fd3ee9ce3680476c42ef5792d6f5769aa4fd5d928e2f85ecd7b379",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c"
+                ],
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "92cd9f63d1e3bd45313fa47ab087c1f5eb0d58625cca7285292e5f3b5dc85c3b",
+            "container_config": {
+                "Hostname": "92cd9f63d1e3",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "IMAGE=image1"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"env\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:acd854d684fd3ee9ce3680476c42ef5792d6f5769aa4fd5d928e2f85ecd7b379",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2018-06-21T08:53:20.101896639Z",
+            "docker_version": "17.09.0-ce",
+            "history": [
+                {
+                    "created": "2018-01-09T21:10:58.365737589Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:093f0723fa46f6cdbd6f7bd146448bb70ecce54254c35701feeceb956414622f in / "
+                },
+                {
+                    "created": "2018-01-09T21:10:58.579708634Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-21T08:53:04.127932363Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV IMAGE=image1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-21T08:53:19.975941642Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/bin/sh\" \"-c\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-06-21T08:53:20.101896639Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"env\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:cd7100a72410606589a54b932cabd804a17f9ae5b42a1882bd56d263e02b6215"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,334 @@
+{
+    "manifests": {
+        "jammy": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3339,
+                "digest": "sha256:97cc92e7dca7699b427ec1fb3348dd4cf83624353841c3f79684c5345f62d91e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29533050,
+                    "digest": "sha256:6b851dcae6ca1461dde247915abc5048061f34332929ca8fb37d9dc18f2e2f44"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 16773907,
+                    "digest": "sha256:d63a9cf17b7ca684557b96942473690d41a8228c1bc15a4907c576c609c86d70"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 161717,
+                    "digest": "sha256:15b370b56aa290669ad232fa0483860df9ec8de6d3e3041a53d951b1810ac5df"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1151,
+                    "digest": "sha256:9c7cc1c5bf5058f2966b1a819b76346a0aa347cf8ffa0f36293a4dd3eaafbf79"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 571,
+                    "digest": "sha256:ea8c1862b0f6b127f311d604cabd0c2a20ecbeb2a33fdb4e9abfefa2f8df05bb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 345,
+                    "digest": "sha256:9a808244d502e2446d940af061741a160119446e7a611f9eb498733c5a7d8e1a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3338,
+                "digest": "sha256:bb3f9bf694fd5484786b74e53380b0bddd9188386acff8cd732642ccac17ddae"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27506421,
+                    "digest": "sha256:56e0351b98767487b3c411034be95479ed1710bb6be860db6df0be3a98653027"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 16773950,
+                    "digest": "sha256:34781e84322eb1d5583972776ab5a91ba45c35d56512afefe0876cebc3df42e5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 161689,
+                    "digest": "sha256:3387e215fe8f1d808d0112aa7be7c5932f1c3ee7dd5d5b5b8122566b4b94dd55"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1147,
+                    "digest": "sha256:b00c83978e4d8d6f49205d287fe414afea411eb9c6b368423f3916c09d5a8c65"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 570,
+                    "digest": "sha256:d6dbe63541ca5e6ea10dfc72fbd69f8bb67c2c8363315784b131288062f63237"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 345,
+                    "digest": "sha256:ea45bbce43fd80557b07c6a547c7ce952b587af945a651495f5b5a755d997180"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "jammy",
+        "latest"
+    ],
+    "configs": {
+        "jammy": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/minizinc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "FZNEXEC=/entry_data/fzn-exec"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "WorkingDir": "/minizinc",
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-07-25T23:14:55.4737955Z",
+            "history": [
+                {
+                    "created": "2023-06-05T17:00:37.587967605Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-05T17:00:37.631302347Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-05T17:00:37.67809659Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-05T17:00:37.722501654Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-05T17:00:39.16987586Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:0ad2ee2cfb186802f49c9bf4148674d1c6fc201f83478ec01ffaa7086d491323 in / "
+                },
+                {
+                    "created": "2023-06-05T17:00:39.361599721Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-20T11:21:19.983947063+10:00",
+                    "created_by": "RUN /bin/sh -c [ ! -f \"/etc/alpine-release\" ] || apk add --no-cache libstdc++ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-20T16:35:03.728882374+10:00",
+                    "created_by": "COPY /usr/local/bin/* /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-20T16:35:04.065503348+10:00",
+                    "created_by": "COPY /usr/local/share/minizinc /usr/local/share/minizinc # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-12T23:23:31.1848542Z",
+                    "created_by": "COPY /minizinc /minizinc # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-25T23:14:55.1465569Z",
+                    "created_by": "COPY /.minizinc /root/.minizinc # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-25T23:14:55.3900569Z",
+                    "created_by": "RUN /bin/sh -c mkdir /entry_data     && mkdir /entry_data/mzn-lib     && ln -s /entry_data/mzn-lib /usr/local/share/minizinc/exec     && rm /usr/local/share/minizinc/solvers/*.msc # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-25T23:14:55.4737955Z",
+                    "created_by": "ENV FZNEXEC=/entry_data/fzn-exec",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-25T23:14:55.4737955Z",
+                    "created_by": "ENV PATH=/minizinc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-25T23:14:55.4737955Z",
+                    "created_by": "WORKDIR /minizinc",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:cdd7c73923174e45ea648d66996665c288e1b17a0f45efdbeca860f6dafdf731",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:414d125e67bb441eac74219c70e33a62a3d5b871adf2626f7adcc5c83f077f45",
+                    "sha256:5315b46b2ec59a6f9e627f22472e6aece1a64828440069bc5c7c78b0f020cb5c",
+                    "sha256:7c04c01a83bab67bc0eca10be25a43501a42eea55ca8f96f2cd265a527b2d7a4",
+                    "sha256:e55b06c902b2a76290fb2348c9bd4820f19dd5ea79616d75e804b347f88e6dee",
+                    "sha256:bd1a5c2e457d185090a5961e6fa56987c812b5006b248e2f9de3b2d5254f44d9",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/minizinc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "FZNEXEC=/entry_data/fzn-exec"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "WorkingDir": "/minizinc",
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "20.04"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-07-25T23:14:37.8033638Z",
+            "history": [
+                {
+                    "created": "2023-06-05T17:08:57.299070022Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-05T17:08:57.352553213Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-05T17:08:57.398862164Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-05T17:08:57.444423069Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=20.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-05T17:08:58.73643346Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:655d373cb551d0dd5d7867f88a4f98908dc3f16190986f693e88c423e6f21b8d in / "
+                },
+                {
+                    "created": "2023-06-05T17:08:58.938601289Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-06-20T11:22:21.893358762+10:00",
+                    "created_by": "RUN /bin/sh -c [ ! -f \"/etc/alpine-release\" ] || apk add --no-cache libstdc++ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-20T16:36:18.939115425+10:00",
+                    "created_by": "COPY /usr/local/bin/* /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-20T16:36:19.129589561+10:00",
+                    "created_by": "COPY /usr/local/share/minizinc /usr/local/share/minizinc # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-06-20T06:39:29.5265689Z",
+                    "created_by": "COPY /minizinc /minizinc # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-25T23:14:37.5046427Z",
+                    "created_by": "COPY /.minizinc /root/.minizinc # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-25T23:14:37.71301Z",
+                    "created_by": "RUN /bin/sh -c mkdir /entry_data     && mkdir /entry_data/mzn-lib     && ln -s /entry_data/mzn-lib /usr/local/share/minizinc/exec     && rm /usr/local/share/minizinc/solvers/*.msc # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-07-25T23:14:37.8033638Z",
+                    "created_by": "ENV FZNEXEC=/entry_data/fzn-exec",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-25T23:14:37.8033638Z",
+                    "created_by": "ENV PATH=/minizinc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-07-25T23:14:37.8033638Z",
+                    "created_by": "WORKDIR /minizinc",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:ec66d8cea54a2f4dfbbd8342ce082503bf8541e996a800c0d724b8dd2fea7f6a",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:36222afbaa9ba12221de357871b192973ed9ff318d3a1ede7020ded2ea40f8c5",
+                    "sha256:11a16ab17f34dd70ce4bb254a5c27de93c68dddc72f085153e08cc9944802b5f",
+                    "sha256:48c1534e18b197fb91569848dd58b00bb4e9edb55fcb51925d400130d79811d0",
+                    "sha256:fbea9e06207abeb4eaa213554867c5052870d9c840f2b80f0b6f9847d1b58aa0",
+                    "sha256:94f59a796cad5f0539d4cdc5c0d59143042e4291ff61523bb4747d41e6171cb3",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,304 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5364,
+                "digest": "sha256:61001a230c26ceecbe73a6735158a4250366bafecde1660e851d214ef21799b7"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 354845219,
+                    "digest": "sha256:d0483f375c3855ddb4907f38b636e325b3e450099023d26b0f4ef3ea3a35fd81"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29670971,
+                    "digest": "sha256:e6fed54a15769139d6531144a0690fc9d93696c8bb31b46277d3a239cc14baf3"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 98,
+                    "digest": "sha256:aaa1d75d7b6ca701d0e105a951f17d042470a508422bb3c07eaf07f289539924"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 182,
+                    "digest": "sha256:6905be3dae00f13ffeb6fa56d1e88e52bed0f9a50319608d9e01dea005f94642"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 153,
+                    "digest": "sha256:65e5f7e6f37bb37a0d429848a8918b69b61294a4526b4ad0ad61347fbd807431"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 254,
+                    "digest": "sha256:e3a44e9a902f8b234e8033df22f803dad678799f260190150e77f5f718bff847"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 249559903,
+                    "digest": "sha256:9fdafb5129b64a7150559404cd0c5fc3b8161f7aed8addef8be32c65ee46800a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 375603435,
+                    "digest": "sha256:618eefb4ad439ebace29c6381390880064db6ce1738a18fa97953a25231ee636"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1329092,
+                    "digest": "sha256:9272ee61b623101a3b168902d0c9e4f74dde6c2df2636472303c68748079dd59"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "container": "ce440628435aae043a1906b6edf7aa31d3ac0f649678cb15ebc4a6ba8d1c918c",
+            "created": "2018-10-15T14:59:32.712564635Z",
+            "docker_version": "18.03.1-ce",
+            "history": [
+                {
+                    "author": "",
+                    "created": "2018-10-12T05:19:30.826489339Z",
+                    "created_by": "",
+                    "comment": "Imported from -"
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:56:11.692479131Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL io.buildpacks.stack.id=org.cloudfoundry.stacks.cflinuxfs3",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:56:15.03613131Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PACK_USER_ID=2000",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:56:18.321063649Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PACK_USER_GID=2000",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:56:22.245182935Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:99aaeda34ca1deb30b9b8891e471db940fae5a7f934be580d2d003f554f6e85f in /lifecycle ",
+                    "comment": ""
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:56:26.03706836Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /workspace",
+                    "comment": ""
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:56:28.988179638Z",
+                    "created_by": "/bin/sh -c #(nop)  USER root",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:59:08.072554173Z",
+                    "created_by": "/bin/sh -c mkdir -p /workspace/app /workspace/config /cache /platform/env",
+                    "comment": ""
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:59:11.933321956Z",
+                    "created_by": "/bin/sh -c chown -R vcap:vcap /workspace /cache",
+                    "comment": ""
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:59:14.652691566Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PACK_STACK_ID=org.cloudfoundry.stacks.cflinuxfs3",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:59:18.133343142Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PACK_BUILDPACKS_DIR=/buildpacks",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:59:21.701450969Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PACK_ORDER_PATH=/buildpacks/order.toml",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:59:25.290606662Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PACK_GROUP_PATH=./group.toml",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:59:28.829570008Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PACK_PLAN_PATH=./plan.toml",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "2018-10-15T14:59:32.712564635Z",
+                    "created_by": "/bin/sh -c #(nop)  USER vcap",
+                    "comment": "",
+                    "empty_layer": true
+                },
+                {
+                    "author": "",
+                    "created": "0001-01-01T00:00:00Z",
+                    "created_by": "",
+                    "comment": ""
+                },
+                {
+                    "author": "",
+                    "created": "0001-01-01T00:00:00Z",
+                    "created_by": "",
+                    "comment": ""
+                },
+                {
+                    "author": "",
+                    "created": "0001-01-01T00:00:00Z",
+                    "created_by": "",
+                    "comment": ""
+                },
+                {
+                    "author": "",
+                    "created": "0001-01-01T00:00:00Z",
+                    "created_by": "",
+                    "comment": ""
+                },
+                {
+                    "author": "",
+                    "created": "0001-01-01T00:00:00Z",
+                    "created_by": "",
+                    "comment": ""
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:a624362bbb145af29d6c407029b466b988ffc77db4fe6579320b319c80515760",
+                    "sha256:83cb82945e54a96102c983e7075e34d5129cbc9881cfa0a70ba30ba3d1ff64c9",
+                    "sha256:e278a3b55ecb41d5935174802ba2631d6c7a6bb52c7018b2a0f3207a1469d684",
+                    "sha256:fd179ca65ad7259e74bcaf935154b096bdef7e08ce4a3cfb9b9c15866f31fb6b",
+                    "sha256:f4616320ce7979fefbc4c5b89d39f9dc99a5f6483a01cd40fc53c83dfa60cad8",
+                    "sha256:27c881c412204dca9848667bf680bea88b1740611e31fad049ba2dfd55d30971",
+                    "sha256:a0f1fbb6edbd449f2a5304e2d17210d528191ac07455963190efc75ee5239a57",
+                    "sha256:0aae37a08a338864157438481f56573278223eed6e8076039184625868a4edbf",
+                    "sha256:27005daab11ec20cf76dc60c33b966b61ba826adfd3ddf321eb8d39703e64eec",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+                ]
+            },
+            "config": {
+                "AttachStderr": false,
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "Cmd": null,
+                "Healthcheck": null,
+                "Domainname": "",
+                "Entrypoint": null,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "PACK_USER_ID=2000",
+                    "PACK_USER_GID=2000",
+                    "PACK_STACK_ID=org.cloudfoundry.stacks.cflinuxfs3",
+                    "PACK_BUILDPACKS_DIR=/buildpacks",
+                    "PACK_ORDER_PATH=/buildpacks/order.toml",
+                    "PACK_GROUP_PATH=./group.toml",
+                    "PACK_PLAN_PATH=./plan.toml"
+                ],
+                "Hostname": "",
+                "Image": "sha256:a02d4707a14ce9d5363f347287aab07d9cd79bd5c9a9d8ae89b4cec6a70fb0ea",
+                "Labels": {
+                    "io.buildpacks.stack.id": "org.cloudfoundry.stacks.cflinuxfs3"
+                },
+                "OnBuild": null,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Tty": false,
+                "User": "vcap",
+                "Volumes": null,
+                "WorkingDir": "/workspace",
+                "ExposedPorts": null,
+                "ArgsEscaped": false,
+                "NetworkDisabled": false,
+                "MacAddress": "",
+                "StopSignal": "",
+                "Shell": null
+            },
+            "container_config": {
+                "AttachStderr": false,
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "USER vcap"
+                ],
+                "Healthcheck": null,
+                "Domainname": "",
+                "Entrypoint": null,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "PACK_USER_ID=2000",
+                    "PACK_USER_GID=2000",
+                    "PACK_STACK_ID=org.cloudfoundry.stacks.cflinuxfs3",
+                    "PACK_BUILDPACKS_DIR=/buildpacks",
+                    "PACK_ORDER_PATH=/buildpacks/order.toml",
+                    "PACK_GROUP_PATH=./group.toml",
+                    "PACK_PLAN_PATH=./plan.toml"
+                ],
+                "Hostname": "ce440628435a",
+                "Image": "sha256:a02d4707a14ce9d5363f347287aab07d9cd79bd5c9a9d8ae89b4cec6a70fb0ea",
+                "Labels": {
+                    "io.buildpacks.stack.id": "org.cloudfoundry.stacks.cflinuxfs3"
+                },
+                "OnBuild": null,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Tty": false,
+                "User": "vcap",
+                "Volumes": null,
+                "WorkingDir": "/workspace",
+                "ExposedPorts": null,
+                "ArgsEscaped": false,
+                "NetworkDisabled": false,
+                "MacAddress": "",
+                "StopSignal": "",
+                "Shell": null
+            },
+            "osversion": ""
+        }
+    }
+}

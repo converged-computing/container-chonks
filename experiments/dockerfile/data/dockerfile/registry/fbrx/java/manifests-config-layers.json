@@ -1,0 +1,142 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3774,
+                "digest": "sha256:cc1928e9fd9a9f36b903a3aee021de9b54c8bc9e83b32e79498de13928acc840"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 49333550,
+                    "digest": "sha256:9502adfba7f1250b1d7fc248ff95dc34e90cad1b554a3151819f8a33ada37dfb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 758,
+                    "digest": "sha256:4332ffb06e4b2a63e6feb5db60fd03c073624e1df32a5dc128bede49f71b3a5e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 679,
+                    "digest": "sha256:2f937cc07b5fa0c9dc466c1421227981c80e48fdd944f8e9c215544bbd34bbc0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 278104976,
+                    "digest": "sha256:6327e3ca99356f4ee47dd8ad3b660bf258f5593640e1290aed6f279da59a7982"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Florian Br\u00fcssel <florian@florian-m.net>",
+            "config": {
+                "Hostname": "d2d404286fc4",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:f2110f37ec3c3564bf42dd3b7987bb2b00546f0bb8bea8b1afb0830976d3eab3",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "527bd3d465efd11c815e0b029bc3042e2f2941dac8ffe01dded5acb12bce7245",
+            "container_config": {
+                "Hostname": "d2d404286fc4",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "apt-get update && apt-get install openjdk-7-jdk subversion git maven wget curl -y"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:f2110f37ec3c3564bf42dd3b7987bb2b00546f0bb8bea8b1afb0830976d3eab3",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-07-28T18:52:14.952930056Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2016-01-26T17:48:17.324409116Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:3f4708cf445dc1b537b8e9f400cb02bef84660811ecdb7c98930f68fee876ec4 in /"
+                },
+                {
+                    "created": "2016-01-26T17:48:31.377192721Z",
+                    "created_by": "/bin/sh -c echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes"
+                },
+                {
+                    "created": "2016-01-26T17:48:33.59869621Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2016-01-26T17:48:34.465253028Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]"
+                },
+                {
+                    "created": "2017-07-28T18:48:46.973096931Z",
+                    "author": "Florian Br\u00fcssel <florian@florian-m.net>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Florian Br\u00fcssel <florian@florian-m.net>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-28T18:52:14.952930056Z",
+                    "author": "Florian Br\u00fcssel <florian@florian-m.net>",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install openjdk-7-jdk subversion git maven wget curl -y"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:3cbe18655eb617bf6a146dbd75a63f33c191bf8c7761bd6a8d68d53549af334b",
+                    "sha256:84cc3d400b0d610447fbdea63436bad60fb8361493a32db380bd5c5a79f92ef4",
+                    "sha256:ed58a6b8d8d6a4e2ecb4da7d1bf17ae8006dac65917c6a050109ef0a5d7199e6",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:a790aacbc64dcf30dd27086c43bdeb1a4e652d60da0140f54af2c96dee2a796f"
+                ]
+            }
+        }
+    }
+}

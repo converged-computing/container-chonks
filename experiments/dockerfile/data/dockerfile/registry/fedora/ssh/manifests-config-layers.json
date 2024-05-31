@@ -1,0 +1,180 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3909,
+                "digest": "sha256:ad6a3ff29626fff703315619e98929eec1290fadeba867fef73ee2f9a171520f"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 67973193,
+                    "digest": "sha256:0fc456f626d7a9b48198aae17fdcfc3881b94528b052fa5e0d5a64ac5b16e4d6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 57820826,
+                    "digest": "sha256:bfb6cf77b122837c4a4af59b065603116e1fe08435a806027ea3a04bae5846cf"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 384,
+                    "digest": "sha256:9504711983ecdacdeb879a4f1ed046f42a19a081058cddf08f587e32b878e564"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "http://fedoraproject.org/wiki/Cloud",
+            "config": {
+                "Hostname": "91d16bd68c77",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DISTTAG=f25docker",
+                    "FGC=f25"
+                ],
+                "Cmd": [
+                    "/usr/sbin/sshd",
+                    "-D"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:862f353a2adc7672eebf6ff993798c41999ba24b409880cbf35c5bbdedb2e5ad",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/entrypoint.sh"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "RUN": "docker run --name ssh -d -p 2200:22 $IMAGE"
+                }
+            },
+            "container": "65dd5bf3f0ef1753ac5b0f93b28bbf4031d43344f6b9d14c0e04f62a4184a131",
+            "container_config": {
+                "Hostname": "91d16bd68c77",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DISTTAG=f25docker",
+                    "FGC=f25"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/usr/sbin/sshd\" \"-D\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:862f353a2adc7672eebf6ff993798c41999ba24b409880cbf35c5bbdedb2e5ad",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/entrypoint.sh"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "RUN": "docker run --name ssh -d -p 2200:22 $IMAGE"
+                }
+            },
+            "created": "2017-02-08T23:46:37.13794349Z",
+            "docker_version": "1.12.6-cs6",
+            "history": [
+                {
+                    "created": "2016-08-30T18:21:14.673847011Z",
+                    "author": "[Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER [Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-11-23T00:28:23.703945087Z",
+                    "author": "[Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]",
+                    "created_by": "/bin/sh -c #(nop)  ENV DISTTAG=f25docker FGC=f25",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-15T17:43:53.8090228Z",
+                    "author": "[Adam Miller <maxamillion@fedoraproject.org>] [Patrick Uiterwijk <patrick@puiterwijk.org>]",
+                    "created_by": "/bin/sh -c #(nop) ADD file:9a6f69166ae1e1c37e8a0eb7ecd19c898f24dfded0593fb4155cb953951ea689 in / "
+                },
+                {
+                    "created": "2017-02-08T23:44:21.456575289Z",
+                    "author": "http://fedoraproject.org/wiki/Cloud",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER http://fedoraproject.org/wiki/Cloud",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-08T23:44:23.57841324Z",
+                    "author": "http://fedoraproject.org/wiki/Cloud",
+                    "created_by": "/bin/sh -c #(nop)  LABEL RUN=docker run --name ssh -d -p 2200:22 $IMAGE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-08T23:44:25.673076161Z",
+                    "author": "http://fedoraproject.org/wiki/Cloud",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 22/tcp",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-08T23:46:30.378286183Z",
+                    "author": "http://fedoraproject.org/wiki/Cloud",
+                    "created_by": "/bin/sh -c dnf -y update && dnf -y install openssh-server passwd && dnf clean all"
+                },
+                {
+                    "created": "2017-02-08T23:46:32.687114948Z",
+                    "author": "http://fedoraproject.org/wiki/Cloud",
+                    "created_by": "/bin/sh -c #(nop) COPY file:e97bea0b3a64789d4d6190ae9e281ddd781dd6ea6ee5d60fce3ea072ca33d769 in /entrypoint.sh "
+                },
+                {
+                    "created": "2017-02-08T23:46:34.731510957Z",
+                    "author": "http://fedoraproject.org/wiki/Cloud",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/entrypoint.sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-02-08T23:46:37.13794349Z",
+                    "author": "http://fedoraproject.org/wiki/Cloud",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/usr/sbin/sshd\" \"-D\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:e4f86288aaf70310380b6557bd7f1844809491518eb73925ef5b364617ce3f41",
+                    "sha256:510f15c27a8ba2a2ff57b56e0aceb2b0f94ecd9cf34e3fed7924e79e5ee5f8d7",
+                    "sha256:482d621bda3327411207e4e87f6e58d9a7ad65f80f16d954d19e3dd9d0dfa68e"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,416 @@
+{
+    "manifests": {
+        "3400100_asan_ubuntu_jammy-20230126": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2346,
+                "digest": "sha256:c5e14f6111986d7f85e4cc2c9a88c93afde15d8619cdf43b0803e3a4cbd25075"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29528717,
+                    "digest": "sha256:677076032cca0a2362d25cf3660072e738d1b96fe860409a33ce901d695d7ee8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2601656,
+                    "digest": "sha256:cee7dbd77ad7f7402a763a775c221dc57b8a393c48721dbaaa27e7a1123cf8b1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2225976,
+                    "digest": "sha256:ce807c8ccb2a3d996b069a2024baf8a5a9c291a2f0753b6f4f4ee14d390975e1"
+                }
+            ]
+        },
+        "3400100_memsan_ubuntu_jammy-20230126": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2350,
+                "digest": "sha256:1cd010a2ad413cac443db26782a05660627c922fe038e473ca9254383e4ccaa0"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29528717,
+                    "digest": "sha256:677076032cca0a2362d25cf3660072e738d1b96fe860409a33ce901d695d7ee8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2601656,
+                    "digest": "sha256:cee7dbd77ad7f7402a763a775c221dc57b8a393c48721dbaaa27e7a1123cf8b1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1534374,
+                    "digest": "sha256:f61e3f27235181c50cf756dd7446dea87f3ed6725a47409ed29264dec21f5c3a"
+                }
+            ]
+        },
+        "3400100_ubsan_ubuntu_jammy-20230126": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2348,
+                "digest": "sha256:c0613e6d510164903e689ac402458c1e7d8ac86155c8e29065a6f8af6da39481"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29528717,
+                    "digest": "sha256:677076032cca0a2362d25cf3660072e738d1b96fe860409a33ce901d695d7ee8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2601656,
+                    "digest": "sha256:cee7dbd77ad7f7402a763a775c221dc57b8a393c48721dbaaa27e7a1123cf8b1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3345358,
+                    "digest": "sha256:9c44e84f3b89b5cd08dccddfbd66518f51b08f25adc47a39ced44e5151cc1f38"
+                }
+            ]
+        },
+        "3400100_ubuntu_jammy-20230126": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2333,
+                "digest": "sha256:9bc8340ba9f04e272b56cc9cedd4530b6e6a1690d5202a689363b8ff5376bb03"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29528717,
+                    "digest": "sha256:677076032cca0a2362d25cf3660072e738d1b96fe860409a33ce901d695d7ee8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3066116,
+                    "digest": "sha256:dce45d6ff51285aebfead4bfd351c7298f5e446404558467adc8657396c59f4f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3066129,
+                    "digest": "sha256:b3cf8b78201c9a100a7332ceec77fbfbef94dfda329a14f89f882fe90bc1d23b"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "3400100_asan_ubuntu_jammy-20230126",
+        "3400100_memsan_ubuntu_jammy-20230126",
+        "3400100_ubsan_ubuntu_jammy-20230126",
+        "3400100_ubuntu_jammy-20230126"
+    ],
+    "configs": {
+        "3400100_asan_ubuntu_jammy-20230126": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "maintainer": "KLEE Developers",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-02-22T18:43:09.247359829Z",
+            "history": [
+                {
+                    "created": "2023-01-26T04:57:59.893830181Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:57:59.959936538Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.031088326Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.098806406Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:02.097080644Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:18e71f049606f6339ce7a995839623f50e6ec6474bfd0a3a7ca799db726f47f6 in / "
+                },
+                {
+                    "created": "2023-01-26T04:58:02.385638665Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-22T17:53:09.529662047Z",
+                    "created_by": "COPY /tmp/sqlite-amalgamation-3400100 /tmp/sqlite-amalgamation-3400100 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-22T18:43:09.247359829Z",
+                    "created_by": "COPY /tmp/sqlite-amalgamation-3400100_asan /tmp/sqlite-amalgamation-3400100_asan # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-22T18:43:09.247359829Z",
+                    "created_by": "LABEL maintainer=KLEE Developers",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJhdHRycyI6eyJmaWxlbmFtZSI6IkRvY2tlcmZpbGUifSwic291cmNlcyI6W3sidHlwZSI6ImRvY2tlci1pbWFnZSIsInJlZiI6ImRvY2tlci5pby9saWJyYXJ5L3VidW50dTpqYW1teS0yMDIzMDEyNiJ9LHsidHlwZSI6ImRvY2tlci1pbWFnZSIsInJlZiI6ImRvY2tlci5pby9saWJyYXJ5L3VidW50dTpqYW1teS0yMDIzMDEyNiIsInBpbiI6InNoYTI1NjpjNWZmMmQ4OGY2Nzk1NGJkY2YxY2ZkZDQ2ZmUzZDY4Mzg1OGQ2OWMyY2FkZDY2NjA4MTJlZGZjODM3MjZjNjU0In1dfQ==",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c5ff2d88f67954bdcf1cfdd46fe3d683858d69c2cadd6660812edfc83726c654",
+                    "sha256:70d1cc8313e2a62bfbd70f2bdfe4e9fe4b09acaee5daedd7235830c80e2af035",
+                    "sha256:fc9a824410911c9322bd4a5fb96cd105be4068eb11bf2295e1ddc09ad86048fd"
+                ]
+            }
+        },
+        "3400100_memsan_ubuntu_jammy-20230126": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "maintainer": "KLEE Developers",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-02-22T18:40:55.582140099Z",
+            "history": [
+                {
+                    "created": "2023-01-26T04:57:59.893830181Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:57:59.959936538Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.031088326Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.098806406Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:02.097080644Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:18e71f049606f6339ce7a995839623f50e6ec6474bfd0a3a7ca799db726f47f6 in / "
+                },
+                {
+                    "created": "2023-01-26T04:58:02.385638665Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-22T17:53:09.529662047Z",
+                    "created_by": "COPY /tmp/sqlite-amalgamation-3400100 /tmp/sqlite-amalgamation-3400100 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-22T18:40:55.582140099Z",
+                    "created_by": "COPY /tmp/sqlite-amalgamation-3400100_memsan /tmp/sqlite-amalgamation-3400100_memsan # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-22T18:40:55.582140099Z",
+                    "created_by": "LABEL maintainer=KLEE Developers",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJhdHRycyI6eyJmaWxlbmFtZSI6IkRvY2tlcmZpbGUifSwic291cmNlcyI6W3sidHlwZSI6ImRvY2tlci1pbWFnZSIsInJlZiI6ImRvY2tlci5pby9saWJyYXJ5L3VidW50dTpqYW1teS0yMDIzMDEyNiIsInBpbiI6InNoYTI1NjpjNWZmMmQ4OGY2Nzk1NGJkY2YxY2ZkZDQ2ZmUzZDY4Mzg1OGQ2OWMyY2FkZDY2NjA4MTJlZGZjODM3MjZjNjU0In0seyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2xpYnJhcnkvdWJ1bnR1OmphbW15LTIwMjMwMTI2In1dfQ==",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c5ff2d88f67954bdcf1cfdd46fe3d683858d69c2cadd6660812edfc83726c654",
+                    "sha256:70d1cc8313e2a62bfbd70f2bdfe4e9fe4b09acaee5daedd7235830c80e2af035",
+                    "sha256:285628287b6dc37ef5aa78319bbaf229ac69bdb42347abe8d7c961ecf20736c6"
+                ]
+            }
+        },
+        "3400100_ubsan_ubuntu_jammy-20230126": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "maintainer": "KLEE Developers",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-02-22T18:44:00.271410717Z",
+            "history": [
+                {
+                    "created": "2023-01-26T04:57:59.893830181Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:57:59.959936538Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.031088326Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.098806406Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:02.097080644Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:18e71f049606f6339ce7a995839623f50e6ec6474bfd0a3a7ca799db726f47f6 in / "
+                },
+                {
+                    "created": "2023-01-26T04:58:02.385638665Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-22T17:53:09.529662047Z",
+                    "created_by": "COPY /tmp/sqlite-amalgamation-3400100 /tmp/sqlite-amalgamation-3400100 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-22T18:44:00.271410717Z",
+                    "created_by": "COPY /tmp/sqlite-amalgamation-3400100_ubsan /tmp/sqlite-amalgamation-3400100_ubsan # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-22T18:44:00.271410717Z",
+                    "created_by": "LABEL maintainer=KLEE Developers",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJhdHRycyI6eyJmaWxlbmFtZSI6IkRvY2tlcmZpbGUifSwic291cmNlcyI6W3sidHlwZSI6ImRvY2tlci1pbWFnZSIsInJlZiI6ImRvY2tlci5pby9saWJyYXJ5L3VidW50dTpqYW1teS0yMDIzMDEyNiIsInBpbiI6InNoYTI1NjpjNWZmMmQ4OGY2Nzk1NGJkY2YxY2ZkZDQ2ZmUzZDY4Mzg1OGQ2OWMyY2FkZDY2NjA4MTJlZGZjODM3MjZjNjU0In0seyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2xpYnJhcnkvdWJ1bnR1OmphbW15LTIwMjMwMTI2In1dfQ==",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c5ff2d88f67954bdcf1cfdd46fe3d683858d69c2cadd6660812edfc83726c654",
+                    "sha256:70d1cc8313e2a62bfbd70f2bdfe4e9fe4b09acaee5daedd7235830c80e2af035",
+                    "sha256:0efaa55e1950bc0cea7f47d9f758eaae8b6f8f4323ce1df2cad8737711ae6fc5"
+                ]
+            }
+        },
+        "3400100_ubuntu_jammy-20230126": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "maintainer": "KLEE Developers",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                },
+                "OnBuild": null
+            },
+            "created": "2023-02-22T17:56:35.85676885Z",
+            "history": [
+                {
+                    "created": "2023-01-26T04:57:59.893830181Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:57:59.959936538Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.031088326Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:00.098806406Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-01-26T04:58:02.097080644Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:18e71f049606f6339ce7a995839623f50e6ec6474bfd0a3a7ca799db726f47f6 in / "
+                },
+                {
+                    "created": "2023-01-26T04:58:02.385638665Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-02-17T13:02:38.025751392Z",
+                    "created_by": "COPY /tmp/sqlite-amalgamation-3400100 /tmp/sqlite-amalgamation-3400100 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-22T17:56:35.85676885Z",
+                    "created_by": "COPY /tmp/sqlite-amalgamation-3400100 /tmp/sqlite-amalgamation-3400100 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-02-22T17:56:35.85676885Z",
+                    "created_by": "LABEL maintainer=KLEE Developers",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "moby.buildkit.buildinfo.v1": "eyJmcm9udGVuZCI6ImRvY2tlcmZpbGUudjAiLCJhdHRycyI6eyJmaWxlbmFtZSI6IkRvY2tlcmZpbGUifSwic291cmNlcyI6W3sidHlwZSI6ImRvY2tlci1pbWFnZSIsInJlZiI6ImRvY2tlci5pby9saWJyYXJ5L3VidW50dTpqYW1teS0yMDIzMDEyNiIsInBpbiI6InNoYTI1NjpjNWZmMmQ4OGY2Nzk1NGJkY2YxY2ZkZDQ2ZmUzZDY4Mzg1OGQ2OWMyY2FkZDY2NjA4MTJlZGZjODM3MjZjNjU0In0seyJ0eXBlIjoiZG9ja2VyLWltYWdlIiwicmVmIjoiZG9ja2VyLmlvL2xpYnJhcnkvdWJ1bnR1OmphbW15LTIwMjMwMTI2In1dfQ==",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c5ff2d88f67954bdcf1cfdd46fe3d683858d69c2cadd6660812edfc83726c654",
+                    "sha256:36001b372a5eee273fbc2f8361425f18baa931fd2dc02f58cc60a924bafdb968",
+                    "sha256:299a25e360337b89b7a1835f14e306f36c9c925e944f597b6e16f2cf36b040a5"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6426,
+                "digest": "sha256:8602dcc06dd34a0d7ab391d83f65917ce3278c27fc2f37e76967ae5478ae5fe3"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 40789477,
+                    "digest": "sha256:4ccdce43d1e00fd03ac5438d39e731c16db3dfcf03c68390884b8e8c814221ca"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 849,
+                    "digest": "sha256:c95f13c88d926e6181e0594f76953a14ab80ce002fc6dbc968084a7e18aaafe9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 612,
+                    "digest": "sha256:82656eee95ad054e0aa75486e7c55b7666c26abbd9bf19373dd349f6e172ce9d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 851,
+                    "digest": "sha256:78ff727be57a68299558bb40b737669ca5cb9a8db948411d852ec809c14e7a1f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 162,
+                    "digest": "sha256:448bb314afa553bfb1578121328bbe92d2b5ca0f411967e7a0a200f672ade92f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 290824418,
+                    "digest": "sha256:d3d25bc46557f2b92372c2960c8d3e124d86536982973dc3038feeb84656f75a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 140,
+                    "digest": "sha256:f31bc5ad4c57a14dd7a80a0bd4dcb1a1b1057123b5c7d8761a0a66e113887af5"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "conan",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:f923e7c2ec0b0052078ad23a32f0f096d89115d4bf9f74d33f264da9e46c27cb",
+                "Volumes": null,
+                "WorkingDir": "/home/conan",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "maintainer": "Luis Martinez de Bartolome <luism@jfrog.com>"
+                }
+            },
+            "container": "deaf2bd2ab6454124ce61d36236612e74730da9f88183d39c9c2c3a930e2d050",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "conan",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "mkdir -p /home/conan/.conan"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:f923e7c2ec0b0052078ad23a32f0f096d89115d4bf9f74d33f264da9e46c27cb",
+                "Volumes": null,
+                "WorkingDir": "/home/conan",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "maintainer": "Luis Martinez de Bartolome <luism@jfrog.com>"
+                }
+            },
+            "created": "2018-09-28T09:39:37.692712936Z",
+            "docker_version": "17.09.0-ce",
+            "history": [
+                {
+                    "created": "2018-07-17T00:51:43.695850704Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:d3d5130b8f7f795c053d60902a67257290e689a661581dd3e63e52931b2d835e in / "
+                },
+                {
+                    "created": "2018-07-17T00:51:44.670800332Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-07-17T00:51:45.4891784Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-07-17T00:51:46.328309587Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2018-07-17T00:51:47.11908914Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-07-17T00:51:47.38896301Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-28T09:38:02.720246661Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Luis Martinez de Bartolome <luism@jfrog.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-28T09:39:36.442616739Z",
+                    "created_by": "/bin/sh -c dpkg --add-architecture i386     && apt-get -qq update     && apt-get -qq install -y --no-install-recommends        python-dev=2.7.*        sudo=1.8.*        binutils=2.29.*        wget=1.19.*        git=1:2.14.*        vim=2:8.0.*        libc6-dev-i386=2.26-*        linux-libc-dev:i386=4.13.*        g++-7-multilib=7.2.*        libgmp-dev=2:6.1.*        libmpfr-dev=3.1.*        libmpc-dev=1.0.*        libc6-dev=2.26*        nasm=2.13.*        dh-autoreconf=14        valgrind=1:3.13.*        ninja-build=1.7.*        libffi-dev=3.2.*        libssl-dev=1.0.2*        pkg-config=0.29.1-0ubuntu2        subversion=1.9.7-2ubuntu1        ca-certificates=20170717     && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 100     && update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++-7 100     && ln -s /usr/include/locale.h /usr/include/xlocale.h     && rm -rf /var/lib/apt/lists/*     && wget --no-check-certificate --quiet https://cmake.org/files/v3.12/cmake-3.12.1-Linux-x86_64.tar.gz     && tar -xzf cmake-3.12.1-Linux-x86_64.tar.gz     && cp -fR cmake-3.12.1-Linux-x86_64/* /usr     && rm -rf cmake-3.12.1-Linux-x86_64     && rm cmake-3.12.1-Linux-x86_64.tar.gz     && wget --no-check-certificate --quiet https://bootstrap.pypa.io/get-pip.py     && python get-pip.py     && rm get-pip.py     && pip install -q -U pip     && pip install -q --no-cache-dir conan --upgrade     && groupadd 1001 -g 1001     && groupadd 1000 -g 1000     && groupadd 2000 -g 2000     && groupadd 999 -g 999     && useradd -ms /bin/bash conan -g 1001 -G 1000,2000,999     && printf \"conan:conan\" | chpasswd     && adduser conan sudo     && printf \"conan ALL= NOPASSWD: ALL\\\\n\" >> /etc/sudoers"
+                },
+                {
+                    "created": "2018-09-28T09:39:37.049280587Z",
+                    "created_by": "/bin/sh -c #(nop)  USER [conan]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-28T09:39:37.193161186Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /home/conan",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-28T09:39:37.692712936Z",
+                    "created_by": "/bin/sh -c mkdir -p /home/conan/.conan"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f1b91f8d903cf1125f78407b85f7513a427bfc69d851fff778461e53cc58acce",
+                    "sha256:d5ce7f24606728e4b34df8c844ca1fad74d24fcc11c3e4a3b38d117077ed6807",
+                    "sha256:5251addbe073e88088288790f450f853171ac333296b6049f694270f7544fc2f",
+                    "sha256:41f50d293d3afbe39e131f402644cc586952d5075d0252776194e4b82a6411a4",
+                    "sha256:b3c5147f2ed120fe124b06bb4dbb713605431d2f54b33438d08a592d6dbdc704",
+                    "sha256:12de7a815cc4d6e9f4edf62de385302129e10436366e757f74e1efef4e9f5076",
+                    "sha256:86b47f406731a91967e400f6f73435dd77b52b660eef29b3f91108f4fb0989c9"
+                ]
+            }
+        }
+    }
+}

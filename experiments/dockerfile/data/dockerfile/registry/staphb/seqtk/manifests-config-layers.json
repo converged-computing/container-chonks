@@ -1,0 +1,649 @@
+{
+    "manifests": {
+        "1.3": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6444,
+                "digest": "sha256:759bc7ff210f2b841dad7cd942434532f0c266f77c13ebab4bc8d7ab503e8cb0"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 44401021,
+                    "digest": "sha256:7b378fa0f9085667ced1c76c9919cde8663becf2218e8d20e2df8d0824311531"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 529,
+                    "digest": "sha256:4d77b1b29f2e9b6f141b9d8f74b601f40eb998544783f4a0a3cdc384873c1a4e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 847,
+                    "digest": "sha256:7c793be88baee3f3204444e4d4e49c4e44c1709d40182c131cd5681c94e17227"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 169,
+                    "digest": "sha256:ecc05c8a19c0cf83f2f44263c967c3fe81fffc4b41b592ad088fb1534c206e70"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 44095942,
+                    "digest": "sha256:dc38bb11e8cb40cb9998ae4b1b34fe14be18296493dc5e69fff79da288e34742"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 109561,
+                    "digest": "sha256:2c888c411f07aac920d6fd3e6368cfa28705bc1fdeadebe70f80e147d7965e9c"
+                }
+            ]
+        },
+        "1.4": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:03d5a9dd25e3ab8b801d4c35531fda439486d2252e76c27b088af8675b60ac54",
+                "size": 5105
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:a486411936734b0d1d201c8a0ed8e9d449a64d5033fdc33411ec95bc26460efb",
+                    "size": 29547485
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:933747997f1fd9e5b0dc2b47ba10751d5d1d253bba07187234c7dedc22e76218",
+                    "size": 113098
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:9d8a51d2a1382a3687bd536a21df26d08038e40724864c4b615adfa0da0b32b7",
+                    "size": 1468731
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:46401fc3d164ef9859b2323ee7ee1a424e41aba59fc39e2860a73c64fd349813",
+                    "size": 94
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:03d5a9dd25e3ab8b801d4c35531fda439486d2252e76c27b088af8675b60ac54",
+                "size": 5105
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:a486411936734b0d1d201c8a0ed8e9d449a64d5033fdc33411ec95bc26460efb",
+                    "size": 29547485
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:933747997f1fd9e5b0dc2b47ba10751d5d1d253bba07187234c7dedc22e76218",
+                    "size": 113098
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:9d8a51d2a1382a3687bd536a21df26d08038e40724864c4b615adfa0da0b32b7",
+                    "size": 1468731
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:46401fc3d164ef9859b2323ee7ee1a424e41aba59fc39e2860a73c64fd349813",
+                    "size": 94
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.3",
+        "1.4",
+        "latest"
+    ],
+    "configs": {
+        "1.3": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/seqtk-1.3"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:582215fc90f5b87749bf739c29335f6191e507a6513560662c5e5a2ea14f2454",
+                "Volumes": null,
+                "WorkingDir": "/data",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "base.image": "ubuntu:xenial",
+                    "description": "Toolkit for processing sequences in FASTA/Q formats",
+                    "dockerfile.version": "1",
+                    "license": "https://github.com/lh3/seqtk/blob/master/LICENSE",
+                    "maintainer": "Curtis Kapsak",
+                    "maintainer.email": "pjx8@cdc.gov",
+                    "software": "seqtk",
+                    "software.version": "1.3",
+                    "website": "https://github.com/lh3/seqtk"
+                }
+            },
+            "container": "8084c13e9475cc428228549911adaf47c057861a3073f6fee51eb343b5f9863a",
+            "container_config": {
+                "Hostname": "8084c13e9475",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/seqtk-1.3"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) WORKDIR /data"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:582215fc90f5b87749bf739c29335f6191e507a6513560662c5e5a2ea14f2454",
+                "Volumes": null,
+                "WorkingDir": "/data",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "base.image": "ubuntu:xenial",
+                    "description": "Toolkit for processing sequences in FASTA/Q formats",
+                    "dockerfile.version": "1",
+                    "license": "https://github.com/lh3/seqtk/blob/master/LICENSE",
+                    "maintainer": "Curtis Kapsak",
+                    "maintainer.email": "pjx8@cdc.gov",
+                    "software": "seqtk",
+                    "software.version": "1.3",
+                    "website": "https://github.com/lh3/seqtk"
+                }
+            },
+            "created": "2020-07-29T14:46:11.268794819Z",
+            "docker_version": "19.03.8",
+            "history": [
+                {
+                    "created": "2020-07-24T14:39:06.238721928Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:513ae777bc4042f8446c0454f8cffc9a94f8429de963651d9a6dab95d4502007 in / "
+                },
+                {
+                    "created": "2020-07-24T14:39:07.148025918Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2020-07-24T14:39:07.955564287Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2020-07-24T14:39:08.75363425Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2020-07-24T14:39:08.926693011Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:37.968809118Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG SEQTK_VER=1.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:38.223943684Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL base.image=ubuntu:xenial",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:38.500452192Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL dockerfile.version=1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:38.766726836Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL software=seqtk",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:39.040178305Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL software.version=1.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:39.351439244Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL description=Toolkit for processing sequences in FASTA/Q formats",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:39.588604368Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL website=https://github.com/lh3/seqtk",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:39.867678922Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL license=https://github.com/lh3/seqtk/blob/master/LICENSE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:40.144848368Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Curtis Kapsak",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:45:40.395821116Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer.email=pjx8@cdc.gov",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:46:06.972782334Z",
+                    "created_by": "|1 SEQTK_VER=1.3 /bin/sh -c apt-get update && apt-get install -y make  wget  gcc  zlib1g-dev &&  apt-get clean && apt-get autoclean && rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2020-07-29T14:46:10.778425669Z",
+                    "created_by": "|1 SEQTK_VER=1.3 /bin/sh -c wget https://github.com/lh3/seqtk/archive/v${SEQTK_VER}.tar.gz &&  tar -xzvf v${SEQTK_VER}.tar.gz &&  rm v${SEQTK_VER}.tar.gz &&  cd seqtk-${SEQTK_VER} &&  make &&  mkdir /data"
+                },
+                {
+                    "created": "2020-07-29T14:46:11.006527341Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/seqtk-1.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-07-29T14:46:11.268794819Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /data",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:270e75e92418300ce45512eedf38049008e4f6e7c6f68e5ad62219d4c3acace2",
+                    "sha256:8980490753a87f31fcf22a1e2204ba43c90eeb5a28d1bbc318b7468fa9753787",
+                    "sha256:24cd7a0a307882d06cb0da9eac21a4ce0356a345e3d42d1e6a7352104884203f",
+                    "sha256:22144637480e420480b7a169d149195fcec46b84073ad54e6a2aa41428a5b15c",
+                    "sha256:c9d4f7e90408f32d8b04a11210a9351365c98ab08b665e594301603741d6e2be",
+                    "sha256:df0fd4d1007dcf236ff2e7afcb7bd3b5109782e5d8d2247b0c60eec5c5c00577"
+                ]
+            }
+        },
+        "1.4": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LC_ALL=C"
+                ],
+                "Cmd": [
+                    "seqtk"
+                ],
+                "WorkingDir": "/data",
+                "Labels": {
+                    "base.image": "ubuntu:jammy",
+                    "description": "Toolkit for processing sequences in FASTA/Q formats",
+                    "dockerfile.version": "1",
+                    "license": "https://github.com/lh3/seqtk/blob/master/LICENSE",
+                    "maintainer": "Curtis Kapsak",
+                    "maintainer.email": "pjx8@cdc.gov",
+                    "maintainer1": "Erin Young",
+                    "maintainer1.email": "eriny@utah.gov",
+                    "org.opencontainers.image.created": "2023-12-26T13:54:47.496Z",
+                    "org.opencontainers.image.description": ":package: :whale: Dockerfiles and documentation on tools for public health bioinformatics",
+                    "org.opencontainers.image.licenses": "GPL-3.0",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.revision": "f17108dad5e3bea1783355910481dc66628330fa",
+                    "org.opencontainers.image.source": "https://github.com/StaPH-B/docker-builds",
+                    "org.opencontainers.image.title": "docker-builds",
+                    "org.opencontainers.image.url": "https://github.com/StaPH-B/docker-builds",
+                    "org.opencontainers.image.version": "master",
+                    "software": "seqtk",
+                    "software.version": "1.4",
+                    "website": "https://github.com/lh3/seqtk"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-12-26T13:54:07.341646337Z",
+            "history": [
+                {
+                    "created": "2023-12-12T11:38:57.155589925Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-12T11:38:57.224861025Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-12T11:38:57.286311609Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-12T11:38:57.352164165Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-12T11:38:59.296940147Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:2b3b5254f38a790d40e31cb26155609f7fc99ef7bc99eae1e0d67fa9ae605f77 in / "
+                },
+                {
+                    "created": "2023-12-12T11:38:59.637410824Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "ARG SEQTK_VER",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL base.image=ubuntu:jammy",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL dockerfile.version=1",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL software=seqtk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL software.version=1.4",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL description=Toolkit for processing sequences in FASTA/Q formats",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL website=https://github.com/lh3/seqtk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL license=https://github.com/lh3/seqtk/blob/master/LICENSE",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL maintainer=Curtis Kapsak",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL maintainer.email=pjx8@cdc.gov",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL maintainer1=Erin Young",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL maintainer1.email=eriny@utah.gov",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "COPY /usr/local/bin/* /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-12-26T13:54:07.325602127Z",
+                    "created_by": "RUN |1 SEQTK_VER=1.4 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     ca-certificates     procps     wget &&     apt-get autoclean && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-12-26T13:54:07.325602127Z",
+                    "created_by": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LC_ALL=C",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:07.325602127Z",
+                    "created_by": "CMD [\"seqtk\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:07.341646337Z",
+                    "created_by": "WORKDIR /data",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:a1360aae5271bbbf575b4057cb4158dbdfbcae76698189b55fb1039bc0207400",
+                    "sha256:2eec1077a9448fbc1675cd3f5d73d101c580f37785831588f9af2e5a8ddf33f5",
+                    "sha256:912fe3e0ddd6fee3ae878cd2cb45c79706d2838869b7d0fe773f6dc4b55788d4",
+                    "sha256:ffbd6304d4dfa57417568c5bfdc93cd68e66638a612592ce96af257fd1cc78ae"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LC_ALL=C"
+                ],
+                "Cmd": [
+                    "seqtk"
+                ],
+                "WorkingDir": "/data",
+                "Labels": {
+                    "base.image": "ubuntu:jammy",
+                    "description": "Toolkit for processing sequences in FASTA/Q formats",
+                    "dockerfile.version": "1",
+                    "license": "https://github.com/lh3/seqtk/blob/master/LICENSE",
+                    "maintainer": "Curtis Kapsak",
+                    "maintainer.email": "pjx8@cdc.gov",
+                    "maintainer1": "Erin Young",
+                    "maintainer1.email": "eriny@utah.gov",
+                    "org.opencontainers.image.created": "2023-12-26T13:54:47.496Z",
+                    "org.opencontainers.image.description": ":package: :whale: Dockerfiles and documentation on tools for public health bioinformatics",
+                    "org.opencontainers.image.licenses": "GPL-3.0",
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.revision": "f17108dad5e3bea1783355910481dc66628330fa",
+                    "org.opencontainers.image.source": "https://github.com/StaPH-B/docker-builds",
+                    "org.opencontainers.image.title": "docker-builds",
+                    "org.opencontainers.image.url": "https://github.com/StaPH-B/docker-builds",
+                    "org.opencontainers.image.version": "master",
+                    "software": "seqtk",
+                    "software.version": "1.4",
+                    "website": "https://github.com/lh3/seqtk"
+                },
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2023-12-26T13:54:07.341646337Z",
+            "history": [
+                {
+                    "created": "2023-12-12T11:38:57.155589925Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-12T11:38:57.224861025Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-12T11:38:57.286311609Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-12T11:38:57.352164165Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-12T11:38:59.296940147Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:2b3b5254f38a790d40e31cb26155609f7fc99ef7bc99eae1e0d67fa9ae605f77 in / "
+                },
+                {
+                    "created": "2023-12-12T11:38:59.637410824Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "ARG SEQTK_VER",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL base.image=ubuntu:jammy",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL dockerfile.version=1",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL software=seqtk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL software.version=1.4",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL description=Toolkit for processing sequences in FASTA/Q formats",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL website=https://github.com/lh3/seqtk",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL license=https://github.com/lh3/seqtk/blob/master/LICENSE",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL maintainer=Curtis Kapsak",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL maintainer.email=pjx8@cdc.gov",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL maintainer1=Erin Young",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "LABEL maintainer1.email=eriny@utah.gov",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:01.446839307Z",
+                    "created_by": "COPY /usr/local/bin/* /usr/local/bin/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-12-26T13:54:07.325602127Z",
+                    "created_by": "RUN |1 SEQTK_VER=1.4 /bin/sh -c apt-get update && apt-get install -y --no-install-recommends     ca-certificates     procps     wget &&     apt-get autoclean && rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2023-12-26T13:54:07.325602127Z",
+                    "created_by": "ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LC_ALL=C",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:07.325602127Z",
+                    "created_by": "CMD [\"seqtk\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2023-12-26T13:54:07.341646337Z",
+                    "created_by": "WORKDIR /data",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:a1360aae5271bbbf575b4057cb4158dbdfbcae76698189b55fb1039bc0207400",
+                    "sha256:2eec1077a9448fbc1675cd3f5d73d101c580f37785831588f9af2e5a8ddf33f5",
+                    "sha256:912fe3e0ddd6fee3ae878cd2cb45c79706d2838869b7d0fe773f6dc4b55788d4",
+                    "sha256:ffbd6304d4dfa57417568c5bfdc93cd68e66638a612592ce96af257fd1cc78ae"
+                ]
+            }
+        }
+    }
+}

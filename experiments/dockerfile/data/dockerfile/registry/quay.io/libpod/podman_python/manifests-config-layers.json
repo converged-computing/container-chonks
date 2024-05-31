@@ -1,0 +1,74 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1012,
+                "digest": "sha256:6078aa22393184e1e6d460c413baef124a6b0175785b9577c03b9d72c484264d"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2891145,
+                    "digest": "sha256:364dcac827e61e43513fdbb0b651f1f5e94e7759f0232f0be33f8e2739f14e7d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 19978878,
+                    "digest": "sha256:9f74aaf6887ab9227868dc8c857425d9ce63dc8313ddcb02b1ecc1c4eedbc0a7"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "created": "2020-12-10T22:36:49.360170017Z",
+            "architecture": "amd64",
+            "os": "linux",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "WorkingDir": "/app",
+                "Labels": {
+                    "io.buildah.version": "1.19.0-dev"
+                }
+            },
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:ace0eda3e3be35a979cec764a3321b4c7d0b9e4bb3094d20d3ff6782961a8d54",
+                    "sha256:2473040f81ee48b7f537836283112c04b9e36b8515502e78baf61cc03cbeb36a"
+                ]
+            },
+            "history": [
+                {
+                    "created": "2020-10-22T02:19:24.33416307Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f17f65714f703db9012f00e5ec98d0b2541ff6147c2633f7ab9ba659d0c507f4 in / "
+                },
+                {
+                    "created": "2020-10-22T02:19:24.499382102Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-12-10T22:32:54.322029019Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /app",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-12-10T22:36:50.46500102Z",
+                    "created_by": "/bin/sh -c apk update && apk add py3-pip && pip3 install flask && rm -fr /var/cache/apk/*"
+                }
+            ]
+        }
+    }
+}

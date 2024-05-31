@@ -1,0 +1,52 @@
+{
+    "manifests": {
+        "3.2": {
+            "schemaVersion": 1,
+            "name": "orctom/alpine",
+            "tag": "3.2",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:0dcb8a29e5bf36bc773c2a608a2019ca61d3b831a64623099ad735f98d373263"
+                },
+                {
+                    "blobSum": "sha256:b99f37a390901149ad45e5036f1f6bd739e78f7878b94b91150f8d967e6c46bf"
+                },
+                {
+                    "blobSum": "sha256:6a88dabce4edc16a96be498f8723d5af118218f243d5a59f32071fac6fc515b9"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"b7f32c623a78d83722c4d6e6bc70fadd11383dfc0fa9ffb0b830e72c1ebe87d0\",\"parent\":\"e5c31ac3d231bc737fb51cd2295418065cf51ff42126ef875fa10d0613dc0922\",\"created\":\"2015-12-24T08:51:36.80773099Z\",\"container\":\"6a564feb81fb52ff9211f767381f829d7003ff607a92a7ece58d29121dc34dc7\",\"container_config\":{\"Hostname\":\"2eef1408279e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) COPY dir:4bfad411dea68b83b3183efb81aa3ed1006136b04755a0031210dceaacd09ab6 in /usr/lib\"],\"Image\":\"e5c31ac3d231bc737fb51cd2295418065cf51ff42126ef875fa10d0613dc0922\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"2eef1408279e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"e5c31ac3d231bc737fb51cd2295418065cf51ff42126ef875fa10d0613dc0922\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":1063976}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e5c31ac3d231bc737fb51cd2295418065cf51ff42126ef875fa10d0613dc0922\",\"parent\":\"2f42d6e01ec198bc75a7058d58aeeab1a20b02e3af3d1e7de6b3a8ddc950203e\",\"created\":\"2015-12-24T08:51:36.23851526Z\",\"container\":\"a9e2333a8b7c989fc4a6e3c4deee75f1a721031b5533dcef6b898cecbc7e3fe2\",\"container_config\":{\"Hostname\":\"2eef1408279e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apk add --update curl wget bash tar ca-certificates   \\u0026\\u0026 cd /tmp   \\u0026\\u0026 wget \\\"https://circle-artifacts.com/gh/andyshinn/alpine-pkg-glibc/6/artifacts/0/home/ubuntu/alpine-pkg-glibc/packages/x86_64/glibc-2.21-r2.apk\\\"   \\u0026\\u0026 wget \\\"https://circle-artifacts.com/gh/andyshinn/alpine-pkg-glibc/6/artifacts/0/home/ubuntu/alpine-pkg-glibc/packages/x86_64/glibc-bin-2.21-r2.apk\\\"   \\u0026\\u0026 apk add --allow-untrusted glibc-2.21-r2.apk glibc-bin-2.21-r2.apk   \\u0026\\u0026 /usr/glibc/usr/bin/ldconfig /lib /usr/glibc/usr/lib   \\u0026\\u0026 echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' \\u003e\\u003e /etc/nsswitch.conf   \\u0026\\u0026 apk del ca-certificates   \\u0026\\u0026 rm /tmp/* /var/cache/apk/*\"],\"Image\":\"49578ed3d0d546ee9ef559daa4bdb9120eae30087873e8d8d902e11de5e4c760\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"2eef1408279e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"Image\":\"49578ed3d0d546ee9ef559daa4bdb9120eae30087873e8d8d902e11de5e4c760\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":11536002}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"2f42d6e01ec198bc75a7058d58aeeab1a20b02e3af3d1e7de6b3a8ddc950203e\",\"created\":\"2015-12-21T18:27:19.143358133Z\",\"container\":\"2eef1408279e85b2a569806fa3c6b3f4f527f045f8fdad3208995f6f7b6106a8\",\"container_config\":{\"Hostname\":\"2eef1408279e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:5642360cf39258931f2ba42e7b302eb5a1e9ca6a575ddb727d42080e222e0a60 in /\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"2eef1408279e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":5253683}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "MTXE:W7OP:N2YO:5NPT:RGER:6JJF:5D4D:7SXY:2FHK:NHND:Q7KC:MNN5",
+                            "kty": "EC",
+                            "x": "kQzC0oB-KMZjyMD2F7R98MXgxranPApyLP2celom-mM",
+                            "y": "QY927gSCF_sBrQ-WXSLKXtsBhDWjxvVnXBfAXGhgkxg"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "6UqK8HDsMR66LCorRoe5Ib8kO3d4WbBQ2g6z1LM2BjH42rNMR_ViqVXnp5B4EqODT2GuaYz7XGwVTs-ZyYAnfQ",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjUxOTQsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAyNC0wNS0zMFQwNTo0NjoyMloifQ"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "3.2"
+    ],
+    "configs": {}
+}

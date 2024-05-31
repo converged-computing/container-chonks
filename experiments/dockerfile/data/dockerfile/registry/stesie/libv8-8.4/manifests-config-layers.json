@@ -1,0 +1,180 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4645,
+                "digest": "sha256:4f22af96ee17784b155b16b3211a762710643627fe0687891853febe7e39c3c5"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 26700095,
+                    "digest": "sha256:f08d8e2a3ba11bea23cf5c17e8e1c620057412ed05c32d1114640e18d6dd0a43"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 35364,
+                    "digest": "sha256:3baa9cb2483bd9c5329a44d9c2fe72535625bbd4308bca95785dd58e72c06365"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 848,
+                    "digest": "sha256:94e5ff4c0b1526abf77c236655f21c8f67a23313291c8b970fe6b469549d8153"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 163,
+                    "digest": "sha256:1860925334f940c3145808527480b4f0cba7f01279087fdb27679e4354fba967"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 17619060,
+                    "digest": "sha256:364c8e096e3df7681b74b37243a7b737f143ca7ff02dd2cc509a5e5547a761b0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50749,
+                    "digest": "sha256:abcf0745a67405af8d3f7f5f8a331b2cbe4521a00fbd0d7725bcab43013a9650"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4718584,
+                    "digest": "sha256:a4391e986c2442842ae5406cfad99a2a385a9624957fcf69dfe90dfdc88a7417"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 175565,
+                    "digest": "sha256:c0d2d0feee5179e6fee80da28ca56ee5663fca62af0c4a3ae0e46d17f3e9156b"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "V8VER=8.4"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:d41eb3c8b7d1e3249358e93b411ba8dbc5368db9f7ea0ea1da7d05836ca73e46",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "V8VER=8.4"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY dir:c3edd85d109f8043a04e68695d21578a83c4cc2f59ab43065019d2a00a0dbf58 in /opt/libv8-8.4/include/ "
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:d41eb3c8b7d1e3249358e93b411ba8dbc5368db9f7ea0ea1da7d05836ca73e46",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2020-08-21T07:37:38.9674585Z",
+            "docker_version": "19.03.12",
+            "history": [
+                {
+                    "created": "2020-08-19T21:13:50.365403739Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:5c125b7f411566e9daa738d8cb851098f36197810f06488c2609074296f294b2 in / "
+                },
+                {
+                    "created": "2020-08-19T21:13:52.155890193Z",
+                    "created_by": "/bin/sh -c [ -z \"$(apt-get indextargets)\" ]"
+                },
+                {
+                    "created": "2020-08-19T21:13:53.836167983Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2020-08-19T21:13:55.267773342Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2020-08-19T21:13:55.60892786Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-08-21T07:37:25.44340023Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG V8VER",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-08-21T07:37:27.400484743Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV V8VER=8.4",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2020-08-21T07:37:31.975016118Z",
+                    "created_by": "/bin/sh -c #(nop) COPY multi:dfa944f0ac99a8eefc1e13a2f344fdb74b39fc2de138a226529da369f0dc08f5 in /opt/libv8-8.4/lib/ "
+                },
+                {
+                    "created": "2020-08-21T07:37:35.965249464Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:9610aa72b2d615083b271c0f6e8ebe2275ce6a77d05c345e55afe952e1258a9f in /opt/libv8-8.4/lib/ "
+                },
+                {
+                    "created": "2020-08-21T07:37:37.439136887Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:f11eed9710288f1a48b618b2268f8477de81a547924ec6b34d79ff59c6fa211b in /opt/libv8-8.4/lib/ "
+                },
+                {
+                    "created": "2020-08-21T07:37:38.9674585Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:c3edd85d109f8043a04e68695d21578a83c4cc2f59ab43065019d2a00a0dbf58 in /opt/libv8-8.4/include/ "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:79bde4d54386664324ce9b6179a3265ca96e6c8f05c06ded53856a670874c715",
+                    "sha256:2f37d11021878811b25cc6a3c6d48a0eb6f57a0b0d42f954123a18c17e2abf56",
+                    "sha256:2ba5b91ca2b0c27b8ca3503b93164e9ec29ef5ae72e5272192839347e9f951dd",
+                    "sha256:001e4a80973b4bc154292425871684a0c1fa422c344186516dd6f792606ed9d6",
+                    "sha256:a92aef4d58702123071c595bc233a2cfac68cb33d63d647520032c6a062e72ae",
+                    "sha256:13965fbf2ebf8a0dde24816413bfc6d36452e50ae364d1768e82cc2e16341012",
+                    "sha256:40acf0a788d92eb6ab84ed50e45ea3ad9ebcf937f3cfcba50cf9b22764820918",
+                    "sha256:80afbe5330f4b4ce78b43aad5bbe0d2d2928cc5f82f453312fe6be4b2a0e26db"
+                ]
+            }
+        }
+    }
+}

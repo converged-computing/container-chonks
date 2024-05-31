@@ -1,0 +1,68 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "digest": "sha256:83ecc9622ac66776ff4dc8cf3d599d4d27b81c43638712840629e5dc0f161216",
+                "size": 1350
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:4abcf20661432fb2d719aaf90656f55c287f8ca915dc1c92ec14ff61e67fbaf8",
+                    "size": 3408729
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "digest": "sha256:be7f937ff2a5900b55b8680744399cee12b89701f4858184fd7def8c0c2560ee",
+                    "size": 2268551
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "OnBuild": null
+            },
+            "created": "2024-01-28T00:34:40.167855489Z",
+            "history": [
+                {
+                    "created": "2024-01-27T00:30:48.624602109Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:37a76ec18f9887751cd8473744917d08b7431fc4085097bb6a09d81b41775473 in / "
+                },
+                {
+                    "created": "2024-01-27T00:30:48.743965523Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-01-28T00:34:40.167855489Z",
+                    "created_by": "RUN /bin/sh -c apk add --no-cache bash gawk sed grep bc coreutils # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "moby.buildkit.cache.v0": "W3siZGlnZXN0Ijoic2hhMjU2OjAyNDUxMmNmNDUyNGZiMTBhYjYxNTU3NzYxMmU0Zjg4MDYwMWYwNTVlMmI4YTg2MmE3NTlmNzg1MmZiYzgzODUifSx7ImRpZ2VzdCI6InNoYTI1Njo1NzRlZDgzYmE2NmZkZTZjNDQyM2IxM2JmNTExY2MxMzJmYmRhODJkNjEzMzhiYjU3MTVlNzU1YjI5YTU3NDQxIn0seyJsYXllcnMiOlt7ImxheWVyIjoxLCJjcmVhdGVkQXQiOiIyMDI0LTAxLTI4VDAwOjM0OjQwLjE2ODg4MTFaIn1dLCJkaWdlc3QiOiJzaGEyNTY6N2Y2YzhmZjg1ZDA0OGRlNmZiZTAwYjRhYzcwMTllMjE1ZjYzMTI0ZDY5NTViMTMwZjA5MTA2ZTNmMTU5ZmQzZiIsImlucHV0cyI6W1t7ImxpbmsiOjB9LHsibGluayI6MX1dXX1d",
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15a17bb196d637e526349601820",
+                    "sha256:61f4d755466c4c8166e5ca4decec39f6beb31ab8e5174d7ebc591f7769df786c"
+                ]
+            }
+        }
+    }
+}

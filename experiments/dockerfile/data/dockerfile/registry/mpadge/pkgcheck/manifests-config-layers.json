@@ -1,0 +1,242 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:5d05364a73a52282b18c26a73909072e4bae834e6f39cd9a52ce59d22a573b71",
+                    "size": 4150,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:daf0cb1b9a65be3442ed5fc33f8ef3139aa38b92c48745a9b42aa02fc63f215f",
+                    "size": 567,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:5d05364a73a52282b18c26a73909072e4bae834e6f39cd9a52ce59d22a573b71",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Mark Padgham <mark.padgham@email.com>",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LC_ALL=en_US.UTF-8",
+                    "LANG=en_US.UTF-8",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "TZ=UTC",
+                    "ARROW_S3=ON",
+                    "NOT_CRAN=true"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Labels": {
+                    "maintainer": "Dirk Eddelbuettel <edd@debian.org>",
+                    "org.label-schema.license": "GPL-2.0",
+                    "org.label-schema.vcs-url": "https://github.com/rocker-org/",
+                    "org.label-schema.vendor": "Rocker Project"
+                }
+            },
+            "created": "2024-05-28T08:00:45.044787356Z",
+            "history": [
+                {
+                    "created": "2022-10-25T01:53:34.67854161Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:7633003155a1059419aa1a6756fafb6e4f419d65bff7feb7c945de1e29dccb1e in / "
+                },
+                {
+                    "created": "2022-10-25T01:53:35.02678149Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-11T09:22:02.716747196-05:00",
+                    "created_by": "LABEL org.label-schema.license=GPL-2.0 org.label-schema.vcs-url=https://github.com/rocker-org/ org.label-schema.vendor=Rocker Project maintainer=Dirk Eddelbuettel <edd@debian.org>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-11T09:22:02.716747196-05:00",
+                    "created_by": "RUN /bin/sh -c useradd -s /bin/bash -m docker \t&& usermod -a -G staff docker         && apt-get update \t&& apt-get install -y --no-install-recommends \t\tca-certificates \t\tlocales \t\twget         && wget -q -O - https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc                 | tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc          && echo \"deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/cran_ubuntu_key.asc] https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/\"                 > /etc/apt/sources.list.d/cran.list         && wget -q -O - https://r2u.stat.illinois.edu/ubuntu/dirk_eddelbuettel_pubkey.asc                 | tee -a /etc/apt/trusted.gpg.d/dirk_eddelbuettel_pubkey.asc         && echo \"deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/dirk_eddelbuettel_pubkey.asc] https://r2u.stat.illinois.edu/ubuntu focal main\"                 > /etc/apt/sources.list.d/r2u.list         && echo \"Package: *\" > /etc/apt/preferences.d/99r2u         && echo \"Pin: release o=CRAN-Apt Project\" >> /etc/apt/preferences.d/99r2u         && echo \"Pin: release l=CRAN-Apt Packages\" >> /etc/apt/preferences.d/99r2u         && echo \"Pin-Priority: 700\"  >> /etc/apt/preferences.d/99r2u         && echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen \t&& locale-gen en_US.utf8 \t&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-11T09:22:02.716747196-05:00",
+                    "created_by": "ENV LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-11T09:22:02.716747196-05:00",
+                    "created_by": "ENV LANG=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-11T09:22:02.716747196-05:00",
+                    "created_by": "ENV DEBIAN_FRONTEND=noninteractive",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-11T09:22:02.716747196-05:00",
+                    "created_by": "ENV TZ=UTC",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-11T09:23:09.830268986-05:00",
+                    "created_by": "RUN /bin/sh -c apt-get update         && apt-get install -y --no-install-recommends  \t\t r-base  \t\t r-base-dev  \t\t r-recommended                  r-cran-bspm                  r-cran-docopt                  r-cran-littler                  r-cran-remotes                  python3-dbus                  python3-gi                  python3-apt \t&& chown root:staff \"/usr/local/lib/R/site-library\" \t&& chmod g+ws \"/usr/local/lib/R/site-library\"   \t&& ln -s /usr/lib/R/site-library/littler/examples/build.r /usr/local/bin/build.r   \t&& ln -s /usr/lib/R/site-library/littler/examples/check.r /usr/local/bin/check.r   \t&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r  \t&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r \t&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r  \t&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r  \t&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r  \t&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r   \t&& ln -s /usr/lib/R/site-library/littler/examples/update.r /usr/local/bin/update.r         && echo \"options(bspm.version.check=FALSE)\" >> /etc/R/Rprofile.site         && echo \"suppressMessages(bspm::enable())\" >> /etc/R/Rprofile.site         && echo 'APT::Install-Recommends \"false\";' > /etc/apt/apt.conf.d/90local-no-recommends \t&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds  \t&& rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:48:48.143435478Z",
+                    "created_by": "MAINTAINER Mark Padgham <mark.padgham@email.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-28T07:48:48.143435478Z",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get install -y --no-install-recommends                 sudo                 r-cran-bspm         && echo \"bspm::enable()\" >> /etc/R/Rprofile.site         && echo \"options(bspm.sudo=TRUE)\" >> /etc/R/Rprofile.site         && echo 'APT::Install-Recommends \"false\";' > /etc/apt/apt.conf.d/90local-no-recommends         && echo \"docker ALL=(ALL) NOPASSWD: ALL\" > /etc/sudoers.d/local-docker-user         && chmod 0440 /etc/sudoers.d/local-docker-user         && chgrp 1000 /usr/local/lib/R/site-library         && install.r remotes # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:48:58.961826044Z",
+                    "created_by": "RUN /bin/sh -c apt-get update -qq     && apt-get install -y software-properties-common gpg-agent     && apt-get update # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:49:11.254658269Z",
+                    "created_by": "RUN /bin/sh -c add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable     && apt update     && apt -y upgrade # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:51:30.205093485Z",
+                    "created_by": "RUN /bin/sh -c apt-get update -qq && apt-get install -y     acl     aria2     autoconf     automake     binutils     bison     brotli     bzip2     coreutils     curl     dbus     dnsutils     dpkg     dpkg-dev     fakeroot     file     findutils     flex     fonts-noto-color-emoji     ftp     g++     gcc     gnupg2     haveged     iproute2     iputils-ping     jq     lib32z1     libc++-dev     libc++abi-dev     libc6-dev     libcurl4     libgbm-dev     libgconf-2-4     libgsl-dev     libgtk-3-0     libmagic-dev     libmagickcore-dev     libmagickwand-dev     libsecret-1-dev     libsqlite3-dev     libtool     libunwind8     libxkbfile-dev     libxss1     libyaml-dev     locales     m4     make     mediainfo     mercurial     net-tools     netcat     openssh-client     p7zip-full     p7zip-rar     parallel     pass     patchelf     pigz     pkg-config     pollinate     python-is-python3     rpm     rsync     shellcheck     sphinxsearch     sqlite3     ssh     sshpass     swig     tar     telnet     texinfo     time     tk     tzdata     unzip     upx     wget     xorriso     xvfb     xz-utils     zip     zsync &&     apt-get clean # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:55:01.319557316Z",
+                    "created_by": "RUN /bin/sh -c apt-get update -qq && apt-get install -y     apt-utils     build-essential     cargo     cmake     coinor-libcbc-dev      coinor-libsymphony-dev     dos2unix     flac     fonts-emojione     git     global     jags     language-pack-en-base     libapparmor-dev     libarchive-dev     libavfilter-dev     libbam-dev     libboost-filesystem-dev     libboost-program-options-dev     libcairo2-dev     libcurl4-openssl-dev     libdb-dev     libeigen3-dev     libelf-dev     libfftw3-dev     libfreetype6-dev     libfribidi-dev     libgdal-dev     libgeos-dev     libgit2-dev     libglpk-dev     libglu1-mesa-dev     libgpgme-dev     libharfbuzz-dev     libhdf5-dev     libhiredis-dev     libicu-dev     libjansson-dev     libjpeg-dev     libjq-dev     libmagick++-dev     libmpfr-dev     libmysqlclient-dev     libnetcdf-dev     libnng-dev     libopenbabel-dev     libopenblas0     libopencv-dev     libpng-dev     libpoppler-cpp-dev     libpq-dev     libproj-dev     libprotobuf-dev     libprotoc-dev     librabbitmq-dev     librdf0     librrd-dev     librsvg2-dev     libsasl2-dev     libseccomp-dev     libsodium-dev     libssh-dev     libssh2-1-dev     libssl-dev     libtesseract-dev     libtiff-dev     libudunits2-dev     libv8-dev     libwebp-dev     libxml2-dev     libxslt-dev     libxslt1-dev     libzmq3-dev     netbase     pandoc     pandoc-citeproc     protobuf-compiler     python3-docutils     python3-numpy     python3-pip     r-base-dev     r-cran-rjava     tesseract-ocr-eng     texlive-fonts-extra     texlive-fonts-recommended     texlive-latex-base     texlive-latex-extra     ttf-mscorefonts-installer     unixodbc-dev     zlib1g-dev     zstd &&     apt-get clean # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:55:08.989084914Z",
+                    "created_by": "RUN /bin/sh -c apt-get install -y librdf0-dev # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:56:25.315901377Z",
+                    "created_by": "RUN /bin/sh -c git clone https://github.com/universal-ctags/ctags.git     && cd ctags     && ./autogen.sh     && ./configure --prefix=/usr     && make     && make install # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:56:34.319801998Z",
+                    "created_by": "RUN /bin/sh -c curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg     && chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg     && echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main\" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null     && apt update     && apt install gh -y # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:56:39.109596402Z",
+                    "created_by": "RUN /bin/sh -c curl --proto '=https' --tlsv1.2 -sSf     -L https://install.determinate.systems/nix |     sh -s -- install linux --no-confirm --init none # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:56:43.379810665Z",
+                    "created_by": "RUN /bin/sh -c pip install jill # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:57:17.514209317Z",
+                    "created_by": "RUN /bin/sh -c jill install --confirm # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:57:24.176284434Z",
+                    "created_by": "RUN /bin/sh -c pip install numpy pandas # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:57:29.904574096Z",
+                    "created_by": "RUN /bin/sh -c pip install earthengine-api # rgeeExtra #608 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:57:29.904574096Z",
+                    "created_by": "ENV ARROW_S3=ON",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-28T07:57:29.904574096Z",
+                    "created_by": "ENV NOT_CRAN=true",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-28T07:58:21.613382899Z",
+                    "created_by": "RUN /bin/sh -c install2.r   arrow   decor   devtools   distill   duckdb   foreign   glmnet   lme4   mgcv   Rcpp   RcppArmadillo   RcppEigen   RcppParallel   randomForest   rdflib   rmarkdown   seasonal   sf   survival   tidymodels   tidyverse   xts   zoo # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:58:46.355864737Z",
+                    "created_by": "RUN /bin/sh -c installGithub.r     mangothecat/goodpractice # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T07:58:53.803925843Z",
+                    "created_by": "RUN /bin/sh -c Rscript -e 'arrow::install_arrow()' # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-28T08:00:45.044787356Z",
+                    "created_by": "RUN /bin/sh -c Rscript -e 'bspm::disable();install.packages(\"sf\");bspm::enable()' # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:f4462d5b2da2985f37409c9b257afd2b9fb82356ce4e43e804ee34214242e34a",
+                    "sha256:00ecd8d7a1aaa2410ba27f3bdc2e822d3bd98a623db7c44903c06e911ee0edcd",
+                    "sha256:b7fc65474851efbe31523d6feb21b66d35c3952e2b46f6d389613558f6037ad4",
+                    "sha256:639a0ed8a7d186bdde34179c4f0efcf23a1abe792a3bc1159d0efd2aa30ad1eb",
+                    "sha256:6da60caec12d417d2e43dba55fb1e53465086e454ad3730f03cb9f2b76fa129c",
+                    "sha256:57bd5fefc498d3aec8062f390877c512dab1132335022d8e42a6fc74570452b7",
+                    "sha256:c081fc2217933c8d5fdc2a3c779dbd69553ca262a292a2b846ec0f4d0dd06f4d",
+                    "sha256:8ed1f2187c1f791d300e5e9833909f3db4569c5cc86604bcf8d5bb99ddad1a3c",
+                    "sha256:e5e5ffc20b04ce56c2683710096a0167c8106fc7cdcad81107cc9954b83f655e",
+                    "sha256:f2b1a1dd7a87bb08fed3f13977d27893e38bd0e562b53a615c5ed59fa8e6fcf6",
+                    "sha256:ae6dc1d4c31fe4d740302018b498d1fde68d0db88157fd8dacb08e71c1d5252c",
+                    "sha256:685af797ff303e80459873d1e022c304ff3ddc1f9b699b87c674d46ae21d1254",
+                    "sha256:88f7c4fc56e44766ecb4cc028c0956a88eb576d9e456fe7e75059d1488181daa",
+                    "sha256:4f05c6156044d914e59bbb10102d30e2d1c713b8f919574c98e0af2917c914cd",
+                    "sha256:4063bcc567bdb66bac011cc9d77da3093b0ce5547c7b3d96c2fab6aab2278991",
+                    "sha256:fa579de2a4249e25b22f8ca6a0c30961b49ea498deffd5b104c088beab865bc2",
+                    "sha256:f1afc7ca18da7b87297123e89f13487ebce6799ea3d82e645d59624d70e81f92",
+                    "sha256:ada89d303982bd8d584037036b545e85390ce64fb3672c95d6aef29f0108d7c6",
+                    "sha256:2dbe6327ede2c7776c8d3e45ccf3b94820233993876076a0216897b312b2fae8",
+                    "sha256:a98b81102cf9618d8fd9561e72d757ae55598a186f0c9220b026a1d0a8188c71"
+                ]
+            }
+        }
+    }
+}

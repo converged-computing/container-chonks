@@ -1,0 +1,1841 @@
+{
+    "manifests": {
+        "0.10": {
+            "schemaVersion": 1,
+            "name": "grpc/ruby",
+            "tag": "0.10",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:0f54c59cb7d4ffc17fa0495ed34d59c03a2ca4794cb3b131d8faf2aa64452f07"
+                },
+                {
+                    "blobSum": "sha256:d3d5f9818494a42bc4e5c18e1059e7b18aff12fabe7f5793f95396d27d17ee76"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:0a81818a2a6da0d1d14400cdb85681c7c4310013f12f3d315f66adc426f7bc35"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:1bb9b9a834f5dc40f3926ae46d25667f21788a02e6e604fb0702adce4a3a89d7"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:c4ad957be8b4cf055724c0b5f84e4f5c320779a85ca973904cb19ca83f4d2d22"
+                },
+                {
+                    "blobSum": "sha256:3a9598a71ff4bedce90a29f38c981bb9ebec8f2a948dfba5e5c41960e62c7df2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:f4f48828d97bcfe36d5697d8f505088a4369e3d660307576f68ae74031884ca7"
+                },
+                {
+                    "blobSum": "sha256:a6f2dac3eb9c26067c12dafd0c917f591d9881ee84a45f750d7a1d58187adfd8"
+                },
+                {
+                    "blobSum": "sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"cd2ae0cd21e53f9fcd6f3a10f2ec0c06f2f5fb4cf79112f4f062ae288b61b65a\",\"parent\":\"75321d93cd5b123d5b4cc55cdd67ee99fcaeb702407b1d44c5efb60657df82ca\",\"created\":\"2015-09-14T21:14:46.82039847Z\",\"container\":\"c8f0ca30be77d65438a130b84c292acff6f43534f21b9e9d512181fd2f525b0a\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.10.2-1~bpo8+1\",\"GRPC_RUBY_VERSION=0.10.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"gem install grpc -v ${GRPC_RUBY_VERSION}\"],\"Image\":\"75321d93cd5b123d5b4cc55cdd67ee99fcaeb702407b1d44c5efb60657df82ca\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.10.2-1~bpo8+1\",\"GRPC_RUBY_VERSION=0.10.0\"],\"Cmd\":[\"irb\"],\"Image\":\"75321d93cd5b123d5b4cc55cdd67ee99fcaeb702407b1d44c5efb60657df82ca\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":16613362}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"75321d93cd5b123d5b4cc55cdd67ee99fcaeb702407b1d44c5efb60657df82ca\",\"parent\":\"fa62b94a788dcd6d07e50cdeb3f2c4d3efe7617987ad40c12f0c75d743c9bba3\",\"created\":\"2015-09-14T21:14:24.501292645Z\",\"container\":\"176f730be34ae01c852510fbc15de125f4ddf4468cb46e251acc9260ef682ca2\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.10.2-1~bpo8+1\",\"GRPC_RUBY_VERSION=0.10.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y -q libgrpc-dev=${GRPC_VERSION}\"],\"Image\":\"fa62b94a788dcd6d07e50cdeb3f2c4d3efe7617987ad40c12f0c75d743c9bba3\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.10.2-1~bpo8+1\",\"GRPC_RUBY_VERSION=0.10.0\"],\"Cmd\":[\"irb\"],\"Image\":\"fa62b94a788dcd6d07e50cdeb3f2c4d3efe7617987ad40c12f0c75d743c9bba3\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":15492562}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"fa62b94a788dcd6d07e50cdeb3f2c4d3efe7617987ad40c12f0c75d743c9bba3\",\"parent\":\"27e6b36cd187b7149dacc681e5d7ae091d036edbce0c795366b98ed604645bca\",\"created\":\"2015-09-14T21:13:05.657973552Z\",\"container\":\"501cc35ba7bf5091bb308eb5010d137c8da2932e65ea34b8660f763750bd5c1d\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.10.2-1~bpo8+1\",\"GRPC_RUBY_VERSION=0.10.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV GRPC_RUBY_VERSION=0.10.0\"],\"Image\":\"27e6b36cd187b7149dacc681e5d7ae091d036edbce0c795366b98ed604645bca\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.10.2-1~bpo8+1\",\"GRPC_RUBY_VERSION=0.10.0\"],\"Cmd\":[\"irb\"],\"Image\":\"27e6b36cd187b7149dacc681e5d7ae091d036edbce0c795366b98ed604645bca\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"27e6b36cd187b7149dacc681e5d7ae091d036edbce0c795366b98ed604645bca\",\"parent\":\"f75a79b02345845d2354c237d7e2f3c97fbc88ed12bd52f7126b19a626e5b272\",\"created\":\"2015-09-14T21:13:02.602598679Z\",\"container\":\"acb54d0078bdae412f02e1ca6505375c0cff7453913d135263f71ed329b87965\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.10.2-1~bpo8+1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV GRPC_VERSION=0.10.2-1~bpo8+1\"],\"Image\":\"f75a79b02345845d2354c237d7e2f3c97fbc88ed12bd52f7126b19a626e5b272\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.10.2-1~bpo8+1\"],\"Cmd\":[\"irb\"],\"Image\":\"f75a79b02345845d2354c237d7e2f3c97fbc88ed12bd52f7126b19a626e5b272\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f75a79b02345845d2354c237d7e2f3c97fbc88ed12bd52f7126b19a626e5b272\",\"parent\":\"5029dc6f1b9ebf2a972476d7e512ee10856bdbe4bccbd328cf1025488b7b6f09\",\"created\":\"2015-09-14T21:12:59.594082212Z\",\"container\":\"c45818b1c1b402576f79bf9f3902733833b8df6ab89eb20c685bb1bad06a1684\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo \\\"deb http://ftp.us.debian.org/debian jessie-backports main\\\" | tee -a /etc/apt/sources.list\"],\"Image\":\"5029dc6f1b9ebf2a972476d7e512ee10856bdbe4bccbd328cf1025488b7b6f09\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"irb\"],\"Image\":\"5029dc6f1b9ebf2a972476d7e512ee10856bdbe4bccbd328cf1025488b7b6f09\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":219}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5029dc6f1b9ebf2a972476d7e512ee10856bdbe4bccbd328cf1025488b7b6f09\",\"parent\":\"a9c1d63b41efd40d591df87a06264a197e6278a77348f8daa2f81d0cefa9809e\",\"created\":\"2015-09-10T11:58:21.942592418Z\",\"container\":\"8dab1c7ae5ae8fd824afc21190cdf039eaae51fbec6b7fe40ed250d11dbd9d67\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"irb\\\"]\"],\"Image\":\"a9c1d63b41efd40d591df87a06264a197e6278a77348f8daa2f81d0cefa9809e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"irb\"],\"Image\":\"a9c1d63b41efd40d591df87a06264a197e6278a77348f8daa2f81d0cefa9809e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a9c1d63b41efd40d591df87a06264a197e6278a77348f8daa2f81d0cefa9809e\",\"parent\":\"8b654884e88982d96117e17e4292e842cefc4e54b62a497dd7a0abb741396e16\",\"created\":\"2015-09-10T11:58:21.490192992Z\",\"container\":\"5431a3237b675979fd0d17b376781b40eb91a48677b6ed69614d9c2f7b1cdb93\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Image\":\"8b654884e88982d96117e17e4292e842cefc4e54b62a497dd7a0abb741396e16\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"8b654884e88982d96117e17e4292e842cefc4e54b62a497dd7a0abb741396e16\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8b654884e88982d96117e17e4292e842cefc4e54b62a497dd7a0abb741396e16\",\"parent\":\"a3fa304eebcd7b49411b37ec5417c863a96f874a5ac37befa3e128d454ecaa81\",\"created\":\"2015-09-10T11:58:20.936181166Z\",\"container\":\"1582eb5e226b9932f95457dc3ceaf1715e9228e6dad580896bfdfcd0a773d6d2\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"gem install bundler --version \\\"$BUNDLER_VERSION\\\" \\t\\u0026\\u0026 bundle config --global path \\\"$GEM_HOME\\\" \\t\\u0026\\u0026 bundle config --global bin \\\"$GEM_HOME/bin\\\"\"],\"Image\":\"a3fa304eebcd7b49411b37ec5417c863a96f874a5ac37befa3e128d454ecaa81\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"a3fa304eebcd7b49411b37ec5417c863a96f874a5ac37befa3e128d454ecaa81\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":1124534}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a3fa304eebcd7b49411b37ec5417c863a96f874a5ac37befa3e128d454ecaa81\",\"parent\":\"8f44e646bc390a31fd829defc5e487af7bf7c7b6f321f2e16fa710f75fe06133\",\"created\":\"2015-09-10T11:58:17.546761226Z\",\"container\":\"faaf72e4799b9a0bfc0054f97db24303587f2ac9d15c18fdb90a7713a972abfe\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV BUNDLER_VERSION=1.10.6\"],\"Image\":\"8f44e646bc390a31fd829defc5e487af7bf7c7b6f321f2e16fa710f75fe06133\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"8f44e646bc390a31fd829defc5e487af7bf7c7b6f321f2e16fa710f75fe06133\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8f44e646bc390a31fd829defc5e487af7bf7c7b6f321f2e16fa710f75fe06133\",\"parent\":\"a57c90d1a4a332935764427292ee6ffa57c745e7844237d6f84971ad3c3ebf52\",\"created\":\"2015-09-10T11:58:17.090388736Z\",\"container\":\"7d9b698ca818e59aab8be63c1ece895c5c60206e6cb3f715aa9fd28ded310953\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Image\":\"a57c90d1a4a332935764427292ee6ffa57c745e7844237d6f84971ad3c3ebf52\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"a57c90d1a4a332935764427292ee6ffa57c745e7844237d6f84971ad3c3ebf52\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a57c90d1a4a332935764427292ee6ffa57c745e7844237d6f84971ad3c3ebf52\",\"parent\":\"c60d56be4e7143e4ba96e5e0c82009c4252ea1b79d36944903fa7b9d0f593aee\",\"created\":\"2015-09-10T11:58:16.674871667Z\",\"container\":\"54b2ce49c549530b932cfce90eb7e4535ffe42deb01f97c7ffc6c2a1ae97fe84\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV GEM_HOME=/usr/local/bundle\"],\"Image\":\"c60d56be4e7143e4ba96e5e0c82009c4252ea1b79d36944903fa7b9d0f593aee\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"c60d56be4e7143e4ba96e5e0c82009c4252ea1b79d36944903fa7b9d0f593aee\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c60d56be4e7143e4ba96e5e0c82009c4252ea1b79d36944903fa7b9d0f593aee\",\"parent\":\"735938c3a9c1ec4618f91ade588dc6c0c6aaf501d02c5ae4da1537244a8822e6\",\"created\":\"2015-09-10T11:58:15.715338834Z\",\"container\":\"9f63e8f489bc5c79d12abb6cb00def0b211ef60aea4bfe1944cfe859110341e7\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\t\\u0026\\u0026 apt-get install -y bison libgdbm-dev ruby \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\u0026\\u0026 mkdir -p /usr/src/ruby \\t\\u0026\\u0026 curl -fSL -o ruby.tar.gz \\\"http://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_VERSION.tar.gz\\\" \\t\\u0026\\u0026 echo \\\"$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz\\\" | sha256sum -c - \\t\\u0026\\u0026 tar -xzf ruby.tar.gz -C /usr/src/ruby --strip-components=1 \\t\\u0026\\u0026 rm ruby.tar.gz \\t\\u0026\\u0026 cd /usr/src/ruby \\t\\u0026\\u0026 autoconf \\t\\u0026\\u0026 ./configure --disable-install-doc \\t\\u0026\\u0026 make -j\\\"$(nproc)\\\" \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 apt-get purge -y --auto-remove bison libgdbm-dev ruby \\t\\u0026\\u0026 gem update --system $RUBYGEMS_VERSION \\t\\u0026\\u0026 rm -r /usr/src/ruby\"],\"Image\":\"735938c3a9c1ec4618f91ade588dc6c0c6aaf501d02c5ae4da1537244a8822e6\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"735938c3a9c1ec4618f91ade588dc6c0c6aaf501d02c5ae4da1537244a8822e6\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":110268970}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"735938c3a9c1ec4618f91ade588dc6c0c6aaf501d02c5ae4da1537244a8822e6\",\"parent\":\"b3637fc56213ad990c1c8ce775988e50e1af7923496b253419707118168fa028\",\"created\":\"2015-09-10T11:54:00.631359185Z\",\"container\":\"03bde2897f35b8bce1eeb5369e427533ecc532965cc55ab69b2195ccb703b80c\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo 'install: --no-document\\\\nupdate: --no-document' \\u003e\\u003e \\\"$HOME/.gemrc\\\"\"],\"Image\":\"b3637fc56213ad990c1c8ce775988e50e1af7923496b253419707118168fa028\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"b3637fc56213ad990c1c8ce775988e50e1af7923496b253419707118168fa028\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":45}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b3637fc56213ad990c1c8ce775988e50e1af7923496b253419707118168fa028\",\"parent\":\"b50d223d172d261a2e0c54a69910fbbb9af0caaa4a19865a8ed1e926227b86e9\",\"created\":\"2015-09-10T11:53:59.436093629Z\",\"container\":\"ad7f80f79feb32f4ccb9969d8a63f2a3db87d11a3324fae26ee5116789320d68\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RUBYGEMS_VERSION=2.4.8\"],\"Image\":\"b50d223d172d261a2e0c54a69910fbbb9af0caaa4a19865a8ed1e926227b86e9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"b50d223d172d261a2e0c54a69910fbbb9af0caaa4a19865a8ed1e926227b86e9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b50d223d172d261a2e0c54a69910fbbb9af0caaa4a19865a8ed1e926227b86e9\",\"parent\":\"da0ddef15b4c60feff167f3f3425ae34c3fa0d18b46099457a77393ea60448e9\",\"created\":\"2015-09-10T11:53:58.978267002Z\",\"container\":\"1a0d5a629dda8c42cb3aaa10d31a6d839d4e2af09950428805f80e3f8f14d079\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\"],\"Image\":\"da0ddef15b4c60feff167f3f3425ae34c3fa0d18b46099457a77393ea60448e9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"da0ddef15b4c60feff167f3f3425ae34c3fa0d18b46099457a77393ea60448e9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"da0ddef15b4c60feff167f3f3425ae34c3fa0d18b46099457a77393ea60448e9\",\"parent\":\"7bef36fa11a65f367a665bd77aac533ebed40c027444304afd533bd4bb7485e5\",\"created\":\"2015-09-10T11:53:58.538204919Z\",\"container\":\"58d19ee1e199fa04da42a22e7d612b88855014c1ad06a39f5d99768576c25fef\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RUBY_VERSION=2.2.3\"],\"Image\":\"7bef36fa11a65f367a665bd77aac533ebed40c027444304afd533bd4bb7485e5\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7bef36fa11a65f367a665bd77aac533ebed40c027444304afd533bd4bb7485e5\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7bef36fa11a65f367a665bd77aac533ebed40c027444304afd533bd4bb7485e5\",\"parent\":\"16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280\",\"created\":\"2015-09-10T11:53:58.058507351Z\",\"container\":\"46233034b19b2a2822b0f0b922f5f49ef8594a1cdace36e93fc7d980e57277ef\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RUBY_MAJOR=2.2\"],\"Image\":\"16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280\",\"parent\":\"20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f\",\"created\":\"2015-09-08T15:31:25.471273352Z\",\"container\":\"694f9e958ca868304ea4d015c355c4b904ca224d7c039f63eae49982354a83ba\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibmysqlclient-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"],\"Image\":\"20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":314635371}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f\",\"parent\":\"8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe\",\"created\":\"2015-09-08T15:29:05.732036476Z\",\"container\":\"6d36139eb88e1c16eab769d70cca7f4eb27f46c1372eea2bc718bd55b9475871\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"],\"Image\":\"8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":122315957}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe\",\"parent\":\"8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac\",\"created\":\"2015-09-08T15:27:57.320125465Z\",\"container\":\"87dae2a3bf7d4fbdc23d9b7d53160212db58a891eda8966b64e10f51696d9cc3\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"],\"Image\":\"8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":44331678}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac\",\"parent\":\"843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba\",\"created\":\"2015-09-07T23:35:07.191010963Z\",\"container\":\"b48f4943739232f809821b7de150fbc19248301cdc27f5dd21346b4c64a5b82c\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba\",\"created\":\"2015-09-07T23:35:05.552255313Z\",\"container\":\"7b840bf4fc5e80e406255381e25928d99cba43dd381d9417ed57db8553431de3\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":125134129}\n"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "HMOY:UTL6:72M4:37HT:LKBU:336K:W5X2:KESK:HEQH:434W:JG72:FB6A",
+                            "kty": "EC",
+                            "x": "bVh4mlNIyksBCJ7-xjdRtTXg3C4RlBiDk7O_EBwFqk0",
+                            "y": "rVbj5wGX5BSuFKSc-jEg1baf5AIWDqYO4qN0Qzx9AsU"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "mQ3ABFUIwaXASIqdU2zjVKqBU9e3di8Ltrx7Tr2uGR-q3WchT3jUxhYkcSEhl8HI-vRaFj-a7HzhOf6V4EBq6A",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjQ3ODgzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDg6MjQ6NDFaIn0"
+                }
+            ]
+        },
+        "0.10-onbuild": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9023,
+                "digest": "sha256:4ccbbed09e1e7f4c17987927b1928c2165dc02a763e9351e6279109bb2b25081"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 51359708,
+                    "digest": "sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 18538591,
+                    "digest": "sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 42339522,
+                    "digest": "sha256:a6f2dac3eb9c26067c12dafd0c917f591d9881ee84a45f750d7a1d58187adfd8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 128531143,
+                    "digest": "sha256:f4f48828d97bcfe36d5697d8f505088a4369e3d660307576f68ae74031884ca7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 161,
+                    "digest": "sha256:3a9598a71ff4bedce90a29f38c981bb9ebec8f2a948dfba5e5c41960e62c7df2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32311910,
+                    "digest": "sha256:c4ad957be8b4cf055724c0b5f84e4f5c320779a85ca973904cb19ca83f4d2d22"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 500102,
+                    "digest": "sha256:1bb9b9a834f5dc40f3926ae46d25667f21788a02e6e604fb0702adce4a3a89d7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 239,
+                    "digest": "sha256:0a81818a2a6da0d1d14400cdb85681c7c4310013f12f3d315f66adc426f7bc35"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 11260443,
+                    "digest": "sha256:d3d5f9818494a42bc4e5c18e1059e7b18aff12fabe7f5793f95396d27d17ee76"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5046648,
+                    "digest": "sha256:0f54c59cb7d4ffc17fa0495ed34d59c03a2ca4794cb3b131d8faf2aa64452f07"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 231,
+                    "digest": "sha256:25fc4466192e3245b51b0ec86d98d5f6dd3e307261c46b7abddb74c8615e2968"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 134,
+                    "digest": "sha256:9fb825a764cf563fa636c0fdb6a95a65f05192859b2ba2dddc894e8829a64ecf"
+                }
+            ]
+        },
+        "0.11": {
+            "schemaVersion": 1,
+            "name": "grpc/ruby",
+            "tag": "0.11",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:3f2543f5f1852354e35bfbdcb84267eafb0b750f893328ff96912ae79d2dca85"
+                },
+                {
+                    "blobSum": "sha256:547f2eb7c5dd475c212862ad4a6f92885cef56ade9307584adbab73aaab28903"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:95a54fa9cab3bc2d1ed6e576b2e2e67a27655fe9e446e3197a576c350b3bcb69"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:1bb9b9a834f5dc40f3926ae46d25667f21788a02e6e604fb0702adce4a3a89d7"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:c4ad957be8b4cf055724c0b5f84e4f5c320779a85ca973904cb19ca83f4d2d22"
+                },
+                {
+                    "blobSum": "sha256:3a9598a71ff4bedce90a29f38c981bb9ebec8f2a948dfba5e5c41960e62c7df2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:f4f48828d97bcfe36d5697d8f505088a4369e3d660307576f68ae74031884ca7"
+                },
+                {
+                    "blobSum": "sha256:a6f2dac3eb9c26067c12dafd0c917f591d9881ee84a45f750d7a1d58187adfd8"
+                },
+                {
+                    "blobSum": "sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"cc2aa32769491363ee1f63cd68a62298532fbd6262f80d705fc2852ad055a411\",\"parent\":\"9946bc03f22eb2fadface610cd21335955bf3f763a05fc47af34ebd8683d751c\",\"created\":\"2015-09-29T18:44:32.725897406Z\",\"container\":\"04a32d0fc617a4c59cb88930679e656a390908948952a212e9a09701d9e6ec5f\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.11.0.0-1~bpo8+2\",\"GRPC_RUBY_VERSION=0.11.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"gem install grpc -v ${GRPC_RUBY_VERSION}\"],\"Image\":\"9946bc03f22eb2fadface610cd21335955bf3f763a05fc47af34ebd8683d751c\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.11.0.0-1~bpo8+2\",\"GRPC_RUBY_VERSION=0.11.0\"],\"Cmd\":[\"irb\"],\"Image\":\"9946bc03f22eb2fadface610cd21335955bf3f763a05fc47af34ebd8683d751c\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":17254503}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9946bc03f22eb2fadface610cd21335955bf3f763a05fc47af34ebd8683d751c\",\"parent\":\"ed0ca8593e51b4f0815317efd7a9d3c51b7e03e8abed4b929e9997cf89de163c\",\"created\":\"2015-09-29T18:44:10.650266068Z\",\"container\":\"685940d11537fd18f5e4feb018c292891c1368f071b6d0baa679d4b36ac54265\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.11.0.0-1~bpo8+2\",\"GRPC_RUBY_VERSION=0.11.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y -q libgrpc-dev=${GRPC_VERSION}\"],\"Image\":\"ed0ca8593e51b4f0815317efd7a9d3c51b7e03e8abed4b929e9997cf89de163c\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.11.0.0-1~bpo8+2\",\"GRPC_RUBY_VERSION=0.11.0\"],\"Cmd\":[\"irb\"],\"Image\":\"ed0ca8593e51b4f0815317efd7a9d3c51b7e03e8abed4b929e9997cf89de163c\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":15662575}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"ed0ca8593e51b4f0815317efd7a9d3c51b7e03e8abed4b929e9997cf89de163c\",\"parent\":\"78df94246e0fc54fb2b7b7fe4baf77a4dc6c77b8bb283fe7a178a62f9ce75ce9\",\"created\":\"2015-09-29T18:42:59.1984404Z\",\"container\":\"c00fc2dba3cec26aac248fc4f9ceced28745d5851d4808ffcd92f2fbb56dc53c\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.11.0.0-1~bpo8+2\",\"GRPC_RUBY_VERSION=0.11.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV GRPC_RUBY_VERSION=0.11.0\"],\"Image\":\"78df94246e0fc54fb2b7b7fe4baf77a4dc6c77b8bb283fe7a178a62f9ce75ce9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.11.0.0-1~bpo8+2\",\"GRPC_RUBY_VERSION=0.11.0\"],\"Cmd\":[\"irb\"],\"Image\":\"78df94246e0fc54fb2b7b7fe4baf77a4dc6c77b8bb283fe7a178a62f9ce75ce9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"78df94246e0fc54fb2b7b7fe4baf77a4dc6c77b8bb283fe7a178a62f9ce75ce9\",\"parent\":\"46a07f39555a7a7c17dbb9b047bf2d81cd2f02cd7331a84c0317055346469334\",\"created\":\"2015-09-29T18:42:56.415872956Z\",\"container\":\"96a1f4ab1b82203826896a499138ef91283b581090bd9af1b0c6624b45284946\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.11.0.0-1~bpo8+2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV GRPC_VERSION=0.11.0.0-1~bpo8+2\"],\"Image\":\"46a07f39555a7a7c17dbb9b047bf2d81cd2f02cd7331a84c0317055346469334\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\",\"GRPC_VERSION=0.11.0.0-1~bpo8+2\"],\"Cmd\":[\"irb\"],\"Image\":\"46a07f39555a7a7c17dbb9b047bf2d81cd2f02cd7331a84c0317055346469334\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"46a07f39555a7a7c17dbb9b047bf2d81cd2f02cd7331a84c0317055346469334\",\"parent\":\"5029dc6f1b9ebf2a972476d7e512ee10856bdbe4bccbd328cf1025488b7b6f09\",\"created\":\"2015-09-29T18:42:53.509505811Z\",\"container\":\"85da5b4a6fed7d7024cce6aa8c463e7b872e55dc7bd8580393ca2de7817c0756\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo \\\"deb http://ftp.us.debian.org/debian jessie-backports main\\\" | tee -a /etc/apt/sources.list\"],\"Image\":\"5029dc6f1b9ebf2a972476d7e512ee10856bdbe4bccbd328cf1025488b7b6f09\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.8.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"irb\"],\"Image\":\"5029dc6f1b9ebf2a972476d7e512ee10856bdbe4bccbd328cf1025488b7b6f09\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":219}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5029dc6f1b9ebf2a972476d7e512ee10856bdbe4bccbd328cf1025488b7b6f09\",\"parent\":\"a9c1d63b41efd40d591df87a06264a197e6278a77348f8daa2f81d0cefa9809e\",\"created\":\"2015-09-10T11:58:21.942592418Z\",\"container\":\"8dab1c7ae5ae8fd824afc21190cdf039eaae51fbec6b7fe40ed250d11dbd9d67\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"irb\\\"]\"],\"Image\":\"a9c1d63b41efd40d591df87a06264a197e6278a77348f8daa2f81d0cefa9809e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"irb\"],\"Image\":\"a9c1d63b41efd40d591df87a06264a197e6278a77348f8daa2f81d0cefa9809e\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a9c1d63b41efd40d591df87a06264a197e6278a77348f8daa2f81d0cefa9809e\",\"parent\":\"8b654884e88982d96117e17e4292e842cefc4e54b62a497dd7a0abb741396e16\",\"created\":\"2015-09-10T11:58:21.490192992Z\",\"container\":\"5431a3237b675979fd0d17b376781b40eb91a48677b6ed69614d9c2f7b1cdb93\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Image\":\"8b654884e88982d96117e17e4292e842cefc4e54b62a497dd7a0abb741396e16\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\",\"BUNDLE_APP_CONFIG=/usr/local/bundle\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"8b654884e88982d96117e17e4292e842cefc4e54b62a497dd7a0abb741396e16\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8b654884e88982d96117e17e4292e842cefc4e54b62a497dd7a0abb741396e16\",\"parent\":\"a3fa304eebcd7b49411b37ec5417c863a96f874a5ac37befa3e128d454ecaa81\",\"created\":\"2015-09-10T11:58:20.936181166Z\",\"container\":\"1582eb5e226b9932f95457dc3ceaf1715e9228e6dad580896bfdfcd0a773d6d2\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"gem install bundler --version \\\"$BUNDLER_VERSION\\\" \\t\\u0026\\u0026 bundle config --global path \\\"$GEM_HOME\\\" \\t\\u0026\\u0026 bundle config --global bin \\\"$GEM_HOME/bin\\\"\"],\"Image\":\"a3fa304eebcd7b49411b37ec5417c863a96f874a5ac37befa3e128d454ecaa81\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"a3fa304eebcd7b49411b37ec5417c863a96f874a5ac37befa3e128d454ecaa81\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":1124534}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a3fa304eebcd7b49411b37ec5417c863a96f874a5ac37befa3e128d454ecaa81\",\"parent\":\"8f44e646bc390a31fd829defc5e487af7bf7c7b6f321f2e16fa710f75fe06133\",\"created\":\"2015-09-10T11:58:17.546761226Z\",\"container\":\"faaf72e4799b9a0bfc0054f97db24303587f2ac9d15c18fdb90a7713a972abfe\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV BUNDLER_VERSION=1.10.6\"],\"Image\":\"8f44e646bc390a31fd829defc5e487af7bf7c7b6f321f2e16fa710f75fe06133\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\",\"BUNDLER_VERSION=1.10.6\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"8f44e646bc390a31fd829defc5e487af7bf7c7b6f321f2e16fa710f75fe06133\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8f44e646bc390a31fd829defc5e487af7bf7c7b6f321f2e16fa710f75fe06133\",\"parent\":\"a57c90d1a4a332935764427292ee6ffa57c745e7844237d6f84971ad3c3ebf52\",\"created\":\"2015-09-10T11:58:17.090388736Z\",\"container\":\"7d9b698ca818e59aab8be63c1ece895c5c60206e6cb3f715aa9fd28ded310953\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Image\":\"a57c90d1a4a332935764427292ee6ffa57c745e7844237d6f84971ad3c3ebf52\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"a57c90d1a4a332935764427292ee6ffa57c745e7844237d6f84971ad3c3ebf52\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a57c90d1a4a332935764427292ee6ffa57c745e7844237d6f84971ad3c3ebf52\",\"parent\":\"c60d56be4e7143e4ba96e5e0c82009c4252ea1b79d36944903fa7b9d0f593aee\",\"created\":\"2015-09-10T11:58:16.674871667Z\",\"container\":\"54b2ce49c549530b932cfce90eb7e4535ffe42deb01f97c7ffc6c2a1ae97fe84\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV GEM_HOME=/usr/local/bundle\"],\"Image\":\"c60d56be4e7143e4ba96e5e0c82009c4252ea1b79d36944903fa7b9d0f593aee\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\",\"GEM_HOME=/usr/local/bundle\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"c60d56be4e7143e4ba96e5e0c82009c4252ea1b79d36944903fa7b9d0f593aee\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c60d56be4e7143e4ba96e5e0c82009c4252ea1b79d36944903fa7b9d0f593aee\",\"parent\":\"735938c3a9c1ec4618f91ade588dc6c0c6aaf501d02c5ae4da1537244a8822e6\",\"created\":\"2015-09-10T11:58:15.715338834Z\",\"container\":\"9f63e8f489bc5c79d12abb6cb00def0b211ef60aea4bfe1944cfe859110341e7\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\t\\u0026\\u0026 apt-get install -y bison libgdbm-dev ruby \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\u0026\\u0026 mkdir -p /usr/src/ruby \\t\\u0026\\u0026 curl -fSL -o ruby.tar.gz \\\"http://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_VERSION.tar.gz\\\" \\t\\u0026\\u0026 echo \\\"$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz\\\" | sha256sum -c - \\t\\u0026\\u0026 tar -xzf ruby.tar.gz -C /usr/src/ruby --strip-components=1 \\t\\u0026\\u0026 rm ruby.tar.gz \\t\\u0026\\u0026 cd /usr/src/ruby \\t\\u0026\\u0026 autoconf \\t\\u0026\\u0026 ./configure --disable-install-doc \\t\\u0026\\u0026 make -j\\\"$(nproc)\\\" \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 apt-get purge -y --auto-remove bison libgdbm-dev ruby \\t\\u0026\\u0026 gem update --system $RUBYGEMS_VERSION \\t\\u0026\\u0026 rm -r /usr/src/ruby\"],\"Image\":\"735938c3a9c1ec4618f91ade588dc6c0c6aaf501d02c5ae4da1537244a8822e6\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"735938c3a9c1ec4618f91ade588dc6c0c6aaf501d02c5ae4da1537244a8822e6\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":110268970}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"735938c3a9c1ec4618f91ade588dc6c0c6aaf501d02c5ae4da1537244a8822e6\",\"parent\":\"b3637fc56213ad990c1c8ce775988e50e1af7923496b253419707118168fa028\",\"created\":\"2015-09-10T11:54:00.631359185Z\",\"container\":\"03bde2897f35b8bce1eeb5369e427533ecc532965cc55ab69b2195ccb703b80c\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"echo 'install: --no-document\\\\nupdate: --no-document' \\u003e\\u003e \\\"$HOME/.gemrc\\\"\"],\"Image\":\"b3637fc56213ad990c1c8ce775988e50e1af7923496b253419707118168fa028\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"b3637fc56213ad990c1c8ce775988e50e1af7923496b253419707118168fa028\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":45}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b3637fc56213ad990c1c8ce775988e50e1af7923496b253419707118168fa028\",\"parent\":\"b50d223d172d261a2e0c54a69910fbbb9af0caaa4a19865a8ed1e926227b86e9\",\"created\":\"2015-09-10T11:53:59.436093629Z\",\"container\":\"ad7f80f79feb32f4ccb9969d8a63f2a3db87d11a3324fae26ee5116789320d68\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RUBYGEMS_VERSION=2.4.8\"],\"Image\":\"b50d223d172d261a2e0c54a69910fbbb9af0caaa4a19865a8ed1e926227b86e9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\",\"RUBYGEMS_VERSION=2.4.8\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"b50d223d172d261a2e0c54a69910fbbb9af0caaa4a19865a8ed1e926227b86e9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b50d223d172d261a2e0c54a69910fbbb9af0caaa4a19865a8ed1e926227b86e9\",\"parent\":\"da0ddef15b4c60feff167f3f3425ae34c3fa0d18b46099457a77393ea60448e9\",\"created\":\"2015-09-10T11:53:58.978267002Z\",\"container\":\"1a0d5a629dda8c42cb3aaa10d31a6d839d4e2af09950428805f80e3f8f14d079\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\"],\"Image\":\"da0ddef15b4c60feff167f3f3425ae34c3fa0d18b46099457a77393ea60448e9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\",\"RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"da0ddef15b4c60feff167f3f3425ae34c3fa0d18b46099457a77393ea60448e9\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"da0ddef15b4c60feff167f3f3425ae34c3fa0d18b46099457a77393ea60448e9\",\"parent\":\"7bef36fa11a65f367a665bd77aac533ebed40c027444304afd533bd4bb7485e5\",\"created\":\"2015-09-10T11:53:58.538204919Z\",\"container\":\"58d19ee1e199fa04da42a22e7d612b88855014c1ad06a39f5d99768576c25fef\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RUBY_VERSION=2.2.3\"],\"Image\":\"7bef36fa11a65f367a665bd77aac533ebed40c027444304afd533bd4bb7485e5\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\",\"RUBY_VERSION=2.2.3\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7bef36fa11a65f367a665bd77aac533ebed40c027444304afd533bd4bb7485e5\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7bef36fa11a65f367a665bd77aac533ebed40c027444304afd533bd4bb7485e5\",\"parent\":\"16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280\",\"created\":\"2015-09-10T11:53:58.058507351Z\",\"container\":\"46233034b19b2a2822b0f0b922f5f49ef8594a1cdace36e93fc7d980e57277ef\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RUBY_MAJOR=2.2\"],\"Image\":\"16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"RUBY_MAJOR=2.2\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"16b189cc8ce688f9f1d8f1d837fa0891107450a06c795b1cba8f6c33a4454280\",\"parent\":\"20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f\",\"created\":\"2015-09-08T15:31:25.471273352Z\",\"container\":\"694f9e958ca868304ea4d015c355c4b904ca224d7c039f63eae49982354a83ba\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibmysqlclient-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"],\"Image\":\"20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":314635371}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"20b348f4d5682b697d2f456322c97d916bafb65f6c4436697209ac1ec0f1803f\",\"parent\":\"8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe\",\"created\":\"2015-09-08T15:29:05.732036476Z\",\"container\":\"6d36139eb88e1c16eab769d70cca7f4eb27f46c1372eea2bc718bd55b9475871\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"],\"Image\":\"8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":122315957}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8b49fe88b40b6c09bbe751e9b235d1919e704ae1765a304226047bd0b203b3fe\",\"parent\":\"8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac\",\"created\":\"2015-09-08T15:27:57.320125465Z\",\"container\":\"87dae2a3bf7d4fbdc23d9b7d53160212db58a891eda8966b64e10f51696d9cc3\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"],\"Image\":\"8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":[],\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":44331678}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8c00acfb017549e44d28098762c3e6296872a1ca9b90385855f1019d84bb0dac\",\"parent\":\"843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba\",\"created\":\"2015-09-07T23:35:07.191010963Z\",\"container\":\"b48f4943739232f809821b7de150fbc19248301cdc27f5dd21346b4c64a5b82c\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":{}},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":{}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":0}\n"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"843e2bded49837e4846422f3a82a67be3ccc46c3e636e03d8d946c57564468ba\",\"created\":\"2015-09-07T23:35:05.552255313Z\",\"container\":\"7b840bf4fc5e80e406255381e25928d99cba43dd381d9417ed57db8553431de3\",\"container_config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /\"],\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.7.1\",\"config\":{\"Hostname\":\"7b840bf4fc5e\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":null,\"PublishService\":\"\",\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"VolumeDriver\":\"\",\"WorkingDir\":\"\",\"Entrypoint\":null,\"NetworkDisabled\":false,\"MacAddress\":\"\",\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":125134129}\n"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "HYUB:JP7B:SWGM:DH3D:5GN6:3E3I:SZ2Q:LFJQ:AMNT:NMIJ:MGSM:7MZ7",
+                            "kty": "EC",
+                            "x": "Tfg-u_KOVxgEzjhyZQM8ud4fVVF5IjJE6tmr3wuzyHk",
+                            "y": "e9QvpaIUzgB8Rw-YoZFp5ABXOQ6U9klDvZI6KrYhzLI"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "p6gdRLeUKuGTslgoYnJDzVCf1G3aw-P519LmWeWGDNsn_o_raL6LIdhZhGvCfGtIrIRZsQwjOtmm8xcEFsIRUQ",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjQ3OTAwLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDg6MjQ6NDNaIn0"
+                }
+            ]
+        },
+        "0.11-onbuild": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9029,
+                "digest": "sha256:5f0687d4c4fec918de190e72d3d4e031b81cbcfbc04f3a95f4475d2e1fefd29b"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 51359708,
+                    "digest": "sha256:f8efbffe7b954b520805da80ce0cce94e3834482c384c25c8851db98696e7f70"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 18538591,
+                    "digest": "sha256:b3010ec3eb21ac3df74757a47832fb17395b76ad3a30794074cefd07541d3557"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 42339522,
+                    "digest": "sha256:a6f2dac3eb9c26067c12dafd0c917f591d9881ee84a45f750d7a1d58187adfd8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 128531143,
+                    "digest": "sha256:f4f48828d97bcfe36d5697d8f505088a4369e3d660307576f68ae74031884ca7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 161,
+                    "digest": "sha256:3a9598a71ff4bedce90a29f38c981bb9ebec8f2a948dfba5e5c41960e62c7df2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32311910,
+                    "digest": "sha256:c4ad957be8b4cf055724c0b5f84e4f5c320779a85ca973904cb19ca83f4d2d22"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 500102,
+                    "digest": "sha256:1bb9b9a834f5dc40f3926ae46d25667f21788a02e6e604fb0702adce4a3a89d7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 241,
+                    "digest": "sha256:95a54fa9cab3bc2d1ed6e576b2e2e67a27655fe9e446e3197a576c350b3bcb69"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 11328475,
+                    "digest": "sha256:547f2eb7c5dd475c212862ad4a6f92885cef56ade9307584adbab73aaab28903"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5404724,
+                    "digest": "sha256:3f2543f5f1852354e35bfbdcb84267eafb0b750f893328ff96912ae79d2dca85"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 231,
+                    "digest": "sha256:dfd2f905975cc1a6efd10399dff0d6cbde389029858a96baadee2978f8a970a6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 134,
+                    "digest": "sha256:681e57ea485e2c60b14a45c2bc483344e0774bb85d3aec1d5d0e9f4755b8d8fa"
+                }
+            ]
+        },
+        "1.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 7904,
+                "digest": "sha256:84d1670a102c67c2787016bf8a880ddcfab3bb0809240737376e7bf55239057e"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45310060,
+                    "digest": "sha256:05d1a5232b461a4b35424129580054caa878cd56f100e34282510bd4b4082e4d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10740429,
+                    "digest": "sha256:5cee356eda6bfe3a5a229cd3d964e722ade1da4381842b24e943b03a37aec1f2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4336162,
+                    "digest": "sha256:89d3385f0fd3c0c904ff6e87195bb46f5d9d309e8ddd91bc9b20855d103eeffb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50065233,
+                    "digest": "sha256:80ae6b477848b6e03aad8ec9c74f1fb80364e5c8b5fe9ca3ec793df84247f027"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 213208939,
+                    "digest": "sha256:28bdf9e584cc733044425cc166ce90743b25f7003cb06408b905030f76200b2a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 205,
+                    "digest": "sha256:bdeb28e714e446fec87977bc8955caf3a44a3457075e94cfef9491ca45dc053a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 21526062,
+                    "digest": "sha256:213036fc03cbe44c0660059220be4452c0b205e6161ade70c0cc1685da82c220"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 147,
+                    "digest": "sha256:14c174bb0ed1bf2f52ae289ccaeeafaaa8077167d19cdc49ee19b409fa6f7f99"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 36386266,
+                    "digest": "sha256:85c7e5d387c0783207fb4d9f76a90d5de04cdb794255b9debecaefc067285936"
+                }
+            ]
+        },
+        "1.0-onbuild": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 9107,
+                "digest": "sha256:6809c0231ba7d53dedbe25f2992c567e5372bce898a411ffae9c1080323e43e2"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45310060,
+                    "digest": "sha256:05d1a5232b461a4b35424129580054caa878cd56f100e34282510bd4b4082e4d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10740429,
+                    "digest": "sha256:5cee356eda6bfe3a5a229cd3d964e722ade1da4381842b24e943b03a37aec1f2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4336162,
+                    "digest": "sha256:89d3385f0fd3c0c904ff6e87195bb46f5d9d309e8ddd91bc9b20855d103eeffb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50065233,
+                    "digest": "sha256:80ae6b477848b6e03aad8ec9c74f1fb80364e5c8b5fe9ca3ec793df84247f027"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 213208939,
+                    "digest": "sha256:28bdf9e584cc733044425cc166ce90743b25f7003cb06408b905030f76200b2a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 205,
+                    "digest": "sha256:bdeb28e714e446fec87977bc8955caf3a44a3457075e94cfef9491ca45dc053a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 21526062,
+                    "digest": "sha256:213036fc03cbe44c0660059220be4452c0b205e6161ade70c0cc1685da82c220"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 147,
+                    "digest": "sha256:14c174bb0ed1bf2f52ae289ccaeeafaaa8077167d19cdc49ee19b409fa6f7f99"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 36386067,
+                    "digest": "sha256:313012798680b8842414a50eb1ebcbbb117a8d79ad032f42bec8fbd4bb50de84"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 186,
+                    "digest": "sha256:fab755195480826d1f0c92e2942e5a4be9581b7319a3d57457814dec855f5694"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 133,
+                    "digest": "sha256:a011d6ab5047513ae5058f8dfa14705287ab047c6acdad2ce2c91dd5dbe70670"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 7904,
+                "digest": "sha256:35f3e8f0a9fff86c2f16674e4b12d1748a91cbf8037f11c4c6c4b70ee3f6e2a9"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45310060,
+                    "digest": "sha256:05d1a5232b461a4b35424129580054caa878cd56f100e34282510bd4b4082e4d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10740429,
+                    "digest": "sha256:5cee356eda6bfe3a5a229cd3d964e722ade1da4381842b24e943b03a37aec1f2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4336162,
+                    "digest": "sha256:89d3385f0fd3c0c904ff6e87195bb46f5d9d309e8ddd91bc9b20855d103eeffb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 50065233,
+                    "digest": "sha256:80ae6b477848b6e03aad8ec9c74f1fb80364e5c8b5fe9ca3ec793df84247f027"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 213208939,
+                    "digest": "sha256:28bdf9e584cc733044425cc166ce90743b25f7003cb06408b905030f76200b2a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 205,
+                    "digest": "sha256:bdeb28e714e446fec87977bc8955caf3a44a3457075e94cfef9491ca45dc053a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 21526062,
+                    "digest": "sha256:213036fc03cbe44c0660059220be4452c0b205e6161ade70c0cc1685da82c220"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 147,
+                    "digest": "sha256:14c174bb0ed1bf2f52ae289ccaeeafaaa8077167d19cdc49ee19b409fa6f7f99"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 36386126,
+                    "digest": "sha256:6e61b190297f9073104a0df87545994007283c1c84cac59620dc970e6bba7635"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "0.10",
+        "0.10-onbuild",
+        "0.11",
+        "0.11-onbuild",
+        "1.0",
+        "1.0-onbuild",
+        "latest"
+    ],
+    "configs": {
+        "0.10-onbuild": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "7b840bf4fc5e",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.2",
+                    "RUBY_VERSION=2.2.3",
+                    "RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce",
+                    "RUBYGEMS_VERSION=2.4.8",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLER_VERSION=1.10.6",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=0.10.2-1~bpo8+1",
+                    "GRPC_RUBY_VERSION=0.10.0"
+                ],
+                "Cmd": [
+                    "irb"
+                ],
+                "Image": "sha256:0193c847cf63bc33e2f550aa618ee92547a931557b74dd7be65c9fc2eb6684d3",
+                "Volumes": null,
+                "WorkingDir": "/usr/src/app",
+                "Entrypoint": null,
+                "OnBuild": [
+                    "COPY Gemfile /usr/src/app/",
+                    "COPY Gemfile.lock /usr/src/app/",
+                    "RUN bundle install",
+                    "COPY . /usr/src/app"
+                ],
+                "Labels": {}
+            },
+            "container": "753fc65d2f061efc4ff75d44d62f21d5de1d94f2ba7b7ec02866ac8ea64be7b8",
+            "container_config": {
+                "Hostname": "7b840bf4fc5e",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.2",
+                    "RUBY_VERSION=2.2.3",
+                    "RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce",
+                    "RUBYGEMS_VERSION=2.4.8",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLER_VERSION=1.10.6",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=0.10.2-1~bpo8+1",
+                    "GRPC_RUBY_VERSION=0.10.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ONBUILD COPY . /usr/src/app"
+                ],
+                "Image": "sha256:0193c847cf63bc33e2f550aa618ee92547a931557b74dd7be65c9fc2eb6684d3",
+                "Volumes": null,
+                "WorkingDir": "/usr/src/app",
+                "Entrypoint": null,
+                "OnBuild": [
+                    "COPY Gemfile /usr/src/app/",
+                    "COPY Gemfile.lock /usr/src/app/",
+                    "RUN bundle install",
+                    "COPY . /usr/src/app"
+                ],
+                "Labels": {}
+            },
+            "created": "2018-10-02T15:56:49.800945044Z",
+            "docker_version": "18.03.1-ee-1-tp5",
+            "history": [
+                {
+                    "created": "2015-09-07T23:35:05.552255313Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /"
+                },
+                {
+                    "created": "2015-09-07T23:35:07.191010963Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]"
+                },
+                {
+                    "created": "2015-09-08T15:27:57.320125465Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2015-09-08T15:29:05.732036476Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2015-09-08T15:31:25.471273352Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibjpeg-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmysqlclient-dev \t\tlibncurses-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\txz-utils \t\tzlib1g-dev \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2015-09-10T11:53:58.058507351Z",
+                    "created_by": "/bin/sh -c #(nop) ENV RUBY_MAJOR=2.2"
+                },
+                {
+                    "created": "2015-09-10T11:53:58.538204919Z",
+                    "created_by": "/bin/sh -c #(nop) ENV RUBY_VERSION=2.2.3"
+                },
+                {
+                    "created": "2015-09-10T11:53:58.978267002Z",
+                    "created_by": "/bin/sh -c #(nop) ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce"
+                },
+                {
+                    "created": "2015-09-10T11:53:59.436093629Z",
+                    "created_by": "/bin/sh -c #(nop) ENV RUBYGEMS_VERSION=2.4.8"
+                },
+                {
+                    "created": "2015-09-10T11:54:00.631359185Z",
+                    "created_by": "/bin/sh -c echo 'install: --no-document\\nupdate: --no-document' >> \"$HOME/.gemrc\""
+                },
+                {
+                    "created": "2015-09-10T11:58:15.715338834Z",
+                    "created_by": "/bin/sh -c apt-get update \t&& apt-get install -y bison libgdbm-dev ruby \t&& rm -rf /var/lib/apt/lists/* \t&& mkdir -p /usr/src/ruby \t&& curl -fSL -o ruby.tar.gz \"http://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_VERSION.tar.gz\" \t&& echo \"$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz\" | sha256sum -c - \t&& tar -xzf ruby.tar.gz -C /usr/src/ruby --strip-components=1 \t&& rm ruby.tar.gz \t&& cd /usr/src/ruby \t&& autoconf \t&& ./configure --disable-install-doc \t&& make -j\"$(nproc)\" \t&& make install \t&& apt-get purge -y --auto-remove bison libgdbm-dev ruby \t&& gem update --system $RUBYGEMS_VERSION \t&& rm -r /usr/src/ruby"
+                },
+                {
+                    "created": "2015-09-10T11:58:16.674871667Z",
+                    "created_by": "/bin/sh -c #(nop) ENV GEM_HOME=/usr/local/bundle"
+                },
+                {
+                    "created": "2015-09-10T11:58:17.090388736Z",
+                    "created_by": "/bin/sh -c #(nop) ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                },
+                {
+                    "created": "2015-09-10T11:58:17.546761226Z",
+                    "created_by": "/bin/sh -c #(nop) ENV BUNDLER_VERSION=1.10.6"
+                },
+                {
+                    "created": "2015-09-10T11:58:20.936181166Z",
+                    "created_by": "/bin/sh -c gem install bundler --version \"$BUNDLER_VERSION\" \t&& bundle config --global path \"$GEM_HOME\" \t&& bundle config --global bin \"$GEM_HOME/bin\""
+                },
+                {
+                    "created": "2015-09-10T11:58:21.490192992Z",
+                    "created_by": "/bin/sh -c #(nop) ENV BUNDLE_APP_CONFIG=/usr/local/bundle"
+                },
+                {
+                    "created": "2015-09-10T11:58:21.942592418Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"irb\"]"
+                },
+                {
+                    "created": "2015-09-14T21:12:59.594082212Z",
+                    "created_by": "/bin/sh -c echo \"deb http://ftp.us.debian.org/debian jessie-backports main\" | tee -a /etc/apt/sources.list"
+                },
+                {
+                    "created": "2015-09-14T21:13:02.602598679Z",
+                    "created_by": "/bin/sh -c #(nop) ENV GRPC_VERSION=0.10.2-1~bpo8+1"
+                },
+                {
+                    "created": "2015-09-14T21:13:05.657973552Z",
+                    "created_by": "/bin/sh -c #(nop) ENV GRPC_RUBY_VERSION=0.10.0"
+                },
+                {
+                    "created": "2015-09-14T21:14:24.501292645Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y -q libgrpc-dev=${GRPC_VERSION}"
+                },
+                {
+                    "created": "2015-09-14T21:14:46.82039847Z",
+                    "created_by": "/bin/sh -c gem install grpc -v ${GRPC_RUBY_VERSION}"
+                },
+                {
+                    "created": "2018-10-02T15:56:45.977363686Z",
+                    "created_by": "/bin/sh -c bundle config --global frozen 1"
+                },
+                {
+                    "created": "2018-10-02T15:56:47.914061854Z",
+                    "created_by": "/bin/sh -c mkdir -p /usr/src/app"
+                },
+                {
+                    "created": "2018-10-02T15:56:48.350635233Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /usr/src/app",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:56:48.73436258Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY Gemfile /usr/src/app/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:56:49.060496903Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY Gemfile.lock /usr/src/app/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:56:49.394694429Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN bundle install",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:56:49.800945044Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY . /usr/src/app",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:65f3b0435c42b0889de0763b56671f2679032ec4ee0334e406da42cf18c162a8",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:b734b73392758eb56eb336fa09626f1e64e00b0ca029933c9439bc7cc6889eaf",
+                    "sha256:f01e8626d61f64c7d67beda867d475b9ff25d4ae7c3b023561ce01a445e280a2",
+                    "sha256:eb746b9c3e1e72f2e1b7760e0abf12598b5c4add63fa8d98c19c4902dc4c2530",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:8fb649571571911674d9fcc3bc1dfd1437273e690ee1fcd2becf6a18f275df4c",
+                    "sha256:83f8423aef3f97a2e9b682b8fd48720e50a7cdef7cd862475f413d5c44ef5c4c",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:cbafd3c23470396529e8a827a30f28ff12eb3aa29cf39957a6d9d6b4f9dcdf24",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:b1fdf410615db6d16d214b0c866c911a0d24869e5afa7586eab031e92d1e1bcb",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:dcdd9a418d4b61f54d684529d0f8db05d4b935451ea84197d6ef824a2ac5af9d",
+                    "sha256:749a79dfc2f44915362d985ebcf932bc62311eb5b8042fb01c9a68107fb5f90a",
+                    "sha256:686b05d42725f3d4c5927d205c100012f0229c33c032f57355da1b2f128ddf0f",
+                    "sha256:d8051d41b83061ea410261c02e4ad6a0c62a393b87a5007f02be87c388c5430f"
+                ]
+            }
+        },
+        "0.11-onbuild": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "7b840bf4fc5e",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.2",
+                    "RUBY_VERSION=2.2.3",
+                    "RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce",
+                    "RUBYGEMS_VERSION=2.4.8",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLER_VERSION=1.10.6",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=0.11.0.0-1~bpo8+2",
+                    "GRPC_RUBY_VERSION=0.11.0"
+                ],
+                "Cmd": [
+                    "irb"
+                ],
+                "Image": "sha256:dd827eee7d23064ff1ea166ac89c3217b02e401c1453981d2eecefb43de61c00",
+                "Volumes": null,
+                "WorkingDir": "/usr/src/app",
+                "Entrypoint": null,
+                "OnBuild": [
+                    "COPY Gemfile /usr/src/app/",
+                    "COPY Gemfile.lock /usr/src/app/",
+                    "RUN bundle install",
+                    "COPY . /usr/src/app"
+                ],
+                "Labels": {}
+            },
+            "container": "8a0b9f48e7da49410245533e281643924b49b9bb6619f23b494c13c73be33471",
+            "container_config": {
+                "Hostname": "7b840bf4fc5e",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.2",
+                    "RUBY_VERSION=2.2.3",
+                    "RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce",
+                    "RUBYGEMS_VERSION=2.4.8",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLER_VERSION=1.10.6",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=0.11.0.0-1~bpo8+2",
+                    "GRPC_RUBY_VERSION=0.11.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ONBUILD COPY . /usr/src/app"
+                ],
+                "Image": "sha256:dd827eee7d23064ff1ea166ac89c3217b02e401c1453981d2eecefb43de61c00",
+                "Volumes": null,
+                "WorkingDir": "/usr/src/app",
+                "Entrypoint": null,
+                "OnBuild": [
+                    "COPY Gemfile /usr/src/app/",
+                    "COPY Gemfile.lock /usr/src/app/",
+                    "RUN bundle install",
+                    "COPY . /usr/src/app"
+                ],
+                "Labels": {}
+            },
+            "created": "2018-10-02T16:13:07.429154653Z",
+            "docker_version": "18.03.1-ee-1-tp5",
+            "history": [
+                {
+                    "created": "2015-09-07T23:35:05.552255313Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:c7d957020a6ee3df60f2407c7a383cabcfa67d43f6d5151b241b37034f5bc6e0 in /"
+                },
+                {
+                    "created": "2015-09-07T23:35:07.191010963Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]"
+                },
+                {
+                    "created": "2015-09-08T15:27:57.320125465Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2015-09-08T15:29:05.732036476Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2015-09-08T15:31:25.471273352Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibjpeg-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmysqlclient-dev \t\tlibncurses-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\txz-utils \t\tzlib1g-dev \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2015-09-10T11:53:58.058507351Z",
+                    "created_by": "/bin/sh -c #(nop) ENV RUBY_MAJOR=2.2"
+                },
+                {
+                    "created": "2015-09-10T11:53:58.538204919Z",
+                    "created_by": "/bin/sh -c #(nop) ENV RUBY_VERSION=2.2.3"
+                },
+                {
+                    "created": "2015-09-10T11:53:58.978267002Z",
+                    "created_by": "/bin/sh -c #(nop) ENV RUBY_DOWNLOAD_SHA256=df795f2f99860745a416092a4004b016ccf77e8b82dec956b120f18bdc71edce"
+                },
+                {
+                    "created": "2015-09-10T11:53:59.436093629Z",
+                    "created_by": "/bin/sh -c #(nop) ENV RUBYGEMS_VERSION=2.4.8"
+                },
+                {
+                    "created": "2015-09-10T11:54:00.631359185Z",
+                    "created_by": "/bin/sh -c echo 'install: --no-document\\nupdate: --no-document' >> \"$HOME/.gemrc\""
+                },
+                {
+                    "created": "2015-09-10T11:58:15.715338834Z",
+                    "created_by": "/bin/sh -c apt-get update \t&& apt-get install -y bison libgdbm-dev ruby \t&& rm -rf /var/lib/apt/lists/* \t&& mkdir -p /usr/src/ruby \t&& curl -fSL -o ruby.tar.gz \"http://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR/ruby-$RUBY_VERSION.tar.gz\" \t&& echo \"$RUBY_DOWNLOAD_SHA256 *ruby.tar.gz\" | sha256sum -c - \t&& tar -xzf ruby.tar.gz -C /usr/src/ruby --strip-components=1 \t&& rm ruby.tar.gz \t&& cd /usr/src/ruby \t&& autoconf \t&& ./configure --disable-install-doc \t&& make -j\"$(nproc)\" \t&& make install \t&& apt-get purge -y --auto-remove bison libgdbm-dev ruby \t&& gem update --system $RUBYGEMS_VERSION \t&& rm -r /usr/src/ruby"
+                },
+                {
+                    "created": "2015-09-10T11:58:16.674871667Z",
+                    "created_by": "/bin/sh -c #(nop) ENV GEM_HOME=/usr/local/bundle"
+                },
+                {
+                    "created": "2015-09-10T11:58:17.090388736Z",
+                    "created_by": "/bin/sh -c #(nop) ENV PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                },
+                {
+                    "created": "2015-09-10T11:58:17.546761226Z",
+                    "created_by": "/bin/sh -c #(nop) ENV BUNDLER_VERSION=1.10.6"
+                },
+                {
+                    "created": "2015-09-10T11:58:20.936181166Z",
+                    "created_by": "/bin/sh -c gem install bundler --version \"$BUNDLER_VERSION\" \t&& bundle config --global path \"$GEM_HOME\" \t&& bundle config --global bin \"$GEM_HOME/bin\""
+                },
+                {
+                    "created": "2015-09-10T11:58:21.490192992Z",
+                    "created_by": "/bin/sh -c #(nop) ENV BUNDLE_APP_CONFIG=/usr/local/bundle"
+                },
+                {
+                    "created": "2015-09-10T11:58:21.942592418Z",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"irb\"]"
+                },
+                {
+                    "created": "2015-09-29T18:42:53.509505811Z",
+                    "created_by": "/bin/sh -c echo \"deb http://ftp.us.debian.org/debian jessie-backports main\" | tee -a /etc/apt/sources.list"
+                },
+                {
+                    "created": "2015-09-29T18:42:56.415872956Z",
+                    "created_by": "/bin/sh -c #(nop) ENV GRPC_VERSION=0.11.0.0-1~bpo8+2"
+                },
+                {
+                    "created": "2015-09-29T18:42:59.1984404Z",
+                    "created_by": "/bin/sh -c #(nop) ENV GRPC_RUBY_VERSION=0.11.0"
+                },
+                {
+                    "created": "2015-09-29T18:44:10.650266068Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y -q libgrpc-dev=${GRPC_VERSION}"
+                },
+                {
+                    "created": "2015-09-29T18:44:32.725897406Z",
+                    "created_by": "/bin/sh -c gem install grpc -v ${GRPC_RUBY_VERSION}"
+                },
+                {
+                    "created": "2018-10-02T16:13:03.365606337Z",
+                    "created_by": "/bin/sh -c bundle config --global frozen 1"
+                },
+                {
+                    "created": "2018-10-02T16:13:05.606225551Z",
+                    "created_by": "/bin/sh -c mkdir -p /usr/src/app"
+                },
+                {
+                    "created": "2018-10-02T16:13:05.933012186Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /usr/src/app",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T16:13:06.397951994Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY Gemfile /usr/src/app/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T16:13:06.792885526Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY Gemfile.lock /usr/src/app/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T16:13:07.081044403Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN bundle install",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T16:13:07.429154653Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY . /usr/src/app",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:65f3b0435c42b0889de0763b56671f2679032ec4ee0334e406da42cf18c162a8",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:b734b73392758eb56eb336fa09626f1e64e00b0ca029933c9439bc7cc6889eaf",
+                    "sha256:f01e8626d61f64c7d67beda867d475b9ff25d4ae7c3b023561ce01a445e280a2",
+                    "sha256:eb746b9c3e1e72f2e1b7760e0abf12598b5c4add63fa8d98c19c4902dc4c2530",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:8fb649571571911674d9fcc3bc1dfd1437273e690ee1fcd2becf6a18f275df4c",
+                    "sha256:83f8423aef3f97a2e9b682b8fd48720e50a7cdef7cd862475f413d5c44ef5c4c",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:cbafd3c23470396529e8a827a30f28ff12eb3aa29cf39957a6d9d6b4f9dcdf24",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:b8e9b24271e564529f882bb8b3505f0d8bcb71b1e2a898fa0fc10d24c6a55e6c",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:b1abf1b564ff1368fd8ada7f7e1c579eac8bc983668e16260e2de51b1a8d4acd",
+                    "sha256:becbbcdd6973bcec54304aa86c00dc306df627f5af008895fdeb0c6b40578043",
+                    "sha256:83adf92057b326567d1a474931d0e5b4016837d2c9a861b24004ec3f4265d17e",
+                    "sha256:f0e84cdf353465e05be135c7434bc45aa900160bc4641e2f59ee199a109882ea"
+                ]
+            }
+        },
+        "1.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.5",
+                    "RUBY_VERSION=2.5.1",
+                    "RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d",
+                    "RUBYGEMS_VERSION=2.7.7",
+                    "BUNDLER_VERSION=1.16.5",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLE_PATH=/usr/local/bundle",
+                    "BUNDLE_SILENCE_ROOT_WARNING=1",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=1.0.0"
+                ],
+                "Cmd": [
+                    "irb"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:f902b23034acf1b9a7560fd3735ef2db7b2b4f228d63e8f010a79d5c30756b17",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "b3deb2ed084803b3c45a8bae04cdff0aa4d856bf4da6f74868f3c477313d3769",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.5",
+                    "RUBY_VERSION=2.5.1",
+                    "RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d",
+                    "RUBYGEMS_VERSION=2.7.7",
+                    "BUNDLER_VERSION=1.16.5",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLE_PATH=/usr/local/bundle",
+                    "BUNDLE_SILENCE_ROOT_WARNING=1",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=1.0.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "gem install grpc:${GRPC_VERSION} grpc-tools:${GRPC_VERSION}"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:f902b23034acf1b9a7560fd3735ef2db7b2b4f228d63e8f010a79d5c30756b17",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "created": "2018-10-02T15:53:19.357986669Z",
+            "docker_version": "18.03.1-ee-1-tp5",
+            "history": [
+                {
+                    "created": "2018-09-04T21:21:24.685563594Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:58d5c21fcabcf1eec94e8676a3b1e51c5fdc2db5c7b866a761f907fa30ede4d8 in / "
+                },
+                {
+                    "created": "2018-09-04T21:21:24.962310464Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-04T22:33:34.272870374Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-04T22:33:43.932154953Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+                },
+                {
+                    "created": "2018-09-04T22:34:19.627080813Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-04T22:36:11.79489897Z",
+                    "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-05T05:31:14.346556017Z",
+                    "created_by": "/bin/sh -c mkdir -p /usr/local/etc \t&& { \t\techo 'install: --no-document'; \t\techo 'update: --no-document'; \t} >> /usr/local/etc/gemrc"
+                },
+                {
+                    "created": "2018-09-05T05:43:21.735201465Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_MAJOR=2.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-05T05:43:21.958907817Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_VERSION=2.5.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-05T05:43:22.218855384Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-05T05:43:22.466546064Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBYGEMS_VERSION=2.7.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:49:59.258725273Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BUNDLER_VERSION=1.16.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:16.305318071Z",
+                    "created_by": "/bin/sh -c set -ex \t\t&& buildDeps=' \t\tbison \t\tdpkg-dev \t\tlibgdbm-dev \t\truby \t' \t&& apt-get update \t&& apt-get install -y --no-install-recommends $buildDeps \t&& rm -rf /var/lib/apt/lists/* \t\t&& wget -O ruby.tar.xz \"https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz\" \t&& echo \"$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz\" | sha256sum -c - \t\t&& mkdir -p /usr/src/ruby \t&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 \t&& rm ruby.tar.xz \t\t&& cd /usr/src/ruby \t\t&& { \t\techo '#define ENABLE_PATH_CHECK 0'; \t\techo; \t\tcat file.c; \t} > file.c.new \t&& mv file.c.new file.c \t\t&& autoconf \t&& gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\" \t&& ./configure \t\t--build=\"$gnuArch\" \t\t--disable-install-doc \t\t--enable-shared \t&& make -j \"$(nproc)\" \t&& make install \t\t&& apt-get purge -y --auto-remove $buildDeps \t&& cd / \t&& rm -r /usr/src/ruby \t\t&& gem update --system \"$RUBYGEMS_VERSION\" \t&& gem install bundler --version \"$BUNDLER_VERSION\" --force \t&& rm -r /root/.gem/"
+                },
+                {
+                    "created": "2018-09-20T20:52:16.563753058Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GEM_HOME=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:16.742451746Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:16.913991703Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:17.531268821Z",
+                    "created_by": "/bin/sh -c mkdir -p \"$GEM_HOME\" && chmod 777 \"$GEM_HOME\""
+                },
+                {
+                    "created": "2018-09-20T20:52:17.710510249Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"irb\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:52:58.390033783Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GRPC_VERSION=1.0.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:53:19.357986669Z",
+                    "created_by": "/bin/sh -c gem install grpc:${GRPC_VERSION} grpc-tools:${GRPC_VERSION}"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b28ef0b6fef80faa25436bec0a1375214d9a23a91e9b75975bba3b2889f8504f",
+                    "sha256:0b703c74a09c1e55d52e6b689babc6ae6374a793c1acfe8ff21a554014d8f434",
+                    "sha256:2eb1c9bfc5ead1e646e39ab760ead591f995cf606c327235a21eeb075ec5c178",
+                    "sha256:ab016c9ea8f8bb97f7b1c2871b0560787028864d06a49d062816ad72b9336cc6",
+                    "sha256:a19cb627cc73f012e468dc1ad9778e77e6307ebae31ffc8ba9f55d9f9fde5d3f",
+                    "sha256:37db8875fa510026653d49e33331ba9e6b11cb79653e54ac10a1972ad3729a03",
+                    "sha256:e1702017c510130ca110ca5f018bff1ecf9549c2d9a89deb631a8a0db65b1fad",
+                    "sha256:d2896486c503f220744b509ada21d5a882c5608e09613b656c8bb310f687dfac",
+                    "sha256:4a7e5621840e97460396ebb8731b9c1c32cc4c23507c2dd007621c14ce74558d"
+                ]
+            }
+        },
+        "1.0-onbuild": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.5",
+                    "RUBY_VERSION=2.5.1",
+                    "RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d",
+                    "RUBYGEMS_VERSION=2.7.7",
+                    "BUNDLER_VERSION=1.16.5",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLE_PATH=/usr/local/bundle",
+                    "BUNDLE_SILENCE_ROOT_WARNING=1",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=1.0.0"
+                ],
+                "Cmd": [
+                    "irb"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:18b5d97c5d7c006afd193e29a67b2c20f40be1ebc6d79fc85451f2b76c64da66",
+                "Volumes": null,
+                "WorkingDir": "/usr/src/app",
+                "Entrypoint": null,
+                "OnBuild": [
+                    "COPY Gemfile /usr/src/app/",
+                    "COPY Gemfile.lock /usr/src/app/",
+                    "RUN bundle install",
+                    "COPY . /usr/src/app"
+                ],
+                "Labels": null
+            },
+            "container": "38b68a8a135926a0843064b0910952a644d125742eeb6c17ef11fedf6b281904",
+            "container_config": {
+                "Hostname": "38b68a8a1359",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.5",
+                    "RUBY_VERSION=2.5.1",
+                    "RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d",
+                    "RUBYGEMS_VERSION=2.7.7",
+                    "BUNDLER_VERSION=1.16.5",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLE_PATH=/usr/local/bundle",
+                    "BUNDLE_SILENCE_ROOT_WARNING=1",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=1.0.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ONBUILD COPY . /usr/src/app"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:18b5d97c5d7c006afd193e29a67b2c20f40be1ebc6d79fc85451f2b76c64da66",
+                "Volumes": null,
+                "WorkingDir": "/usr/src/app",
+                "Entrypoint": null,
+                "OnBuild": [
+                    "COPY Gemfile /usr/src/app/",
+                    "COPY Gemfile.lock /usr/src/app/",
+                    "RUN bundle install",
+                    "COPY . /usr/src/app"
+                ],
+                "Labels": {}
+            },
+            "created": "2018-10-02T15:49:46.73194543Z",
+            "docker_version": "18.03.1-ee-1-tp5",
+            "history": [
+                {
+                    "created": "2018-09-04T21:21:24.685563594Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:58d5c21fcabcf1eec94e8676a3b1e51c5fdc2db5c7b866a761f907fa30ede4d8 in / "
+                },
+                {
+                    "created": "2018-09-04T21:21:24.962310464Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-04T22:33:34.272870374Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-04T22:33:43.932154953Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+                },
+                {
+                    "created": "2018-09-04T22:34:19.627080813Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-04T22:36:11.79489897Z",
+                    "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-05T05:31:14.346556017Z",
+                    "created_by": "/bin/sh -c mkdir -p /usr/local/etc \t&& { \t\techo 'install: --no-document'; \t\techo 'update: --no-document'; \t} >> /usr/local/etc/gemrc"
+                },
+                {
+                    "created": "2018-09-05T05:43:21.735201465Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_MAJOR=2.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-05T05:43:21.958907817Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_VERSION=2.5.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-05T05:43:22.218855384Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-05T05:43:22.466546064Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBYGEMS_VERSION=2.7.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:49:59.258725273Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BUNDLER_VERSION=1.16.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:16.305318071Z",
+                    "created_by": "/bin/sh -c set -ex \t\t&& buildDeps=' \t\tbison \t\tdpkg-dev \t\tlibgdbm-dev \t\truby \t' \t&& apt-get update \t&& apt-get install -y --no-install-recommends $buildDeps \t&& rm -rf /var/lib/apt/lists/* \t\t&& wget -O ruby.tar.xz \"https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz\" \t&& echo \"$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz\" | sha256sum -c - \t\t&& mkdir -p /usr/src/ruby \t&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 \t&& rm ruby.tar.xz \t\t&& cd /usr/src/ruby \t\t&& { \t\techo '#define ENABLE_PATH_CHECK 0'; \t\techo; \t\tcat file.c; \t} > file.c.new \t&& mv file.c.new file.c \t\t&& autoconf \t&& gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\" \t&& ./configure \t\t--build=\"$gnuArch\" \t\t--disable-install-doc \t\t--enable-shared \t&& make -j \"$(nproc)\" \t&& make install \t\t&& apt-get purge -y --auto-remove $buildDeps \t&& cd / \t&& rm -r /usr/src/ruby \t\t&& gem update --system \"$RUBYGEMS_VERSION\" \t&& gem install bundler --version \"$BUNDLER_VERSION\" --force \t&& rm -r /root/.gem/"
+                },
+                {
+                    "created": "2018-09-20T20:52:16.563753058Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GEM_HOME=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:16.742451746Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:16.913991703Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:17.531268821Z",
+                    "created_by": "/bin/sh -c mkdir -p \"$GEM_HOME\" && chmod 777 \"$GEM_HOME\""
+                },
+                {
+                    "created": "2018-09-20T20:52:17.710510249Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"irb\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T05:23:57.216330994Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GRPC_VERSION=1.0.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T05:24:17.255546365Z",
+                    "created_by": "/bin/sh -c gem install grpc:${GRPC_VERSION} grpc-tools:${GRPC_VERSION}"
+                },
+                {
+                    "created": "2018-10-02T15:49:42.539333653Z",
+                    "created_by": "/bin/sh -c bundle config --global frozen 1"
+                },
+                {
+                    "created": "2018-10-02T15:49:44.57818276Z",
+                    "created_by": "/bin/sh -c mkdir -p /usr/src/app"
+                },
+                {
+                    "created": "2018-10-02T15:49:44.947354608Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /usr/src/app",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:49:45.329432385Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY Gemfile /usr/src/app/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:49:45.988371931Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY Gemfile.lock /usr/src/app/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:49:46.313861669Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD RUN bundle install",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:49:46.73194543Z",
+                    "created_by": "/bin/sh -c #(nop)  ONBUILD COPY . /usr/src/app",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b28ef0b6fef80faa25436bec0a1375214d9a23a91e9b75975bba3b2889f8504f",
+                    "sha256:0b703c74a09c1e55d52e6b689babc6ae6374a793c1acfe8ff21a554014d8f434",
+                    "sha256:2eb1c9bfc5ead1e646e39ab760ead591f995cf606c327235a21eeb075ec5c178",
+                    "sha256:ab016c9ea8f8bb97f7b1c2871b0560787028864d06a49d062816ad72b9336cc6",
+                    "sha256:a19cb627cc73f012e468dc1ad9778e77e6307ebae31ffc8ba9f55d9f9fde5d3f",
+                    "sha256:37db8875fa510026653d49e33331ba9e6b11cb79653e54ac10a1972ad3729a03",
+                    "sha256:e1702017c510130ca110ca5f018bff1ecf9549c2d9a89deb631a8a0db65b1fad",
+                    "sha256:d2896486c503f220744b509ada21d5a882c5608e09613b656c8bb310f687dfac",
+                    "sha256:f12b9600174725672bd95dc51c6ceca07abb25106b32d04568cd96bda97b0521",
+                    "sha256:84fd1cbd1abd68d268b9c5a0a338112063b783c81751a580514651b700b366ec",
+                    "sha256:7a84830e9e6ed4088c328ce9e6d1e22e250c58e64e6bf525608fe3f290238136"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.5",
+                    "RUBY_VERSION=2.5.1",
+                    "RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d",
+                    "RUBYGEMS_VERSION=2.7.7",
+                    "BUNDLER_VERSION=1.16.5",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLE_PATH=/usr/local/bundle",
+                    "BUNDLE_SILENCE_ROOT_WARNING=1",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=1.0.0"
+                ],
+                "Cmd": [
+                    "irb"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:f84855a2c850f1b77b68daa3f3ea036d38f36e5e9b6e238b37b0e71e629f1e6c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "cb962fce396ec3fdf68fa8504fee0f41b854a33589a2efbb78998c11fa0c0ab0",
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "RUBY_MAJOR=2.5",
+                    "RUBY_VERSION=2.5.1",
+                    "RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d",
+                    "RUBYGEMS_VERSION=2.7.7",
+                    "BUNDLER_VERSION=1.16.5",
+                    "GEM_HOME=/usr/local/bundle",
+                    "BUNDLE_PATH=/usr/local/bundle",
+                    "BUNDLE_SILENCE_ROOT_WARNING=1",
+                    "BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "GRPC_VERSION=1.0.0"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "gem install grpc:${GRPC_VERSION} grpc-tools:${GRPC_VERSION}"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:f84855a2c850f1b77b68daa3f3ea036d38f36e5e9b6e238b37b0e71e629f1e6c",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "created": "2018-10-02T16:00:14.266286433Z",
+            "docker_version": "18.03.1-ee-1-tp5",
+            "history": [
+                {
+                    "created": "2018-09-04T21:21:24.685563594Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:58d5c21fcabcf1eec94e8676a3b1e51c5fdc2db5c7b866a761f907fa30ede4d8 in / "
+                },
+                {
+                    "created": "2018-09-04T21:21:24.962310464Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-04T22:33:34.272870374Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-04T22:33:43.932154953Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+                },
+                {
+                    "created": "2018-09-04T22:34:19.627080813Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-04T22:36:11.79489897Z",
+                    "created_by": "/bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibgeoip-dev \t\tlibglib2.0-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\txz-utils \t\tzlib1g-dev \t\t\t\t$( \t\t\tif apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then \t\t\t\techo 'default-libmysqlclient-dev'; \t\t\telse \t\t\t\techo 'libmysqlclient-dev'; \t\t\tfi \t\t) \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-09-05T05:31:14.346556017Z",
+                    "created_by": "/bin/sh -c mkdir -p /usr/local/etc \t&& { \t\techo 'install: --no-document'; \t\techo 'update: --no-document'; \t} >> /usr/local/etc/gemrc"
+                },
+                {
+                    "created": "2018-09-05T05:43:21.735201465Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_MAJOR=2.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-05T05:43:21.958907817Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_VERSION=2.5.1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-05T05:43:22.218855384Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBY_DOWNLOAD_SHA256=886ac5eed41e3b5fc699be837b0087a6a5a3d10f464087560d2d21b3e71b754d",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-05T05:43:22.466546064Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RUBYGEMS_VERSION=2.7.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:49:59.258725273Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BUNDLER_VERSION=1.16.5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:16.305318071Z",
+                    "created_by": "/bin/sh -c set -ex \t\t&& buildDeps=' \t\tbison \t\tdpkg-dev \t\tlibgdbm-dev \t\truby \t' \t&& apt-get update \t&& apt-get install -y --no-install-recommends $buildDeps \t&& rm -rf /var/lib/apt/lists/* \t\t&& wget -O ruby.tar.xz \"https://cache.ruby-lang.org/pub/ruby/${RUBY_MAJOR%-rc}/ruby-$RUBY_VERSION.tar.xz\" \t&& echo \"$RUBY_DOWNLOAD_SHA256 *ruby.tar.xz\" | sha256sum -c - \t\t&& mkdir -p /usr/src/ruby \t&& tar -xJf ruby.tar.xz -C /usr/src/ruby --strip-components=1 \t&& rm ruby.tar.xz \t\t&& cd /usr/src/ruby \t\t&& { \t\techo '#define ENABLE_PATH_CHECK 0'; \t\techo; \t\tcat file.c; \t} > file.c.new \t&& mv file.c.new file.c \t\t&& autoconf \t&& gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\" \t&& ./configure \t\t--build=\"$gnuArch\" \t\t--disable-install-doc \t\t--enable-shared \t&& make -j \"$(nproc)\" \t&& make install \t\t&& apt-get purge -y --auto-remove $buildDeps \t&& cd / \t&& rm -r /usr/src/ruby \t\t&& gem update --system \"$RUBYGEMS_VERSION\" \t&& gem install bundler --version \"$BUNDLER_VERSION\" --force \t&& rm -r /root/.gem/"
+                },
+                {
+                    "created": "2018-09-20T20:52:16.563753058Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GEM_HOME=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:16.742451746Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV BUNDLE_PATH=/usr/local/bundle BUNDLE_SILENCE_ROOT_WARNING=1 BUNDLE_APP_CONFIG=/usr/local/bundle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:16.913991703Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/bundle/bin:/usr/local/bundle/gems/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-09-20T20:52:17.531268821Z",
+                    "created_by": "/bin/sh -c mkdir -p \"$GEM_HOME\" && chmod 777 \"$GEM_HOME\""
+                },
+                {
+                    "created": "2018-09-20T20:52:17.710510249Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"irb\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T15:59:49.330988653Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GRPC_VERSION=1.0.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-02T16:00:14.266286433Z",
+                    "created_by": "/bin/sh -c gem install grpc:${GRPC_VERSION} grpc-tools:${GRPC_VERSION}"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b28ef0b6fef80faa25436bec0a1375214d9a23a91e9b75975bba3b2889f8504f",
+                    "sha256:0b703c74a09c1e55d52e6b689babc6ae6374a793c1acfe8ff21a554014d8f434",
+                    "sha256:2eb1c9bfc5ead1e646e39ab760ead591f995cf606c327235a21eeb075ec5c178",
+                    "sha256:ab016c9ea8f8bb97f7b1c2871b0560787028864d06a49d062816ad72b9336cc6",
+                    "sha256:a19cb627cc73f012e468dc1ad9778e77e6307ebae31ffc8ba9f55d9f9fde5d3f",
+                    "sha256:37db8875fa510026653d49e33331ba9e6b11cb79653e54ac10a1972ad3729a03",
+                    "sha256:e1702017c510130ca110ca5f018bff1ecf9549c2d9a89deb631a8a0db65b1fad",
+                    "sha256:d2896486c503f220744b509ada21d5a882c5608e09613b656c8bb310f687dfac",
+                    "sha256:eb623ffdebfd8800845bbdf9b0737bdfbd995dc9ea583770033538eb04a9ab4a"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,740 @@
+{
+    "manifests": {
+        "5.1.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6416,
+                "digest": "sha256:a29f549a1963adbf9a50d6f43dbfcbd7ae07de23290f31cccb6091dcef6d0fc2"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70456515,
+                    "digest": "sha256:785fe1d06b2d42874d3e18fb0747ad8c9ed83d04e7641279a4d5ae353f27eff9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70504692,
+                    "digest": "sha256:b6ea41613b274ee5305271ab7e4340f63ea9c20c1e33f12f8a3263f93c4d056a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1783,
+                    "digest": "sha256:776b548c67c8d127c36a108008a561a89739bd934eaefa06e8d065547cf8dbfc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 115679660,
+                    "digest": "sha256:46b4eacdb29da83c66c04f434116e2f3b308e9a45218a6b1b89de765a816dcbc"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6362,
+                "digest": "sha256:d8f58146d0a4e4e85d13e3604dc9da78a3ae3eee7ad9d052eb9212fa2f7c1523"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70456515,
+                    "digest": "sha256:785fe1d06b2d42874d3e18fb0747ad8c9ed83d04e7641279a4d5ae353f27eff9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70504692,
+                    "digest": "sha256:b6ea41613b274ee5305271ab7e4340f63ea9c20c1e33f12f8a3263f93c4d056a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1778,
+                    "digest": "sha256:17d7d171d7e4855da7651c8317f20831a7974c7402faa2a47a494858de607f25"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 119004425,
+                    "digest": "sha256:4c7ab11d0cf5f31940886df51a6f57c9ccc357576fb591d59b6893c9d4cddd62"
+                }
+            ]
+        },
+        "v5": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5872,
+                "digest": "sha256:18f3b5fbc9eaad103227d1406cc909006be749c9a550febec7fd9ca948636a8a"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70456515,
+                    "digest": "sha256:785fe1d06b2d42874d3e18fb0747ad8c9ed83d04e7641279a4d5ae353f27eff9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70504692,
+                    "digest": "sha256:b6ea41613b274ee5305271ab7e4340f63ea9c20c1e33f12f8a3263f93c4d056a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 118997671,
+                    "digest": "sha256:3cf3fab363c88d9027b1fa5d76f846a4a4b308dd1b5a597021894f16a62c1113"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "5.1.0",
+        "latest",
+        "v5"
+    ],
+    "configs": {
+        "5.1.0": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "serveradmin",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "4848/tcp": {},
+                    "8009/tcp": {},
+                    "8080/tcp": {},
+                    "8181/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "GLASSFISH_ARCHIVE=glassfish5",
+                    "DOMAIN_NAME=domain1",
+                    "INSTALL_DIR=/opt",
+                    "GLASSFISH_HOME=/opt/glassfish5/glassfish",
+                    "DEPLOYMENT_DIR=/opt/glassfish5/glassfish/domains/domain1/autodeploy"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:3c504bfa4ad71afa1b0ba753c884ceae8350884fa0f908d937806674f0576a20",
+                "Volumes": null,
+                "WorkingDir": "/opt/glassfish5/glassfish/bin",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "asadmin start-domain --verbose ${DOMAIN_NAME}"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "description": "Eclipse Jakarta EE Glassfish v5 release image",
+                    "license": "GPLv2",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "166a49cf834eb3b13ad9c682ee9580cbcac59f0acac7db3db7b996f6783f1ea6",
+            "container_config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "serveradmin",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "4848/tcp": {},
+                    "8009/tcp": {},
+                    "8080/tcp": {},
+                    "8181/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "GLASSFISH_ARCHIVE=glassfish5",
+                    "DOMAIN_NAME=domain1",
+                    "INSTALL_DIR=/opt",
+                    "GLASSFISH_HOME=/opt/glassfish5/glassfish",
+                    "DEPLOYMENT_DIR=/opt/glassfish5/glassfish/domains/domain1/autodeploy"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 4848 8009 8080 8181"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:3c504bfa4ad71afa1b0ba753c884ceae8350884fa0f908d937806674f0576a20",
+                "Volumes": null,
+                "WorkingDir": "/opt/glassfish5/glassfish/bin",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "asadmin start-domain --verbose ${DOMAIN_NAME}"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "description": "Eclipse Jakarta EE Glassfish v5 release image",
+                    "license": "GPLv2",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2019-02-02T17:51:29.943555604Z",
+            "docker_version": "18.09.0",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:49.626887401Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:29f66b8b4bafd0f00567ba6acbda5157ef1e874fa0b80f59ef09f8957698eb33 in / "
+                },
+                {
+                    "created": "2017-03-15T21:49:51.771775523Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20170315",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:52.758118314Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:03:38.732140412Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Adam Bien, adam-bien.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:46.759135112Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && yum -y install java-1.8.0-openjdk-devel   && yum clean all"
+                },
+                {
+                    "created": "2017-03-20T05:04:47.290005197Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:47.72673089Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:32:20.35796634Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Adam Bien, adam-bien.com description=Eclipse Jakarta EE Glassfish v5 release image",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:32:20.691962542Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GLASSFISH_ARCHIVE=glassfish5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:32:21.045510269Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DOMAIN_NAME=domain1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:32:21.384142379Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV INSTALL_DIR=/opt",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:32:22.784737906Z",
+                    "created_by": "/bin/sh -c useradd -b /opt -m -s /bin/sh -d ${INSTALL_DIR} serveradmin && echo serveradmin:serveradmin | chpasswd"
+                },
+                {
+                    "created": "2019-02-02T17:51:27.675982091Z",
+                    "created_by": "/bin/sh -c curl -o ${INSTALL_DIR}/${GLASSFISH_ARCHIVE}.zip -L http://mirrors.xmission.com/eclipse/glassfish/glassfish-5.1.0.zip     && unzip ${INSTALL_DIR}/${GLASSFISH_ARCHIVE}.zip -d ${INSTALL_DIR}     && rm ${INSTALL_DIR}/${GLASSFISH_ARCHIVE}.zip     && chown -R serveradmin:serveradmin /opt     && chmod -R a+rw /opt"
+                },
+                {
+                    "created": "2019-02-02T17:51:28.127350418Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GLASSFISH_HOME=/opt/glassfish5/glassfish",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:51:28.457637594Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DEPLOYMENT_DIR=/opt/glassfish5/glassfish/domains/domain1/autodeploy",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:51:28.916423045Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /opt/glassfish5/glassfish/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:51:29.285933418Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/bin/sh\" \"-c\" \"asadmin start-domain --verbose ${DOMAIN_NAME}\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:51:29.614279603Z",
+                    "created_by": "/bin/sh -c #(nop)  USER serveradmin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2019-02-02T17:51:29.943555604Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 4848 8009 8080 8181",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9b198ff9ff5b314b0367bea097cfc320046b36ebfa6c9a1e2ba2a78665d58d87",
+                    "sha256:c3982f37ccb92c1434090da8749ddfa4f8604b4660a248809d1f75f579db554b",
+                    "sha256:a09afec69b88970aeb9b334b61f9f18ac099ea85e4140ba1a2e3f71bb90db4aa",
+                    "sha256:8ea1658213f580b234d5bd9f416ade074806091ea25f015b456ca92e8bc5c5e7"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "serveradmin",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "4848/tcp": {},
+                    "8009/tcp": {},
+                    "8080/tcp": {},
+                    "8181/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "GLASSFISH_ARCHIVE=glassfish5",
+                    "DOMAIN_NAME=domain1",
+                    "INSTALL_DIR=/opt",
+                    "GLASSFISH_HOME=/opt/glassfish5/glassfish",
+                    "DEPLOYMENT_DIR=/opt/glassfish5/glassfish/domains/domain1/autodeploy"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:e064e246f597b654b8b76b30a3b4f371a9e72b01dbcb43b64aaa46c67e988154",
+                "Volumes": null,
+                "WorkingDir": "/opt/glassfish5/glassfish/bin",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "asadmin start-domain --verbose ${DOMAIN_NAME}"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "description": "Glassfish v5 release image",
+                    "license": "GPLv2",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "58c46de633c2f23e6bee5c4f2aa1853ccba55e683866fd4a521e83394e81b8d8",
+            "container_config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "serveradmin",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "4848/tcp": {},
+                    "8009/tcp": {},
+                    "8080/tcp": {},
+                    "8181/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "GLASSFISH_ARCHIVE=glassfish5",
+                    "DOMAIN_NAME=domain1",
+                    "INSTALL_DIR=/opt",
+                    "GLASSFISH_HOME=/opt/glassfish5/glassfish",
+                    "DEPLOYMENT_DIR=/opt/glassfish5/glassfish/domains/domain1/autodeploy"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 4848 8009 8080 8181"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:e064e246f597b654b8b76b30a3b4f371a9e72b01dbcb43b64aaa46c67e988154",
+                "Volumes": null,
+                "WorkingDir": "/opt/glassfish5/glassfish/bin",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "asadmin start-domain --verbose ${DOMAIN_NAME}"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "description": "Glassfish v5 release image",
+                    "license": "GPLv2",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2018-02-06T15:31:33.499990028Z",
+            "docker_version": "17.12.0-ce",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:49.626887401Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:29f66b8b4bafd0f00567ba6acbda5157ef1e874fa0b80f59ef09f8957698eb33 in / "
+                },
+                {
+                    "created": "2017-03-15T21:49:51.771775523Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20170315",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:52.758118314Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:03:38.732140412Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Adam Bien, adam-bien.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:46.759135112Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && yum -y install java-1.8.0-openjdk-devel   && yum clean all"
+                },
+                {
+                    "created": "2017-03-20T05:04:47.290005197Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:47.72673089Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T03:59:55.799682974Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Adam Bien, adam-bien.com description=Glassfish v5 release image",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T03:59:56.21021507Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GLASSFISH_ARCHIVE=glassfish5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T03:59:56.648461434Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DOMAIN_NAME=domain1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-06T15:31:19.54341937Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV INSTALL_DIR=/opt",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-06T15:31:20.766586652Z",
+                    "created_by": "/bin/sh -c useradd -b /opt -m -s /bin/sh -d ${INSTALL_DIR} serveradmin && echo serveradmin:serveradmin | chpasswd"
+                },
+                {
+                    "created": "2018-02-06T15:31:31.370115166Z",
+                    "created_by": "/bin/sh -c curl -o ${INSTALL_DIR}/${GLASSFISH_ARCHIVE}.zip -L http://download.oracle.com/glassfish/5.0/release/glassfish-5.0.zip     && unzip ${INSTALL_DIR}/${GLASSFISH_ARCHIVE}.zip -d ${INSTALL_DIR}     && rm ${INSTALL_DIR}/${GLASSFISH_ARCHIVE}.zip     && chown -R serveradmin:serveradmin /opt     && chmod -R a+rw /opt"
+                },
+                {
+                    "created": "2018-02-06T15:31:31.806155331Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GLASSFISH_HOME=/opt/glassfish5/glassfish",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-06T15:31:32.155397304Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DEPLOYMENT_DIR=/opt/glassfish5/glassfish/domains/domain1/autodeploy",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-06T15:31:32.513793071Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /opt/glassfish5/glassfish/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-06T15:31:32.821997178Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/bin/sh\" \"-c\" \"asadmin start-domain --verbose ${DOMAIN_NAME}\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-06T15:31:33.181737482Z",
+                    "created_by": "/bin/sh -c #(nop)  USER serveradmin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-06T15:31:33.499990028Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 4848 8009 8080 8181",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9b198ff9ff5b314b0367bea097cfc320046b36ebfa6c9a1e2ba2a78665d58d87",
+                    "sha256:c3982f37ccb92c1434090da8749ddfa4f8604b4660a248809d1f75f579db554b",
+                    "sha256:406a07764c56a20323c42bad5c10ca3595b920432914e315b2f313bc689d71b2",
+                    "sha256:ef69c98819b23087687bf6c0108326d3f9e26b3871eb5a1c5975b02ee8db6251"
+                ]
+            }
+        },
+        "v5": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "4848/tcp": {},
+                    "8009/tcp": {},
+                    "8080/tcp": {},
+                    "8181/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "GLASSFISH_ARCHIVE=glassfish5",
+                    "DOMAIN_NAME=domain1",
+                    "INSTALL_DIR=/",
+                    "GLASSFISH_HOME=//glassfish5/glassfish",
+                    "DEPLOYMENT_DIR=//glassfish5/glassfish/domains/domain1/autodeploy"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:617c84ece4d794c7d3b89d2f65a07f918e9284c377512dae55133c62591ed33b",
+                "Volumes": null,
+                "WorkingDir": "//glassfish5/glassfish/bin",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "asadmin start-domain --verbose ${DOMAIN_NAME}"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "description": "Glassfish v5 release image",
+                    "license": "GPLv2",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "3566868555e2f674e5d404cde5d0bf4bf09eee555d903c621143816d5a851777",
+            "container_config": {
+                "Hostname": "2cd7b0a690e2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "4848/tcp": {},
+                    "8009/tcp": {},
+                    "8080/tcp": {},
+                    "8181/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "GLASSFISH_ARCHIVE=glassfish5",
+                    "DOMAIN_NAME=domain1",
+                    "INSTALL_DIR=/",
+                    "GLASSFISH_HOME=//glassfish5/glassfish",
+                    "DEPLOYMENT_DIR=//glassfish5/glassfish/domains/domain1/autodeploy"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 4848/tcp 8009/tcp 8080/tcp 8181/tcp"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:617c84ece4d794c7d3b89d2f65a07f918e9284c377512dae55133c62591ed33b",
+                "Volumes": null,
+                "WorkingDir": "/glassfish5/glassfish/bin",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "asadmin start-domain --verbose ${DOMAIN_NAME}"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20170315",
+                    "description": "Glassfish v5 release image",
+                    "license": "GPLv2",
+                    "maintainer": "Adam Bien, adam-bien.com",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2017-09-25T04:01:37.138906235Z",
+            "docker_version": "17.06.0-ce",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:49.626887401Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:29f66b8b4bafd0f00567ba6acbda5157ef1e874fa0b80f59ef09f8957698eb33 in / "
+                },
+                {
+                    "created": "2017-03-15T21:49:51.771775523Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20170315",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-15T21:49:52.758118314Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:03:38.732140412Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Adam Bien, adam-bien.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:46.759135112Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && yum -y install java-1.8.0-openjdk-devel   && yum clean all"
+                },
+                {
+                    "created": "2017-03-20T05:04:47.290005197Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T05:04:47.72673089Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T03:59:55.799682974Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=Adam Bien, adam-bien.com description=Glassfish v5 release image",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T03:59:56.21021507Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GLASSFISH_ARCHIVE=glassfish5",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T03:59:56.648461434Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DOMAIN_NAME=domain1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T03:59:57.082944747Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV INSTALL_DIR=/",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T04:01:34.990227735Z",
+                    "created_by": "/bin/sh -c curl -o ${INSTALL_DIR}/${GLASSFISH_ARCHIVE}.zip -L http://download.oracle.com/glassfish/5.0/release/glassfish-5.0.zip     && unzip ${INSTALL_DIR}/${GLASSFISH_ARCHIVE}.zip -d ${INSTALL_DIR}     && rm ${INSTALL_DIR}/${GLASSFISH_ARCHIVE}.zip"
+                },
+                {
+                    "created": "2017-09-25T04:01:35.482500852Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GLASSFISH_HOME=//glassfish5/glassfish",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T04:01:35.893025557Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV DEPLOYMENT_DIR=//glassfish5/glassfish/domains/domain1/autodeploy",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T04:01:36.302550118Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR //glassfish5/glassfish/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T04:01:36.673120603Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/bin/sh\" \"-c\" \"asadmin start-domain --verbose ${DOMAIN_NAME}\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-09-25T04:01:37.138906235Z",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 4848/tcp 8009/tcp 8080/tcp 8181/tcp",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9b198ff9ff5b314b0367bea097cfc320046b36ebfa6c9a1e2ba2a78665d58d87",
+                    "sha256:c3982f37ccb92c1434090da8749ddfa4f8604b4660a248809d1f75f579db554b",
+                    "sha256:76357fad9767dfc0a84ee484aeda5432a924deee7e6637d49995b9219b947201"
+                ]
+            }
+        }
+    }
+}

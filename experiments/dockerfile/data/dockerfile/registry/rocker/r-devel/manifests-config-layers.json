@@ -1,0 +1,199 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:46da3163d04143b1d2f86fc2ae2ad7fe4cb8027f815d123295ee1f94ef5967f0",
+                    "size": 2967,
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+                    "digest": "sha256:4267273d1e9d98f572b5c71df203a6bb93a77b29da8444f18636b423d9cae8b7",
+                    "size": 566,
+                    "annotations": {
+                        "vnd.docker.reference.digest": "sha256:46da3163d04143b1d2f86fc2ae2ad7fe4cb8027f815d123295ee1f94ef5967f0",
+                        "vnd.docker.reference.type": "attestation-manifest"
+                    },
+                    "platform": {
+                        "architecture": "unknown",
+                        "os": "unknown"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "\"Carl Boettiger and Dirk Eddelbuettel\" rocker-maintainers@eddelbuettel.com",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LC_ALL=en_US.UTF-8",
+                    "LANG=en_US.UTF-8",
+                    "R_BASE_VERSION=4.4.0",
+                    "DEBIAN_FRONTEND=noninteractive"
+                ],
+                "Cmd": [
+                    "R"
+                ],
+                "Labels": {
+                    "org.opencontainers.image.authors": "Dirk Eddelbuettel <edd@debian.org>",
+                    "org.opencontainers.image.licenses": "GPL-2.0-or-later",
+                    "org.opencontainers.image.source": "https://github.com/rocker-org/rocker",
+                    "org.opencontainers.image.vendor": "Rocker Project"
+                },
+                "ArgsEscaped": true
+            },
+            "created": "2024-05-27T02:44:14.985125801Z",
+            "history": [
+                {
+                    "created": "2023-09-20T04:57:56.445481323Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:ef0363530acdb66060536a24b4c64786db9f35d1224e1d13645c9e15a1a5a352 in / "
+                },
+                {
+                    "created": "2023-09-20T04:57:56.869766582Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-24T12:33:01.832066739-05:00",
+                    "created_by": "LABEL org.opencontainers.image.licenses=GPL-2.0-or-later org.opencontainers.image.source=https://github.com/rocker-org/rocker org.opencontainers.image.vendor=Rocker Project org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-24T12:33:01.832066739-05:00",
+                    "created_by": "RUN /bin/sh -c useradd -s /bin/bash -m docker \t&& usermod -a -G staff docker # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-04-24T12:33:14.677540799-05:00",
+                    "created_by": "RUN /bin/sh -c apt-get update \t&& apt-get install -y --no-install-recommends \t\ted \t\tless \t\tlocales \t\tvim-tiny \t\twget \t\tca-certificates \t\tfonts-texgyre \t&& rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-04-24T12:33:16.223834805-05:00",
+                    "created_by": "RUN /bin/sh -c echo \"en_US.UTF-8 UTF-8\" >> /etc/locale.gen \t&& locale-gen en_US.utf8 \t&& /usr/sbin/update-locale LANG=en_US.UTF-8 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-04-24T12:33:16.223834805-05:00",
+                    "created_by": "ENV LC_ALL=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-24T12:33:16.223834805-05:00",
+                    "created_by": "ENV LANG=en_US.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-24T12:33:16.646004511-05:00",
+                    "created_by": "RUN /bin/sh -c echo \"deb http://http.debian.net/debian sid main\" > /etc/apt/sources.list.d/debian-unstable.list         && echo 'APT::Default-Release \"testing\";' > /etc/apt/apt.conf.d/default         && echo 'APT::Install-Recommends \"false\";' > /etc/apt/apt.conf.d/90local-no-recommends # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-04-24T12:33:16.646004511-05:00",
+                    "created_by": "ENV R_BASE_VERSION=4.4.0",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-04-24T12:34:24.227798748-05:00",
+                    "created_by": "RUN /bin/sh -c apt-get update         && apt-get install -y -t unstable --no-install-recommends                 libopenblas0-pthread \t\tlittler                 r-cran-docopt                 r-cran-littler \t\tr-base=${R_BASE_VERSION}-* \t\tr-base-dev=${R_BASE_VERSION}-*                 r-base-core=${R_BASE_VERSION}-* \t\tr-recommended=${R_BASE_VERSION}-* \t&& chown root:staff \"/usr/local/lib/R/site-library\" \t&& chmod g+ws \"/usr/local/lib/R/site-library\" \t&& ln -s /usr/lib/R/site-library/littler/examples/install.r /usr/local/bin/install.r \t&& ln -s /usr/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r \t&& ln -s /usr/lib/R/site-library/littler/examples/installBioc.r /usr/local/bin/installBioc.r \t&& ln -s /usr/lib/R/site-library/littler/examples/installDeps.r /usr/local/bin/installDeps.r \t&& ln -s /usr/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r \t&& ln -s /usr/lib/R/site-library/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r \t&& rm -rf /tmp/downloaded_packages/ /tmp/*.rds \t&& rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-04-24T12:34:24.227798748-05:00",
+                    "created_by": "CMD [\"R\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-27T02:34:36.130161309Z",
+                    "created_by": "MAINTAINER \"Carl Boettiger and Dirk Eddelbuettel\" rocker-maintainers@eddelbuettel.com",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-27T02:34:36.130161309Z",
+                    "created_by": "ENV DEBIAN_FRONTEND=noninteractive",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-05-27T02:34:36.130161309Z",
+                    "created_by": "RUN /bin/sh -c apt-get update -qq # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-27T02:37:21.71605514Z",
+                    "created_by": "RUN /bin/sh -c apt-get update -qq \t&& apt-get install -t unstable -y --no-install-recommends \t\tbash-completion \t\tbison \t\tdebhelper \t\tdefault-jdk \t\tg++ \t\tgcc \t\tgdb \t\tgfortran \t\tgroff-base \t\tlibblas-dev \t\tlibbz2-dev \t\tlibcairo2-dev/unstable \t\tlibcurl4-openssl-dev \t\tlibjpeg-dev \t\tliblapack-dev \t\tliblzma-dev \t\tlibncurses-dev \t\tlibpango1.0-dev \t\tlibpcre2-dev \t\tlibpng-dev \t\tlibreadline-dev \t\tlibtiff5-dev \t\tlibx11-dev \t\tlibxt-dev \t\tmpack \t\tsubversion \t\ttcl-dev \t\ttexinfo \t\ttexlive-base \t\ttexlive-extra-utils \t\ttexlive-fonts-extra \t\ttexlive-fonts-recommended \t\ttexlive-plain-generic \t\ttexlive-latex-base \t\ttexlive-latex-extra \t\ttexlive-latex-recommended \t\ttk-dev \t\tx11proto-core-dev \t\txauth \t\txdg-utils \t\txfonts-base \t\txvfb \t\tzlib1g-dev # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-27T02:38:01.185224285Z",
+                    "created_by": "RUN /bin/sh -c cd /tmp && svn co https://svn.r-project.org/R/trunk R-devel # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-27T02:44:14.697736789Z",
+                    "created_by": "RUN /bin/sh -c cd /tmp/R-devel \t&& R_PAPERSIZE=letter \t\tR_BATCHSAVE=\"--no-save --no-restore\" \t\tR_BROWSER=xdg-open \t\tPAGER=/usr/bin/pager \t\tPERL=/usr/bin/perl \t\tR_UNZIPCMD=/usr/bin/unzip \t\tR_ZIPCMD=/usr/bin/zip \t\tR_PRINTCMD=/usr/bin/lpr \t\tLIBnn=lib \t\tAWK=/usr/bin/awk \t\tCFLAGS=$(R CMD config CFLAGS) \t\tCXXFLAGS=$(R CMD config CXXFLAGS) \t\tCXX11FLAGS=$(R CMD config CXX11FLAGS) \t\tCXX14FLAGS=$(R CMD config CXX14FLAGS) \t\tCXX17FLAGS=$(R CMD config CXX17FLAGS) \t./configure --enable-R-shlib                --without-blas                --without-lapack                --with-readline                --without-recommended-packages                --program-suffix=dev \t&& make \t&& make install \t&& rm -rf /tmp/R-devel # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-27T02:44:14.773654027Z",
+                    "created_by": "RUN /bin/sh -c echo \"R_LIBS=\\${R_LIBS-'/usr/local/lib/R/site-library:/usr/local/lib/R/library:/usr/lib/R/library'}\" >> /usr/local/lib/R/etc/Renviron # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-27T02:44:14.834489391Z",
+                    "created_by": "RUN /bin/sh -c echo 'options(repos = c(CRAN = \"https://cloud.r-project.org/\"))' >> /usr/local/lib/R/etc/Rprofile.site # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-27T02:44:14.889071089Z",
+                    "created_by": "COPY checkbashisms /usr/local/bin # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-05-27T02:44:14.985125801Z",
+                    "created_by": "RUN /bin/sh -c cd /usr/local/bin && mv R Rdevel && mv Rscript Rscriptdevel && ln -s Rdevel RD && ln -s Rscriptdevel RDscript # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:15825d671d3afd92546b589ed5c937299492a038da84eec0e6c0674fa594823e",
+                    "sha256:58333b745bb8d03be4c9ff93a47e50f5569ab7925fd5036339f5b26c5cfd25bd",
+                    "sha256:7868e7ea14cebd7f057115bed94ef907e325cd706ea585e5b9bc3ea42940514a",
+                    "sha256:c2016d4ea8f014664f67c68736f1f7c6d098c49a92f18b7ed3e4f077f87bb367",
+                    "sha256:45c736116a28d88a37d67b485683e43dc8ead81224d4505b9237d89398ff07d1",
+                    "sha256:8911ae004132b1e2cb1e3bb1ee798c99a667fa8dfd2650aa6780982dfe5dbf1c",
+                    "sha256:996a6b645888e3b108878fc039d1f16d19b05ba92f24a3cc7e6a2d938e5ea0a8",
+                    "sha256:bf914b0325515f89477fdf6ceca2ca4dce10f865c6c7f46e0d4c45a70277b268",
+                    "sha256:3a6b56302ad4b547028470665db0f99f4576409d8dee37a0cdb2f3826f735ee9",
+                    "sha256:8463171044c74e9b07538d1df26a63bd196a0dbe843cf1b6ddb2ccae07c00dda",
+                    "sha256:0e7002dfd0fe3c443614fafc29bfdaefa375631cf66fa0c97ce5c6d495d792fb",
+                    "sha256:bc07d9a0804a3de18cd0060c9647e89d347c447629b44b4d5f9ccf58f7881ad0",
+                    "sha256:b93bc32ca70d77c982215efa3d799d3cbb05a4500b14a1205652ad28f12f192b",
+                    "sha256:648fef937ce2c35128f30337249a47d7cd0d25450c71f95e35837fed47d2c50f"
+                ]
+            }
+        }
+    }
+}

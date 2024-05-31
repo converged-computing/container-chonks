@@ -1,0 +1,139 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 2845,
+                "digest": "sha256:e01c936f85caeb216d55953aab53c43870412fa9748c59d8b36518000e896003"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 30426706,
+                    "digest": "sha256:2b55860d4c667a7200a0cb279aec26777df61e5d3530388f223ce7859d566e7a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1604056681,
+                    "digest": "sha256:b6923925d8ebff303accbedd1cdce1c17a8e9c49f8e8a5b7160931a56c26999d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 42587,
+                    "digest": "sha256:128a1cdbe9b9af65c90458b2080aad72e4966898d626a48e55b98ddac165d295"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "CC=mpicc",
+                    "CXX=mpicxx",
+                    "FC=mpifort"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Image": "sha256:fb7ad3168733a4177a3452b35c5f2cf5d60ccbc9aaa5beeefbb514055466d952",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "4ee041e61907cb626c42303ef7fee5f2f7056d0d76ab6486d5b8afd4dc53ed4f",
+            "container_config": {
+                "Hostname": "4ee041e61907",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "CC=mpicc",
+                    "CXX=mpicxx",
+                    "FC=mpifort"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "ENV FC=mpifort"
+                ],
+                "Image": "sha256:fb7ad3168733a4177a3452b35c5f2cf5d60ccbc9aaa5beeefbb514055466d952",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2022-09-15T16:19:01.827793609Z",
+            "docker_version": "20.10.12",
+            "history": [
+                {
+                    "created": "2022-09-01T23:46:35.026691064Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a7268f82a86219801950401c224cabbdd83ef510a7c71396b25f70c2639ae4fa in / "
+                },
+                {
+                    "created": "2022-09-01T23:46:35.375057619Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-09-15T16:18:56.260733716Z",
+                    "created_by": "/bin/sh -c apt-get update &&   DEBIAN_FRONTEND='noninteractive'   DEBCONF_NONINTERACTIVE_SEEN='true'   apt-get install --yes     g++     gfortran     git     intel-mkl     libopenmpi-dev     make     nano     wget     python3-pip     sphinx-common     texlive-base     texlive-latex-base     texlive-latex-recommended     texlive-latex-extra     lmodern     makedepf90     latexmk     pandoc     python3-numpy     python3-scipy     python3-funcsigs     python3-sphinxcontrib.bibtex     python3-sphinx-book-theme     python3-recommonmark     python3-nbsphinx     python3-vtk7     jupyter     && apt-get clean && rm -r /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2022-09-15T16:19:01.504596989Z",
+                    "created_by": "/bin/sh -c pip3 install nbstripout"
+                },
+                {
+                    "created": "2022-09-15T16:19:01.609480045Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV CC=mpicc",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-09-15T16:19:01.726455994Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV CXX=mpicxx",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2022-09-15T16:19:01.827793609Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV FC=mpifort",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:7f5cbd8cc787c8d628630756bcc7240e6c96b876c2882e6fc980a8b60cdfa274",
+                    "sha256:c6c94fe63640ec8cb6f63ba3bac4550b7c9d6a5d4f80c119f442d6cb93897864",
+                    "sha256:031ae207ffecfae3c6593b8b6c7a983eafad7d138680589ba8016758138e12de"
+                ]
+            }
+        }
+    }
+}

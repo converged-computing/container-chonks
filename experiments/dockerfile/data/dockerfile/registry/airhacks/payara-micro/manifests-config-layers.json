@@ -1,0 +1,237 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5624,
+                "digest": "sha256:5935105da7a77c1dd94025e37c2d612c6fd26ba6d49746b79dc60551782e34d3"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70481699,
+                    "digest": "sha256:08d48e6f1cff259389732d35307bb877215fa28867cdaff50c1dbd6e0b993c1f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70017745,
+                    "digest": "sha256:b61cb56227eed44a1214bf22473ea60bc1d885c6642ef00c1e76485ffe5d3c75"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 54342742,
+                    "digest": "sha256:77dc9359af24289aa5fc31c27a399ac5044751c6ffec7f1d0fe61c2c2cf75867"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Adam Bien, adam-bien.com",
+            "config": {
+                "Hostname": "d6dcf178f680",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "5900/tcp": {},
+                    "8080/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "PAYARA_ARCHIVE=payaramicro41",
+                    "INSTALL_DIR=/opt",
+                    "PAYARA_HOME=/opt",
+                    "DEPLOYMENT_DIR=/opt"
+                ],
+                "Cmd": null,
+                "ArgsEscaped": true,
+                "Image": "sha256:a5af7429798fabd68c445a59f636b359072bda29a10cc5a543ce926871617f82",
+                "Volumes": null,
+                "WorkingDir": "/opt",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "java -jar ${PAYARA_ARCHIVE}.jar --deploy ${ARCHIVE_NAME}"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20161102",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "cea175931030352f0c51c6be43f9781dd5fcd11663fc415de599a82fde2b463a",
+            "container_config": {
+                "Hostname": "d6dcf178f680",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "5900/tcp": {},
+                    "8080/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "PAYARA_ARCHIVE=payaramicro41",
+                    "INSTALL_DIR=/opt",
+                    "PAYARA_HOME=/opt",
+                    "DEPLOYMENT_DIR=/opt"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "EXPOSE 5900/tcp 8080/tcp"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:a5af7429798fabd68c445a59f636b359072bda29a10cc5a543ce926871617f82",
+                "Volumes": null,
+                "WorkingDir": "/opt",
+                "Entrypoint": [
+                    "/bin/sh",
+                    "-c",
+                    "java -jar ${PAYARA_ARCHIVE}.jar --deploy ${ARCHIVE_NAME}"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "20161102",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2016-12-03T16:43:22.451076061Z",
+            "docker_version": "1.12.3",
+            "history": [
+                {
+                    "created": "2016-08-30T18:18:45.109943798Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER https://github.com/CentOS/sig-cloud-instance-images",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-11-02T19:52:05.364657474Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop) ADD file:54df3580ac9fb66389b09230a74115a49ace2d193603bce0b5786dcb2957eb52 in / "
+                },
+                {
+                    "created": "2016-11-02T19:52:08.624010471Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=20161102",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-11-02T19:52:09.463959047Z",
+                    "author": "https://github.com/CentOS/sig-cloud-instance-images",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T15:30:15.318782177Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Adam Bien, adam-bien.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:27:30.151496942Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c yum update -y   && yum -y install unzip   && yum -y install java-1.8.0-openjdk-devel   && yum clean all"
+                },
+                {
+                    "created": "2016-12-03T16:27:30.57958002Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:27:30.872746821Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin://usr/lib/jvm/java-1.8.0/bin:.:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:36:54.261939019Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Adam Bien, adam-bien.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:39:13.86112117Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV PAYARA_ARCHIVE=payaramicro41",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:39:14.180073467Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV INSTALL_DIR=/opt",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:43:20.77235665Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c curl -o ${INSTALL_DIR}/${PAYARA_ARCHIVE}.jar -L \"http://info.payara.fish/cs/c/?cta_guid=21e00628-5d9e-400a-9805-1fc99fe0de87&placement_guid=0c1037e0-adaf-4401-b888-05088602db6a&portal_id=334594&redirect_url=APefjpFVsQB_htu3NVKna4zRjs_tCLoARwgBizSGCLsVswTfkZOF31FUJjd72xy37zAEH_s6iGa44DKv_MGBdW13uPEDWWEbDt9E8smFH24YTNNbBsGIGWM\""
+                },
+                {
+                    "created": "2016-12-03T16:43:21.090026573Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV PAYARA_HOME=/opt",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:43:21.422107665Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENV DEPLOYMENT_DIR=/opt",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:43:21.779334652Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/bin/sh\" \"-c\" \"java -jar ${PAYARA_ARCHIVE}.jar --deploy ${ARCHIVE_NAME}\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:43:22.101354368Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  WORKDIR /opt",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-03T16:43:22.451076061Z",
+                    "author": "Adam Bien, adam-bien.com",
+                    "created_by": "/bin/sh -c #(nop)  EXPOSE 5900/tcp 8080/tcp",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:97ca462ad9eeae25941546209454496e1d66749d53dfa2ee32bf1faabd239d38",
+                    "sha256:95e349106369e39f3cff9b710079e17172aba37673c0ad76b3794b9b7fb85814",
+                    "sha256:8ea586f8f134621df3b845b422995d1f111384f230ca68d190b8876600f3a3f3"
+                ]
+            }
+        }
+    }
+}

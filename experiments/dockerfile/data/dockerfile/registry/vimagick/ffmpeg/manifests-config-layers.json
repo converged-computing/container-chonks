@@ -1,0 +1,102 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 1538,
+                "digest": "sha256:1036f49345f0995417a66a5ae4071b327d6f398fb70573c4cee2b996752258c7"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2811478,
+                    "digest": "sha256:5843afab387455b37944e709ee8c78d7520df80f8d01cf7f861aae63beeddb6b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27075072,
+                    "digest": "sha256:9471313793eea660bf3b71662e41d6f98f2e660d50fcf2f7e75fdfd236c6d7bd"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 93,
+                    "digest": "sha256:625473f1850d95be0575e7b9611853b9f659dc13046f125fe6b311cba32a250b"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "kev <noreply@easypi.pro>",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Entrypoint": [
+                    "ffmpeg"
+                ],
+                "Cmd": [
+                    "--help"
+                ],
+                "WorkingDir": "/data",
+                "ArgsEscaped": true,
+                "OnBuild": null
+            },
+            "created": "2021-07-23T04:01:25.95706709Z",
+            "history": [
+                {
+                    "created": "2021-06-15T22:19:37.639998211Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:f278386b0cef68136129f5f58c52445590a417b624d62bca158d4dc926c340df in / "
+                },
+                {
+                    "created": "2021-06-15T22:19:37.842991933Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-23T04:01:25.864046352Z",
+                    "created_by": "MAINTAINER kev <noreply@easypi.pro>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-23T04:01:25.864046352Z",
+                    "created_by": "RUN /bin/sh -c apk add --no-cache ffmpeg # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-07-23T04:01:25.95706709Z",
+                    "created_by": "WORKDIR /data",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-07-23T04:01:25.95706709Z",
+                    "created_by": "ENTRYPOINT [\"ffmpeg\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-23T04:01:25.95706709Z",
+                    "created_by": "CMD [\"--help\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:72e830a4dff5f0d5225cdc0a320e85ab1ce06ea5673acfe8d83a7645cbd0e9cf",
+                    "sha256:715e212e5a69f9c42099cdded10682a155b4db8557e3cd18aad29408d229ecb6",
+                    "sha256:6a10ac32b5b970f21baf0901d8ab5face858ff414ac3f0234d7ddf4b53d88d6f"
+                ]
+            }
+        }
+    }
+}

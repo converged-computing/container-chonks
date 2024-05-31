@@ -1,0 +1,251 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 8422,
+                "digest": "sha256:bb6780c39bc10cdf8bee2a2e3714810b1628ed83a9b31fd02c9fd69baa0357a6"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 72952953,
+                    "digest": "sha256:4bfd8b0407d831889d811ac77709b016502d08a149125627b355131736938443"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 72649,
+                    "digest": "sha256:297a41e14c2c924987335a27ac545d57692f4eaf2a0596eacf3cfaa640d784bc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 629,
+                    "digest": "sha256:5657161ee3be014568c559bf030a9aa013391a8deb1e4155d80772753635793e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 851,
+                    "digest": "sha256:43cd7e91e62633232a56e3bdd23c3c54befcdfb36f62f85d72ec0df81e09e269"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 164,
+                    "digest": "sha256:de0d829aaaafc0045265ed3c7586cb6510e9e7126e4f52fda3c4e248bcc8d2a8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 139097286,
+                    "digest": "sha256:b136ab2ac73f258dcd3f5a59f942dcdce62b847873d8d5055a185dd9d3959ea4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2146554,
+                    "digest": "sha256:56138fe2bd9eee6a52c74967e17c3f7b1fff21cf57e7c3bbd40043b35801de68"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 33970802,
+                    "digest": "sha256:aa931f03aa8cf650f74528238fc60132e1637c80beef8543a44e99432c925df5"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 223559530,
+                    "digest": "sha256:10a4fb767b755183e4b96788907fa61f7d94613b01029716bd0e1a6099b8eabb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 747997,
+                    "digest": "sha256:1cd12674a35cc66c9842155370f3e57ecd0bdbf252654074b08d080499e72088"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Kai Arulkumaran <design@kaixhin.com>",
+            "config": {
+                "Hostname": "12fcefa6bc10",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/root/torch/install/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_PATH=/root/.luarocks/share/lua/5.1/?.lua;/root/.luarocks/share/lua/5.1/?/init.lua;/root/torch/install/share/lua/5.1/?.lua;/root/torch/install/share/lua/5.1/?/init.lua;./?.lua;/root/torch/install/share/luajit-2.1.0-beta1/?.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua",
+                    "LUA_CPATH=/root/torch/install/lib/?.so;/root/.luarocks/lib/lua/5.1/?.so;/root/torch/install/lib/lua/5.1/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so",
+                    "LD_LIBRARY_PATH=/root/torch/install/lib:",
+                    "DYLD_LIBRARY_PATH=/root/torch/install/lib:"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:82f55cd743b69171ea7ee14388cb61c313d7279e3f1c3d9324a46f388fd14913",
+                "Volumes": null,
+                "WorkingDir": "/root/torch",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "26258ea199351c4e80643ae02756716494e3ba76c7e73922dfc144819feab87f",
+            "container_config": {
+                "Hostname": "12fcefa6bc10",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/root/torch/install/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LUA_PATH=/root/.luarocks/share/lua/5.1/?.lua;/root/.luarocks/share/lua/5.1/?/init.lua;/root/torch/install/share/lua/5.1/?.lua;/root/torch/install/share/lua/5.1/?/init.lua;./?.lua;/root/torch/install/share/luajit-2.1.0-beta1/?.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua",
+                    "LUA_CPATH=/root/torch/install/lib/?.so;/root/.luarocks/lib/lua/5.1/?.so;/root/torch/install/lib/lua/5.1/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so",
+                    "LD_LIBRARY_PATH=/root/torch/install/lib:",
+                    "DYLD_LIBRARY_PATH=/root/torch/install/lib:"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) WORKDIR /root/torch"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:82f55cd743b69171ea7ee14388cb61c313d7279e3f1c3d9324a46f388fd14913",
+                "Volumes": null,
+                "WorkingDir": "/root/torch",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2018-02-16T02:20:30.345454822Z",
+            "docker_version": "17.05.0-ce",
+            "history": [
+                {
+                    "created": "2018-01-25T18:22:16.12695465Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:636a7d1b374fb6ccd672a92e56b1e811652a0bf56d64a2d08282850110db548f in / "
+                },
+                {
+                    "created": "2018-01-25T18:22:22.623825913Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-01-25T18:22:23.367192156Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-01-25T18:22:34.168026651Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2018-01-25T18:22:34.94003877Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-01-25T18:22:45.064079163Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-16T02:03:32.824986037Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Kai Arulkumaran <design@kaixhin.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-16T02:05:43.971877089Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y   git   software-properties-common   libssl-dev   libzmq3-dev   python-dev   python-pip   python-zmq   sudo"
+                },
+                {
+                    "created": "2018-02-16T02:05:46.680489313Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c pip install --upgrade pip"
+                },
+                {
+                    "created": "2018-02-16T02:06:01.111203143Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c pip install jupyter"
+                },
+                {
+                    "created": "2018-02-16T02:20:16.938687695Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c git clone https://github.com/torch/distro.git /root/torch --recursive && cd /root/torch &&   bash install-deps &&   ./install.sh"
+                },
+                {
+                    "created": "2018-02-16T02:20:18.12556739Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LUA_PATH=/root/.luarocks/share/lua/5.1/?.lua;/root/.luarocks/share/lua/5.1/?/init.lua;/root/torch/install/share/lua/5.1/?.lua;/root/torch/install/share/lua/5.1/?/init.lua;./?.lua;/root/torch/install/share/luajit-2.1.0-beta1/?.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-16T02:20:18.747185056Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LUA_CPATH=/root/.luarocks/lib/lua/5.1/?.so;/root/torch/install/lib/lua/5.1/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-16T02:20:19.404812518Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/root/torch/install/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-16T02:20:20.05519254Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/root/torch/install/lib:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-16T02:20:20.665534106Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV DYLD_LIBRARY_PATH=/root/torch/install/lib:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-16T02:20:21.287346033Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LUA_CPATH=/root/torch/install/lib/?.so;/root/.luarocks/lib/lua/5.1/?.so;/root/torch/install/lib/lua/5.1/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-16T02:20:29.672594196Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c luarocks install itorch"
+                },
+                {
+                    "created": "2018-02-16T02:20:30.345454822Z",
+                    "author": "Kai Arulkumaran <design@kaixhin.com>",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /root/torch",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:c41b9462ea4bbc2f578e42bd915214d54948d960b9b8c6815daf8586811c2d38",
+                    "sha256:e6e107f1da2fa8ef4a4be90a98f66d54c169027c784ba8f8810c3475e5359933",
+                    "sha256:827cd1db9e95b0593b1d4ab6c85c243fd656b3940d6a4e9f1e84097dcd1311ba",
+                    "sha256:630730f8c75d96aee600adf28fabffd0e0bc91519d0d791ba783e60a3f4dc317",
+                    "sha256:31df331e1f230813836127b53590d5b810a321e6020833c71b1b82e3e28fbdcd",
+                    "sha256:6a92f55c391093b90de4eee4a21bab58ab61327517af5c9cc61d14a83f719573",
+                    "sha256:5694d271e0f9a0f932a3172db1c3f370d1b2f213ba864b218e6d091dd863be67",
+                    "sha256:4e702e4e7db9c517a6187ae0a11036e4c7753fbb43133d471290faa343efd979",
+                    "sha256:f7e498d352b0c0ae386b7dc06d3f91e27c6657a955e97f866ef4d0141faacfb4",
+                    "sha256:bec06d08c88b5090e4e62e9b9fd2412bfb68ae1b853fa92e929b628add465770"
+                ]
+            }
+        }
+    }
+}

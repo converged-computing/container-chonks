@@ -1,0 +1,370 @@
+{
+    "manifests": {
+        "2.0.0": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5594,
+                "digest": "sha256:340e0ffceef6aaf91ea1d3eeb23216d44c235ba8151222a24a04b489006e7e27"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2312958,
+                    "digest": "sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4473158,
+                    "digest": "sha256:281a37384518d8c799937d9dafe7d898e96441c477e1710c53dbe078292596e6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 916,
+                    "digest": "sha256:eb02010cadc3a8984b04e05b0f74caeab438aa8191e94ec1a3b3ddd74d7e7d4f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 242,
+                    "digest": "sha256:b62251e19a406dfb4c8e3f7a7033b09c011aa985db1346b1a4c75317f221bc6a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 49326359,
+                    "digest": "sha256:6f57583c659ac18685e0472721fe50a5ac59c8e3dd582efd55440c5a3f0f972f"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 5594,
+                "digest": "sha256:632841e5c1fd53ac79d7c782bce87fcb8949ed4e356adcba48ca50aa988becd6"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2312958,
+                    "digest": "sha256:3690ec4760f95690944da86dc4496148a63d85c9e3100669a318110092f6862f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4473158,
+                    "digest": "sha256:281a37384518d8c799937d9dafe7d898e96441c477e1710c53dbe078292596e6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 916,
+                    "digest": "sha256:eb02010cadc3a8984b04e05b0f74caeab438aa8191e94ec1a3b3ddd74d7e7d4f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 242,
+                    "digest": "sha256:5e898892439fceeed8a20dca8f1c73613348d3424b29d3336e46b1d8bf1f4e2c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 49326357,
+                    "digest": "sha256:5ab1bcdbeb39bf24b577924668ec8908da00c18dd26d5902ef80248570f05e5e"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "2.0.0",
+        "latest"
+    ],
+    "configs": {
+        "2.0.0": {
+            "architecture": "amd64",
+            "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+            "config": {
+                "Hostname": "1d811a9194c4",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin",
+                    "S6_OVERLAY_VERSION=v1.18.1.5",
+                    "GODNSMASQ_VERSION=1.0.7",
+                    "LANG=C.UTF-8",
+                    "JAVA_VERSION=8u92",
+                    "JAVA_ALPINE_VERSION=8.111.14-r0",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk"
+                ],
+                "Cmd": [],
+                "ArgsEscaped": true,
+                "Image": "sha256:fcb174d83faab56eb582003cfa659c614da8184e3af178b5b0de9d465015b909",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/init"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "cd9b9d0c7fcbad012cdc6015b68c5e761612defeb6f6e7536cbf14119db63a43",
+            "container_config": {
+                "Hostname": "1d811a9194c4",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin",
+                    "S6_OVERLAY_VERSION=v1.18.1.5",
+                    "GODNSMASQ_VERSION=1.0.7",
+                    "LANG=C.UTF-8",
+                    "JAVA_VERSION=8u92",
+                    "JAVA_ALPINE_VERSION=8.111.14-r0",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "set -x     apk upgrade --update &&     apk add --no-cache openjdk8=\"$JAVA_ALPINE_VERSION\" &&     [ \"$JAVA_HOME\" = \"$(docker-java-home)\" ]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:fcb174d83faab56eb582003cfa659c614da8184e3af178b5b0de9d465015b909",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/init"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-03-09T22:11:11.669577368Z",
+            "docker_version": "1.12.6-cs6",
+            "history": [
+                {
+                    "created": "2016-10-18T20:31:22.321427771Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / "
+                },
+                {
+                    "created": "2016-10-21T00:44:00.428203033Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-21T00:44:00.598926902Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  ENV S6_OVERLAY_VERSION=v1.18.1.5 GODNSMASQ_VERSION=1.0.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-21T00:44:03.173092188Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c apk add --update --no-cache bind-tools curl &&     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz     | tar xfz - -C / &&     curl -sSL https://github.com/janeczku/go-dnsmasq/releases/download/${GODNSMASQ_VERSION}/go-dnsmasq-min_linux-amd64 -o /bin/go-dnsmasq &&     chmod +x /bin/go-dnsmasq &&     apk del curl &&     addgroup go-dnsmasq &&     adduser -D -g \"\" -s /bin/sh -G go-dnsmasq go-dnsmasq &&     setcap CAP_NET_BIND_SERVICE=+eip /bin/go-dnsmasq"
+                },
+                {
+                    "created": "2016-10-21T00:44:03.413540789Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:e29c2993109ef3cdf12ad066bc436c60009d37b7d80b57bdfa323830160525cd in / "
+                },
+                {
+                    "created": "2016-10-21T00:44:03.61119985Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/init\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-21T00:44:03.852443545Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  CMD []",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-09T22:10:53.687969846Z",
+                    "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-09T22:10:54.126801566Z",
+                    "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8 JAVA_VERSION=8u92 JAVA_ALPINE_VERSION=8.111.14-r0 JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-09T22:10:55.440903664Z",
+                    "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c {         echo '#!/bin/sh';         echo 'set -e';         echo;         echo 'dirname \"$(dirname \"$(readlink -f \"$(which javac || which java)\")\")\"';     } > /usr/local/bin/docker-java-home &&     chmod +x /usr/local/bin/docker-java-home"
+                },
+                {
+                    "created": "2017-03-09T22:11:11.669577368Z",
+                    "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c set -x     apk upgrade --update &&     apk add --no-cache openjdk8=\"$JAVA_ALPINE_VERSION\" &&     [ \"$JAVA_HOME\" = \"$(docker-java-home)\" ]"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:011b303988d241a4ae28a6b82b0d8262751ef02910f0ae2265cb637504b72e36",
+                    "sha256:18fca187ae788bcd6e3e4f7c8fc15b1e2e86143ea6b7d518076720ac60d27612",
+                    "sha256:05184864e9fe5d3cc5894c0a6c82cd116d3506350fa89c00f9253d71e082d842",
+                    "sha256:b739ccd6fa122c224b130308239ad346e664ff5849fbe5d757f2c697d680851f",
+                    "sha256:7488d60c1cfce91f45b98630489cfeb649cb6710863b18ca3731c590da17084e"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+            "config": {
+                "Hostname": "1d811a9194c4",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin",
+                    "S6_OVERLAY_VERSION=v1.18.1.5",
+                    "GODNSMASQ_VERSION=1.0.7",
+                    "LANG=C.UTF-8",
+                    "JAVA_VERSION=8u92",
+                    "JAVA_ALPINE_VERSION=8.111.14-r0",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk"
+                ],
+                "Cmd": [],
+                "ArgsEscaped": true,
+                "Image": "sha256:39acece8f08829dfda47fa635446cf0ab908821f529206d80a37b97d8d9b7ef8",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/init"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "498472dd7500d7091a96a295e11d8466e873b614fa1c4a029610237015f9a34d",
+            "container_config": {
+                "Hostname": "1d811a9194c4",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin",
+                    "S6_OVERLAY_VERSION=v1.18.1.5",
+                    "GODNSMASQ_VERSION=1.0.7",
+                    "LANG=C.UTF-8",
+                    "JAVA_VERSION=8u92",
+                    "JAVA_ALPINE_VERSION=8.111.14-r0",
+                    "JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "set -x     apk upgrade --update &&     apk add --no-cache openjdk8=\"$JAVA_ALPINE_VERSION\" &&     [ \"$JAVA_HOME\" = \"$(docker-java-home)\" ]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:39acece8f08829dfda47fa635446cf0ab908821f529206d80a37b97d8d9b7ef8",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/init"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-03-20T06:31:16.312382442Z",
+            "docker_version": "1.12.6-cs6",
+            "history": [
+                {
+                    "created": "2016-10-18T20:31:22.321427771Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:7afbc23fda8b0b3872623c16af8e3490b2cee951aed14b3794389c2f946cc8c7 in / "
+                },
+                {
+                    "created": "2016-10-21T00:44:00.428203033Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-21T00:44:00.598926902Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  ENV S6_OVERLAY_VERSION=v1.18.1.5 GODNSMASQ_VERSION=1.0.7",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-21T00:44:03.173092188Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c apk add --update --no-cache bind-tools curl &&     curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz     | tar xfz - -C / &&     curl -sSL https://github.com/janeczku/go-dnsmasq/releases/download/${GODNSMASQ_VERSION}/go-dnsmasq-min_linux-amd64 -o /bin/go-dnsmasq &&     chmod +x /bin/go-dnsmasq &&     apk del curl &&     addgroup go-dnsmasq &&     adduser -D -g \"\" -s /bin/sh -G go-dnsmasq go-dnsmasq &&     setcap CAP_NET_BIND_SERVICE=+eip /bin/go-dnsmasq"
+                },
+                {
+                    "created": "2016-10-21T00:44:03.413540789Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop) ADD dir:e29c2993109ef3cdf12ad066bc436c60009d37b7d80b57bdfa323830160525cd in / "
+                },
+                {
+                    "created": "2016-10-21T00:44:03.61119985Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/init\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-10-21T00:44:03.852443545Z",
+                    "author": "Scott Mebberson (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  CMD []",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T06:31:06.870757065Z",
+                    "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T06:31:07.073587532Z",
+                    "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8 JAVA_VERSION=8u92 JAVA_ALPINE_VERSION=8.111.14-r0 JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/java-1.8-openjdk/jre/bin:/usr/lib/jvm/java-1.8-openjdk/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-20T06:31:07.567557086Z",
+                    "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c {         echo '#!/bin/sh';         echo 'set -e';         echo;         echo 'dirname \"$(dirname \"$(readlink -f \"$(which javac || which java)\")\")\"';     } > /usr/local/bin/docker-java-home &&     chmod +x /usr/local/bin/docker-java-home"
+                },
+                {
+                    "created": "2017-03-20T06:31:16.312382442Z",
+                    "author": "G. Richard Bellamy (https://github.com/smebberson/docker-alpine)",
+                    "created_by": "/bin/sh -c set -x     apk upgrade --update &&     apk add --no-cache openjdk8=\"$JAVA_ALPINE_VERSION\" &&     [ \"$JAVA_HOME\" = \"$(docker-java-home)\" ]"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:011b303988d241a4ae28a6b82b0d8262751ef02910f0ae2265cb637504b72e36",
+                    "sha256:18fca187ae788bcd6e3e4f7c8fc15b1e2e86143ea6b7d518076720ac60d27612",
+                    "sha256:05184864e9fe5d3cc5894c0a6c82cd116d3506350fa89c00f9253d71e082d842",
+                    "sha256:e33a1bd38b41a907a0d010a4b06b675deda838420d98c37098d22cabc627ae96",
+                    "sha256:2ccf1b0b4764286633e68a82d851f808d51d0926909b8bd11f5d136b8bc83ed2"
+                ]
+            }
+        }
+    }
+}

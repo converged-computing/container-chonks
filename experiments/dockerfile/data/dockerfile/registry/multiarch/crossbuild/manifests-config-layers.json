@@ -1,0 +1,807 @@
+{
+    "manifests": {
+        "add-travis": {
+            "schemaVersion": 1,
+            "name": "multiarch/crossbuild",
+            "tag": "add-travis",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:73e761efd2a6330f2368895b83885ddae51c43edfa1fa2c9fd2d5b020ac8e8f2"
+                },
+                {
+                    "blobSum": "sha256:0c4ba48f3e3ba2506684e6a32e6c5cc5abe2447e81c7762c4339bb4af25fc963"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:fd940513a38d80ae353e5a64862176f561a339f8bac736260d0dbd8869ecc62c"
+                },
+                {
+                    "blobSum": "sha256:e2435b9f8ac8632866aced3e3b71e3a8b005912e20e0a2acaedfcc3f42014e66"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:8e92c8a59e3ccc16c4232253e20887d1ac81552a0e53b63d4875cbc69a7593c2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:73a27ec14d45446e7a06fac1cad1393bfee33fbd9e4095ba12fc3d7a121919e0"
+                },
+                {
+                    "blobSum": "sha256:dffefbf55dbc7565002218d3c326fe32f013f912838b00b792be23156ab719de"
+                },
+                {
+                    "blobSum": "sha256:adad2727fa93664ff6eefc06e965ee2037fce5d448dc2055113fee47bd5acef2"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Manfred Touron \\u003cm@42.am\\u003e (https://github.com/moul)\",\"config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"OSXCROSS_REVISION=a845375e028d29b447439b0c65dea4a9b4d2b2f6\",\"DARWIN_SDK_VERSION=10.10\",\"DARWIN_VERSION=14\",\"LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu\",\"DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14\",\"WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32\",\"CROSS_TRIPLE=x86_64-linux-gnu\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5f680a00e99d68f25cf91ac5ac0046e064724d519425122b43dd3cc1f2c7cc6f\",\"Volumes\":null,\"WorkingDir\":\"/workdir\",\"Entrypoint\":[\"/usr/bin/crossbuild\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"f13cffd204a62c4fa6f3fea009659a0374379f554bbf2510ce584244787d7a72\",\"container_config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"OSXCROSS_REVISION=a845375e028d29b447439b0c65dea4a9b4d2b2f6\",\"DARWIN_SDK_VERSION=10.10\",\"DARWIN_VERSION=14\",\"LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu\",\"DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14\",\"WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32\",\"CROSS_TRIPLE=x86_64-linux-gnu\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) COPY file:dedc546c3b01f6e38e0a78809a3fbe6f931f6464747126fdca0c363296971cf9 in /usr/bin/crossbuild\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5f680a00e99d68f25cf91ac5ac0046e064724d519425122b43dd3cc1f2c7cc6f\",\"Volumes\":null,\"WorkingDir\":\"/workdir\",\"Entrypoint\":[\"/usr/bin/crossbuild\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-03-04T12:52:33.429773392Z\",\"docker_version\":\"1.10.2\",\"id\":\"05f8ac3c8f7d54b056c74733d3a537379335cb04bf8f44971808323827f55f7c\",\"os\":\"linux\",\"parent\":\"cac95a07e335981fc5a63d4aea10682d214eba4dbba09b8017e34370a3ea51ff\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"cac95a07e335981fc5a63d4aea10682d214eba4dbba09b8017e34370a3ea51ff\",\"parent\":\"18ab79a5fa4b5648f747513ca10132d7f16863730bc15a137c54ed59d2d6bbad\",\"created\":\"2016-03-04T12:52:33.182408147Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /workdir\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"18ab79a5fa4b5648f747513ca10132d7f16863730bc15a137c54ed59d2d6bbad\",\"parent\":\"d6315f93ffa778e892523875bf7f1a3476b0ffe0482a9c66054795c34b55ffcb\",\"created\":\"2016-03-04T12:52:33.077370509Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d6315f93ffa778e892523875bf7f1a3476b0ffe0482a9c66054795c34b55ffcb\",\"parent\":\"7c5b75ff98f8b9ba10a30d3584ba13d7885f125539543c75748b70e4a9732d45\",\"created\":\"2016-03-04T12:52:32.964426934Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT \\u0026{[\\\"/usr/bin/crossbuild\\\"]}\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7c5b75ff98f8b9ba10a30d3584ba13d7885f125539543c75748b70e4a9732d45\",\"parent\":\"b6254693dc9d324c38d018e59eb5d096bcc1009d0751d218ba62815eb8501ab9\",\"created\":\"2016-03-04T12:52:32.798395218Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c for triple in $(echo ${LINUX_TRIPLES} | tr \\\",\\\" \\\" \\\"); do                                             for bin in /etc/alternatives/$triple-* /usr/bin/$triple-*; do                                       if [ ! -f /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\") ]; then                            ln -s $bin /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\");                              fi;                                                                                             done;                                                                                           done \\u0026\\u0026                                                                                           for triple in $(echo ${DARWIN_TRIPLES} | tr \\\",\\\" \\\" \\\"); do                                            mkdir -p /usr/$triple/bin;                                                                        for bin in /usr/osxcross/bin/$triple-*; do                                                          ln /usr/bin/osxcross-wrapper /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\");            done \\u0026\\u0026                                                                                           rm -f /usr/$triple/bin/clang*;                                                                    ln -s cc /usr/$triple/bin/gcc;                                                                    ln -s /usr/osxcross/SDK/MacOSX${DARWIN_SDK_VERSION}.sdk/usr /usr/x86_64-linux-gnu/$triple;      done;                                                                                             for triple in $(echo ${WINDOWS_TRIPLES} | tr \\\",\\\" \\\" \\\"); do                                           mkdir -p /usr/$triple/bin;                                                                        for bin in /etc/alternatives/$triple-* /usr/bin/$triple-*; do                                       if [ ! -f /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\") ]; then                            ln -s $bin /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\");                              fi;                                                                                             done;                                                                                             ln -s gcc /usr/$triple/bin/cc;                                                                    ln -s /usr/$triple /usr/x86_64-linux-gnu/$triple;                                               done\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b6254693dc9d324c38d018e59eb5d096bcc1009d0751d218ba62815eb8501ab9\",\"parent\":\"5ab2f427a9482cd4fc38e62d543f5f4c165121e87fa41dc95e820958d373e5d6\",\"created\":\"2016-03-04T12:52:28.038429244Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:a943fbc76cf85b32a1634b2373f33b279bdad05f0df81de64fafa2d7dc2febd1 in /usr/bin/osxcross-wrapper\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"5ab2f427a9482cd4fc38e62d543f5f4c165121e87fa41dc95e820958d373e5d6\",\"parent\":\"1827e19f52c782d9b4cdc674462e38d8aa4f805ee58ee99ff2d2ea4083bf2980\",\"created\":\"2016-03-04T12:52:27.793109094Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14 WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32 CROSS_TRIPLE=x86_64-linux-gnu\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1827e19f52c782d9b4cdc674462e38d8aa4f805ee58ee99ff2d2ea4083bf2980\",\"parent\":\"6da43b001b25691ece15e62ccea54b3be68c0ae337e6d2e67e2548f5a576c331\",\"created\":\"2016-03-04T12:52:26.056097172Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p \\\"/tmp/osxcross\\\"                                                                                    \\u0026\\u0026 cd \\\"/tmp/osxcross\\\"                                                                                          \\u0026\\u0026 curl -sLo osxcross.tar.gz \\\"https://codeload.github.com/tpoechtrager/osxcross/tar.gz/${OSXCROSS_REVISION}\\\"   \\u0026\\u0026 tar --strip=1 -xzf osxcross.tar.gz                                                                          \\u0026\\u0026 rm -f osxcross.tar.gz                                                                                       \\u0026\\u0026 curl -sLo tarballs/MacOSX${DARWIN_SDK_VERSION}.sdk.tar.xz                                                          \\\"https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX${DARWIN_SDK_VERSION}.sdk.tar.xz\\\"                      \\u0026\\u0026 yes \\\"\\\" | SDK_VERSION=\\\"${DARWIN_SDK_VERSION}\\\" OSX_VERSION_MIN=10.6 ./build.sh                                \\u0026\\u0026 mv target /usr/osxcross                                                                                     \\u0026\\u0026 rm -rf /tmp/osxcross                                                                                        \\u0026\\u0026 rm -rf /usr/osxcross/SDK/MacOSX10.10.sdk/usr/share/man\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"6da43b001b25691ece15e62ccea54b3be68c0ae337e6d2e67e2548f5a576c331\",\"parent\":\"fc6d37ccedbe004e18598d16885b95248fb984d3e554e03c11c21affe88533c9\",\"created\":\"2016-03-04T12:46:00.332170373Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV OSXCROSS_REVISION=a845375e028d29b447439b0c65dea4a9b4d2b2f6 DARWIN_SDK_VERSION=10.10 DARWIN_VERSION=14\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"fc6d37ccedbe004e18598d16885b95248fb984d3e554e03c11c21affe88533c9\",\"parent\":\"39d661ffde5b3904fc52f9806acf7fff52e65b99579541e4a5140ca2afea309d\",\"created\":\"2016-03-04T12:45:59.371746597Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y mingw-w64  \\u0026\\u0026 apt-get clean\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"39d661ffde5b3904fc52f9806acf7fff52e65b99579541e4a5140ca2afea309d\",\"parent\":\"a77d2ad9a5b8fa795ec99861d6afbb725f2eab7fc2cc90ba46e5240b5c1072e2\",\"created\":\"2016-03-04T12:43:50.194245269Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y -q                                      bc                                                     binfmt-support                                         binutils-multiarch                                     binutils-multiarch-dev                                 build-essential                                        clang                                                  crossbuild-essential-arm64                             crossbuild-essential-armel                             crossbuild-essential-armhf                             crossbuild-essential-mipsel                            crossbuild-essential-ppc64el                           curl                                                   devscripts                                             gdb                                                    git-core                                               llvm                                                   mercurial                                              multistrap                                             patch                                                  python-software-properties                             software-properties-common                             subversion                                             wget                                                   xz-utils                                               cmake                                           \\u0026\\u0026 apt-get clean\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a77d2ad9a5b8fa795ec99861d6afbb725f2eab7fc2cc90ba46e5240b5c1072e2\",\"parent\":\"782d490cb20d0f6435ada8f16ac4346b5c78d17014c76b3f60ace41a3b89c8a4\",\"created\":\"2016-03-04T12:38:43.581688473Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -x;     echo deb http://emdebian.org/tools/debian/ jessie main \\u003e /etc/apt/sources.list.d/emdebian.list  \\u0026\\u0026 curl -sL http://emdebian.org/tools/debian/emdebian-toolchain-archive.key | apt-key add -  \\u0026\\u0026 dpkg --add-architecture arm64                       \\u0026\\u0026 dpkg --add-architecture armel                       \\u0026\\u0026 dpkg --add-architecture armhf                       \\u0026\\u0026 dpkg --add-architecture i386                        \\u0026\\u0026 dpkg --add-architecture mips                        \\u0026\\u0026 dpkg --add-architecture mipsel                      \\u0026\\u0026 dpkg --add-architecture powerpc                     \\u0026\\u0026 dpkg --add-architecture ppc64el                     \\u0026\\u0026 apt-get update\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"782d490cb20d0f6435ada8f16ac4346b5c78d17014c76b3f60ace41a3b89c8a4\",\"parent\":\"3f3541429984c5ff8d44d7e70c979d4b76dd4f4c79a725971444bbe561b91c2e\",\"created\":\"2016-03-04T12:37:27.403477666Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Manfred Touron \\u003cm@42.am\\u003e (https://github.com/moul)\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3f3541429984c5ff8d44d7e70c979d4b76dd4f4c79a725971444bbe561b91c2e\",\"parent\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"created\":\"2016-03-01T18:56:33.089693456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"parent\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:14.143360029Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:11.375621601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "JXYG:KLCR:CRYL:OXQB:QNRJ:5SGV:MV53:CFHZ:BU2D:2JJ5:7FLD:UFGQ",
+                            "kty": "EC",
+                            "x": "Rp5Fx4F6K2k21Pe3heUJDf2VG8C4iQGszl012dnuAQc",
+                            "y": "7qOT4h8Nuh71LkE9TIUgX674rTaOYndZ3D8OVKVnUZ0"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "HQEn6wLQPqWn1ZxmJQmRR_uFIzStB5-hwgBFrPb_XiP6WsFUVVFpBWaA7HOTLnODFHo1ZDeBEGTCKFxcUYJSYg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjE2MDQwLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDg6MjY6MzlaIn0"
+                }
+            ]
+        },
+        "dev_moul_fix-docker-build": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 14753,
+                "digest": "sha256:32d105a0a8f0e1c060419d9a91729feadd975a7cbb1678a0600d7a6fe0976f66"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 51363125,
+                    "digest": "sha256:75a822cd7888e394c49828b951061402d31745f596b1f502758570f2d0ee79e2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 18529983,
+                    "digest": "sha256:57de64c72267e88e952b064236cb906c7626f7c07a1a2d5900cf6953e72632b3"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 591251447,
+                    "digest": "sha256:d73cf0d51cd882ad51a0784c54ce8ec907d126048dd1234dc5840c808f3cc049"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 269466080,
+                    "digest": "sha256:aa5fd86525a47ca9713c2ccabd7faca1bbe7f9732f90c2796c9528699a1c2f67"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 117894818,
+                    "digest": "sha256:42f82587953e57814070cefccaa67ad7d35634986c6e8c5061a411ce1ed0dafc"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 353,
+                    "digest": "sha256:ed5b73241fb84e0917bf495c0ebaa5411ac6092188206777e7fa829aaed4615d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 7269,
+                    "digest": "sha256:9d3fa3192a450761c62cfba395ec98b0a5822190dcd17ee061aec8cca3e46d90"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 95,
+                    "digest": "sha256:24f19cd2a076bc1b4d9c0d905fe7b330b35e46cfc19d3b49d94fb2fe6b74ca63"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 777,
+                    "digest": "sha256:0b0232029f3aa467530f692646c426942d0c9ca15381bfd6a4513e04fa0bd2aa"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 16260,
+                "digest": "sha256:340e89ab252fc70d07bb7a8fd4cce294ab34bec62d086918c59f86c186b0c1e4"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45379781,
+                    "digest": "sha256:08224db8ce18b31a78a0a26d1b344d173528e50a7067797c9df4de5d8df353e2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 11294469,
+                    "digest": "sha256:abd3caf86f5b9d8f8e63437571297df5fa6d454140b9c1985c47d6ad526da824"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4342387,
+                    "digest": "sha256:71c316554a558d4aa95c0be17c01e4a0366d6026a98eeba53dca5baa6091e815"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 731680170,
+                    "digest": "sha256:116e3ce91ea46526e838e67db78d9a5df519c915fe12c27910ebd77a8952732c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 352137007,
+                    "digest": "sha256:d62d5623526240e1acccf0f45fb8cde764e4e5d33e3e5e99fd3e1ef6e9a5b4d9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 119449772,
+                    "digest": "sha256:bd69bc93627ca3814d421fb94ce6d5cfc207f77f4b02eacca56a8577ca73cd55"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 354,
+                    "digest": "sha256:53209368e530c6ce9e3041883ea4312e4b4a0e5f93c9177ca3bcc2f14bfd2055"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 7276,
+                    "digest": "sha256:b6dbcbc992943cab97b28be6042bccf2117c90752448f2c01019366dd4183af0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 96,
+                    "digest": "sha256:1d53801d3658a4784f0193749893dd05ee7baeaf9c2d672c7583856f4556e1c9"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 792,
+                    "digest": "sha256:e92b21103a34caabba03ea651e28e5ae37862c635b8e14185b5df95c9aad86d2"
+                }
+            ]
+        },
+        "neuro": {
+            "schemaVersion": 1,
+            "name": "multiarch/crossbuild",
+            "tag": "neuro",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a29698a9a070bdc835f95c2e25a185c3d115c9b3a0a30d029374acb11ba17a1b"
+                },
+                {
+                    "blobSum": "sha256:53cf27ab3f54c96f7db02fb71b27789d5885e42ac236106f1cb003fd62e65c2e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:86467422f381f8a6b0425c7368804bf3a5e5177dfcf5b5813319e9fc70b0cbb8"
+                },
+                {
+                    "blobSum": "sha256:a47d185aa9c0f1efe4af9b54909f0bc3a32e1fbe1610aa689c25b69e766a9563"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:ca1de9c83d5c90844546e74014a16b6d4b4dce94d4eaff8bd0d81bcac8b99dab"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:ac65d8955381e385d1225664050bcd9259a9d70982629619767f061748495e66"
+                },
+                {
+                    "blobSum": "sha256:c6cfeed28360f41512bc28d0796263f1d48e058a3b41c7bdda5282d55752a082"
+                },
+                {
+                    "blobSum": "sha256:4c194fcc8d18a0e9710f4bb7d700a52680ed41524ed6995a641b30954c20e3d7"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:0f35d0fe50cc8378069ab18a20a7aa65bda82e19b5caca53d21e3866d203aa07"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Manfred Touron \\u003cm@42.am\\u003e (https://github.com/moul)\",\"config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"OSXCROSS_REVISION=a845375e028d29b447439b0c65dea4a9b4d2b2f6\",\"DARWIN_SDK_VERSION=10.10\",\"DARWIN_VERSION=14\",\"LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu\",\"DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14\",\"WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32\",\"CROSS_TRIPLE=x86_64-linux-gnu\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7598b799cf1423c28fb38cd0ce4403a57bf33abc9f48fd2820a947151732b825\",\"Volumes\":null,\"WorkingDir\":\"/workdir\",\"Entrypoint\":[\"/usr/bin/crossbuild\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"fe3144a540afad58a54fc1d45cb5b6380dc7f19e8f71e75bf33477598e57d566\",\"container_config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"OSXCROSS_REVISION=a845375e028d29b447439b0c65dea4a9b4d2b2f6\",\"DARWIN_SDK_VERSION=10.10\",\"DARWIN_VERSION=14\",\"LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu\",\"DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14\",\"WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32\",\"CROSS_TRIPLE=x86_64-linux-gnu\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) COPY file:dedc546c3b01f6e38e0a78809a3fbe6f931f6464747126fdca0c363296971cf9 in /usr/bin/crossbuild\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7598b799cf1423c28fb38cd0ce4403a57bf33abc9f48fd2820a947151732b825\",\"Volumes\":null,\"WorkingDir\":\"/workdir\",\"Entrypoint\":[\"/usr/bin/crossbuild\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-03-04T11:37:48.292673975Z\",\"docker_version\":\"1.10.2\",\"id\":\"cb4898accf6325e7bbe6f80ef888d7a74e98ec7f6d987d07d03a0cdb407459c2\",\"os\":\"linux\",\"parent\":\"19699166e15dc40ff08e63b086cc97d9f51f376694aafcc57a5e2f2f922094af\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"19699166e15dc40ff08e63b086cc97d9f51f376694aafcc57a5e2f2f922094af\",\"parent\":\"9dd46fdbb724677d0130b10b4ae0ff48102af3701b96a5c15d7a1f00ac22d658\",\"created\":\"2016-03-04T11:37:48.098128302Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /workdir\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9dd46fdbb724677d0130b10b4ae0ff48102af3701b96a5c15d7a1f00ac22d658\",\"parent\":\"87aed65bb2e4c6c7d827659192ce89d2cd19530cce81e3463002fa4d5d16417c\",\"created\":\"2016-03-04T11:37:47.933106063Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"87aed65bb2e4c6c7d827659192ce89d2cd19530cce81e3463002fa4d5d16417c\",\"parent\":\"3da19ac3068816b6dbfa1ac7f95c21f98d1292c4a4b909b72b346d9fb454e449\",\"created\":\"2016-03-04T11:37:47.829008201Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT \\u0026{[\\\"/usr/bin/crossbuild\\\"]}\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3da19ac3068816b6dbfa1ac7f95c21f98d1292c4a4b909b72b346d9fb454e449\",\"parent\":\"e451a410d4c34a95a03246cedff12aee52e37cbde68909bd3e9112425971d99b\",\"created\":\"2016-03-04T11:37:47.699507381Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c for triple in $(echo ${LINUX_TRIPLES} | tr \\\",\\\" \\\" \\\"); do                                             for bin in /etc/alternatives/$triple-* /usr/bin/$triple-*; do                                       if [ ! -f /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\") ]; then                            ln -s $bin /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\");                              fi;                                                                                             done;                                                                                           done \\u0026\\u0026                                                                                           for triple in $(echo ${DARWIN_TRIPLES} | tr \\\",\\\" \\\" \\\"); do                                            mkdir -p /usr/$triple/bin;                                                                        for bin in /usr/osxcross/bin/$triple-*; do                                                          ln /usr/bin/osxcross-wrapper /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\");            done \\u0026\\u0026                                                                                           rm -f /usr/$triple/bin/clang*;                                                                    ln -s cc /usr/$triple/bin/gcc;                                                                    ln -s /usr/osxcross/SDK/MacOSX${DARWIN_SDK_VERSION}.sdk/usr /usr/x86_64-linux-gnu/$triple;      done;                                                                                             for triple in $(echo ${WINDOWS_TRIPLES} | tr \\\",\\\" \\\" \\\"); do                                           mkdir -p /usr/$triple/bin;                                                                        for bin in /etc/alternatives/$triple-* /usr/bin/$triple-*; do                                       if [ ! -f /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\") ]; then                            ln -s $bin /usr/$triple/bin/$(basename $bin | sed \\\"s/$triple-//\\\");                              fi;                                                                                             done;                                                                                             ln -s gcc /usr/$triple/bin/cc;                                                                    ln -s /usr/$triple /usr/x86_64-linux-gnu/$triple;                                               done\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e451a410d4c34a95a03246cedff12aee52e37cbde68909bd3e9112425971d99b\",\"parent\":\"e7c4632296b31b27fb1f8cefe4e1b8c29bef34f6c7daee43abfbf13ecc4e2ed2\",\"created\":\"2016-03-04T11:37:43.037109286Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:a943fbc76cf85b32a1634b2373f33b279bdad05f0df81de64fafa2d7dc2febd1 in /usr/bin/osxcross-wrapper\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e7c4632296b31b27fb1f8cefe4e1b8c29bef34f6c7daee43abfbf13ecc4e2ed2\",\"parent\":\"7337048582fa3ffd7d111d326981ad0ac54e671ea58ce151faf482525f685ce0\",\"created\":\"2016-03-04T11:37:42.791479919Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14 WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32 CROSS_TRIPLE=x86_64-linux-gnu\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7337048582fa3ffd7d111d326981ad0ac54e671ea58ce151faf482525f685ce0\",\"parent\":\"febbadb6a0120702e3597f529f1d2fb452a55f59596a8243eff8c6a7cd733b5d\",\"created\":\"2016-03-04T11:37:41.13080654Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p \\\"/tmp/osxcross\\\"                                                                                    \\u0026\\u0026 cd \\\"/tmp/osxcross\\\"                                                                                          \\u0026\\u0026 curl -sLo osxcross.tar.gz \\\"https://codeload.github.com/tpoechtrager/osxcross/tar.gz/${OSXCROSS_REVISION}\\\"   \\u0026\\u0026 tar --strip=1 -xzf osxcross.tar.gz                                                                          \\u0026\\u0026 rm -f osxcross.tar.gz                                                                                       \\u0026\\u0026 curl -sLo tarballs/MacOSX${DARWIN_SDK_VERSION}.sdk.tar.xz                                                          \\\"https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX${DARWIN_SDK_VERSION}.sdk.tar.xz\\\"                      \\u0026\\u0026 yes \\\"\\\" | SDK_VERSION=\\\"${DARWIN_SDK_VERSION}\\\" OSX_VERSION_MIN=10.6 ./build.sh                                \\u0026\\u0026 mv target /usr/osxcross                                                                                     \\u0026\\u0026 rm -rf /tmp/osxcross                                                                                        \\u0026\\u0026 rm -rf /usr/osxcross/SDK/MacOSX10.10.sdk/usr/share/man\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"febbadb6a0120702e3597f529f1d2fb452a55f59596a8243eff8c6a7cd733b5d\",\"parent\":\"0def25c6ae4e6b8031a88d96c236b7231681dd4718793fac6a1d62b46f998d9b\",\"created\":\"2016-03-04T11:31:25.154418846Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV OSXCROSS_REVISION=a845375e028d29b447439b0c65dea4a9b4d2b2f6 DARWIN_SDK_VERSION=10.10 DARWIN_VERSION=14\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0def25c6ae4e6b8031a88d96c236b7231681dd4718793fac6a1d62b46f998d9b\",\"parent\":\"c3db56ec1e5edf6a18c566d95cea012537db766db1edcf61e7f8a39ab58597f4\",\"created\":\"2016-03-04T11:31:22.993719696Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y mingw-w64  \\u0026\\u0026 apt-get clean\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"c3db56ec1e5edf6a18c566d95cea012537db766db1edcf61e7f8a39ab58597f4\",\"parent\":\"4fb4e5adfea735fc6e37dcfdc47a8e339f201c6725a00c32fee53f140ffcac36\",\"created\":\"2016-03-04T11:29:22.830116039Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y -q                                      bc                                                     binfmt-support                                         binutils-multiarch                                     binutils-multiarch-dev                                 build-essential                                        clang                                                  crossbuild-essential-arm64                             crossbuild-essential-armel                             crossbuild-essential-armhf                             crossbuild-essential-mipsel                            crossbuild-essential-ppc64el                           curl                                                   devscripts                                             gdb                                                    git-core                                               llvm                                                   mercurial                                              multistrap                                             patch                                                  python-software-properties                             software-properties-common                             subversion                                             wget                                                   xz-utils                                               cmake                                           \\u0026\\u0026 apt-get clean\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"4fb4e5adfea735fc6e37dcfdc47a8e339f201c6725a00c32fee53f140ffcac36\",\"parent\":\"782d490cb20d0f6435ada8f16ac4346b5c78d17014c76b3f60ace41a3b89c8a4\",\"created\":\"2016-03-04T11:24:30.270389541Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -x;     echo deb http://emdebian.org/tools/debian/ jessie main \\u003e /etc/apt/sources.list.d/emdebian.list  \\u0026\\u0026 curl -sL http://emdebian.org/tools/debian/emdebian-toolchain-archive.key | apt-key add -  \\u0026\\u0026 dpkg --add-architecture arm64                       \\u0026\\u0026 dpkg --add-architecture armel                       \\u0026\\u0026 dpkg --add-architecture armhf                       \\u0026\\u0026 dpkg --add-architecture i386                        \\u0026\\u0026 dpkg --add-architecture mips                        \\u0026\\u0026 dpkg --add-architecture mipsel                      \\u0026\\u0026 dpkg --add-architecture powerpc                     \\u0026\\u0026 dpkg --add-architecture ppc64el                     \\u0026\\u0026 apt-get update\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"782d490cb20d0f6435ada8f16ac4346b5c78d17014c76b3f60ace41a3b89c8a4\",\"parent\":\"3f3541429984c5ff8d44d7e70c979d4b76dd4f4c79a725971444bbe561b91c2e\",\"created\":\"2016-03-04T11:23:50.931781614Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Manfred Touron \\u003cm@42.am\\u003e (https://github.com/moul)\"]},\"throwaway\":true}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"3f3541429984c5ff8d44d7e70c979d4b76dd4f4c79a725971444bbe561b91c2e\",\"parent\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"created\":\"2016-03-01T18:56:33.089693456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"parent\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:14.143360029Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:11.375621601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /\"]}}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "6U6W:2S6I:6LAW:Q6G5:5JZB:LKJN:MO2N:O7MA:XB5N:RZHB:UI6E:C3Q7",
+                            "kty": "EC",
+                            "x": "JWiYI5W_PfEZ201qyxr-1Sy2FXuzdqzzSYK8OWZ7NXo",
+                            "y": "UyUMAonUuNw3POgXNH70iuY0i8i05WJ9_nC7PjAADgU"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "5LMqmkqkZHQYJccPwgpssPlYbCn9MaiaaMiiiZ2X5vDDea2WRZJBPgIdwRzEL_mcID_kADSHzbKWkdxxvCUHsw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjE2MDM0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDg6MjY6NDJaIn0"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "add-travis",
+        "dev_moul_fix-docker-build",
+        "latest",
+        "neuro"
+    ],
+    "configs": {
+        "dev_moul_fix-docker-build": {
+            "architecture": "amd64",
+            "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+            "config": {
+                "Hostname": "45f28166fed1",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "OSXCROSS_REPO=tpoechtrager/osxcross",
+                    "OSXCROSS_REVISION=a845375e028d29b447439b0c65dea4a9b4d2b2f6",
+                    "DARWIN_SDK_VERSION=10.10",
+                    "DARWIN_VERSION=14",
+                    "DARWIN_OSX_VERSION_MIN=10.6",
+                    "DARWIN_SDK_URL=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz",
+                    "LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu",
+                    "DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14",
+                    "WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32",
+                    "CROSS_TRIPLE=x86_64-linux-gnu"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:938519f7ffed405dedeedf50eae0567b6d841433bb9fc9c70c32e3974dfe415a",
+                "Volumes": null,
+                "WorkingDir": "/workdir",
+                "Entrypoint": [
+                    "/usr/bin/crossbuild"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "e5f4e7de8eb1c47c01f05043d4399b03a89d5eab4b01166151d6aaca6bff9151",
+            "container_config": {
+                "Hostname": "45f28166fed1",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "OSXCROSS_REPO=tpoechtrager/osxcross",
+                    "OSXCROSS_REVISION=a845375e028d29b447439b0c65dea4a9b4d2b2f6",
+                    "DARWIN_SDK_VERSION=10.10",
+                    "DARWIN_VERSION=14",
+                    "DARWIN_OSX_VERSION_MIN=10.6",
+                    "DARWIN_SDK_URL=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz",
+                    "LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu",
+                    "DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14",
+                    "WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32",
+                    "CROSS_TRIPLE=x86_64-linux-gnu"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY file:dedc546c3b01f6e38e0a78809a3fbe6f931f6464747126fdca0c363296971cf9 in /usr/bin/crossbuild "
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:938519f7ffed405dedeedf50eae0567b6d841433bb9fc9c70c32e3974dfe415a",
+                "Volumes": null,
+                "WorkingDir": "/workdir",
+                "Entrypoint": [
+                    "/usr/bin/crossbuild"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-01-03T13:25:31.989058373Z",
+            "docker_version": "1.12.3-cs3",
+            "history": [
+                {
+                    "created": "2016-12-13T22:10:59.102721199Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:1d214d2782eaccc743b8d683ccecf2f87f12a0ecdfbcd6fdf4943ce616f23870 in / "
+                },
+                {
+                    "created": "2016-12-13T22:10:59.712034744Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-12-13T23:00:11.852536913Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-01-03T13:07:33.223964371Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:13:39.978336256Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c set -x;     echo deb http://emdebian.org/tools/debian/ jessie main > /etc/apt/sources.list.d/emdebian.list  && curl -sL http://emdebian.org/tools/debian/emdebian-toolchain-archive.key | apt-key add -  && dpkg --add-architecture arm64                       && dpkg --add-architecture armel                       && dpkg --add-architecture armhf                       && dpkg --add-architecture i386                        && dpkg --add-architecture mips                        && dpkg --add-architecture mipsel                      && dpkg --add-architecture powerpc                     && dpkg --add-architecture ppc64el                     && apt-get update                                      && apt-get install -y -q                                      bc                                                     binfmt-support                                         binutils-multiarch                                     binutils-multiarch-dev                                 build-essential                                        clang                                                  crossbuild-essential-arm64                             crossbuild-essential-armel                             crossbuild-essential-armhf                             crossbuild-essential-mipsel                            crossbuild-essential-ppc64el                           curl                                                   devscripts                                             gdb                                                    git-core                                               llvm                                                   mercurial                                              multistrap                                             patch                                                  python-software-properties                             software-properties-common                             subversion                                             wget                                                   xz-utils                                               cmake                                                  qemu-user-static                                && apt-get clean"
+                },
+                {
+                    "created": "2017-01-03T13:16:08.9173575Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c apt-get install -y mingw-w64  && apt-get clean"
+                },
+                {
+                    "created": "2017-01-03T13:16:17.307925983Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG osxcross_repo=tpoechtrager/osxcross",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:16:26.564377069Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG osxcross_revision=a845375e028d29b447439b0c65dea4a9b4d2b2f6",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:16:37.440441493Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG darwin_sdk_version=10.10",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:16:46.984637234Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG darwin_osx_version_min=10.6",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:16:55.734052668Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG darwin_version=14",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:17:04.449660771Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG darwin_sdk_url=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:17:13.085192787Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ENV OSXCROSS_REPO=tpoechtrager/osxcross OSXCROSS_REVISION=a845375e028d29b447439b0c65dea4a9b4d2b2f6 DARWIN_SDK_VERSION=10.10 DARWIN_VERSION=14 DARWIN_OSX_VERSION_MIN=10.6 DARWIN_SDK_URL=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:23:47.283667087Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "|6 darwin_osx_version_min=10.6 darwin_sdk_url=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz darwin_sdk_version=10.10 darwin_version=14 osxcross_repo=tpoechtrager/osxcross osxcross_revision=a845375e028d29b447439b0c65dea4a9b4d2b2f6 /bin/sh -c mkdir -p \"/tmp/osxcross\"                                                                                    && cd \"/tmp/osxcross\"                                                                                          && curl -sLo osxcross.tar.gz \"https://codeload.github.com/${OSXCROSS_REPO}/tar.gz/${OSXCROSS_REVISION}\"   && tar --strip=1 -xzf osxcross.tar.gz                                                                          && rm -f osxcross.tar.gz                                                                                       && curl -sLo tarballs/MacOSX${DARWIN_SDK_VERSION}.sdk.tar.xz                                                               \"${DARWIN_SDK_URL}\"                 && yes \"\" | SDK_VERSION=\"${DARWIN_SDK_VERSION}\" OSX_VERSION_MIN=\"${DARWIN_OSX_VERSION_MIN}\" ./build.sh                                && mv target /usr/osxcross                                                                                     && mv tools /usr/osxcross/                                                                                     && ln -sf ../tools/osxcross-macports /usr/osxcross/bin/omp                                                     && ln -sf ../tools/osxcross-macports /usr/osxcross/bin/osxcross-macports                                       && ln -sf ../tools/osxcross-macports /usr/osxcross/bin/osxcross-mp                                             && rm -rf /tmp/osxcross                                                                                        && rm -rf \"/usr/osxcross/SDK/MacOSX${DARWIN_SDK_VERSION}.sdk/usr/share/man\""
+                },
+                {
+                    "created": "2017-01-03T13:24:01.57344846Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ENV LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14 WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32 CROSS_TRIPLE=x86_64-linux-gnu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:24:17.296848646Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop) COPY file:a943fbc76cf85b32a1634b2373f33b279bdad05f0df81de64fafa2d7dc2febd1 in /usr/bin/osxcross-wrapper "
+                },
+                {
+                    "created": "2017-01-03T13:24:33.573526206Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "|6 darwin_osx_version_min=10.6 darwin_sdk_url=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz darwin_sdk_version=10.10 darwin_version=14 osxcross_repo=tpoechtrager/osxcross osxcross_revision=a845375e028d29b447439b0c65dea4a9b4d2b2f6 /bin/sh -c for triple in $(echo ${LINUX_TRIPLES} | tr \",\" \" \"); do                                             for bin in /etc/alternatives/$triple-* /usr/bin/$triple-*; do                                       if [ ! -f /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\") ]; then                            ln -s $bin /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\");                              fi;                                                                                             done;                                                                                           done &&                                                                                           for triple in $(echo ${DARWIN_TRIPLES} | tr \",\" \" \"); do                                            mkdir -p /usr/$triple/bin;                                                                        for bin in /usr/osxcross/bin/$triple-*; do                                                          ln /usr/bin/osxcross-wrapper /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\");            done &&                                                                                           rm -f /usr/$triple/bin/clang*;                                                                    ln -s cc /usr/$triple/bin/gcc;                                                                    ln -s /usr/osxcross/SDK/MacOSX${DARWIN_SDK_VERSION}.sdk/usr /usr/x86_64-linux-gnu/$triple;      done;                                                                                             for triple in $(echo ${WINDOWS_TRIPLES} | tr \",\" \" \"); do                                           mkdir -p /usr/$triple/bin;                                                                        for bin in /etc/alternatives/$triple-* /usr/bin/$triple-*; do                                       if [ ! -f /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\") ]; then                            ln -s $bin /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\");                              fi;                                                                                             done;                                                                                             ln -s gcc /usr/$triple/bin/cc;                                                                    ln -s /usr/$triple /usr/x86_64-linux-gnu/$triple;                                               done"
+                },
+                {
+                    "created": "2017-01-03T13:24:46.881201287Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/usr/bin/crossbuild\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:25:02.860782391Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-01-03T13:25:18.568119788Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  WORKDIR /workdir"
+                },
+                {
+                    "created": "2017-01-03T13:25:31.989058373Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop) COPY file:dedc546c3b01f6e38e0a78809a3fbe6f931f6464747126fdca0c363296971cf9 in /usr/bin/crossbuild "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:b6ca02dfe5e62c58dacb1dec16eb42ed35761c15562485f9da9364bb7c90b9b3",
+                    "sha256:60a0858edcd5aad240966e33389850e4328de4cfb5282977eddda56bffc7f95f",
+                    "sha256:132c1c170fc603d9e35ff39e9447729c18aba0072e72c54284f3616ecdd06e92",
+                    "sha256:74eaed8178b71f3f5bf275d5401be4611d0fda0c60cb40532eec51584317ef6d",
+                    "sha256:de9eab27d957f72b1ca5de8cea91638969c3406a19428adec9c0e9a0aef0ddd1",
+                    "sha256:ebd2b5499b4a2f8d6d2cb9616ac92f3d0269dbac1d78e7325cb1a8b8e3aaaa8a",
+                    "sha256:2646a949e740c2091583a10bce8290a926d56da0a2d424c99e0bb9eecf4e6f67",
+                    "sha256:a74a668cc238437b4a24dc0c05c2a79cde94fd7395812e868e51817fd822938a",
+                    "sha256:1362680ff4c6c5d15f61b805d4ecf8aedabfb26f1efce2c77c551caa151a3a1c"
+                ]
+            }
+        },
+        "latest": {
+            "architecture": "amd64",
+            "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "OSXCROSS_REPO=tpoechtrager/osxcross",
+                    "OSXCROSS_REVISION=542acc2ef6c21aeb3f109c03748b1015a71fed63",
+                    "DARWIN_SDK_VERSION=10.10",
+                    "DARWIN_VERSION=14",
+                    "DARWIN_OSX_VERSION_MIN=10.6",
+                    "DARWIN_SDK_URL=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz",
+                    "LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu",
+                    "DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14",
+                    "WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32",
+                    "CROSS_TRIPLE=x86_64-linux-gnu",
+                    "LD_LIBRARY_PATH=/usr/osxcross/lib:"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Image": "sha256:e6b2f01057c358cd87d0f8391eb257c29f96eb66b7f486bbaef2815a78de5afe",
+                "Volumes": null,
+                "WorkingDir": "/workdir",
+                "Entrypoint": [
+                    "/usr/bin/crossbuild"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "OSXCROSS_REPO=tpoechtrager/osxcross",
+                    "OSXCROSS_REVISION=542acc2ef6c21aeb3f109c03748b1015a71fed63",
+                    "DARWIN_SDK_VERSION=10.10",
+                    "DARWIN_VERSION=14",
+                    "DARWIN_OSX_VERSION_MIN=10.6",
+                    "DARWIN_SDK_URL=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz",
+                    "LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu",
+                    "DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14",
+                    "WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32",
+                    "CROSS_TRIPLE=x86_64-linux-gnu",
+                    "LD_LIBRARY_PATH=/usr/osxcross/lib:"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY file:434fafb94491789413b5c8bbb4569dfa828b4da20e661b873533139367759980 in /usr/bin/crossbuild "
+                ],
+                "Image": "sha256:e6b2f01057c358cd87d0f8391eb257c29f96eb66b7f486bbaef2815a78de5afe",
+                "Volumes": null,
+                "WorkingDir": "/workdir",
+                "Entrypoint": [
+                    "/usr/bin/crossbuild"
+                ],
+                "OnBuild": null,
+                "Labels": null
+            },
+            "created": "2021-07-28T20:49:46.333604012Z",
+            "docker_version": "20.10.7+azure",
+            "history": [
+                {
+                    "created": "2021-07-22T00:47:05.073542979Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:fc9409352ad67880b83ccf1ccd1587eb2666715eae04e4dd98fca919f1bb98d7 in / "
+                },
+                {
+                    "created": "2021-07-22T00:47:05.643667144Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-22T01:15:19.280810801Z",
+                    "created_by": "/bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tapt-transport-https \t\tca-certificates \t\tcurl \t\tnetbase \t\twget \t; \trm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2021-07-22T01:15:24.561529556Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi"
+                },
+                {
+                    "created": "2021-07-28T20:43:52.027824388Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:45:58.977369867Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c set -x; echo \"Starting image build for Debian Stretch\"  && dpkg --add-architecture arm64                       && dpkg --add-architecture armel                       && dpkg --add-architecture armhf                       && dpkg --add-architecture i386                        && dpkg --add-architecture mips                        && dpkg --add-architecture mipsel                      && dpkg --add-architecture powerpc                     && dpkg --add-architecture ppc64el                     && apt-get update                                      && apt-get install -y -q                                      autoconf                                               automake                                               autotools-dev                                          bc                                                     binfmt-support                                         binutils-multiarch                                     binutils-multiarch-dev                                 build-essential                                        ccache                                                 clang                                                  crossbuild-essential-arm64                             crossbuild-essential-armel                             crossbuild-essential-armhf                             crossbuild-essential-mipsel                            crossbuild-essential-ppc64el                           curl                                                   devscripts                                             gdb                                                    git-core                                               libtool                                                llvm                                                   mercurial                                              multistrap                                             patch                                                  software-properties-common                             subversion                                             wget                                                   xz-utils                                               cmake                                                  qemu-user-static                                       libxml2-dev                                            lzma-dev                                               openssl                                                libssl-dev                                      && apt-get clean"
+                },
+                {
+                    "created": "2021-07-28T20:46:52.273021103Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c apt-get install -y mingw-w64  && apt-get clean"
+                },
+                {
+                    "created": "2021-07-28T20:46:55.009012551Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG osxcross_repo=tpoechtrager/osxcross",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:46:57.261231569Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG osxcross_revision=542acc2ef6c21aeb3f109c03748b1015a71fed63",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:46:59.572176523Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG darwin_sdk_version=10.10",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:47:01.867598362Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG darwin_osx_version_min=10.6",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:47:04.140394641Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG darwin_version=14",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:47:06.415873634Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ARG darwin_sdk_url=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:47:08.700578493Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ENV OSXCROSS_REPO=tpoechtrager/osxcross OSXCROSS_REVISION=542acc2ef6c21aeb3f109c03748b1015a71fed63 DARWIN_SDK_VERSION=10.10 DARWIN_VERSION=14 DARWIN_OSX_VERSION_MIN=10.6 DARWIN_SDK_URL=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:49:15.712225973Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "|6 darwin_osx_version_min=10.6 darwin_sdk_url=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz darwin_sdk_version=10.10 darwin_version=14 osxcross_repo=tpoechtrager/osxcross osxcross_revision=542acc2ef6c21aeb3f109c03748b1015a71fed63 /bin/sh -c mkdir -p \"/tmp/osxcross\"                                                                                    && cd \"/tmp/osxcross\"                                                                                          && curl -sLo osxcross.tar.gz \"https://codeload.github.com/${OSXCROSS_REPO}/tar.gz/${OSXCROSS_REVISION}\"   && tar --strip=1 -xzf osxcross.tar.gz                                                                          && rm -f osxcross.tar.gz                                                                                       && curl -sLo tarballs/MacOSX${DARWIN_SDK_VERSION}.sdk.tar.xz                                                               \"${DARWIN_SDK_URL}\"                 && yes \"\" | SDK_VERSION=\"${DARWIN_SDK_VERSION}\" OSX_VERSION_MIN=\"${DARWIN_OSX_VERSION_MIN}\" ./build.sh                                && mv target /usr/osxcross                                                                                     && mv tools /usr/osxcross/                                                                                     && ln -sf ../tools/osxcross-macports /usr/osxcross/bin/omp                                                     && ln -sf ../tools/osxcross-macports /usr/osxcross/bin/osxcross-macports                                       && ln -sf ../tools/osxcross-macports /usr/osxcross/bin/osxcross-mp                                             && sed -i -e \"s%exec cmake%exec /usr/bin/cmake%\" /usr/osxcross/bin/osxcross-cmake                              && rm -rf /tmp/osxcross                                                                                        && rm -rf \"/usr/osxcross/SDK/MacOSX${DARWIN_SDK_VERSION}.sdk/usr/share/man\""
+                },
+                {
+                    "created": "2021-07-28T20:49:19.899878983Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ENV LINUX_TRIPLES=arm-linux-gnueabi,arm-linux-gnueabihf,aarch64-linux-gnu,mipsel-linux-gnu,powerpc64le-linux-gnu DARWIN_TRIPLES=x86_64h-apple-darwin14,x86_64-apple-darwin14,i386-apple-darwin14 WINDOWS_TRIPLES=i686-w64-mingw32,x86_64-w64-mingw32 CROSS_TRIPLE=x86_64-linux-gnu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:49:23.421718874Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop) COPY file:f6ecf62829537e3be0f654d82eeeb77f8fbfacdd23c1e744ebd207c54f014014 in /usr/bin/osxcross-wrapper "
+                },
+                {
+                    "created": "2021-07-28T20:49:28.586085515Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "|6 darwin_osx_version_min=10.6 darwin_sdk_url=https://www.dropbox.com/s/yfbesd249w10lpc/MacOSX10.10.sdk.tar.xz darwin_sdk_version=10.10 darwin_version=14 osxcross_repo=tpoechtrager/osxcross osxcross_revision=542acc2ef6c21aeb3f109c03748b1015a71fed63 /bin/sh -c mkdir -p /usr/x86_64-linux-gnu;                                                                   for triple in $(echo ${LINUX_TRIPLES} | tr \",\" \" \"); do                                             for bin in /usr/bin/$triple-*; do                                                                   if [ ! -f /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\") ]; then                            ln -s $bin /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\");                              fi;                                                                                             done;                                                                                             for bin in /usr/bin/$triple-*; do                                                                   if [ ! -f /usr/$triple/bin/cc ]; then                                                               ln -s gcc /usr/$triple/bin/cc;                                                                  fi;                                                                                             done;                                                                                           done &&                                                                                           for triple in $(echo ${DARWIN_TRIPLES} | tr \",\" \" \"); do                                            mkdir -p /usr/$triple/bin;                                                                        for bin in /usr/osxcross/bin/$triple-*; do                                                          ln /usr/bin/osxcross-wrapper /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\");            done &&                                                                                           rm -f /usr/$triple/bin/clang*;                                                                    ln -s cc /usr/$triple/bin/gcc;                                                                    ln -s /usr/osxcross/SDK/MacOSX${DARWIN_SDK_VERSION}.sdk/usr /usr/x86_64-linux-gnu/$triple;      done;                                                                                             for triple in $(echo ${WINDOWS_TRIPLES} | tr \",\" \" \"); do                                           mkdir -p /usr/$triple/bin;                                                                        for bin in /etc/alternatives/$triple-* /usr/bin/$triple-*; do                                       if [ ! -f /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\") ]; then                            ln -s $bin /usr/$triple/bin/$(basename $bin | sed \"s/$triple-//\");                              fi;                                                                                             done;                                                                                             ln -s gcc /usr/$triple/bin/cc;                                                                    ln -s /usr/$triple /usr/x86_64-linux-gnu/$triple;                                               done"
+                },
+                {
+                    "created": "2021-07-28T20:49:32.131916348Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/usr/osxcross/lib:",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:49:35.64713211Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/usr/bin/crossbuild\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:49:39.220331411Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-07-28T20:49:42.764023995Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /workdir"
+                },
+                {
+                    "created": "2021-07-28T20:49:46.333604012Z",
+                    "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+                    "created_by": "/bin/sh -c #(nop) COPY file:434fafb94491789413b5c8bbb4569dfa828b4da20e661b873533139367759980 in /usr/bin/crossbuild "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:40093787e10fa68c547b983c1adbf4dfb0fdef10110306ad3cf59dbaec7fc688",
+                    "sha256:e1929b65aa970e7ea6aefb0a63f908e1412790cf3f1e1e2eb4f1471fa3c9910b",
+                    "sha256:1b739069a0947902c3b66e66e05701eba9b0a23bd01412562f6b21ce98bd8b57",
+                    "sha256:c6cbb4a77cb44601d7c34bdc5c2ab9929c0b10f3d4c36a2b633853cde0711ffe",
+                    "sha256:e05cd75200fa5efda0aff4fdec07415503552ffae5b3d27ba7410b92fc6b38fe",
+                    "sha256:d39ece7f39b17f2583bf86d299078ae2a0c92d864aaafe9d1c530d7734a21253",
+                    "sha256:7a9d19fdc5c36288e116e4864679d958af4ba136657b29cce73d1d18a182d914",
+                    "sha256:351d1ba386a0525de242565328d571d0971640e75e71f6c314680e4f1f11821a",
+                    "sha256:a01fd0a62c89d4b09a09646efd0956c5d09f1346063a3f3ccd839a4bea6fd0d5",
+                    "sha256:13ef0be891135edde8e89d8f5dee5511158ef0fa58e615a326b5cbd86726d9e6"
+                ]
+            }
+        }
+    }
+}

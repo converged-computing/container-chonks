@@ -1,0 +1,164 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3419,
+                "digest": "sha256:a67699e37dbdda5ced93529a74c17d87ad3f7476e9330502c85d637ce3accb9f"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2231103,
+                    "digest": "sha256:b0dc45cd432d14fb6df7d3239dc15d09c63906f8e7bfd373a4647b107fc3746c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 298,
+                    "digest": "sha256:364328af40b69259659708dc80f4392bc3e2f5afad2e6314767463f0747e6260"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 223,
+                    "digest": "sha256:9c7abf28af64fb39dc8577aabdf70bfac6a62667fa5661876bfe6a1d26bb3aa0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2550,
+                    "digest": "sha256:635bab23d5f1536c303c47bf277a71fe03fe294bababcc12c1723ee0968ee22b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 35399,
+                    "digest": "sha256:054e7786c1b6760395d1043b1a2e7f96a43290bd5a2456e71d65d2a471508004"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 242885,
+                    "digest": "sha256:5100e35a43b2f04792c454ea31ad15343d349a9de75e66a19484e2e279ac5eb9"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Jeff Lindsay <progrium@gmail.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:14986394ad0f7215ccd0ac743bc19fcb8c903ad2180dfd865638d55eb50baa88",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": null
+            },
+            "container": "a286a12a4c90ffa16341ce7620f561e04ed54a012119a8e09f01743cb14f0754",
+            "container_config": {
+                "Hostname": "a286a12a4c90",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/bin/sh\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:14986394ad0f7215ccd0ac743bc19fcb8c903ad2180dfd865638d55eb50baa88",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {}
+            },
+            "created": "2018-10-10T14:17:06.552978606Z",
+            "docker_version": "18.03.1-ee-1-tp5",
+            "history": [
+                {
+                    "created": "2018-10-10T14:16:58.783656872Z",
+                    "author": "Jeff Lindsay <progrium@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Jeff Lindsay <progrium@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-10-10T14:16:59.718520183Z",
+                    "author": "Jeff Lindsay <progrium@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:58119d94bcb19f9d6032d9a12c21e1966c8e68ed8a4e92157952ca38ee463e4c in / "
+                },
+                {
+                    "created": "2018-10-10T14:17:00.169176405Z",
+                    "author": "Jeff Lindsay <progrium@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:93eb68e64dd5b1313e9ce8b3adc00fecea9840da9cfe6495282c7efa0f3a7aa6 in /etc/opkg.conf "
+                },
+                {
+                    "created": "2018-10-10T14:17:00.588066865Z",
+                    "author": "Jeff Lindsay <progrium@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:2f311dae064bb80defcef85a9f448ff9e4629f7b0b98a0afee55d566b0ac2334 in /usr/bin/opkg-install "
+                },
+                {
+                    "created": "2018-10-10T14:17:01.03910821Z",
+                    "author": "Jeff Lindsay <progrium@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:57b8e09a0fa447b2315222180580950c19760e4d9886dfb7a2a7e68cdf27b5c9 in /lib/functions.sh "
+                },
+                {
+                    "created": "2018-10-10T14:17:03.574911156Z",
+                    "author": "Jeff Lindsay <progrium@gmail.com>",
+                    "created_by": "/bin/sh -c opkg-cl install http://downloads.lede-project.org/snapshots/targets/x86/64/packages/libgcc_7.3.0-1_x86_64.ipk"
+                },
+                {
+                    "created": "2018-10-10T14:17:06.233174481Z",
+                    "author": "Jeff Lindsay <progrium@gmail.com>",
+                    "created_by": "/bin/sh -c opkg-cl install http://downloads.lede-project.org/snapshots/targets/x86/64/packages/libc_1.1.20-1_x86_64.ipk"
+                },
+                {
+                    "created": "2018-10-10T14:17:06.552978606Z",
+                    "author": "Jeff Lindsay <progrium@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/sh\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:461f75075df2a334108df11b185363d2afda21517fda5ffb10852020e7639b7b",
+                    "sha256:46dc4a36ddfba814089d44dabd5455fab46df229f25e95a18150ac16d664c9a4",
+                    "sha256:d91a06bb1e25a9a5199bd5c8a5fbc60b499a6a90b825264bf58ed7632af0ed53",
+                    "sha256:f844e9a952a705e98a1b5f049ce92107b1ccc93c9a54119697070c7c9ad6557a",
+                    "sha256:7e77b9ec2af734521c49383d8336ba52fd4ecd63217c5206939c12f35bd62477",
+                    "sha256:13852990c5bad2252574be8085ca82edaf4ebe5f97b9c4affd750b3089c9fa5a"
+                ]
+            }
+        }
+    }
+}

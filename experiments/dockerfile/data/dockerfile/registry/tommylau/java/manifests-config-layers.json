@@ -1,0 +1,192 @@
+{
+    "manifests": {
+        "1.8": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6203,
+                "digest": "sha256:60d168532c27f9506d1fe8d1db100d203634767a1adba266bc40549f73e6d6bc"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 42863496,
+                    "digest": "sha256:1be7f2b886e89a58e59c4e685fcc5905a26ddef3201f290b96f1eff7d778e122"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 846,
+                    "digest": "sha256:6fbc4a21b806838b63b774b338c6ad19d696a9e655f50b4e358cc4006c3baa79"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 620,
+                    "digest": "sha256:c71a6f8e13782fed125f2247931c3eb20cc0e6428a5d79edb546f1f1405f0e49"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 854,
+                    "digest": "sha256:4be3072e5a37392e32f632bb234c0b461ff5675ab7e362afad6359fbd36884af"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 171,
+                    "digest": "sha256:06c6d2f5970057aef3aef6da60f0fde280db1c077f0cd88ca33ec1a70a9c7b58"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 425963682,
+                    "digest": "sha256:851947b7ac9bebf7565f1cefc264a00b6aaf3e2882d1de6a75ef2cd351b730b2"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 2912,
+                    "digest": "sha256:eb0a80b8f19fc269082efa122901337df781c0edb9d92130f638df997390b2f9"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "1.8"
+    ],
+    "configs": {
+        "1.8": {
+            "architecture": "amd64",
+            "author": "Tommy Lau <tommy@gen-new.com>",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "JAVA_HOME=/usr/lib/jvm/java-8-oracle"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:fbf9d360dd0c4795b7fcde2bd776b043619daf050cdbc4a4bb2135d69ad6ba77",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": null
+            },
+            "container": "3b4da09a13d2536c9db4a1ea5c18357baccc8dbc16e7c70533dfa6eab5310942",
+            "container_config": {
+                "Hostname": "3b4da09a13d2",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "LANG=C.UTF-8",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "JAVA_HOME=/usr/lib/jvm/java-8-oracle"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY file:b3815cbe6ea781a5eca54af418b9535b34496230ab4427c84ef7738677c9f090 in /usr/lib/jvm/java-8-oracle/jre/lib/security/ "
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:fbf9d360dd0c4795b7fcde2bd776b043619daf050cdbc4a4bb2135d69ad6ba77",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2018-02-10T05:36:32.081302647Z",
+            "docker_version": "17.06.1-ce",
+            "history": [
+                {
+                    "created": "2018-01-25T18:23:30.610528428Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a3344b835ea6fdc5692df23826c970403656c6947342e117b2ac1a05956679af in / "
+                },
+                {
+                    "created": "2018-01-25T18:23:39.075632267Z",
+                    "created_by": "/bin/sh -c set -xe \t\t&& echo '#!/bin/sh' > /usr/sbin/policy-rc.d \t&& echo 'exit 101' >> /usr/sbin/policy-rc.d \t&& chmod +x /usr/sbin/policy-rc.d \t\t&& dpkg-divert --local --rename --add /sbin/initctl \t&& cp -a /usr/sbin/policy-rc.d /sbin/initctl \t&& sed -i 's/^exit.*/exit 0/' /sbin/initctl \t\t&& echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \t\t&& echo 'DPkg::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' > /etc/apt/apt.conf.d/docker-clean \t&& echo 'APT::Update::Post-Invoke { \"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\"; };' >> /etc/apt/apt.conf.d/docker-clean \t&& echo 'Dir::Cache::pkgcache \"\"; Dir::Cache::srcpkgcache \"\";' >> /etc/apt/apt.conf.d/docker-clean \t\t&& echo 'Acquire::Languages \"none\";' > /etc/apt/apt.conf.d/docker-no-languages \t\t&& echo 'Acquire::GzipIndexes \"true\"; Acquire::CompressionTypes::Order:: \"gz\";' > /etc/apt/apt.conf.d/docker-gzip-indexes \t\t&& echo 'Apt::AutoRemove::SuggestsImportant \"false\";' > /etc/apt/apt.conf.d/docker-autoremove-suggests"
+                },
+                {
+                    "created": "2018-01-25T18:23:39.843140353Z",
+                    "created_by": "/bin/sh -c rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2018-01-25T18:23:50.734158349Z",
+                    "created_by": "/bin/sh -c sed -i 's/^#\\s*\\(deb.*universe\\)$/\\1/g' /etc/apt/sources.list"
+                },
+                {
+                    "created": "2018-01-25T18:23:51.48088772Z",
+                    "created_by": "/bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container"
+                },
+                {
+                    "created": "2018-01-25T18:23:51.755470218Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-10T05:34:23.889403445Z",
+                    "author": "Tommy Lau <tommy@gen-new.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Tommy Lau <tommy@gen-new.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-10T05:34:24.170303029Z",
+                    "author": "Tommy Lau <tommy@gen-new.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV LANG=C.UTF-8",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-10T05:34:24.392202034Z",
+                    "author": "Tommy Lau <tommy@gen-new.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-10T05:34:24.638143021Z",
+                    "author": "Tommy Lau <tommy@gen-new.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV JAVA_HOME=/usr/lib/jvm/java-8-oracle",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-02-10T05:36:31.17242743Z",
+                    "author": "Tommy Lau <tommy@gen-new.com>",
+                    "created_by": "/bin/sh -c echo \"deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main\" | tee /etc/apt/sources.list.d/webupd8team-java.list     && echo \"deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main\" | tee -a /etc/apt/sources.list.d/webupd8team-java.list     && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886     && apt-get update -qq     && echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections     && apt-get install -y --no-install-recommends ca-certificates curl libtcnative-1 oracle-java8-installer     && apt-get clean autoclean     && apt-get autoremove --yes     && rm -rf /var/lib/{apt,dpkg,cache,log}/     && ln -s /usr/lib/x86_64-linux-gnu/libtcnative-1.so /usr/lib/libtcnative-1.so     && sed -i 's/^\\(securerandom.source=file:\\/dev\\/\\)\\(random\\)/\\1u\\2/' ${JAVA_HOME}/jre/lib/security/java.security"
+                },
+                {
+                    "created": "2018-02-10T05:36:32.081302647Z",
+                    "author": "Tommy Lau <tommy@gen-new.com>",
+                    "created_by": "/bin/sh -c #(nop) COPY file:b3815cbe6ea781a5eca54af418b9535b34496230ab4427c84ef7738677c9f090 in /usr/lib/jvm/java-8-oracle/jre/lib/security/ "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:ff986b10a018b48074e6d3a68b39aad8ccc002cdad912d4148c0f92b3729323e",
+                    "sha256:9c7183e0ea88b265d83708dfe5b9189c4e12f9a1d8c3e5bce7f286417653f9b7",
+                    "sha256:c98ef191df4b42c3fd5155d23385e75ee59707c6a448dfc6c8e4e9c005a3df11",
+                    "sha256:92914665e7f61f8f19b56bf7983a2b3758cb617bef498b37adb80899e8b86e32",
+                    "sha256:6f4ce6b888495c7c9bd4a0ac124b039d986a3b18250fa873d11d13b42f6a79f4",
+                    "sha256:d3eba0036eee91cf185579717d119a2431469fad234d1ef1925e42acbcda5502",
+                    "sha256:0efc779df5b3096d844ef6c13892c82e0f39953c4e60ff0b86b92ce5cd606fde"
+                ]
+            }
+        }
+    }
+}

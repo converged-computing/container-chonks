@@ -1,0 +1,262 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 15278,
+                "digest": "sha256:7fb252027f0dc3b9273545ed1ae1aa3482a3fc5af70d917f9dafa17daefb456b"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1905270,
+                    "digest": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4989841,
+                    "digest": "sha256:d94803b40b7df1e0157d5c89d0cc62ef1d8f0942f0808afe116e0cdb17709f83"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 45677372,
+                    "digest": "sha256:262065a8e59e92525afb5ade6dac532333b3cb02f2ba22cc9fd8ae7b4c0d605c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 402089,
+                    "digest": "sha256:96af2c62b4a361319074f685c9fee62685f58859fe5e2999c6fdcfdc9592b3ab"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1793,
+                    "digest": "sha256:9c37f6561938b3706a7079ff4d8c24deeee7ba6c5e3dfd81135fdf8e848de55b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 245,
+                    "digest": "sha256:0db540d578417939dbc9296286a7177b89d1da2fcd0d12ca97b12e7eafacceda"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 244,
+                    "digest": "sha256:c331f30d957b17fea3b58632d2fa9b5062dac0651917bc6fd6d4fb85ca544e59"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "84baa8e89c00",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "PCRE_CONF_OPT=--enable-utf8 --enable-unicode-properties"
+                ],
+                "Cmd": [
+                    "nginx"
+                ],
+                "Healthcheck": {
+                    "Test": [
+                        "CMD-SHELL",
+                        "docker-healthcheck"
+                    ]
+                },
+                "ArgsEscaped": true,
+                "Image": "sha256:47b15e4c4ee35f0c3a50d7bfc85696b8c258c44a58bdddf7e3a7b35c4b9da858",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "SERVICE_NAME": "nginx",
+                    "author": "Korviakov Andrey",
+                    "maintainer": "4lifenet@gmail.com"
+                }
+            },
+            "container": "8212db0882f8c9182f3e836c00b7c13f30720519133c5639048443633f1e676f",
+            "container_config": {
+                "Hostname": "84baa8e89c00",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "PCRE_CONF_OPT=--enable-utf8 --enable-unicode-properties"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"nginx\"]"
+                ],
+                "Healthcheck": {
+                    "Test": [
+                        "CMD-SHELL",
+                        "docker-healthcheck"
+                    ]
+                },
+                "ArgsEscaped": true,
+                "Image": "sha256:47b15e4c4ee35f0c3a50d7bfc85696b8c258c44a58bdddf7e3a7b35c4b9da858",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {
+                    "SERVICE_NAME": "nginx",
+                    "author": "Korviakov Andrey",
+                    "maintainer": "4lifenet@gmail.com"
+                }
+            },
+            "created": "2017-06-28T11:43:36.564349403Z",
+            "docker_version": "17.03.1-ee-2",
+            "history": [
+                {
+                    "created": "2017-03-03T20:32:37.723773456Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / "
+                },
+                {
+                    "created": "2017-03-07T20:33:23.779403832Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=4lifenet@gmail.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-03-07T20:33:28.959259721Z",
+                    "created_by": "/bin/sh -c apk add --no-cache --update         ca-certificates         tzdata         curl         jq     && ln -fs /usr/share/zoneinfo/Europe/Moscow /etc/localtime     && CONSUL_TEMPLATE_VERSION=$(curl -s https://api.github.com/repos/hashicorp/consul-template/tags | jq -r \".[0] .name\" | tr -d v)     && curl -fSl https://releases.hashicorp.com/consul-template/${CONSUL_TEMPLATE_VERSION}/consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.tgz | tar -C /bin -zx"
+                },
+                {
+                    "created": "2017-06-28T11:27:31.361111742Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL author=Korviakov Andrey",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:31.687791988Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL maintainer=4lifenet@gmail.com",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:31.936535283Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL SERVICE_NAME=nginx",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:32.201948885Z",
+                    "created_by": "/bin/sh -c #(nop)  HEALTHCHECK &{[\"CMD-SHELL\" \"docker-healthcheck\"] \"0s\" \"0s\" '\\x00'}",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:32.503807793Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RESTY_VERSION=1.11.2.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:32.705012125Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RESTY_LUAROCKS_VERSION=2.4.2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:32.968569047Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RESTY_OPENSSL_VERSION=1.0.2l",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:33.175266032Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RESTY_PCRE_VERSION=8.40",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:33.47883826Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RESTY_J=1",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:33.709634515Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RESTY_GEOIP2_VERSION=2.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:33.904071825Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RESTY_NPS_VERSION=1.12.34.2",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:34.10192452Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RESTY_KETAMA_CHASH_VERSION=0.6",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:34.341622751Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RESTY_CONFIG_OPTIONS=    --prefix=/usr/share     --conf-path=/etc/nginx/nginx.conf     --sbin-path=/usr/sbin/nginx     --error-log-path=/var/log/nginx/error.log     --http-log-path=/var/log/nginx/access.log     --pid-path=/var/run/nginx.pid     --lock-path=/var/run/nginx.lock     --http-client-body-temp-path=/var/cache/nginx/client_temp     --http-proxy-temp-path=/var/cache/nginx/proxy_temp     --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp     --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp     --http-scgi-temp-path=/var/cache/nginx/scgi_temp     --with-file-aio     --with-http_addition_module     --with-http_auth_request_module     --with-http_gunzip_module     --with-http_gzip_static_module     --with-http_image_filter_module=dynamic     --with-http_realip_module     --with-http_secure_link_module     --with-http_slice_module     --with-http_ssl_module     --with-http_stub_status_module     --with-http_sub_module     --with-http_v2_module     --with-ipv6     --with-md5-asm     --with-pcre-jit     --with-sha1-asm     --with-stream     --with-stream_ssl_module     --with-threads     --without-http_redis2_module     --without-http_redis_module     --without-http_rds_csv_module     --without-http_rds_json_module     --add-module=/tmp/ngx_http_geoip2_module-2.0     --add-module=/tmp/ngx_http_upstream_ketama_chash-0.6     ",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:34.630352747Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG _RESTY_CONFIG_DEPS=--with-openssl=/tmp/openssl-1.0.2l --with-pcre=/tmp/pcre-8.40",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:27:34.921577985Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PCRE_CONF_OPT=--enable-utf8 --enable-unicode-properties",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-06-28T11:43:10.000027819Z",
+                    "created_by": "|10 RESTY_CONFIG_OPTIONS=    --prefix=/usr/share     --conf-path=/etc/nginx/nginx.conf     --sbin-path=/usr/sbin/nginx     --error-log-path=/var/log/nginx/error.log     --http-log-path=/var/log/nginx/access.log     --pid-path=/var/run/nginx.pid     --lock-path=/var/run/nginx.lock     --http-client-body-temp-path=/var/cache/nginx/client_temp     --http-proxy-temp-path=/var/cache/nginx/proxy_temp     --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp     --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp     --http-scgi-temp-path=/var/cache/nginx/scgi_temp     --with-file-aio     --with-http_addition_module     --with-http_auth_request_module     --with-http_gunzip_module     --with-http_gzip_static_module     --with-http_image_filter_module=dynamic     --with-http_realip_module     --with-http_secure_link_module     --with-http_slice_module     --with-http_ssl_module     --with-http_stub_status_module     --with-http_sub_module     --with-http_v2_module     --with-ipv6     --with-md5-asm     --with-pcre-jit     --with-sha1-asm     --with-stream     --with-stream_ssl_module     --with-threads     --without-http_redis2_module     --without-http_redis_module     --without-http_rds_csv_module     --without-http_rds_json_module     --add-module=/tmp/ngx_http_geoip2_module-2.0     --add-module=/tmp/ngx_http_upstream_ketama_chash-0.6      RESTY_GEOIP2_VERSION=2.0 RESTY_J=1 RESTY_KETAMA_CHASH_VERSION=0.6 RESTY_LUAROCKS_VERSION=2.4.2 RESTY_NPS_VERSION=1.12.34.2 RESTY_OPENSSL_VERSION=1.0.2l RESTY_PCRE_VERSION=8.40 RESTY_VERSION=1.11.2.3 _RESTY_CONFIG_DEPS=--with-openssl=/tmp/openssl-1.0.2l --with-pcre=/tmp/pcre-8.40 /bin/sh -c apk add --no-cache --update --virtual .build-deps         build-base         git         gd-dev         libxslt-dev         linux-headers         cmake         make         perl-dev         readline-dev         zlib-dev         libmaxminddb-dev     && apk add --no-cache --update         curl         jq         gd         libgcc         libxslt         zlib         libmaxminddb     && cd /tmp     && curl -fSL https://www.openssl.org/source/openssl-${RESTY_OPENSSL_VERSION}.tar.gz | tar -zx         && curl -fSL https://ftp.pcre.org/pub/pcre/pcre-${RESTY_PCRE_VERSION}.tar.gz | tar -zx         && curl -fSl https://codeload.github.com/leev/ngx_http_geoip2_module/tar.gz/${RESTY_GEOIP2_VERSION} | tar -zx         && curl -fSlL https://github.com/flygoast/ngx_http_upstream_ketama_chash/archive/v${RESTY_KETAMA_CHASH_VERSION}.tar.gz | tar -zx         && curl -fSL https://openresty.org/download/openresty-${RESTY_VERSION}.tar.gz | tar -zx     && cd /tmp/openresty-${RESTY_VERSION}     && ./configure -j${RESTY_J} ${_RESTY_CONFIG_DEPS} ${RESTY_CONFIG_OPTIONS}     && make -j${RESTY_J}     && make -j${RESTY_J} install     && cd /tmp     && curl -fSL http://luarocks.github.io/luarocks/releases/luarocks-${RESTY_LUAROCKS_VERSION}.tar.gz | tar -zx     && cd luarocks-${RESTY_LUAROCKS_VERSION}     && ./configure         --prefix=/usr/share/luajit         --with-lua=/usr/share/luajit         --lua-suffix=jit-2.1.0-beta2         --with-lua-include=/usr/share/luajit/include/luajit-2.1     && make build     && make install     && ln -s /usr/share/luajit/bin/luarocks /bin/luarocks     && cd /tmp         && ln -sf /dev/stdout /var/log/nginx/access.log     && ln -sf /dev/stderr /var/log/nginx/error.log         && mkdir -p /usr/share/geoip2     && curl -fSL http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz | gzip -d  > /usr/share/geoip2/GeoLite2-Country.mmdb     && curl -fSL http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz | gzip -d  > /usr/share/geoip2/GeoLite2-City.mmdb         && git clone https://github.com/DaveGamble/cJSON     && cd cJSON && cmake . && make && make install && cd ..         && mkdir -p /var/cache/nginx /etc/nginx/sites-enabled /etc/nginx/upstream-conf.d /etc/nginx/templates         && apk del .build-deps     && rm -rf /tmp/*     && rm -f /etc/nginx/conf.d/default.conf"
+                },
+                {
+                    "created": "2017-06-28T11:43:35.708390878Z",
+                    "created_by": "|10 RESTY_CONFIG_OPTIONS=    --prefix=/usr/share     --conf-path=/etc/nginx/nginx.conf     --sbin-path=/usr/sbin/nginx     --error-log-path=/var/log/nginx/error.log     --http-log-path=/var/log/nginx/access.log     --pid-path=/var/run/nginx.pid     --lock-path=/var/run/nginx.lock     --http-client-body-temp-path=/var/cache/nginx/client_temp     --http-proxy-temp-path=/var/cache/nginx/proxy_temp     --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp     --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp     --http-scgi-temp-path=/var/cache/nginx/scgi_temp     --with-file-aio     --with-http_addition_module     --with-http_auth_request_module     --with-http_gunzip_module     --with-http_gzip_static_module     --with-http_image_filter_module=dynamic     --with-http_realip_module     --with-http_secure_link_module     --with-http_slice_module     --with-http_ssl_module     --with-http_stub_status_module     --with-http_sub_module     --with-http_v2_module     --with-ipv6     --with-md5-asm     --with-pcre-jit     --with-sha1-asm     --with-stream     --with-stream_ssl_module     --with-threads     --without-http_redis2_module     --without-http_redis_module     --without-http_rds_csv_module     --without-http_rds_json_module     --add-module=/tmp/ngx_http_geoip2_module-2.0     --add-module=/tmp/ngx_http_upstream_ketama_chash-0.6      RESTY_GEOIP2_VERSION=2.0 RESTY_J=1 RESTY_KETAMA_CHASH_VERSION=0.6 RESTY_LUAROCKS_VERSION=2.4.2 RESTY_NPS_VERSION=1.12.34.2 RESTY_OPENSSL_VERSION=1.0.2l RESTY_PCRE_VERSION=8.40 RESTY_VERSION=1.11.2.3 _RESTY_CONFIG_DEPS=--with-openssl=/tmp/openssl-1.0.2l --with-pcre=/tmp/pcre-8.40 /bin/sh -c apk add --no-cache --update --virtual .build-deps         build-base         git         cmake         make         && luarocks install lua-resty-libcjson     && sed -ie 's#ffi_load \"cjson\"#ffi_load \"/usr/local/lib/libcjson.so\"#' /usr/share/luajit/share/lua/5.1/resty/libcjson.lua     && luarocks install lua-resty-http     && luarocks install statsd     && luarocks install lua-resty-statsd     && luarocks install lua-resty-beanstalkd     && luarocks install lua-resty-jit-uuid     && luarocks install lua-resty-cookie         && apk del .build-deps"
+                },
+                {
+                    "created": "2017-06-28T11:43:35.860311542Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:be854b9d9aa41e9b9e3899ef5b8a6938989f54132c06728adb1ef6b9ef208d68 in /etc/nginx "
+                },
+                {
+                    "created": "2017-06-28T11:43:36.031266142Z",
+                    "created_by": "/bin/sh -c #(nop) COPY dir:6b04691602a3f3031c5162fc410979c7ebe703294ce110e80ff7d99bf688d72a in /usr/local/bin "
+                },
+                {
+                    "created": "2017-06-28T11:43:36.476413734Z",
+                    "created_by": "|10 RESTY_CONFIG_OPTIONS=    --prefix=/usr/share     --conf-path=/etc/nginx/nginx.conf     --sbin-path=/usr/sbin/nginx     --error-log-path=/var/log/nginx/error.log     --http-log-path=/var/log/nginx/access.log     --pid-path=/var/run/nginx.pid     --lock-path=/var/run/nginx.lock     --http-client-body-temp-path=/var/cache/nginx/client_temp     --http-proxy-temp-path=/var/cache/nginx/proxy_temp     --http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp     --http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp     --http-scgi-temp-path=/var/cache/nginx/scgi_temp     --with-file-aio     --with-http_addition_module     --with-http_auth_request_module     --with-http_gunzip_module     --with-http_gzip_static_module     --with-http_image_filter_module=dynamic     --with-http_realip_module     --with-http_secure_link_module     --with-http_slice_module     --with-http_ssl_module     --with-http_stub_status_module     --with-http_sub_module     --with-http_v2_module     --with-ipv6     --with-md5-asm     --with-pcre-jit     --with-sha1-asm     --with-stream     --with-stream_ssl_module     --with-threads     --without-http_redis2_module     --without-http_redis_module     --without-http_rds_csv_module     --without-http_rds_json_module     --add-module=/tmp/ngx_http_geoip2_module-2.0     --add-module=/tmp/ngx_http_upstream_ketama_chash-0.6      RESTY_GEOIP2_VERSION=2.0 RESTY_J=1 RESTY_KETAMA_CHASH_VERSION=0.6 RESTY_LUAROCKS_VERSION=2.4.2 RESTY_NPS_VERSION=1.12.34.2 RESTY_OPENSSL_VERSION=1.0.2l RESTY_PCRE_VERSION=8.40 RESTY_VERSION=1.11.2.3 _RESTY_CONFIG_DEPS=--with-openssl=/tmp/openssl-1.0.2l --with-pcre=/tmp/pcre-8.40 /bin/sh -c find /usr/local/bin -type f -exec chmod +x {} \\;"
+                },
+                {
+                    "created": "2017-06-28T11:43:36.564349403Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"nginx\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:23b9c7b43573dd164619ad59e9d51eda4095926729f59d5f22803bcbe9ab24c2",
+                    "sha256:03721ff156fd5ce09313f7c7147215f08aa7d609c2e4888edc637e0d6f01b816",
+                    "sha256:029bd479b1d631a0f38b066d9a8771d1e60f40c6de25c33db7b5b0546174b438",
+                    "sha256:db1d6bef5ac5cb44ac655e664905cd13f620777a5c047c9786feaa6c28818f33",
+                    "sha256:99b97c8d3693bfa5f431340b96522d219b622bc8b3d841823a08c42225cb86b7",
+                    "sha256:fa68af00896dfb8f4cb8ad840714a7057958e12bbd0065c527852d4e642622d9",
+                    "sha256:eba9e8c950065fc32cc589f9e65c52f97ff3391224fc5c0a0db16458c4eedcea"
+                ]
+            }
+        }
+    }
+}

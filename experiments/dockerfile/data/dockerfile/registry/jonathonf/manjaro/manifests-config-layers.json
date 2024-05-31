@@ -1,0 +1,44 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 419,
+                "digest": "sha256:89c8a82b880411a943a7a1db5c51f767d23322aed30afa520992a2d3e9f4ffa5"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 228614181,
+                    "digest": "sha256:6ab4fa32cab0711db902b3296c695c4747ed7e95b6bb537293813b3677a7e568"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "created": "2019-07-17T13:59:31.641877039+01:00",
+            "architecture": "amd64",
+            "os": "linux",
+            "config": {},
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:9e9734d02df52b5b5743561f20e7983579b5b774b4cfbe66a92165ed5f9f283d"
+                ]
+            },
+            "history": [
+                {
+                    "created": "2019-07-17T13:59:31.641877039+01:00",
+                    "created_by": "/bin/sh -c #(nop) ADD file:9e9734d02df52b5b5743561f20e7983579b5b774b4cfbe66a92165ed5f9f283d in /",
+                    "comment": "imported from tarball"
+                }
+            ]
+        }
+    }
+}

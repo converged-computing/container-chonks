@@ -1,0 +1,832 @@
+{
+    "manifests": {
+        "4.0.40": {
+            "schemaVersion": 1,
+            "name": "expertsystems/resin",
+            "tag": "4.0.40",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:7b57bc8f4479bedf881f641e527ab6b924f7d4c3999fae8e869eca95a79d06e0"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bd5b4fe6b187877332c61a6753fce7a92382da9ccb1bba81be5149a963c4f04f"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:13b4823adbf4ca0bbc35c7c89117f3535d3cccca080fc063e0957047b777105e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:650fb8b95b2555f34a61ca2dcae8864fc710b567e685550ce4d95e86bf2f605a"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"b7c1cd4e4e2aa02c20ba69cfd6324a09af1320ec97ae017d247a18cfbc0d9562\",\"parent\":\"492cb478dc73960d6eac40d69f5f0825eddabb177fd0f5f9d53de3220eb31c8d\",\"created\":\"2015-12-22T21:59:31.380512349Z\",\"container\":\"740ea54cc543bfb430bc8b28d7e7453efd7e013f89f6dc4d88dacac7aefa3335\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"console\\\"]\"],\"Image\":\"492cb478dc73960d6eac40d69f5f0825eddabb177fd0f5f9d53de3220eb31c8d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3-rc4\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"console\"],\"Image\":\"492cb478dc73960d6eac40d69f5f0825eddabb177fd0f5f9d53de3220eb31c8d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"492cb478dc73960d6eac40d69f5f0825eddabb177fd0f5f9d53de3220eb31c8d\",\"parent\":\"a7cd7b2cfa3e8a825d30811797ffaa6d8974df6275bc049b5ac7ed6602234afd\",\"created\":\"2015-12-22T21:59:29.822878676Z\",\"container\":\"0022efd7d91c4d73cd231935c86771885604f587716e9c8f1151bbff0f0ceda5\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/usr/local/share/resin-4.0.40/bin/resinctl\\\"]}\"],\"Image\":\"a7cd7b2cfa3e8a825d30811797ffaa6d8974df6275bc049b5ac7ed6602234afd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3-rc4\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":null,\"Image\":\"a7cd7b2cfa3e8a825d30811797ffaa6d8974df6275bc049b5ac7ed6602234afd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a7cd7b2cfa3e8a825d30811797ffaa6d8974df6275bc049b5ac7ed6602234afd\",\"parent\":\"df73d625c59389558828940781b91d7175861f50329e5865a162cff75294b1c4\",\"created\":\"2015-12-22T21:59:28.078577005Z\",\"container\":\"d5f45fadcd57ba5986ef46c1f6dfae28d5abe5053cbe91c9291b9a87f23bf0be\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"cd /var/resin/webapp-jars \\u0026\\u0026   yum -y install unzip \\u0026\\u0026   yum clean all \\u0026\\u0026   curl -LO http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.38.zip \\u0026\\u0026   unzip -j mysql-connector-java-5.1.38.zip mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar \\u0026\\u0026   rm mysql-connector-java-5.1.38.zip\"],\"Image\":\"df73d625c59389558828940781b91d7175861f50329e5865a162cff75294b1c4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3-rc4\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"df73d625c59389558828940781b91d7175861f50329e5865a162cff75294b1c4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":18588952}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"df73d625c59389558828940781b91d7175861f50329e5865a162cff75294b1c4\",\"parent\":\"e85fd8d63006b37a38a87c0217fafbe8c3ba906e6a2a78431905014b441c5ce7\",\"created\":\"2015-12-22T21:59:20.270778226Z\",\"container\":\"f41f78cf17c3534a53146674c5cb56ed5584091c169f5f079ba11bba8d1d3638\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Image\":\"e85fd8d63006b37a38a87c0217fafbe8c3ba906e6a2a78431905014b441c5ce7\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3-rc4\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"e85fd8d63006b37a38a87c0217fafbe8c3ba906e6a2a78431905014b441c5ce7\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e85fd8d63006b37a38a87c0217fafbe8c3ba906e6a2a78431905014b441c5ce7\",\"parent\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"created\":\"2015-12-22T21:59:17.677595346Z\",\"container\":\"e9fded96441ec614383896facaf13abf1967e59281f13c2cee88d8a320b6d9a7\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -O http://caucho.com/download/rpm-6.5/4.0.40/x86_64/resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum localinstall -y resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm resin-4.0.40-1.x86_64.rpm\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3-rc4\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":56977198}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"parent\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"created\":\"2015-12-22T15:01:02.899357728Z\",\"container\":\"5554f573394db7610b318c839451f43b9cf3dd089400df3060a1f94f96d7eaf9\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV JAVA_HOME=/usr/java/default\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"parent\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"created\":\"2015-12-22T15:00:56.107447869Z\",\"container\":\"722965b47415f85c69a37e928086adc4dcaa4b74ab32a41b1b65091e5d4193f3\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -LO --insecure --junk-session-cookies --location --remote-name --silent     --header \\\"Cookie: oraclelicense=accept-securebackup-cookie\\\"     http://download.oracle.com/otn-pub/java/jdk/8u66-b17/jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum localinstall -y jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm jdk-8u66-linux-x64.rpm\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":364730788}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"parent\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"created\":\"2015-12-15T19:52:54.954325426Z\",\"container\":\"282f881b836b0bee18c9c54a02563b4a333e2ec2ba675d15b0b7b87b591f0f53\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"parent\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"created\":\"2015-12-15T19:52:54.004407624Z\",\"container\":\"4877e7c78505049c7d3fbc41bce51636fb4f3cfd3be2bc7ae908fe18bee20e08\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL license=GPLv2\"],\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"parent\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"created\":\"2015-12-15T19:52:53.45020463Z\",\"container\":\"cd196c62630622c778e2cc075b6716e3f456fd3fed9985c03e3527b331a05b72\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL vendor=CentOS\"],\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"parent\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"created\":\"2015-12-15T19:52:52.978367781Z\",\"container\":\"373e1cefdd42ef056a8c6fddc96dd7d26a8fea84959f008244257d467056ad44\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL name=CentOS Base Image\"],\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"parent\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-12-15T19:52:49.42753745Z\",\"container\":\"070fea052c90efb3a998ef3fdb2130ac23d3946301a7751606a34ba0afa32d85\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:3df3794a090dd1bb550e9489f7d87242e124b5436709768cbd58f2553c730079 in /\"],\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":194675000}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container\":\"aa61f9423ec3654a523b23db8beeb801ce1ba1e82bfd15c71f317a8e723dfe2c\",\"container_config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.7.1\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "6NHW:YOLC:OMGJ:3DIY:OWRY:I6OK:J2BG:IYIN:AX4H:UOTY:S7RN:PLHS",
+                            "kty": "EC",
+                            "x": "-kUW9msGSV8otLbKYr2f0GCoapYzwdyE3r2yQ5aYsak",
+                            "y": "oygkp7vV6MDvLEKOet7bNqHuazXomq9AagzMAw2pYjs"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "DMZx9ZMGA-crDS5j9HN4vTzoIBD36ScX2s5FuaqUpBeG6gl7dgwvH_gGyl7_FWcsznUMGkFy7HTxfXbhYON_uA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjIyNjIxLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDY6MzY6MDZaIn0"
+                }
+            ]
+        },
+        "a4.0.40": {
+            "schemaVersion": 1,
+            "name": "expertsystems/resin",
+            "tag": "a4.0.40",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:0f85cda9b12e57ddd836c6febd420baa001731971933a2803f3d08a4404233a3"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:425ced3ce5694e75715fd10242b22182fcb77d57ec3f2c669970074ef86fc6b6"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:13b4823adbf4ca0bbc35c7c89117f3535d3cccca080fc063e0957047b777105e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:650fb8b95b2555f34a61ca2dcae8864fc710b567e685550ce4d95e86bf2f605a"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"d3c7fb6459aef28afdd7582407e78d231cbf7ff0de4b9f30e1a9e633e63bf65c\",\"parent\":\"49a994e8d2fd32c3e6b090b729780d57b875eb337d7bfdaea62fed0d5bda66a6\",\"created\":\"2015-12-22T22:02:42.067134642Z\",\"container\":\"6be4ee3b0f697319ecae34ba04b0c04977347bf2362c0d1c0284b5f254b7561e\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"console\\\"]\"],\"Image\":\"49a994e8d2fd32c3e6b090b729780d57b875eb337d7bfdaea62fed0d5bda66a6\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"console\"],\"Image\":\"49a994e8d2fd32c3e6b090b729780d57b875eb337d7bfdaea62fed0d5bda66a6\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"49a994e8d2fd32c3e6b090b729780d57b875eb337d7bfdaea62fed0d5bda66a6\",\"parent\":\"62139140414d82ff4e3d88b7b33af559066d9dba9c51733c1b403292dea00212\",\"created\":\"2015-12-22T22:02:42.005365516Z\",\"container\":\"3e8cfd1eb0841d86a5bb11adaf73febc6564de44dc4374bed3b52b27517ec5a9\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/usr/local/share/resin-4.0.40/bin/resinctl\\\"]}\"],\"Image\":\"62139140414d82ff4e3d88b7b33af559066d9dba9c51733c1b403292dea00212\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":null,\"Image\":\"62139140414d82ff4e3d88b7b33af559066d9dba9c51733c1b403292dea00212\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"62139140414d82ff4e3d88b7b33af559066d9dba9c51733c1b403292dea00212\",\"parent\":\"e73caf315a091fa8c911c39c8a04992d616fa98ef05c35f6059eb5b81831af5c\",\"created\":\"2015-12-22T22:02:41.626454445Z\",\"container\":\"cd8713a597de481fd40117a108d4a1ce6448764eb050f9fd06dfdf2bb67a863b\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"cd /var/resin/webapp-jars \\u0026\\u0026   yum -y install unzip \\u0026\\u0026   yum clean all \\u0026\\u0026   curl -LO http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.38.zip \\u0026\\u0026   unzip -j mysql-connector-java-5.1.38.zip mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar \\u0026\\u0026   rm mysql-connector-java-5.1.38.zip\"],\"Image\":\"e73caf315a091fa8c911c39c8a04992d616fa98ef05c35f6059eb5b81831af5c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"e73caf315a091fa8c911c39c8a04992d616fa98ef05c35f6059eb5b81831af5c\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":18588853}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"e73caf315a091fa8c911c39c8a04992d616fa98ef05c35f6059eb5b81831af5c\",\"parent\":\"7ba1126cf030b08ce7f1185ab6d1818f9d5a56cd2f0cdad582b422696c3aae37\",\"created\":\"2015-12-22T22:02:30.701990452Z\",\"container\":\"faa204868c182a80846a8a23aaaa101f52b4f7e2d39ec9997d7b8bd596070425\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Image\":\"7ba1126cf030b08ce7f1185ab6d1818f9d5a56cd2f0cdad582b422696c3aae37\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7ba1126cf030b08ce7f1185ab6d1818f9d5a56cd2f0cdad582b422696c3aae37\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7ba1126cf030b08ce7f1185ab6d1818f9d5a56cd2f0cdad582b422696c3aae37\",\"parent\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"created\":\"2015-12-22T22:02:28.836726882Z\",\"container\":\"d2bd3cb4500e49014416a87a42eea466dc5b38cb9e07b0ad6de6421fdec5fdc9\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -O http://caucho.com/download/rpm-6.5/4.0.40/x86_64/resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum localinstall -y resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm resin-4.0.40-1.x86_64.rpm\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":56977064}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"parent\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"created\":\"2015-12-22T15:01:02.899357728Z\",\"container\":\"5554f573394db7610b318c839451f43b9cf3dd089400df3060a1f94f96d7eaf9\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV JAVA_HOME=/usr/java/default\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"parent\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"created\":\"2015-12-22T15:00:56.107447869Z\",\"container\":\"722965b47415f85c69a37e928086adc4dcaa4b74ab32a41b1b65091e5d4193f3\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -LO --insecure --junk-session-cookies --location --remote-name --silent     --header \\\"Cookie: oraclelicense=accept-securebackup-cookie\\\"     http://download.oracle.com/otn-pub/java/jdk/8u66-b17/jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum localinstall -y jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm jdk-8u66-linux-x64.rpm\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":364730788}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"parent\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"created\":\"2015-12-15T19:52:54.954325426Z\",\"container\":\"282f881b836b0bee18c9c54a02563b4a333e2ec2ba675d15b0b7b87b591f0f53\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"parent\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"created\":\"2015-12-15T19:52:54.004407624Z\",\"container\":\"4877e7c78505049c7d3fbc41bce51636fb4f3cfd3be2bc7ae908fe18bee20e08\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL license=GPLv2\"],\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"parent\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"created\":\"2015-12-15T19:52:53.45020463Z\",\"container\":\"cd196c62630622c778e2cc075b6716e3f456fd3fed9985c03e3527b331a05b72\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL vendor=CentOS\"],\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"parent\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"created\":\"2015-12-15T19:52:52.978367781Z\",\"container\":\"373e1cefdd42ef056a8c6fddc96dd7d26a8fea84959f008244257d467056ad44\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL name=CentOS Base Image\"],\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"parent\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-12-15T19:52:49.42753745Z\",\"container\":\"070fea052c90efb3a998ef3fdb2130ac23d3946301a7751606a34ba0afa32d85\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:3df3794a090dd1bb550e9489f7d87242e124b5436709768cbd58f2553c730079 in /\"],\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":194675000}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container\":\"aa61f9423ec3654a523b23db8beeb801ce1ba1e82bfd15c71f317a8e723dfe2c\",\"container_config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.7.1\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "3RCI:6IKC:CIUC:B5OV:W5DW:AFZC:5DI4:6RM3:NRAF:AW2X:PDSQ:KIOR",
+                            "kty": "EC",
+                            "x": "IVS84PSmg7lr97Bp7mP7OcvrrGK4b5WHWWYSsC_du_s",
+                            "y": "ODvhCR_PpFcWGcunpJGnePGwz_vPha8n3yJKfS5Fx_I"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "6M5hqMUQcxUrPcPlurcBzT9waFaaBPqmXgDT0V3HxnDCOoJnnyfcyTS-bAFcmenUsOFOKsyEMax6X-5qGNlxXA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjIyNjAyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDY6MzY6MDdaIn0"
+                }
+            ]
+        },
+        "b4.0.40": {
+            "schemaVersion": 1,
+            "name": "expertsystems/resin",
+            "tag": "b4.0.40",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:6123c1a438dcad4b54b8777f7d5f10dca17242382a91e2a502bb8b63d641d7f3"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:bce9b7b210b3b1341d83ba3d33b50688f0ccb9600423d542dc0ee3b2ee94654e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:13b4823adbf4ca0bbc35c7c89117f3535d3cccca080fc063e0957047b777105e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:650fb8b95b2555f34a61ca2dcae8864fc710b567e685550ce4d95e86bf2f605a"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"a3cb096a54c427d46417309a453b4f0ec34c69ae726e9df971fd18c6b97afdb4\",\"parent\":\"0712a685f4ae7841b79ff4c6e2000bcafe07984785ac9943859588674397d1ce\",\"created\":\"2015-12-22T21:58:11.659601864Z\",\"container\":\"278ade82966d0620c37d81a5f10211699a48c2dbc34cf40806a74511ce81e680\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"console\\\"]\"],\"Image\":\"0712a685f4ae7841b79ff4c6e2000bcafe07984785ac9943859588674397d1ce\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"console\"],\"Image\":\"0712a685f4ae7841b79ff4c6e2000bcafe07984785ac9943859588674397d1ce\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"0712a685f4ae7841b79ff4c6e2000bcafe07984785ac9943859588674397d1ce\",\"parent\":\"586e2b49aaf9f62dd18353907773747acce6357467cda0ec74c8118d1d4427dd\",\"created\":\"2015-12-22T21:58:11.591749887Z\",\"container\":\"d07d653b883b587ecd15d474e011d7adf2d45e4d67e90c142d74bfb8938b17d8\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/usr/local/share/resin-4.0.40/bin/resinctl\\\"]}\"],\"Image\":\"586e2b49aaf9f62dd18353907773747acce6357467cda0ec74c8118d1d4427dd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":null,\"Image\":\"586e2b49aaf9f62dd18353907773747acce6357467cda0ec74c8118d1d4427dd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"586e2b49aaf9f62dd18353907773747acce6357467cda0ec74c8118d1d4427dd\",\"parent\":\"604ce4b3b9187854e3b8eb8e6069390eca0279474d4c03202a0173d0dc1d493b\",\"created\":\"2015-12-22T21:58:11.234248258Z\",\"container\":\"7eaaef638334b27fb5a5f2e51edce13b900549277612cee0c2a21802f5e81069\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"cd /var/resin/webapp-jars \\u0026\\u0026   yum -y install unzip \\u0026\\u0026   yum clean all \\u0026\\u0026   curl -LO http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.38.zip \\u0026\\u0026   unzip -j mysql-connector-java-5.1.38.zip mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar \\u0026\\u0026   rm mysql-connector-java-5.1.38.zip\"],\"Image\":\"604ce4b3b9187854e3b8eb8e6069390eca0279474d4c03202a0173d0dc1d493b\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"604ce4b3b9187854e3b8eb8e6069390eca0279474d4c03202a0173d0dc1d493b\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":18588864}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"604ce4b3b9187854e3b8eb8e6069390eca0279474d4c03202a0173d0dc1d493b\",\"parent\":\"a831b9f1896dd92e69ec53e426988130b1d4236b9ff19e6ef68b0e9eecc0d1b1\",\"created\":\"2015-12-22T21:58:01.449523174Z\",\"container\":\"a27e05600c2fdc77ca4c7577c2d699cc54d27d458de73627aa785e599dfcb67b\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Image\":\"a831b9f1896dd92e69ec53e426988130b1d4236b9ff19e6ef68b0e9eecc0d1b1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"a831b9f1896dd92e69ec53e426988130b1d4236b9ff19e6ef68b0e9eecc0d1b1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a831b9f1896dd92e69ec53e426988130b1d4236b9ff19e6ef68b0e9eecc0d1b1\",\"parent\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"created\":\"2015-12-22T21:57:59.558742269Z\",\"container\":\"cdd181b4df3a843987311509cb23f03de139c7156679a290080d7a7705d0a6c8\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -O http://caucho.com/download/rpm-6.5/4.0.40/x86_64/resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum localinstall -y resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm resin-4.0.40-1.x86_64.rpm\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":56977075}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"parent\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"created\":\"2015-12-22T15:01:02.899357728Z\",\"container\":\"5554f573394db7610b318c839451f43b9cf3dd089400df3060a1f94f96d7eaf9\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV JAVA_HOME=/usr/java/default\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"parent\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"created\":\"2015-12-22T15:00:56.107447869Z\",\"container\":\"722965b47415f85c69a37e928086adc4dcaa4b74ab32a41b1b65091e5d4193f3\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -LO --insecure --junk-session-cookies --location --remote-name --silent     --header \\\"Cookie: oraclelicense=accept-securebackup-cookie\\\"     http://download.oracle.com/otn-pub/java/jdk/8u66-b17/jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum localinstall -y jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm jdk-8u66-linux-x64.rpm\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":364730788}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"parent\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"created\":\"2015-12-15T19:52:54.954325426Z\",\"container\":\"282f881b836b0bee18c9c54a02563b4a333e2ec2ba675d15b0b7b87b591f0f53\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"parent\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"created\":\"2015-12-15T19:52:54.004407624Z\",\"container\":\"4877e7c78505049c7d3fbc41bce51636fb4f3cfd3be2bc7ae908fe18bee20e08\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL license=GPLv2\"],\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"parent\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"created\":\"2015-12-15T19:52:53.45020463Z\",\"container\":\"cd196c62630622c778e2cc075b6716e3f456fd3fed9985c03e3527b331a05b72\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL vendor=CentOS\"],\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"parent\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"created\":\"2015-12-15T19:52:52.978367781Z\",\"container\":\"373e1cefdd42ef056a8c6fddc96dd7d26a8fea84959f008244257d467056ad44\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL name=CentOS Base Image\"],\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"parent\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-12-15T19:52:49.42753745Z\",\"container\":\"070fea052c90efb3a998ef3fdb2130ac23d3946301a7751606a34ba0afa32d85\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:3df3794a090dd1bb550e9489f7d87242e124b5436709768cbd58f2553c730079 in /\"],\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":194675000}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container\":\"aa61f9423ec3654a523b23db8beeb801ce1ba1e82bfd15c71f317a8e723dfe2c\",\"container_config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.7.1\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "ZYSU:6KXW:XJEQ:3W23:EPGU:BJZJ:PW2Q:N4QY:RFFZ:7TYF:AP3U:X365",
+                            "kty": "EC",
+                            "x": "RUy2eQH0ExOJ43sHDC6uYlKwnxnehnnbE7pOaNnAz4s",
+                            "y": "hS13gaTO6u7JDh4iia4siSUWIOqfIE4igg-N1d3rj_A"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "m1CKZJF1HUqKyWlFTEmHsET0Ec38RSSB9FMLVrtJSAV6ne14uxRyEZwzim8CxRGqU4mKdrx_L7PrsPyk5yWbpw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjIyNjAyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDY6MzY6MDhaIn0"
+                }
+            ]
+        },
+        "c4.0.40": {
+            "schemaVersion": 1,
+            "name": "expertsystems/resin",
+            "tag": "c4.0.40",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:b607d12c78ff1db476a2f2ad83dd1ac56acdd0865cdf64805308db788d3afa28"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:e0beee61ad6abb24aa3394afee6a1488e359165fadbdfcd8608921facedd0b21"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:13b4823adbf4ca0bbc35c7c89117f3535d3cccca080fc063e0957047b777105e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:650fb8b95b2555f34a61ca2dcae8864fc710b567e685550ce4d95e86bf2f605a"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"de0b044b7bfb5bcf163c1b404c90222fe23deea7028ed67860c274f5ae62f530\",\"parent\":\"7a1f0b235c5eaf2afe65bddcda70172f8de658602bef07971da1f59f1ce3558e\",\"created\":\"2015-12-22T22:07:15.043203969Z\",\"container\":\"c29c7541d0667b028d8a80d40243223a1d9db2ad8336e855883b5d7aab45b8c8\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"console\\\"]\"],\"Image\":\"7a1f0b235c5eaf2afe65bddcda70172f8de658602bef07971da1f59f1ce3558e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"console\"],\"Image\":\"7a1f0b235c5eaf2afe65bddcda70172f8de658602bef07971da1f59f1ce3558e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"7a1f0b235c5eaf2afe65bddcda70172f8de658602bef07971da1f59f1ce3558e\",\"parent\":\"8fe25d82e9e518d568b0388aa64980f024d2deb048bcff605c379b68498d5a79\",\"created\":\"2015-12-22T22:07:14.981920173Z\",\"container\":\"a91993cb6bb21fab106cf575cd86f52f97c2e9e92ca79526fdbdf39b2732c8dd\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/usr/local/share/resin-4.0.40/bin/resinctl\\\"]}\"],\"Image\":\"8fe25d82e9e518d568b0388aa64980f024d2deb048bcff605c379b68498d5a79\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":null,\"Image\":\"8fe25d82e9e518d568b0388aa64980f024d2deb048bcff605c379b68498d5a79\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8fe25d82e9e518d568b0388aa64980f024d2deb048bcff605c379b68498d5a79\",\"parent\":\"d75ce931355b83d0d3074c19e88fe1c9e8901c94f148db82f3ead5c6d577bef8\",\"created\":\"2015-12-22T22:07:14.625075334Z\",\"container\":\"1cfa997d357e02b1418912b865efe6a10d2b379a61f118aafcd4bc977ea39893\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"cd /var/resin/webapp-jars \\u0026\\u0026   yum -y install unzip \\u0026\\u0026   yum clean all \\u0026\\u0026   curl -LO http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.38.zip \\u0026\\u0026   unzip -j mysql-connector-java-5.1.38.zip mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar \\u0026\\u0026   rm mysql-connector-java-5.1.38.zip\"],\"Image\":\"d75ce931355b83d0d3074c19e88fe1c9e8901c94f148db82f3ead5c6d577bef8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"d75ce931355b83d0d3074c19e88fe1c9e8901c94f148db82f3ead5c6d577bef8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":18588978}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"d75ce931355b83d0d3074c19e88fe1c9e8901c94f148db82f3ead5c6d577bef8\",\"parent\":\"b02ea178b89f4548ebe36e9672c4895b496a74cd72135c7fd3f8e05c9482e829\",\"created\":\"2015-12-22T22:07:07.405792259Z\",\"container\":\"6afe3247fbfce226c5a5e7a188e7b0a1baa48dc04636b709b83bd672a9e704d9\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Image\":\"b02ea178b89f4548ebe36e9672c4895b496a74cd72135c7fd3f8e05c9482e829\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"b02ea178b89f4548ebe36e9672c4895b496a74cd72135c7fd3f8e05c9482e829\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"b02ea178b89f4548ebe36e9672c4895b496a74cd72135c7fd3f8e05c9482e829\",\"parent\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"created\":\"2015-12-22T22:07:05.501080607Z\",\"container\":\"8adea043fe1934bab933c144b591d3327335c1ba4853ff48343ecf682872a292\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -O http://caucho.com/download/rpm-6.5/4.0.40/x86_64/resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum localinstall -y resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm resin-4.0.40-1.x86_64.rpm\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":56977189}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"parent\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"created\":\"2015-12-22T15:01:02.899357728Z\",\"container\":\"5554f573394db7610b318c839451f43b9cf3dd089400df3060a1f94f96d7eaf9\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV JAVA_HOME=/usr/java/default\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"parent\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"created\":\"2015-12-22T15:00:56.107447869Z\",\"container\":\"722965b47415f85c69a37e928086adc4dcaa4b74ab32a41b1b65091e5d4193f3\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -LO --insecure --junk-session-cookies --location --remote-name --silent     --header \\\"Cookie: oraclelicense=accept-securebackup-cookie\\\"     http://download.oracle.com/otn-pub/java/jdk/8u66-b17/jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum localinstall -y jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm jdk-8u66-linux-x64.rpm\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":364730788}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"parent\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"created\":\"2015-12-15T19:52:54.954325426Z\",\"container\":\"282f881b836b0bee18c9c54a02563b4a333e2ec2ba675d15b0b7b87b591f0f53\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"parent\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"created\":\"2015-12-15T19:52:54.004407624Z\",\"container\":\"4877e7c78505049c7d3fbc41bce51636fb4f3cfd3be2bc7ae908fe18bee20e08\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL license=GPLv2\"],\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"parent\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"created\":\"2015-12-15T19:52:53.45020463Z\",\"container\":\"cd196c62630622c778e2cc075b6716e3f456fd3fed9985c03e3527b331a05b72\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL vendor=CentOS\"],\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"parent\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"created\":\"2015-12-15T19:52:52.978367781Z\",\"container\":\"373e1cefdd42ef056a8c6fddc96dd7d26a8fea84959f008244257d467056ad44\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL name=CentOS Base Image\"],\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"parent\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-12-15T19:52:49.42753745Z\",\"container\":\"070fea052c90efb3a998ef3fdb2130ac23d3946301a7751606a34ba0afa32d85\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:3df3794a090dd1bb550e9489f7d87242e124b5436709768cbd58f2553c730079 in /\"],\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":194675000}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container\":\"aa61f9423ec3654a523b23db8beeb801ce1ba1e82bfd15c71f317a8e723dfe2c\",\"container_config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.7.1\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "SWCD:4GHB:GSC5:GZLX:JNYS:GJ3O:DMYN:47I4:IUDC:2BFE:L2YF:2REH",
+                            "kty": "EC",
+                            "x": "qLkquJ84IbhoX5otKaVzvTlvWdqSSfEQD4y8ZkFl7q0",
+                            "y": "TU2Gh0muz2k9kKU0bwSlmfOH1vYYDU23ZLdL9EXDSpA"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "NV54bawFlM5FKI-1EmrssexG3U4bWjhK8BwOtzvgqEM50q8hPuj9rlixNj9rJpqb_QoAKtoRxePdvnLTt45Rlg",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjIyNjAyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDY6MzY6MDlaIn0"
+                }
+            ]
+        },
+        "dresin-4.0.40": {
+            "schemaVersion": 1,
+            "name": "expertsystems/resin",
+            "tag": "dresin-4.0.40",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:9a351166a8e82126404a72344fa756d28f585247cc7044c6d95a9d75b8c061bf"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:f9da3b15e233659290a2c3588aaca3bad40d314ce99aa9aed5c4a82de167e2a5"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:13b4823adbf4ca0bbc35c7c89117f3535d3cccca080fc063e0957047b777105e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:650fb8b95b2555f34a61ca2dcae8864fc710b567e685550ce4d95e86bf2f605a"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"156e9660a204661a2320fe7b22a3c7a16019882cd06260a3cb58bff2f7a3c2cd\",\"parent\":\"37e89cbf6d990f082c19777a1241c227061819037150407e33af36be262aa05e\",\"created\":\"2015-12-22T22:00:30.799870954Z\",\"container\":\"14deccd3e2bdb5efd234a0dc12fb424be1cb694d9726ca2bf49766fdd2e128bc\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"console\\\"]\"],\"Image\":\"37e89cbf6d990f082c19777a1241c227061819037150407e33af36be262aa05e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"console\"],\"Image\":\"37e89cbf6d990f082c19777a1241c227061819037150407e33af36be262aa05e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"37e89cbf6d990f082c19777a1241c227061819037150407e33af36be262aa05e\",\"parent\":\"f8b7fa7ea50e6d26a58bd23a77db9c530fdc17b6d3f9d6250b503b29437e3cc1\",\"created\":\"2015-12-22T22:00:30.735314848Z\",\"container\":\"bd6e04238966d73241925526c93eebb189ddc4f2ae4148326757a0cb13bd37d6\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/usr/local/share/resin-4.0.40/bin/resinctl\\\"]}\"],\"Image\":\"f8b7fa7ea50e6d26a58bd23a77db9c530fdc17b6d3f9d6250b503b29437e3cc1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":null,\"Image\":\"f8b7fa7ea50e6d26a58bd23a77db9c530fdc17b6d3f9d6250b503b29437e3cc1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f8b7fa7ea50e6d26a58bd23a77db9c530fdc17b6d3f9d6250b503b29437e3cc1\",\"parent\":\"1604d1735817cd9e371647412d1155c79e5df0fb449dc8290133d646baed5c38\",\"created\":\"2015-12-22T22:00:30.364728495Z\",\"container\":\"768e12aa6e6ab7d53596836a447a58e84e42137cbe38f8b269f25a9fabd7be87\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"cd /var/resin/webapp-jars \\u0026\\u0026   yum -y install unzip \\u0026\\u0026   yum clean all \\u0026\\u0026   curl -LO http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.38.zip \\u0026\\u0026   unzip -j mysql-connector-java-5.1.38.zip mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar \\u0026\\u0026   rm mysql-connector-java-5.1.38.zip\"],\"Image\":\"1604d1735817cd9e371647412d1155c79e5df0fb449dc8290133d646baed5c38\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"1604d1735817cd9e371647412d1155c79e5df0fb449dc8290133d646baed5c38\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":18588853}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"1604d1735817cd9e371647412d1155c79e5df0fb449dc8290133d646baed5c38\",\"parent\":\"53438a02ad9af3405ca59c03d025c26efe1a9c8c7824dab43a19230ab5808979\",\"created\":\"2015-12-22T22:00:12.660465123Z\",\"container\":\"1925fa2bb4f761113b30fb1c473e2fdcce735a806d30a442f1e77a3b3e03608a\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Image\":\"53438a02ad9af3405ca59c03d025c26efe1a9c8c7824dab43a19230ab5808979\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"53438a02ad9af3405ca59c03d025c26efe1a9c8c7824dab43a19230ab5808979\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"53438a02ad9af3405ca59c03d025c26efe1a9c8c7824dab43a19230ab5808979\",\"parent\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"created\":\"2015-12-22T22:00:10.736643183Z\",\"container\":\"d3dd406e8535c4e964a6fab8285f481b47b5504bb03180f57ab49d21c5fa4bef\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -O http://caucho.com/download/rpm-6.5/4.0.40/x86_64/resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum localinstall -y resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm resin-4.0.40-1.x86_64.rpm\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":56977064}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"parent\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"created\":\"2015-12-22T15:01:02.899357728Z\",\"container\":\"5554f573394db7610b318c839451f43b9cf3dd089400df3060a1f94f96d7eaf9\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV JAVA_HOME=/usr/java/default\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"parent\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"created\":\"2015-12-22T15:00:56.107447869Z\",\"container\":\"722965b47415f85c69a37e928086adc4dcaa4b74ab32a41b1b65091e5d4193f3\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -LO --insecure --junk-session-cookies --location --remote-name --silent     --header \\\"Cookie: oraclelicense=accept-securebackup-cookie\\\"     http://download.oracle.com/otn-pub/java/jdk/8u66-b17/jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum localinstall -y jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm jdk-8u66-linux-x64.rpm\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":364730788}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"parent\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"created\":\"2015-12-15T19:52:54.954325426Z\",\"container\":\"282f881b836b0bee18c9c54a02563b4a333e2ec2ba675d15b0b7b87b591f0f53\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"parent\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"created\":\"2015-12-15T19:52:54.004407624Z\",\"container\":\"4877e7c78505049c7d3fbc41bce51636fb4f3cfd3be2bc7ae908fe18bee20e08\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL license=GPLv2\"],\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"parent\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"created\":\"2015-12-15T19:52:53.45020463Z\",\"container\":\"cd196c62630622c778e2cc075b6716e3f456fd3fed9985c03e3527b331a05b72\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL vendor=CentOS\"],\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"parent\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"created\":\"2015-12-15T19:52:52.978367781Z\",\"container\":\"373e1cefdd42ef056a8c6fddc96dd7d26a8fea84959f008244257d467056ad44\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL name=CentOS Base Image\"],\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"parent\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-12-15T19:52:49.42753745Z\",\"container\":\"070fea052c90efb3a998ef3fdb2130ac23d3946301a7751606a34ba0afa32d85\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:3df3794a090dd1bb550e9489f7d87242e124b5436709768cbd58f2553c730079 in /\"],\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":194675000}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container\":\"aa61f9423ec3654a523b23db8beeb801ce1ba1e82bfd15c71f317a8e723dfe2c\",\"container_config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.7.1\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "ZEWG:S62G:6BCQ:WXSQ:MP7X:W3L3:CK3I:YB6V:AM2H:UPYO:4GMC:EZ22",
+                            "kty": "EC",
+                            "x": "DxRDInEAe2-PbGahf4_iiO0JbPipFyZikpNt_MDrpT8",
+                            "y": "N16Xmlr7teZh0vhGHs4UdxNYOocQsHioYIZi5XgrACk"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "wAx9kukO4jpBheOEHdXLPUbdQDkt8Xt_z5WHMHnkgl41hnttgTO-oBPegmYdN43cwtkcBzmyVjTcmyYvtrHyOA",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjIyNjA4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDY6MzY6MTBaIn0"
+                }
+            ]
+        },
+        "eresin-4.0.40": {
+            "schemaVersion": 1,
+            "name": "expertsystems/resin",
+            "tag": "eresin-4.0.40",
+            "architecture": "amd64",
+            "fsLayers": [
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:e6544bbbed8a1acd8a3593c1570a29cf764c9b22fa65a70ec5953319bc2f9201"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:ac4b20f0d47ce2f04bd0f3c0ee7302a78bc0c388796da73992b8aa0243f8d28e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:13b4823adbf4ca0bbc35c7c89117f3535d3cccca080fc063e0957047b777105e"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "blobSum": "sha256:650fb8b95b2555f34a61ca2dcae8864fc710b567e685550ce4d95e86bf2f605a"
+                },
+                {
+                    "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ],
+            "history": [
+                {
+                    "v1Compatibility": "{\"id\":\"29d547392796c9c580bc74d39365180341d290bf8dbe43b32ec1d031327d4def\",\"parent\":\"bcbba60840266e766469b6cc29fe763981662e42e944baec5845912f2603eb77\",\"created\":\"2015-12-22T22:04:57.786124229Z\",\"container\":\"22960015703ed5050bd706572fcf6e8b354b3209130f13aff7519a18426700c2\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"console\\\"]\"],\"Image\":\"bcbba60840266e766469b6cc29fe763981662e42e944baec5845912f2603eb77\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"console\"],\"Image\":\"bcbba60840266e766469b6cc29fe763981662e42e944baec5845912f2603eb77\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"bcbba60840266e766469b6cc29fe763981662e42e944baec5845912f2603eb77\",\"parent\":\"74961685d4670b69a107637e8385d8b82fee1a3b3ef273326b1f26938de2fa0a\",\"created\":\"2015-12-22T22:04:57.730185041Z\",\"container\":\"2268b254a1fa0a69581b7b04b7b13c9dd791a88026264dd52dfca3a513232611\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT \\u0026{[\\\"/usr/local/share/resin-4.0.40/bin/resinctl\\\"]}\"],\"Image\":\"74961685d4670b69a107637e8385d8b82fee1a3b3ef273326b1f26938de2fa0a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":null,\"Image\":\"74961685d4670b69a107637e8385d8b82fee1a3b3ef273326b1f26938de2fa0a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/local/share/resin-4.0.40/bin/resinctl\"],\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"74961685d4670b69a107637e8385d8b82fee1a3b3ef273326b1f26938de2fa0a\",\"parent\":\"9087a9015573a6cb0d51450a741ed19c4108b11b18ea32fc1ebac8715b57f552\",\"created\":\"2015-12-22T22:04:57.376854086Z\",\"container\":\"25082ddd107b2e5c436b81d518d6d014f4dfabb21df9bf8b849686b8b18f1866\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"cd /var/resin/webapp-jars \\u0026\\u0026   yum -y install unzip \\u0026\\u0026   yum clean all \\u0026\\u0026   curl -LO http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.38.zip \\u0026\\u0026   unzip -j mysql-connector-java-5.1.38.zip mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar \\u0026\\u0026   rm mysql-connector-java-5.1.38.zip\"],\"Image\":\"9087a9015573a6cb0d51450a741ed19c4108b11b18ea32fc1ebac8715b57f552\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"9087a9015573a6cb0d51450a741ed19c4108b11b18ea32fc1ebac8715b57f552\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":18588896}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"9087a9015573a6cb0d51450a741ed19c4108b11b18ea32fc1ebac8715b57f552\",\"parent\":\"f3dc9806b78869099a6d88a9b888eb4509d4d8175d82dc454d6252c06d763658\",\"created\":\"2015-12-22T22:04:50.225311983Z\",\"container\":\"8df012599e4fa204ed7b94433de14e533d206c967d7a7b3483635dc2df0da076\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Image\":\"f3dc9806b78869099a6d88a9b888eb4509d4d8175d82dc454d6252c06d763658\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\",\"RESIN_HOME=/usr/local/share/resin-4.0.40\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"f3dc9806b78869099a6d88a9b888eb4509d4d8175d82dc454d6252c06d763658\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"f3dc9806b78869099a6d88a9b888eb4509d4d8175d82dc454d6252c06d763658\",\"parent\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"created\":\"2015-12-22T22:04:48.28613007Z\",\"container\":\"6e7a2c11a7a98f9293f23a44313b4831df49067d5570fbfa303a9bf4a4a6f21c\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -O http://caucho.com/download/rpm-6.5/4.0.40/x86_64/resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum localinstall -y resin-4.0.40-1.x86_64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm resin-4.0.40-1.x86_64.rpm\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"ef11ef377d98d54c9efc4b8d5ba689800184b33423b1cab44b124e8c0c2270fb\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":56977065}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a8a60e523554894ff855db650a6266e5618561eb41b17c5303e687d80863c57d\",\"parent\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"created\":\"2015-12-22T15:01:02.899357728Z\",\"container\":\"5554f573394db7610b318c839451f43b9cf3dd089400df3060a1f94f96d7eaf9\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENV JAVA_HOME=/usr/java/default\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"JAVA_HOME=/usr/java/default\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"80e313129d739cd834f1623dedad152685d1c3791fce8302cea7901cd6ba71aa\",\"parent\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"created\":\"2015-12-22T15:00:56.107447869Z\",\"container\":\"722965b47415f85c69a37e928086adc4dcaa4b74ab32a41b1b65091e5d4193f3\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"curl -LO --insecure --junk-session-cookies --location --remote-name --silent     --header \\\"Cookie: oraclelicense=accept-securebackup-cookie\\\"     http://download.oracle.com/otn-pub/java/jdk/8u66-b17/jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum localinstall -y jdk-8u66-linux-x64.rpm \\u0026\\u0026   yum clean all \\u0026\\u0026   rm jdk-8u66-linux-x64.rpm\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"Image\":\"7a21760c41c742ab3cfaacb4b0fb7a03406781cacd8024ad28526c5ba97839cd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":364730788}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"14dab3d4037239f08fb78310885f0ffd09adb3e2c6161ad72e36adb81661703f\",\"parent\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"created\":\"2015-12-15T19:52:54.954325426Z\",\"container\":\"282f881b836b0bee18c9c54a02563b4a333e2ec2ba675d15b0b7b87b591f0f53\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/bash\\\"]\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/bash\"],\"Image\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"abe620e04d9d83275db7fd06313c083d672ee987285a42f4c2dd1f93db257ca0\",\"parent\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"created\":\"2015-12-15T19:52:54.004407624Z\",\"container\":\"4877e7c78505049c7d3fbc41bce51636fb4f3cfd3be2bc7ae908fe18bee20e08\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL license=GPLv2\"],\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"8031fc57486ddec5fc72c01a0f7d72a30b891bd0e6860033aa0457f3bbcdd172\",\"parent\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"created\":\"2015-12-15T19:52:53.45020463Z\",\"container\":\"cd196c62630622c778e2cc075b6716e3f456fd3fed9985c03e3527b331a05b72\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL vendor=CentOS\"],\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"a57086046415684d0434209dcb5bbaca6d363210e3d2ae0690f4c4a728ecede8\",\"parent\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"created\":\"2015-12-15T19:52:52.978367781Z\",\"container\":\"373e1cefdd42ef056a8c6fddc96dd7d26a8fea84959f008244257d467056ad44\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) LABEL name=CentOS Base Image\"],\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{\"name\":\"CentOS Base Image\"}},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"245bcdbcd071463a3c2a2d8c51ff1d8fb4e953cfd669d673fe818be863fd655a\",\"parent\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-12-15T19:52:49.42753745Z\",\"container\":\"070fea052c90efb3a998ef3fdb2130ac23d3946301a7751606a34ba0afa32d85\",\"container_config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD file:3df3794a090dd1bb550e9489f7d87242e124b5436709768cbd58f2553c730079 in /\"],\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.8.3\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"070fea052c90\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\",\"Size\":194675000}"
+                },
+                {
+                    "v1Compatibility": "{\"id\":\"47d44cb6f252ea4f6aecf8a447972de5d9f9f2e2bec549a2f1d8f92557f4d05a\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container\":\"aa61f9423ec3654a523b23db8beeb801ce1ba1e82bfd15c71f317a8e723dfe2c\",\"container_config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"],\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"docker_version\":\"1.7.1\",\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\",\"config\":{\"Hostname\":\"aa61f9423ec3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":null,\"Cmd\":null,\"Image\":\"\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":null},\"architecture\":\"amd64\",\"os\":\"linux\"}"
+                }
+            ],
+            "signatures": [
+                {
+                    "header": {
+                        "jwk": {
+                            "crv": "P-256",
+                            "kid": "G5Y5:SNHT:SRYO:WMFL:JC56:5RIV:PUC3:J6CX:JQ7U:KMV2:SLA3:5NCI",
+                            "kty": "EC",
+                            "x": "fYdz37_kd-4PZQV-UzwkXLyr3-sNTCsQSNYEganZ8s4",
+                            "y": "S5JszP1MDTC5ExFwHvjxuZmlALSzxX3XeHCLzQNGoaM"
+                        },
+                        "alg": "ES256"
+                    },
+                    "signature": "jmGu4X0zwshLu5xVMS6lbyb0nxFgZRkecw3stE00mdWq0yS2B1wF_bUpLttxHF10r9qdQ2JhaqPIxJxL-3Ojfw",
+                    "protected": "eyJmb3JtYXRMZW5ndGgiOjIyNjA3LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMjQtMDUtMzFUMDY6MzY6MTFaIn0"
+                }
+            ]
+        },
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 4646,
+                "digest": "sha256:a395728bb37b3652ca129b675ada1899abb1a3527cb9fb88eae598053ad8457f"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 70552669,
+                    "digest": "sha256:a07226856d920804d60837ef71c05046fea13b695a39c195d5bc9098c54b1a1c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 187992254,
+                    "digest": "sha256:e1abbcf9cea44d668dca2969b1728c27c9a91b39709dcfaa8a093bf684cb2902"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 59421770,
+                    "digest": "sha256:d57bf10585deeddc6b0ee9d1b8bb26aff3af57561c2fdaa51cb5107d68657d5e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 7122209,
+                    "digest": "sha256:ad60920a2aadf4eb03aa888258772759bdab05eeaada65b1286e625c6990995b"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "4.0.40",
+        "a4.0.40",
+        "b4.0.40",
+        "c4.0.40",
+        "dresin-4.0.40",
+        "eresin-4.0.40",
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "82f7a8302f48",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/java/default",
+                    "RESIN_HOME=/usr/local/share/resin-4.0.40"
+                ],
+                "Cmd": [
+                    "console"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:cb5f46a0d44e40380c8615409852ce3cbe466a8d09e9787721b3ef5e930577ff",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/usr/local/share/resin-4.0.40/bin/resinctl"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-02-17",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "container": "5ed68c65efb9a56e049e944d88544dca3402e006769d6b9a4f20e7f513402508",
+            "container_config": {
+                "Hostname": "82f7a8302f48",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "JAVA_HOME=/usr/java/default",
+                    "RESIN_HOME=/usr/local/share/resin-4.0.40"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"console\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:cb5f46a0d44e40380c8615409852ce3cbe466a8d09e9787721b3ef5e930577ff",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/usr/local/share/resin-4.0.40/bin/resinctl"
+                ],
+                "OnBuild": [],
+                "Labels": {
+                    "build-date": "2016-02-17",
+                    "license": "GPLv2",
+                    "name": "CentOS Base Image",
+                    "vendor": "CentOS"
+                }
+            },
+            "created": "2018-11-30T08:31:07.368448277Z",
+            "docker_version": "18.03.1-ee-3",
+            "history": [
+                {
+                    "created": "2015-09-07T19:05:48.678585881Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) MAINTAINER The CentOS Project <cloud-ops@centos.org>"
+                },
+                {
+                    "created": "2016-02-17T18:39:40.294847109Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) ADD file:6389065673f90a5cb62ef5449a9e3c3ad402b402a53b444be3df985f873b3af4 in /"
+                },
+                {
+                    "created": "2016-02-17T18:39:43.799974232Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-02-17"
+                },
+                {
+                    "created": "2016-02-17T18:39:44.447863524Z",
+                    "author": "The CentOS Project <cloud-ops@centos.org>",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"/bin/bash\"]"
+                },
+                {
+                    "created": "2016-02-23T10:21:24.127605249Z",
+                    "created_by": "/bin/sh -c curl -LO --insecure --junk-session-cookies --location --remote-name --silent     --header \"Cookie: oraclelicense=accept-securebackup-cookie\"     http://download.oracle.com/otn-pub/java/jdk/8u74-b02/jdk-8u74-linux-x64.rpm &&   yum localinstall -y jdk-8u74-linux-x64.rpm &&   yum clean all &&   rm jdk-8u74-linux-x64.rpm"
+                },
+                {
+                    "created": "2016-02-23T10:21:30.322043498Z",
+                    "created_by": "/bin/sh -c #(nop) ENV JAVA_HOME=/usr/java/default"
+                },
+                {
+                    "created": "2018-11-30T08:30:46.942626317Z",
+                    "created_by": "/bin/sh -c curl -O http://caucho.com/download/rpm-6.5/4.0.40/x86_64/resin-4.0.40-1.x86_64.rpm &&   yum localinstall -y resin-4.0.40-1.x86_64.rpm &&   yum clean all &&   rm resin-4.0.40-1.x86_64.rpm"
+                },
+                {
+                    "created": "2018-11-30T08:30:47.668612789Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV RESIN_HOME=/usr/local/share/resin-4.0.40",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-30T08:31:06.58554327Z",
+                    "created_by": "/bin/sh -c cd /var/resin/webapp-jars &&   yum -y install unzip &&   yum clean all &&   curl -LO http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.38.zip &&   unzip -j mysql-connector-java-5.1.38.zip mysql-connector-java-5.1.38/mysql-connector-java-5.1.38-bin.jar &&   rm mysql-connector-java-5.1.38.zip"
+                },
+                {
+                    "created": "2018-11-30T08:31:07.026433167Z",
+                    "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/usr/local/share/resin-4.0.40/bin/resinctl\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2018-11-30T08:31:07.368448277Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"console\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:ed99f9270efc5694a6f5a6fd276421a8b01ca1cd5c00c2d3e50a8068a8e16a1c",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:13606a6d898daae0026a5f64c24262146f6cc033a34fd74aefb0fd0a3ea8e400",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:6b8789231d535290c1719a5017888b63222fbea154f394cf8b22241e58b4520a",
+                    "sha256:db9bbe30d1461b77f9692ab92110284261ce40d2ef8125ff9c0b58c5ef2e42eb"
+                ]
+            }
+        }
+    }
+}

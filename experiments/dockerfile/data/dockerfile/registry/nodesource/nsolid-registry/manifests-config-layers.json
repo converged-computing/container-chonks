@@ -1,0 +1,159 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3156,
+                "digest": "sha256:f28450b2a4a7dd7d1e79197bc096890fdf75a393e56205184b38f7e5d111f9f1"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1947384,
+                    "digest": "sha256:4b313b8c3ce34e00e5f5ac259c7efb20803a890a1b1fc3c05e2b4f21cce80654"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1800847,
+                    "digest": "sha256:5a73e1316bdf22fea37f9c1ea6f3d3618e13e33e35a4c5621e7ab5e6a4d35990"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 101,
+                    "digest": "sha256:919505981938fa8b1910625bef88e0f659edb2dddf071b2f17acacfb69af1485"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "William Blankenship <wblankenship@nodesource.com>",
+            "config": {
+                "Hostname": "66dfe635962b",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "2379/tcp": {},
+                    "2380/tcp": {},
+                    "4001/tcp": {},
+                    "7001/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "-v",
+                    "-name",
+                    "etcd0",
+                    "-listen-client-urls",
+                    "http://0.0.0.0:4001,http://0.0.0.0:2379",
+                    "-advertise-client-urls",
+                    "http://0.0.0.0:4001,http://0.0.0.0:2379",
+                    "-initial-cluster-state",
+                    "new"
+                ],
+                "Image": "sha256:1ad1bdccb864d95d97cc38a6772db5df85449c49acfc33a1d49d1a2aaba990da",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/etcd"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "d80786fef69ea503a5e302680181cc4c42a6f36586826566170434221bc0590f",
+            "container_config": {
+                "Hostname": "66dfe635962b",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "ExposedPorts": {
+                    "2379/tcp": {},
+                    "2380/tcp": {},
+                    "4001/tcp": {},
+                    "7001/tcp": {}
+                },
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) CMD [\"-v\" \"-name\" \"etcd0\" \"-listen-client-urls\" \"http://0.0.0.0:4001,http://0.0.0.0:2379\" \"-advertise-client-urls\" \"http://0.0.0.0:4001,http://0.0.0.0:2379\" \"-initial-cluster-state\" \"new\"]"
+                ],
+                "Image": "sha256:1ad1bdccb864d95d97cc38a6772db5df85449c49acfc33a1d49d1a2aaba990da",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/etcd"
+                ],
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2016-07-15T00:43:23.343180935Z",
+            "docker_version": "1.11.2",
+            "history": [
+                {
+                    "created": "2015-03-31T22:14:13.977852525Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:c4cb2dc5fb20f6fe2121ec7a4ed48f4312b6a4914ac36edb9462ceb942583626 in /"
+                },
+                {
+                    "created": "2015-03-31T22:14:14.162827386Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:d68fbdd5992a331258c8d17669f5724837b959c30d89443f2c72e41bdae9bff8 in /"
+                },
+                {
+                    "created": "2015-03-31T22:14:14.275079785Z",
+                    "created_by": "/bin/sh -c #(nop) EXPOSE 2379/tcp 2380/tcp 4001/tcp 7001/tcp"
+                },
+                {
+                    "created": "2015-03-31T22:14:14.382855193Z",
+                    "created_by": "/bin/sh -c #(nop) ENTRYPOINT [/etcd]"
+                },
+                {
+                    "created": "2016-07-15T00:43:21.967030436Z",
+                    "author": "William Blankenship <wblankenship@nodesource.com>",
+                    "created_by": "/bin/sh -c #(nop) MAINTAINER William Blankenship <wblankenship@nodesource.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2016-07-15T00:43:23.343180935Z",
+                    "author": "William Blankenship <wblankenship@nodesource.com>",
+                    "created_by": "/bin/sh -c #(nop) CMD [\"-v\" \"-name\" \"etcd0\" \"-listen-client-urls\" \"http://0.0.0.0:4001,http://0.0.0.0:2379\" \"-advertise-client-urls\" \"http://0.0.0.0:4001,http://0.0.0.0:2379\" \"-initial-cluster-state\" \"new\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:e8f06942449b02bbc3f4e1a2e2ea80f59b5bbc65d25d64b6a8610c7abb2a9808",
+                    "sha256:ddf9578104e2ecca2562ce8121a2b037357dac1eba167afedd36f1c70198854f",
+                    "sha256:4826be9087efb5fed1b62b80245eb590c5b84abd61d594c2f4469386162d00e6",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,258 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 7500,
+                "digest": "sha256:db34ea48c7b62fcc90f114005d7d25a215362a2fbe983398f4676641b00bbca2"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 52605632,
+                    "digest": "sha256:ad74af05f5a24bcf9459ae1cf7718628c2aeb6b587eb51b6eeaf639aca3e566f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 19263320,
+                    "digest": "sha256:2b032b8bbe8bc215ad3337035d0183fc353841ec6478d1c481e6e13628ad9e00"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 43226131,
+                    "digest": "sha256:a9a5b35f6ead105e66a9af969454ac09b5772eeb0c6281972c48d2ce882e8eba"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 60642742,
+                    "digest": "sha256:25d9840c55bc35c89681af78d0ba3814cf499f3370465778397f8497189bde25"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 90038836,
+                    "digest": "sha256:d792ec7d64a3f09ed0d71a18d6282de0d9038953b016a1481b3351d05daa6789"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 126,
+                    "digest": "sha256:be556a93c22ed04da635b66e3bec85a3a165dc1e5b403041017f2fb3bf59a252"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1351,
+                    "digest": "sha256:3a5fce283a1e6ca320e5bd4c1adcf2c9dd55de000c096c35d44074ac22dd694d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 25696738,
+                    "digest": "sha256:a975bf753fa3106d1c3ee4f291524556e469681587d7d871d530390676947e0b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 675,
+                    "digest": "sha256:895256ac11f2cc9e509388fa253743b51601bdd8971da9dad700f9b91d8b0377"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "Feng Honglin <tifayuki@gmail.com>",
+            "config": {
+                "Hostname": "e24d0b5cccc1",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "GOLANG_VERSION=1.8.3",
+                    "GOPATH=/go",
+                    "TLS_KEY=**None**",
+                    "TLS_CERT=**None**",
+                    "CA_CERT=**None**",
+                    "DOMAIN=**None**",
+                    "TUNNEL_ADDR=:4443",
+                    "HTTP_ADDR=:80",
+                    "HTTPS_ADDR=:443",
+                    "LOG=stdout",
+                    "LOG_LEVEL=INFO"
+                ],
+                "Cmd": [
+                    "/run-server.sh"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:e227cb164b1cb288b6aeeb67fc482c0e5cca0d10f83f5f085e6060974b23e2a3",
+                "Volumes": {
+                    "/ngrok/bin": {}
+                },
+                "WorkingDir": "/go",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "container": "96a193f748adae2f37a361037448223bd4d4e2ad4c3e3f08ff3bc20b161d3502",
+            "container_config": {
+                "Hostname": "e24d0b5cccc1",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "GOLANG_VERSION=1.8.3",
+                    "GOPATH=/go",
+                    "TLS_KEY=**None**",
+                    "TLS_CERT=**None**",
+                    "CA_CERT=**None**",
+                    "DOMAIN=**None**",
+                    "TUNNEL_ADDR=:4443",
+                    "HTTP_ADDR=:80",
+                    "HTTPS_ADDR=:443",
+                    "LOG=stdout",
+                    "LOG_LEVEL=INFO"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "CMD [\"/run-server.sh\"]"
+                ],
+                "ArgsEscaped": true,
+                "Image": "sha256:e227cb164b1cb288b6aeeb67fc482c0e5cca0d10f83f5f085e6060974b23e2a3",
+                "Volumes": {
+                    "/ngrok/bin": {}
+                },
+                "WorkingDir": "/go",
+                "Entrypoint": null,
+                "OnBuild": [],
+                "Labels": {}
+            },
+            "created": "2017-08-30T23:01:10.638033011Z",
+            "docker_version": "17.06.0-ce",
+            "history": [
+                {
+                    "created": "2017-07-24T16:51:25.302466408Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:a023a99f7d01868b164d63bfaf8aabc7f271659c69939c3854f041f5a3217428 in / "
+                },
+                {
+                    "created": "2017-07-24T16:51:25.711083944Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-24T17:24:28.724048378Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\twget \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-07-24T17:24:29.383491771Z",
+                    "created_by": "/bin/sh -c set -ex; \tif ! command -v gpg > /dev/null; then \t\tapt-get update; \t\tapt-get install -y --no-install-recommends \t\t\tgnupg2 \t\t\tdirmngr \t\t; \t\trm -rf /var/lib/apt/lists/*; \tfi",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-24T17:25:00.480077695Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tbzr \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-07-26T05:14:02.600513352Z",
+                    "created_by": "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends \t\tg++ \t\tgcc \t\tlibc6-dev \t\tmake \t\tpkg-config \t&& rm -rf /var/lib/apt/lists/*"
+                },
+                {
+                    "created": "2017-07-26T05:14:02.876528424Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GOLANG_VERSION=1.8.3",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-26T05:14:10.27062167Z",
+                    "created_by": "/bin/sh -c set -eux; \t\tdpkgArch=\"$(dpkg --print-architecture)\"; \tcase \"${dpkgArch##*-}\" in \t\tamd64) goRelArch='linux-amd64'; goRelSha256='1862f4c3d3907e59b04a757cfda0ea7aa9ef39274af99a784f5be843c80c6772' ;; \t\tarmhf) goRelArch='linux-armv6l'; goRelSha256='3c30a3e24736ca776fc6314e5092fb8584bd3a4a2c2fa7307ae779ba2735e668' ;; \t\ti386) goRelArch='linux-386'; goRelSha256='ff4895eb68fb1daaec41c540602e8bb4c1e8bb2f0e7017367171913fc9995ed2' ;; \t\tppc64el) goRelArch='linux-ppc64le'; goRelSha256='e5fb00adfc7291e657f1f3d31c09e74890b5328e6f991a3f395ca72a8c4dc0b3' ;; \t\ts390x) goRelArch='linux-s390x'; goRelSha256='e2ec3e7c293701b57ca1f32b37977ac9968f57b3df034f2cc2d531e80671e6c8' ;; \t\t*) goRelArch='src'; goRelSha256='5f5dea2447e7dcfdc50fa6b94c512e58bfba5673c039259fd843f68829d99fa6'; \t\t\techo >&2; echo >&2 \"warning: current architecture ($dpkgArch) does not have a corresponding Go binary release; will be building from source\"; echo >&2 ;; \tesac; \t\turl=\"https://golang.org/dl/go${GOLANG_VERSION}.${goRelArch}.tar.gz\"; \twget -O go.tgz \"$url\"; \techo \"${goRelSha256} *go.tgz\" | sha256sum -c -; \ttar -C /usr/local -xzf go.tgz; \trm go.tgz; \t\tif [ \"$goRelArch\" = 'src' ]; then \t\techo >&2; \t\techo >&2 'error: UNIMPLEMENTED'; \t\techo >&2 'TODO install golang-any from jessie-backports for GOROOT_BOOTSTRAP (and uninstall after build)'; \t\techo >&2; \t\texit 1; \tfi; \t\texport PATH=\"/usr/local/go/bin:$PATH\"; \tgo version"
+                },
+                {
+                    "created": "2017-07-26T05:14:10.599191313Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV GOPATH=/go",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-26T05:14:10.784245382Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-26T05:14:11.463649764Z",
+                    "created_by": "/bin/sh -c mkdir -p \"$GOPATH/src\" \"$GOPATH/bin\" && chmod -R 777 \"$GOPATH\""
+                },
+                {
+                    "created": "2017-07-26T05:14:11.715498148Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /go",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-07-26T05:14:12.044951654Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:f6191f2c86edc9343569339f101facba47e886e33e29d70da6916ca6b1101a53 in /usr/local/bin/ "
+                },
+                {
+                    "created": "2017-08-15T22:48:19.726816007Z",
+                    "author": "Feng Honglin <tifayuki@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  MAINTAINER Feng Honglin <tifayuki@gmail.com>",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-15T22:49:42.448956159Z",
+                    "author": "Feng Honglin <tifayuki@gmail.com>",
+                    "created_by": "/bin/sh -c apt-get update &&     apt-get install git mercurial bash build-essential -y &&     mkdir -p /release &&     git clone https://github.com/tutumcloud/ngrok.git /ngrok"
+                },
+                {
+                    "created": "2017-08-30T23:01:09.747253256Z",
+                    "author": "Feng Honglin <tifayuki@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop) ADD multi:d3a80ad687d6b9b4d1a3669e0b03194e721d845217695ec9b5abf294eee36c28 in / "
+                },
+                {
+                    "created": "2017-08-30T23:01:10.035393483Z",
+                    "author": "Feng Honglin <tifayuki@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  ENV TLS_KEY=**None** TLS_CERT=**None** CA_CERT=**None** DOMAIN=**None** TUNNEL_ADDR=:4443 HTTP_ADDR=:80 HTTPS_ADDR=:443 LOG=stdout LOG_LEVEL=INFO",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-30T23:01:10.338061892Z",
+                    "author": "Feng Honglin <tifayuki@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  VOLUME [/ngrok/bin]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2017-08-30T23:01:10.638033011Z",
+                    "author": "Feng Honglin <tifayuki@gmail.com>",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/run-server.sh\"]",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2c40c66f7667aefbb18f7070cf52fae7abbe9b66e49b4e1fd740544e7ceaebdc",
+                    "sha256:654f45ecb7e3a022dd1a10bf47b348b820659e8d9915d87faae403b0b9705b0d",
+                    "sha256:f3ed6cb59ab087e7b11685e73a58a2904d77221363cc6e7741280e9e41e26958",
+                    "sha256:6367890e52bf396be1d13890e2a52b6222987ce2285770e401768e7ce9183b33",
+                    "sha256:74f1f103792f1fef074597488b8e26823b53d69a08f56b503ab419a29b818c59",
+                    "sha256:4ff814ecd9f43a14b7fe6a23306b0045701d7a92590774b30322e06826e3cfaa",
+                    "sha256:36ba0159de5612ef8ae7156c8564ccd0768becb5a5227649842ed3ae8db3b4af",
+                    "sha256:793bbda1585bfae86fbc8a7458139413557b6950577dcf443c9eb8dc53ab4fe9",
+                    "sha256:62151808bcfa25730bbd7151012ccc38273eb55a21d938b13208e78aa53fd536"
+                ]
+            }
+        }
+    }
+}

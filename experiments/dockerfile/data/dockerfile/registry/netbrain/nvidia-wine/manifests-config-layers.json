@@ -1,0 +1,248 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 7129,
+                "digest": "sha256:59723f0e84a97c4c66bb05757c91b2a98c38d1888d24208c3070cc0284ee3988"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 28570074,
+                    "digest": "sha256:35807b77a593c1147d13dc926a91dcc3015616ff7307cc30442c5a8e07546283"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 7140051,
+                    "digest": "sha256:59e1f08aa0dcaaeabea059e8ae8b68260e56f6a5c0544d9b25a523f56338c35e"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 185,
+                    "digest": "sha256:082a7036af58bf358eec585faffd4ed42243c6cb48e2f5f0811b89addcd7d0e0"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 6432,
+                    "digest": "sha256:6b384b7c6b036357822d6977b22ba54144e7df1f5509651873673882fcac635c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 91336575,
+                    "digest": "sha256:dd1a9cc43b3c192258584fb838a3d3671b4e7250c148f86528db9944f50d1d0d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 299,
+                    "digest": "sha256:6fe2b9f417f95b461e52387c0775dde9a214911f1bcc71f3e5d321e0ad19e443"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 627698258,
+                    "digest": "sha256:4f8702ec550124ac8888327570a0ea202153401276c850e3f3885d594db7057f"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 5125,
+                    "digest": "sha256:edd87b65ee1123f6f0fa5fdafb24b785eafe7f55bdfd1cb834a8df8f944e93b6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 770247118,
+                    "digest": "sha256:723b2a24d4feef7334e550dce027ae3b111bd326659e42472e19c2e73964a634"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 337,
+                    "digest": "sha256:a2fb241bd657706c34a07681effde1193bc6c6796c4c35d444a92ef4c502307d"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "user",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NVIDIA_VISIBLE_DEVICES=all",
+                    "NVIDIA_DRIVER_CAPABILITIES=graphics,compat32,utility",
+                    "LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64",
+                    "WINEDEBUG=fixme-all"
+                ],
+                "Cmd": [
+                    "bash"
+                ],
+                "Image": "sha256:14357a94b350f86527b9dd5bed940c1784b92b9bf6fb0aef2ec7b1c7918f0cf6",
+                "Volumes": null,
+                "WorkingDir": "/home/user",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>"
+                }
+            },
+            "container_config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "user",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "NVIDIA_VISIBLE_DEVICES=all",
+                    "NVIDIA_DRIVER_CAPABILITIES=graphics,compat32,utility",
+                    "LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64",
+                    "WINEDEBUG=fixme-all"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) COPY file:2f8eac3e85429cbf6ad51f4282ec519321a1aded3bca5a768d74843ca8015162 in /etc/pulse/client.conf "
+                ],
+                "Image": "sha256:14357a94b350f86527b9dd5bed940c1784b92b9bf6fb0aef2ec7b1c7918f0cf6",
+                "Volumes": null,
+                "WorkingDir": "/home/user",
+                "Entrypoint": null,
+                "OnBuild": null,
+                "Labels": {
+                    "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>"
+                }
+            },
+            "created": "2021-10-24T20:36:44.000612103Z",
+            "docker_version": "20.10.9",
+            "history": [
+                {
+                    "created": "2021-08-31T01:20:55.806655339Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:d2abf27fe2e8b0b5f4da68c018560c73e11c53098329246e3e6fe176698ef941 in / "
+                },
+                {
+                    "created": "2021-08-31T01:20:56.191693866Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-21T00:36:41.718804245Z",
+                    "created_by": "LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-21T00:36:41.718804245Z",
+                    "created_by": "RUN /bin/sh -c dpkg --add-architecture i386 &&     apt-get update && apt-get install -y --no-install-recommends         libxau6 libxau6:i386         libxdmcp6 libxdmcp6:i386         libxcb1 libxcb1:i386         libxext6 libxext6:i386         libx11-6 libx11-6:i386 &&     rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-09-21T00:36:41.718804245Z",
+                    "created_by": "ENV NVIDIA_VISIBLE_DEVICES=all",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-21T00:36:41.718804245Z",
+                    "created_by": "ENV NVIDIA_DRIVER_CAPABILITIES=graphics,compat32,utility",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-21T00:36:41.918979559Z",
+                    "created_by": "RUN /bin/sh -c echo \"/usr/local/nvidia/lib\" >> /etc/ld.so.conf.d/nvidia.conf &&     echo \"/usr/local/nvidia/lib64\" >> /etc/ld.so.conf.d/nvidia.conf # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-09-21T00:36:42.005977265Z",
+                    "created_by": "COPY NGC-DL-CONTAINER-LICENSE / # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-09-21T00:36:42.005977265Z",
+                    "created_by": "ENV LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-21T00:37:31.792034664Z",
+                    "created_by": "LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-09-21T00:37:31.792034664Z",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get install -y --no-install-recommends         libglvnd0 libglvnd0:i386         libgl1 libgl1:i386         libglx0 libglx0:i386         libegl1 libegl1:i386         libgles2 libgles2:i386 &&     rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-09-21T00:37:31.885244128Z",
+                    "created_by": "COPY 10_nvidia.json /usr/share/glvnd/egl_vendor.d/10_nvidia.json # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2021-10-24T18:48:41.131187402Z",
+                    "created_by": "/bin/sh -c #(nop)  ENV WINEDEBUG=fixme-all",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-10-24T19:41:41.958895731Z",
+                    "created_by": "/bin/sh -c apt-get update     && apt-get install -y sudo wget software-properties-common gnupg2 winbind xvfb pulseaudio     && dpkg --add-architecture i386     && wget -nc https://dl.winehq.org/wine-builds/winehq.key     && apt-key add winehq.key     && add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'     && apt-get update     && apt-get install -y winehq-devel winetricks     && apt-get clean -y     && apt-get autoremove -y"
+                },
+                {
+                    "created": "2021-10-24T19:41:44.604476231Z",
+                    "created_by": "/bin/sh -c adduser --disabled-password --gecos ''  user     && adduser user sudo     && echo '%SUDO ALL=(ALL) NOPASSWD:ALL' >>     /etc/sudoers"
+                },
+                {
+                    "created": "2021-10-24T19:41:45.401659725Z",
+                    "created_by": "/bin/sh -c #(nop)  USER user",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-10-24T19:41:46.24480052Z",
+                    "created_by": "/bin/sh -c #(nop) WORKDIR /home/user",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2021-10-24T19:43:54.993349003Z",
+                    "created_by": "/bin/sh -c winetricks --unattended msxml6     && winetricks --unattended corefonts     && wget -P /tmp https://github.com/madewokherd/wine-mono/releases/download/wine-mono-6.1.2/wine-mono-6.1.2-x86.msi     && wine msiexec /i /tmp/wine-mono-6.1.2-x86.msi     && wget -P /tmp http://dl.winehq.org/wine/wine-gecko/2.47.2/wine-gecko-2.47.2-x86.msi     && wget -P /tmp http://dl.winehq.org/wine/wine-gecko/2.47.2/wine-gecko-2.47.2-x86_64.msi     && wine msiexec /i /tmp/wine-gecko-2.47.2-x86.msi     && wine msiexec /i /tmp/wine-gecko-2.47.2-x86_64.msi     && rm -rf /tmp/*.msi"
+                },
+                {
+                    "created": "2021-10-24T20:36:44.000612103Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:2f8eac3e85429cbf6ad51f4282ec519321a1aded3bca5a768d74843ca8015162 in /etc/pulse/client.conf "
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:4942a1abcbfa1c325b1d7ed93d3cf6020f555be706672308a4a4a6b6d631d2e7",
+                    "sha256:c9782094635a516fceb8e0e7bd06b995fd0de8d1abe8e356e61e3ea39a48664a",
+                    "sha256:77a872376c07dcdeecc5828f8b8456c5b68f3bef97b8f5c78bbed93d556091db",
+                    "sha256:01d47c79d1406538799479376a108348b2ea6e78eee807347184221d5fa9c0b8",
+                    "sha256:bddf0af90c949ccde9fa53ba594a6595331c5aaa17e05219c81aa8f5a2fc87eb",
+                    "sha256:92ce07b196cc5d0c593b2faaa83efa0c75c5a6e37a432909b2cfb4d41aad45a1",
+                    "sha256:9a08debf2ba7415f8b07ecedbd10fb6790d9151d64d591803520574461ad0246",
+                    "sha256:c9c8d9bbe40a5c9a9ec643bbb568787c4c04ef345c6bf83e4cd0c1afd6374e2e",
+                    "sha256:ea044e20d56b2f23b075fe17aaa1528a88866bf42044051fd286065f4ddf8f1f",
+                    "sha256:ba8dcf357a555ffa402fd9bbde0df59d3a8520fa38fdc58a69baef1907ea59ab"
+                ]
+            }
+        }
+    }
+}

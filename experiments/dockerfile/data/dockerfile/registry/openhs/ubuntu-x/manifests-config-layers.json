@@ -1,0 +1,155 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3200,
+                "digest": "sha256:b0629c4d431ff31b66760a47ca590fc7b6789b0225a5b575c4d72dc1a0ca3abb"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 29538961,
+                    "digest": "sha256:bccd10f490ab0f3fba61b193d1b80af91b17ca9bdca9768a16ed05ce16552fcb"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 34078904,
+                    "digest": "sha256:618548a714f1cbd98370e51c97f98736466cae2969a7387c751ac7fa3b3fd676"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1389496,
+                    "digest": "sha256:0f583ee6619bbf9b81fbe03a1bb33db5c89cf82695e27255536597f5721b58fa"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 4345,
+                    "digest": "sha256:c0f4d863c1c5955d0baf9b539f7eda880561627867375f95069da26681ddd72d"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1084,
+                    "digest": "sha256:d4a2e11b98192f7b1c97903c572da46ceabd44e956bb96799fc2999f94d04713"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 1079,
+                    "digest": "sha256:3ad7bf20ba25828c2f7c5551fa45357764d8824b101437d58b39ead1b40246b4"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "author": "openhs",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Entrypoint": [
+                    "/opt/docker-ubuntu-x_startup.sh"
+                ],
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04",
+                    "version": "= 0.0.2       description = Base Ubuntu image for X applications."
+                },
+                "OnBuild": null
+            },
+            "created": "2024-03-06T08:37:13.776309738+01:00",
+            "history": [
+                {
+                    "created": "2024-02-27T18:52:57.011931013Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-27T18:52:57.033105379Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-27T18:52:57.056007352Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-27T18:52:57.070227736Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-02-27T18:52:58.867932393Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:21c2e8d95909bec6f4acdaf4aed55b44ee13603681f93b152e423e3e6a4a207b in / "
+                },
+                {
+                    "created": "2024-02-27T18:52:59.070788584Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-03-06T08:37:09.305886991+01:00",
+                    "created_by": "MAINTAINER openhs",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-03-06T08:37:09.305886991+01:00",
+                    "created_by": "LABEL version== 0.0.2       description = Base Ubuntu image for X applications.",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-03-06T08:37:09.305886991+01:00",
+                    "created_by": "RUN /bin/sh -c apt-get update # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-03-06T08:37:13.04630854+01:00",
+                    "created_by": "RUN /bin/sh -c DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends     xauth # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-03-06T08:37:13.406676887+01:00",
+                    "created_by": "RUN /bin/sh -c useradd --shell /bin/false --create-home appuser # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-03-06T08:37:13.51538885+01:00",
+                    "created_by": "COPY setup_access_to_host_display.sh add_user_to_audio_group.sh docker-ubuntu-x_startup.sh /opt/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-03-06T08:37:13.776309738+01:00",
+                    "created_by": "RUN /bin/sh -c chmod +x /opt/setup_access_to_host_display.sh     /opt/add_user_to_audio_group.sh /opt/docker-ubuntu-x_startup.sh # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-03-06T08:37:13.776309738+01:00",
+                    "created_by": "ENTRYPOINT [\"/opt/docker-ubuntu-x_startup.sh\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:5498e8c22f6996f25ef193ee58617d5b37e2a96decf22e72de13c3b34e147591",
+                    "sha256:dc10fac99910a5f70d46ce0724c3f013bec979f43751196e7d322d7b2e092022",
+                    "sha256:2e18e483ee0f156986034b00a4a0e823596cc4fe60cd9d7a5eff614500bf250b",
+                    "sha256:de5fbc637c632e989efa79d2334b3304a3cce58a4af6e8dff1dcf57594ba45ed",
+                    "sha256:ca8cda06b18e6a5b074191132e79dbea7c1767590fb85bf3eb362bf208d139fd",
+                    "sha256:ccbe7de48ede0bad67c29f5d798357a06753599dd2534fb9de1d6bce490f1004"
+                ]
+            }
+        }
+    }
+}
