@@ -191,7 +191,7 @@ This shows layers used >
 
 There is one HUGE outlier (I'm guessing this is ubuntu, but TBA confirmation) that is repeated 67897 times! `sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1` The next highest is `sha256:0eeab5c200691bd777e227c6eea27f7ca3c8232b67118a76edac2dcde3186aa1`  4124. This plot shows layers that appear > 100 times, and with this one outlier removed (otherwise we cannot see the plot):
 
-![img/layers-repeated](img/layers-repeated)
+![img/layers-repeated.png](img/layers-repeated.png)
 
 ## Top2Vec
 
