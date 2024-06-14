@@ -153,12 +153,24 @@ Min by image: 1.84 MB
 Max by image: 1.89 TB
 ```
 
+### How are image sizes changing over time?
+
+> They are getting larger!
+
 Here are some interesting plots that show the pattern - these take the bytes and convert to log scale for easier reading.
 
 ![img/all_size_by_year_all_size_by_year.png](img/all_size_by_year_all_size_by_year.png)
 ![img/size_by_year_size_by_year.png](img/size_by_year_size_by_year.png)
 ![img/total_size_by_year_total_size_by_year.png](img/total_size_by_year_total_size_by_year.png)
 
+### How are number of layers changing?
+
+> They seem to be relatively the same, but trending slightly upward
+
+We can also look at number of layers by year:
+
+![img/layers_per_image_by_year.png](img/layers_per_image_by_year.png)
+![img/layers_per_image_log_by_year.png](img/layers_per_image_log_by_year.png)
 
 Next:
 
@@ -167,16 +179,30 @@ Next:
    - We also have all the Dockerfile directives - ENV, WORKDIR, etc.
  - Should we focus on specific containers and look at some change over time?
 
-## Attempt 1
+### How often are layers repeated?
 
-> This did not work (still) because of API limits.
+This shows layers used >
 
-We are going to programatically get Dockerfile from GitHub. While we could do a clone to search for them across a repository, it's more a convention to have one at the top level, so we are going to guess the path, trying both master and main. Since the GitHub API limits to 1K results, we are going to search in the range of a week.
+- How many are unique (1 image): 312,095
+- How many >1: 216,354
+- How many layers > 2: 136,054
+- How many > 50?: 9255
+- How many > 100? 3333
+
+There is one HUGE outlier (I'm guessing this is ubuntu, but TBA confirmation) that is repeated 67897 times! `sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1` The next highest is `sha256:0eeab5c200691bd777e227c6eea27f7ca3c8232b67118a76edac2dcde3186aa1`  4124. This plot shows layers that appear > 100 times, and with this one outlier removed (otherwise we cannot see the plot):
+
+![img/layers-repeated](img/layers-repeated)
+
+## Top2Vec
 
 ```bash
-pip install rse
-export GITHUB_TOKEN=xxxxxxxxx
-python search.py
+python scripts/run_top2vec.py
 ```
 
+Note that this is currently running! I'm interested to see:
 
+ - similar terms
+ - the clustering afforded by the vectors
+ - the generated topics
+ 
+I am also thinking we should look for "good practices" in the data, e.g., an apt or apt-get install that is paired with a clean in the same layer (vs. not) then we could write a section somewhere on how common "best practices" actually are.

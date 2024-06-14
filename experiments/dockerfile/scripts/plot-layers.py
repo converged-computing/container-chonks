@@ -90,45 +90,50 @@ def main():
     # Database file
     db_file = os.path.join(root, "data", "dockerfile", "data-frame.db")
 
-    # This does the actual parsing of data into a formatted variant
-    # Has keys results, iters, and columns
-    # parse_manifests(files, args, categories, db_file)
+    manifest_file = os.path.join(outdir, "docker-layers.csv")
+    if not os.path.exists(manifest_file):
 
-    conn = sqlite3.connect(db_file)
-    cursor = conn.cursor()
+        # This does the actual parsing of data into a formatted variant
+        # Has keys results, iters, and columns
+        # parse_manifests(files, args, categories, db_file)
 
-    # Damn that's a big table!
-    # cursor.execute('select count(*) from manifests;')
-    # <sqlite3.Cursor at 0x7b71848f80c0>
-    # cursor.fetchone()
-    # (2872188,)
-    manifest_df = pandas.read_sql_query(
-        "SELECT * from manifests", conn, parse_dates={"datetime": "%Y-%m-%d %H:%M:%S"}
-    )
-    conn.close()
+        conn = sqlite3.connect(db_file)
+        cursor = conn.cursor()
 
-    # There are a few bad date times we will need to filter out.
-    dts = []
-    for x in manifest_df.created_at:
-        try:
-            dts.append(
-                pandas.to_datetime(datetime.strptime(x, "%Y-%M-%d 00:00:00").date())
-            )
-        except:
-            dts.append(None)
+        # Damn that's a big table!
+        # cursor.execute('select count(*) from manifests;')
+        # <sqlite3.Cursor at 0x7b71848f80c0>
+        # cursor.fetchone()
+        # (2872188,)
+        manifest_df = pandas.read_sql_query(
+            "SELECT * from manifests", conn, parse_dates={"datetime": "%Y-%m-%d %H:%M:%S"}
+        )
+        conn.close()
 
-    # Add to the data frame and filter out null rows.
-    manifest_df["created_dt"] = dts
-    manifest_df = manifest_df.loc[manifest_df.created_dt.isnull() == False]
-    manifest_df.created_dt = pandas.to_datetime(manifest_df.created_dt)
+        # There are a few bad date times we will need to filter out.
+        dts = []
+        for x in manifest_df.created_at:
+            try:
+                dts.append(
+                    pandas.to_datetime(datetime.strptime(x, "%Y-%M-%d 00:00:00").date())
+                )
+            except:
+                dts.append(None)
 
-    # Show means grouped by experiment to sanity check plots
-    # manifest_df.to_csv(os.path.join(outdir, "docker-layers.csv"))
+        # Add to the data frame and filter out null rows.
+        manifest_df["created_dt"] = dts
+        manifest_df = manifest_df.loc[manifest_df.created_dt.isnull() == False]
+        manifest_df.created_dt = pandas.to_datetime(manifest_df.created_dt)
 
-    # manifest_df = pandas.read_csv(os.path.join(outdir, "docker-layers.csv"), index_col=0)
-    # config_df = parse_configs(files, args, categories, db_file)
-    # config_df.to_csv(os.path.join(outdir, "docker-configs.csv"))
-    plot_results(manifest_df, outdir)
+        # Show means grouped by experiment to sanity check plots
+        manifest_df.to_csv(manifest_file)
+    else:
+        manifest_df = pandas.read_csv(os.path.join(outdir, "docker-layers.csv"), index_col=0)
+
+    # We need to tokenize the content of the layers
+    # We won't save to data frame, but write directly to file    
+    # parse_configs(files, args, categories, db_file)
+    # plot_results(manifest_df, outdir)
 
 
 def convert_size(size_bytes):
@@ -140,11 +145,7 @@ def convert_size(size_bytes):
     s = round(size_bytes / p, 2)
     return "%s %s" % (s, size_name[i])
 
-
-def plot_results(df, outdir):
-    """
-    Plot dockerfile results
-    """
+def derive_by_year(df, outdir):
     # Create a variant that groups by year
     by_year = pandas.DataFrame(columns=["uri", "size", "year", "size_log"])
     idx = 0
@@ -157,9 +158,28 @@ def plot_results(df, outdir):
 
     # Filter out those earlier than 2014 - those dates have to be erroneous
     by_year = by_year[by_year.year >= 2010]
-    df_by_year = df[df.year >= 2010]
-    size_logs = [numpy.log(x) for x in df_by_year["size"]]
-    df_by_year["size_log"] = size_logs
+    return by_year
+
+def plot_results(df, outdir):
+    """
+    Plot dockerfile results
+    """
+    # by_year = derive_by_year(df, outdir)
+    # df_by_year = df[df.year >= 2010]
+    # size_logs = [numpy.log(x) for x in df_by_year["size"]]
+    # df_by_year["size_log"] = size_logs
+    
+    # How have the number of layers changed over time?
+    layer_file = os.path.join(outdir, "layer-counts-by-year.csv")
+    if not os.path.exists(layer_file):
+        layer_counts = derive_layer_counts(df)
+        layer_counts.to_csv(layer_file)
+    else:
+        layer_counts = pandas.read_csv(layer_file, index_col=0)
+  
+    import IPython 
+    IPython.embed()
+    sys.exit()
 
     colors = sns.color_palette("hls", 16)
     hexcolors = colors.as_hex()
@@ -171,6 +191,86 @@ def plot_results(df, outdir):
     palette = collections.OrderedDict()
     for t in types:
         palette[t] = hexcolors.pop(0)
+
+    # What about shared layers?
+    digests_file = os.path.join(outdir, 'layer-counts.csv')
+    if not os.path.exists(digests_file):
+        digests = df.groupby(["digest"])['digest'].count()
+        digests = digests.sort_values(ascending=False)
+        
+        # Figure out what the layers are. Let's choose those above a threshold.
+
+        # How many are unique?
+        print(len(digests.values[digests.values == 1]))
+        # 312,095
+
+        # How many >1: 216,354
+        print(len(digests.values[digests.values > 1]))
+
+        # How many layers > 2
+        print(len(digests.values[digests.values > 2]))
+        # 136054
+   
+        # > 50?: 9255
+        print(len(digests.values[digests.values > 50]))    
+
+        # > 100? 3333
+        print(len(digests.values[digests.values > 100]))    
+
+        # Make a histogram that shows this - but remove top repeated layer outlier
+        filtered_digests = digests.values[digests.values > 100][1:]
+        sns.histplot(pandas.DataFrame(filtered_digests, columns=['layers-repeated']), x="layers-repeated")
+        plt.title(f"Layer Usage (Repetition) Across 2.8 Million Layers")
+        plt.savefig(os.path.join(outdir, f"layer-repetition.png"))
+        plt.clf()
+
+        digests.to_csv(digests_file)  
+    else:
+        digests = pandas.read_csv(digests_file, index_col=0)
+
+    # Let's now look up what is in these layers! The top 100 are ok
+    files = find_inputs(os.path.join(root, "data", "dockerfile", "registry"))
+
+    # Add the layer count of each digest
+    digests = pandas.DataFrame(digests)
+    find_digests(files, digests, outdir)
+    
+    # Get rid of the NAN years (1970 and 1980)
+    layer_counts = layer_counts[layer_counts.year >= 2014]
+    layers_logs = [numpy.log(x) for x in layer_counts["layers"]]
+    layer_counts["layers_logs"] = layers_logs
+
+    make_plot(
+        layer_counts,
+        title=f"Number of layers per image by Year",
+        tag="layers_per_image_log",
+        ydimension="layers_logs",
+        xdimension="year",
+        outdir=outdir,
+        ext="png",
+        plotname="by_year",
+        hue="year",
+        palette=palette,
+        plot_type="bar",
+        xlabel="Year",
+        ylabel="Layers per image (log)",
+    )
+
+    make_plot(
+        layer_counts,
+        title=f"Number of layers per image by Year",
+        tag="layers_per_image",
+        ydimension="layers",
+        xdimension="year",
+        outdir=outdir,
+        ext="png",
+        plotname="by_year",
+        hue="year",
+        palette=palette,
+        plot_type="bar",
+        xlabel="Year",
+        ylabel="Layers per image",
+    )
 
     plt.figure(figsize=(30, 12))
     make_plot(
@@ -292,6 +392,34 @@ def get_category(uri, categories):
     return category
 
 
+def derive_layer_counts(df):
+    # Count number of layers per unique uri - each is likely within a year already
+    # We can separate into years after
+    layer_counts = pandas.DataFrame(columns=["full_uri", "layers"])
+    idx = 0
+
+    # This index starts at 0
+    for item, layer_count in df.groupby(["full_uri"])["layer_number"].max().items():
+        layer_counts.loc[idx, :] = item, layer_count + 1
+        idx += 1
+    
+    # We can't include year, but we can calculate a range of years
+    years = []
+    uris = []
+    repeated = 0
+    missing = 0
+    for row in layer_counts.iterrows():
+        year = df.loc[df.full_uri == row[1].full_uri].year
+        year = list(set(year.values))
+        if len(year) == 1:        
+            years.append(year)
+            uris.append(row[1].full_uri)
+        else:
+            repeated +=1
+    layer_counts['year'] = years    
+    return layer_counts 
+
+
 def parse_manifests(files, args, categories, db_file):
     """
     Given a listing of files, parse into results data frame
@@ -386,105 +514,112 @@ def clean(input_data):
     ]
 
 
+def find_digests(files, digests, outdir):
+    """
+    Given a set of digests, look up the associated content.
+
+    To do this we need the digest and the layer count.
+    """
+    # Let's get the top 100
+    to_look_for = digests.index[0:100]
+
+    # Database file
+    db_file = os.path.join(root, "data", "dockerfile", "data-frame.db")
+    conn = sqlite3.connect(db_file)
+    cursor = conn.cursor()
+
+    to_look = {}
+    for digest in to_look_for:
+        cursor.execute(f"select * from manifests where digest = '{digest}';")
+        result = cursor.fetchall()
+        full_uri = result[1]
+        if full_uri not in to_look:
+            to_look[full_uri] = {}
+        to_look[full_uri][digest] = {"layer_number": result[4]}
+   
+    utils.write_json(to_look, os.path.join(outdir, "top-100-digest-locations.json"))
+    conn.close()
+
+    for filename in files:       
+        if filename in seen:
+            continue
+        parsed = os.path.relpath(filename, root).split("registry", 1)[-1].strip(os.sep)
+        uri, _ = parsed.rsplit(os.sep, 1)
+        item = utils.read_json(filename)
+        
+        # This is a manifest list
+        for tag, cfg in item.get("configs", {}).items():
+            full_uri = f"{uri}:{tag}"
+            if full_uri not in to_look:
+                continue
+            for digest, manifest in to_look[full_uri].items():
+                layer_number = manifest["layer_number"]
+                to_look[full_uri][digest]['layer_content'] = cfg["history"][layer_number]
+        break
+
+    utils.write_json(to_look, os.path.join(outdir, "top-100-digest-locations.json"))
+
+    # Print the counts / items to the screen
+    # Note that I put this into a file
+    print("# Top Layer Contents")
+    for full_uri, manifest in to_look.items():
+        for digest, content in manifest.items():
+            count = digests[digests.index == digest].values[0]
+            print(f"    Digest: {digest}")
+            print(f"  Found In: {full_uri}")
+            print(f"   Layer #: {content['layer_number']}")
+            print(f"References: {count}")
+            if "comment" in content:
+                print(f"   Comment: {content['comment']}")
+            print(f"   Created: {content['layer_content']['created']}")
+            print(f"   Content: {content['layer_content']['created_by']}")
+            print()
+
+
 def parse_configs(files, args, categories, db_file):
     """
-    We want to make an association between layer sizes and commands.
-    For example, what commands make big layers? What words/terms/tokens are
-    associated with large layers?
-
-    1. Create vocabulary - filter down to most common words
-    2. Then count them.
-
-    We need to account for images with many tags (that repeat terms) so
-    we only count a term once per entire image family, the assumption being
-    that repetition is likely across tags.
+    We want to find similarity between layers by way of tokenizing -> top2vec.
+    
+    This will generate the corpus we can use.
     """
-    # First keep track of terms (tokens) and counts
-    counts = {}
-    terms_seen = {}
+    root_dir = os.path.dirname(args.results)
+    fd = open(os.path.join(root_dir, 'dockerfile-corpus.txt'), 'w')
+    
+    # Metadata for each
+    meta = open(os.path.join(root_dir, 'dockerfile-index.txt'), 'w')
 
-    # TODO get counts of terms in history, associate with size
-    # TODO get envars, user, working dir, counts?
-    # How often is someone ROOT?
-    # look at annotations / labels
-    seen = set()
-    for filename in files:
-        if filename in seen:
-            continue
+    # This gets replaced with a space (to make new tokens)
+    punctuation = "('|\"|;|:|=|\n)"
 
+    # This gets removed
+    removed = "({|}|[|]|[)]|[(]|[]]|[[]|[$])"    
+    
+    total = len(files)
+    for i, filename in enumerate(files):
+        print(f"Parsing {i} of {total}", end="\r")
         parsed = os.path.relpath(filename, root).split("registry", 1)[-1].strip(os.sep)
         uri, _ = parsed.rsplit(os.sep, 1)
         item = utils.read_json(filename)
-
-        if uri not in terms_seen:
-            terms_seen[uri] = set()
-
-        category = get_category(uri, categories)
 
         # This is a manifest list
         for tag, cfg in item.get("configs", {}).items():
             if "history" not in cfg:
                 continue
-            for entry in cfg["history"]:
+            for idx, entry in enumerate(cfg["history"]):
                 if "created_by" not in entry:
                     continue
-                for token in clean(entry["created_by"]):
-                    # We've already counted the term for the uri
-                    if token in terms_seen[uri]:
-                        continue
-                    if token not in counts:
-                        counts[token] = 0
-                    counts[token] += 1
-                    terms_seen[uri].add(token)
+                # Get rid of punctuation that could make commands different
+                content = re.sub(punctuation, " ", entry["created_by"])
+                content = re.sub(removed, "", content)
+                line = content.lower().split()
+                # Get rid of single characters
+                line = [x for x in line if len(x) > 1]
+                fd.write(" ".join(line) + "\n")
+                meta.write(filename + " " + tag + " " + str(idx) + "\n")
 
-    # Let's use terms that appear >= 100 times
-    # This is biased to images with redundant tags, but OK for first shot
-    tokens = {}
-    for term, count in counts.items():
-        if count < 100:
-            continue
-        tokens[term] = count
+    meta.close()
+    fd.close()
 
-    # Now create the pandas lookup
-    # The index here will be the layer digest
-    df = pandas.DataFrame(columns=list(tokens.keys()))
-
-    # Fill na values with 0
-    # This takes too long to reasonably do
-    seen = set()
-    for filename in files:
-        if filename in seen:
-            continue
-
-        parsed = os.path.relpath(filename, root).split("registry", 1)[-1].strip(os.sep)
-        uri, _ = parsed.rsplit(os.sep, 1)
-        item = utils.read_json(filename)
-
-        category = get_category(uri, categories)
-
-        # This is a manifest list
-        for tag, cfg in item.get("configs", {}).items():
-            if "history" not in cfg:
-                continue
-            token_set = {}
-            for entry in cfg["history"]:
-                if "created_by" not in entry:
-                    continue
-                for token in clean(entry["created_by"]):
-                    if token in df.columns:
-                        if token not in token_set:
-                            token_set[token] = 0
-                        token_set[token] += 1
-
-            full_uri = f"{uri}:{tag}"
-            df.loc[full_uri, list(token_set.keys())] = list(token_set.values())
-
-        seen.add(filename)
-
-    import IPython
-
-    IPython.embed()
-    return df
 
 
 def make_plot(
