@@ -201,13 +201,13 @@ python scripts/run_top2vec.py
 
 There are still some digests that need to be removed (I think commits, and I will do this) but the related terms look very good! Here are some examples of similar terms:
 
-![img/similar-words/1.png])(img/similar-words/1.png)
-![img/similar-words/2.png])(img/similar-words/2.png)
-![img/similar-words/3.png])(img/similar-words/3.png)
-![img/similar-words/4.png])(img/similar-words/4.png)
-![img/similar-words/5.png])(img/similar-words/5.png)
-![img/similar-words/6.png])(img/similar-words/6.png)
-![img/similar-words/7.png])(img/similar-words/7.png)
+![img/similar-words/1.png](img/similar-words/1.png)
+![img/similar-words/2.png](img/similar-words/2.png)
+![img/similar-words/3.png](img/similar-words/3.png)
+![img/similar-words/4.png](img/similar-words/4.png)
+![img/similar-words/5.png](img/similar-words/5.png)
+![img/similar-words/6.png](img/similar-words/6.png)
+![img/similar-words/7.png](img/similar-words/7.png)
 
 And you can see the topics in [wordcloud](data/dockerfile/wordcloud)
 
