@@ -627,6 +627,9 @@ def parse_configs(files, args, categories, db_file):
                 # Get rid of single characters
                 tokens += [x for x in line if len(x) > 1]
 
+            # Also get rid of shas
+            tokens = [x for x in tokens if len(x) != 64]
+
             # This has each image as one line
             fd.write(" ".join(tokens) + "\n")
             meta.write(filename + " " + tag + "\n")

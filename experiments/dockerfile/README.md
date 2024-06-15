@@ -199,10 +199,20 @@ There is one HUGE outlier (I'm guessing this is ubuntu, but TBA confirmation) th
 python scripts/run_top2vec.py
 ```
 
-Note that this is currently running! I'm interested to see:
+There are still some digests that need to be removed (I think commits, and I will do this) but the related terms look very good! Here are some examples of similar terms:
 
- - similar terms
- - the clustering afforded by the vectors
- - the generated topics
- 
+![img/similar-words/1.png])(img/similar-words/1.png)
+![img/similar-words/2.png])(img/similar-words/2.png)
+![img/similar-words/3.png])(img/similar-words/3.png)
+![img/similar-words/4.png])(img/similar-words/4.png)
+![img/similar-words/5.png])(img/similar-words/5.png)
+![img/similar-words/6.png])(img/similar-words/6.png)
+![img/similar-words/7.png])(img/similar-words/7.png)
+
+And you can see the topics in [wordcloud](data/dockerfile/wordcloud)
+
+## TODO
+
+It would be interesting to do a check against the bases to see what we have.
+
 I am also thinking we should look for "good practices" in the data, e.g., an apt or apt-get install that is paired with a clean in the same layer (vs. not) then we could write a section somewhere on how common "best practices" actually are.

@@ -51,6 +51,9 @@ def main():
         "io",
         "storage",
         "size",
+        "ubuntu",
+        "container",
+        "git",
         "ml",
         "apt",
         "install",
@@ -65,7 +68,6 @@ def main():
         "lack",
         "eager",
         "algorithm",
-        "ml",
         "nvidia",
         "gpu",
         "gcc",
@@ -151,11 +153,23 @@ def main():
 
     # Also save vectors and metadata
     vectors = pandas.DataFrame(model.document_vectors)
-    vectors.to_csv(os.path.join(outdir, "top2vec-vectors-images.tsv"), sep="\t")
+    vectors.to_csv(
+        os.path.join(outdir, "top2vec-vectors-images.tsv"),
+        sep="\t",
+        index=None,
+        header=None,
+    )
 
     vectors = pandas.DataFrame(model.word_vectors)
-    vectors.to_csv(os.path.join(outdir, "top2vec-word-vectors-images.tsv"), sep="\t")
-    utils.write_file("\n".join(model.vocab), "top2vec-word-vocab.tsv")
+    vectors.to_csv(
+        os.path.join(outdir, "top2vec-word-vectors-images.tsv"),
+        sep="\t",
+        index=None,
+        header=None,
+    )
+    utils.write_file(
+        "\n".join(model.vocab), os.path.join(outdir, "top2vec-word-vocab.tsv")
+    )
 
 
 if __name__ == "__main__":
