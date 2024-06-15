@@ -13,49 +13,54 @@ root = os.path.dirname(here)
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description="word2vec")
+    parser = argparse.ArgumentParser(description="top2vec")
     parser.add_argument(
-        "--input",
-        help="tokenized jobspec files",
-        default=os.path.join(root, "data", "dockerfile", "dockerfile-corpus.txt"),
+        "--model",
+        help="model input file",
+        default=os.path.join(
+            root,
+            "data",
+            "dockerfile",
+            "top2vec-with-doc2vec-dockerfile-image-learn.model",
+        ),
+    )
+    parser.add_argument(
+        "--outname",
+        help="basename of output markdown",
+        default="top2vec-jobspec-database.md",
     )
     return parser
 
 
+# 19,856 topics! That is too many
 def main():
     """
     Generate cosine distance matrix from vectors.
     """
     parser = get_parser()
     args, _ = parser.parse_known_args()
-    if not os.path.exists(args.input):
-        sys.exit(f"{args.input} does not exist.")
-
-    corpus = [x.strip() for x in utils.read_file(args.input)]
-
-    outdir = os.path.dirname(args.input)
-    outdir = os.path.join(outdir, "top2vec")
-
-    # Note I was running this on a VM - YOLO
-    if not os.path.exists(outdir):
-        os.makedirs(outdir)
 
     # Note that I had to run this on a large VM to not get killed
-    model_path = os.path.join(outdir, "top2vec.model")
+    model_path = args.model
     if not os.path.exists(model_path):
-        model = Top2Vec(corpus, speed="learn", embedding_model="doc2vec")
-        model.save(model_path)
-    else:
-        model = Top2Vec.load(model_path)
+        sys.exit(f"Model path {model_path} does not exist.")
+    model = Top2Vec.load(model_path)
 
     # Get topics, sizes and numbers
     topic_sizes, topic_nums = model.get_topic_sizes()
 
-    # 362
     number_topics = model.get_num_topics()
+    print(f"There are {number_topics} topics")
     topic_words, word_scores, topic_nums = model.get_topics(number_topics)
 
+    outdir = os.path.dirname(args.model)
+    outdir = os.path.join(outdir, "wordcloud")
+    if not os.path.exists(outdir):
+        os.makedirs(outdir)
+
     for i, topic in enumerate(topic_nums):
+        if i > 100:
+            break
         print(f"Generating plot for {topic}")
         model.generate_topic_wordcloud(topic)
         print(" ".join(topic_words[i]))
@@ -67,7 +72,10 @@ def main():
     # Generate a README for them
     with open(os.path.join(outdir, "README.md"), "w") as fd:
         fd.write("# Topic Wordclouds\n")
+        fd.write("> Top 100\n")
         for i, topic in enumerate(topic_nums):
+            if i > 100:
+                break
             image = f"{topic}-cloud.png"
             fd.write(f"\n## Topic {topic}\n")
             words = topic_words[i]
@@ -75,8 +83,6 @@ def main():
             fd.write(" ".join(words) + "\n")
             fd.write("```\n")
             fd.write(f"![{image}]({image})\n")
-
-    # Copy everything back...
 
 
 if __name__ == "__main__":

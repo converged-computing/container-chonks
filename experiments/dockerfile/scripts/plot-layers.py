@@ -92,7 +92,6 @@ def main():
 
     manifest_file = os.path.join(outdir, "docker-layers.csv")
     if not os.path.exists(manifest_file):
-
         # This does the actual parsing of data into a formatted variant
         # Has keys results, iters, and columns
         # parse_manifests(files, args, categories, db_file)
@@ -106,7 +105,9 @@ def main():
         # cursor.fetchone()
         # (2872188,)
         manifest_df = pandas.read_sql_query(
-            "SELECT * from manifests", conn, parse_dates={"datetime": "%Y-%m-%d %H:%M:%S"}
+            "SELECT * from manifests",
+            conn,
+            parse_dates={"datetime": "%Y-%m-%d %H:%M:%S"},
         )
         conn.close()
 
@@ -128,11 +129,13 @@ def main():
         # Show means grouped by experiment to sanity check plots
         manifest_df.to_csv(manifest_file)
     else:
-        manifest_df = pandas.read_csv(os.path.join(outdir, "docker-layers.csv"), index_col=0)
+        manifest_df = pandas.read_csv(
+            os.path.join(outdir, "docker-layers.csv"), index_col=0
+        )
 
     # We need to tokenize the content of the layers
-    # We won't save to data frame, but write directly to file    
-    # parse_configs(files, args, categories, db_file)
+    # We won't save to data frame, but write directly to file
+    parse_configs(files, args, categories, db_file)
     # plot_results(manifest_df, outdir)
 
 
@@ -144,6 +147,7 @@ def convert_size(size_bytes):
     p = math.pow(1024, i)
     s = round(size_bytes / p, 2)
     return "%s %s" % (s, size_name[i])
+
 
 def derive_by_year(df, outdir):
     # Create a variant that groups by year
@@ -160,6 +164,7 @@ def derive_by_year(df, outdir):
     by_year = by_year[by_year.year >= 2010]
     return by_year
 
+
 def plot_results(df, outdir):
     """
     Plot dockerfile results
@@ -168,7 +173,7 @@ def plot_results(df, outdir):
     # df_by_year = df[df.year >= 2010]
     # size_logs = [numpy.log(x) for x in df_by_year["size"]]
     # df_by_year["size_log"] = size_logs
-    
+
     # How have the number of layers changed over time?
     layer_file = os.path.join(outdir, "layer-counts-by-year.csv")
     if not os.path.exists(layer_file):
@@ -176,8 +181,9 @@ def plot_results(df, outdir):
         layer_counts.to_csv(layer_file)
     else:
         layer_counts = pandas.read_csv(layer_file, index_col=0)
-  
-    import IPython 
+
+    import IPython
+
     IPython.embed()
     sys.exit()
 
@@ -193,11 +199,11 @@ def plot_results(df, outdir):
         palette[t] = hexcolors.pop(0)
 
     # What about shared layers?
-    digests_file = os.path.join(outdir, 'layer-counts.csv')
+    digests_file = os.path.join(outdir, "layer-counts.csv")
     if not os.path.exists(digests_file):
-        digests = df.groupby(["digest"])['digest'].count()
+        digests = df.groupby(["digest"])["digest"].count()
         digests = digests.sort_values(ascending=False)
-        
+
         # Figure out what the layers are. Let's choose those above a threshold.
 
         # How many are unique?
@@ -210,21 +216,24 @@ def plot_results(df, outdir):
         # How many layers > 2
         print(len(digests.values[digests.values > 2]))
         # 136054
-   
+
         # > 50?: 9255
-        print(len(digests.values[digests.values > 50]))    
+        print(len(digests.values[digests.values > 50]))
 
         # > 100? 3333
-        print(len(digests.values[digests.values > 100]))    
+        print(len(digests.values[digests.values > 100]))
 
         # Make a histogram that shows this - but remove top repeated layer outlier
         filtered_digests = digests.values[digests.values > 100][1:]
-        sns.histplot(pandas.DataFrame(filtered_digests, columns=['layers-repeated']), x="layers-repeated")
+        sns.histplot(
+            pandas.DataFrame(filtered_digests, columns=["layers-repeated"]),
+            x="layers-repeated",
+        )
         plt.title(f"Layer Usage (Repetition) Across 2.8 Million Layers")
         plt.savefig(os.path.join(outdir, f"layer-repetition.png"))
         plt.clf()
 
-        digests.to_csv(digests_file)  
+        digests.to_csv(digests_file)
     else:
         digests = pandas.read_csv(digests_file, index_col=0)
 
@@ -234,7 +243,7 @@ def plot_results(df, outdir):
     # Add the layer count of each digest
     digests = pandas.DataFrame(digests)
     find_digests(files, digests, outdir)
-    
+
     # Get rid of the NAN years (1970 and 1980)
     layer_counts = layer_counts[layer_counts.year >= 2014]
     layers_logs = [numpy.log(x) for x in layer_counts["layers"]]
@@ -402,7 +411,7 @@ def derive_layer_counts(df):
     for item, layer_count in df.groupby(["full_uri"])["layer_number"].max().items():
         layer_counts.loc[idx, :] = item, layer_count + 1
         idx += 1
-    
+
     # We can't include year, but we can calculate a range of years
     years = []
     uris = []
@@ -411,13 +420,13 @@ def derive_layer_counts(df):
     for row in layer_counts.iterrows():
         year = df.loc[df.full_uri == row[1].full_uri].year
         year = list(set(year.values))
-        if len(year) == 1:        
+        if len(year) == 1:
             years.append(year)
             uris.append(row[1].full_uri)
         else:
-            repeated +=1
-    layer_counts['year'] = years    
-    return layer_counts 
+            repeated += 1
+    layer_counts["year"] = years
+    return layer_counts
 
 
 def parse_manifests(files, args, categories, db_file):
@@ -536,17 +545,17 @@ def find_digests(files, digests, outdir):
         if full_uri not in to_look:
             to_look[full_uri] = {}
         to_look[full_uri][digest] = {"layer_number": result[4]}
-   
+
     utils.write_json(to_look, os.path.join(outdir, "top-100-digest-locations.json"))
     conn.close()
 
-    for filename in files:       
+    for filename in files:
         if filename in seen:
             continue
         parsed = os.path.relpath(filename, root).split("registry", 1)[-1].strip(os.sep)
         uri, _ = parsed.rsplit(os.sep, 1)
         item = utils.read_json(filename)
-        
+
         # This is a manifest list
         for tag, cfg in item.get("configs", {}).items():
             full_uri = f"{uri}:{tag}"
@@ -554,7 +563,9 @@ def find_digests(files, digests, outdir):
                 continue
             for digest, manifest in to_look[full_uri].items():
                 layer_number = manifest["layer_number"]
-                to_look[full_uri][digest]['layer_content'] = cfg["history"][layer_number]
+                to_look[full_uri][digest]["layer_content"] = cfg["history"][
+                    layer_number
+                ]
         break
 
     utils.write_json(to_look, os.path.join(outdir, "top-100-digest-locations.json"))
@@ -579,21 +590,21 @@ def find_digests(files, digests, outdir):
 def parse_configs(files, args, categories, db_file):
     """
     We want to find similarity between layers by way of tokenizing -> top2vec.
-    
+
     This will generate the corpus we can use.
     """
     root_dir = os.path.dirname(args.results)
-    fd = open(os.path.join(root_dir, 'dockerfile-corpus.txt'), 'w')
-    
+    fd = open(os.path.join(root_dir, "dockerfile-image-corpus.txt"), "w")
+
     # Metadata for each
-    meta = open(os.path.join(root_dir, 'dockerfile-index.txt'), 'w')
+    meta = open(os.path.join(root_dir, "dockerfile-image-index.txt"), "w")
 
     # This gets replaced with a space (to make new tokens)
     punctuation = "('|\"|;|:|=|\n)"
 
     # This gets removed
-    removed = "({|}|[|]|[)]|[(]|[]]|[[]|[$])"    
-    
+    removed = "({|}|[|]|[)]|[(]|[]]|[[]|[$])"
+
     total = len(files)
     for i, filename in enumerate(files):
         print(f"Parsing {i} of {total}", end="\r")
@@ -605,6 +616,7 @@ def parse_configs(files, args, categories, db_file):
         for tag, cfg in item.get("configs", {}).items():
             if "history" not in cfg:
                 continue
+            tokens = []
             for idx, entry in enumerate(cfg["history"]):
                 if "created_by" not in entry:
                     continue
@@ -613,13 +625,14 @@ def parse_configs(files, args, categories, db_file):
                 content = re.sub(removed, "", content)
                 line = content.lower().split()
                 # Get rid of single characters
-                line = [x for x in line if len(x) > 1]
-                fd.write(" ".join(line) + "\n")
-                meta.write(filename + " " + tag + " " + str(idx) + "\n")
+                tokens += [x for x in line if len(x) > 1]
+
+            # This has each image as one line
+            fd.write(" ".join(tokens) + "\n")
+            meta.write(filename + " " + tag + "\n")
 
     meta.close()
     fd.close()
-
 
 
 def make_plot(

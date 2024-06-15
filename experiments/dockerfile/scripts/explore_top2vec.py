@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 
+import pandas
 import argparse
 import os
 import sys
@@ -11,18 +12,23 @@ import matplotlib.pyplot as plt
 here = os.path.abspath(os.path.dirname(__file__))
 root = os.path.dirname(here)
 
+
 def get_parser():
     parser = argparse.ArgumentParser(description="top2vec")
     parser.add_argument(
         "--model",
         help="model input file",
-        default=os.path.join(root, "data", "dockerfile", "top2vec-with-doc2vec-dockerfile-learn.model"),
-
+        default=os.path.join(
+            root,
+            "data",
+            "dockerfile",
+            "top2vec-with-doc2vec-dockerfile-image-learn.model",
+        ),
     )
     parser.add_argument(
         "--outname",
         help="basename of output markdown",
-        default="top2vec-jobspec-database.md",
+        default="top2vec-jobspec-images-database.md",
     )
     return parser
 
@@ -44,6 +50,7 @@ def main():
     terms = [
         "io",
         "storage",
+        "size",
         "ml",
         "apt",
         "install",
@@ -60,13 +67,6 @@ def main():
         "algorithm",
         "ml",
         "nvidia",
-        "SBATCH",
-        "PBATCH",
-        "COBALT",
-        "PBS",
-        "OAR",
-        "BSUB",
-        "FLUX",
         "gpu",
         "gcc",
         "array",
@@ -89,6 +89,7 @@ def main():
         "ninja",
         "rust",
         "spack",
+        "memory",
         "easybuild",
         "resnet",
         "pytorch",
@@ -99,6 +100,8 @@ def main():
         "quicksilver",
         "maestro",
         "snakemake",
+        "workflow",
+        "limit",
         "nextflow",
         "dask",
         "kube",
@@ -147,8 +150,13 @@ def main():
         fd.write(f"\n```\n")
 
     # Also save vectors and metadata
-    import IPython
-    IPython.embed()
+    vectors = pandas.DataFrame(model.document_vectors)
+    vectors.to_csv(os.path.join(outdir, "top2vec-vectors-images.tsv"), sep="\t")
+
+    vectors = pandas.DataFrame(model.word_vectors)
+    vectors.to_csv(os.path.join(outdir, "top2vec-word-vectors-images.tsv"), sep="\t")
+    utils.write_file("\n".join(model.vocab), "top2vec-word-vocab.tsv")
+
 
 if __name__ == "__main__":
     main()
