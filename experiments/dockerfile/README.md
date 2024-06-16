@@ -195,6 +195,8 @@ There is one HUGE outlier (I'm guessing this is ubuntu, but TBA confirmation) th
 
 ## Top2Vec
 
+We do custom tokenization, but I'm wondering if we need to disable [this](https://github.com/ddangelov/Top2Vec/blob/7403993804e241b3dc30bf489165dd4910689e55/top2vec/Top2Vec.py#L366-L370).
+
 ```bash
 python scripts/run_top2vec.py
 ```
@@ -231,6 +233,22 @@ And we can see most are not very similar.
 ![img/image-similarity-histogram.png](img/image-similarity-histogram.png)
 
 I am going to attempt to do this with layers, but there are almost 3 million so not sure even my big memory instance can handle it!
+
+### What bases are likely used?
+
+We can extract a manifest using [guts](https://github.com/singularityhub/guts/blob/main/action/manifest/action.yaml) and then compare against [shpc-guts](https://github.com/singularityhub/shpc-guts).
+
+Clone the guts repository (base images) and install guts:
+
+```bash
+git clone https://github.com/singularityhub/shpc-guts /tmp/guts
+pip install container-guts
+```
+
+```bash
+# Assumes guts cloned to /tmp/guts
+python scripts/find_base_images.py
+```
 
 ## TODO
 

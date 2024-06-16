@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 
-from datetime import datetime, timedelta
-
 from rse.main import Encyclopedia
 from rse.utils.command import Command
 import rse.utils.file as utils
 
 
 import tempfile
-import requests
-import json
 import argparse
 import sys
 import shutil

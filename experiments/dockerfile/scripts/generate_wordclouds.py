@@ -4,7 +4,6 @@
 import argparse
 import os
 import sys
-import rse.utils.file as utils
 from top2vec import Top2Vec
 import matplotlib.pyplot as plt
 

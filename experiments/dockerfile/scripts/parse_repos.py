@@ -8,7 +8,6 @@ import rse.utils.file as utils
 
 import tempfile
 import requests
-import json
 import argparse
 import sys
 import shutil
@@ -89,7 +88,6 @@ def main():
 
     # Let's parse by 1 week at a time
     # Going backwards in time
-    results = []
     for org in orgs:
         # Create an output directory for the org
         outdir = os.path.join(args.outdir, org)

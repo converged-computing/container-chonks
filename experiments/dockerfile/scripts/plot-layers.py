@@ -5,6 +5,7 @@ import collections
 import fnmatch
 import string
 import os
+import math
 import numpy
 
 import sqlite3
@@ -550,8 +551,6 @@ def find_digests(files, digests, outdir):
     conn.close()
 
     for filename in files:
-        if filename in seen:
-            continue
         parsed = os.path.relpath(filename, root).split("registry", 1)[-1].strip(os.sep)
         uri, _ = parsed.rsplit(os.sep, 1)
         item = utils.read_json(filename)
@@ -595,9 +594,11 @@ def parse_configs(files, args, categories, db_file):
     """
     root_dir = os.path.dirname(args.results)
     fd = open(os.path.join(root_dir, "dockerfile-image-corpus.txt"), "w")
+    fdlayers = open(os.path.join(root_dir, "dockerfile-layer-corpus.txt"), "w")
 
     # Metadata for each
     meta = open(os.path.join(root_dir, "dockerfile-image-index.txt"), "w")
+    metalayers = open(os.path.join(root_dir, "dockerfile-layer-index.txt"), "w")
 
     # This gets replaced with a space (to make new tokens)
     punctuation = "('|\"|;|:|=|_|\n|\t|#|[.]|[*]|[&])"
@@ -627,8 +628,10 @@ def parse_configs(files, args, categories, db_file):
                 # Get rid of single characters
                 tokens += [x for x in line if len(x) > 1]
 
-            # Also get rid of shas and commits
-            tokens = [x for x in tokens if len(x) != 64 and len(x) != 40]
+                # Also get rid of shas and commits
+                tokens = [x for x in tokens if len(x) != 64 and len(x) != 40]
+                fdlayers.write(" ".join(tokens) + "\n")
+                metalayers.write(filename + " " + tag + " " + str(idx) + "\n")
 
             # This has each image as one line
             fd.write(" ".join(tokens) + "\n")

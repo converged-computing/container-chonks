@@ -1,15 +1,8 @@
 #!/usr/bin/env python3
 
-from datetime import datetime, timedelta
-
-from rse.main import Encyclopedia
-from rse.utils.command import Command
 import rse.utils.file as utils
 
-
-import tempfile
 import requests
-import json
 import argparse
 import sys
 import shutil
@@ -202,7 +195,7 @@ class DockerImage:
         """
         response = requests.get(url)
         if response.status_code != 200:
-            logger.exit("Issue with request %s" % url)
+            sys.exit("Issue with request %s" % url)
         return response
 
     def tags(self):
@@ -249,11 +242,11 @@ class DockerImage:
         url = "%s/digest/%s:%s" % (self.apiroot, self.container_name, tag)
         response = self.get_request(url)
         if "could not parse reference" in response:
-            logger.exit("Issue getting digest: %s" % response)
+            sys.exit("Issue getting digest: %s" % response)
         if "unsupported status" in response:
-            logger.exit("Issue getting digest: %s" % response)
+            sys.exit("Issue getting digest: %s" % response)
         if "MANIFEST_UNKNOWN" in response.text:
-            logger.exit(
+            sys.exit(
                 f"The tag {tag} you provided is not known. Check that it and the container both exist."
             )
         return response.text

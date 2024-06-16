@@ -8,7 +8,6 @@ import rse.utils.file as utils
 
 import tempfile
 import requests
-import json
 import argparse
 import sys
 import shutil
@@ -68,10 +67,9 @@ def main():
 
     if not os.path.exists(args.outdir):
         os.makedirs(args.outdir)
-    save_to = os.path.join(args.outdir, "dockerfile-paths.json")
 
     # This base url taskes a range
-    base_url = f"https://api.github.com/search/repositories?q=language:Dockerfile+created:%sT00:00:00Z..%sT00:00:00Z&order=asc&per_page=100&topic:%s"
+    base_url = "https://api.github.com/search/repositories?q=language:Dockerfile+created:%sT00:00:00Z..%sT00:00:00Z&order=asc&per_page=100&topic:%s"
 
     # Try these topics
     topics = ["machine-learning"]
@@ -84,7 +82,6 @@ def main():
 
     # Let's parse by 1 week at a time
     # Going backwards in time
-    results = []
     while True:
         # start at some date and go backwards by a week
         start = datetime.strptime(args.start_date, "%Y-%m-%d")

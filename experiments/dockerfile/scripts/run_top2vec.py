@@ -19,6 +19,11 @@ def get_parser():
         help="tokenized jobspec files",
         default=os.path.join(root, "data", "dockerfile", "dockerfile-corpus.txt"),
     )
+    parser.add_argument(
+        "--model-name",
+        help="name for output model in outdir",
+        default="top2vec.model",
+    )
     return parser
 
 
@@ -41,7 +46,7 @@ def main():
         os.makedirs(outdir)
 
     # Note that I had to run this on a large VM to not get killed
-    model_path = os.path.join(outdir, "top2vec.model")
+    model_path = os.path.join(outdir, args.model_name)
     if not os.path.exists(model_path):
         model = Top2Vec(corpus, speed="learn", embedding_model="doc2vec")
         model.save(model_path)

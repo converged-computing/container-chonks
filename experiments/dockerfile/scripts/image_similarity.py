@@ -4,12 +4,10 @@ import pandas
 import argparse
 import os
 import sys
-import rse.utils.file as utils
 from top2vec import Top2Vec
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
 
 here = os.path.abspath(os.path.dirname(__file__))
 root = os.path.dirname(here)
@@ -206,7 +204,7 @@ def main():
     sns.barplot(df, y="counts", x="cosine")
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.title(f"Cosine Similarity for 300K Docker Images")
+    plt.title("Cosine Similarity for 300K Docker Images")
     plt.savefig(outfile)
     plt.clf()
 
