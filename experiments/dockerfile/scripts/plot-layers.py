@@ -600,10 +600,10 @@ def parse_configs(files, args, categories, db_file):
     meta = open(os.path.join(root_dir, "dockerfile-image-index.txt"), "w")
 
     # This gets replaced with a space (to make new tokens)
-    punctuation = "('|\"|;|:|=|\n)"
+    punctuation = "('|\"|;|:|=|_|\n|\t|#|[.]|[*]|[&])"
 
     # This gets removed
-    removed = "({|}|[|]|[)]|[(]|[]]|[[]|[$])"
+    removed = "(<|>|{|}|[|]|[)]|[(]|[]]|[[]|[$]|[/])"
 
     total = len(files)
     for i, filename in enumerate(files):
@@ -622,13 +622,13 @@ def parse_configs(files, args, categories, db_file):
                     continue
                 # Get rid of punctuation that could make commands different
                 content = re.sub(punctuation, " ", entry["created_by"])
-                content = re.sub(removed, "", content)
+                content = re.sub(removed, " ", content)
                 line = content.lower().split()
                 # Get rid of single characters
                 tokens += [x for x in line if len(x) > 1]
 
-            # Also get rid of shas
-            tokens = [x for x in tokens if len(x) != 64]
+            # Also get rid of shas and commits
+            tokens = [x for x in tokens if len(x) != 64 and len(x) != 40]
 
             # This has each image as one line
             fd.write(" ".join(tokens) + "\n")

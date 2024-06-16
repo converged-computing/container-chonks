@@ -22,13 +22,13 @@ def get_parser():
             root,
             "data",
             "dockerfile",
-            "top2vec-with-doc2vec-dockerfile-image-learn.model",
+            "top2vec-with-doc2vec-image-tokens-learn.model",
         ),
     )
     parser.add_argument(
         "--outname",
         help="basename of output markdown",
-        default="top2vec-jobspec-images-database.md",
+        default="top2vec-jobspec-images-tokens-database.md",
     )
     return parser
 

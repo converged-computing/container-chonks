@@ -21,13 +21,8 @@ def get_parser():
             root,
             "data",
             "dockerfile",
-            "top2vec-with-doc2vec-dockerfile-image-learn.model",
+            "top2vec-with-doc2vec-image-tokens-learn.model",
         ),
-    )
-    parser.add_argument(
-        "--outname",
-        help="basename of output markdown",
-        default="top2vec-jobspec-database.md",
     )
     return parser
 
@@ -54,7 +49,7 @@ def main():
     topic_words, word_scores, topic_nums = model.get_topics(number_topics)
 
     outdir = os.path.dirname(args.model)
-    outdir = os.path.join(outdir, "wordcloud")
+    outdir = os.path.join(outdir, "wordcloud-tokens")
     if not os.path.exists(outdir):
         os.makedirs(outdir)
 
