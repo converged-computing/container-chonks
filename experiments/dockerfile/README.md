@@ -199,7 +199,7 @@ There is one HUGE outlier (I'm guessing this is ubuntu, but TBA confirmation) th
 python scripts/run_top2vec.py
 ```
 
-There are still some digests that need to be removed (I think commits, and I will do this) but the related terms look very good! Here are some examples of similar terms:
+The related terms look very good! Here are some examples of similar terms:
 
 ![img/similar-words/1.png](img/similar-words/1.png)
 ![img/similar-words/2.png](img/similar-words/2.png)
@@ -209,7 +209,28 @@ There are still some digests that need to be removed (I think commits, and I wil
 ![img/similar-words/6.png](img/similar-words/6.png)
 ![img/similar-words/7.png](img/similar-words/7.png)
 
-And you can see the topics in [wordcloud](data/dockerfile/wordcloud)
+And you can see the topics in [wordcloud](data/dockerfile/wordcloud) for the above images, and [wordcloud-tokens](data/dockerfile/wordcloud-tokens) for a derivative with commits and shasum digests removed. 
+
+### How similar are images based on layers?
+
+We might assume that a grouping of layers that encompasses a Dockerfile (and image) is akin to paragraphs or sentences that make up a chapter. We can assess image similarity based on comparing these.
+
+We can:
+
+- Derive word2vec embeddings for each Dockerfile, where all the layers are preprocessed and represented as one document as one Dockerfile.
+- Do pairwise similarity (cosine) on all the vectors (length=300, images N=309317), resulting in a similarity matrix.
+- Filter the similarity matrix by ranges to create buckets of similarity. 
+- Plot!
+
+```python
+python scripts/image_similarity.py
+```
+
+And we can see most are not very similar.
+
+![img/image-similarity-histogram.png](img/image-similarity-histogram.png)
+
+I am going to attempt to do this with layers, but there are almost 3 million so not sure even my big memory instance can handle it!
 
 ## TODO
 
