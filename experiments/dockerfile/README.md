@@ -250,8 +250,36 @@ pip install container-guts
 python scripts/find_base_images.py
 ```
 
+For this approach, we choose one image from each URI (e.g., a URI might have many tags), first selecting for "latest" and then the first tag that has the newest created date for a layer. We have to be selective because our approach for assessing similarity means pulling all the layers, extracting to a root location, and then doing a diff of the container against a set of previously extracted container bases for [45 images](https://github.com/singularityhub/shpc-guts/blob/main/.github/workflows/generate.yaml) across 7 families (ubuntu, debian, centos, rockylinux, fedora, alpina, and busybox). This means that, given a contender image A that needs classification and a set of base images B:
+
+1. Generate a set (union) of paths across B
+2. Subtract this set of paths from A. This gives us paths unique to A.
+3. Subtract unique paths from A, call this "A shared"
+4. Compare the similarity of A shared between every set of paths in B (intersection(A,B)/len(A))
+
+The percentage calculated above represents the percentage of paths in A that are also present in B, after removing unique paths to A (which likely are added software installs). The maximum score would be 1, and the minimum score 0, and the maximum score is the winner. Here is how we classify our images (removing the version of the image, since we are biased to select for newer images):
+
+![img/image-bases-classification.png](img/image-bases-classification.png)
+
+And this plot shows that the scores are generally high, indicative of shared paths.
+
+![img/image-bases-classification-scores-histogram.png](img/image-bases-classification-scores-histogram.png)
+
+
+The minimum score in the above is 0.59, and the max is 1. We see that debian is by far the most frequently used, at least for this sample of images we are looking at.
+
+```console
+              count       image
+generic_base                   
+debian          393      debian
+alpine           95      alpine
+ubuntu           74      ubuntu
+centos           64      centos
+fedora           15      fedora
+rockylinux       11  rockylinux
+busybox           4     busybox
+```
+
 ## TODO
 
-It would be interesting to do a check against the bases to see what we have.
-
-I am also thinking we should look for "good practices" in the data, e.g., an apt or apt-get install that is paired with a clean in the same layer (vs. not) then we could write a section somewhere on how common "best practices" actually are.
+We should look for "good practices" in the data, e.g., an apt or apt-get install that is paired with a clean in the same layer (vs. not) then we could write a section somewhere on how common "best practices" actually are.

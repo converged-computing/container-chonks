@@ -198,7 +198,6 @@ def main():
     df["counts"] = ranges
     df["cosine"] = y
 
-    # TODO do it again, append to ranges
     outfile = os.path.join(here, "img", "image-similarity-histogram.png")
     plt.figure(figsize=(12, 6))
     sns.barplot(df, y="counts", x="cosine")

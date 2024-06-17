@@ -8,6 +8,7 @@ import sqlite3
 import matplotlib.pyplot as plt
 import metricsoperator.utils as utils
 import pandas
+import seaborn as sns
 from datetime import datetime
 from container_guts.main import ManifestGenerator
 
@@ -59,7 +60,7 @@ def main():
 
     # List of images file
     db_file = os.path.join(root, "data", "dockerfile", "data-frame.db")
-    manifest_file = os.path.join(outdir, "docker-images.txt")
+    manifest_file = os.path.join(outdir, "docker-images-2.txt")
     if not os.path.exists(manifest_file):
         # This does the actual parsing of data into a formatted variant
         # Has keys results, iters, and columns
@@ -79,12 +80,72 @@ def main():
             parse_dates={"datetime": "%Y-%m-%d %H:%M:%S"},
         )
         conn.close()
+
+        # check for latest, if does not exist, get first tag
         images = list(manifest_df.uri.unique())
-        utils.write_file("\n".join(images), manifest_file)
+        keepers = []
+
+        # Bubble most recent to top
+        sorted_df = manifest_df.sort_values("created_at", ascending=False)
+        for image in images:
+            tags = sorted_df[sorted_df.uri == image].tag.tolist()
+            tag = "latest"
+            if "latest" not in tags:
+                tag = tags[0]
+            uri = f"{image}:{tag}"
+            print(uri)
+            keepers.append(uri)
+        utils.write_file("\n".join(keepers), manifest_file)
 
     else:
         images = [x for x in utils.read_file(manifest_file).split("\n") if x]
 
+    # Commented out so we just plot
+    # find_base_images(images)
+    # Create a data frame
+    df = pandas.DataFrame(columns=["uri", "base_with_tag", "generic_base", "score"])
+    idx = 0
+    for image, result in results.items():
+        base_image = result["base_image"].rsplit(":", 1)[0]
+        base_image = base_image.replace("docker.io/library/", "")
+        df.loc[idx, :] = [image, result["base_image"], base_image, result["score"]]
+        idx += 1
+
+    counts = pandas.DataFrame(df.generic_base.value_counts())
+    counts["image"] = counts.index
+
+    # df.score.min()
+    # 0.59
+    # df.score.max()
+    # 1.0
+
+    outfile = os.path.join(root, "img", "image-bases-classification.png")
+    sns.barplot(counts, y="count", x="image")
+    # plt.figure(figsize=(12, 8))
+    # plt.tight_layout()
+    plt.title("Bases for Subset of Docker Images")
+    plt.savefig(outfile)
+    plt.clf()
+
+    # Also look at distribution of scores
+    outfile = os.path.join(
+        root, "img", "image-bases-classification-scores-histogram.png"
+    )
+    sns.histplot(df, x="score")
+    # plt.figure(figsize=(12, 8))
+    # plt.tight_layout()
+    plt.title("Similarity Score Distribution Across Images")
+    plt.savefig(outfile)
+    plt.clf()
+
+    # counts['count'].sum()
+    # 656
+
+
+def find_base_images(images):
+    """
+    Create a Manifest Generator to find base images
+    """
     # For each image, run guts! This can get us the paths and filesystem for inspection
     cli = ManifestGenerator(tech="docker")
     issues = set()
@@ -110,10 +171,7 @@ def main():
             utils.write_json(results, outfile)
 
     utils.write_json(results, outfile)
-    import IPython
-
-    IPython.embed()
-    sys.exit()
+    return results
 
 
 if __name__ == "__main__":
