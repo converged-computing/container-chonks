@@ -6,6 +6,7 @@ import os
 import sys
 from top2vec import Top2Vec
 import seaborn as sns
+import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -45,18 +46,21 @@ def main():
         sys.exit(f"Model path {model_path} does not exist.")
     model = Top2Vec.load(model_path)
 
-    # Note that we have similarity on the level of the image here -
-    # is that enough?
+    # Note that we have similarity on the level of the image here
     sim = cosine_similarity(model.document_vectors)
     sims = pandas.DataFrame(sim)
 
+    # model.document_vectors.shape
+    # This is the number of images
+    # (309317, 300)
+
     # minimum should be -1
     # sims.min().min()
-    # -0.4902965
+    # -0.5011855
 
     # max should be 1
     # sims.max().max()
-    # ~1
+    # 1.0000006
 
     range_0 = (
         sims.apply(
@@ -142,23 +146,22 @@ def main():
     )
     print(f"{range_14} are in range 0.9 to 1.0")
 
-    # 80831138.0 are in range -0.5 to -0.4
-    # 9216403.0 are in range -0.4 to -0.3
-    # 467560377.0 are in range -0.3 to -0.2
-    # 4964294315.0 are in range -0.2 to -0.1
-    # 13955436711.0 are in range -0.1 to -0.0
-    # 12828532067.0 are in range 0.0 to 0.1
-    # 6538628372.0 are in range 0.1 to 0.2
-    # 4021759081.0 are in range 0.2 to 0.3
-    # 2692401860.0 are in range 0.3 to 0.4
-    # 2692401860.0 are in range 0.4 to 0.5
-    # 622561247.0 are in range 0.5 to 0.6
-    # 280576131.0 are in range 0.6 to 0.7
-    # 98765791.0 are in range 0.7 to 0.8
-    # 31457471.0 are in range 0.8 to 0.9
-    # 10346109.5 are in range 0.9 to 1.0
+    # 26580.0 are in range -0.5 to -0.4
+    # 10214756.0 are in range -0.4 to -0.3
+    # 434408772.0 are in range -0.3 to -0.1
+    # 4817538814.0 are in range -0.2 to -0.1
+    # 14237460310.0 are in range -0.1 to 0.0
+    # 12876001621.0 are in range 0.0 to 0.1
+    # 6396681060.0 are in range 0.1 to 0.2
+    # 4004250693.0 are in range 0.2 to 0.3
+    # 2690671058.0 are in range 0.3 to 0.4
+    # 2690671058.0 are in range 0.4 to 0.5
+    # 632519754.0 are in range 0.5 to 0.6
+    # 283613155.0 are in range 0.6 to 0.7
+    # 100464254.0 are in range 0.7 to 0.8
+    # 32083760.0 are in range 0.8 to 0.9
+    # 10451894.5 are in range 0.9 to 1.0
 
-    # ranges = [80831138, 9216403, 467560377, 4964294315, 13955436711, 12828532067,6538628372,4021759081,2692401860,2692401860,622561247,280576131,98765791,31457471,10346109]
     ranges = [
         range_0,
         range_1,
@@ -198,6 +201,9 @@ def main():
     df["counts"] = ranges
     df["cosine"] = y
 
+    df.to_csv(
+        os.path.join(here, "data", "dockerfile", "image-similarity-histogram.csv")
+    )
     outfile = os.path.join(here, "img", "image-similarity-histogram.png")
     plt.figure(figsize=(12, 6))
     sns.barplot(df, y="counts", x="cosine")

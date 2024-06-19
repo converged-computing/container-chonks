@@ -301,7 +301,23 @@ There isn't a good guideline for this. What is limit? We can see the number of l
 
 See [here](https://docs.docker.com/build/building/best-practices/#apt-get).
 
+```
+import re
+apt_get_count = 0
+apt_get_with_install = 0
+with open("dockerfile-corpus.txt", 'r') as fd:
+    for i, line in enumerate(fd.readlines()):
+       print(f"{i} of 6535425", end="\r")
+       if "apt" in line and "get" in line:
+           apt_get_count += 1
+           if "install" in line:
+               apt_get_with_install += 1
 
+print(f"{apt_get_with_install/apt_get_count} of layers do apt get with install")
+# 0.9429716660593467 of layers do apt get with install
+```
+
+That's really high!
 
 ### apt get with a clean / autoremove
 

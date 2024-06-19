@@ -23,16 +23,13 @@ def get_parser():
             root,
             "data",
             "dockerfile",
-            "top2vec-with-doc2vec-image-tokens-learn.model",
+            "top2vec-with-top2vec-unique-layers-learn.model",
         ),
     )
     return parser
 
 
 def count_values_in_range(series, range_min, range_max):
-    # TODO double check this isn't counting the values, just count of one
-    # TODO need an efficient way to calculate similarity of 6 million layers
-    # TODO can we instead find duplicates first?
     return series.between(left=range_min, right=range_max).sum()
 
 
@@ -51,10 +48,10 @@ def main():
 
     # This is similarity on the level of layers
     # model.document_vectors.shape
-    #  (597591, 300)
+    #  (582391, 300)
     model.document_vectors.shape
     chunk_size = 10000
-    matrix_len = model.document_vectors.shape[0]  # Not sparse numpy.ndarray
+    matrix_len = model.document_vectors.shape[0]
 
     def similarity_cosine_by_chunk(model, start, end):
         matrix_len = model.document_vectors.shape[0]  # Not sparse numpy.ndarray
@@ -83,22 +80,12 @@ def main():
     # Handle cosine_similarity_chunk  ( Write it to file_timestamp and close the file )
     # Do not open the same file again or you may end up with out of memory after few chunks
     df.to_csv(os.path.join(root, "data", "dockerfile", "layer-sims-counts.csv"))
-
-    # minimum should be -1
-    # sims.min().min()
-    # -0.4902965
-
-    # max should be 1
-    # sims.max().max()
-    # ~1
-    # make plot!
-
     outfile = os.path.join(root, "img", "layer-similarity-histogram.png")
     plt.figure(figsize=(12, 6))
     sns.barplot(df, y="counts", x="cosine")
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.title("Cosine Similarity for 597K Unique Image Layers")
+    plt.title("Cosine Similarity for 582K Unique Image Layers")
     plt.savefig(outfile)
     plt.clf()
 
