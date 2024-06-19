@@ -6,6 +6,7 @@ import os
 import sys
 from top2vec import Top2Vec
 import seaborn as sns
+import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -29,6 +30,9 @@ def get_parser():
 
 
 def count_values_in_range(series, range_min, range_max):
+    # TODO double check this isn't counting the values, just count of one
+    # TODO need an efficient way to calculate similarity of 6 million layers
+    # TODO can we instead find duplicates first?
     return series.between(left=range_min, right=range_max).sum()
 
 
@@ -45,10 +49,40 @@ def main():
         sys.exit(f"Model path {model_path} does not exist.")
     model = Top2Vec.load(model_path)
 
-    # Note that we have similarity on the level of the image here -
-    # is that enough?
-    sim = cosine_similarity(model.document_vectors)
-    sims = pandas.DataFrame(sim)
+    # This is similarity on the level of layers
+    # model.document_vectors.shape
+    #  (597591, 300)
+    model.document_vectors.shape
+    chunk_size = 10000
+    matrix_len = model.document_vectors.shape[0]  # Not sparse numpy.ndarray
+
+    def similarity_cosine_by_chunk(model, start, end):
+        matrix_len = model.document_vectors.shape[0]  # Not sparse numpy.ndarray
+        if end > matrix_len:
+            end = matrix_len
+        return cosine_similarity(
+            X=model.document_vectors[start:end], Y=model.document_vectors
+        )
+
+    df = None
+    total = int(matrix_len / chunk_size)
+    for i, chunk_start in enumerate(range(0, matrix_len, chunk_size)):
+        print(f"Processing chunk {i} of {total}")
+        cosine_similarity_chunk = similarity_cosine_by_chunk(
+            model, chunk_start, chunk_start + chunk_size
+        )
+        sims = pandas.DataFrame(cosine_similarity_chunk)
+        if df is None:
+            df = get_ranges(sims)
+        else:
+            updated = get_ranges(sims)
+            new_counts = updated["counts"] + df["counts"]
+            df["counts"] = new_counts
+        print(df)
+
+    # Handle cosine_similarity_chunk  ( Write it to file_timestamp and close the file )
+    # Do not open the same file again or you may end up with out of memory after few chunks
+    df.to_csv(os.path.join(root, "data", "dockerfile", "layer-sims-counts.csv"))
 
     # minimum should be -1
     # sims.min().min()
@@ -57,7 +91,22 @@ def main():
     # max should be 1
     # sims.max().max()
     # ~1
+    # make plot!
 
+    outfile = os.path.join(root, "img", "layer-similarity-histogram.png")
+    plt.figure(figsize=(12, 6))
+    sns.barplot(df, y="counts", x="cosine")
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.title("Cosine Similarity for 597K Unique Image Layers")
+    plt.savefig(outfile)
+    plt.clf()
+
+
+def get_ranges(sims):
+    """
+    Get range counts for a similarity matrix chunk
+    """
     range_0 = (
         sims.apply(
             func=lambda row: count_values_in_range(row, -0.5, -0.4), axis=1
@@ -78,7 +127,7 @@ def main():
         ).sum()
         / 2
     )
-    print(f"{range_2} are in range -0.3 to -0.1")
+    print(f"{range_2} are in range -0.3 to -0.2")
     range_3 = (
         sims.apply(
             func=lambda row: count_values_in_range(row, -0.2, -0.1), axis=1
@@ -90,7 +139,7 @@ def main():
         sims.apply(func=lambda row: count_values_in_range(row, -0.1, 0.0), axis=1).sum()
         / 2
     )
-    print(f"{range_4} are in range -0.1 to 0.0")
+    print(f"{range_4} are in range -0.1 to -0.0")
     range_5 = (
         sims.apply(func=lambda row: count_values_in_range(row, 0.0, 0.1), axis=1).sum()
         / 2
@@ -142,23 +191,6 @@ def main():
     )
     print(f"{range_14} are in range 0.9 to 1.0")
 
-    # 80831138.0 are in range -0.5 to -0.4
-    # 9216403.0 are in range -0.4 to -0.3
-    # 467560377.0 are in range -0.3 to -0.2
-    # 4964294315.0 are in range -0.2 to -0.1
-    # 13955436711.0 are in range -0.1 to -0.0
-    # 12828532067.0 are in range 0.0 to 0.1
-    # 6538628372.0 are in range 0.1 to 0.2
-    # 4021759081.0 are in range 0.2 to 0.3
-    # 2692401860.0 are in range 0.3 to 0.4
-    # 2692401860.0 are in range 0.4 to 0.5
-    # 622561247.0 are in range 0.5 to 0.6
-    # 280576131.0 are in range 0.6 to 0.7
-    # 98765791.0 are in range 0.7 to 0.8
-    # 31457471.0 are in range 0.8 to 0.9
-    # 10346109.5 are in range 0.9 to 1.0
-
-    # ranges = [80831138, 9216403, 467560377, 4964294315, 13955436711, 12828532067,6538628372,4021759081,2692401860,2692401860,622561247,280576131,98765791,31457471,10346109]
     ranges = [
         range_0,
         range_1,
@@ -197,15 +229,7 @@ def main():
     df = pandas.DataFrame()
     df["counts"] = ranges
     df["cosine"] = y
-
-    outfile = os.path.join(here, "img", "image-similarity-histogram.png")
-    plt.figure(figsize=(12, 6))
-    sns.barplot(df, y="counts", x="cosine")
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.title("Cosine Similarity for 300K Docker Images")
-    plt.savefig(outfile)
-    plt.clf()
+    return df
 
 
 if __name__ == "__main__":

@@ -232,7 +232,13 @@ And we can see most are not very similar.
 
 ![img/image-similarity-histogram.png](img/image-similarity-histogram.png)
 
-I am going to attempt to do this with layers, but there are almost 3 million so not sure even my big memory instance can handle it!
+### How similar are layers?
+
+We have a total 6,535,425 of (non-unique) layers across our images. I first built this model, and quickly relaized generating the cosine matrix would be impossible. My strategy was to then remove the exact duplicates, which are typically just the same layers between different tags of the same image. The goal wouldn't be to say something globally about the ecosystem, but say something about similarity of layers that aren't _exactly_ the same.  When we tokenize and process and filter down to unique, ensuring that layers from images from the same tag are removed, we have 597,591 layers. When we calculate similarity scores across these layers (cosine similarity) we see the following distribution:
+
+![img/layer-similarity-histogram.png](img/layer-similarity-histogram.png)
+
+We can say that based on these word2vec vectors, most layers are not very similar. 
 
 ### What bases are likely used?
 
@@ -265,7 +271,6 @@ And this plot shows that the scores are generally high, indicative of shared pat
 
 ![img/image-bases-classification-scores-histogram.png](img/image-bases-classification-scores-histogram.png)
 
-
 The minimum score in the above is 0.59, and the max is 1. We see that debian is by far the most frequently used, at least for this sample of images we are looking at.
 
 ```console
@@ -280,6 +285,95 @@ rockylinux       11  rockylinux
 busybox           4     busybox
 ```
 
-## TODO
+## Best Practices - Look at embeddings?
 
-We should look for "good practices" in the data, e.g., an apt or apt-get install that is paired with a clean in the same layer (vs. not) then we could write a section somewhere on how common "best practices" actually are.
+While there are many best / good practices for building, only a subset we can derive from tokens.
+
+### Alpine is not always the best choice
+
+We can see this is followed - it's the second choice, led by ubuntu.
+
+### Limit layers amount
+
+There isn't a good guideline for this. What is limit? We can see the number of layers is relatively consistent over time.
+
+### use apt get with apt install in same line
+
+See [here](https://docs.docker.com/build/building/best-practices/#apt-get).
+
+
+
+### apt get with a clean / autoremove
+
+We can look first at associated words and scores. I see both autoremove and clean, so we know it is happening!
+For this I am using a model that is built on all the 6 million + layers (with duplicates)
+
+```
+In [19]: model.similar_words(['apt'], num_words=50)
+Out[19]: 
+(array(['get', 'autoremove', 'deb', 'dpkg', 'var', 'lists', 'no', 'conf',
+        'systemd', 'acquire', 'update', 'suggests', 'languages',
+        'archives', 'order', 'gzipindexes', 'recommends', 'srcpkgcache',
+        'none', 'indexes', 'post', 'partial', 'invoke', 'pkgcache', 'cfg',
+        'rc', 'initctl', 'speedup', 'lib', 'etc', 'clean', 'ubuntu',
+        'rename', 'divert', 'unsafe', 'utils', 'policy', 'cache',
+        'sources', 'make', 'debian', 'indextargets', 'run',
+        'noninteractive', 'frontend', 'dev', 'echo', 'container', 'list',
+        'rm'], dtype='<U14'),
+ array([0.80508672, 0.76560722, 0.75240791, 0.73301251, 0.70643496,
+        0.6795709 , 0.67667215, 0.67509216, 0.64805467, 0.6469739 ,
+        0.64462704, 0.6277982 , 0.61877087, 0.60906698, 0.60297381,
+        0.60258747, 0.59585987, 0.58531517, 0.5818818 , 0.57635006,
+        0.56903515, 0.56498944, 0.56353153, 0.56145824, 0.54944087,
+        0.54354866, 0.52989003, 0.52806055, 0.52542804, 0.51773187,
+        0.51522571, 0.5131858 , 0.51028917, 0.50384598, 0.50310548,
+        0.49735075, 0.49147437, 0.49097526, 0.48345878, 0.48300334,
+        0.48079965, 0.47638827, 0.46989843, 0.46617988, 0.46011491,
+        0.44758008, 0.44640614, 0.44364051, 0.44194418, 0.43892334]))
+```
+
+I can then count the percentage of layers that have apt AND a clean and rm in them. Autoremove doesn't clean the sources,
+but we will count it too.
+
+```python
+import re
+
+apt_count = 0
+apt_cleaned = 0
+apt_autoremove = 0
+apt_cleaned_and_autoremoved = 0
+with open("dockerfile-corpus.txt", 'r') as fd:
+    for i, line in enumerate(fd.readlines()):
+       print(f"{i} of 6535425", end="\r")
+       if "apt" in line:
+           apt_count += 1
+           if re.search("(rm|clean)", line) and "autoremove" in line:
+               apt_cleaned_and_autoremoved += 1
+           elif re.search("(rm|clean)", line):
+               apt_cleaned +=1
+           elif "autoremove" in line:
+               apt_autoremove += 1 
+
+
+print(apt_count)
+# 605432
+
+print(apt_cleaned)
+# 410664
+
+print(apt_autoremove)
+# 295
+
+print(apt_cleaned_and_autoremoved)
+# 67752
+
+print(f"Percentage of layers that reference apt {apt_count/6535425}")
+print(f"{apt_cleaned/apt_count} of layers do a clean (clean or rm)")
+print(f"{apt_autoremove/apt_count} of layers do an autoremove")
+print(f"{apt_cleaned_and_autoremoved/apt_count} of layers do both")
+
+# Percentage of layers that reference apt 0.09263850476441854
+# 0.6782991318595647 of layers do a clean (clean or rm)
+# 0.00048725538128146514 of layers do an autoremove
+# 0.11190686980536212 of layers do both
+```

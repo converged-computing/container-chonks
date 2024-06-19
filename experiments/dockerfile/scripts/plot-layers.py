@@ -593,20 +593,29 @@ def parse_configs(files, args, categories, db_file):
     This will generate the corpus we can use.
     """
     root_dir = os.path.dirname(args.results)
+
+    # This is for images
     fd = open(os.path.join(root_dir, "dockerfile-image-corpus.txt"), "w")
-    fdlayers = open(os.path.join(root_dir, "dockerfile-layer-corpus.txt"), "w")
+
+    # This is layers, all of them
+    fdlayers_all = open(os.path.join(root_dir, "dockerfile-layer-corpus.txt"), "w")
+
+    # This is for unique layers
+    fdlayers = open(os.path.join(root_dir, "dockerfile-unique-layer-corpus.txt"), "w")
 
     # Metadata for each
     meta = open(os.path.join(root_dir, "dockerfile-image-index.txt"), "w")
-    metalayers = open(os.path.join(root_dir, "dockerfile-layer-index.txt"), "w")
+    metalayers_all = open(os.path.join(root_dir, "dockerfile-layer-index.txt"), "w")
+    metalayers = open(os.path.join(root_dir, "dockerfile-unique-layer-index.txt"), "w")
 
     # This gets replaced with a space (to make new tokens)
-    punctuation = "('|\"|;|:|=|_|\n|\t|#|[.]|[*]|[&])"
+    punctuation = "('|\"|;|:|=|_|-|\n|\t|#|[.]|[*]|[&])"
 
     # This gets removed
     removed = "(<|>|{|}|[|]|[)]|[(]|[]]|[[]|[$]|[/])"
 
     total = len(files)
+    seen = {}
     for i, filename in enumerate(files):
         print(f"Parsing {i} of {total}", end="\r")
         parsed = os.path.relpath(filename, root).split("registry", 1)[-1].strip(os.sep)
@@ -625,18 +634,47 @@ def parse_configs(files, args, categories, db_file):
                 content = re.sub(punctuation, " ", entry["created_by"])
                 content = re.sub(removed, " ", content)
                 line = content.lower().split()
+
                 # Get rid of single characters
                 tokens += [x for x in line if len(x) > 1]
 
                 # Also get rid of shas and commits
                 tokens = [x for x in tokens if len(x) != 64 and len(x) != 40]
-                fdlayers.write(" ".join(tokens) + "\n")
+
+                # Try adding layers only once, and count uniqueness here
+                assembled = " ".join(tokens)
+
+                # This file has all layers
+                fdlayers_all.write(assembled + "\n")
+                metalayers_all.write(filename + " " + tag + " " + str(idx) + "\n")
+
+                if assembled not in seen:
+                    seen[assembled] = -1
+                seen[assembled] += 1
+
+                # Don't add layers we've seen
+                if seen[assembled] >= 1:
+                    continue
+                fdlayers.write(assembled + "\n")
                 metalayers.write(filename + " " + tag + " " + str(idx) + "\n")
 
             # This has each image as one line
             fd.write(" ".join(tokens) + "\n")
             meta.write(filename + " " + tag + "\n")
 
+    # We just need the count that the layers were repeated (identical)
+    utils.write_json(seen, os.path.join(root_dir, "seen-layers-counts.json"))
+    total = 0
+    for _, count in seen.items():
+        total += count
+
+    # There are a total of 582391 duplicate layers
+    print(f"There are a total of {len(seen)} duplicate layers")
+
+    fdlayers.close()
+    metalayers.close()
+    fdlayers_all.close()
+    metalayers_all.close()
     meta.close()
     fd.close()
 
