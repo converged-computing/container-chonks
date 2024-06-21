@@ -134,6 +134,22 @@ def main():
             os.path.join(outdir, "docker-layers.csv"), index_col=0
         )
 
+    import IPython
+    IPython.embed()
+    sys.exit()
+
+    # Metrics for the base image from Dockerfile:
+    # manifest_df.uri.unique().shape
+    # 1. 1521 repositories (not accounting for tags)
+
+    # manifest_df.full_uri.unique().shape
+    # 2. including tags (multiple across repositories)
+    # (256970,)
+
+    # 3 Unique layers as represented by digest
+    # manifest_df.digest.unique().shape
+    # Out[5]: (528449,)
+
     # We need to tokenize the content of the layers
     # We won't save to data frame, but write directly to file
     parse_configs(files, args, categories, db_file)
@@ -183,6 +199,31 @@ def plot_results(df, outdir):
     else:
         layer_counts = pandas.read_csv(layer_file, index_col=0)
 
+    # Look at tags per image
+    tags_per_image = manifest_df.groupby(['uri'])['tag'].count()
+
+    # remove top outlier (like 47k+)
+    values = tags_per_image.values
+    max_value = numpy.max(values)
+    values = [x for x in values if x != max_value]
+    ax = sns.histplot(values)
+    plt.title("Distribution of Tags per Image for 1520 Base Images")
+    ax.set_xlabel("Tags", fontsize=16)
+    plt.savefig(os.path.join(outdir, f"tags-per-image.png"))
+    plt.clf()
+
+    # In [52]: tags_per_image.max()
+    # Out[52]: 16748
+
+    # In [53]: tags_per_image.min()
+    # Out[53]: 1
+
+    # In [54]: tags_per_image.mean()
+    # Out[54]: 1852.425
+
+    # In [55]: tags_per_image.std()
+    # Out[55]: 2531.482207232857
+    
     import IPython
 
     IPython.embed()
@@ -205,24 +246,42 @@ def plot_results(df, outdir):
         digests = df.groupby(["digest"])["digest"].count()
         digests = digests.sort_values(ascending=False)
 
+        # 528,449
+        digests.shape
+        
         # Figure out what the layers are. Let's choose those above a threshold.
+        digests_hist = pandas.DataFrame(columns=['threshold', 'count'])
 
         # How many are unique?
         print(len(digests.values[digests.values == 1]))
         # 312,095
+        digests_hist.loc[0, :] = ["==1", len(digests.values[digests.values == 1])]
 
         # How many >1: 216,354
         print(len(digests.values[digests.values > 1]))
+        digests_hist.loc[1, :] = [">1", len(digests.values[digests.values > 1])]
 
         # How many layers > 2
         print(len(digests.values[digests.values > 2]))
         # 136054
+        digests_hist.loc[2, :] = [">2", len(digests.values[digests.values > 2])]
 
         # > 50?: 9255
         print(len(digests.values[digests.values > 50]))
+        digests_hist.loc[3, :] = [">50", len(digests.values[digests.values > 50])]
 
         # > 100? 3333
         print(len(digests.values[digests.values > 100]))
+        digests_hist.loc[4, :] = [">100", len(digests.values[digests.values > 100])]
+
+        print(len(digests.values[digests.values > 500]))
+        digests_hist.loc[5, :] = [">500", len(digests.values[digests.values > 500])]
+
+        print(len(digests.values[digests.values > 1000]))
+        digests_hist.loc[6, :] = [">1000", len(digests.values[digests.values > 1000])]
+
+        print(len(digests.values[digests.values > 3000]))
+        digests_hist.loc[7, :] = [">3000", len(digests.values[digests.values > 3000])]
 
         # Make a histogram that shows this - but remove top repeated layer outlier
         filtered_digests = digests.values[digests.values > 100][1:]

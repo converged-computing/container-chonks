@@ -52,7 +52,7 @@ def main():
 
     # model.document_vectors.shape
     # This is the number of images
-    # (309317, 300)
+    # (💩️309317, 300)
 
     # minimum should be -1
     # sims.min().min()
@@ -202,9 +202,14 @@ def main():
     df["cosine"] = y
 
     df.to_csv(
-        os.path.join(here, "data", "dockerfile", "image-similarity-histogram.csv")
+        os.path.join(here, "data", "dockerfile", "scientific-dockerfile-image-similarity-histogram.csv")
     )
+
+    # df.to_csv(
+    #    os.path.join(here, "data", "dockerfile", "image-similarity-histogram.csv")
+    # )
     outfile = os.path.join(here, "img", "image-similarity-histogram.png")
+    # outfile = os.path.join(here, "img", "scientific-dockerfile-image-similarity-histogram.png")
     plt.figure(figsize=(12, 6))
     sns.barplot(df, y="counts", x="cosine")
     plt.xticks(rotation=45)
@@ -212,6 +217,8 @@ def main():
     plt.title("Cosine Similarity for 300K Docker Images")
     plt.savefig(outfile)
     plt.clf()
+
+
 
 
 if __name__ == "__main__":

@@ -50,7 +50,7 @@ python scripts/summarize_dockerfile.py
 Stats:
 
 - Total Dockerfile across project: 77449
-- 694/4621 RSEng repos have at least one Dockerfile
+- 694/4621 RSEng repositories have at least one Dockerfile
 
 Dragonfly?
 
@@ -60,14 +60,44 @@ Dragonfly?
 python scripts/plot-layers.py
 ```
 
-How many unique repositories (with many tags each)?
+How many unique GitHub repositories that we cloned?
 - 444
 
-How many unique images?
-- 56122
+How many tags per manifest?
 
-How many layers?
-- 209505
+```console
+# This is the image URI with max tags
+In [17]: manifest_df.groupby(['uri'])['tag'].count().max()
+Out[17]: 47428
+
+# mean tags
+In [18]: manifest_df.groupby(['uri'])['tag'].count().mean()
+Out[18]: 1882.3892176199868
+
+# standard deviation.
+In [19]: manifest_df.groupby(['uri'])['tag'].count().std()
+Out[19]: 2787.4401444580467
+
+# min tags
+In [14]: manifest_df.groupby(['uri'])['tag'].count().min()
+Out[14]: 1
+```
+
+![img/tags-per-image.png](img/tags-per-image.png)
+
+```console
+# Metrics for the base image from Dockerfile:
+# manifest_df.uri.unique().shape
+# 1. 1521 docker hub repositories (not accounting for tags)
+
+# manifest_df.full_uri.unique().shape
+# 2. including tags (multiple across repositories)
+# (256970,)
+
+# 3 Unique layers as represented by digest
+# manifest_df.digest.unique().shape
+# Out[5]: (528449,)
+```
 
 Here are outputs from the script, first, the averages for layers and images:
 
@@ -213,7 +243,46 @@ The related terms look very good! Here are some examples of similar terms:
 
 And you can see the topics in [wordcloud](data/dockerfile/wordcloud) for the above images, and [wordcloud-tokens](data/dockerfile/wordcloud-tokens) for a derivative with commits and shasum digests removed. 
 
-### How similar are images based on layers?
+### How similar are scientific images based on layers?
+
+We have largely been using the corpus of base images to say something about the ecosystem, but not the Dockerfile themselves.
+Instead, let's tokenize and build a model for those Dockerfile.
+
+```bash
+python scripts/parse_dockerfile.py
+```
+
+And then generate the model.
+
+```bash
+python scripts/run_top2vec.py --input ./data/dockerfile/scientific-dockerfile-image-corpus.txt --model-name scientific-dockerfile-learn.model
+```
+
+And the similarity matrix:
+
+```bash
+python scripts/image_similarity --model ./data/dockerfile/scientific-dockerfile-learn.model
+```
+
+Note we have one "document" per Dockerfile:
+
+```
+model.document_vectors.shape
+Out[3]: (77449, 300)
+```
+
+![img/scientific-dockerfile-image-similarity-histogram.png](img/scientific-dockerfile-image-similarity-histogram.png)
+
+And then word2vec to generate embeddings we can play with:
+
+```bash
+python scripts/word2vec.py --input ./data/dockerfile/scientific-dockerfile-image-corpus.txt
+```
+
+(I directed to a different output directory to sav them).
+
+
+### How similar are base images based on layers?
 
 We might assume that a grouping of layers that encompasses a Dockerfile (and image) is akin to paragraphs or sentences that make up a chapter. We can assess image similarity based on comparing these.
 
@@ -223,10 +292,6 @@ We can:
 - Do pairwise similarity (cosine) on all the vectors (length=300, images N=309317), resulting in a similarity matrix.
 - Filter the similarity matrix by ranges to create buckets of similarity. 
 - Plot!
-
-```python
-python scripts/image_similarity.py
-```
 
 And we can see most are not very similar.
 
