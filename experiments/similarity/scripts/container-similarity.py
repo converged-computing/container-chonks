@@ -9,6 +9,7 @@ import sys
 import hashlib
 
 from datetime import datetime
+import numpy
 import matplotlib.pylab as plt
 import pandas
 import seaborn as sns
@@ -249,8 +250,10 @@ def calculate_similarity(df, outdir, outfile, label):
 
     # Print similarity
     print(f"Similarity for {label}")
-    print("mean: " + str(sims.mean().mean()))
-    print("std " + str(sims.std().std()))
+    mean = numpy.mean(sims.values)
+    std = numpy.std(sims.values)
+    print("mean: " + str(mean))
+    print("std " + str(std))
 
 
 def plot_layers(df, outdir, label):

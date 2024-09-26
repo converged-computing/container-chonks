@@ -28,35 +28,34 @@ How many unique layer digests?
 
 Similarity for performance-study-digests
 mean: 0.4026779480749065
-std 0.027032382054625728
+std 0.3839554443889033
 
 Stats for container set containers
 How many layers?
-  (118, 8)
+  (120, 8)
 How many unique URIs not including tags?
   10
 How many unique URIs including tags?
   10
 How many unique layer digests?
   33
-
 Similarity for containers-digests
-mean: 0.632101232101232
-std 0.01348757789988935
+mean: 0.6590169830169829
+std 0.1276237000226257
 
 Stats for container set spack
 How many layers?
-(56, 8)
+  (56, 8)
 How many unique URIs not including tags?
-7
+  7
 How many unique URIs including tags?
-7
+  7
 How many unique layer digests?
-50
+  50
 
 Similarity for spack-digests
-mean: 0.19999999999999998
-std 0.0
+mean: 0.2
+std 0.3265986323710905
 ```
 
 To demonstrate the influence of container building strategy on resulting container layer similarity, we aimed to compare overall layer digest similarity between ~10 applications that were built in multiple ways. When a build was not possible for an approach, we skipped it. The applications are described in Table 1. The application container sets included:

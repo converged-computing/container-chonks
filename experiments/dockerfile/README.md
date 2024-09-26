@@ -2,7 +2,7 @@
 
 ## Design
 
-This could be a really interesting study. I want to look at:
+This will be a really interesting study. I want to look at:
 
  - Across a set of ML orgs and research software containers, get a list of unique containers. For each:
    - Assess current total size and size of layers (an average? distribution?) Try to describe distribution?
@@ -60,6 +60,7 @@ Dragonfly?
 python scripts/plot-layers.py
 ```
 
+This script parses the manifests and generates a local csv and sqlite database file.
 How many unique GitHub repositories that we cloned?
 - 444
 
@@ -299,11 +300,24 @@ And we can see most are not very similar.
 
 ### How similar are layers?
 
+```bash
+python scripts/layer_similarity.py
+```
+
 We have a total 6,535,425 of (non-unique) layers across our images. I first built this model, and quickly relaized generating the cosine matrix would be impossible. My strategy was to then remove the exact duplicates, which are typically just the same layers between different tags of the same image. The goal wouldn't be to say something globally about the ecosystem, but say something about similarity of layers that aren't _exactly_ the same.  When we tokenize and process and filter down to unique, ensuring that layers from images from the same tag are removed, we have 597,591 layers. When we calculate similarity scores across these layers (cosine similarity) we see the following distribution:
 
 ![img/layer-similarity-histogram.png](img/layer-similarity-histogram.png)
 
-We can say that based on these word2vec vectors, most layers are not very similar. 
+We can say that based on these word2vec vectors, most layers are not very similar. If we compare based on shared digests between unique URIs (using the latest or first of the set), and comparing with a Jacaard similarity, we see even lower (less similar) scores.
+
+```bash
+python scripts/layer_digest_similarity.py
+```
+```console
+Mean Jacaard score for digests is 0.002594605637405388 with std 0.03948005058610241
+```
+
+![img/cluster-layer-digest-similarity.png](img/cluster-layer-digest-similarity.png)
 
 ### What bases are likely used?
 

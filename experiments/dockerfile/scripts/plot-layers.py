@@ -95,7 +95,7 @@ def main():
     if not os.path.exists(manifest_file):
         # This does the actual parsing of data into a formatted variant
         # Has keys results, iters, and columns
-        # parse_manifests(files, args, categories, db_file)
+        parse_manifests(files, args, categories, db_file)
 
         conn = sqlite3.connect(db_file)
         cursor = conn.cursor()
