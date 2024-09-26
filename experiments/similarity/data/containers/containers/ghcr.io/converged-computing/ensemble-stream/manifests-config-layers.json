@@ -5,8 +5,8 @@
             "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
             "config": {
                 "mediaType": "application/vnd.docker.container.image.v1+json",
-                "size": 5104,
-                "digest": "sha256:0c6a1d02243996d30665b6ba3d1bec90ba7e15c7e4ca06a90692569ed262cf06"
+                "size": 6305,
+                "digest": "sha256:4bdc57c4dc4f2ddcba6d20f90835155beeae5d0b2284dc248e29966baccaf0e9"
             },
             "layers": [
                 {
@@ -41,18 +41,28 @@
                 },
                 {
                     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-                    "size": 114,
-                    "digest": "sha256:0074815e7471607e4f29aee41337a041af272fe5c61166460c7fe0ead573e3a4"
+                    "size": 61601918,
+                    "digest": "sha256:74e24c1b061c79d311e57c548429e493403995b9f109c3424c6e6ff67dd8164a"
                 },
                 {
                     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-                    "size": 10476,
-                    "digest": "sha256:748b2d8de0d3faf43718d7024eaab69289c8e8f8ad032a9e540a330549bbf173"
+                    "size": 3647,
+                    "digest": "sha256:4876b1d14fd3a6225d974a09612d136e632d90cbf1e286f3229ff9d6988e1f96"
                 },
                 {
                     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-                    "size": 27594,
-                    "digest": "sha256:beb10412e6d55fc5fd01f1662a7592e053578d6816710907d71a43a983fe766a"
+                    "size": 115,
+                    "digest": "sha256:d373bf7623916347a586714b32afc5de99a69878a66555f725ff635bb03162af"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 10486,
+                    "digest": "sha256:26d63d7d33e7f38838d8f4966e20bf733826847b3d5b6f80049f947ab7119893"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 27595,
+                    "digest": "sha256:acf8b858abeb8d4e7792285ca7481279f83954fe23a67002f676bbf935e6a78d"
                 }
             ]
         }
@@ -64,6 +74,9 @@
         "latest": {
             "architecture": "amd64",
             "config": {
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
                 "Env": [
                     "PATH=/usr/local/pancakes/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                     "DEBIAN_FRONTEND=noninteractive",
@@ -79,7 +92,7 @@
                     "org.opencontainers.image.version": "22.04"
                 }
             },
-            "created": "2024-09-24T20:08:49.505419474-06:00",
+            "created": "2024-09-25T20:13:52.833997342-06:00",
             "history": [
                 {
                     "created": "2024-09-11T16:25:16.091322237Z",
@@ -160,17 +173,33 @@
                     "empty_layer": true
                 },
                 {
-                    "created": "2024-09-24T20:08:49.022332961-06:00",
+                    "created": "2024-09-24T19:48:37.270308546-06:00",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get install -y openssh-client openssh-server cmake && apt-get clean # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:48:38.103949108-06:00",
+                    "created_by": "RUN /bin/sh -c echo \"        LogLevel ERROR\" >> /etc/ssh/ssh_config &&     echo \"        StrictHostKeyChecking no\" >> /etc/ssh/ssh_config &&     echo \"        UserKnownHostsFile=/dev/null\" >> /etc/ssh/ssh_config &&     cd /root &&     mkdir -p /run/sshd &&     ssh-keygen -t rsa -N \"\" -f /root/.ssh/id_rsa && chmod og+rX . &&     cd .ssh && cat id_rsa.pub > authorized_keys && chmod 644 authorized_keys # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:48:38.103949108-06:00",
+                    "created_by": "EXPOSE map[22/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-25T20:13:51.365544928-06:00",
                     "created_by": "WORKDIR /opt/stream",
                     "comment": "buildkit.dockerfile.v0"
                 },
                 {
-                    "created": "2024-09-24T20:08:49.042860978-06:00",
+                    "created": "2024-09-25T20:13:51.383779478-06:00",
                     "created_by": "COPY ./src . # buildkit",
                     "comment": "buildkit.dockerfile.v0"
                 },
                 {
-                    "created": "2024-09-24T20:08:49.505419474-06:00",
+                    "created": "2024-09-25T20:13:52.833997342-06:00",
                     "created_by": "RUN /bin/sh -c apt-get install -y gfortran &&     make && cp stream_c.exe /usr/local/bin && cp stream_f.exe /usr/local/bin # buildkit",
                     "comment": "buildkit.dockerfile.v0"
                 }
@@ -185,9 +214,11 @@
                     "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
                     "sha256:fda18b3a0b0db845595f807ed7179e095e1345c40b19298ef8b7563c7d73f5d8",
                     "sha256:505e113ae01a036b54825c60dfb09f0208e718136ce2d6bdc98996aa1ecbe6b9",
-                    "sha256:58c86218ceaf786a8b9861d2c565977aa6d8be44c4aedc4d615d92ce42aefe8c",
-                    "sha256:1eeecf68cb911456d2ed5b990d62808b9bfa26bfbd7b9cc4546d6503c43e78b2",
-                    "sha256:257f4449fc45998a74ebd5cf47f25f54e5d915b7a390c454884111cacfc69d07"
+                    "sha256:294bae0aeae7aa03d19949a649e600c2d8a5d0160864375b6da2ecffea048d05",
+                    "sha256:c65df74735e032b12e423db7e7dcf9da40bf9fd22a603dad300feae32a3bc2f5",
+                    "sha256:d9909a21a7f3c49c57e04e3129873a3c4da7e7538d5deb0d53c2d6bdea4ae93e",
+                    "sha256:420e3a2a8afc26b2c98fd237d6f557d110abf763c82408f4e117c4bdc25041ed",
+                    "sha256:e970e3aebd2a6aa3d96d419da3f7435066f9b4d469620586f19b216bd57fa70c"
                 ]
             }
         }

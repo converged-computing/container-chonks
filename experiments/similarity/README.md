@@ -76,8 +76,22 @@ While number of layers and size is important, for this part of the experiment we
 From the above we easily see that the ensemble containers (second set) have fewer overall layers would require 33/118 (~28%) unique layer pulls. Since we are certain that these containers were built with redundancy of layers in mind, we can state that this 28% represents the application logic specific to each container. For the performance study where some care was taken for redundancy, 115/258 (~45%) of layers would require isolated pulls. Finally, for the spack build strategy that creates a large layer that consists of a custom spack view, 50/56 (89%)
 of layers would require unique pulls, a strategy that does not allow for large amount of redundancy. We can see this result reflected in the Jacaard similarity cluster maps.
 
+### Performance Study Containers
+
+> some effort for similarity, but imperfect
+
 ![data/similarity/performance-study/cluster-container-similarity.png](data/similarity/performance-study/cluster-container-similarity.png)
+
+### Spack Containers
+
+> creates a large, unique layer
+
 ![data/similarity/spack/cluster-container-similarity.png](data/similarity/spack/cluster-container-similarity.png)
+
+### Ensemble Containers
+
+> built to be maximally similar
+
 ![data/similarity/containers/cluster-container-similarity.png](data/similarity/containers/cluster-container-similarity.png)
 
 A more controlled experiment that better controls for layer sizes and counts, and describes influence on pulling time, is needed and will be worked on next.
