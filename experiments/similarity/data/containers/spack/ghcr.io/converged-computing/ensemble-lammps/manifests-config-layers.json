@@ -1,0 +1,156 @@
+{
+    "manifests": {
+        "spack": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 3432,
+                "digest": "sha256:2654f37e67bc363ed8bf519ec3f91b7b9188982f7d1316912e558dbef5a859a4"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 30439933,
+                    "digest": "sha256:7478e0ac0f23f94b2f27848fbcdf804a670fbf8d4bab26df842d40a10cd33059"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 293528660,
+                    "digest": "sha256:a1722c3786e1e1280414483235609dd15ce78efe3d369d1c7d0f86a594544856"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 89722701,
+                    "digest": "sha256:8d5bbf70ab785cf2f15fa2ca1bf8a7b0b831548619b46e11bfd7dd6b6fce4895"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 257789,
+                    "digest": "sha256:018b1cf82050834331d0b18704bdc9cf76f245dd8ddf521c60c4ef2527fff1e8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 481,
+                    "digest": "sha256:c07632a5bb99622692113256b8ad2e610558cb6d183f8c0310b9628ad856b085"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 38707621,
+                    "digest": "sha256:f20f68845856c6739070926f6b33dce901b4926ee6e2af3cbfeff00041277087"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 22349152,
+                    "digest": "sha256:d66e9203e791ecc600eee388fc08a4ed28f43f5b2c50e0cf969873def653351c"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3738628,
+                    "digest": "sha256:52440cb918b86f32bbd9dc177036d855ffd395fa9dc531e781c5adfc92f686a8"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "spack"
+    ],
+    "configs": {
+        "spack": {
+            "architecture": "amd64",
+            "config": {
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                }
+            },
+            "created": "2024-09-25T17:56:21.614879187-06:00",
+            "history": [
+                {
+                    "created": "2024-09-11T16:25:16.091322237Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-11T16:25:16.110134186Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-11T16:25:16.12828917Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-11T16:25:16.145319811Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-11T16:25:17.895714864Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:ebe009f86035c175ba244badd298a2582914415cf62783d510eab3a311a5d4e1 in / "
+                },
+                {
+                    "created": "2024-09-11T16:25:18.112480611Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-25T17:56:08.404847276-06:00",
+                    "created_by": "COPY /opt/spack-environment /opt/spack-environment # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-25T17:56:09.243581016-06:00",
+                    "created_by": "COPY /opt/software /opt/software # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-25T17:56:09.772567461-06:00",
+                    "created_by": "COPY /opt/view /opt/view # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-25T17:56:09.794025833-06:00",
+                    "created_by": "COPY /etc/profile.d/z10_spack_environment.sh /etc/profile.d/z10_spack_environment.sh # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-25T17:56:13.201945178-06:00",
+                    "created_by": "RUN /bin/sh -c apt-get update # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-25T17:56:20.368695407-06:00",
+                    "created_by": "RUN /bin/sh -c DEBIAN_FRONTEND=\"noninteractive\" apt-get -y install --no-install-recommends     ca-certificates     openssh-server     openssh-client     dnsutils     curl     && apt-get clean     && apt-get autoremove     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-25T17:56:21.614879187-06:00",
+                    "created_by": "RUN /bin/sh -c export VERSION=\"1.1.0\" &&     curl -LO \"https://github.com/oras-project/oras/releases/download/v${VERSION}/oras_${VERSION}_linux_amd64.tar.gz\" &&     mkdir -p oras-install/ &&     tar -zxf oras_${VERSION}_*.tar.gz -C oras-install/ &&     mv oras-install/oras /usr/local/bin/ &&     rm -rf oras_${VERSION}_*.tar.gz oras-install/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2573e0d8158209ed54ab25c87bcdcb00bd3d2539246960a3d592a1c599d70465",
+                    "sha256:149dc7095c4f6acc72e31c1384d0e121b69ee50fe03cf6b316d56a991eeff956",
+                    "sha256:78aa30f9323ddd4d93b0a7ce014a2b68ef1563303152a411335328908108be2b",
+                    "sha256:37eae95d7b62b6e50bcc85f6d1762e6f51d4adacb25110f834000da2d4c24d10",
+                    "sha256:42527509c9d8c0dfced8a97ff0a58a1fc9e53c9677c2ea8795eb436da39f03b4",
+                    "sha256:1aa6867517e7c76a2a465c69c7e453fe3b4b9693b475d1154f1bbda9f6d4e326",
+                    "sha256:f01c457d59db816827b1ad93bd90e51dd6ff2d79d0d00af6594b1d3c7155861f",
+                    "sha256:a7edda9afbfa72a104ab6d36384fae13a8e083d3dd9e47f753ebd6b7d7da471f"
+                ]
+            }
+        }
+    }
+}

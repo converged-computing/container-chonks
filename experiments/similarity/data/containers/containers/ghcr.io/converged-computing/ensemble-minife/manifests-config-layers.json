@@ -1,0 +1,237 @@
+{
+    "manifests": {
+        "latest": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "config": {
+                "mediaType": "application/vnd.docker.container.image.v1+json",
+                "size": 6714,
+                "digest": "sha256:796b4fb4e979bc92ac448ce1bcae0ea83fcbdbe8b72c4f9c90609b49caba0c28"
+            },
+            "layers": [
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 30439933,
+                    "digest": "sha256:7478e0ac0f23f94b2f27848fbcdf804a670fbf8d4bab26df842d40a10cd33059"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 275911697,
+                    "digest": "sha256:3fe7eac32fcafbf44dc586c1471ab3dc41b35010367b858a574da20c14a8ebf7"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 865751,
+                    "digest": "sha256:53436194ddd3d06e54b265c5d0c7ba460c7e6fd9c07a40eb443f264fa1aa462b"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 66502424,
+                    "digest": "sha256:d54190b438bb738aa7fcd74989d6de81f8b5d984d7515ae7e175ffab516193d1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3738655,
+                    "digest": "sha256:2873058d6c95d3236022fffcd25c9a4f593823f3fd6d7a65cf84dab42177db78"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 61601918,
+                    "digest": "sha256:74e24c1b061c79d311e57c548429e493403995b9f109c3424c6e6ff67dd8164a"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3647,
+                    "digest": "sha256:4876b1d14fd3a6225d974a09612d136e632d90cbf1e286f3229ff9d6988e1f96"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 3536517,
+                    "digest": "sha256:11567da74ea32fdf97e9db21b9b10ebb9d2a6b86ad6c38ca7e25700555aae7b6"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 260593,
+                    "digest": "sha256:dac498e23f0194e8087e756649336d497ebf88a3146da57a2096d07135a027d8"
+                },
+                {
+                    "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
+                    "size": 32,
+                    "digest": "sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "latest"
+    ],
+    "configs": {
+        "latest": {
+            "architecture": "amd64",
+            "config": {
+                "ExposedPorts": {
+                    "22/tcp": {}
+                },
+                "Env": [
+                    "PATH=/usr/local/pancakes/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "DEBIAN_FRONTEND=noninteractive",
+                    "LANG=C.UTF-8",
+                    "LD_LIBRARY_PATH=/usr/local/pancakes/lib:/usr/local/lib"
+                ],
+                "Cmd": [
+                    "/bin/bash"
+                ],
+                "WorkingDir": "/opt/minife",
+                "Labels": {
+                    "org.opencontainers.image.ref.name": "ubuntu",
+                    "org.opencontainers.image.version": "22.04"
+                }
+            },
+            "created": "2024-09-24T19:57:42.400404036-06:00",
+            "history": [
+                {
+                    "created": "2024-09-11T16:25:16.091322237Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG RELEASE",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-11T16:25:16.110134186Z",
+                    "created_by": "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-11T16:25:16.12828917Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-11T16:25:16.145319811Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-11T16:25:17.895714864Z",
+                    "created_by": "/bin/sh -c #(nop) ADD file:ebe009f86035c175ba244badd298a2582914415cf62783d510eab3a311a5d4e1 in / "
+                },
+                {
+                    "created": "2024-09-11T16:25:18.112480611Z",
+                    "created_by": "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-21T01:53:25.879081231-06:00",
+                    "created_by": "ENV DEBIAN_FRONTEND=noninteractive",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-21T01:53:25.879081231-06:00",
+                    "created_by": "RUN /bin/sh -c apt-get update &&     apt-get -qq install -y --no-install-recommends         apt-utils         autotools-dev         autoconf         automake         bzip2         build-essential         ca-certificates         clang         clang-tidy         curl         dnsutils         gcc         g++         git         gfortran         jq         libibverbs-dev         librdmacm-dev         libtool \tlibffi-dev         locales         make         pkg-config         python3-dev         python3-pip         rdma-core         sudo         strace         telnet         unzip         wget &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-21T01:53:26.844191175-06:00",
+                    "created_by": "RUN /bin/sh -c locale-gen en_US.UTF-8 # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-21T01:53:26.844191175-06:00",
+                    "created_by": "ENV LANG=C.UTF-8",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-21T01:53:26.910051469-06:00",
+                    "created_by": "WORKDIR /opt",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:48:22.897397623-06:00",
+                    "created_by": "RUN /bin/sh -c wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.2.tar.gz &&     tar -xzvf openmpi-4.1.2.tar.gz &&     cd openmpi-4.1.2 &&     ./configure &&     make -j 4 && make install && ldconfig # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:48:24.058506587-06:00",
+                    "created_by": "RUN /bin/sh -c export VERSION=\"1.1.0\" &&     curl -LO \"https://github.com/oras-project/oras/releases/download/v${VERSION}/oras_${VERSION}_linux_amd64.tar.gz\" &&     mkdir -p oras-install/ &&     tar -zxf oras_${VERSION}_*.tar.gz -C oras-install/ &&     mv oras-install/oras /usr/local/bin/ &&     rm -rf oras_${VERSION}_*.tar.gz oras-install/ # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:48:24.058506587-06:00",
+                    "created_by": "ENV PATH=/usr/local/pancakes/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-24T19:48:24.058506587-06:00",
+                    "created_by": "ENV LD_LIBRARY_PATH=/usr/local/pancakes/lib:/usr/local/lib",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-24T19:48:37.270308546-06:00",
+                    "created_by": "RUN /bin/sh -c apt-get update && apt-get install -y openssh-client openssh-server cmake && apt-get clean # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:48:38.103949108-06:00",
+                    "created_by": "RUN /bin/sh -c echo \"        LogLevel ERROR\" >> /etc/ssh/ssh_config &&     echo \"        StrictHostKeyChecking no\" >> /etc/ssh/ssh_config &&     echo \"        UserKnownHostsFile=/dev/null\" >> /etc/ssh/ssh_config &&     cd /root &&     mkdir -p /run/sshd &&     ssh-keygen -t rsa -N \"\" -f /root/.ssh/id_rsa && chmod og+rX . &&     cd .ssh && cat id_rsa.pub > authorized_keys && chmod 644 authorized_keys # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:48:38.103949108-06:00",
+                    "created_by": "EXPOSE map[22/tcp:{}]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-09-24T19:52:49.275723909-06:00",
+                    "created_by": "WORKDIR /opt",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:57:38.480566285-06:00",
+                    "created_by": "RUN /bin/sh -c mkdir minife &&     cd minife &&     git init &&     git remote add origin https://github.com/Mantevo/minife &&     git fetch --depth 1 origin abe328816d84afc319c482d6bc8df414b8f90d79 &&     git checkout FETCH_HEAD # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:57:42.350385266-06:00",
+                    "created_by": "RUN /bin/sh -c cd /opt/minife/openmp/src && make && cp miniFE.x /usr/local/bin/miniFE.x # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-09-24T19:57:42.400404036-06:00",
+                    "created_by": "WORKDIR /opt/minife",
+                    "comment": "buildkit.dockerfile.v0"
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:2573e0d8158209ed54ab25c87bcdcb00bd3d2539246960a3d592a1c599d70465",
+                    "sha256:fb4fe1c91fc2511366ef74dad2518b8b704d44d6385b5a1dc8ecbfbc071f32a4",
+                    "sha256:9d04dab6b9477cf6eaf620940fac71261cd4bf2bf74d7c00c81f3319c017245d",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:fda18b3a0b0db845595f807ed7179e095e1345c40b19298ef8b7563c7d73f5d8",
+                    "sha256:505e113ae01a036b54825c60dfb09f0208e718136ce2d6bdc98996aa1ecbe6b9",
+                    "sha256:294bae0aeae7aa03d19949a649e600c2d8a5d0160864375b6da2ecffea048d05",
+                    "sha256:c65df74735e032b12e423db7e7dcf9da40bf9fd22a603dad300feae32a3bc2f5",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                    "sha256:5330009709f3eb8a80016be7843f4b9427774be4e2f7efaed7a71f6239fe7395",
+                    "sha256:590e6e1469a73326b7eb5f2f081cb64917acde1a5f08f0e078ea7079ebae27e0",
+                    "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+                ]
+            }
+        }
+    }
+}
