@@ -116,6 +116,21 @@ def main():
     plt.savefig(os.path.join(root, "img", f"cluster-layer-digest-similarity.png"))
     plt.clf()
 
+    # Get mean, and +/- 1 std
+    items = list(manifest_df.groupby('full_uri')['size'])
+    values = [x[1].values[0] for x in items]
+    
+    # We can use these ranges for experiment
+    mean = np.mean(values)
+    std = np.std(values)
+    print(f"Mean and std: {mean}, {std}")
+    for percentile in [25, 50, 75]:
+       print(f"Percentile {percentile}: {np.percentile(values, percentile)}")
+    median = np.median(values)
+    print(f"Median: {median}")
+    print(f"Median +1 quartile: {median + np.percentile(values, 25)}")
+    print(f"Median -1 quartile: {median - np.percentile(values, 25)}")
+    
 
 if __name__ == "__main__":
     main()

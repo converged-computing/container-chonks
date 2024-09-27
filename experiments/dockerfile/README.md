@@ -315,6 +315,15 @@ python scripts/layer_digest_similarity.py
 ```
 ```console
 Mean Jacaard score for digests is 0.002594605637405388 with std 0.03948005058610241
+Mean and std: 68698855.34306818, 349361930.3518502
+Percentile 25: 5335883.0
+Percentile 50: 27171074.0
+Percentile 75: 49933463.0
+Mean +1 quartile: 74034738.34306818
+Mean -1 quartile: 63362972.34306818
+Median: 27171074.0
+Median +1 quartile: 32506957.0
+Median -1 quartile: 21835191.0
 ```
 
 ![img/cluster-layer-digest-similarity.png](img/cluster-layer-digest-similarity.png)
