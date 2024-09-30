@@ -50,6 +50,55 @@ def main():
     )
     conn.close()
 
+    full_uri_subset = os.path.join(root, "data", "dockerfile", "full_uri_subset.csv")
+    if not os.path.exists(full_uri_subset):
+        subset = calculate_full_uri_subset(manifest_df)
+    else:
+        subset = pandas.read_csv(full_uri_subset, index_col=0)
+
+    # Calculate pairwise jacaard similarity - should be feasible with smaller set
+    # it still takes 45min- an hour
+    unique_uris = manifest_df.uri.unique()
+    if not args.skip_sims:
+        calculate_similarity(unique_uris, subset)
+
+    # Get mean, and +/- 1 std for total size of layers
+    # These are layer sizes across single full uris (one set per image URI)
+    values = subset["size"].values
+
+    # We can use these ranges for experiment
+    show_summary(values, "Layers")
+    print()
+
+    # Now do for total image size
+    by_size = subset.groupby("full_uri")["size"].sum()
+    show_summary(by_size.values, "Images")
+
+    # Finally, the number of layers
+    # This had to run overnight for me (slow)
+    layer_digest_data = os.path.join(
+        root, "data", "dockerfile", "image-layer-counts.csv"
+    )
+    if not os.path.exists(layer_digest_data):
+        print("Calculating layer counts...")
+        counts = pandas.DataFrame(columns=["full_uri", "number_layers"])
+        unique_uris = list(subset.full_uri.unique())
+        total = len(unique_uris)
+        idx = 0
+        for i, uri in enumerate(unique_uris):
+            print(f"{i} of {total}", end="\r")
+            counts.loc[idx, :] = [
+                uri,
+                manifest_df[manifest_df.full_uri == uri].shape[0],
+            ]
+            idx += 1
+        counts.to_csv(layer_digest_data)
+    else:
+        counts = pandas.read_csv(layer_digest_data, index_col=0)
+    show_summary(counts["number_layers"].values, "Number of Layers")
+
+
+def calculate_full_uri_subset(manifest_df):
     # Calculate for only unique URIs - we assume within a URI (That has many tags)
     # the images are relatively similar. Each uri + tag will have multiple layers
     subset = pandas.DataFrame(columns=manifest_df.columns)
@@ -65,51 +114,8 @@ def main():
             tag = tmp.iloc[0].tag
             tmp_tagged = tmp[tmp.tag == tag]
         subset = pandas.concat([subset, tmp_tagged])
-
     subset.to_csv(os.path.join(root, "data", "dockerfile", "full_uri_subset.csv"))
-
-    # Calculate pairwise jacaard similarity - should be feasible with smaller set
-    # it still takes 45min- an hour
-    if not args.skip_sims:
-        calculate_similarity(unique_uris, subset)
-
-    # Get mean, and +/- 1 std for total size of layers
-    items = list(manifest_df.groupby("full_uri")["size"])
-    values = [x[1].values[0] for x in items]
-
-    import IPython
-
-    IPython.embed()
-    # We can use these ranges for experiment
-    show_summary(values, "Layers")
-    print()
-
-    # Now do for total image size
-    by_size = manifest_df.groupby("full_uri")["size"].sum()
-    show_summary(by_size.values, "Images")
-
-    # Finally, the number of layers
-    # This had to run overnight for me (slow)
-    layer_digest_data = os.path.join(
-        root, "data", "dockerfile", "image-layer-counts.csv"
-    )
-    if not os.path.exists(layer_digest_data):
-        print("Calculating layer counts...")
-        counts = pandas.DataFrame(columns=["full_uri", "number_layers"])
-        unique_uris = list(manifest_df.full_uri.unique())
-        total = len(unique_uris)
-        idx = 0
-        for i, uri in enumerate(unique_uris):
-            print(f"{i} of {total}", end="\r")
-            counts.loc[idx, :] = [
-                uri,
-                manifest_df[manifest_df.full_uri == uri].shape[0],
-            ]
-            idx += 1
-        counts.to_csv(layer_digest_data)
-    else:
-        counts = pandas.read_csv(layer_digest_data, index_col=0)
-    show_summary(counts["number_layers"].values, "Number of Layers")
+    return subset
 
 
 def show_summary(values, label):

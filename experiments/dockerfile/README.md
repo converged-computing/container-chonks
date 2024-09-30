@@ -316,32 +316,32 @@ python scripts/layer_digest_similarity.py
 ```console
 Mean Jacaard score for digests is 0.002594605637405388 with std 0.03948005058610241
 
-Layers Mean and std: 68698855.34306818, 349361930.3518502
-Layers Percentile 25: 5335883.0
-Layers Percentile 50: 27171074.0
-Layers Percentile 75: 49933463.0
-Layers Percentile 100: 4778095495.0
-Layers Median: 27171074.0
-Layers Median +1 quartile: 32506957.0
-Layers Median -1 quartile: 21835191.0
+Layers Mean and std: 50501439.21008777, 265590786.39858902
+Layers Percentile 25: 626.5
+Layers Percentile 50: 473568.5
+Layers Percentile 75: 15568006.0
+Layers Percentile 100: 9067270962.0
+Layers Median: 473568.5
+Layers Median +1 quartile: 474195.0
+Layers Median -1 quartile: 472942.0
 
-Images Mean and std: 360563843.49506855, 1041344588.6730094
-Images Percentile 25: 50241574.0
-Images Percentile 50: 119557810.0
-Images Percentile 75: 249281565.5
-Images Percentile 100: 33964375310.0
-Images Median: 119557810.0
-Images Median +1 quartile: 169799384.0
-Images Median -1 quartile: 69316236.0
+Images Mean and std: 596148792.5639344, 1581325095.0656686
+Images Percentile 25: 53702097.0
+Images Percentile 50: 132399102.0
+Images Percentile 75: 392602448.0
+Images Percentile 100: 19039736629.0
+Images Median: 132399102.0
+Images Median +1 quartile: 186101199.0
+Images Median -1 quartile: 78697005.0
 
-Number of Layers Mean and std: 11.14754823759563, 8.251712939776606
-Number of Layers Percentile 25: 7.0
-Number of Layers Percentile 50: 11.0
-Number of Layers Percentile 75: 13.0
-Number of Layers Percentile 100: 189.0
-Number of Layers Median: 11.0
-Number of Layers Median +1 quartile: 18.0
-Number of Layers Median -1 quartile: 4.0
+Number of Layers Mean and std: 11.804590163934426, 13.076014028167078
+Number of Layers Percentile 25: 6.0
+Number of Layers Percentile 50: 9.0
+Number of Layers Percentile 75: 14.0
+Number of Layers Percentile 100: 163.0
+Number of Layers Median: 9.0
+Number of Layers Median +1 quartile: 15.0
+Number of Layers Median -1 quartile: 3.0
 ```
 
 ![img/cluster-layer-digest-similarity.png](img/cluster-layer-digest-similarity.png)
