@@ -202,7 +202,12 @@ def main():
     df["cosine"] = y
 
     df.to_csv(
-        os.path.join(here, "data", "dockerfile", "scientific-dockerfile-image-similarity-histogram.csv")
+        os.path.join(
+            here,
+            "data",
+            "dockerfile",
+            "scientific-dockerfile-image-similarity-histogram.csv",
+        )
     )
 
     # df.to_csv(
@@ -217,8 +222,6 @@ def main():
     plt.title("Cosine Similarity for 300K Docker Images")
     plt.savefig(outfile)
     plt.clf()
-
-
 
 
 if __name__ == "__main__":

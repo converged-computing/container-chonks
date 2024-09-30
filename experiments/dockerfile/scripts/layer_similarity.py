@@ -88,7 +88,8 @@ def main():
     plt.title("Cosine Similarity for 582K Unique Image Layers")
     plt.savefig(outfile)
     plt.clf()
-    
+
+
 def get_ranges(sims):
     """
     Get range counts for a similarity matrix chunk

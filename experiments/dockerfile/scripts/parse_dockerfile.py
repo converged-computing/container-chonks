@@ -80,7 +80,7 @@ def main():
     fd = open(os.path.join(root_dir, "scientific-dockerfile-image-corpus.txt"), "w")
     meta = open(os.path.join(root_dir, "scientific-dockerfile-image-index.txt"), "w")
 
-    for dockerfile in files:     
+    for dockerfile in files:
         lines = utils.read_file(dockerfile)
         tokens = []
         # Get rid of punctuation that could make commands different

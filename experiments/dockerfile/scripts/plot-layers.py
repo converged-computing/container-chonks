@@ -135,6 +135,7 @@ def main():
         )
 
     import IPython
+
     IPython.embed()
     sys.exit()
 
@@ -200,7 +201,7 @@ def plot_results(df, outdir):
         layer_counts = pandas.read_csv(layer_file, index_col=0)
 
     # Look at tags per image
-    tags_per_image = manifest_df.groupby(['uri'])['tag'].count()
+    tags_per_image = manifest_df.groupby(["uri"])["tag"].count()
 
     # remove top outlier (like 47k+)
     values = tags_per_image.values
@@ -223,7 +224,7 @@ def plot_results(df, outdir):
 
     # In [55]: tags_per_image.std()
     # Out[55]: 2531.482207232857
-    
+
     import IPython
 
     IPython.embed()
@@ -248,9 +249,9 @@ def plot_results(df, outdir):
 
         # 528,449
         digests.shape
-        
+
         # Figure out what the layers are. Let's choose those above a threshold.
-        digests_hist = pandas.DataFrame(columns=['threshold', 'count'])
+        digests_hist = pandas.DataFrame(columns=["threshold", "count"])
 
         # How many are unique?
         print(len(digests.values[digests.values == 1]))

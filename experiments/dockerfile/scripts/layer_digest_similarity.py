@@ -4,11 +4,9 @@ import sqlite3
 import pandas
 import argparse
 import os
-import sys
 import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics.pairwise import cosine_similarity
 
 here = os.path.abspath(os.path.dirname(__file__))
 root = os.path.dirname(here)
@@ -26,11 +24,13 @@ def get_parser():
             "data-frame.db",
         ),
     )
+    parser.add_argument(
+        "--skip-sims",
+        help="Skip calculating similarities",
+        default=False,
+        action="store_true",
+    )
     return parser
-
-
-def count_values_in_range(series, range_min, range_max):
-    return series.between(left=range_min, right=range_max).sum()
 
 
 def main():
@@ -42,7 +42,6 @@ def main():
 
     # Read back into data frame
     conn = sqlite3.connect(args.database)
-    cursor = conn.cursor()
 
     manifest_df = pandas.read_sql_query(
         "SELECT * from manifests",
@@ -50,19 +49,6 @@ def main():
         parse_dates={"datetime": "%Y-%m-%d %H:%M:%S"},
     )
     conn.close()
-
-    import IPython
-
-    IPython.embed()
-    sys.exit()
-
-    def similarity_cosine_by_chunk(manifest_df, start, end):
-        matrix_len = manifest_df.shape[0]  # Not sparse numpy.ndarray
-        if end > matrix_len:
-            end = matrix_len
-        return cosine_similarity(
-            X=model.document_vectors[start:end], Y=model.document_vectors
-        )
 
     # Calculate for only unique URIs - we assume within a URI (That has many tags)
     # the images are relatively similar. Each uri + tag will have multiple layers
@@ -84,6 +70,42 @@ def main():
 
     # Calculate pairwise jacaard similarity - should be feasible with smaller set
     # it still takes 45min- an hour
+    if not args.skip_sims:
+        calculate_similarity(unique_uris, subset)
+
+    # Get mean, and +/- 1 std for total size of layers
+    items = list(manifest_df.groupby("full_uri")["size"])
+    values = [x[1].values[0] for x in items]
+
+    import IPython
+
+    IPython.embed()
+    # We can use these ranges for experiment
+    show_summary(values, "Layers")
+    print()
+
+    # Now do for total image size
+    by_size = manifest_df.groupby("full_uri")["size"].sum()
+    show_summary(by_size.values, "Images")
+
+
+def show_summary(values, label):
+    """
+    Print quartiles and medians for a list of values
+    """
+    mean = np.mean(values)
+    std = np.std(values)
+    print(f"{label} Mean and std: {mean}, {std}")
+    for percentile in [25, 50, 75, 100]:
+        print(f"{label} Percentile {percentile}: {np.percentile(values, percentile)}")
+    median = np.median(values)
+    print(f"{label} Median: {median}")
+    print(f"{label} Median +1 quartile: {median + np.percentile(values, 25)}")
+    print(f"{label} Median -1 quartile: {median - np.percentile(values, 25)}")
+
+
+def calculate_similarity(unique_uris, subset):
+    total = len(unique_uris)
     sims = pandas.DataFrame(columns=unique_uris, index=unique_uris)
     for i, a_label in enumerate(unique_uris):
         print(f"Processing {i} of {total}")
@@ -112,25 +134,10 @@ def main():
     sims = sims.astype(float)
 
     # Ensure range is 0 to 1 to match similarity experiment plots
-    m = sns.clustermap(sims, vmin=0.0, vmax=1.0, annot=False, cmap="BrBG")
-    plt.savefig(os.path.join(root, "img", f"cluster-layer-digest-similarity.png"))
+    sns.clustermap(sims, vmin=0.0, vmax=1.0, annot=False, cmap="BrBG")
+    plt.savefig(os.path.join(root, "img", "cluster-layer-digest-similarity.png"))
     plt.clf()
 
-    # Get mean, and +/- 1 std
-    items = list(manifest_df.groupby('full_uri')['size'])
-    values = [x[1].values[0] for x in items]
-    
-    # We can use these ranges for experiment
-    mean = np.mean(values)
-    std = np.std(values)
-    print(f"Mean and std: {mean}, {std}")
-    for percentile in [25, 50, 75]:
-       print(f"Percentile {percentile}: {np.percentile(values, percentile)}")
-    median = np.median(values)
-    print(f"Median: {median}")
-    print(f"Median +1 quartile: {median + np.percentile(values, 25)}")
-    print(f"Median -1 quartile: {median - np.percentile(values, 25)}")
-    
 
 if __name__ == "__main__":
     main()

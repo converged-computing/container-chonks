@@ -315,15 +315,24 @@ python scripts/layer_digest_similarity.py
 ```
 ```console
 Mean Jacaard score for digests is 0.002594605637405388 with std 0.03948005058610241
-Mean and std: 68698855.34306818, 349361930.3518502
-Percentile 25: 5335883.0
-Percentile 50: 27171074.0
-Percentile 75: 49933463.0
-Mean +1 quartile: 74034738.34306818
-Mean -1 quartile: 63362972.34306818
-Median: 27171074.0
-Median +1 quartile: 32506957.0
-Median -1 quartile: 21835191.0
+
+Layers Mean and std: 68698855.34306818, 349361930.3518502
+Layers Percentile 25: 5335883.0
+Layers Percentile 50: 27171074.0
+Layers Percentile 75: 49933463.0
+Layers Percentile 100: 4778095495.0
+Layers Median: 27171074.0
+Layers Median +1 quartile: 32506957.0
+Layers Median -1 quartile: 21835191.0
+
+Images Mean and std: 360563843.49506855, 1041344588.6730094
+Images Percentile 25: 50241574.0
+Images Percentile 50: 119557810.0
+Images Percentile 75: 249281565.5
+Images Percentile 100: 33964375310.0
+Images Median: 119557810.0
+Images Median +1 quartile: 169799384.0
+Images Median -1 quartile: 69316236.0
 ```
 
 ![img/cluster-layer-digest-similarity.png](img/cluster-layer-digest-similarity.png)
