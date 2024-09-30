@@ -333,6 +333,15 @@ Images Percentile 100: 33964375310.0
 Images Median: 119557810.0
 Images Median +1 quartile: 169799384.0
 Images Median -1 quartile: 69316236.0
+
+Number of Layers Mean and std: 11.14754823759563, 8.251712939776606
+Number of Layers Percentile 25: 7.0
+Number of Layers Percentile 50: 11.0
+Number of Layers Percentile 75: 13.0
+Number of Layers Percentile 100: 189.0
+Number of Layers Median: 11.0
+Number of Layers Median +1 quartile: 18.0
+Number of Layers Median -1 quartile: 4.0
 ```
 
 ![img/cluster-layer-digest-similarity.png](img/cluster-layer-digest-similarity.png)

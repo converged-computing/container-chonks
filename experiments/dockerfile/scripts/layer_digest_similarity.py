@@ -88,6 +88,29 @@ def main():
     by_size = manifest_df.groupby("full_uri")["size"].sum()
     show_summary(by_size.values, "Images")
 
+    # Finally, the number of layers
+    # This had to run overnight for me (slow)
+    layer_digest_data = os.path.join(
+        root, "data", "dockerfile", "image-layer-counts.csv"
+    )
+    if not os.path.exists(layer_digest_data):
+        print("Calculating layer counts...")
+        counts = pandas.DataFrame(columns=["full_uri", "number_layers"])
+        unique_uris = list(manifest_df.full_uri.unique())
+        total = len(unique_uris)
+        idx = 0
+        for i, uri in enumerate(unique_uris):
+            print(f"{i} of {total}", end="\r")
+            counts.loc[idx, :] = [
+                uri,
+                manifest_df[manifest_df.full_uri == uri].shape[0],
+            ]
+            idx += 1
+        counts.to_csv(layer_digest_data)
+    else:
+        counts = pandas.read_csv(layer_digest_data, index_col=0)
+    show_summary(counts["number_layers"].values, "Number of Layers")
+
 
 def show_summary(values, label):
     """
