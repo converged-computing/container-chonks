@@ -125,7 +125,7 @@ def show_summary(values, label):
     mean = np.mean(values)
     std = np.std(values)
     print(f"{label} Mean and std: {mean}, {std}")
-    for percentile in [25, 50, 75, 100]:
+    for percentile in range(25, 105, 5):
         print(f"{label} Percentile {percentile}: {np.percentile(values, percentile)}")
     median = np.median(values)
     print(f"{label} Median: {median}")

@@ -29,7 +29,7 @@ NODES=4
 time gcloud container clusters create test-cluster \
     --threads-per-core=1 \
     --num-nodes=$NODES \
-    --machine-type=n1-standard-64 \
+    --machine-type=n1-standard-16 \
     --enable-gvnic \
     --region=us-central1-a \
     --project=${GOOGLE_PROJECT} 
@@ -38,7 +38,7 @@ time gcloud container clusters create test-cluster \
 Prepare a metadata directory with pull times (change the directory name to the instance size):
 
 ```bash
-mkdir -p metadata/n1-standard-64
+mkdir -p metadata/run1
 ```
 
 ### 2. Monitoring
@@ -55,13 +55,13 @@ kubectl apply -f deploy
 Save nodes for size
 
 ```bash
-kubectl get nodes -o json > metadata/nodes-$NODES.json
+kubectl get nodes -o json > metadata/run1/nodes-$NODES.json
 ```
 
 Start monitoring (this goes in its own terminal):
 
 ```bash
-kubectl logs -n monitoring event-exporter-xxxxxxxxx -f  |& tee ./metadata/n1-standard-64/events-size-$NODES-$(date +%s).json
+kubectl logs -n monitoring event-exporter-xxxxxxxxx -f  |& tee ./metadata/run1/events-size-$NODES-$(date +%s).json
 ```
 
 ### 3. Experiment
@@ -82,23 +82,11 @@ gcloud container clusters delete test-cluster --region=us-central1-a
 
 ### 4. Analysis
 
-First we want to parse the monitoring metadata.
-
-```bash
-# Raw times raw-times.json
-python analysis/1-prepare-data.py
-
-# Get docker manifests
-python analysis/2-docker-manifests.py
-
-# This generates plots!
-python analysis/3-parse-containers.py
-
-# And similarity
-python analysis/4-similarity.py
-```
+The scripts in [analysis](analysis) provide parsing of experiment metadata.
 
 #### Testing
+
+##### test 
 
 I first did some quick testing to see if the instance memory had an impact, making a large jump so I could see it. 
 
@@ -117,13 +105,57 @@ Experiments are done!
 total time to run is 3164.1695561408997 seconds
 ```
 
+```bash
+# Raw times raw-times.json
+python analysis/1-prepare-data.py --root ./metadata/test --out ./analysis/data/test
+
+# Get docker manifests
+python analysis/2-docker-manifests.py --data ./analysis/data/test
+
+# This generates plots!
+python analysis/3-parse-containers.py --data ./analysis/data/test
+
+# And similarity
+python analysis/4-similarity.py --data ./analysis/data/test
+```
+
+
 I next looked at the plot of number of layers by image size over time. What I see here is that number of layers does not seem to matter. What matters is the total size.
 
-![analysis/data/img/pull_times_test_duration_by_size_n1-standard-16.png](analysis/data/img/pull_times_test_duration_by_size_n1-standard-16.png)
-![analysis/data/img/pull_times_test_duration_by_size_n1-standard-64.png](analysis/data/img/pull_times_test_duration_by_size_n1-standard-64.png)
+![analysis/data/test/img/pull_times_test_duration_by_size_n1-standard-16.png](analysis/data/test/img/pull_times_test_duration_by_size_n1-standard-16.png)
+![analysis/data/test/img/pull_times_test_duration_by_size_n1-standard-64.png](analysis/data/test/img/pull_times_test_duration_by_size_n1-standard-64.png)
 
 I think the plot I want to see is the size of the cluster (nodes) on the x axis, and then the hue be the image size. I'll choose a small number of number of layers for the variety but I'm not convinced it matters. Finally, when we remove the base (busybox) we see they are entirely different. This is good - the tool is working as expected!
 
 ![analysis/data/similarity/pulling/cluster-container-similarity.png](analysis/data/similarity/pulling/cluster-container-similarity.png)
 
 Next step: adjust parameter space to have fewer layer size options, and more sizes. After that, can run the study on the smaller instance size 8 and see if we get any very different results.
+
+##### run1
+
+This was an attempt to reduce the number of layers to the median (9) and increase sizes. It definitely was faster!
+
+```
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 694.6678006649017 seconds
+```
+
+```bash
+# Raw times raw-times.json
+python analysis/1-prepare-data.py --root ./metadata/run1 --out ./analysis/data/run1
+
+# Get docker manifests
+python analysis/2-docker-manifests.py --data ./analysis/data/run1
+
+# This generates plots!
+python analysis/3-parse-containers.py --data ./analysis/data/run1
+
+# And similarity
+python analysis/4-similarity.py --data ./analysis/data/run1
+```
+
+![analysis/data/run1/img/pull_times_test_duration_by_size_run1.png](analysis/data/run1/img/pull_times_test_duration_by_size_run1.png)
+
+Okay I like the dichotomy between the two layer extremes - I'd like to keep that to see how it scales across nodes. I am also thinking we will want to test GitHub packages and Google's local registry, for comparison.
+This still shows a huge swing up to pulling, and I think we need to see more sizes there, even if they are at the top of the sizes in terms of percentiles. The reason is because we can expect ML containers to get larger.

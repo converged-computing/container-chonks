@@ -87,6 +87,9 @@ def main():
         if not os.path.exists(data_dir):
             os.makedirs(data_dir)
 
+        # Filter down to converged-computing set
+        containers = [x for x in containers if "converged-computing" in x]
+
         # Get manifests for our container set
         retrieve_manifests(data_dir, containers)
 

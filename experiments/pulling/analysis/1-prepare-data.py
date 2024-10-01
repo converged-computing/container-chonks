@@ -16,12 +16,12 @@ def get_parser():
     )
     parser.add_argument(
         "--root",
-        help="root directory with experiment metadata",
+        help="root directory with experiment events metadata to parse",
         default=os.path.join(root, "metadata"),
     )
     parser.add_argument(
         "--out",
-        help="directory to save parsed results",
+        help="directory to save parsed results (with experiment prefix)",
         default=os.path.join(here, "data"),
     )
     return parser

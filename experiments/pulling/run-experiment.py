@@ -24,7 +24,7 @@ if not os.path.exists(job_template_file):
 
 job_template = read_file(job_template_file)
 
-tags = [
+tags_testing = [
     "1-layers-size-127399102-bytes",
     "1-layers-size-387602448-bytes",
     "1-layers-size-48702097-bytes",
@@ -98,8 +98,41 @@ tags = [
     "9-layers-size-48702097-bytes",
 ]
 
-uri = "ghcr.io/converged-computing/container-chonks"
+uri = "ghcr.io/converged-computing/container-chonks-run1"
 
+tags = [
+    "125-layers-size-103513992-bytes",
+    "125-layers-size-1176249324-bytes",
+    "125-layers-size-127399102-bytes",
+    "125-layers-size-158049655-bytes",
+    "125-layers-size-19034736629-bytes",
+    "125-layers-size-213665412-bytes",
+    "125-layers-size-266728773-bytes",
+    "125-layers-size-2770722493-bytes",
+    "125-layers-size-315018606-bytes",
+    "125-layers-size-387602448-bytes",
+    "125-layers-size-48702097-bytes",
+    "125-layers-size-491514346-bytes",
+    "125-layers-size-53049507-bytes",
+    "125-layers-size-66460665-bytes",
+    "125-layers-size-682439577-bytes",
+    "125-layers-size-86388866-bytes",
+    "9-layers-size-103513992-bytes",
+    "9-layers-size-1176249324-bytes",
+    "9-layers-size-127399102-bytes",
+    "9-layers-size-158049655-bytes",
+    "9-layers-size-19034736629-bytes",
+    "9-layers-size-213665412-bytes",
+    "9-layers-size-266728773-bytes",
+    "9-layers-size-2770722493-bytes",
+    "9-layers-size-315018606-bytes",
+    "9-layers-size-387602448-bytes",
+    "9-layers-size-48702097-bytes",
+    "9-layers-size-491514346-bytes",
+    "9-layers-size-53049507-bytes",
+    "9-layers-size-66460665-bytes",
+    "9-layers-size-682439577-bytes",
+    "9-layers-size-86388866-bytes"]
 
 def get_parser():
     parser = argparse.ArgumentParser(
@@ -110,7 +143,7 @@ def get_parser():
         "--nodes",
         help="number of nodes to create for job",
         type=int,
-        default=8,
+        default=4,
     )
     return parser
 

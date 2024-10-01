@@ -318,8 +318,20 @@ Mean Jacaard score for digests is 0.002594605637405388 with std 0.03948005058610
 
 Layers Mean and std: 50501439.21008777, 265590786.39858902
 Layers Percentile 25: 626.5
+Layers Percentile 30: 857.0
+Layers Percentile 35: 1657.3499999999995
+Layers Percentile 40: 7111.0
+Layers Percentile 45: 72955.14999999988
 Layers Percentile 50: 473568.5
+Layers Percentile 55: 985962.2000000008
+Layers Percentile 60: 2207032.8
+Layers Percentile 65: 4246327.199999996
+Layers Percentile 70: 9996324.0
 Layers Percentile 75: 15568006.0
+Layers Percentile 80: 28116804.000000007
+Layers Percentile 85: 46073883.0
+Layers Percentile 90: 75411415.3
+Layers Percentile 95: 187662232.70000005
 Layers Percentile 100: 9067270962.0
 Layers Median: 473568.5
 Layers Median +1 quartile: 474195.0
@@ -327,17 +339,41 @@ Layers Median -1 quartile: 472942.0
 
 Images Mean and std: 596148792.5639344, 1581325095.0656686
 Images Percentile 25: 53702097.0
+Images Percentile 30: 58049507.8
+Images Percentile 35: 71460665.0
+Images Percentile 40: 91388866.20000005
+Images Percentile 45: 108513992.4
 Images Percentile 50: 132399102.0
+Images Percentile 55: 163049655.0
+Images Percentile 60: 218665412.79999998
+Images Percentile 65: 271728773.40000004
+Images Percentile 70: 320018606.2
 Images Percentile 75: 392602448.0
+Images Percentile 80: 496514346.8000001
+Images Percentile 85: 687439577.6
+Images Percentile 90: 1181249324.600001
+Images Percentile 95: 2775722493.3999963
 Images Percentile 100: 19039736629.0
 Images Median: 132399102.0
 Images Median +1 quartile: 186101199.0
 Images Median -1 quartile: 78697005.0
 
-Number of Layers Mean and std: 11.804590163934426, 13.076014028167078
+Number of Layers Mean and std: 11.804590163934426, 13.076014028167043
 Number of Layers Percentile 25: 6.0
+Number of Layers Percentile 30: 6.0
+Number of Layers Percentile 35: 7.0
+Number of Layers Percentile 40: 7.0
+Number of Layers Percentile 45: 8.0
 Number of Layers Percentile 50: 9.0
+Number of Layers Percentile 55: 10.0
+Number of Layers Percentile 60: 11.0
+Number of Layers Percentile 65: 12.0
+Number of Layers Percentile 70: 12.0
 Number of Layers Percentile 75: 14.0
+Number of Layers Percentile 80: 15.0
+Number of Layers Percentile 85: 17.0
+Number of Layers Percentile 90: 21.600000000000136
+Number of Layers Percentile 95: 30.799999999999955
 Number of Layers Percentile 100: 163.0
 Number of Layers Median: 9.0
 Number of Layers Median +1 quartile: 15.0
