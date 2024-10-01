@@ -166,7 +166,7 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     """
     Given an output directory, plot image to show pull times.
     """
-    colors = sns.color_palette("hls", 16)
+    colors = sns.color_palette("hls", 20)
     save_prefix = save_prefix or "pull_times_experiment_type"
 
     # Assume containers need at least 20 seconds to pull

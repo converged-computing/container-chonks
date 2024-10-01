@@ -55,7 +55,7 @@ kubectl apply -f deploy
 Save nodes for size
 
 ```bash
-kubectl get nodes -o json > metadata/run1/nodes-$NODES.json
+kubectl get nodes -o json > metadata/run1/nodes-$NODES-$(date +%s).json
 ```
 
 Start monitoring (this goes in its own terminal):
@@ -133,12 +133,16 @@ Next step: adjust parameter space to have fewer layer size options, and more siz
 
 ##### run1
 
-This was an attempt to reduce the number of layers to the median (9) and increase sizes. It definitely was faster!
+This was an attempt to reduce the number of layers to the median (9) and increase sizes. The time was much more reasonable (~11 minutes the first time). It definitely was faster! I wound up running it twice, adding more sizes the second time.
 
-```
+```console
 job.batch "container-pull" deleted
 Experiments are done!
 total time to run is 694.6678006649017 seconds
+
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1383.645084142685 seconds
 ```
 
 ```bash
