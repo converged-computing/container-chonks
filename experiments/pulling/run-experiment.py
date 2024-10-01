@@ -214,8 +214,10 @@ def run_experiments(args):
     """
     # This cleans up every 1800 seconds
     clean_cache()
+    total = len(tags)
     for i, tag in enumerate(tags):
         container = f"{uri}:{tag}"
+        print(f"Running experiment for container {container}, {i} of {total}")
         run_job(container, args)
     print("Experiments are done!")
 
