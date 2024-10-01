@@ -11,6 +11,6 @@ spec:
       restartPolicy: Never
       # No command means it will just complete - perfect, because there is no OS in there!
       containers:
-        image: {{ container }}
+      - image: {{ container }}
         name: container-pull
 

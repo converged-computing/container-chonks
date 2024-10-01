@@ -3,95 +3,7 @@
 We will be using the following set of containers to test pulling across a number of total image sizes and layer counts.
 For each entry below, the layer size is determined based on the image size / number of layers. The total size has 5MB subtracted to account for the busybox base image.
 
-<details>
-
-<summary>Images Built for Study</summary>
-
-```console
-⭐ Final image set built:
-ghcr.io/converged-computing/container-chonks:1-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:2-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:3-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:4-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:5-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:6-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:7-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:8-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:9-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:10-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:11-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:12-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:13-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:14-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:25-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:50-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:75-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:100-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:125-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:150-layers-size-48702097-bytes
-ghcr.io/converged-computing/container-chonks:1-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:2-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:3-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:4-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:5-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:6-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:7-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:8-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:9-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:10-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:11-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:12-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:13-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:14-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:25-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:50-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:75-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:100-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:125-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:150-layers-size-127399102-bytes
-ghcr.io/converged-computing/container-chonks:1-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:2-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:3-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:4-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:5-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:6-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:7-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:8-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:9-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:10-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:11-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:12-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:13-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:14-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:25-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:50-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:75-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:100-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:125-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:150-layers-size-387602448-bytes
-ghcr.io/converged-computing/container-chonks:1-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:2-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:3-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:4-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:5-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:6-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:7-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:8-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:9-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:10-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:11-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:12-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:13-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:14-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:25-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:50-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:75-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:100-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:125-layers-size-19034736629-bytes
-ghcr.io/converged-computing/container-chonks:150-layers-size-19034736629-bytes
-```
-
-</details>
+There are 71 images built for the study, which you can see tags for in [run-experiment.py](run-experiment.py)
 
 I'm going to start with n1-standard-16, which has 16vCPU and 60GB RAM. Each instance is ~0.76 an hour, and I'm hoping we can try scaling up to 256 nodes. I'll test on something small like 4 nodes. We are going to use an indexed job.
 
@@ -105,6 +17,10 @@ For each cluster size:
     Create a MiniCluster that sleeps for a second
     Wait for job to complete and go away
 ```
+
+## Testing
+
+- Total experiment time for size 4 nodes: TBA
 
 ## Experiment
 
@@ -132,6 +48,8 @@ Prepare a metadata directory with pull times:
 mkdir -p metadata
 ```
 
+### 2. Monitoring
+
 Deploy monitoring:
 
 ```bash
@@ -153,10 +71,14 @@ Start monitoring (this goes in its own terminal):
 kubectl logs -n monitoring event-exporter-xxxxxxxxx -f  |& tee ./metadata/events-size-$NODES-$(date +%s).json
 ```
 
+### 3. Experiment
+
+> This is entirely automated
+
 Run the experiment:
 
 ```bash
-python run-experiment.py
+python run-experiment.py  --nodes 4
 ```
 
 When you are done:

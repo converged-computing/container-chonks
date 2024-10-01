@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
-import tempfile
 import argparse
 import json
 import os
-import time
 import sys
+import tempfile
+import time
+
 from jinja2 import Template
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -23,88 +24,81 @@ if not os.path.exists(job_template_file):
 
 job_template = read_file(job_template_file)
 
-containers = [
-    "ghcr.io/converged-computing/container-chonks:1-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:2-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:3-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:4-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:5-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:6-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:7-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:8-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:9-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:10-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:11-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:12-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:13-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:14-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:25-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:50-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:75-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:100-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:125-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:150-layers-size-48702097-bytes",
-    "ghcr.io/converged-computing/container-chonks:1-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:2-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:3-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:4-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:5-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:6-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:7-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:8-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:9-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:10-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:11-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:12-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:13-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:14-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:25-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:50-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:75-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:100-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:125-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:150-layers-size-127399102-bytes",
-    "ghcr.io/converged-computing/container-chonks:1-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:2-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:3-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:4-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:5-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:6-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:7-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:8-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:9-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:10-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:11-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:12-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:13-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:14-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:25-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:50-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:75-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:100-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:125-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:150-layers-size-387602448-bytes",
-    "ghcr.io/converged-computing/container-chonks:1-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:2-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:3-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:4-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:5-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:6-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:7-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:8-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:9-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:10-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:11-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:12-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:13-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:14-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:25-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:50-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:75-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:100-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:125-layers-size-19034736629-bytes",
-    "ghcr.io/converged-computing/container-chonks:150-layers-size-19034736629-bytes",
+tags = [
+    "1-layers-size-127399102-bytes",
+    "1-layers-size-387602448-bytes",
+    "1-layers-size-48702097-bytes",
+    "10-layers-size-127399102-bytes",
+    "10-layers-size-19034736629-bytes",
+    "10-layers-size-387602448-bytes",
+    "10-layers-size-48702097-bytes",
+    "100-layers-size-127399102-bytes",
+    "100-layers-size-19034736629-bytes",
+    "100-layers-size-387602448-bytes",
+    "100-layers-size-48702097-bytes",
+    "11-layers-size-127399102-bytes",
+    "11-layers-size-19034736629-bytes",
+    "11-layers-size-387602448-bytes",
+    "11-layers-size-48702097-bytes",
+    "12-layers-size-127399102-bytes",
+    "12-layers-size-19034736629-bytes",
+    "12-layers-size-387602448-bytes",
+    "12-layers-size-48702097-bytes",
+    "13-layers-size-127399102-bytes",
+    "13-layers-size-19034736629-bytes",
+    "13-layers-size-387602448-bytes",
+    "13-layers-size-48702097-bytes",
+    "14-layers-size-127399102-bytes",
+    "14-layers-size-19034736629-bytes",
+    "14-layers-size-387602448-bytes",
+    "14-layers-size-48702097-bytes",
+    "2-layers-size-127399102-bytes",
+    "2-layers-size-19034736629-bytes",
+    "2-layers-size-387602448-bytes",
+    "2-layers-size-48702097-bytes",
+    "25-layers-size-127399102-bytes",
+    "25-layers-size-19034736629-bytes",
+    "25-layers-size-387602448-bytes",
+    "25-layers-size-48702097-bytes",
+    "3-layers-size-127399102-bytes",
+    "3-layers-size-19034736629-bytes",
+    "3-layers-size-387602448-bytes",
+    "3-layers-size-48702097-bytes",
+    "4-layers-size-127399102-bytes",
+    "4-layers-size-19034736629-bytes",
+    "4-layers-size-387602448-bytes",
+    "4-layers-size-48702097-bytes",
+    "5-layers-size-127399102-bytes",
+    "5-layers-size-19034736629-bytes",
+    "5-layers-size-387602448-bytes",
+    "5-layers-size-48702097-bytes",
+    "50-layers-size-127399102-bytes",
+    "50-layers-size-19034736629-bytes",
+    "50-layers-size-387602448-bytes",
+    "50-layers-size-48702097-bytes",
+    "6-layers-size-127399102-bytes",
+    "6-layers-size-19034736629-bytes",
+    "6-layers-size-387602448-bytes",
+    "6-layers-size-48702097-bytes",
+    "7-layers-size-127399102-bytes",
+    "7-layers-size-19034736629-bytes",
+    "7-layers-size-387602448-bytes",
+    "7-layers-size-48702097-bytes",
+    "75-layers-size-127399102-bytes",
+    "75-layers-size-19034736629-bytes",
+    "75-layers-size-387602448-bytes",
+    "75-layers-size-48702097-bytes",
+    "8-layers-size-127399102-bytes",
+    "8-layers-size-19034736629-bytes",
+    "8-layers-size-387602448-bytes",
+    "8-layers-size-48702097-bytes",
+    "9-layers-size-127399102-bytes",
+    "9-layers-size-19034736629-bytes",
+    "9-layers-size-387602448-bytes",
+    "9-layers-size-48702097-bytes",
 ]
+
+uri = "ghcr.io/converged-computing/container-chonks"
 
 
 def get_parser():
@@ -183,7 +177,7 @@ def run_job(container, args):
     time.sleep(5)
 
     # Wait for job to finish
-    run_kubectl("wait --for=condition=complete job/container-pull")
+    run_kubectl("wait --for=condition=complete job/container-pull --timeout=1200s")
     run_kubectl(f"delete -f {job_yaml} --wait=true", allow_fail=True)
     os.remove(job_yaml)
 
@@ -218,15 +212,10 @@ def run_experiments(args):
     """
     Wrap experiment running separately in case we lose spot nodes and can recover
     """
-    print("RUN EXPERIMENTS")
-    import IPython
-
-    IPython.embed()
-    sys.exit()
-
     # This cleans up every 1800 seconds
     clean_cache()
-    for i, container in enumerate(containers):
+    for i, tag in enumerate(tags):
+        container = f"{uri}:{tag}"
         run_job(container, args)
     print("Experiments are done!")
 
@@ -244,7 +233,7 @@ def main():
     args, _ = parser.parse_known_args()
 
     print("🪴️ Planning to run:")
-    print(f"   Containers: {len(containers)}")
+    print(f"   Containers: {len(tags)}")
     print(f"        nodes: {args.nodes}")
     if not confirm_action("Would you like to continue?"):
         sys.exit("📺️ Cancelled!")
