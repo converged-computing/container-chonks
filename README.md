@@ -3,7 +3,9 @@
 We want to study the impact of pulling times (at different scales) for different sizes containers, meaning varying individual layer and total container sizes. This entire study is going to be powered by dd, which will allow us to generate files of arbitrary sizes.
 
  - [test](experiments/test): early testing of the design below. What I learned is that we need to likely evaluate the container landscape (average sizes) before deciding on our experiment design. 
-
+ - [dockerfile](experiments/dockerfile): the evaluation of the landscape in terms of sizes (images and layers) and change over time
+ - [similarity](experiments/similarity): understanding how similar sets of experimental containers are based on digests.
+ - [pulling](experiments/pulling): The final pulling study that uses [converged-computing/container-crafter](https://github.com/converged-computing/container-crafter) to create a set of containers to pull across (and time).
 
 Next steps are to sample a Dockerfile set to get container URIs and sizes that people are using.
 
