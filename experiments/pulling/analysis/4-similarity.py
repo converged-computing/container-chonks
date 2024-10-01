@@ -101,6 +101,12 @@ def main():
         # The rest is to calculate similarity
         # Filter down to those in our study
         df = parse_manifests(files)
+
+        # Remove the base busybox
+        df = df[
+            df.digest
+            != "sha256:19f2bd1a0b363264fc654f84fe54bda1202fcf0b1a9a6054fddb588f6ffb3a76"
+        ]
         df.to_csv(os.path.join(data_dir, "layer-sizes.csv"))
 
         # Make some plots of sizes and similarity
@@ -167,6 +173,9 @@ def calculate_similarity(df, outdir, outfile, label):
             # intersection(a,b) / union(a,b)
             layers_a = set(df[df.full_uri == a].digest.tolist())
             layers_b = set(df[df.full_uri == b].digest.tolist())
+
+            # This is the busybox base, which will make them similar, but is not counted
+            # in the experiment
             score = len(layers_a.intersection(layers_b)) / len(layers_a.union(layers_b))
             sims.loc[a, b] = score
 

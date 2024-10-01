@@ -15,26 +15,6 @@ For each cluster size:
     Create a MiniCluster that sleeps for a second
     Wait for job to complete and go away
 ```
-
-## Testing
-
-I did some quick testing to see if the instance memory had an impact, making a large jump so I could see it.
-
-Total experiment time for size 4 nodes:
- - size 4 nodes, n1-standard-16: 54.24 minutes (~3)
- - size 4 nodes, n1-standard-64: 52.73 minutes
- 
-I don't think times are different enough to justify the increase in cost.
- 
-```console
-Experiments are done!
-total time to run is 3254.424793243408 seconds
-
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 3164.1695561408997 seconds
-```
-
 ## Experiment
 
 ### 1. Setup
@@ -118,7 +98,32 @@ python analysis/3-parse-containers.py
 python analysis/4-similarity.py
 ```
 
-Next step: need to double check that base image (which is the same) accounts for
-the slight similarity values. The only reason we'd have the gradient is because there are a different number of things being compared in sets with different layers. Likely we should subtract out the base image. After that, can run the study on the smaller instance size 8 and see if we get any very different results.
+#### Testing
 
+I first did some quick testing to see if the instance memory had an impact, making a large jump so I could see it. 
 
+Total experiment time for size 4 nodes:
+ - size 4 nodes, n1-standard-16: 54.24 minutes (~3)
+ - size 4 nodes, n1-standard-64: 52.73 minutes
+ 
+I don't think times are different enough to justify the increase in cost, so we will stick with n1-standard-16 for the study.
+
+```console
+Experiments are done!
+total time to run is 3254.424793243408 seconds
+
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 3164.1695561408997 seconds
+```
+
+I next looked at the plot of number of layers by image size over time. What I see here is that number of layers does not seem to matter. What matters is the total size.
+
+![analysis/data/img/pull_times_test_duration_by_size_n1-standard-16.png](analysis/data/img/pull_times_test_duration_by_size_n1-standard-16.png)
+![analysis/data/img/pull_times_test_duration_by_size_n1-standard-64.png](analysis/data/img/pull_times_test_duration_by_size_n1-standard-64.png)
+
+I think the plot I want to see is the size of the cluster (nodes) on the x axis, and then the hue be the image size. I'll choose a small number of number of layers for the variety but I'm not convinced it matters. Finally, when we remove the base (busybox) we see they are entirely different. This is good - the tool is working as expected!
+
+![analysis/data/similarity/pulling/cluster-container-similarity.png](analysis/data/similarity/pulling/cluster-container-similarity.png)
+
+Next step: adjust parameter space to have fewer layer size options, and more sizes. After that, can run the study on the smaller instance size 8 and see if we get any very different results.
