@@ -56,6 +56,10 @@ done
 
 Here is the output from the script (wrapping automation for all runs):
 
+<details>
+
+<summary>Wrapped time for runs</summary>
+
 ```console
 # size 4 (not final study containers)
 job.batch "container-pull" deleted
@@ -105,6 +109,8 @@ job.batch "container-pull" deleted
 Experiments are done!
 total time to run is 2884.183334827423 seconds
 ```
+
+</details>
 
 Note how the total experiment time goes up by quite a bit, but the plots don't reflect that. There is something else in here taking time - maybe just waiting for the job to complete?
 
@@ -205,7 +211,9 @@ gcloud container clusters delete test-cluster --region=us-central1-a
 done
 ```
 
-Here is the output from the script (wrapping automation for all runs):
+<details>
+
+<summary>Wrapped time for runs</summary>
 
 ```console
 # size 4
@@ -259,7 +267,7 @@ Experiments are done!
 total time to run is 2550.7278447151184 seconds
 ```
 
-Note how the total experiment time goes up by quite a bit, but the plots don't reflect that. There is something else in here taking time - maybe just waiting for the job to complete?
+</details>
 
 #### Analysis
 
@@ -289,3 +297,121 @@ And the log images:
 ![analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers_log.png)
 ![analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers_log.png)
 
+
+### run3
+
+> test adding local SSD to improve filesystem latency
+
+This will test if improving filesystem latency will speed up pulls! You can read [more about it here](https://cloud.google.com/compute/docs/disks/local-ssd). For this set of containers, since we see equivalent performance between ghcr.io and gcr.io, we can stick with gcr.io. Note that we only went up to size 64 - sizes 128 and 256 went over the quota.
+
+```console
+GOOGLE_PROJECT=myproject
+for NODES in 4 8 16 32 64
+  do
+
+# 128 256 are not done yet, over quota
+
+time gcloud container clusters create test-cluster \
+    --ephemeral-storage-local-ssd count=1 \
+    --threads-per-core=1 \
+    --num-nodes=$NODES \
+    --machine-type=n1-standard-16 \
+    --enable-gvnic \
+    --region=us-central1-a \
+    --project=${GOOGLE_PROJECT} 
+
+cd /tmp/kubernetes-event-exporter
+kubectl create namespace monitoring
+kubectl apply -f deploy
+cd -
+
+mkdir -p metadata/run3/$NODES
+kubectl get nodes -o json > metadata/run3/$NODES/nodes-$NODES-$(date +%s).json
+
+# In another terminal
+# NODES=4
+# kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/run3/$NODES/events-size-$NODES-$(date +%s).json
+
+python run-experiment.py --nodes $NODES --study ./studies/run2.json
+gcloud container clusters delete test-cluster --region=us-central1-a --quiet
+
+done
+```
+
+<details>
+
+<summary>Wrapped time for runs</summary>
+
+```console
+# size 4
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-72cdbfhz.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1018.2316541671753 seconds
+
+# size 8
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-7dbo75ss.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1012.093866109848 seconds
+
+# size 16
+kubectl wait --for=condition=complete job/container-pull --timeout=1200s
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-7dbo75ss.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1012.093866109848 seconds
+
+# size 32
+kubectl wait --for=condition=complete job/container-pull --timeout=1200s
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-t117svkr.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1093.947240114212 seconds
+
+# size 64
+kubectl wait --for=condition=complete job/container-pull --timeout=1200s
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-v30fo2bu.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1147.4819929599762 seconds
+
+# size 128
+
+# size 256
+```
+
+</details>
+
+#### Analysis
+
+Here is how to run scripts to generate plots, etc.
+
+```bash
+# Raw times raw-times.json
+python analysis/1-prepare-data.py --root ./metadata/run3 --out ./analysis/data/run3
+
+# Get docker manifests (only need to do this once when containers are new)
+# python analysis/2-docker-manifests.py --data ./analysis/data/run3
+
+# This generates (or updates) plots!
+python analysis/3-parse-containers.py --data ./analysis/data/run3
+
+# Can't run similarity for google cloud - no manifests.
+# but they are the same images, should be the same!
+```
+
+Oh wow - this is big! I could only go up to size 64 (quota for the storage for one VM family went over) but we can see that for the largest size, the variability is hugely decreased, and the pull times are 20-40 seconds faster. 
+
+![analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers.png)
+![analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers.png)
+
+This could be significant for a GPU cluster. Local SSDs are [also very cheap](https://cloud.google.com/compute/disks-image-pricing#localssdpricing) - $0.1046 per GB per month, so (if we did the calculation for a scoped experiment) it very likely would be worth the time of having the cluster up. One question I have (that we could further investigate) is how much SSD can you add (the count variable) before you stop seeing improvements. Finally, the log images:
+
+![analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers_log.png)
+![analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers_log.png)

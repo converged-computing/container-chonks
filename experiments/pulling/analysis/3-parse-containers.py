@@ -212,7 +212,7 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
         )
 
         ylim = None
-        if experiment == "run1":
+        if experiment in ["run1", "run2", "run3"]:
             ylim = (0, 180)
 
         # Without log, set ylimit
