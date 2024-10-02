@@ -24,127 +24,15 @@ if not os.path.exists(job_template_file):
 
 job_template = read_file(job_template_file)
 
-tags_testing = [
-    "1-layers-size-127399102-bytes",
-    "1-layers-size-387602448-bytes",
-    "1-layers-size-48702097-bytes",
-    "10-layers-size-127399102-bytes",
-    "10-layers-size-19034736629-bytes",
-    "10-layers-size-387602448-bytes",
-    "10-layers-size-48702097-bytes",
-    "100-layers-size-127399102-bytes",
-    "100-layers-size-19034736629-bytes",
-    "100-layers-size-387602448-bytes",
-    "100-layers-size-48702097-bytes",
-    "11-layers-size-127399102-bytes",
-    "11-layers-size-19034736629-bytes",
-    "11-layers-size-387602448-bytes",
-    "11-layers-size-48702097-bytes",
-    "12-layers-size-127399102-bytes",
-    "12-layers-size-19034736629-bytes",
-    "12-layers-size-387602448-bytes",
-    "12-layers-size-48702097-bytes",
-    "13-layers-size-127399102-bytes",
-    "13-layers-size-19034736629-bytes",
-    "13-layers-size-387602448-bytes",
-    "13-layers-size-48702097-bytes",
-    "14-layers-size-127399102-bytes",
-    "14-layers-size-19034736629-bytes",
-    "14-layers-size-387602448-bytes",
-    "14-layers-size-48702097-bytes",
-    "2-layers-size-127399102-bytes",
-    "2-layers-size-19034736629-bytes",
-    "2-layers-size-387602448-bytes",
-    "2-layers-size-48702097-bytes",
-    "25-layers-size-127399102-bytes",
-    "25-layers-size-19034736629-bytes",
-    "25-layers-size-387602448-bytes",
-    "25-layers-size-48702097-bytes",
-    "3-layers-size-127399102-bytes",
-    "3-layers-size-19034736629-bytes",
-    "3-layers-size-387602448-bytes",
-    "3-layers-size-48702097-bytes",
-    "4-layers-size-127399102-bytes",
-    "4-layers-size-19034736629-bytes",
-    "4-layers-size-387602448-bytes",
-    "4-layers-size-48702097-bytes",
-    "5-layers-size-127399102-bytes",
-    "5-layers-size-19034736629-bytes",
-    "5-layers-size-387602448-bytes",
-    "5-layers-size-48702097-bytes",
-    "50-layers-size-127399102-bytes",
-    "50-layers-size-19034736629-bytes",
-    "50-layers-size-387602448-bytes",
-    "50-layers-size-48702097-bytes",
-    "6-layers-size-127399102-bytes",
-    "6-layers-size-19034736629-bytes",
-    "6-layers-size-387602448-bytes",
-    "6-layers-size-48702097-bytes",
-    "7-layers-size-127399102-bytes",
-    "7-layers-size-19034736629-bytes",
-    "7-layers-size-387602448-bytes",
-    "7-layers-size-48702097-bytes",
-    "75-layers-size-127399102-bytes",
-    "75-layers-size-19034736629-bytes",
-    "75-layers-size-387602448-bytes",
-    "75-layers-size-48702097-bytes",
-    "8-layers-size-127399102-bytes",
-    "8-layers-size-19034736629-bytes",
-    "8-layers-size-387602448-bytes",
-    "8-layers-size-48702097-bytes",
-    "9-layers-size-127399102-bytes",
-    "9-layers-size-19034736629-bytes",
-    "9-layers-size-387602448-bytes",
-    "9-layers-size-48702097-bytes",
-]
-
-uri = "ghcr.io/converged-computing/container-chonks-run1"
-
-tags = [
-    "125-layers-size-103513992-bytes",
-    "125-layers-size-1176249324-bytes",
-    "125-layers-size-127399102-bytes",
-    "125-layers-size-158049655-bytes",
-    "125-layers-size-19034736629-bytes",
-    "125-layers-size-213665412-bytes",
-    "125-layers-size-266728773-bytes",
-    "125-layers-size-2770722493-bytes",
-    "125-layers-size-315018606-bytes",
-    "125-layers-size-387602448-bytes",
-    "125-layers-size-48702097-bytes",
-    "125-layers-size-491514346-bytes",
-    "125-layers-size-53049507-bytes",
-    "125-layers-size-66460665-bytes",
-    "125-layers-size-682439577-bytes",
-    "125-layers-size-86388866-bytes",
-    "9-layers-size-103513992-bytes",
-    "9-layers-size-1176249324-bytes",
-    "9-layers-size-127399102-bytes",
-    "9-layers-size-158049655-bytes",
-    "9-layers-size-19034736629-bytes",
-    "9-layers-size-213665412-bytes",
-    "9-layers-size-266728773-bytes",
-    "9-layers-size-2770722493-bytes",
-    "9-layers-size-315018606-bytes",
-    "9-layers-size-387602448-bytes",
-    "9-layers-size-48702097-bytes",
-    "9-layers-size-491514346-bytes",
-    "9-layers-size-53049507-bytes",
-    "9-layers-size-66460665-bytes",
-    "9-layers-size-682439577-bytes",
-    "9-layers-size-86388866-bytes",
-    "125-layers-size-10902729561-bytes",
-    "125-layers-size-14968733095-bytes",
-    "125-layers-size-6836726027-bytes",
-    "9-layers-size-10902729561-bytes",
-    "9-layers-size-14968733095-bytes",
-    "9-layers-size-6836726027-bytes",
-]
 
 def get_parser():
     parser = argparse.ArgumentParser(
         description="Container Pulling Study",
         formatter_class=argparse.RawTextHelpFormatter,
+    )
+    parser.add_argument(
+        "--study",
+        help="path to study.json with tags and uri to use",
     )
     parser.add_argument(
         "--nodes",
@@ -200,12 +88,12 @@ def get_tmpfile(prefix="job-", suffix=".yaml"):
     return tmp_file
 
 
-def run_job(container, args):
+def run_job(container, nodes):
     """
     Run a job to pull a container.
     """
     template = Template(job_template)
-    subs = {"size": args.nodes, "container": container}
+    subs = {"size": nodes, "container": container}
     templated = template.render(subs)
 
     # Write to temporary file just to submit!
@@ -248,7 +136,7 @@ def clean_cache():
     )
 
 
-def run_experiments(args):
+def run_experiments(nodes, tags, uri):
     """
     Wrap experiment running separately in case we lose spot nodes and can recover
     """
@@ -258,8 +146,28 @@ def run_experiments(args):
     for i, tag in enumerate(tags):
         container = f"{uri}:{tag}"
         print(f"Running experiment for container {container}, {i} of {total}")
-        run_job(container, args)
+        run_job(container, nodes)
     print("Experiments are done!")
+
+
+def read_study(study_file):
+    """
+    Read the study json file, which should have:
+
+    uri: a container resource identifier (that is public)
+    tags: a list of tags for the container uri
+    """
+    if not study_file:
+        sys.exit(
+            "You must provide a --study json file with tags (list) and a uri (string)"
+        )
+    if not os.path.exists(study_file):
+        sys.exit(f"Study json file {study_file} does not exist.")
+    study = read_json(study_file)
+    for field in ["tags", "uri"]:
+        if field not in study:
+            sys.exit(f"Study json is missing field '{field}'")
+    return study
 
 
 def main():
@@ -274,15 +182,21 @@ def main():
     # If an error occurs while parsing the arguments, the interpreter will exit with value 2
     args, _ = parser.parse_known_args()
 
+    # Read in the study and unwrap it!
+    study = read_study(args.study)
+    tags = study["tags"]
+    uri = study["uri"]
+
     print("🪴️ Planning to run:")
-    print(f"   Containers: {len(tags)}")
-    print(f"        nodes: {args.nodes}")
+    print(f"  Container: {uri}")
+    print(f"       Tags: {len(tags)}")
+    print(f"      nodes: {args.nodes}")
     if not confirm_action("Would you like to continue?"):
         sys.exit("📺️ Cancelled!")
 
     # Main experiment running, show total time just for user FYI
     start_experiments = time.time()
-    run_experiments(args)
+    run_experiments(args.nodes, tags, uri)
     stop_experiments = time.time()
     total = stop_experiments - start_experiments
     print(f"total time to run is {total} seconds")
