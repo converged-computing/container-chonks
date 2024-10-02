@@ -177,12 +177,11 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
         raise ValueError("Found more than one experiment in the df, should not happen")
 
     experiment = list(df.experiment.unique())[0]
-    
+
     # Let's break into two plots, one for each number of layers
     # within a plot, x axis is the cluster nodes (size) and color is image size
     for layers in df.layers.unique():
         subset = df[df.layers == layers]
-        title = f"Container Pull times for Experiment with {layers} Layers"
         hexcolors = colors.as_hex()
         sizes = list(subset.nodes.unique())
         sizes.sort()
@@ -190,6 +189,33 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
         for t in sizes:
             palette[t] = hexcolors.pop(0)
 
+        title = f"Container Pull times for Experiment with {layers} Layers, ghcr.io"
+        if experiment == "run2":
+            title = f"Container Pull times for Experiment with {layers} Layers, gcr.io"
+
+        make_plot(
+            subset,
+            title=title,
+            ydimension="duration",
+            xdimension="total_size",
+            outdir=outdir,
+            ext="png",
+            plotname=f"pull_times_duration_by_size_{experiment}_{layers}_layers_log",
+            hue="nodes",
+            palette=palette,
+            plot_type="bar",
+            xlabel="Total Image Size (bytes)",
+            ylabel="Pull time (log of seconds)",
+            do_log=True,
+            # With log, no ylimit
+            ylim=None,
+        )
+
+        ylim = None
+        if experiment == "run1":
+            ylim = (0, 180)
+
+        # Without log, set ylimit
         make_plot(
             subset,
             title=title,
@@ -203,6 +229,7 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
             plot_type="bar",
             xlabel="Total Image Size (bytes)",
             ylabel="Pull time (seconds)",
+            ylim=ylim,
         )
 
 
@@ -219,6 +246,8 @@ def make_plot(
     plot_type="violin",
     hue=None,
     outdir="img",
+    do_log=False,
+    ylim=None,
 ):
     """
     Helper function to make common plots.
@@ -247,8 +276,11 @@ def make_plot(
         )
         # This range is specifically for pulling times -
         # so the ranges are equivalent
-        ax.set(ylim=(0, 180))
+        if ylim is not None:
+            ax.set(ylim=ylim)
 
+    if do_log:
+        plt.yscale('log')
     plt.title(title)
     ax.set_xlabel(xlabel, fontsize=16)
     ax.set_ylabel(ylabel, fontsize=16)

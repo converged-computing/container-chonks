@@ -129,7 +129,6 @@ The scripts in [analysis](analysis) provide parsing of experiment metadata. See 
 
 Here are the two plots (y scale is the same):
 
-
 ![analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers.png](analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers.png)
 ![analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers.png](analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers.png)
 
@@ -138,4 +137,155 @@ I see the following:
 - The larger number of layers (smaller size per layer) has an overall higher median value, but much less variation. This makes sense, because maybe it could be less burden on the network, or less subject to variability of it?
 - The smaller number of layers (and larger size per layer) has a lower overall mean, but much larger variation. I'd guess the longer pull makes it more subject to the network. If extraction is used in container pulling, this could also reflect the filesystem.
 
-I believe that layer extraction is done sequentially, so there are two pieces to that. More layers == more things to do, but they are smaller tasks. The flip is fewer extractions, but each one is larger. I think we need to look at the influence of network and storage. We can do that next. 
+BUT the log makes those "differences" less pronounced.
+
+![analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers_log.png](analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers_log.png)
+![analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers_log.png](analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers_log.png)
+
+
+I believe that layer extraction is done sequentially, so there are two pieces to that. More layers == more things to do, but they are smaller tasks. The flip is fewer extractions, but each one is larger. I think we need to look at the influence of network and storage. We can do that next. Specifically I want to:
+
+- Do an experiment that uses Google's artifact registry (reduce latency to pull) run2 - NO
+- Do an experiment set that uses a local SSD 
+- Do an experiment that enables container streaming (this requires the previous point)
+- Zstandard compressed container images
+
+I then think it would be super cool to try profiling the container technology (during a pull to one node) to see how that time breaks down! We next want to run the same study as before, but follow [best practices](https://cloud.google.com/blog/products/containers-kubernetes/tips-and-tricks-to-reduce-cold-start-latency-on-gke) suggested by Google Cloud. The general strategy of these practices can be mapped to other clouds.
+
+### run2
+
+> test pulling containers on n1-standard-16 with gcr.io
+
+This will answer the question if using a registry in the same region (in the same cloud) can reduce pull times. We can hypothesize that pulling from a registry located int he same region (us-central1) could reduce latency as oppose to using GitHub packages (ghcr.io). I first created the Artifact Registry "converged-computing" under my project, then I tagged and pushed the images:
+
+The answer is no!
+
+```bash
+# configure registry
+gcloud auth configure-docker us-central1-docker.pkg.dev
+
+# Here is how to re-tag and push containers after creating the repository
+for tag in $(oras repo tags ghcr.io/converged-computing/container-chonks-run1)
+  do
+   echo "Retagging and pushing $tag"
+   container=us-central1-docker.pkg.dev/llnl-flux/converged-computing/container-chonks:$tag
+   docker tag ghcr.io/converged-computing/container-chonks-run1:$tag $container
+   docker push $container
+ done
+```
+
+```console
+GOOGLE_PROJECT=myproject
+for NODES in 4 8 16 32 64 128 256
+  do
+
+time gcloud container clusters create test-cluster \
+    --threads-per-core=1 \
+    --num-nodes=$NODES \
+    --machine-type=n1-standard-16 \
+    --enable-gvnic \
+    --region=us-central1-a \
+    --project=${GOOGLE_PROJECT} 
+
+cd /tmp/kubernetes-event-exporter
+kubectl create namespace monitoring
+kubectl apply -f deploy
+cd -
+
+mkdir -p metadata/run2/$NODES
+kubectl get nodes -o json > metadata/run2/$NODES/nodes-$NODES-$(date +%s).json
+
+# In another terminal
+# NODES=4
+# kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/run2/$NODES/events-size-$NODES-$(date +%s).json
+
+python run-experiment.py --nodes $NODES --study ./studies/run2.json
+gcloud container clusters delete test-cluster --region=us-central1-a
+
+done
+```
+
+Here is the output from the script (wrapping automation for all runs):
+
+```console
+# size 4
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-5ywx0uto.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1375.4710006713867 seconds
+
+# size 8
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-4lsbfmns.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1381.183841228485 seconds
+
+# size 16
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-x2oqqhsk.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1366.366715669632 seconds
+
+# size 32
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-uv4o5wdy.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1367.845073223114 seconds
+
+# size 64
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-yh43g0tr.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1465.6497366428375 seconds
+
+# size 128
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-gilsnk4a.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1754.5072467327118 seconds
+
+# size 256
+kubectl wait --for=condition=complete job/container-pull --timeout=1200s
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-_qygl2qr.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 2550.7278447151184 seconds
+```
+
+Note how the total experiment time goes up by quite a bit, but the plots don't reflect that. There is something else in here taking time - maybe just waiting for the job to complete?
+
+#### Analysis
+
+Here is how to run scripts to generate plots, etc.
+
+```bash
+# Raw times raw-times.json
+python analysis/1-prepare-data.py --root ./metadata/run2 --out ./analysis/data/run2
+
+# Get docker manifests (only need to do this once when containers are new)
+# python analysis/2-docker-manifests.py --data ./analysis/data/run2
+
+# This generates (or updates) plots!
+python analysis/3-parse-containers.py --data ./analysis/data/run2
+
+# Can't run similarity for google cloud - no manifests.
+# but they are the same images, should be the same!
+```
+
+These plots are almost identical to the first. There is no benefit to gcr.io, as is (without anything else) aside from needing to pay for it.
+
+![analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers.png)
+![analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers.png)
+
+And the log images:
+
+![analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers_log.png)
+![analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers_log.png)
+

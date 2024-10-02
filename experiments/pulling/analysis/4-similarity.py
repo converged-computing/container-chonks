@@ -351,7 +351,7 @@ def parse_manifests(files):
     # shared digests across images
     # distribution of sizes in different contexts
     # distribution of platforms / arch
-    seen = set()
+    seen = set()    
     for filename in files:
         if filename in seen:
             continue
