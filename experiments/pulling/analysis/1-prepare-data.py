@@ -102,7 +102,8 @@ def parse_data(indir, outdir, files):
         # 'successfulcreate'}
 
         # This is the size of the nodes
-        experiment = os.path.basename(os.path.dirname(filename))
+        experiment_size = int(os.path.basename(os.path.dirname(filename)))
+        experiment = os.path.basename(os.path.dirname(os.path.dirname(filename)))
 
         # For each file, create lookup with container uid
         for section in sections:
@@ -120,7 +121,7 @@ def parse_data(indir, outdir, files):
             # the kind of node
             uid = section["metadata"]["name"].rsplit(".", 1)[0]
             if uid not in lookup:
-                lookup[uid] = {"events": {}, "experiment": experiment}
+                lookup[uid] = {"events": {}, "experiment": experiment, "size": experiment_size}
             reason = section["reason"].lower()
 
             # Use event time and fall back to first time

@@ -89,15 +89,14 @@ def parse_times(times):
             "total_size",
             "size_per_layer",
             "experiment",
-            "size",
+            "nodes",
         ]
     )
     idx = 0
-    size = 4
-    # TODO add size
     for _, item in times.items():
         # The only experiment without a stated size is aws eks gpu, size 16
         experiment = item["experiment"]
+        size = item["size"]
         container = item.get("container")
         if not container and "pulled" in item["events"]:
             container = (
@@ -173,13 +172,19 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     if filter_below is not None:
         df = df[df.duration > filter_below]
 
-    # Let's first plot pull times by cloud and experiment environment, and break into sizes
-    # Are there differences depending on size?
-    for experiment in df.experiment.unique():
-        subset = df[df.experiment == experiment]
-        title = f"Pull times for Test Experiments {experiment}"
+    # There should only be one experiment here - raise an error if not the case!
+    if len(df.experiment.unique()) != 1:
+        raise ValueError("Found more than one experiment in the df, should not happen")
+
+    experiment = list(df.experiment.unique())[0]
+    
+    # Let's break into two plots, one for each number of layers
+    # within a plot, x axis is the cluster nodes (size) and color is image size
+    for layers in df.layers.unique():
+        subset = df[df.layers == layers]
+        title = f"Container Pull times for Experiment with {layers} Layers"
         hexcolors = colors.as_hex()
-        sizes = list(subset.total_size.unique())
+        sizes = list(subset.nodes.unique())
         sizes.sort()
         palette = collections.OrderedDict()
         for t in sizes:
@@ -189,14 +194,14 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
             subset,
             title=title,
             ydimension="duration",
-            xdimension="layers",
+            xdimension="total_size",
             outdir=outdir,
             ext="png",
-            plotname=f"pull_times_test_duration_by_size_{experiment}",
-            hue="total_size",
+            plotname=f"pull_times_duration_by_size_{experiment}_{layers}_layers",
+            hue="nodes",
             palette=palette,
             plot_type="bar",
-            xlabel="Number of Layers",
+            xlabel="Total Image Size (bytes)",
             ylabel="Pull time (seconds)",
         )
 
@@ -240,6 +245,9 @@ def make_plot(
             whis=[5, 95],
             dodge=True,
         )
+        # This range is specifically for pulling times -
+        # so the ranges are equivalent
+        ax.set(ylim=(0, 180))
 
     plt.title(title)
     ax.set_xlabel(xlabel, fontsize=16)
