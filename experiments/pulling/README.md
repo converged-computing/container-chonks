@@ -415,3 +415,168 @@ This could be significant for a GPU cluster. Local SSDs are [also very cheap](ht
 
 ![analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers_log.png)
 ![analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers_log.png)
+
+### run 4
+
+> Using container streaming
+
+As described [here](https://cloud.google.com/blog/products/containers-kubernetes/tips-and-tricks-to-reduce-cold-start-latency-on-gke) and [container streaming](https://cloud.google.com/blog/products/containers-kubernetes/introducing-container-image-streaming-in-gke) is:
+
+> Image streaming works by mounting the container data layer in containerd using a sophisticated network mount, and backing it with multiple caching layers on the network, in-memory and on-disk. Your container transitions from the ImagePulling status to Running in a couple of seconds (regardless of container size) once we prepare the image streaming mount; this effectively parallelizes the application boot with the data transfer of required data in the container image. As a result, you can expect to see much faster container boot times and snappier autoscaling. 
+
+It's not clear if this will be reflected in container events. If the image can go to running sooner, we might need to do another experiment that actually runs something (and then record the time it takes to do that). We will see. 
+
+```console
+GOOGLE_PROJECT=myproject
+for NODES in 4 8 16 32 64 128 256
+  do
+
+time gcloud container clusters create test-cluster \
+    --image-type="COS_CONTAINERD" \
+    --enable-image-streaming \
+    --threads-per-core=1 \
+    --num-nodes=$NODES \
+    --machine-type=n1-standard-16 \
+    --enable-gvnic \
+    --region=us-central1-a \
+    --project=${GOOGLE_PROJECT} 
+
+cd /tmp/kubernetes-event-exporter
+kubectl create namespace monitoring
+kubectl apply -f deploy
+cd -
+
+mkdir -p metadata/run4/$NODES
+kubectl get nodes -o json > metadata/run4/$NODES/nodes-$NODES-$(date +%s).json
+
+# In another terminal
+# NODES=4
+# kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/run4/$NODES/events-size-$NODES-$(date +%s).json
+
+python run-experiment.py --nodes $NODES --study ./studies/run2.json
+gcloud container clusters delete test-cluster --region=us-central1-a --quiet
+
+done
+```
+
+<details>
+
+<summary>Wrapped time for runs</summary>
+
+```console
+# size 4
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-7satz2uh.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1286.9867091178894 seconds
+Deleting cluster test-cluster...done.  
+
+# size 8
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-1423io2e.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1332.5545303821564 seconds
+
+# size 16
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-3m7rh1zb.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1399.6686463356018 seconds
+
+# size 32
+kubectl delete -f /tmp/job-1k14vepn.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1440.1837031841278 seconds
+Deleting cluster test-cluster...done.  
+
+# size 64
+kubectl delete -f /tmp/job-hw6kf_u5.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 1674.736645936966 seconds
+Deleting cluster test-cluster...done.  
+
+# size 128
+kubectl wait --for=condition=complete job/container-pull --timeout=1200s
+job.batch/container-pull condition met
+kubectl delete -f /tmp/job-0uylqxbh.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 3667.703760623932 seconds
+
+# size 256
+
+kubectl delete -f /tmp/job-89s27zxh.yaml --wait=true
+job.batch "container-pull" deleted
+Experiments are done!
+total time to run is 4335.0549857616425 seconds
+```
+
+For the largest size there was a problem with this container - led to "ContainerStatusUnknown"
+
+```
+Running experiment for container us-central1-docker.pkg.dev/llnl-flux/converged-computing/container-chonks:125-layers-size-14968733095-bytes, 33 of 38
+kubectl apply -f /tmp/job-d1tvtlel.yaml
+job.batch/container-pull created
+kubectl wait --for=condition=complete job/container-pull --timeout=1200s
+```
+
+I'm also seeing a lot of this:
+
+```
+container-pull-228-55rrv   0/1     ImagePullBackOff   0          68s
+container-pull-229-28npk   0/1     ErrImagePull       0          65s
+container-pull-23-9z5s8    0/1     Completed          0          75s
+container-pull-230-k4rpl   0/1     ImagePullBackOff   0          65s
+container-pull-231-jsndm   0/1     ErrImagePull       0          66s
+container-pull-232-qsd75   0/1     ErrImagePull       0          67s
+```
+I also saw Evicted:
+
+```
+container-pull-134-w9jjs   0/1     Evicted     0          7m9s
+container-pull-136-bhqxb   0/1     Completed   0          7m8s
+container-pull-15-tx576    0/1     Completed   0          7m15s
+container-pull-150-58vwl   0/1     Evicted     0          7m4s
+container-pull-158-4px9l   0/1     Completed   0          7m6s
+container-pull-167-86tsx   0/1     Evicted     0          7m5s
+container-pull-169-5mrjc   0/1     Completed   0          7m6s
+container-pull-172-fsmlp   0/1     Evicted     0          7m4s
+container-pull-174-l5gz4   0/1     Evicted     0          7m3s
+container-pull-175-7nvpb   0/1     Evicted     0          7m4s
+```
+So we might have hit some kind of limit with this size.
+
+Thinking - I think we should choose one size (since it doesn't matter that much) that is relatively larger and do this again without purging the cache. Perhaps that was causing the problem?
+
+</details>
+
+#### Analysis
+
+Here is how to run scripts to generate plots, etc.
+
+```bash
+# Raw times raw-times.json
+python analysis/1-prepare-data.py --root ./metadata/run4 --out ./analysis/data/run4
+
+# Get docker manifests (only need to do this once when containers are new)
+# python analysis/2-docker-manifests.py --data ./analysis/data/run4
+
+# This generates (or updates) plots!
+python analysis/3-parse-containers.py --data ./analysis/data/run4
+
+# Can't run similarity for google cloud - no manifests.
+# but they are the same images, should be the same!
+```
+
+These plots might need a redo, because I did see the errors above. I did get the sense that they are pulling more quickly, but I also saw a lot of errors. I'll wait to see the costs for running the above and craft another experiment.
+
+![analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers.png](analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers.png)
+![analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png](analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png)
+![analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers.png](analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers_log.png)
+![analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png](analysis/data/run4s/img/pull_times_duration_by_size_run4_9_layers_log.png)
+
