@@ -509,7 +509,6 @@ Experiments are done!
 total time to run is 3667.703760623932 seconds
 
 # size 256
-
 kubectl delete -f /tmp/job-89s27zxh.yaml --wait=true
 job.batch "container-pull" deleted
 Experiments are done!
@@ -580,3 +579,100 @@ These plots might need a redo, because I did see the errors above. I did get the
 ![analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers.png](analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers_log.png)
 ![analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png](analysis/data/run4s/img/pull_times_duration_by_size_run4_9_layers_log.png)
 
+
+### streaming
+
+Let's run the experiment now with applications. Here we can see if the streaming approach works for single layered (the spack) images. Let's first push the images to gcr.io:
+
+```console
+# Here is how to re-tag and push containers after creating the repository
+# Remember they need to be in gcr to get indexed for the streamer
+
+container=us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-amg2023:spack-skylake
+docker pull ghcr.io/converged-computing/ensemble-amg2023:spack-skylake
+docker tag ghcr.io/converged-computing/ensemble-amg2023:spack-skylake $container
+docker push $container
+
+container=us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-lammps:spack-skylake
+docker pull ghcr.io/converged-computing/ensemble-lammps:spack-skylake
+docker tag ghcr.io/converged-computing/ensemble-lammps:spack-skylake $container
+docker push $container
+
+container=us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-minife:spack-skylake
+docker pull ghcr.io/converged-computing/ensemble-minife:spack-skylake
+docker tag ghcr.io/converged-computing/ensemble-minife:spack-skylake $container
+docker push $container
+
+container=us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-osu:spack-skylake
+docker pull ghcr.io/converged-computing/ensemble-osu:spack-skylake
+docker tag ghcr.io/converged-computing/ensemble-osu:spack-skylake $container
+docker push $container
+```
+
+First, here is without streaming:
+
+```console
+GOOGLE_PROJECT=myproject
+NODES=4
+
+time gcloud container clusters create test-cluster \
+    --image-type="COS_CONTAINERD" \
+    --threads-per-core=1 \
+    --num-nodes=$NODES \
+    --machine-type=n1-standard-16 \
+    --enable-gvnic \
+    --region=us-central1-a \
+    --project=${GOOGLE_PROJECT} 
+
+cd /tmp/kubernetes-event-exporter
+kubectl create namespace monitoring
+kubectl apply -f deploy
+cd -
+
+PREFIX=streaming-test
+EXPERIMENT=streaming-test/without-streaming
+UUID=$EXPERIMENT/$NODES
+mkdir -p metadata/$UUID
+kubectl get nodes -o json > metadata/$PREFIX/nodes-$NODES-$(date +%s).json
+
+# In another terminal, export UUID then:
+# kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/$UUID/events-size-$NODES-$(date +%s).json
+
+time python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/$UUID/logs
+
+done
+```
+
+Next let's clear caches on the nodes:
+
+```bash
+kubectl apply -f https://raw.githubusercontent.com/andyzhangx/demo/master/dev/docker-image-cleanup.yaml
+```
+
+When it's done:
+
+```bash
+kubectl delete -f https://raw.githubusercontent.com/andyzhangx/demo/master/dev/docker-image-cleanup.yaml
+```
+
+And add streaming. 
+
+```bash
+gcloud container clusters update test-cluster --enable-image-streaming --region us-central1-a
+```
+
+```bash
+EXPERIMENT=streaming-test/streaming
+UUID=$EXPERIMENT/$NODES
+mkdir -p metadata/$UUID
+
+# In another terminal, export UUID then:
+# kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/$UUID/events-size-$NODES-$(date +%s).json
+
+time python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/$UUID/logs
+gcloud container clusters delete test-cluster --region=us-central1-a --quiet
+
+done
+```
+
+Experiments and results to follow.

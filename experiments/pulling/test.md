@@ -4,6 +4,7 @@ This was early testing work to get a sense of what I wanted to do. This was cons
 
 I'm first going to test a small cluster (4 nodes) with two instance types, the purpose being to see if the instance type (and more cpu/ram) can decrease pull time. We will either run across a range (cost allowing) or if not, choose a single size. I'm going to start with n1-standard-16, which has 16vCPU and 60GB RAM. Each instance is ~0.76 an hour, and I'm hoping we can try scaling up to 256 nodes. I'll test on something small like 4 nodes. I am then going to test on n1-standard-64 ($3.03, 64 vCPU and 240GB memory). We are going to use an indexed job for both.
 
+## Testing Pulling Study
 
 ### 1. Setup
 
@@ -145,4 +146,33 @@ Here was the first test of run1 (with the testing container set). I wanted to se
 Okay I like the dichotomy between the two layer extremes - I'd like to keep that to see how it scales across nodes. I am also thinking we will want to test GitHub packages and Google's local registry, for comparison.
 This still shows a huge swing up to pulling, and I think we need to see more sizes there, even if they are at the top of the sizes in terms of percentiles. The reason is because we can expect ML containers to get larger.
 
+
+## Testing Application Study
+
+This study is testing image streaming (the best strategy we found) against several applications. I'm prototyping it because I want to ensure it all works before running at a larger scale (64 nodes) likely a few times. I'll test on a small cluster (size 4)
+
+```console
+GOOGLE_PROJECT=myproject
+NODES=4
+
+time gcloud container clusters create test-cluster \
+    --image-type="COS_CONTAINERD" \
+    --enable-image-streaming \
+    --threads-per-core=1 \
+    --num-nodes=$NODES \
+    --machine-type=n1-standard-16 \
+    --enable-gvnic \
+    --region=us-central1-a \
+    --project=${GOOGLE_PROJECT} 
+
+cd /tmp/kubernetes-event-exporter
+kubectl create namespace monitoring
+kubectl apply -f deploy
+cd -
+
+python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/streaming-test/logs
+gcloud container clusters delete test-cluster --region=us-central1-a --quiet
+
+done
+```
 

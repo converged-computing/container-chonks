@@ -1,0 +1,48 @@
+{
+  "4": [
+    {
+      "image": "us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-amg2023:spack-skylake",
+      "command": "-o cpu-affinity=per-task --exclusive --cores-per-task 1 --env OMP_NUM_THREADS=1 /opt/view/bin/amg -n 128 128 128 -P 4 2 4 -problem 2",
+      "tasks": 32
+    },
+    {
+      "image": "us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-lammps:spack-skylake",
+      "command": "-o cpu-affinity=per-task /opt/view/bin/lmp -v x 4 -v y 4 -v z 4 -in in.reaxff.hns -nocite",
+      "tasks": 32,
+      "pre": "oras pull ghcr.io/converged-computing/ensemble-lammps:spack-data"
+    },
+    {
+      "image": "us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-minife:spack-skylake",
+      "command": "-o cpu-affinity=per-task /opt/view/bin/miniFE.x nx=230 ny=230 nz=230 use_locking=1 elem_group_size=10 use_elem_mat_fields=300 verify_solution=0",
+      "tasks": 32
+    },
+    {
+      "image": "us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-osu:spack-skylake",
+      "command": "-o cpu-affinity=per-task /opt/view/libexec/osu-micro-benchmarks/mpi/collective/osu_allreduce",
+      "tasks": 32
+    }
+  ],
+  "64": [
+    {
+      "image": "us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-amg2023:spack-skylake",
+      "command": "-o cpu-affinity=per-task --exclusive --cores-per-task 1 --env OMP_NUM_THREADS=1 /opt/view/bin/amg -n 128 128 128 -P 4 8 16 -problem 2",
+      "tasks": 512
+    },
+    {
+      "image": "us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-lammps:spack-skylake",
+      "command": "-o cpu-affinity=per-task /opt/view/bin/lmp -v x 32 -v y 32 -v z 32 -in in.reaxff.hns -nocite",
+      "tasks": 512,
+      "pre": "mkdir -p /opt/lammps; cd /opt/lammps; oras pull ghcr.io/converged-computing/ensemble-lammps:spack-data"
+    },
+    {
+      "image": "us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-minife:spack-skylake",
+      "command": "-o cpu-affinity=per-task /opt/view/bin/miniFE.x nx=230 ny=230 nz=230 use_locking=1 elem_group_size=10 use_elem_mat_fields=300 verify_solution=0",
+      "tasks": 512
+    },
+    {
+      "image": "us-central1-docker.pkg.dev/llnl-flux/converged-computing/ensemble-osu:spack-skylake",
+      "command": "-o cpu-affinity=per-task /opt/view/libexec/osu-micro-benchmarks/mpi/collective/osu_allreduce",
+      "tasks": 512
+    }
+  ]
+}
