@@ -15,11 +15,6 @@ def get_parser():
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument(
-        "--root",
-        help="root directory with experiment events metadata to parse",
-        default=os.path.join(root, "metadata"),
-    )
-    parser.add_argument(
         "--out",
         help="directory to save parsed results (with experiment prefix)",
         default=os.path.join(here, "data"),
@@ -58,12 +53,17 @@ def main():
 
     # Output images and data
     outdir = os.path.abspath(args.out)
-    indir = os.path.abspath(args.root)
+    indirs = [
+        os.path.join(root, "metadata", "streaming"),
+        os.path.join(root, "metadata", "without-streaming"),
+    ]
     if not os.path.exists(outdir):
         os.makedirs(outdir)
 
     # Find input files (skip anything with test)
-    files = find_inputs(indir)
+    files = []
+    for indir in indirs:
+        files += find_inputs(indir)
     if not files:
         raise ValueError(f"There are no input files in {indir}")
 
@@ -104,7 +104,8 @@ def parse_data(indir, outdir, files):
         # This is the size of the nodes
         experiment_size = int(os.path.basename(os.path.dirname(filename)))
         experiment = os.path.basename(os.path.dirname(os.path.dirname(filename)))
-
+        print(filename)
+        print(experiment)
         # For each file, create lookup with container uid
         for section in sections:
             try:
@@ -117,9 +118,7 @@ def parse_data(indir, outdir, files):
             if "reason" not in section:
                 continue
 
-            # TODO we might want an additional layer of experiment here,
-            # the kind of node
-            uid = section["metadata"]["name"].rsplit(".", 1)[0]
+            uid = section["metadata"]["name"].rsplit(".", 1)[0] + "-" + experiment
             if uid not in lookup:
                 lookup[uid] = {
                     "events": {},

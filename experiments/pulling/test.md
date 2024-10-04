@@ -176,3 +176,4 @@ gcloud container clusters delete test-cluster --region=us-central1-a --quiet
 done
 ```
 
+That worked! Let's get to the experiments!

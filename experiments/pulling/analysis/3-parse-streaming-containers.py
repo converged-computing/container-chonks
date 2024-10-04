@@ -85,9 +85,7 @@ def parse_times(times):
             "event",
             "duration",
             "container",
-            "layers",
-            "total_size",
-            "size_per_layer",
+            "application",
             "experiment",
             "nodes",
         ]
@@ -131,22 +129,14 @@ def parse_times(times):
             elapsed = parsed_end - parsed_start
             seconds = elapsed.min.seconds + elapsed.seconds
 
-        # parse layers, total size, and size per layer from tag
-        tag = container.split(":")[-1]
-        layers, rest = tag.split("-", 1)
-        total_size = int(rest.split("-")[2])
-        # subtract base image
-        total_size -= 5000000
-        layers = int(layers)
-        layer_size = total_size / layers
+        # parse app
+        app = os.path.basename(container.split(":")[0]).split("-")[-1]
         if seconds is not None:
             df.loc[idx, :] = [
                 "pulled",
                 seconds,
                 container,
-                layers,
-                total_size,
-                layer_size,
+                app,
                 experiment,
                 size,
             ]
@@ -172,39 +162,29 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     if filter_below is not None:
         df = df[df.duration > filter_below]
 
-    # There should only be one experiment here - raise an error if not the case!
-    if len(df.experiment.unique()) != 1:
-        raise ValueError("Found more than one experiment in the df, should not happen")
-
-    experiment = list(df.experiment.unique())[0]
-
-    # Let's break into two plots, one for each number of layers
-    # within a plot, x axis is the cluster nodes (size) and color is image size
-    for layers in df.layers.unique():
-        subset = df[df.layers == layers]
+    for size in df.nodes.unique():
+        subset = df[df.nodes == size]
         hexcolors = colors.as_hex()
-        sizes = list(subset.nodes.unique())
-        sizes.sort()
+        exps = list(subset.experiment.unique())
+        exps.sort()
         palette = collections.OrderedDict()
-        for t in sizes:
+        for t in exps:
             palette[t] = hexcolors.pop(0)
 
-        title = f"Container Pull times for Experiment with {layers} Layers, ghcr.io"
-        if experiment == "run2":
-            title = f"Container Pull times for Experiment with {layers} Layers, gcr.io"
+        title = f"Container Pull times for Applications for Streaming vs Without, Size {size}"
 
         make_plot(
             subset,
             title=title,
             ydimension="duration",
-            xdimension="total_size",
+            xdimension="application",
             outdir=outdir,
             ext="png",
-            plotname=f"pull_times_duration_by_size_{experiment}_{layers}_layers_log",
-            hue="nodes",
+            plotname=f"pull_times_duration_by_size_{size}_log",
+            hue="experiment",
             palette=palette,
             plot_type="bar",
-            xlabel="Total Image Size (bytes)",
+            xlabel="Application",
             ylabel="Pull time (log of seconds)",
             do_log=True,
             # With log, no ylimit
@@ -212,22 +192,20 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
         )
 
         ylim = None
-        if experiment in ["run1", "run2", "run3"]:
-            ylim = (0, 180)
 
         # Without log, set ylimit
         make_plot(
             subset,
             title=title,
             ydimension="duration",
-            xdimension="total_size",
+            xdimension="application",
             outdir=outdir,
             ext="png",
-            plotname=f"pull_times_duration_by_size_{experiment}_{layers}_layers",
-            hue="nodes",
+            plotname=f"pull_times_duration_by_size_{size}",
+            hue="experiment",
             palette=palette,
             plot_type="bar",
-            xlabel="Total Image Size (bytes)",
+            xlabel="Application",
             ylabel="Pull time (seconds)",
             ylim=ylim,
         )

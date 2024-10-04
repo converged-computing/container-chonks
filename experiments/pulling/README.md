@@ -582,6 +582,8 @@ These plots might need a redo, because I did see the errors above. I did get the
 
 ### streaming
 
+#### without streaming
+
 Let's run the experiment now with applications. Here we can see if the streaming approach works for single layered (the spack) images. Let's first push the images to gcr.io:
 
 ```console
@@ -629,50 +631,67 @@ kubectl create namespace monitoring
 kubectl apply -f deploy
 cd -
 
-PREFIX=streaming-test
-EXPERIMENT=streaming-test/without-streaming
+EXPERIMENT=without-streaming
 UUID=$EXPERIMENT/$NODES
 mkdir -p metadata/$UUID
 kubectl get nodes -o json > metadata/$PREFIX/nodes-$NODES-$(date +%s).json
 
 # In another terminal, export UUID then:
 # kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/$UUID/events-size-$NODES-$(date +%s).json
-
-time python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/$UUID/logs
-
-done
-```
-
-Next let's clear caches on the nodes:
-
-```bash
-kubectl apply -f https://raw.githubusercontent.com/andyzhangx/demo/master/dev/docker-image-cleanup.yaml
-```
-
-When it's done:
-
-```bash
-kubectl delete -f https://raw.githubusercontent.com/andyzhangx/demo/master/dev/docker-image-cleanup.yaml
-```
-
-And add streaming. 
-
-```bash
-gcloud container clusters update test-cluster --enable-image-streaming --region us-central1-a
-```
-
-```bash
-EXPERIMENT=streaming-test/streaming
-UUID=$EXPERIMENT/$NODES
-mkdir -p metadata/$UUID
-
-# In another terminal, export UUID then:
-# kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/$UUID/events-size-$NODES-$(date +%s).json
-
-time python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/$UUID/logs
+python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/$UUID/logs
 gcloud container clusters delete test-cluster --region=us-central1-a --quiet
 
 done
 ```
 
-Experiments and results to follow.
+#### streaming
+
+```console
+GOOGLE_PROJECT=myproject
+for NODES in 4 64
+  do
+
+time gcloud container clusters create test-cluster \
+    --image-type="COS_CONTAINERD" \
+    --enable-image-streaming \
+    --threads-per-core=1 \
+    --num-nodes=$NODES \
+    --machine-type=n1-standard-16 \
+    --enable-gvnic \
+    --region=us-central1-a \
+    --project=${GOOGLE_PROJECT} 
+
+cd /tmp/kubernetes-event-exporter
+kubectl create namespace monitoring
+kubectl apply -f deploy
+cd -
+
+mkdir -p metadata/streaming/$NODES
+kubectl get nodes -o json > metadata/streaming/$NODES/nodes-$NODES-$(date +%s).json
+
+# In another terminal
+# NODES=4
+# kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/streaming/$NODES/events-size-$NODES-$(date +%s).json
+
+time python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/streaming/$NODES/logs
+gcloud container clusters delete test-cluster --region=us-central1-a --quiet
+
+done
+```
+
+Parse the results, akin to before.
+
+```bash
+# Raw times raw-times.json
+python analysis/1-prepare-streaming-data.py --out ./analysis/data/streaming
+
+# This generates (or updates) plots!
+python analysis/3-parse-streaming-containers.py --data ./analysis/data/streaming
+```
+
+Wow, that's a pretty substantial difference, at least in terms of pull times reported by the kubelet. I'll run this at more sizes tomorrow and also capture the wrapping time, which we would hope is faster.
+
+![analysis/data/streaming/img/pull_times_duration_by_size_4_log.png](analysis/data/streaming/img/pull_times_duration_by_size_4_log.png)
+![analysis/data/streaming/img/pull_times_duration_by_size_4.png](analysis/data/streaming/img/pull_times_duration_by_size_4.png)
+
+
