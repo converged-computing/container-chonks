@@ -586,6 +586,10 @@ These plots might need a redo, because I did see the errors above. I did get the
 
 Let's run the experiment now with applications. Here we can see if the streaming approach works for single layered (the spack) images. Let's first push the images to gcr.io:
 
+<details>
+
+<summary>Pushing containers</summary>
+
 ```console
 # Here is how to re-tag and push containers after creating the repository
 # Remember they need to be in gcr to get indexed for the streamer
@@ -611,11 +615,14 @@ docker tag ghcr.io/converged-computing/ensemble-osu:spack-skylake $container
 docker push $container
 ```
 
+</details>
+
 First, here is without streaming:
 
 ```console
 GOOGLE_PROJECT=myproject
-NODES=4
+for NODES in 4 8 16 32 64 128 256
+  do
 
 time gcloud container clusters create test-cluster \
     --image-type="COS_CONTAINERD" \
@@ -631,24 +638,33 @@ kubectl create namespace monitoring
 kubectl apply -f deploy
 cd -
 
-EXPERIMENT=without-streaming
-UUID=$EXPERIMENT/$NODES
-mkdir -p metadata/$UUID
-kubectl get nodes -o json > metadata/$PREFIX/nodes-$NODES-$(date +%s).json
+mkdir -p metadata/without-streaming/$NODES
+kubectl get nodes -o json > metadata/without-streaming/$NODES/nodes-$NODES-$(date +%s).json
 
-# In another terminal, export UUID then:
-# kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/$UUID/events-size-$NODES-$(date +%s).json
-python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/$UUID/logs
+# In another terminal:
+# kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/without-streaming/$NODES/events-size-$NODES-$(date +%s).json
+
+python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/without-streaming/$NODES/logs
 gcloud container clusters delete test-cluster --region=us-central1-a --quiet
 
 done
 ```
 
+Total experiment times (without streaming)
+
+- 4: (not recorded)
+- 8: 349.02490305900574 seconds
+- 16: 417.4731261730194 seconds
+- 32: 487.6656312942505 seconds
+- 64: 1061.1585018634796 seconds
+
+I stopped at size 64 because it gets very expensive given the network.
+
 #### streaming
 
 ```console
 GOOGLE_PROJECT=myproject
-for NODES in 4 64
+for NODES in 4 8 16 32 64 128 256
   do
 
 time gcloud container clusters create test-cluster \
@@ -673,11 +689,19 @@ kubectl get nodes -o json > metadata/streaming/$NODES/nodes-$NODES-$(date +%s).j
 # NODES=4
 # kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/streaming/$NODES/events-size-$NODES-$(date +%s).json
 
-time python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/streaming/$NODES/logs
+python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/streaming/$NODES/logs
 gcloud container clusters delete test-cluster --region=us-central1-a --quiet
 
 done
 ```
+
+Total experiment times (streaming)
+
+- 4: (not recorded)
+- 8: 340.0614514350891 seconds
+- 16: 401.97024512290955 seconds
+- 32: 550.8497557640076 seconds
+- 64: 1319.139487028122 seconds
 
 Parse the results, akin to before.
 
@@ -689,9 +713,9 @@ python analysis/1-prepare-streaming-data.py --out ./analysis/data/streaming
 python analysis/3-parse-streaming-containers.py --data ./analysis/data/streaming
 ```
 
-Wow, that's a pretty substantial difference, at least in terms of pull times reported by the kubelet. I'll run this at more sizes tomorrow and also capture the wrapping time, which we would hope is faster.
+Wow, that's a pretty substantial difference, at least in terms of pull times reported by the kubelet. This time we can be confident that the application is running, as opposed to our simulation that didn't have a real entrypoint. 
 
-![analysis/data/streaming/img/pull_times_duration_by_size_4_log.png](analysis/data/streaming/img/pull_times_duration_by_size_4_log.png)
-![analysis/data/streaming/img/pull_times_duration_by_size_4.png](analysis/data/streaming/img/pull_times_duration_by_size_4.png)
+![analysis/data/streaming/img/pull_times_duration_by_nodes.png](analysis/data/streaming/img/pull_times_duration_by_nodes.png)
+![analysis/data/streaming/img/pull_times_duration_by_nodes_log.png](analysis/data/streaming/img/pull_times_duration_by_nodes_log.png)
 
 

@@ -162,6 +162,7 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     if filter_below is not None:
         df = df[df.duration > filter_below]
 
+    # Break apart by size, keep application
     for size in df.nodes.unique():
         subset = df[df.nodes == size]
         hexcolors = colors.as_hex()
@@ -208,6 +209,49 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
             xlabel="Application",
             ylabel="Pull time (seconds)",
             ylim=ylim,
+        )
+
+
+    # Squash applications
+    hexcolors = colors.as_hex()
+    exps = list(df.experiment.unique())
+    exps.sort()
+    palette = collections.OrderedDict()
+    for t in exps:
+        palette[t] = hexcolors.pop(0)
+
+    title = f"Container Pull times for for Streaming vs Without Across Sizes"
+    make_plot(
+            df,
+            title=title,
+            ydimension="duration",
+            xdimension="nodes",
+            outdir=outdir,
+            ext="png",
+            plotname=f"pull_times_duration_by_nodes_log",
+            hue="experiment",
+            palette=palette,
+            plot_type="bar",
+            xlabel="Nodes",
+            ylabel="Pull time (log of seconds)",
+            do_log=True,
+            # With log, no ylimit
+            ylim=None,
+        )
+
+    make_plot(
+            df,
+            title=title,
+            ydimension="duration",
+            xdimension="nodes",
+            outdir=outdir,
+            ext="png",
+            plotname=f"pull_times_duration_by_nodes",
+            hue="experiment",
+            palette=palette,
+            plot_type="bar",
+            xlabel="Nodes",
+            ylabel="Pull time (seconds)",
         )
 
 
