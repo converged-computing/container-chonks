@@ -165,6 +165,11 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     """
     Given an output directory, plot image to show pull times.
     """
+    # Print the total sum of pull times
+    experiment = df.experiment.unique()[0]
+    print(f"Total duration (sum) for experiment {experiment}:")
+    print(df.duration.sum())
+
     colors = sns.color_palette("hls", 20)
     save_prefix = save_prefix or "pull_times_experiment_type"
 

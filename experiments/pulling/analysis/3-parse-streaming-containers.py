@@ -158,6 +158,9 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     colors = sns.color_palette("hls", 20)
     save_prefix = save_prefix or "pull_times_experiment_type"
 
+    print(f"Total duration (sum) of pulls between experiments:")
+    print(df.groupby('experiment')['duration'].sum()
+
     # Assume containers need at least 20 seconds to pull
     if filter_below is not None:
         df = df[df.duration > filter_below]

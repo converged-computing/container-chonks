@@ -579,7 +579,6 @@ These plots might need a redo, because I did see the errors above. I did get the
 ![analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers.png](analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers_log.png)
 ![analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png](analysis/data/run4s/img/pull_times_duration_by_size_run4_9_layers_log.png)
 
-
 ### streaming
 
 #### without streaming
@@ -717,5 +716,40 @@ Wow, that's a pretty substantial difference, at least in terms of pull times rep
 
 ![analysis/data/streaming/img/pull_times_duration_by_nodes.png](analysis/data/streaming/img/pull_times_duration_by_nodes.png)
 ![analysis/data/streaming/img/pull_times_duration_by_nodes_log.png](analysis/data/streaming/img/pull_times_duration_by_nodes_log.png)
+
+
+##### Hypothetical cost estimation
+
+The sums of pull times between the studies are substantial:
+
+```console
+Total duration (sum) of pulls between experiments:
+experiment
+streaming            318.403
+without-streaming    6533.25
+Name: duration, dtype: object
+```
+
+For each of the above, in hours:
+
+- streaming: 0.08844527777777779 hours
+- without-streaming: 1.8147916666666668 hours
+
+It's still 20.5x slower without streaming. If we plug in different cloud costs to that (assuming this pull time across the clouds):
+
+| Experiment | Cloud | Environment | Cost per Hour | Estimate |
+|------------|-------|-------------|---------------|----------|
+| streaming | Google | CPU         | 5.09          |  0.45    |
+| without-streaming | Google | CPU | 5.09          |  9.24    |
+| streaming | Google | GPU         | 23.36         |  2.06       |
+| without-streaming | Google | GPU | 23.36         | 42.39    |
+| streaming | AWS | CPU         | 3.04      |  0.267    |
+| without-streaming | AWS | CPU | 3.04      | 5.52     |
+| streaming | AWS | GPU         | 34.49     |  3.05   |
+| without-streaming | AWS | GPU | 34.49     | 62.59 |
+| streaming | Azure | CPU         | 3.60  |   0.32   |
+| without-streaming | Azure | CPU | 3.60  |  6.53    |
+| streaming | Azure | GPU         | 22.032  |  1.95        |
+| without-streaming | Azure | GPU | 22.032 |    39.98  |
 
 
