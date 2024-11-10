@@ -68,8 +68,25 @@ python analysis/3-parse-containers.py --data ./analysis/data/run1
 # And similarity
 python analysis/4-similarity.py --data ./analysis/data/run1
 ```
-The scripts in [analysis](analysis) provide parsing of experiment metadata. See [test](test.md) for preliminary testing. Here are the complete times (recorded by the script) that wrapped the experiment.
+```console
+Stats for container set pulling
+How many layers?
+(2112, 8)
+How many unique URIs not including tags?
+1
+How many unique URIs including tags?
+32
+How many unique layer digests?
+2112
+Similarity for pulling-digests
+mean: 0.03125
+std 0.17399263633843817
+Similarity for pulling-content
+mean: 0.04973742826236392
+std 0.17210235537054003
+```
 
+The scripts in [analysis](analysis) provide parsing of experiment metadata. 
 Here are the two plots (y scale is the same):
 
 ![analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers.png](analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers.png)
