@@ -1,0 +1,199 @@
+{
+    "manifests": {
+        "v0.13.0-gke.4@sha256:bf6bab221e680f1c35a75305c9ad9ce5dd25d5bc1dd32fcad21f3ab6305c57e2": {
+            "schemaVersion": 2,
+            "mediaType": "application/vnd.docker.distribution.manifest.list.v2+json",
+            "manifests": [
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "size": 2410,
+                    "digest": "sha256:8d0c5c16643b64a7e38faa89131ec2385feb3cfc70b0704d6248bfe22f1fa70f",
+                    "platform": {
+                        "architecture": "amd64",
+                        "os": "linux"
+                    }
+                },
+                {
+                    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+                    "size": 2410,
+                    "digest": "sha256:adf6662e1815cab89f2e4a37732630e56b224905f7fc696f74cc41370772a8f3",
+                    "platform": {
+                        "architecture": "arm64",
+                        "os": "linux"
+                    }
+                }
+            ]
+        }
+    },
+    "tags": [
+        "v0.13.0-gke.4@sha256:bf6bab221e680f1c35a75305c9ad9ce5dd25d5bc1dd32fcad21f3ab6305c57e2"
+    ],
+    "configs": {
+        "v0.13.0-gke.4@sha256:bf6bab221e680f1c35a75305c9ad9ce5dd25d5bc1dd32fcad21f3ab6305c57e2": {
+            "architecture": "amd64",
+            "config": {
+                "Hostname": "",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+                ],
+                "Cmd": null,
+                "Image": "sha256:c1132d3dbe9b51983bfa353851dec282c77314b70950a9c45d13bf69a1db5f70",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/config-reloader"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "INCLUDES_NOTICES": "/THIRD_PARTY_NOTICES",
+                    "INCLUDES_SOURCE": "/source.tar.gz",
+                    "LICENSE": "Apache License 2.0",
+                    "LICENSE_CATEGORY": "Notice",
+                    "LICENSE_SCAN_TAG": "gpe-collector/ref_v0.13.0-rc.3_10d4b0d8e6ae9ff24a0df9c1f02f382445dc157c"
+                }
+            },
+            "container": "8513154fd70c5b664230036683539caea3fa8c3028258f96044545dc83467f5d",
+            "container_config": {
+                "Hostname": "8513154fd70c",
+                "Domainname": "",
+                "User": "",
+                "AttachStdin": false,
+                "AttachStdout": false,
+                "AttachStderr": false,
+                "Tty": false,
+                "OpenStdin": false,
+                "StdinOnce": false,
+                "Env": [
+                    "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt"
+                ],
+                "Cmd": [
+                    "/bin/sh",
+                    "-c",
+                    "#(nop) ",
+                    "LABEL INCLUDES_SOURCE=/source.tar.gz"
+                ],
+                "Image": "sha256:c1132d3dbe9b51983bfa353851dec282c77314b70950a9c45d13bf69a1db5f70",
+                "Volumes": null,
+                "WorkingDir": "",
+                "Entrypoint": [
+                    "/bin/config-reloader"
+                ],
+                "OnBuild": null,
+                "Labels": {
+                    "INCLUDES_NOTICES": "/THIRD_PARTY_NOTICES",
+                    "INCLUDES_SOURCE": "/source.tar.gz",
+                    "LICENSE": "Apache License 2.0",
+                    "LICENSE_CATEGORY": "Notice",
+                    "LICENSE_SCAN_TAG": "gpe-collector/ref_v0.13.0-rc.3_10d4b0d8e6ae9ff24a0df9c1f02f382445dc157c"
+                }
+            },
+            "created": "2024-06-26T18:58:41.320211793Z",
+            "docker_version": "20.10.24",
+            "history": [
+                {
+                    "created": "2024-03-07T08:10:57Z",
+                    "author": "Bazel",
+                    "created_by": "bazel build ..."
+                },
+                {
+                    "created": "2024-03-07T08:10:57Z",
+                    "author": "Bazel",
+                    "created_by": "bazel build ..."
+                },
+                {
+                    "created": "2024-03-07T08:10:57Z",
+                    "author": "Bazel",
+                    "created_by": "bazel build ..."
+                },
+                {
+                    "created": "2024-03-07T08:10:57Z",
+                    "author": "Bazel",
+                    "created_by": "bazel build ..."
+                },
+                {
+                    "created": "2024-03-07T08:10:57Z",
+                    "author": "Bazel",
+                    "created_by": "bazel build ..."
+                },
+                {
+                    "created": "2024-06-26T16:01:15.884396483Z",
+                    "created_by": "COPY /app/config-reloader /bin/config-reloader # buildkit",
+                    "comment": "buildkit.dockerfile.v0"
+                },
+                {
+                    "created": "2024-06-26T16:01:15.884396483Z",
+                    "created_by": "ENTRYPOINT [\"/bin/config-reloader\"]",
+                    "comment": "buildkit.dockerfile.v0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-06-26T18:57:53.226631306Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL LICENSE_SCAN_TAG=gpe-collector/ref_v0.13.0-rc.3_10d4b0d8e6ae9ff24a0df9c1f02f382445dc157c",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-06-26T18:58:00.711017698Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:54b9ec5e10964d8cba7326973533c19b445edae28ef7903107e6acb8f4810e24 in /THIRD_PARTY_NOTICES/LICENSE "
+                },
+                {
+                    "created": "2024-06-26T18:58:01.39879916Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:1978559491729ec53378320d3c13fca0952461458eafe73c58a33c3873fb2a87 in /THIRD_PARTY_NOTICES/ "
+                },
+                {
+                    "created": "2024-06-26T18:58:01.543442614Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:a6ccd99e645d431d9a615fbf546d81ae3869a0640adeb7288545511193bc51f8 in /THIRD_PARTY_NOTICES/ "
+                },
+                {
+                    "created": "2024-06-26T18:58:01.639023539Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL INCLUDES_NOTICES=/THIRD_PARTY_NOTICES",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-06-26T18:58:01.738656265Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL LICENSE=Apache License 2.0",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-06-26T18:58:01.844192447Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL LICENSE_CATEGORY=Notice",
+                    "empty_layer": true
+                },
+                {
+                    "created": "2024-06-26T18:58:40.884651933Z",
+                    "created_by": "/bin/sh -c #(nop) COPY file:58fc333408752862f8d09cc79cf12921b072fb6127252b5849d47817e55159a5 in / "
+                },
+                {
+                    "created": "2024-06-26T18:58:41.320211793Z",
+                    "created_by": "/bin/sh -c #(nop)  LABEL INCLUDES_SOURCE=/source.tar.gz",
+                    "empty_layer": true
+                }
+            ],
+            "os": "linux",
+            "rootfs": {
+                "type": "layers",
+                "diff_ids": [
+                    "sha256:cfe3f5cdb0be0a5aa36ccb70b100d8c56486e2b291f3ea0d1d3db8da7a45ce7c",
+                    "sha256:a6b3bc065b1b0331a590e60f7e863ad909a1a642fb22727a3e4bf947ff2c57cb",
+                    "sha256:b0dc66a99164ac50c16e32bf6e06c468d762d2d2c45c1ed74088e904f403c514",
+                    "sha256:758ca991764de0a0d8bec4f90d30362c9837aa18505fc806b3cd628cf50ee749",
+                    "sha256:9f77ecbbc86e43c2168305ca3f1d9c9c1375e784936c7375817d1db4161ede9b",
+                    "sha256:6c5879d4cee41622d4e19c50d73df99a3056167e75f6e48bb876e24793737ea9",
+                    "sha256:dbfa160aebe1fb46b25a51657d98c97cebde86b32912b3d2313d727ec12521b1",
+                    "sha256:439049da197ebb95f867dd7bce2c73cb96ad64dea795e2b14ffebc9bf44427fe",
+                    "sha256:c4e0cb8f3b497b36bd305ad4b9a68cef2f06919fd5763260d753326f5f3381ed",
+                    "sha256:8539e916b078dd6d43e823cb2164c399dfb8b4aac3018b17cd23c90c31cdd5bc"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: container-pull
+spec:
+  completions: {{ size }}
+  parallelism:  {{ size }}
+  completionMode: Indexed
+  template:
+    spec:
+      restartPolicy: Never
+      # No command means it will just complete - perfect, because there is no OS in there!
+      containers:
+      - image: {{ container }}
+        name: container-pull
+

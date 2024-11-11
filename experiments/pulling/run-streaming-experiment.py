@@ -167,7 +167,6 @@ def run_experiments(nodes, study, outdir):
     """
     Wrap experiment running separately in case we lose spot nodes and can recover
     """
-    # This cleans up every 1800 seconds
     install_operator()
     total = len(study)
     for i, entry in enumerate(study):

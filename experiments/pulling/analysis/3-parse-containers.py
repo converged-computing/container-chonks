@@ -262,7 +262,7 @@ def make_plot(
         plotfunc = sns.violinplot
 
     ext = ext.strip(".")
-    plt.figure(figsize=(16, 8))
+    plt.figure(figsize=(9, 6))
     sns.set_style("dark")
     if plot_type == "violin":
         ax = plotfunc(

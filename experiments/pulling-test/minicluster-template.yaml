@@ -1,0 +1,27 @@
+apiVersion: flux-framework.org/v1alpha2
+kind: MiniCluster
+metadata:
+  name: flux-sample
+spec:
+  size: {{ size }}
+  tasks: {{ tasks }}
+  logging:
+    timed: true
+  # for testing only
+  #interactive: true
+  flux:
+    container:
+      image: ghcr.io/converged-computing/flux-view-ubuntu:tag-jammy
+
+  containers:
+  - image: {{ container }}
+    command: {{ command }}
+    commands:
+      pre: |
+        apt-get update && apt-get install time -y
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/view/lib:/mnt/flux/view/lib:/mnt/flux/view/lib64
+        {% if pre %}{{ pre }}{% endif %}
+    volumes:
+      shared-memory:
+        emptyDir: true
+        emptyDirMedium: "memory"
