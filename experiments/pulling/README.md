@@ -110,7 +110,6 @@ for NODES in 4 8 16 32 64 128 256
 
     kubectl create namespace monitoring
     kubectl apply -f deploy
-    cd -
 
     mkdir -p metadata/run2/$NODES
     kubectl get nodes -o json > metadata/run2/$NODES/nodes-$NODES-$(date +%s).json
@@ -121,7 +120,6 @@ for NODES in 4 8 16 32 64 128 256
 
     python run-experiment.py --nodes $NODES --study ./studies/run2.json
     gcloud container clusters delete test-cluster-$NODES --region=us-central1-a
-
 done
 ```
 
