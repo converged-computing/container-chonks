@@ -141,7 +141,7 @@ def run_experiments(nodes, tags, uri):
     Wrap experiment running separately in case we lose spot nodes and can recover
     """
     # This cleans up every 1800 seconds
-    clean_cache()
+    # clean_cache()
     total = len(tags)
     for i, tag in enumerate(tags):
         container = f"{uri}:{tag}"

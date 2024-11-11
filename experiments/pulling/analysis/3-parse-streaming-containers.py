@@ -159,7 +159,7 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     save_prefix = save_prefix or "pull_times_experiment_type"
 
     print(f"Total duration (sum) of pulls between experiments:")
-    print(df.groupby('experiment')['duration'].sum()
+    print(df.groupby('experiment')['duration'].sum())
 
     # Assume containers need at least 20 seconds to pull
     if filter_below is not None:
@@ -223,7 +223,7 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     for t in exps:
         palette[t] = hexcolors.pop(0)
 
-    title = f"Container Pull times for for Streaming vs Without Across Sizes"
+    title = f"Container Pull times for Streaming vs Without Across Sizes"
     make_plot(
             df,
             title=title,
@@ -282,7 +282,7 @@ def make_plot(
         plotfunc = sns.violinplot
 
     ext = ext.strip(".")
-    plt.figure(figsize=(16, 8))
+    plt.figure(figsize=(12, 6))
     sns.set_style("dark")
     if plot_type == "violin":
         ax = plotfunc(
@@ -307,10 +307,10 @@ def make_plot(
     if do_log:
         plt.yscale("log")
     plt.title(title)
-    ax.set_xlabel(xlabel, fontsize=16)
-    ax.set_ylabel(ylabel, fontsize=16)
-    ax.set_xticklabels(ax.get_xmajorticklabels(), fontsize=14)
-    ax.set_yticklabels(ax.get_yticks(), fontsize=14)
+    ax.set_xlabel(xlabel, fontsize=18)
+    ax.set_ylabel(ylabel, fontsize=18)
+    ax.set_xticklabels(ax.get_xmajorticklabels(), fontsize=16)
+    ax.set_yticklabels(ax.get_yticks(), fontsize=16)
     plt.xticks(rotation=90)
     plt.tight_layout()
     plt.savefig(os.path.join(outdir, f"{plotname}.{ext}"))

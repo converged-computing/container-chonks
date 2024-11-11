@@ -28,7 +28,7 @@ GOOGLE_PROJECT=myproject
 for NODES in 4 8 16 32 64 128 256
   do
 
-time gcloud container clusters create test-cluster \
+    time gcloud container clusters create test-cluster-$NODES \
     --threads-per-core=1 \
     --num-nodes=$NODES \
     --machine-type=n1-standard-16 \
@@ -36,83 +36,20 @@ time gcloud container clusters create test-cluster \
     --region=us-central1-a \
     --project=${GOOGLE_PROJECT} 
 
-cd /tmp/kubernetes-event-exporter
-kubectl create namespace monitoring
-kubectl apply -f deploy
-cd -
+    kubectl create namespace monitoring
+    kubectl apply -f ./deploy
 
-mkdir -p metadata/run1/$NODES
-kubectl get nodes -o json > metadata/run1/$NODES/nodes-$NODES-$(date +%s).json
+    mkdir -p metadata/run1/$NODES
+    kubectl get nodes -o json > metadata/run1/$NODES/nodes-$NODES-$(date +%s).json
 
 # In another terminal
 # NODES=64
-# kubectl logs -n monitoring $(kubectl get pods -n monitoring | jq -r [0].metadata.name) -f  |& tee ./metadata/run1/$NODES/events-size-$NODES-$(date +%s).json
+# kubectl logs -n monitoring $(kubectl get pods -o json -n monitoring | jq -r .items[0].metadata.name) -f  |& tee ./metadata/run1/$NODES/events-size-$NODES-$(date +%s).json
 
-python run-experiment.py --nodes $NODES --study ./studies/run1.json
-gcloud container clusters delete test-cluster --region=us-central1-a
-
+    time python run-experiment.py --nodes $NODES --study ./studies/run1.json
+    gcloud container clusters delete test-cluster-$NODES --region=us-central1-a
 done
 ```
-
-Here is the output from the script (wrapping automation for all runs):
-
-<details>
-
-<summary>Wrapped time for runs</summary>
-
-```console
-# size 4 (not final study containers)
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 694.6678006649017 seconds
-
-# size 4 (final study containers)
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1383.645084142685 seconds
-
-# size 8
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1392.8416512012482 seconds
-
-# size 16
-kubectl delete -f /tmp/job-86ljvb30.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1408.475350856781 seconds
-
-# size 32
-kubectl delete -f /tmp/job-8x3al9cq.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1426.8381447792053 seconds
-
-# size 64
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-a_75wuum.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1535.1909275054932 seconds
-
-# size 128
-kubectl delete -f /tmp/job-jd3nj2cz.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1940.994199514389 seconds
-
-# size 256
-kubectl wait --for=condition=complete job/container-pull --timeout=1200s
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-er3kyteb.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 2884.183334827423 seconds
-```
-
-</details>
-
-Note how the total experiment time goes up by quite a bit, but the plots don't reflect that. There is something else in here taking time - maybe just waiting for the job to complete?
 
 #### Analysis
 
@@ -131,40 +68,18 @@ python analysis/3-parse-containers.py --data ./analysis/data/run1
 # And similarity
 python analysis/4-similarity.py --data ./analysis/data/run1
 ```
-The scripts in [analysis](analysis) provide parsing of experiment metadata. See [test](test.md) for preliminary testing. Here are the complete times (recorded by the script) that wrapped the experiment.
 
-Here are the two plots (y scale is the same):
+The scripts in [analysis](analysis) provide parsing of experiment metadata. Here are the plots:
 
-![analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers.png](analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers.png)
 ![analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers.png](analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers.png)
-
-I see the following:
-
-- The larger number of layers (smaller size per layer) has an overall higher median value, but much less variation. This makes sense, because maybe it could be less burden on the network, or less subject to variability of it?
-- The smaller number of layers (and larger size per layer) has a lower overall mean, but much larger variation. I'd guess the longer pull makes it more subject to the network. If extraction is used in container pulling, this could also reflect the filesystem.
-
-BUT the log makes those "differences" less pronounced.
-
-![analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers_log.png](analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers_log.png)
 ![analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers_log.png](analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers_log.png)
 
-
-I believe that layer extraction is done sequentially, so there are two pieces to that. More layers == more things to do, but they are smaller tasks. The flip is fewer extractions, but each one is larger. I think we need to look at the influence of network and storage. We can do that next. Specifically I want to:
-
-- Do an experiment that uses Google's artifact registry (reduce latency to pull) run2 - NO
-- Do an experiment set that uses a local SSD 
-- Do an experiment that enables container streaming (this requires the previous point)
-- Zstandard compressed container images
-
-I then think it would be super cool to try profiling the container technology (during a pull to one node) to see how that time breaks down! We next want to run the same study as before, but follow [best practices](https://cloud.google.com/blog/products/containers-kubernetes/tips-and-tricks-to-reduce-cold-start-latency-on-gke) suggested by Google Cloud. The general strategy of these practices can be mapped to other clouds.
 
 ### run2
 
 > test pulling containers on n1-standard-16 with gcr.io
 
-This will answer the question if using a registry in the same region (in the same cloud) can reduce pull times. We can hypothesize that pulling from a registry located int he same region (us-central1) could reduce latency as oppose to using GitHub packages (ghcr.io). I first created the Artifact Registry "converged-computing" under my project, then I tagged and pushed the images:
-
-The answer is no!
+This will answer the question if using a registry in the same region (in the same cloud) can reduce pull times. The answer is no.
 
 ```bash
 # configure registry
@@ -185,7 +100,7 @@ GOOGLE_PROJECT=myproject
 for NODES in 4 8 16 32 64 128 256
   do
 
-time gcloud container clusters create test-cluster \
+    time gcloud container clusters create test-cluster-$NODES \
     --threads-per-core=1 \
     --num-nodes=$NODES \
     --machine-type=n1-standard-16 \
@@ -193,81 +108,22 @@ time gcloud container clusters create test-cluster \
     --region=us-central1-a \
     --project=${GOOGLE_PROJECT} 
 
-cd /tmp/kubernetes-event-exporter
-kubectl create namespace monitoring
-kubectl apply -f deploy
-cd -
+    kubectl create namespace monitoring
+    kubectl apply -f deploy
+    cd -
 
-mkdir -p metadata/run2/$NODES
-kubectl get nodes -o json > metadata/run2/$NODES/nodes-$NODES-$(date +%s).json
+    mkdir -p metadata/run2/$NODES
+    kubectl get nodes -o json > metadata/run2/$NODES/nodes-$NODES-$(date +%s).json
 
 # In another terminal
 # NODES=4
 # kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/run2/$NODES/events-size-$NODES-$(date +%s).json
 
-python run-experiment.py --nodes $NODES --study ./studies/run2.json
-gcloud container clusters delete test-cluster --region=us-central1-a
+    python run-experiment.py --nodes $NODES --study ./studies/run2.json
+    gcloud container clusters delete test-cluster-$NODES --region=us-central1-a
 
 done
 ```
-
-<details>
-
-<summary>Wrapped time for runs</summary>
-
-```console
-# size 4
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-5ywx0uto.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1375.4710006713867 seconds
-
-# size 8
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-4lsbfmns.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1381.183841228485 seconds
-
-# size 16
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-x2oqqhsk.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1366.366715669632 seconds
-
-# size 32
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-uv4o5wdy.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1367.845073223114 seconds
-
-# size 64
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-yh43g0tr.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1465.6497366428375 seconds
-
-# size 128
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-gilsnk4a.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1754.5072467327118 seconds
-
-# size 256
-kubectl wait --for=condition=complete job/container-pull --timeout=1200s
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-_qygl2qr.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 2550.7278447151184 seconds
-```
-
-</details>
 
 #### Analysis
 
@@ -282,19 +138,11 @@ python analysis/1-prepare-data.py --root ./metadata/run2 --out ./analysis/data/r
 
 # This generates (or updates) plots!
 python analysis/3-parse-containers.py --data ./analysis/data/run2
-
-# Can't run similarity for google cloud - no manifests.
-# but they are the same images, should be the same!
 ```
 
 These plots are almost identical to the first. There is no benefit to gcr.io, as is (without anything else) aside from needing to pay for it.
 
-![analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers.png)
 ![analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers.png)
-
-And the log images:
-
-![analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_125_layers_log.png)
 ![analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers.png](analysis/data/run2/img/pull_times_duration_by_size_run2_9_layers_log.png)
 
 
@@ -302,16 +150,14 @@ And the log images:
 
 > test adding local SSD to improve filesystem latency
 
-This will test if improving filesystem latency will speed up pulls! You can read [more about it here](https://cloud.google.com/compute/docs/disks/local-ssd). For this set of containers, since we see equivalent performance between ghcr.io and gcr.io, we can stick with gcr.io. Note that we only went up to size 64 - sizes 128 and 256 went over the quota.
+This will test if improving filesystem latency will speed up pulls! You can read [more about it here](https://cloud.google.com/compute/docs/disks/local-ssd). For this set of containers, since we see equivalent performance between ghcr.io and gcr.io, we can stick with our original run1. Note that we only went up to size 64 - sizes 128 and 256 went over the quota.
 
 ```console
 GOOGLE_PROJECT=myproject
 for NODES in 4 8 16 32 64
   do
 
-# 128 256 are not done yet, over quota
-
-time gcloud container clusters create test-cluster \
+  time gcloud container clusters create test-cluster-$NODES \
     --ephemeral-storage-local-ssd count=1 \
     --threads-per-core=1 \
     --num-nodes=$NODES \
@@ -320,73 +166,20 @@ time gcloud container clusters create test-cluster \
     --region=us-central1-a \
     --project=${GOOGLE_PROJECT} 
 
-cd /tmp/kubernetes-event-exporter
-kubectl create namespace monitoring
-kubectl apply -f deploy
-cd -
+    kubectl create namespace monitoring
+    kubectl apply -f deploy
 
-mkdir -p metadata/run3/$NODES
-kubectl get nodes -o json > metadata/run3/$NODES/nodes-$NODES-$(date +%s).json
+    mkdir -p metadata/run3/$NODES
+    kubectl get nodes -o json > metadata/run3/$NODES/nodes-$NODES-$(date +%s).json
 
 # In another terminal
 # NODES=4
 # kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/run3/$NODES/events-size-$NODES-$(date +%s).json
 
-python run-experiment.py --nodes $NODES --study ./studies/run2.json
-gcloud container clusters delete test-cluster --region=us-central1-a --quiet
-
+    time python run-experiment.py --nodes $NODES --study ./studies/run2.json
+    gcloud container clusters delete test-cluster-$NODES --region=us-central1-a --quiet
 done
 ```
-
-<details>
-
-<summary>Wrapped time for runs</summary>
-
-```console
-# size 4
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-72cdbfhz.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1018.2316541671753 seconds
-
-# size 8
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-7dbo75ss.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1012.093866109848 seconds
-
-# size 16
-kubectl wait --for=condition=complete job/container-pull --timeout=1200s
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-7dbo75ss.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1012.093866109848 seconds
-
-# size 32
-kubectl wait --for=condition=complete job/container-pull --timeout=1200s
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-t117svkr.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1093.947240114212 seconds
-
-# size 64
-kubectl wait --for=condition=complete job/container-pull --timeout=1200s
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-v30fo2bu.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1147.4819929599762 seconds
-
-# size 128
-
-# size 256
-```
-
-</details>
 
 #### Analysis
 
@@ -408,30 +201,22 @@ python analysis/3-parse-containers.py --data ./analysis/data/run3
 
 Oh wow - this is big! I could only go up to size 64 (quota for the storage for one VM family went over) but we can see that for the largest size, the variability is hugely decreased, and the pull times are 20-40 seconds faster. 
 
-![analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers.png)
 ![analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers.png)
-
-This could be significant for a GPU cluster. Local SSDs are [also very cheap](https://cloud.google.com/compute/disks-image-pricing#localssdpricing) - $0.1046 per GB per month, so (if we did the calculation for a scoped experiment) it very likely would be worth the time of having the cluster up. One question I have (that we could further investigate) is how much SSD can you add (the count variable) before you stop seeing improvements. Finally, the log images:
-
-![analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_125_layers_log.png)
 ![analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers.png](analysis/data/run3/img/pull_times_duration_by_size_run3_9_layers_log.png)
+
 
 ### run 4
 
 > Using container streaming
 
-As described [here](https://cloud.google.com/blog/products/containers-kubernetes/tips-and-tricks-to-reduce-cold-start-latency-on-gke) and [container streaming](https://cloud.google.com/blog/products/containers-kubernetes/introducing-container-image-streaming-in-gke) is:
-
-> Image streaming works by mounting the container data layer in containerd using a sophisticated network mount, and backing it with multiple caching layers on the network, in-memory and on-disk. Your container transitions from the ImagePulling status to Running in a couple of seconds (regardless of container size) once we prepare the image streaming mount; this effectively parallelizes the application boot with the data transfer of required data in the container image. As a result, you can expect to see much faster container boot times and snappier autoscaling. 
-
-It's not clear if this will be reflected in container events. If the image can go to running sooner, we might need to do another experiment that actually runs something (and then record the time it takes to do that). We will see. 
+As described [here](https://cloud.google.com/blog/products/containers-kubernetes/tips-and-tricks-to-reduce-cold-start-latency-on-gke) and [here](https://cloud.google.com/blog/products/containers-kubernetes/introducing-container-image-streaming-in-gke).
 
 ```console
 GOOGLE_PROJECT=myproject
 for NODES in 4 8 16 32 64 128 256
   do
 
-time gcloud container clusters create test-cluster \
+    time gcloud container clusters create test-cluster-$NODES \
     --image-type="COS_CONTAINERD" \
     --enable-image-streaming \
     --threads-per-core=1 \
@@ -441,118 +226,20 @@ time gcloud container clusters create test-cluster \
     --region=us-central1-a \
     --project=${GOOGLE_PROJECT} 
 
-cd /tmp/kubernetes-event-exporter
-kubectl create namespace monitoring
-kubectl apply -f deploy
-cd -
+    kubectl create namespace monitoring
+    kubectl apply -f deploy
 
-mkdir -p metadata/run4/$NODES
-kubectl get nodes -o json > metadata/run4/$NODES/nodes-$NODES-$(date +%s).json
+    mkdir -p metadata/run4/$NODES
+    kubectl get nodes -o json > metadata/run4/$NODES/nodes-$NODES-$(date +%s).json
 
 # In another terminal
 # NODES=4
 # kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/run4/$NODES/events-size-$NODES-$(date +%s).json
 
-python run-experiment.py --nodes $NODES --study ./studies/run2.json
-gcloud container clusters delete test-cluster --region=us-central1-a --quiet
-
+    python run-experiment.py --nodes $NODES --study ./studies/run4.json
+    gcloud container clusters delete test-cluster-$NODES --region=us-central1-a --quiet
 done
 ```
-
-<details>
-
-<summary>Wrapped time for runs</summary>
-
-```console
-# size 4
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-7satz2uh.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1286.9867091178894 seconds
-Deleting cluster test-cluster...done.  
-
-# size 8
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-1423io2e.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1332.5545303821564 seconds
-
-# size 16
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-3m7rh1zb.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1399.6686463356018 seconds
-
-# size 32
-kubectl delete -f /tmp/job-1k14vepn.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1440.1837031841278 seconds
-Deleting cluster test-cluster...done.  
-
-# size 64
-kubectl delete -f /tmp/job-hw6kf_u5.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 1674.736645936966 seconds
-Deleting cluster test-cluster...done.  
-
-# size 128
-kubectl wait --for=condition=complete job/container-pull --timeout=1200s
-job.batch/container-pull condition met
-kubectl delete -f /tmp/job-0uylqxbh.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 3667.703760623932 seconds
-
-# size 256
-kubectl delete -f /tmp/job-89s27zxh.yaml --wait=true
-job.batch "container-pull" deleted
-Experiments are done!
-total time to run is 4335.0549857616425 seconds
-```
-
-For the largest size there was a problem with this container - led to "ContainerStatusUnknown"
-
-```
-Running experiment for container us-central1-docker.pkg.dev/llnl-flux/converged-computing/container-chonks:125-layers-size-14968733095-bytes, 33 of 38
-kubectl apply -f /tmp/job-d1tvtlel.yaml
-job.batch/container-pull created
-kubectl wait --for=condition=complete job/container-pull --timeout=1200s
-```
-
-I'm also seeing a lot of this:
-
-```
-container-pull-228-55rrv   0/1     ImagePullBackOff   0          68s
-container-pull-229-28npk   0/1     ErrImagePull       0          65s
-container-pull-23-9z5s8    0/1     Completed          0          75s
-container-pull-230-k4rpl   0/1     ImagePullBackOff   0          65s
-container-pull-231-jsndm   0/1     ErrImagePull       0          66s
-container-pull-232-qsd75   0/1     ErrImagePull       0          67s
-```
-I also saw Evicted:
-
-```
-container-pull-134-w9jjs   0/1     Evicted     0          7m9s
-container-pull-136-bhqxb   0/1     Completed   0          7m8s
-container-pull-15-tx576    0/1     Completed   0          7m15s
-container-pull-150-58vwl   0/1     Evicted     0          7m4s
-container-pull-158-4px9l   0/1     Completed   0          7m6s
-container-pull-167-86tsx   0/1     Evicted     0          7m5s
-container-pull-169-5mrjc   0/1     Completed   0          7m6s
-container-pull-172-fsmlp   0/1     Evicted     0          7m4s
-container-pull-174-l5gz4   0/1     Evicted     0          7m3s
-container-pull-175-7nvpb   0/1     Evicted     0          7m4s
-```
-So we might have hit some kind of limit with this size.
-
-Thinking - I think we should choose one size (since it doesn't matter that much) that is relatively larger and do this again without purging the cache. Perhaps that was causing the problem?
-
-</details>
 
 #### Analysis
 
@@ -567,16 +254,9 @@ python analysis/1-prepare-data.py --root ./metadata/run4 --out ./analysis/data/r
 
 # This generates (or updates) plots!
 python analysis/3-parse-containers.py --data ./analysis/data/run4
-
-# Can't run similarity for google cloud - no manifests.
-# but they are the same images, should be the same!
 ```
 
-These plots might need a redo, because I did see the errors above. I did get the sense that they are pulling more quickly, but I also saw a lot of errors. I'll wait to see the costs for running the above and craft another experiment.
-
-![analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers.png](analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers.png)
 ![analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png](analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png)
-![analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers.png](analysis/data/run4/img/pull_times_duration_by_size_run4_125_layers_log.png)
 ![analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png](analysis/data/run4s/img/pull_times_duration_by_size_run4_9_layers_log.png)
 
 ### streaming
@@ -623,7 +303,7 @@ GOOGLE_PROJECT=myproject
 for NODES in 4 8 16 32 64 128 256
   do
 
-time gcloud container clusters create test-cluster \
+    time gcloud container clusters create test-cluster-${NODES} \
     --image-type="COS_CONTAINERD" \
     --threads-per-core=1 \
     --num-nodes=$NODES \
@@ -632,32 +312,21 @@ time gcloud container clusters create test-cluster \
     --region=us-central1-a \
     --project=${GOOGLE_PROJECT} 
 
-cd /tmp/kubernetes-event-exporter
-kubectl create namespace monitoring
-kubectl apply -f deploy
-cd -
+    kubectl create namespace monitoring
+    kubectl apply -f deploy
 
-mkdir -p metadata/without-streaming/$NODES
-kubectl get nodes -o json > metadata/without-streaming/$NODES/nodes-$NODES-$(date +%s).json
+    mkdir -p metadata/without-streaming/$NODES
+    kubectl get nodes -o json > metadata/without-streaming/$NODES/nodes-$NODES-$(date +%s).json
 
 # In another terminal:
 # kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/without-streaming/$NODES/events-size-$NODES-$(date +%s).json
 
-python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/without-streaming/$NODES/logs
-gcloud container clusters delete test-cluster --region=us-central1-a --quiet
-
+    python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/without-streaming/$NODES/logs
+    gcloud container clusters delete test-cluster-${NODES} --region=us-central1-a --quiet
 done
 ```
 
-Total experiment times (without streaming)
-
-- 4: (not recorded)
-- 8: 349.02490305900574 seconds
-- 16: 417.4731261730194 seconds
-- 32: 487.6656312942505 seconds
-- 64: 1061.1585018634796 seconds
-
-I stopped at size 64 because it gets very expensive given the network.
+I stopped at size 64 since it gets expensive with the network.
 
 #### streaming
 
@@ -666,7 +335,7 @@ GOOGLE_PROJECT=myproject
 for NODES in 4 8 16 32 64 128 256
   do
 
-time gcloud container clusters create test-cluster \
+    time gcloud container clusters create test-cluster-$NODES \
     --image-type="COS_CONTAINERD" \
     --enable-image-streaming \
     --threads-per-core=1 \
@@ -676,32 +345,21 @@ time gcloud container clusters create test-cluster \
     --region=us-central1-a \
     --project=${GOOGLE_PROJECT} 
 
-cd /tmp/kubernetes-event-exporter
-kubectl create namespace monitoring
-kubectl apply -f deploy
-cd -
+    kubectl create namespace monitoring
+    kubectl apply -f deploy
 
-mkdir -p metadata/streaming/$NODES
-kubectl get nodes -o json > metadata/streaming/$NODES/nodes-$NODES-$(date +%s).json
+    mkdir -p metadata/streaming/$NODES
+    kubectl get nodes -o json > metadata/streaming/$NODES/nodes-$NODES-$(date +%s).json
 
 # In another terminal
 # NODES=4
 # kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f  |& tee ./metadata/streaming/$NODES/events-size-$NODES-$(date +%s).json
 
-python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/streaming/$NODES/logs
-gcloud container clusters delete test-cluster --region=us-central1-a --quiet
+    python run-streaming-experiment.py --nodes $NODES --study ./studies/streaming.json --outdir ./metadata/streaming/$NODES/logs
+    gcloud container clusters delete test-cluster-$NODES --region=us-central1-a --quiet
 
 done
 ```
-
-Total experiment times (streaming)
-
-- 4: (not recorded)
-- 8: 340.0614514350891 seconds
-- 16: 401.97024512290955 seconds
-- 32: 550.8497557640076 seconds
-- 64: 1319.139487028122 seconds
-
 Parse the results, akin to before.
 
 ```bash
@@ -712,44 +370,10 @@ python analysis/1-prepare-streaming-data.py --out ./analysis/data/streaming
 python analysis/3-parse-streaming-containers.py --data ./analysis/data/streaming
 ```
 
-Wow, that's a pretty substantial difference, at least in terms of pull times reported by the kubelet. This time we can be confident that the application is running, as opposed to our simulation that didn't have a real entrypoint. 
+Wow, that's a pretty substantial difference, at least in terms of pull times reported by the kubelet. This time we can be confident that the application is running, as opposed to our simulation that didn't have a real entrypoint. The reason we see the smallest size not be optimized is from [this page](https://cloud.google.com/kubernetes-engine/docs/how-to/image-streaming):
+
+> You might not notice the benefits of Image streaming during the first pull of an eligible image. However, after Image streaming caches the image, future image pulls on any cluster benefit from Image streaming.
 
 ![analysis/data/streaming/img/pull_times_duration_by_nodes.png](analysis/data/streaming/img/pull_times_duration_by_nodes.png)
 ![analysis/data/streaming/img/pull_times_duration_by_nodes_log.png](analysis/data/streaming/img/pull_times_duration_by_nodes_log.png)
-
-
-##### Hypothetical cost estimation
-
-The sums of pull times between the studies are substantial:
-
-```console
-Total duration (sum) of pulls between experiments:
-experiment
-streaming            318.403
-without-streaming    6533.25
-Name: duration, dtype: object
-```
-
-For each of the above, in hours:
-
-- streaming: 0.08844527777777779 hours
-- without-streaming: 1.8147916666666668 hours
-
-It's still 20.5x slower without streaming. If we plug in different cloud costs to that (assuming this pull time across the clouds):
-
-| Experiment | Cloud | Environment | Cost per Hour | Estimate |
-|------------|-------|-------------|---------------|----------|
-| streaming | Google | CPU         | 5.09          |  0.45    |
-| without-streaming | Google | CPU | 5.09          |  9.24    |
-| streaming | Google | GPU         | 23.36         |  2.06       |
-| without-streaming | Google | GPU | 23.36         | 42.39    |
-| streaming | AWS | CPU         | 3.04      |  0.267    |
-| without-streaming | AWS | CPU | 3.04      | 5.52     |
-| streaming | AWS | GPU         | 34.49     |  3.05   |
-| without-streaming | AWS | GPU | 34.49     | 62.59 |
-| streaming | Azure | CPU         | 3.60  |   0.32   |
-| without-streaming | Azure | CPU | 3.60  |  6.53    |
-| streaming | Azure | GPU         | 22.032  |  1.95        |
-| without-streaming | Azure | GPU | 22.032 |    39.98  |
-
 

@@ -18,12 +18,6 @@ For each cluster size:
 
 ## Experiments
 
-Prepare event exporter
-
-```
-git clone https://github.com/resmoio/kubernetes-event-exporter /tmp/kubernetes-event-exporter
-```
-
 ### run1
 
 > test pulling containers on c5a.4xlarge sizes 4-256
@@ -32,19 +26,20 @@ git clone https://github.com/resmoio/kubernetes-event-exporter /tmp/kubernetes-e
 for NODES in 4 8 16 32 64 128 256
   do
   time eksctl create cluster --config-file ./eks-config-${NODES}.yaml
-  aws eks update-kubeconfig --region us-east-2 --name pulling-study
+  aws eks update-kubeconfig --region us-east-2 --name pulling-study-${NODES}
 
-  cd /tmp/kubernetes-event-exporter
+  # If we increase the frequency of checking events we get:
+  # error: http2: server sent GOAWAY and closed the connection; LastStreamID=3, ErrCode=NO_ERROR, debug=""
+
   kubectl create namespace monitoring
-  kubectl apply -f deploy
-  cd -
+  kubectl apply -f ./deploy
 
   mkdir -p metadata/run1/$NODES
   kubectl get nodes -o json > metadata/run1/$NODES/nodes-$NODES-$(date +%s).json
 
   # In another terminal
   # NODES=4
-  # kubectl logs -n monitoring ${pod} -f |& tee ./metadata/run1/$NODES/events-size-$NODES-$(date +%s).json
+  # kubectl logs -n monitoring $(kubectl get pods -n monitoring -o json | jq -r .items[0].metadata.name) -f |& tee ./metadata/run1/$NODES/events-size-$NODES-$(date +%s).json
 
   python run-experiment.py --nodes $NODES --study ./studies/run1.json
   time eksctl delete cluster --config-file ./eks-config-${NODES}.yaml --wait
@@ -89,7 +84,6 @@ std 0.17210235537054003
 The scripts in [analysis](analysis) provide parsing of experiment metadata. 
 Here are the two plots (y scale is the same):
 
-![analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers.png](analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers.png)
 ![analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers.png](analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers.png)
 
 I see the following:
@@ -99,7 +93,6 @@ I see the following:
 
 BUT the log makes those "differences" less pronounced.
 
-![analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers_log.png](analysis/data/run1/img/pull_times_duration_by_size_run1_125_layers_log.png)
 ![analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers_log.png](analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers_log.png)
 
 

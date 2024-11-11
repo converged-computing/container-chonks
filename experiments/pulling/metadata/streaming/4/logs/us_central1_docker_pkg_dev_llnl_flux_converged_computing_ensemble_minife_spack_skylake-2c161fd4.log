@@ -1,129 +1,0 @@
-/usr/bin/time is required to use logging.timed true
-
-Flux install root: /mnt/flux/view
-
-🟧️  wait-fs: 2024/10/04 04:11:59 wait-fs.go:40: /mnt/flux/flux-operator-done.txt
-🟧️  wait-fs: 2024/10/04 04:11:59 wait-fs.go:49: Found existing path /mnt/flux/flux-operator-done.txt
-Python version: /mnt/flux/view/bin/python3.11
-Python root: /mnt/flux/view/lib/python3.11
-PYTHONPATH is :/mnt/flux/view/lib/python3.11/site-packages
-PATH is /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/flux/view/bin
-/mnt/flux/view/lib/libpython3.so
-/mnt/flux/view/lib/libpython3.11.so
-/mnt/flux/view/lib/libpython3.11.so.1.0
-./mnt/flux/view/lib/libpython3.so
-./mnt/flux/view/lib/libpython3.11.so
-./mnt/flux/view/lib/libpython3.11.so.1.0
-./mnt/flux/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/python-3.11.7-dne37dvjelr7oaag76ipidxkt5uyr5is/lib/libpython3.so
-./mnt/flux/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/python-3.11.7-dne37dvjelr7oaag76ipidxkt5uyr5is/lib/libpython3.11.so
-./mnt/flux/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/python-3.11.7-dne37dvjelr7oaag76ipidxkt5uyr5is/lib/libpython3.11.so.1.0
-./opt/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/python-3.11.7-dne37dvjelr7oaag76ipidxkt5uyr5is/lib/libpython3.so
-./opt/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/python-3.11.7-dne37dvjelr7oaag76ipidxkt5uyr5is/lib/libpython3.11.so
-./opt/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/python-3.11.7-dne37dvjelr7oaag76ipidxkt5uyr5is/lib/libpython3.11.so.1.0
-lrwxrwxrwx 1 root root 121 Oct  4 04:11 /mnt/flux/view/lib/libpython3.11.so.1.0 -> /opt/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/python-3.11.7-dne37dvjelr7oaag76ipidxkt5uyr5is/lib/libpython3.11.so.1.0
-
-Hello user root
-
-🌟️ Curve Certificate
-curve.cert
-#   ****  Generated on 2023-04-26 22:54:42 by CZMQ  ****
-#   ZeroMQ CURVE **Secret** Certificate
-#   DO NOT PROVIDE THIS FILE TO OTHER USERS nor change its permissions.
-    
-metadata
-    name = "flux-cert-generator"
-    keygen.hostname = "flux-sample-0"
-curve
-    public-key = "ZY@(5D{#NiuAoFTZOH#Xmcm$@8NS6bB3nT-P-6=:"
-    secret-key = "Y#Z.}P2e5N3P}biqK^^Ihr)2$O</RDl>S1>{ao[u"
-👋 Hello, I'm flux-sample-0
-The main host is flux-sample-0
-The working directory is /, contents include:
-bin   dev  flux_operator  lib	 lib64	 media	opt   root  sbin  sys  usr
-boot  etc  home		  lib32  libx32  mnt	proc  run   srv   tmp  var
-0% [Working]            Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
-0% [Connecting to archive.ubuntu.com (185.125.190.82)] [1 InRelease 11.0 kB/129                                                                               0% [Waiting for headers]                        Get:2 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
-0% [2 InRelease 13.8 kB/270 kB 5%]0% [2 InRelease 33.5 kB/270 kB 12%]                                   Get:3 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [3113 kB]
-0% [2 InRelease 36.3 kB/270 kB 13%] [3 Packages 4013 B/3113 kB 0%]                                                                  0% [2 InRelease 121 kB/270 kB 45%]0% [3 Packages store 0 B] [2 InRelease 124 kB/270 kB 46%] [Waiting for headers]                                                                               Get:4 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [2318 kB]
-0% [3 Packages store 0 B] [2 InRelease 142 kB/270 kB 53%] [4 Packages 11.1 kB/2                                                                               0% [3 Packages store 0 B] [4 Packages 2318 kB/2318 kB 100%]0% [3 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                                                     Get:5 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1159 kB]
-0% [3 Packages store 0 B] [Waiting for headers] [5 Packages 117 kB/1159 kB 10%]                                                                               0% [3 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                                                     Get:6 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [44.7 kB]
-0% [3 Packages store 0 B] [Waiting for headers] [6 Packages 44.7 kB/44.7 kB 100                                                                               0% [Waiting for headers] [6 Packages 44.7 kB/44.7 kB 100%]0% [4 Packages store 0 B] [Waiting for headers] [6 Packages 44.7 kB/44.7 kB 100                                                                               Get:7 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
-0% [4 Packages store 0 B] [7 InRelease 2508 B/128 kB 2%] [6 Packages 44.7 kB/44                                                                               0% [4 Packages store 0 B] [7 InRelease 92.6 kB/128 kB 72%]                                                          0% [4 Packages store 0 B]0% [4 Packages store 3870 kB] [Waiting for headers]                                                   0% [Waiting for headers]0% [5 Packages store 0 B] [Waiting for headers]                                               0% [Waiting for headers]0% [6 Packages store 0 B] [Waiting for headers]                                               0% [Waiting for headers]                        Get:8 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
-0% [8 InRelease 2508 B/127 kB 2%]                                 0% [Working]0% [Waiting for headers]                        Get:9 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
-0% [9 Packages 2577 B/164 kB 2%]                                0% [Waiting for headers]                        Get:10 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
-0% [10 Packages 42.8 kB/266 kB 16%]0% [9 Packages store 0 B] [10 Packages 42.8 kB/266 kB 16%]                                                          0% [10 Packages 85.0 kB/266 kB 32%]33% [10 Packages 251 kB/266 kB 95%]                                   33% [Waiting for headers]                         Get:11 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
-33% [11 Packages 91.7 kB/17.5 MB 1%]33% [10 Packages store 0 B] [11 Packages 123 kB/17.5 MB 1%]                                                           34% [11 Packages 170 kB/17.5 MB 1%]54% [11 Packages 8688 kB/17.5 MB 50%]74% [11 Packages 17.5 MB/17.5 MB 100%]                                      74% [Waiting for headers]                         Get:12 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
-74% [12 Packages 118 kB/1792 kB 7%]74% [11 Packages store 0 B] [12 Packages 118 kB/1792 kB 7%]                                                           78% [11 Packages store 0 B] [Waiting for headers]                                                 Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [3191 kB]
-79% [11 Packages store 0 B] [13 Packages 95.2 kB/3191 kB 3%]                                                            86% [11 Packages store 0 B] [Waiting for headers]                                                 Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [2596 kB]
-86% [11 Packages store 0 B] [14 Packages 78.9 kB/2596 kB 3%]                                                            92% [11 Packages store 0 B] [Waiting for headers]                                                 Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1447 kB]
-92% [11 Packages store 0 B] [15 Packages 140 kB/1447 kB 10%]                                                            95% [11 Packages store 0 B] [Waiting for headers]                                                 Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [51.8 kB]
-                                                 Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [33.7 kB]
-95% [11 Packages store 0 B] [17 Packages 33.7 kB/33.7 kB 100%]                                                              Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [81.4 kB]
-96% [11 Packages store 0 B] [18 Packages 81.4 kB/81.4 kB 100%]                                                              96% [11 Packages store 0 B]96% [11 Packages store 0 B]                           96% [Working]96% [12 Packages store 0 B]                           97% [Working]97% [13 Packages store 0 B]                           97% [Working]97% [14 Packages store 0 B]                           98% [Working]98% [15 Packages store 0 B]                           98% [Working]98% [16 Packages store 0 B]                           99% [Working]99% [17 Packages store 0 B]                           99% [Working]99% [18 Packages store 0 B]                           100% [Working]              Fetched 34.4 MB in 5s (7542 kB/s)
-Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 5%Reading package lists... 5%Reading package lists... 52%Reading package lists... 52%Reading package lists... 53%Reading package lists... 53%Reading package lists... 59%Reading package lists... 61%Reading package lists... 61%Reading package lists... 72%Reading package lists... 72%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 85%Reading package lists... 85%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%Reading package lists... 4%Reading package lists... 5%Reading package lists... 5%Reading package lists... 52%Reading package lists... 52%Reading package lists... 53%Reading package lists... 53%Reading package lists... 60%Reading package lists... 61%Reading package lists... 61%Reading package lists... 72%Reading package lists... 72%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 85%Reading package lists... 85%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
-Reading state information... 0% Reading state information... 3%Reading state information... Done
-The following NEW packages will be installed:
-  time
-0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
-Need to get 46.7 kB of archives.
-After this operation, 129 kB of additional disk space will be used.
-0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 time amd64 1.9-0.1build2 [46.7 kB]
-21% [1 time 12.4 kB/46.7 kB 27%]                                100% [Working]              Fetched 46.7 kB in 0s (283 kB/s)
-debconf: delaying package configuration, since apt-utils is not installed
-Selecting previously unselected package time.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5195 files and directories currently installed.)
-Preparing to unpack .../time_1.9-0.1build2_amd64.deb ...
-Unpacking time (1.9-0.1build2) ...
-Setting up time (1.9-0.1build2) ...
-🚩️ Flux Option Flags defined
-Command provided is: -o cpu-affinity=per-task /opt/view/bin/miniFE.x nx=230 ny=230 nz=230 use_locking=1 elem_group_size=10 use_elem_mat_fields=300 verify_solution=0
-Flags for flux are -N 4 -n32  
-
-🌀 Submit Mode: flux start -o --config /mnt/flux/view/etc/flux/config -Scron.directory=/etc/flux/system/cron.d   -Stbon.fanout=256   -Srundir=/mnt/flux/view/run/flux    -Sstatedir=/mnt/flux/view/var/lib/flux   -Slocal-uri=local:///mnt/flux/view/run/flux/local -Stbon.connect_timeout=5s    -Slog-stderr-level=6    -Slog-stderr-mode=local  flux submit  -N 4 -n32   --quiet --watch -o cpu-affinity=per-task /opt/view/bin/miniFE.x nx=230 ny=230 nz=230 use_locking=1 elem_group_size=10 use_elem_mat_fields=300 verify_solution=0
-Flags for flux are -N 4 -n32  
-broker.info[0]: start: none->join 0.47247ms
-broker.info[0]: parent-none: join->init 0.036446ms
-cron.info[0]: synchronizing cron tasks to event heartbeat.pulse
-job-manager.info[0]: restart: 0 jobs
-job-manager.info[0]: restart: 0 running jobs
-job-manager.info[0]: restart: checkpoint.job-manager not found
-broker.info[0]: rc1.0: running /opt/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/flux-core-0.61.2-zpun7rhwtkelzplutv4nvzwj5ydo7h7p/etc/flux/rc1.d/02-cron
-broker.info[0]: rc1.0: /opt/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/flux-core-0.61.2-zpun7rhwtkelzplutv4nvzwj5ydo7h7p/etc/flux/rc1 Exited (rc=0) 1.0s
-broker.info[0]: rc1-success: init->quorum 1.04155s
-broker.info[0]: online: flux-sample-0 (ranks 0)
-broker.info[0]: online: flux-sample-[0-3] (ranks 0-3)
-broker.info[0]: quorum-full: quorum->run 1.96476s
-      creating/filling mesh...0.024889s, total time: 0.024889
-generating matrix structure...0.56271s, total time: 0.587599
-         assembling FE data...0.960403s, total time: 1.548
-      imposing Dirichlet BC...0.17691s, total time: 1.72491
-      imposing Dirichlet BC...0.0183349s, total time: 1.74325
-making matrix indices local...0.357481s, total time: 2.10073
-Starting CG solver ... 
-Initial Residual = 231.002
-Iteration = 20   Residual = 0.0587955
-Iteration = 40   Residual = 0.0251403
-Iteration = 60   Residual = 0.104298
-Iteration = 80   Residual = 0.0103041
-Iteration = 100   Residual = 0.00738622
-Iteration = 120   Residual = 0.00539686
-Iteration = 140   Residual = 0.00394315
-Iteration = 160   Residual = 0.00362836
-Iteration = 180   Residual = 0.00204236
-Iteration = 200   Residual = 0.00209959
-Final Resid Norm: 0.00209959
-FLUXTIME fluxsubmit wall time 0:09.34
-broker.info[0]: rc2.0: /usr/bin/time -f FLUXTIME fluxsubmit wall time %E flux submit -N 4 -n32 --quiet --watch -o cpu-affinity=per-task /opt/view/bin/miniFE.x nx=230 ny=230 nz=230 use_locking=1 elem_group_size=10 use_elem_mat_fields=300 verify_solution=0 Exited (rc=0) 9.3s
-broker.info[0]: rc2-success: run->cleanup 9.34528s
-broker.info[0]: cleanup.0: flux jobtap remove perilog 2>/dev/null || true Exited (rc=0) 0.1s
-broker.info[0]: cleanup.1: flux queue stop --quiet --all --nocheckpoint Exited (rc=0) 0.2s
-broker.info[0]: cleanup.2: flux cancel --user=all --quiet --states RUN Exited (rc=0) 0.2s
-broker.info[0]: cleanup.3: flux queue idle --quiet Exited (rc=0) 0.2s
-broker.info[0]: cleanup-success: cleanup->shutdown 0.628827s
-broker.info[0]: children-complete: shutdown->finalize 0.165822s
-broker.info[0]: rc3.0: /opt/software/linux-ubuntu22.04-x86_64/gcc-11.4.0/flux-core-0.61.2-zpun7rhwtkelzplutv4nvzwj5ydo7h7p/etc/flux/rc3 Exited (rc=0) 0.3s
-broker.info[0]: rc3-success: finalize->goodbye 0.257065s
-broker.info[0]: goodbye: goodbye->exit 0.075423ms
-FLUXTIME fluxstart wall time 0:13.42
