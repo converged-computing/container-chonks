@@ -19,7 +19,7 @@ timestamp_format = "%Y-%m-%dT%H:%M:%SZ"
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description="Dockerfile Parser")
+    parser = argparse.ArgumentParser(description="Times Explorer")
     parser.add_argument(
         "--data",
         default=os.path.join(here, "data"),
@@ -129,7 +129,7 @@ def parse_times(times):
             parsed_end = datetime.strptime(end, timestamp_format)
             parsed_start = datetime.strptime(start, timestamp_format)
             elapsed = parsed_end - parsed_start
-            seconds = elapsed.min.seconds + elapsed.seconds
+            seconds = elapsed.seconds
 
         # parse layers, total size, and size per layer from tag
         tag = container.split(":")[-1]
@@ -139,6 +139,50 @@ def parse_times(times):
         total_size -= 5000000
         layers = int(layers)
         layer_size = total_size / layers
+
+        # parse all events for absolute timestamp
+        # For these we want absolute timestamps to compare across
+        # because we need to understand variation between nodes
+        for event_name in ["pulled", "pulling", "scheduled", "created", "started"]:
+            if event_name not in item["events"]:
+                continue
+            # For these, calculate a difference.
+            previous_event = {"created": "pulled", "started": "created"}
+            timestamp = item["events"][event_name]["timestamp"]
+            parsed_timestamp = datetime.strptime(timestamp, timestamp_format)
+            df.loc[idx, :] = [
+                event_name + "-timestamp",
+                parsed_timestamp.timestamp(),
+                container,
+                layers,
+                total_size,
+                layer_size,
+                experiment,
+                size,
+            ]
+            idx += 1
+            if event_name in previous_event:
+                previous_timestamp = item["events"][previous_event[event_name]][
+                    "timestamp"
+                ]
+                previous_timestamp = datetime.strptime(
+                    previous_timestamp, timestamp_format
+                )
+                elapsed = parsed_timestamp - previous_timestamp
+                event_seconds = elapsed.seconds
+                df.loc[idx, :] = [
+                    event_name,
+                    event_seconds,
+                    container,
+                    layers,
+                    total_size,
+                    layer_size,
+                    experiment,
+                    size,
+                ]
+                idx += 1
+            continue
+
         if seconds is not None:
             df.loc[idx, :] = [
                 "pulled",
@@ -170,7 +214,6 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     print(f"Total duration (sum) for experiment {experiment}:")
     print(df.duration.sum())
 
-    colors = sns.color_palette("hls", len(df.nodes.unique()))
     save_prefix = save_prefix or "pull_times_experiment_type"
 
     # Assume containers need at least 20 seconds to pull
@@ -183,58 +226,68 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
 
     experiment = list(df.experiment.unique())[0]
 
-    # Let's break into two plots, one for each number of layers
-    # within a plot, x axis is the cluster nodes (size) and color is image size
-    for layers in df.layers.unique():
-        subset = df[df.layers == layers]
-        hexcolors = colors.as_hex()
-        sizes = list(subset.nodes.unique())
-        sizes.sort()
-        palette = collections.OrderedDict()
-        for t in sizes:
-            palette[t] = hexcolors.pop(0)
+    # For now, assume just one layer size (what I did)
+    if len(df.layers.unique()) > 1:
+        raise ValueError("Found more than one layer count in the df, should not happen")
 
-        title = f"Container Pull times for Experiment with {layers} Layers, ghcr.io"
-        if experiment == "run2":
-            title = f"Container Pull times for Experiment with {layers} Layers, gcr.io"
+    # For each size, for each container, calculate the max-min timestmap
+    # (how long it takes for all nodes to do same operation)
+    ts_df = pandas.DataFrame(
+        columns=["nodes", "event", "time_range_seconds", "container"]
+    )
+    idx = 0
+    for size in df.nodes.unique():
+        size_df = df[df.nodes == size]
+        for container in df.container.unique():
+            container_df = size_df[size_df.container == container]
+            for event in [
+                "pulled-timestamp",
+                "pulling-timestamp",
+                "scheduled-timestamp",
+                "created-timestamp",
+                "started-timestamp",
+            ]:
+                subset = container_df[container_df.event == event]
+                duration = subset.duration.max() - subset.duration.min()
+                ts_df.loc[idx, :] = [
+                    size,
+                    event.replace("-timestamp", ""),
+                    duration,
+                    container,
+                ]
+                idx += 1
 
-        make_plot(
-            subset,
-            title=title,
-            ydimension="duration",
-            xdimension="total_size",
+    # Change container to just be size
+    ts_df.container = [x.split(":")[-1] for x in ts_df.container]
+    ts_df['image-size'] = [x.replace("9-layers-size-", "").replace('-', ' ') for x in ts_df.container]
+
+    colors = sns.color_palette("hls", len(ts_df['image-size'].unique()))
+    hexcolors = colors.as_hex()
+    sizes = list(ts_df['image-size'].unique())
+    sizes.sort()
+    palette = collections.OrderedDict()
+    for t in sizes:
+        palette[t] = hexcolors.pop(0)
+
+    for event in ts_df.event.unique():
+        event_df = ts_df[ts_df.event == event]
+        plotname=f"event_durations_size_{event}_{experiment}"
+        ax = make_plot(
+            event_df,
+            title=f"Time Differences Between Event \"{event.capitalize()}\" Across Nodes",
+            ydimension="time_range_seconds",
+            xdimension="nodes",
             outdir=outdir,
             ext="png",
-            plotname=f"pull_times_duration_by_size_{experiment}_{layers}_layers_log",
-            hue="nodes",
+            plotname=plotname,
+            hue="image-size",
             palette=palette,
             plot_type="bar",
-            xlabel="Total Image Size (bytes)",
-            ylabel="Pull time (log of seconds)",
-            do_log=True,
+            xlabel="Number of Nodes",
+            ylabel="Latest-Earliest (Seconds)",
+            # do_log=True,
             # With log, no ylimit
-            ylim=None,
-        )
-
-        ylim = None
-        if experiment in ["run1", "run2", "run3"]:
-            ylim = (0, 180)
-
-        # Without log, set ylimit
-        make_plot(
-            subset,
-            title=title,
-            ydimension="duration",
-            xdimension="total_size",
-            outdir=outdir,
-            ext="png",
-            plotname=f"pull_times_duration_by_size_{experiment}_{layers}_layers",
-            hue="nodes",
-            palette=palette,
-            plot_type="bar",
-            xlabel="Total Image Size (bytes)",
-            ylabel="Pull time (seconds)",
-            ylim=ylim,
+            # ylim=None,
         )
 
 
@@ -257,16 +310,16 @@ def make_plot(
     """
     Helper function to make common plots.
     """
-    plotfunc = sns.boxplot
+    plotfunc = sns.lineplot
     if plot_type == "violin":
         plotfunc = sns.violinplot
 
     ext = ext.strip(".")
-    plt.figure(figsize=(9, 6))
+    plt.figure(figsize=(7, 3))
     sns.set_style("dark")
     if plot_type == "violin":
         ax = plotfunc(
-            x=xdimension, y=ydimension, hue=hue, data=df, linewidth=0.8, palette=palette
+            x=xdimension, y=ydimension, hue=hue, data=df, linewidth=0.8, palette=palette, marker="o",
         )
     else:
         ax = plotfunc(
@@ -274,10 +327,10 @@ def make_plot(
             y=ydimension,
             hue=hue,
             data=df,
-            linewidth=0.8,
+            linewidth=1.8,
             palette=palette,
-            whis=[5, 95],
-            dodge=True,
+            # whis=[5, 95],
+            # dodge=True,
         )
         # This range is specifically for pulling times -
         # so the ranges are equivalent
@@ -287,15 +340,16 @@ def make_plot(
     if do_log:
         plt.yscale("log")
     plt.title(title)
-    ax.set_xlabel(xlabel, fontsize=16)
-    ax.set_ylabel(ylabel, fontsize=16)
+    ax.set_xlabel(xlabel, fontsize=10)
+    ax.set_ylabel(ylabel, fontsize=10)
     ax.set_xticklabels(ax.get_xmajorticklabels(), fontsize=14)
     ax.set_yticklabels(ax.get_yticks(), fontsize=14)
+    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.xticks(rotation=90)
     plt.tight_layout()
-    plt.savefig(os.path.join(outdir, f"{plotname}.{ext}"))
+    plt.savefig(os.path.join(outdir, f"{plotname}.png"))
     plt.clf()
-
+    return ax
 
 if __name__ == "__main__":
     main()

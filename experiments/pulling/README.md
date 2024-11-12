@@ -67,13 +67,15 @@ python analysis/3-parse-containers.py --data ./analysis/data/run1
 
 # And similarity
 python analysis/4-similarity.py --data ./analysis/data/run1
+
+# Further explore times
+python analysis/4-explore-times.py --data ./analysis/data/run1
 ```
 
 The scripts in [analysis](analysis) provide parsing of experiment metadata. Here are the plots:
 
 ![analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers.png](analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers.png)
 ![analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers_log.png](analysis/data/run1/img/pull_times_duration_by_size_run1_9_layers_log.png)
-
 
 ### run2
 
@@ -136,6 +138,8 @@ python analysis/1-prepare-data.py --root ./metadata/run2 --out ./analysis/data/r
 
 # This generates (or updates) plots!
 python analysis/3-parse-containers.py --data ./analysis/data/run2
+
+python analysis/4-explore-times.py --data ./analysis/data/run2
 ```
 
 These plots are almost identical to the first. There is no benefit to gcr.io, as is (without anything else) aside from needing to pay for it.
@@ -195,6 +199,8 @@ python analysis/3-parse-containers.py --data ./analysis/data/run3
 
 # Can't run similarity for google cloud - no manifests.
 # but they are the same images, should be the same!
+
+python analysis/4-explore-times.py --data ./analysis/data/run3
 ```
 
 Oh wow - this is big! I could only go up to size 64 (quota for the storage for one VM family went over) but we can see that for the largest size, the variability is hugely decreased, and the pull times are 20-40 seconds faster. 
@@ -252,6 +258,7 @@ python analysis/1-prepare-data.py --root ./metadata/run4 --out ./analysis/data/r
 
 # This generates (or updates) plots!
 python analysis/3-parse-containers.py --data ./analysis/data/run4
+python analysis/4-explore-times.py --data ./analysis/data/run4
 ```
 
 ![analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png](analysis/data/run4/img/pull_times_duration_by_size_run4_9_layers.png)
@@ -374,4 +381,17 @@ Wow, that's a pretty substantial difference, at least in terms of pull times rep
 
 ![analysis/data/streaming/img/pull_times_duration_by_nodes.png](analysis/data/streaming/img/pull_times_duration_by_nodes.png)
 ![analysis/data/streaming/img/pull_times_duration_by_nodes_log.png](analysis/data/streaming/img/pull_times_duration_by_nodes_log.png)
+
+### The Mystery...
+
+It was a mystery to me why pulling times didn't change but the clusters were clearly up longer. I took a closer look at the events across the first set of experiments (run1) and I think we found our answer!
+
+![analysis/data/run1/img/pulling-times-assembled-run1.png](analysis/data/run1/img/pulling-times-assembled-run1.png)
+
+Here is what we are seeing!
+
+- Larger containers have more variation in event timestamps across nodes, regardless of size
+- As the number of nodes gets larger, the variation does too.
+
+TLDR: When you increase the size of the cluster, your experiments take longer, but not because of pulling time. Likely this is a batch scheduling or preparation strategy.
 

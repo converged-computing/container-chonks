@@ -155,11 +155,11 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
     """
     Given an output directory, plot image to show pull times.
     """
-    colors = sns.color_palette("hls", 20)
+    colors = sns.color_palette("hls", len(df.experiment.unique()))
     save_prefix = save_prefix or "pull_times_experiment_type"
 
     print(f"Total duration (sum) of pulls between experiments:")
-    print(df.groupby('experiment')['duration'].sum())
+    print(df.groupby("experiment")["duration"].sum())
 
     # Assume containers need at least 20 seconds to pull
     if filter_below is not None:
@@ -214,7 +214,6 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
             ylim=ylim,
         )
 
-
     # Squash applications
     hexcolors = colors.as_hex()
     exps = list(df.experiment.unique())
@@ -225,37 +224,37 @@ def plot_containers(df, outdir, save_prefix=None, filter_below=None, suffix=None
 
     title = f"Container Pull times for Streaming vs Without Across Sizes"
     make_plot(
-            df,
-            title=title,
-            ydimension="duration",
-            xdimension="nodes",
-            outdir=outdir,
-            ext="png",
-            plotname=f"pull_times_duration_by_nodes_log",
-            hue="experiment",
-            palette=palette,
-            plot_type="bar",
-            xlabel="Nodes",
-            ylabel="Pull time (log of seconds)",
-            do_log=True,
-            # With log, no ylimit
-            ylim=None,
-        )
+        df,
+        title=title,
+        ydimension="duration",
+        xdimension="nodes",
+        outdir=outdir,
+        ext="png",
+        plotname=f"pull_times_duration_by_nodes_log",
+        hue="experiment",
+        palette=palette,
+        plot_type="bar",
+        xlabel="Nodes",
+        ylabel="Pull time (log of seconds)",
+        do_log=True,
+        # With log, no ylimit
+        ylim=None,
+    )
 
     make_plot(
-            df,
-            title=title,
-            ydimension="duration",
-            xdimension="nodes",
-            outdir=outdir,
-            ext="png",
-            plotname=f"pull_times_duration_by_nodes",
-            hue="experiment",
-            palette=palette,
-            plot_type="bar",
-            xlabel="Nodes",
-            ylabel="Pull time (seconds)",
-        )
+        df,
+        title=title,
+        ydimension="duration",
+        xdimension="nodes",
+        outdir=outdir,
+        ext="png",
+        plotname=f"pull_times_duration_by_nodes",
+        hue="experiment",
+        palette=palette,
+        plot_type="bar",
+        xlabel="Nodes",
+        ylabel="Pull time (seconds)",
+    )
 
 
 def make_plot(
