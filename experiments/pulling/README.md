@@ -384,18 +384,14 @@ Wow, that's a pretty substantial difference, at least in terms of pull times rep
 
 ### The Mystery...
 
-It was a mystery to me why pulling times didn't change but the clusters were clearly up longer. I took a closer look at the events across the first set of experiments (run1..run4) and I think we found our answer!
+It was a mystery to me why pulling times didn't change but the clusters were clearly up longer. I took a closer look at the events across the first set of experiments (run1) and I think we found our answer!
 
-![analysis/data/run1/img/event_durations_size_run1.png](analysis/data/run1/img/event_durations_size_run1.png)
-![analysis/data/run2/img/event_durations_size_run2.png](analysis/data/run2/img/event_durations_size_run2.png)
-![analysis/data/run3/img/event_durations_size_run3.png](analysis/data/run3/img/event_durations_size_run3.png)
-![analysis/data/run4/img/event_durations_size_run4.png](analysis/data/run4/img/event_durations_size_run4.png)
+![analysis/data/run1/img/pulling-times-assembled-run1.png](analysis/data/run1/img/pulling-times-assembled-run1.png)
 
 Here is what we are seeing!
 
 - Larger containers have more variation in event timestamps across nodes, regardless of size
-- As the number of nodes gets larger, the entire range shifts upwards! There is probably "more stuff going on" or some change in algorithm so (overall) the time between the first to start and last to finish is consistently slower.
-- Pulling from a local registry (gcr.io() actually seems to bring down the overall range.
+- As the number of nodes gets larger, the variation does too.
 
-TLDR: When you increase the size of the cluster, your experiments take longer, but not because of pulling time. 
+TLDR: When you increase the size of the cluster, your experiments take longer, but not because of pulling time. Likely this is a batch scheduling or preparation strategy.
 
