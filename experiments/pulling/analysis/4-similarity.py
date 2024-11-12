@@ -81,7 +81,6 @@ def main():
     containers = read_json(containers)
     container_sets = {"pulling": containers}
     for label, containers in container_sets.items():
-
         # Output directory for containers
         data_dir = os.path.join(args.data, "containers", label)
         if not os.path.exists(data_dir):
